@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapeAndWriteKizoom", "ScrapeAndWriteKizoom\ScrapeAndWriteKizoom.csproj", "{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://devtfs:8080/tfs/tdportalprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ScrapeAndWriteKizoom\\ScrapeAndWriteKizoom.csproj
+		SccProjectName1 = ScrapeAndWriteKizoom
+		SccLocalPath1 = ScrapeAndWriteKizoom
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

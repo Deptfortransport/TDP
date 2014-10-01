@@ -1,0 +1,82 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailySummary", "DailySummary\DailySummary\DailySummary.csproj", "{8FCB86C8-A695-4ED2-B2F6-46C9A77C046E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailySummaryExtract", "DailySummaryExtract\DailySummaryExtract\DailySummaryExtract.csproj", "{A4EE7BE1-BC59-4B08-921B-44DAC4356441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KizoomDBExtract", "KizoomDBExtract\KizoomDBExtract\KizoomDBExtract.csproj", "{5E776EAC-D96C-4E42-92AC-1015C474A389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonthlyScrapeAndWriteKizoom", "MonthlyScrapeAndWriteKizoom\MonthlyScrapeAndWriteKizoom\MonthlyScrapeAndWriteKizoom.csproj", "{E60E2F69-9950-4870-8007-26DB0C724CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapeAndWriteKizoom", "ScrapeAndWriteKizoom\ScrapeAndWriteKizoom\ScrapeAndWriteKizoom.csproj", "{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeeklyKizoomScrapeAndWrite", "WeeklyScrapeAndWriteKizoom\WeeklyScrapeAndWriteKizoom\WeeklyKizoomScrapeAndWrite.csproj", "{1DC5E5EA-79B2-4324-9D6F-ADE01E769710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteKizoomToReportingDB", "WriteKizoomToReportingDB\WriteKizoomToReportingDB\WriteKizoomToReportingDB.csproj", "{FBED85D3-3470-4353-B500-6E9A4100E8C8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://devtfs:8080/tfs/tdportalprojects
+		SccProjectUniqueName0 = DailySummary\\DailySummary\\DailySummary.csproj
+		SccProjectName0 = DailySummary/DailySummary
+		SccLocalPath0 = DailySummary\\DailySummary
+		SccProjectUniqueName1 = DailySummaryExtract\\DailySummaryExtract\\DailySummaryExtract.csproj
+		SccProjectName1 = DailySummaryExtract/DailySummaryExtract
+		SccLocalPath1 = DailySummaryExtract\\DailySummaryExtract
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = KizoomDBExtract\\KizoomDBExtract\\KizoomDBExtract.csproj
+		SccProjectName3 = KizoomDBExtract/KizoomDBExtract
+		SccLocalPath3 = KizoomDBExtract\\KizoomDBExtract
+		SccProjectUniqueName4 = MonthlyScrapeAndWriteKizoom\\MonthlyScrapeAndWriteKizoom\\MonthlyScrapeAndWriteKizoom.csproj
+		SccProjectName4 = MonthlyScrapeAndWriteKizoom/MonthlyScrapeAndWriteKizoom
+		SccLocalPath4 = MonthlyScrapeAndWriteKizoom\\MonthlyScrapeAndWriteKizoom
+		SccProjectUniqueName5 = ScrapeAndWriteKizoom\\ScrapeAndWriteKizoom\\ScrapeAndWriteKizoom.csproj
+		SccProjectName5 = ScrapeAndWriteKizoom/ScrapeAndWriteKizoom
+		SccLocalPath5 = ScrapeAndWriteKizoom\\ScrapeAndWriteKizoom
+		SccProjectUniqueName6 = WeeklyScrapeAndWriteKizoom\\WeeklyScrapeAndWriteKizoom\\WeeklyKizoomScrapeAndWrite.csproj
+		SccProjectName6 = WeeklyScrapeAndWriteKizoom/WeeklyScrapeAndWriteKizoom
+		SccLocalPath6 = WeeklyScrapeAndWriteKizoom\\WeeklyScrapeAndWriteKizoom
+		SccProjectUniqueName7 = WriteKizoomToReportingDB\\WriteKizoomToReportingDB\\WriteKizoomToReportingDB.csproj
+		SccProjectName7 = WriteKizoomToReportingDB/WriteKizoomToReportingDB
+		SccLocalPath7 = WriteKizoomToReportingDB\\WriteKizoomToReportingDB
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FCB86C8-A695-4ED2-B2F6-46C9A77C046E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCB86C8-A695-4ED2-B2F6-46C9A77C046E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCB86C8-A695-4ED2-B2F6-46C9A77C046E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCB86C8-A695-4ED2-B2F6-46C9A77C046E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4EE7BE1-BC59-4B08-921B-44DAC4356441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4EE7BE1-BC59-4B08-921B-44DAC4356441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4EE7BE1-BC59-4B08-921B-44DAC4356441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4EE7BE1-BC59-4B08-921B-44DAC4356441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E776EAC-D96C-4E42-92AC-1015C474A389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E776EAC-D96C-4E42-92AC-1015C474A389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E776EAC-D96C-4E42-92AC-1015C474A389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E776EAC-D96C-4E42-92AC-1015C474A389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60E2F69-9950-4870-8007-26DB0C724CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60E2F69-9950-4870-8007-26DB0C724CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60E2F69-9950-4870-8007-26DB0C724CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60E2F69-9950-4870-8007-26DB0C724CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD64CEA-2C19-4ACF-8EBE-478D9ACDD4A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC5E5EA-79B2-4324-9D6F-ADE01E769710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC5E5EA-79B2-4324-9D6F-ADE01E769710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC5E5EA-79B2-4324-9D6F-ADE01E769710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC5E5EA-79B2-4324-9D6F-ADE01E769710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBED85D3-3470-4353-B500-6E9A4100E8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBED85D3-3470-4353-B500-6E9A4100E8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBED85D3-3470-4353-B500-6E9A4100E8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBED85D3-3470-4353-B500-6E9A4100E8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
