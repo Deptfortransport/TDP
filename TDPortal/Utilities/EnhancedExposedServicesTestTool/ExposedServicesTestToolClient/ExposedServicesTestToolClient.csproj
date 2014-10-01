@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D9FE160-E25B-4F70-8BD6-BF4187C9DCED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExposedServicesTestToolClient</RootNamespace>
+    <AssemblyName>ExposedServicesTestToolClient</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build_instructions.txt" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="Poweredby1a.gif" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\GetGridReference - Invalid NaPTAN.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\GetGridReference - Invalid Postcode.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\GetGridReference - NaPTAN.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\GetGridReference - Postcode.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Invalid - Missing Journey in Request.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Invalid - Missing Request.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Invalid - Missing TransactionId.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Invalid - Multiple Coordinates.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Journeys - Multiple Journeys in Request.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Location - Coordinate.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Location - NaPTAN.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Location - Postcode %28No parameters%29.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Location - Postcode to NaPTAN.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Location - Postcode.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Result - Detailed.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Result - Summary.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Toll - Congestion %28Different Dates%29.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Toll - Congestion.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Toll - Ferry.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Toll - Road.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Via location.xml" />
+    <Content Include="Requests\CarJourneyPlannerSynchronous\V1\PlanCarJourney - Welsh.xml" />
+    <Content Include="Requests\CodeService\V1\BUS_NAPTAN_CodeService_FindCodeRequest.xml" />
+    <Content Include="Requests\CodeService\V1\CodeService_FindCodeRequest.xml" />
+    <Content Include="Requests\CodeService\V1\CodeService_FindTextRequest.xml" />
+    <Content Include="Requests\CodeService\V1\CRS_CodeService_FindCodeRequest.xml" />
+    <Content Include="Requests\CodeService\V1\CRS_CodeService_FindCodeRequest_DBY.xml" />
+    <Content Include="Requests\CodeService\V1\CRS_CodeService_FindCodeRequest_LGM.xml" />
+    <Content Include="Requests\CodeService\V1\CRS_CodeService_FindCodeRequest_NOT.xml" />
+    <Content Include="Requests\CodeService\V1\INVALID_CodeService_FindCodeRequest.xml" />
+    <Content Include="Requests\CodeService\V1\RAIL_NAPTAN_CodeService_FindCodeRequest.xml" />
+    <Content Include="Requests\CodeService\V1\SMS_CodeService_FindCodeRequest.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetCycleAlgorithms.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetCycleAttributes.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetCycleRequestPreferences.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetGridReference - Invalid NaPTAN.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetGridReference - Invalid Postcode.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetGridReference - NaPTAN.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetGridReference - Postcode 1.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetGridReference - Postcode 2.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\GetGridReference - Postcode 3.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Coordinates 1.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Coordinates 2.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Coordinates 3.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Invalid Coordinates- Characters.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Negative Coordinates.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Postcode.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - CycleParameters - No Algorithm.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - CycleParameters.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - Distance In Kms.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - No Result Settings.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - Not Same Data Area.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - UserPreferences.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - Welsh.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result - with Via.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney - Result.xml" />
+    <Content Include="Requests\CycleJourneyPlannerSynchronous\V1\PlanCycleJourney.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\DepartureBoardService_GetDepartureBoard.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\DepartureBoardService_GetDepartureBoardForService.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\DepartureBoardService_GetDepartureBoardTimeRequestType.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\DepartureBoardService_GetDepartureBoard_DBY.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\LSE_NaPTANDepartureBoardService_GetDepartureBoard.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\NaPTANDepartureBoardService_GetDepartureBoard.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\RAIL_NaPTAN_DepartureBoardService_GetDepartureBoard.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\SMSDepartureBoardService_GetDepartureBoard.xml" />
+    <Content Include="Requests\DepartureBoardService\V1\SMSDepartureBoardService_GetDepartureBoard_leijapwp.xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindFuelGenieSites.xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindNearestAirports .xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindNearestBusStops .xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindNearestFuelGenie.xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindNearestLocality.xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindNearestLocality_1.xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindNearestLocality_2.xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_FindNearestStations.xml" />
+    <Content Include="Requests\FindNearest\V1\FindNearestService_GetGridReference.xml" />
+    <Content Include="Requests\GradientProfile\V1\GetGradientProfile - No PolyGroup Sepcified.xml" />
+    <Content Include="Requests\GradientProfile\V1\GetGradientProfile - Result.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Coordinate - LargeEastin.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Coordinate - LargeNorthing.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Coordinate.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Grid Reference - Invalid.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Grid Reference.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - NaPTANs - Invalid.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - NaPTANS Telecabine.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - NaPTANs.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Postcode with Return DateTime.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Postcode.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Telecabine Journey.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney - Welsh.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourneyReturn.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney_1.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney_2.xml" />
+    <Content Include="Requests\JourneyPlannerSynchronous\V1\PlanPublicJourney_3.xml" />
+    <Content Include="Requests\JourneyPlanner\V1\PlanPublicJourney - Coordinate - LargeEasting.xml" />
+    <Content Include="Requests\JourneyPlanner\V1\PlanPublicJourney - Coordinate - LargeNorthing.xml" />
+    <Content Include="Requests\JourneyPlanner\V1\PlanPublicJourney - Coordinate.xml" />
+    <Content Include="Requests\JourneyPlanner\V1\PlanPublicJourney - Telecabine Journey %28Async%29.xml" />
+    <Content Include="Requests\JourneyPlanner\V1\PlanPublicJourney - Welsh.xml" />
+    <Content Include="Requests\JourneyPlanner\V1\PlanPublicJourney.xml" />
+    <Content Include="Requests\JourneyPlanner\V1\PlanPublicJourneyReturn.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\AirTrunk.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\Coordinate.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\CoordinateJourney_1.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\CoordinateJourney_2.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\Error Cases\MissingModeFilter.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\Error Cases\MissingNaptans.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\Error Cases\MissingNaptansForTrunk.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\IntervalTrainTrunk.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\Locality.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\MultiModal - Telecabine.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\MultiModal.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\MultiNaptanTrunk.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\TrainTrunk.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\TrainTrunkExcludeOperator.xml" />
+    <Content Include="Requests\OpenJourneyPlanner\V1\TrainTrunkExcludeService.xml" />
+    <Content Include="Requests\TaxiInformationService\V1\TaxiInformationService_GetTaxiInfo.xml" />
+    <Content Include="Requests\TestWebService\Sample for Requestgeneration testwebservice.txt" />
+    <Content Include="Requests\TravelNewsService\V1\TravelNewsService_GetTravelNewsAvailableRegion.xml" />
+    <Content Include="Requests\TravelNewsService\V1\TravelNewsService_GetTravelNewsDetails - London.xml" />
+    <Content Include="Requests\TravelNewsService\V1\TravelNewsService_GetTravelNewsDetails.xml" />
+    <Content Include="Requests\TravelNewsService\V1\TravelNewsService_GetTravelNewsDetailsByUid.xml" />
+    <Content Include="Requests\TravelNewsService\V1\TravelNewsService_GetTravelNewsHeadlines.xml" />
+    <Content Include="Requests\TravelNewsService\V1\TravelNewsService_GetTravelNewsRegion.xml" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="setup.css" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderCodeFinder.txt" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderCyclePlanner.txt" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderDepartureBoard.txt" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderFindNearest.txt" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderOpenPlanner.txt" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderSynchPlanner.txt" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderTaxiInfo.txt" />
+    <Content Include="SoapHeaders\BBP\SecureHeaderTravelNews.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderAsynchPlanner.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderCarPlanner.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderCodeFinder.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderCyclePlanner.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderDepartureBoard.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderFindNearest.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderGradientProfile.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderOpenPlanner.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderSynchPlanner.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderTaxiInfo.txt" />
+    <Content Include="SoapHeaders\Empty\SecureHeaderTravelNews.txt" />
+    <Content Include="SoapHeaders\SecureHeaderAsynchPlanner.txt" />
+    <Content Include="SoapHeaders\SecureHeaderCarPlanner.txt" />
+    <Content Include="SoapHeaders\SecureHeaderCodeFinder.txt" />
+    <Content Include="SoapHeaders\SecureHeaderCyclePlanner.txt" />
+    <Content Include="SoapHeaders\SecureHeaderDepartureBoard.txt" />
+    <Content Include="SoapHeaders\SecureHeaderFindNearest.txt" />
+    <Content Include="SoapHeaders\SecureHeaderGradientProfile.txt" />
+    <Content Include="SoapHeaders\SecureHeaderOpenPlanner.txt" />
+    <Content Include="SoapHeaders\SecureHeaderSynchPlanner.txt" />
+    <Content Include="SoapHeaders\SecureHeaderTaxiInfo.txt" />
+    <Content Include="SoapHeaders\SecureHeaderTravelNews.txt" />
+    <Content Include="Templates\ExposedServicePage.aspx" />
+    <Content Include="Templates\Output.aspx" />
+    <Content Include="Templates\Receiver.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebserviceConfig.xml" />
+    <Content Include="xslt\CodeService\V1\FindCode.xslt" />
+    <Content Include="xslt\CodeService\V1\FindText.xslt" />
+    <Content Include="xslt\DepartureBoardService\V1\GetDepartureBoard.xslt" />
+    <Content Include="xslt\DepartureBoardService\V1\GetDepartureBoardTimeRequestTypes.xslt" />
+    <Content Include="xslt\GenerateRequest.xslt" />
+    <Content Include="xslt\TaxiInformationService\V1\GetTaxiInfo.xslt" />
+    <Content Include="xslt\TravelNewsService\V1\GetTravelNewsAvailableRegions.xslt" />
+    <Content Include="xslt\TravelNewsService\V1\GetTravelNewsDetails.xslt" />
+    <Content Include="xslt\TravelNewsService\V1\GetTravelNewsDetailsByUid.xslt" />
+    <Content Include="xslt\TravelNewsService\V1\GetTravelNewsHeadlines.xslt" />
+    <Content Include="xslt\TravelNewsService\V1\GetTravelNewsRegion.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\HelperClass.cs" />
+    <Compile Include="Logic\CacheEngine.cs" />
+    <Compile Include="Logic\Enums.cs" />
+    <Compile Include="Logic\RequestAsync.cs" />
+    <Compile Include="Logic\SoapRequest.cs" />
+    <Compile Include="Logic\SoapResponse.cs" />
+    <Compile Include="Logic\SoapTransaction.cs" />
+    <Compile Include="Logic\SoapTransactions.cs" />
+    <Compile Include="Logic\Webservice.cs" />
+    <Compile Include="Logic\WebserviceMethod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\ExposedServicePage.aspx.cs">
+      <DependentUpon>ExposedServicePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\ExposedServicePage.aspx.designer.cs">
+      <DependentUpon>ExposedServicePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Output.aspx.cs">
+      <DependentUpon>Output.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Output.aspx.designer.cs">
+      <DependentUpon>Output.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Receiver.aspx.cs">
+      <DependentUpon>Receiver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Receiver.aspx.designer.cs">
+      <DependentUpon>Receiver.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WebserviceConfig.xml.DRTest" />
+    <None Include="WebserviceConfig.xml.localhost" />
+    <None Include="WebserviceConfig.xml.Prod" />
+    <None Include="WebserviceConfig.xml.sitest" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\ExposedServicePage.aspx.resx">
+      <DependentUpon>ExposedServicePage.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Output.aspx.resx">
+      <DependentUpon>Output.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Receiver.aspx.resx">
+      <DependentUpon>Receiver.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61828</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

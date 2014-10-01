@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	 <GetGradientProfile xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.GradientProfile.V1">
+      <transactionId>string</transactionId>
+      <request>
+        <Settings>
+          <Resolution>10</Resolution>
+          <EastingNorthingSeperator>44</EastingNorthingSeperator>
+          <PointSeperator>32</PointSeperator>
+        </Settings>
+        <PolylineGroups>
+        </PolylineGroups>
+      </request>
+    </GetGradientProfile>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <FindText xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CodeHandler.V1">
+      <transactionId>FindTextTestTransactionId32131</transactionId>
+      <language>en-GB</language>
+      <codeRequest>
+        <PlaceText>LONDON EUSTON</PlaceText>
+        <Fuzzy>true</Fuzzy>
+        <ModeTypes>
+          <CodeServiceModeType>Rail</CodeServiceModeType>
+          <CodeServiceModeType>Bus</CodeServiceModeType>
+        </ModeTypes>
+      </codeRequest>
+    </FindText>
+  </soap:Body>
+</soap:Envelope>

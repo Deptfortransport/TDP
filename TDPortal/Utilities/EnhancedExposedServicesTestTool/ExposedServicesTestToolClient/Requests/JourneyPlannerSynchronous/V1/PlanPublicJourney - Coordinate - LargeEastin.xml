@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	<PlanPublicJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.JourneyPlannerSynchronous.V1">
+        <transactionId>testJP</transactionId>
+        <language>en-GB</language>
+        <request>
+          <IsReturnRequired>false</IsReturnRequired>
+          <OutwardArriveBefore>false</OutwardArriveBefore>
+          <OutwardDateTime>2014-04-24T18:32:26.2939351-00:00</OutwardDateTime>
+          <InterchangeSpeed>0</InterchangeSpeed>
+          <WalkingSpeed>80</WalkingSpeed>
+          <MaxWalkingTime>5</MaxWalkingTime>
+          <OriginLocation>
+            <Type>Coordinate</Type>
+			<GridReference>
+				<Easting>901821</Easting>
+				<Northing>298514</Northing>
+			</GridReference>
+          </OriginLocation>
+          <DestinationLocation>
+            <Type>Coordinate</Type>
+			<GridReference>
+				<Easting>491821</Easting>
+				<Northing>398514</Northing>
+			</GridReference>
+          </DestinationLocation>
+          <Sequence>1</Sequence>
+        </request>
+      </PlanPublicJourney>
+  </soap:Body>
+</soap:Envelope>

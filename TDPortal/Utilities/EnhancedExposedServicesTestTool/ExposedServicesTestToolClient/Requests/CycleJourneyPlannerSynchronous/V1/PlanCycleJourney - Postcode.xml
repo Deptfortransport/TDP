@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	<PlanCycleJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1">
+      <transactionId>testCycleJourneyPlanner</transactionId>
+      <request>
+        <JourneyRequest>
+          <JourneyRequestId>1</JourneyRequestId>
+          <OriginLocation>
+            <Description>NR2 2EB</Description>
+            <Type>Coordinate</Type>
+            <GridReference>
+              <Easting>621968</Easting>
+              <Northing>307773</Northing>
+            </GridReference>
+          </OriginLocation>
+          <DestinationLocation>
+            <Description>NR3 3AJ</Description>
+            <Type>Coordinate</Type>
+            <GridReference>
+              <Easting>622946</Easting>
+              <Northing>308819</Northing>
+            </GridReference>
+          </DestinationLocation>
+          <OutwardDateTime>2014-04-19T08:30:00</OutwardDateTime>
+          <OutwardArriveBefore>false</OutwardArriveBefore>
+        </JourneyRequest>
+         <CycleParameters>
+          <Algorithm>Call td.cp.CyclePenaltyFunctions.v3.dll,QuietestV913</Algorithm>
+        </CycleParameters>
+        <ResultSettings>
+          <IncludeGeometry>true</IncludeGeometry>
+          <PointSeparator>32</PointSeparator>
+          <EastingNorthingSeparator>44</EastingNorthingSeparator>
+          <DistanceUnit>Kms</DistanceUnit>
+          <Language>en-GB</Language>
+        </ResultSettings>
+      </request>
+    </PlanCycleJourney>
+  </soap:Body>
+</soap:Envelope>

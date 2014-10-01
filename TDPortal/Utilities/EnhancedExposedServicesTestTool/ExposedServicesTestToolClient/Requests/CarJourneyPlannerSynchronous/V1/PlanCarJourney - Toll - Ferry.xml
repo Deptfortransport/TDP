@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PlanCarJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1">
+      <transactionId>testCarJourneyPlanner</transactionId>
+	  <request>
+		<JourneyRequests>
+			<JourneyRequest>
+			  <JourneyRequestId>01</JourneyRequestId>
+			  <OriginLocation>
+				<Description>West Cowes Ferry Terminal</Description>
+				<Type>Coordinate</Type>
+				<GridReference>
+					<Easting>449700</Easting>
+					<Northing>96105</Northing>
+				</GridReference>
+			  </OriginLocation>
+			  <DestinationLocation>
+				<Description>Southampton (Main Rail / Coach)</Description>
+				<Type>Coordinate</Type>
+				<GridReference>
+					<Easting>441300</Easting>
+					<Northing>112200</Northing>
+				</GridReference>
+			  </DestinationLocation>
+			  <OutwardDateTime>2014-04-18T11:30:00</OutwardDateTime>
+			  <ReturnDateTime>2014-04-19T16:00:00</ReturnDateTime>
+			  <OutwardArriveBefore>false</OutwardArriveBefore>
+			  <ReturnArriveBefore>false</ReturnArriveBefore>
+			  <IsReturnRequired>false</IsReturnRequired>
+			</JourneyRequest>
+		</JourneyRequests>
+		<CarParameters>
+		</CarParameters>
+		<ResultSettings>
+			<DistanceUnit>Miles</DistanceUnit>
+		</ResultSettings>
+      </request>
+    </PlanCarJourney>
+  </soap:Body>
+</soap:Envelope>

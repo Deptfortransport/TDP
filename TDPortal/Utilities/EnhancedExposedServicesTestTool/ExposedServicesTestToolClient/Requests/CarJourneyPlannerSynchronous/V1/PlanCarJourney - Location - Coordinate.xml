@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PlanCarJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1">
+      <transactionId>testCarJourneyPlanner</transactionId>
+      <request>
+        <JourneyRequests>
+          <JourneyRequest>
+            <JourneyRequestId>01</JourneyRequestId>
+            <OriginLocation>
+              <Description>Nottingham train station</Description>
+              <Type>Coordinate</Type>
+              <GridReference>
+                <Easting>457500</Easting>
+                <Northing>339300</Northing>
+              </GridReference>
+            </OriginLocation>
+            <DestinationLocation>
+              <Description>Leicester train station</Description>
+              <Type>Coordinate</Type>
+              <GridReference>
+                <Easting>459300</Easting>
+                <Northing>304100</Northing>
+              </GridReference>
+            </DestinationLocation>
+            <OutwardDateTime>
+            2014-04-18T18:35:00.0000+01:00</OutwardDateTime>
+            <ReturnDateTime>
+            2014-04-19T19:35:26.2939351+01:00</ReturnDateTime>
+            <OutwardArriveBefore>false</OutwardArriveBefore>
+            <ReturnArriveBefore>false</ReturnArriveBefore>
+            <IsReturnRequired>false</IsReturnRequired>
+          </JourneyRequest>
+        </JourneyRequests>
+        <CarParameters>
+          <Algorithm>Fastest</Algorithm>
+          <CarSizeType>Medium</CarSizeType>
+          <FuelType>Petrol</FuelType>
+          <MaxSpeed>70</MaxSpeed>
+          <FuelConsumption>50</FuelConsumption>
+          <FuelConsumptionUnit>MilesPerGallon</FuelConsumptionUnit>
+          <FuelCost>99.9</FuelCost>
+          <BanMotorway>false</BanMotorway>
+          <AvoidToll>false</AvoidToll>
+          <AvoidFerries>false</AvoidFerries>
+          <AvoidMotorway>false</AvoidMotorway>
+          <AvoidRoads />
+          <UseRoads />
+        </CarParameters>
+        <ResultSettings>
+          <DistanceUnit>Miles</DistanceUnit>
+        </ResultSettings>
+      </request>
+    </PlanCarJourney>
+  </soap:Body>
+</soap:Envelope>

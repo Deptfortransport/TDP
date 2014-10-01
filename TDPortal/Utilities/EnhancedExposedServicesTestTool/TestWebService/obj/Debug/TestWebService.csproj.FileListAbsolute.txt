@@ -1,0 +1,5 @@
+D:\TDPortal\Utilities\EnhancedExposedServicesTestTool\TestWebService\bin\TestWebService.dll
+D:\TDPortal\Utilities\EnhancedExposedServicesTestTool\TestWebService\bin\TestWebService.pdb
+D:\TDPortal\Utilities\EnhancedExposedServicesTestTool\TestWebService\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Utilities\EnhancedExposedServicesTestTool\TestWebService\obj\Debug\TestWebService.dll
+D:\TDPortal\Utilities\EnhancedExposedServicesTestTool\TestWebService\obj\Debug\TestWebService.pdb

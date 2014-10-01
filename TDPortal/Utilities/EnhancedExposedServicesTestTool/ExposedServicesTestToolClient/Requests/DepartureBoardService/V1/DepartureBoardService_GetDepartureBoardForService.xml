@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetDepartureBoard xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.DepartureBoard.V1">
+      <transactionId>GetDepartureBoardTransactionId3123123</transactionId>
+      <language>en-GB</language>
+      <departureBoardRequest>
+        <OriginLocation>
+          <NaptanIds>
+            <string></string>
+            <string></string>
+          </NaptanIds>
+          <Locality></Locality>
+          <Code>hamdmdwa</Code>
+          <Type>SMS</Type>
+          <Valid>false</Valid>
+        </OriginLocation>        
+        <JourneyTimeInformation>
+          <Type>TimeToday</Type>
+          <Hour>18</Hour>
+          <Minute>57</Minute>
+        </JourneyTimeInformation>
+        <RangeType>Sequence</RangeType>
+        <Range>5</Range>
+        <ShowDepartures>true</ShowDepartures>
+        <ServiceNumber>32A</ServiceNumber>
+        <ShowCallingStops>true</ShowCallingStops>
+      </departureBoardRequest>
+    </GetDepartureBoard>
+  </soap:Body>
+</soap:Envelope>

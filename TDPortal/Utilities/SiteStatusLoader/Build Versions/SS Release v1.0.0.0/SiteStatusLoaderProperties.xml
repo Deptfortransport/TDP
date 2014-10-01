@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <!-- ********************************************************************************************************* -->
+  <!-- ******************************************* Common properties ******************************************* -->
+  <!-- ********************************************************************************************************* -->
+  <property name="propertyservice.version" GID="SiteStatus" AID="">1</property>
+  <property name="propertyservice.refreshrate" GID="SiteStatus" AID="">10000</property>
+
+  <!-- Common properties - Database -->
+  <property name="ReportStagingDB" GID="SiteStatus" AID="">Server=.;Initial Catalog=ReportStagingDB;Trusted_Connection=true;</property>
+
+  <!-- Common properties - Event logging -->
+  <property name="Logging.Publisher.Default" GID="SiteStatus" AID="">File1</property>
+  <property name="Logging.Publisher.EventLog" GID="SiteStatus" AID="">EventLog1</property>
+  <property name="Logging.Publisher.File" GID="SiteStatus" AID="">File1</property>
+
+  <!-- Internal file used to track status between the LoaderService and the Monitor Application-->
+  <property name="SiteStatusLoaderService.StatusFile.Directory" GID="SiteStatus" AID="">C:\TDPortal</property>
+  <property name="SiteStatusLoaderService.StatusFile.Name" GID="SiteStatus" AID="">SiteStatusLoaderServiceStatus.xml</property>
+  <property name="SiteStatusLoaderService.StatusFile.DateTimeFormat" GID="SiteStatus" AID="">yyyyMMdd HH:mm:ss.fffff</property>
+
+
+
+
+
+  <!-- ********************************************************************************************************* -->
+  <!-- *************************** Site Status Loader Service specific properties ****************************** -->
+  <!-- ********************************************************************************************************* -->
+
+  <property name="SiteStatusLoaderService.ServiceCurrent.Switch" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.ServiceHistoric.Switch" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  
+  <!-- Timer properties -->
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.Interval.MilliSeconds" GID="SiteStatus" AID="SiteStatusLoaderService">60000</property>
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.StartTime.Second" GID="SiteStatus" AID="SiteStatusLoaderService">00</property> <!-- Empty value will default to now -->
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.StartTime.Minute" GID="SiteStatus" AID="SiteStatusLoaderService"></property> <!-- Empty value will default to now -->
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.StartTime.Hour" GID="SiteStatus" AID="SiteStatusLoaderService"></property> <!-- Empty value will default to now -->
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.Restart.Second" GID="SiteStatus" AID="SiteStatusLoaderService">00</property> <!-- Empty value will default to 00 -->
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.Restart.Minute" GID="SiteStatus" AID="SiteStatusLoaderService">00</property> <!-- Empty value will default to 00 -->
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.Restart.Hour" GID="SiteStatus" AID="SiteStatusLoaderService">01</property> <!-- Empty value will default to 00-->
+  <property name="SiteStatusLoaderService.ServiceTimerCurrent.Schedule.Days" GID="SiteStatus" AID="SiteStatusLoaderService">Mon,Tue,Wed,Thu,Fri,Sat,Sun</property> <!-- e.g. Mon,Tue -->
+
+  <property name="SiteStatusLoaderService.ServiceTimerHistoric.Interval.MilliSeconds" GID="SiteStatus" AID="SiteStatusLoaderService">86400000</property>
+  <property name="SiteStatusLoaderService.ServiceTimerHistoric.StartTime.Second" GID="SiteStatus" AID="SiteStatusLoaderService">00</property> <!-- Empty value will default to now -->
+  <property name="SiteStatusLoaderService.ServiceTimerHistoric.StartTime.Minute" GID="SiteStatus" AID="SiteStatusLoaderService">00</property> <!-- Empty value will default to now -->
+  <property name="SiteStatusLoaderService.ServiceTimerHistoric.StartTime.Hour" GID="SiteStatus" AID="SiteStatusLoaderService">01</property> <!-- Empty value will default to now -->
+  <property name="SiteStatusLoaderService.ServiceTimerHistoric.Schedule.Days" GID="SiteStatus" AID="SiteStatusLoaderService">Mon,Tue,Wed,Thu,Fri,Sat,Sun</property><!-- e.g. Mon,Tue -->
+  
+  <!-- URLs to obtain data from -->
+  <property name="SiteStatusLoaderService.Current.URL" GID="SiteStatus" AID="SiteStatusLoaderService">http://portal1.siteconfidence.co.uk/custom/atos/xml_status.php?N=DFT</property>
+  <!--<property name="SiteStatusLoaderService.Current.URL" GID="SiteStatus" AID="SiteStatusLoaderService">http://localhost/xml_status.TEST.php.xml</property>-->
+  <property name="SiteStatusLoaderService.Current.URL.Username" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+  <property name="SiteStatusLoaderService.Current.URL.Password" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+  <property name="SiteStatusLoaderService.Current.URL.Domain" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+  <property name="SiteStatusLoaderService.Current.URL.Proxy" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+
+  <property name="SiteStatusLoaderService.Historic.URL.Base" GID="SiteStatus" AID="SiteStatusLoaderService">http://portal2.siteconfidence.co.uk/custom/atos/atoscsv.php</property>
+  <!--<property name="SiteStatusLoaderService.Historic.URL.Base" GID="SiteStatus" AID="SiteStatusLoaderService">http://localhost/atoscsv.TEST.php.csv</property> -->
+  <property name="SiteStatusLoaderService.Historic.URL.Base.PID" GID="SiteStatus" AID="SiteStatusLoaderService">5372,5373,21806,21807,21808</property>
+  <property name="SiteStatusLoaderService.Historic.URL.Base.PIDPrefix" GID="SiteStatus" AID="SiteStatusLoaderService">?PID=</property>
+  <property name="SiteStatusLoaderService.Historic.URL.Username" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+  <property name="SiteStatusLoaderService.Historic.URL.Password" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+  <property name="SiteStatusLoaderService.Historic.URL.Domain" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+  <property name="SiteStatusLoaderService.Historic.URL.Proxy" GID="SiteStatus" AID="SiteStatusLoaderService"></property>
+
+  <!-- Locations to save the data files to (note: files are prefixed with datetime by the app -->
+  <property name="SiteStatusLoaderService.Current.Save" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.Current.Save.Directory" GID="SiteStatus" AID="SiteStatusLoaderService">C:\TDPortal</property>
+  <property name="SiteStatusLoaderService.Current.Save.Filename" GID="SiteStatus" AID="SiteStatusLoaderService">RealtimeStatus.xml</property>
+  <property name="SiteStatusLoaderService.Historic.Save" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.Historic.Save.Directory" GID="SiteStatus" AID="SiteStatusLoaderService">C:\TDPortal</property>
+  <property name="SiteStatusLoaderService.Historic.Save.Filename" GID="SiteStatus" AID="SiteStatusLoaderService">HistoricStatus.csv</property>
+
+  <!-- Values to read from the xml/csv file -->
+  <property name="SiteStatusLoaderService.XML.Node" GID="SiteStatus" AID="SiteStatusLoaderService">Event</property>
+  <property name="SiteStatusLoaderService.XML.Node.Attribute.EventTypeName" GID="SiteStatus" AID="SiteStatusLoaderService">uniqueId2</property>
+  <property name="SiteStatusLoaderService.XML.Node.Attribute.Status" GID="SiteStatus" AID="SiteStatusLoaderService">userDefined_101</property>
+  <property name="SiteStatusLoaderService.XML.Node.Attribute.Duration" GID="SiteStatus" AID="SiteStatusLoaderService">userDefined_103</property>
+  <property name="SiteStatusLoaderService.XML.Node.Attribute.TimeSubmitted" GID="SiteStatus" AID="SiteStatusLoaderService">userDefined_105</property>
+
+  <property name="SiteStatusLoaderService.XML.DateTimeFormat" GID="SiteStatus" AID="SiteStatusLoaderService">ddd MMM d HH:mm:ss  yyyy</property>  <!-- UTC value replaced with "" -->
+  <property name="SiteStatusLoaderService.UTCValue" GID="SiteStatus" AID="SiteStatusLoaderService">UTC</property>  <!-- UTC value to be removed from datetime string -->
+  
+  <property name="SiteStatusLoaderService.CSV.Column.EventTypeName" GID="SiteStatus" AID="SiteStatusLoaderService">1</property>
+  <property name="SiteStatusLoaderService.CSV.Column.Status" GID="SiteStatus" AID="SiteStatusLoaderService">8</property>
+  <property name="SiteStatusLoaderService.CSV.Column.Duration" GID="SiteStatus" AID="SiteStatusLoaderService">7</property>
+  <property name="SiteStatusLoaderService.CSV.Column.TimeSubmitted" GID="SiteStatus" AID="SiteStatusLoaderService">3</property>
+
+  <property name="SiteStatusLoaderService.CSV.DateTimeFormat" GID="SiteStatus" AID="SiteStatusLoaderService">dd/MM/yyyy HH:mm:ss</property>
+  <property name="SiteStatusLoaderService.CSV.HasHeaderRow" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  
+  <!-- Events being monitored and their thresholds -->
+  <property name="SiteStatusLoaderService.EventsToMonitor" GID="SiteStatus" AID="SiteStatusLoaderService">DFT: Home Page (DSL),Plan a journey subhomepage,Find a place subhomepage,Live travel subhomepage,DFT: Mobile Page 3G</property>
+
+  <property name="SiteStatusLoaderService.Event.DFT: Home Page (DSL).Success" GID="SiteStatus" AID="SiteStatusLoaderService">1</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Home Page (DSL).ServiceLevelAgreement" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Home Page (DSL).AlertThreshold.Amber" GID="SiteStatus" AID="SiteStatusLoaderService">8000</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Home Page (DSL).AlertThreshold.Red" GID="SiteStatus" AID="SiteStatusLoaderService">11000</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Home Page (DSL).ReferenceTransactionType" GID="SiteStatus" AID="SiteStatusLoaderService">SLA07</property>
+
+  <property name="SiteStatusLoaderService.Event.Plan a journey subhomepage.Success" GID="SiteStatus" AID="SiteStatusLoaderService">1</property>
+  <property name="SiteStatusLoaderService.Event.Plan a journey subhomepage.ServiceLevelAgreement" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.Event.Plan a journey subhomepage.AlertThreshold.Amber" GID="SiteStatus" AID="SiteStatusLoaderService">8000</property>
+  <property name="SiteStatusLoaderService.Event.Plan a journey subhomepage.AlertThreshold.Red" GID="SiteStatus" AID="SiteStatusLoaderService">11000</property>
+  <property name="SiteStatusLoaderService.Event.Plan a journey subhomepage.ReferenceTransactionType" GID="SiteStatus" AID="SiteStatusLoaderService">SLA08</property>
+
+  <property name="SiteStatusLoaderService.Event.Find a place subhomepage.Success" GID="SiteStatus" AID="SiteStatusLoaderService">1</property>
+  <property name="SiteStatusLoaderService.Event.Find a place subhomepage.ServiceLevelAgreement" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.Event.Find a place subhomepage.AlertThreshold.Amber" GID="SiteStatus" AID="SiteStatusLoaderService">8000</property>
+  <property name="SiteStatusLoaderService.Event.Find a place subhomepage.AlertThreshold.Red" GID="SiteStatus" AID="SiteStatusLoaderService">11000</property>
+  <property name="SiteStatusLoaderService.Event.Find a place subhomepage.ReferenceTransactionType" GID="SiteStatus" AID="SiteStatusLoaderService">SLA09</property>
+
+  <property name="SiteStatusLoaderService.Event.Live travel subhomepage.Success" GID="SiteStatus" AID="SiteStatusLoaderService">1</property>
+  <property name="SiteStatusLoaderService.Event.Live travel subhomepage.ServiceLevelAgreement" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.Event.Live travel subhomepage.AlertThreshold.Amber" GID="SiteStatus" AID="SiteStatusLoaderService">8000</property>
+  <property name="SiteStatusLoaderService.Event.Live travel subhomepage.AlertThreshold.Red" GID="SiteStatus" AID="SiteStatusLoaderService">11000</property>
+  <property name="SiteStatusLoaderService.Event.Live travel subhomepage.ReferenceTransactionType" GID="SiteStatus" AID="SiteStatusLoaderService">SLA10</property>
+
+  <property name="SiteStatusLoaderService.Event.DFT: Mobile Page 3G.Success" GID="SiteStatus" AID="SiteStatusLoaderService">1</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Mobile Page 3G.ServiceLevelAgreement" GID="SiteStatus" AID="SiteStatusLoaderService">true</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Mobile Page 3G.AlertThreshold.Amber" GID="SiteStatus" AID="SiteStatusLoaderService">8000</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Mobile Page 3G.AlertThreshold.Red" GID="SiteStatus" AID="SiteStatusLoaderService">11000</property>
+  <property name="SiteStatusLoaderService.Event.DFT: Mobile Page 3G.ReferenceTransactionType" GID="SiteStatus" AID="SiteStatusLoaderService">SLA11</property>
+
+  <property name="SiteStatusLoaderService.Messages.AlertLevel.Amber.Prefix" GID="SiteStatus" AID="SiteStatusLoaderService">SS AMBER ALERT - </property>
+  <property name="SiteStatusLoaderService.Messages.AlertLevel.Red.Prefix" GID="SiteStatus" AID="SiteStatusLoaderService">SS RED ALERT - </property>
+  <property name="SiteStatusLoaderService.Messages.DownloadError" GID="SiteStatus" AID="SiteStatusLoaderService">SS DOWNLOAD ERROR </property>
+  <property name="SiteStatusLoaderService.Messages.DatabaseError.Current" GID="SiteStatus" AID="SiteStatusLoaderService">SS DATABASE (CURRENT) ERROR </property>
+  <property name="SiteStatusLoaderService.Messages.DatabaseError.Day" GID="SiteStatus" AID="SiteStatusLoaderService">SS DATABASE (DAILY) ERROR </property>
+
+  <!-- Properties used for testing -->
+  <property name="SiteStatusLoaderService.TestMode" GID="SiteStatus" AID="SiteStatusLoaderService">false</property>
+  <property name="SiteStatusLoaderService.TestMode.File.Current" GID="SiteStatus" AID="SiteStatusLoaderService">C:\Inetpub\wwwroot\xml_status.TEST.php.xml</property>
+  <property name="SiteStatusLoaderService.TestMode.File.Historic" GID="SiteStatus" AID="SiteStatusLoaderService">C:\Inetpub\wwwroot\atoscsv.TEST.php.csv</property>
+    
+  <!-- Standard logging -->
+  <property name="Logging.Publisher.File.File1.Directory" GID="SiteStatus" AID="SiteStatusLoaderService">C:\TDPortal</property>
+  <property name="Logging.Publisher.File.File1.Rotation" GID="SiteStatus" AID="SiteStatusLoaderService">10000</property>
+
+  <property name="Logging.Publisher.EventLog.EventLog1.Name" GID="SiteStatus" AID="SiteStatusLoaderService">Application</property>
+  <property name="Logging.Publisher.EventLog.EventLog1.Source" GID="SiteStatus" AID="SiteStatusLoaderService">Site Status Loader Service</property>
+  <property name="Logging.Publisher.EventLog.EventLog1.Machine" GID="SiteStatus" AID="SiteStatusLoaderService">.</property>
+ 
+  <property name="Logging.Event.Operational.TraceLevel" GID="SiteStatus" AID="SiteStatusLoaderService">Info</property>
+  <property name="Logging.Event.Operational.Verbose.Publishers" GID="SiteStatus" AID="SiteStatusLoaderService">File1</property>
+  <property name="Logging.Event.Operational.Info.Publishers" GID="SiteStatus" AID="SiteStatusLoaderService">File1 EventLog1</property>
+  <property name="Logging.Event.Operational.Warning.Publishers" GID="SiteStatus" AID="SiteStatusLoaderService">File1 EventLog1</property>
+  <property name="Logging.Event.Operational.Error.Publishers" GID="SiteStatus" AID="SiteStatusLoaderService">File1 EventLog1</property>
+
+  <!-- Custom logging -->
+  <property name="Logging.Publisher.Custom" GID="SiteStatus" AID="SiteStatusLoaderService">SSDB</property>
+  <property name="Logging.Publisher.Custom.SSDB.Name" GID="SiteStatus" AID="SiteStatusLoaderService">SSCustomEventPublisher</property>
+
+  <property name="Logging.Event.Custom" GID="SiteStatus" AID="SiteStatusLoaderService">REFERENCETRANSACTION</property>
+  <property name="Logging.Event.Custom.Trace" GID="SiteStatus" AID="SiteStatusLoaderService">On</property>
+
+  <property name="Logging.Event.Custom.REFERENCETRANSACTION.Assembly" GID="SiteStatus" AID="SiteStatusLoaderService">ao.eventlogging</property>
+  <property name="Logging.Event.Custom.REFERENCETRANSACTION.Name" GID="SiteStatus" AID="SiteStatusLoaderService">ReferenceTransactionEvent</property>
+  <property name="Logging.Event.Custom.REFERENCETRANSACTION.Publishers" GID="SiteStatus" AID="SiteStatusLoaderService">SSDB</property>
+  <property name="Logging.Event.Custom.REFERENCETRANSACTION.Trace" GID="SiteStatus" AID="SiteStatusLoaderService">On</property>
+
+
+
+
+
+
+  <!-- ********************************************************************************************************* -->
+  <!-- ************************* Site Status Monitor Application specific properties *************************** -->
+  <!-- ********************************************************************************************************* -->
+  <!-- Service to monitor -->
+  <property name="SiteStatusLoaderService.Name" GID="SiteStatus" AID="SiteStatusLoaderMonitor">Site Status Loader Service</property> <!-- Must be the same as the Service's .config file ServiceName-->
+
+  <!-- Interval time to check the service being monitored -->
+  <property name="SiteStatusMonitorApplication.ServiceMonitorTimer.Interval.MilliSeconds" GID="SiteStatus" AID="SiteStatusLoaderMonitor">5000</property>
+
+  <property name="SiteStatusMonitorApplication.AlertLevelCounts.TimePeriod.Seconds" GID="SiteStatus" AID="SiteStatusLoaderMonitor">7200</property>
+  
+  <!-- System tray icons -->
+  <property name="SiteStatusMonitorApplication.SystemTray.DisplayText" GID="SiteStatus" AID="SiteStatusLoaderMonitor">Site Status Loader Monitor</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.Disabled" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\Disabled.ico</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.Enabled" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\Enabled.ico</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.Paused" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\Paused.ico</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.Running" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\Running.ico</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.Stopped" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\Stopped.ico</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.RunningAmber" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\RunningAmber.ico</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.RunningRed" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\RunningRed.ico</property>
+  <property name="SiteStatusMonitorApplication.SystemTray.Icon.RunningUnknown" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal\Utilities\SiteStatusLoaderService\SiteStatusLoaderMonitorApplication\Images\RunningUnknown.ico</property>
+
+  <!-- Standard logging -->
+  <property name="Logging.Publisher.File.File1.Directory" GID="SiteStatus" AID="SiteStatusLoaderMonitor">C:\TDPortal</property>
+  <property name="Logging.Publisher.File.File1.Rotation" GID="SiteStatus" AID="SiteStatusLoaderMonitor">10000</property>
+
+  <property name="Logging.Publisher.EventLog.EventLog1.Name" GID="SiteStatus" AID="SiteStatusLoaderMonitor">Application</property>
+  <property name="Logging.Publisher.EventLog.EventLog1.Source" GID="SiteStatus" AID="SiteStatusLoaderMonitor">Site Status Loader Monitor</property>
+  <property name="Logging.Publisher.EventLog.EventLog1.Machine" GID="SiteStatus" AID="SiteStatusLoaderMonitor">.</property>
+  
+  <property name="Logging.Event.Operational.TraceLevel" GID="SiteStatus" AID="SiteStatusLoaderMonitor">Info</property>
+  <property name="Logging.Event.Operational.Verbose.Publishers" GID="SiteStatus" AID="SiteStatusLoaderMonitor">File1</property>
+  <property name="Logging.Event.Operational.Info.Publishers" GID="SiteStatus" AID="SiteStatusLoaderMonitor">File1</property>
+  <property name="Logging.Event.Operational.Warning.Publishers" GID="SiteStatus" AID="SiteStatusLoaderMonitor">File1</property>
+  <property name="Logging.Event.Operational.Error.Publishers" GID="SiteStatus" AID="SiteStatusLoaderMonitor">File1</property>
+
+  <!-- Custom logging -->
+  <property name="Logging.Event.Custom" GID="SiteStatus" AID="SiteStatusLoaderMonitor"></property>
+  <property name="Logging.Event.Custom.Trace" GID="SiteStatus" AID="SiteStatusLoaderMonitor">Off</property>
+  
+</lookup>

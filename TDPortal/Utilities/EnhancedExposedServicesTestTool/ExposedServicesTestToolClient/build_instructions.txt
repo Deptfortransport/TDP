@@ -1,0 +1,57 @@
+----------------------------------------------------------
+BUILD INSTRUCTIONS for the ExposedServicesTestTool
+
+- These intructions have been modified for the migration to TFS
+----------------------------------------------------------
+
+1. Get latest version of ExposedServicesTestTool solution from TFS, 
+   this will place into D:\TDPortal\Utilities\EnhancedExposedServicesTestTool\
+
+2. Open the ExposedServicesTestTool.sln solution in Visual Studio and switch the solution into Release mode
+
+3. Ensure the AssemblyInfo.cs file has been versioned correctly (i.e. if any changes have been made, increment version).
+
+4. Rebuild solution
+
+5. Navigate to and run the following batch file, this will copy all ExposedServicesTestTool into the Components folder
+   - D:\TDPortal\Components\ExposedServicesTestTool\DEV - Copy ExposedServicesTestTool to Components.bat
+   
+6. Check the \Components\ExposedServicesTestTool\ contains two folders both containing items, with the bin folder having 
+   the correct dll version as updated above:
+   - ExposedServicesTestToolClient
+   - TestWebService
+
+7. Zip the above two folders and rename the zip file to ExposedServicesTestToolClient_vX.X.X.X.zip (where X.X.X.X is the current
+   version number defined in AssemblyInfo.cs)
+      
+
+
+
+----------------------------------------------------------
+-- OLD INSTRUCTIONS
+1. Before building, ensure the AssemblyInfo.cs file has been versioned correctly. 
+
+2. Ensure the build/externals assemblies have been copied to C:\builds\release_build\build\Externals
+
+3. Do a PVCS get of EnhancedExposedServicesTestToolClient to 
+		C:\builds\release_build\TransportDirect\Stubs\ExposedServicesTestTool\ExposedServicesTestToolClient. 
+   Do a PVCS get of TestWebService to 
+		C:\builds\release_build\TransportDirect\Stubs\ExposedServicesTestTool\TestWebService
+
+4. If the TestTool is to be supplied to a third party, remove the Microsoft.Web.Services2.dll
+   from the C:\TDPortal\CodeBase\TransportDirect\Stubs\ExposedServicesTestTool\ExposedServicesTestToolClient\bin
+   directory. This .dll should not be distributed with the TestTool.
+
+5. The test tool client WebserviceConfig currently points to Dev (localhost) URLs, these need to be changed to SITest URLs. 
+   To do this: 
+		delete 
+			C:\builds\release_build\TransportDirect\Stubs\ExposedServicesTestTool\ExposedServicesTestToolClient\WebserviceConfig.xml
+		copy then rename 
+			C:\builds\release_build\TransportDirect\Stubs\ExposedServicesTestTool\ExposedServicesTestToolClient\WebserviceConfig.xml.sitest to WebserviceConfig.xml
+   
+6. Run package.bat
+
+7. Check build.log for details
+
+8. Rename the zip file in C:\ to ExposedServicesTestToolClient_vX.X.X.X.zip (where X.X.X.X is the current
+   version number defined in AssemblyInfo.cs

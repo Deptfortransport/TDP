@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PlanCarJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1">
+      <transactionId>testCarJourneyPlanner</transactionId>
+	  <request>
+		<JourneyRequests>
+			<JourneyRequest>
+			  <JourneyRequestId>01</JourneyRequestId>
+			  <OriginLocation>
+				<Description>Nottingham train station</Description>
+				<Type>Coordinate</Type>
+				<GridReference>
+					<Easting>457500</Easting>
+					<Northing>339300</Northing>
+				</GridReference>
+			  </OriginLocation>
+			  <DestinationLocation>
+				<Description>Leicester train station</Description>
+				<Type>Coordinate</Type>
+				<GridReference>
+					<Easting>459300</Easting>
+					<Northing>304100</Northing>
+				</GridReference>
+			  </DestinationLocation>
+			  <OutwardDateTime>2014-04-18T18:35:00.0000+01:00</OutwardDateTime>
+			  <OutwardArriveBefore>false</OutwardArriveBefore>
+			  <IsReturnRequired>false</IsReturnRequired>
+			</JourneyRequest>
+		</JourneyRequests>
+		<CarParameters>
+		</CarParameters>
+		<ResultSettings>
+			<Language>cy-GB</Language>
+		</ResultSettings>
+      </request>
+    </PlanCarJourney>
+  </soap:Body>
+</soap:Envelope>

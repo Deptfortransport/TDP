@@ -1,0 +1,15 @@
+User-agent: msnbot
+Disallow: /Web2/JourneyPlanning/JourneyPlannerInput.aspx
+
+User-agent: MJ12bot
+Disallow: /Web2/LiveTravel/
+
+User-agent: *
+Disallow: /Web2/JourneyPlanning/JPLanding.aspx
+Disallow: /Web2/JourneyPlanning/jplandingpage.aspx
+Disallow: /Web2/JourneyPlanning/JPLandingPage.aspx
+Disallow: /web2/journeyplanning/jplandingpage.aspx
+Disallow: /NaptanViewer/
+Disallow: /TDPWebservices/
+
+Sitemap: http://www.transportdirect.info/sitemap.xml

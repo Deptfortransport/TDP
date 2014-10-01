@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExposedServicesTestToolClient", "ExposedServicesTestToolClient\ExposedServicesTestToolClient.csproj", "{5D9FE160-E25B-4F70-8BD6-BF4187C9DCED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebService", "TestWebService\TestWebService.csproj", "{93A9E49C-BC88-45F8-AD31-74BF9F4395E4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://devtfs:8080/tfs/tdportalprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ExposedServicesTestToolClient\\ExposedServicesTestToolClient.csproj
+		SccProjectName1 = ExposedServicesTestToolClient
+		SccLocalPath1 = ExposedServicesTestToolClient
+		SccProjectUniqueName2 = TestWebService\\TestWebService.csproj
+		SccProjectName2 = TestWebService
+		SccLocalPath2 = TestWebService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D9FE160-E25B-4F70-8BD6-BF4187C9DCED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9FE160-E25B-4F70-8BD6-BF4187C9DCED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9FE160-E25B-4F70-8BD6-BF4187C9DCED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9FE160-E25B-4F70-8BD6-BF4187C9DCED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A9E49C-BC88-45F8-AD31-74BF9F4395E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A9E49C-BC88-45F8-AD31-74BF9F4395E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A9E49C-BC88-45F8-AD31-74BF9F4395E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A9E49C-BC88-45F8-AD31-74BF9F4395E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

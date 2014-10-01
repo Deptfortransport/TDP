@@ -1,0 +1,26 @@
+1) Create W3c folder to hold P3P files
+2) copy in w3c files
+3) ensure correct permissions are in place on folder/ files
+4) Internet Information Server
+
+The Microsoft Internet Information Server (IIS) provides a simple way to add a custom header.
+The Microsoft Management Console (MMC) can be used to specify a P3P HTTP header. 
+Within MMC, expand the Internet Information Server line, and then expand the ServerName line.
+
+At Default Web Site, right click and then choose Properties. 
+Select the HTTP Headers tab. 
+In Custom HTTP Headers, click Add. 
+Under Custom Header Name, type in the following:
+
+	P3P 
+Next, in Custom Header Value, type in 
+	policyref="/w3c/p3p.xml", CP="ALL DSP COR CURa ADMa DEVa TAIi PSAa CONi OUR BUS ONL COM NAV INT STA PRE"
+Click OK twice. 
+
+
+5) Repeat step 4 for the "web" IIS folder.
+
+
+
+
+IIS should now be ready to serve the P3P header within the default set of HTTP headers.

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PlanCarJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1">
+      <transactionId>testCarJourneyPlanner</transactionId>
+	  <request>
+		<JourneyRequests>
+			<JourneyRequest>
+			  <JourneyRequestId>01</JourneyRequestId>
+			  <OriginLocation>
+				<Description>NG9 1LA</Description>
+				<Type>Postcode</Type>
+				<Postcode>NG9 1LA</Postcode>
+			  </OriginLocation>
+			  <DestinationLocation>
+				<Description>Leicester train station</Description>
+				<Type>NaPTAN</Type>
+				<NaPTANs>
+					<Naptan>
+						<NaptanId>9100LESTER</NaptanId>
+					</Naptan>
+				</NaPTANs>
+			  </DestinationLocation>
+			  <OutwardDateTime>2014-04-18T18:35:00.0000+01:00</OutwardDateTime>
+			  <ReturnDateTime>2014-04-19T19:35:26.2939351+01:00</ReturnDateTime>
+			  <OutwardArriveBefore>true</OutwardArriveBefore>
+			  <ReturnArriveBefore>false</ReturnArriveBefore>
+			  <IsReturnRequired>true</IsReturnRequired>
+			</JourneyRequest>
+		</JourneyRequests>
+		<CarParameters>
+			<Algorithm>Cheapest</Algorithm>
+			<CarSizeType>Medium</CarSizeType>
+			<FuelType>Petrol</FuelType>
+			<MaxSpeed>70</MaxSpeed>
+			<FuelConsumption>50</FuelConsumption>
+			<FuelConsumptionUnit>MilesPerGallon</FuelConsumptionUnit>
+			<FuelCost>99.9</FuelCost>
+			<BanMotorway>false</BanMotorway>
+			<AvoidToll>false</AvoidToll>
+			<AvoidFerries>false</AvoidFerries>
+			<AvoidMotorway>true</AvoidMotorway>
+			<AvoidRoads />
+			<UseRoads />
+		</CarParameters>
+		<ResultSettings>
+			<ResultType>Summary</ResultType>
+			<DistanceUnit>Miles</DistanceUnit>
+			<Language>en-GB</Language>
+		</ResultSettings>
+      </request>
+    </PlanCarJourney>
+  </soap:Body>
+</soap:Envelope>

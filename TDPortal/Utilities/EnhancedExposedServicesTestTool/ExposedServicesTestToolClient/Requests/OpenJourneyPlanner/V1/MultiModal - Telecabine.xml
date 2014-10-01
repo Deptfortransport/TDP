@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <PlanJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.OpenJourneyPlanner.V1">
+            <transactionId>testOpenJP</transactionId>
+            <language>en-GB</language>
+            <request>
+                <ModeFilter>
+                    <Include>true</Include>
+                    <Modes>
+                        <TransportMode>
+                            <Mode>Telecabine</Mode>
+                        </TransportMode>
+                    </Modes>
+                </ModeFilter>
+                <Depart>true</Depart>
+                <Destination>
+                    <GivenName>Royal Victoria DLR Station</GivenName>
+                    <Locality>N0077713</Locality>
+                    <Stops>
+                        <RequestStop>
+                            <NaPTANID>9400ZZDLRVC</NaPTANID>
+                            <TimeDate>2014-04-29T10:00:00.0000000+01:00</TimeDate>
+                        </RequestStop>
+                    </Stops>
+                    <Type>NaPTAN</Type>
+                </Destination>
+                <Origin>
+                    <GivenName>North Greenwich Pier</GivenName>
+                    <Locality>N0077702</Locality>
+                    <Stops>
+                        <RequestStop>
+                            <NaPTANID>9300MIL</NaPTANID>
+                            <TimeDate>2014-04-20T15:00:00.0000000+01:00</TimeDate>
+                        </RequestStop>
+                    </Stops>
+                    <Type>NaPTAN</Type>
+                </Origin>
+                <PublicParameters>
+                    <Algorithm>Fastest</Algorithm>
+                    <InterchangeSpeed>1</InterchangeSpeed>
+                    <IntermediateStops>All</IntermediateStops>
+                    <MaxWalkDistance>100</MaxWalkDistance>
+                    <RangeType>Sequence</RangeType>
+                    <Sequence>3</Sequence>
+                    <TrunkPlan>false</TrunkPlan>
+                    <WalkSpeed>80</WalkSpeed>
+                </PublicParameters>
+            </request>
+        </PlanJourney>
+    </soap:Body>
+</soap:Envelope>

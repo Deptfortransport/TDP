@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <soap:Header>
+      <wsa:Action>TransportDirect.EnhancedExposedServices.FindNearest.V1/GetGridReference</wsa:Action>
+      <wsa:MessageID>uuid:560c5262-4f20-429c-b7c0-f08a87cfcaa5</wsa:MessageID>
+      <wsa:ReplyTo>
+        <wsa:Address>http://schemas.xmlsoap.org/ws/2004/03/addressing/role/anonymous</wsa:Address>
+      </wsa:ReplyTo>
+      <wsa:To>http://www.transportdirect.info/FindNearest/V1/FindNearestService.asmx</wsa:To>
+      <wsse:Security soap:mustUnderstand="1">      
+        <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="SecurityToken-30ee039e-e5e8-4e33-ad5c-7e6a10f31ac1">
+          <wsse:Username>EnhancedExposedWebServiceTest</wsse:Username>
+          <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">EnhancedExposedWebServiceTest</wsse:Password>
+          <wsse:Nonce>OXbzeYqhhQ2A/qHbRhn+DQ==</wsse:Nonce>
+          <wsu:Created>2006-01-06T15:38:11Z</wsu:Created>
+        </wsse:UsernameToken>
+      </wsse:Security>
+    </soap:Header>
+    <soap:Body>      
+    </soap:Body>
+  </soap:Envelope>

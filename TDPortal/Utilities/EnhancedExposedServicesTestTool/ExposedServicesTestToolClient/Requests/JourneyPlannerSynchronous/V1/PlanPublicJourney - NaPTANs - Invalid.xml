@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	<PlanPublicJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.JourneyPlannerSynchronous.V1">
+        <transactionId>testJP</transactionId>
+        <language>en-GB</language>
+        <request>
+          <IsReturnRequired>false</IsReturnRequired>
+          <OutwardArriveBefore>false</OutwardArriveBefore>
+          <OutwardDateTime>2014-04-18T18:32:26.2939351-00:00</OutwardDateTime>
+          <InterchangeSpeed>0</InterchangeSpeed>
+          <WalkingSpeed>80</WalkingSpeed>
+          <MaxWalkingTime>5</MaxWalkingTime>
+          <OriginLocation>
+			<Type>NaPTAN</Type>
+			<NaPTANs>
+				<Naptan>
+					<GridReference>
+						<Easting>457421</Easting>
+						<Northing>339204</Northing>
+					</GridReference>
+				</Naptan>
+			</NaPTANs>
+          </OriginLocation>
+          <DestinationLocation>
+			<Type>NaPTAN</Type>
+			<NaPTANs>
+				<Naptan>
+					<NaptanId>9100LESTER</NaptanId>
+				</Naptan>
+			</NaPTANs>
+          </DestinationLocation>
+          <Sequence>1</Sequence>
+        </request>
+      </PlanPublicJourney>
+  </soap:Body>
+</soap:Envelope>

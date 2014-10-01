@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	 <GetGradientProfile xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.GradientProfile.V1">
+      <transactionId>string</transactionId>
+      <request>
+        <Settings>
+          <Resolution>10</Resolution>
+          <EastingNorthingSeperator>44</EastingNorthingSeperator>
+          <PointSeperator>32</PointSeperator>
+        </Settings>
+        <PolylineGroups>
+          <PolylineGroup>
+            <ID>1</ID>
+            <Polylines>
+				<Polyline>
+					<ID>1</ID>
+					<PolylineGridReferences>334906,389873 334895,389852</PolylineGridReferences>
+					<InterpolateGradient>false</InterpolateGradient>
+				</Polyline>
+			</Polylines>
+          </PolylineGroup>
+          <PolylineGroup>
+            <ID>2</ID>
+            <Polylines>
+				<Polyline>
+					<ID>1</ID>
+					<PolylineGridReferences>334895,389852 334779,389900 334745,389914</PolylineGridReferences>
+					<InterpolateGradient>false</InterpolateGradient>
+				</Polyline>
+				<Polyline>
+					<ID>2</ID>
+					<PolylineGridReferences>334745,389914 334660,389948</PolylineGridReferences>
+					<InterpolateGradient>false</InterpolateGradient>
+				</Polyline>
+			</Polylines>
+          </PolylineGroup>
+        </PolylineGroups>
+      </request>
+    </GetGradientProfile>
+  </soap:Body>
+</soap:Envelope>

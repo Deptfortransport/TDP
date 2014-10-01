@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="ExposedServicesTestToolClient" default="build" basedir="./../../../../">
+
+	<!-- Project properties. These should not be altered -->
+    <property name="project.dll.name" value="ExposedServicesTestToolClient"/>
+    <property name="project.src.dir" value="./TransportDirect/Stubs/ExposedServicesTestTool/ExposedServicesTestToolClient" />
+    <property name="project.src.TestWebService.dir" value="./TransportDirect/Stubs/ExposedServicesTestTool/TestWebService" />
+    <property name="project.build.dir" value="${project.src.dir}/bin"/>
+    <property name="project.build.TestWebService.dir" value="${project.src.TestWebService.dir}/bin"/>
+    <property name="project.target.dir" value="C:/inetpub/wwwroot/ExposedServicesTestToolClient"/>
+    <property name="project.target.TestWebService.dir" value="C:/inetpub/wwwroot/TestWebService"/>
+    <property name="solution.externals.dir" value="C:/builds/release_build/build/Externals"/>
+	<property name="package.output.dir" value="C:/test-tool-package"/>
+    <property name="package.zipfile" value="C:/ExposedServicesTestToolClient.zip"/>
+   
+	<!-- Delete the dll and pdb from the project build directory -->
+	<target name="clean" description="removes the build directory">
+		<delete file="${project.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+		<delete file="${project.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+		<delete file="${package.zipfile}" failonerror="false"/>
+		<delete dir="${package.output.dir}" failonerror="false"/>
+	</target>
+
+	<!-- Create the project and solution build directories if necessary -->
+	<target name="init" depends="clean">
+		<mkdir dir="${project.build.dir}"/>
+                <mkdir dir="${project.build.TestWebService.dir}"/>	
+		<mkdir dir="${package.output.dir}"/>
+		<mkdir dir="${package.output.dir}/inetpub/wwwroot"/>	
+		
+		<!-- Ensure that solution.externals.dir is set. Fail if it isn't. -->
+		<if test="${not(property::exists('solution.externals.dir'))}">
+			<fail message="The parameter solution.externals.dir is not set.
+			Please add it as an absolute path to the properties.
+			It should reference the relative directory .\build\Externals
+			"/>
+		</if>
+	
+	</target>
+
+	<!-- Compile the project to its build directory -->
+    <target name="build" depends="init" > <!-- , build_resource" description="Compiles the project"> -->
+		<echo message="Building ${project.dll.name}.dll. Debug=${build.debug}"/>
+		<csc target="library" output="${project.build.dir}/${project.dll.name}.dll" debug="${build.debug}">
+			<sources basedir="${project.src.dir}">
+				<include name="**/*.cs" />
+				<exclude name="**/Test*.cs" unless="${build.debug}"/>
+			</sources>
+
+			<references basedir="C:/builds/release_build/build/Externals">
+				<include name="*.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_1.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_2.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_3.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_4.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_5.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_6.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_7.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_8.dll"/>
+			</references>
+		</csc>
+		<csc target="library" output="${project.build.TestWebService.dir}/${project.dll.name}.dll" debug="${build.debug}">
+			<sources basedir="${project.src.TestWebService.dir}">
+				<include name="**/*.cs" />
+				<exclude name="**/Test*.cs" unless="${build.debug}"/>
+			</sources>
+
+			<references basedir="C:/builds/release_build/build/Externals">
+				<include name="*.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_1.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_2.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_3.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_4.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_5.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_6.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_7.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_8.dll"/>
+			</references>
+		</csc>		
+	</target>
+
+	<!-- Install the Web project into the correct folder -->
+	<target name="install" depends="build">
+		<!-- Perform an IIS reset and delete web cache, if it hasn't been performed already-->
+		<if test="${not(property::exists('iis.reset'))}">
+			<echo message="Performing iisreset"/>
+			<!-- <exec program="cmd" commandline="/C iisreset"/> -->
+			<exec program="iisreset"/>
+		</if>
+
+		<!-- Delete the contents of the existing installed code and web cache-->
+		<echo message="Deleting existing Web application and web cache"/>
+		<delete>
+			<fileset basedir="${project.target.dir}">
+				<includes name="**.*"/> <!-- Note not "**" to avoid deleting the directory -->
+			</fileset>
+		</delete>
+		<delete>
+			<fileset basedir="${project.target.TestWebService.dir}">
+				<includes name="**.*"/> <!-- Note not "**" to avoid deleting the directory -->
+			</fileset>
+		</delete>
+		<delete dir="C:/WINNT/Microsoft.NET/Framework/v1.0.3705/Temporary ASP.NET Files/ExposedServicesTestToolClient" failonerror="false"/>
+		<delete dir="C:/WINDOWS/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/exposedservicestesttoolclient" failonerror="false"/>
+
+		<!-- Create the directory if necessary -->
+		<mkdir dir="${project.target.dir}/bin"/>
+                <mkdir dir="${project.target.TestWebService.dir}/bin"/>
+
+		<echo message="Installing updated deliverables to ${project.target.dir}"/>
+                <echo message="Installing updated deliverables to ${project.target.TestWebService.dir}"/>
+		<!-- Copy across the appropriate binaries -->
+		
+		<!-- Copy the web application files -->
+		<copy todir="${project.target.dir}">
+			<fileset basedir="${project.src.dir}">
+				<include name="**.aspx"/>
+				<include name="**.asmx"/>
+				<include name="**.ascx"/>
+				<include name="**.xsd"/>
+				<include name="**.xml"/>
+				<include name="**.config"/>
+				<include name="**.css"/>
+				<include name="**.asax"/>
+				<include name="**.wsdl"/>
+				<include name="**.txt"/>
+				<include name="**.gif"/>
+				<include name="**.xslt"/>
+				<include name="bin/*.dll"/>
+			</fileset>
+                 </copy>
+                 <copy todir="${project.target.TestWebService.dir}">
+			<fileset basedir="${project.src.TestWebService.dir}">
+				<include name="**.aspx"/>
+				<include name="**.asmx"/>
+				<include name="**.ascx"/>
+				<include name="**.xsd"/>
+				<include name="**.xml"/>
+				<include name="**.config"/>
+				<include name="**.css"/>
+				<include name="**.asax"/>
+				<include name="**.wsdl"/>
+				<include name="**.txt"/>
+				<include name="bin/*.dll"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="package" depends="install">
+		<copy todir="${package.output.dir}/inetpub/wwwroot/ExposedServicesTestToolClient">
+			<fileset basedir="${project.target.dir}">
+				<include name="**.*"/>
+			</fileset>
+		</copy>	
+		<copy todir="${package.output.dir}/inetpub/wwwroot/TestWebService">
+			<fileset basedir="${project.target.TestWebService.dir}">
+				<include name="**.*"/>
+			</fileset>
+		</copy>			
+		<zip zipfile="${package.zipfile}">
+			<fileset basedir="${package.output.dir}">
+				<include name="**"/>
+			</fileset>
+		</zip>
+		
+	</target>	
+	
+</project>

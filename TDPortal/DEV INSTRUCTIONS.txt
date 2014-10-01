@@ -1,0 +1,83 @@
+Setup OVS for TDP development:
+
+Connect to devtfs\TDPortalProjects project collection, and open TDPortal project.
+- In source control map $/TDPortal project to D:\TDPortal 
+- In source control UNMAP $/SJP/Gateway from D:\Gateway	
+- In source control map $/TDPortal/Gateway to D:\Gateway 
+
+- Get Solution from TFS
+
+- Setup databases by running
+D:\TDPortal\Codebase\TransportDirect\Resource\Scripts\Incremental\DEV - SET UP DATABASE.bat
+
+- Add Host file entries, replacing existing entries of same name where applicable:
+10.96.38.89	CP_JP	#OVS9	
+10.96.38.89	JP		#OVS9	
+10.96.38.40	DBM		#DevDB
+10.96.38.40	GAZ		#DevDB
+10.96.38.76	GAZOPS	#DevGIS
+10.96.38.76	GIS		#DevGIS
+10.93.109.54    D01		#For fares
+
+- Update crypto store (assume already installed), run in command prompt
+C:\Windows\Microsoft.NET\Framework\v2.0.50727\aspnet_regiis -pa "TDPCryptStore" "SJP_User"
+
+- IIS settings
+Create virtual directories to: 
+	TDPWebServices - D:\TDPortal\Codebase\TransportDirect\WebServices
+	TransportDirectMapWebService - D:\TDPortal\ThirdParty\ESRI\TransportDirectMapWebService
+	TransportDirectQueryWebService - D:\TDPortal\ThirdParty\ESRI\TransportDirectQueryWebService
+	PageLandingTestTool - D:\TDPortal\Utilities\PageLandingTestTool
+	EnhancedExposedServices - D:\TDPortal\Codebase\TransportDirect\WebServices\EnhancedExposedServices
+	ExposedServicesTestToolClient - D:\TDPortal\Utilities\ExposedServicesTestTool\ExposedServicesTestToolClient
+	TDRemotingHost - D:\TDPortal\Codebase\TransportDirect\Web\TDRemotingHost
+	TDPlannerHost - D:\TDPortal\Codebase\TransportDirect\Web\TDPlannerHost
+	Web2 - D:\TDPortal\Codebase\TransportDirect\Web\Web2
+	TDPMobile - D:\TDPortal\Codebase\TransportDirect2\TDPMobile
+
+Ensure following are applications (Convert to Application if required):
+	TDRemotingHost
+	TDPlannerHost
+	TDPWebServices\CoordinateConvertorService
+	TDPWebServices\EnhancedExposedService
+	TransportDirectMapWebService
+	TransportDirectQueryWebService
+	PageLandingTestTool
+	EnhancedExposedServices
+	ExposedServicesTestToolClient	
+	Web2
+	TDPMobile
+
+Move following to 32Bit_Custom ApplicationPool:
+	TDRemotingHost 
+	CoordinateConvertorService 
+
+- TD solution
+Open and then build the TransportDirect solution.
+Open and then build the TransportDirect2 solution.
+
+-- SMTP
+Ensure the folder D:\Temp exists 
+
+- Fares
+Copy all ini's and dll's in D:\TDPortal\ThirdParty\Atos\RBOStaticDLLs to C:\Windows\SysWOW64\inetsrv\
+
+-- MSMQ
+Ensure the private queue TDPrimaryQueue and TDSecondaryQueue exists (server manager -> features -> Message Queuing)
+Ensure that OVS*\SJP_User has permission to read from and write to the queues
+
+Add local SJP_User to admin group
+
+Browse http://localhost/web2/home.aspx
+Browse http://localhost/TDPMobile/
+
+- EES
+Install WSE 3.0 from here http://www.microsoft.com/en-us/download/details.aspx?id=14089
+Submit an EES request using the local test client http://localhost/ExposedServicesTestToolClient/Templates/ExposedServicePage.aspx
+to the local EES. This will setup application event queue. 
+
+-- SJP_User
+Remove local SJP_User from admin group
+
+- Email
+Set up local smtp server, follow instructions at http://www.vsysad.com/2012/04/setup-and-configure-smtp-server-on-windows-server-2008-r2/

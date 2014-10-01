@@ -1,0 +1,44 @@
+<META xmlns="http://www.w3.org/2002/01/P3Pv1">
+<POLICY-REFERENCES>
+    <POLICY-REF about="/w3c/policy1.xml#Policy1">
+      <INCLUDE>/*</INCLUDE>
+      <COOKIE-INCLUDE name="*" value="*"/>
+	<EXTENSION>
+		<OUR-HOST name="*.transportdirect.info"
+		xmlns="http://www.w3.org/2006/01/P3Pv11" />
+	</EXTENSION>
+    </POLICY-REF>
+    <POLICY-REF about="/w3c/policy1.xml#Policy1">
+      <INCLUDE>/*</INCLUDE>
+      <COOKIE-INCLUDE name="*" value="*"/>
+	<EXTENSION>
+		<OUR-HOST name="*.transportdirect.co.uk"
+		xmlns="http://www.w3.org/2006/01/P3Pv11" />
+	</EXTENSION>
+    </POLICY-REF>
+    <POLICY-REF about="/w3c/policy1.xml#Policy1">
+      <INCLUDE>/*</INCLUDE>
+      <COOKIE-INCLUDE name="*" value="*"/>
+	<EXTENSION>
+		<OUR-HOST name="*.transportdirect.org.uk"
+		xmlns="http://www.w3.org/2006/01/P3Pv11" />
+	</EXTENSION>
+    </POLICY-REF>
+    <POLICY-REF about="/w3c/policy1.xml#Policy1">
+      <INCLUDE>/*</INCLUDE>
+      <COOKIE-INCLUDE name="*" value="*"/>
+	<EXTENSION>
+		<OUR-HOST name="*.transportdirect.com"
+		xmlns="http://www.w3.org/2006/01/P3Pv11" />
+	</EXTENSION>
+    </POLICY-REF>
+    <POLICY-REF about="/w3c/policy1.xml#Policy1">
+      <INCLUDE>/*</INCLUDE>
+      <COOKIE-INCLUDE name="*" value="*"/>
+	<EXTENSION>
+		<OUR-HOST name="*.transportdirect.travel"
+		xmlns="http://www.w3.org/2006/01/P3Pv11" />
+	</EXTENSION>
+    </POLICY-REF>
+</POLICY-REFERENCES>
+</META>

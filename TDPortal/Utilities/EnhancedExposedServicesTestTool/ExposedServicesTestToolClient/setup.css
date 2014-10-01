@@ -1,0 +1,79 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color:#000;
+	background-color:white;
+}
+
+p
+{
+	font-size: 0.7em;
+}
+
+.mainbody
+{
+	width: 800px;
+	padding: 10px;
+}
+
+.floatleft
+{
+	float: left;
+}
+
+.floatright
+{
+	float: right;
+}
+
+.tableInput,
+.tableResultButtons
+{
+	width: 100%;
+	border: solid thin #330099;
+	padding: 5px;	
+	background-color: #99ccff;
+}
+
+.uploadFileInput
+{
+	width: 300px;
+}
+
+.secondsInput
+{
+	width: 40px;
+}
+
+.errorColumn
+{
+	width: 200px;
+}
+
+.requestsLeftLabel
+{
+	font-weight: bold;
+	color: Red;
+}
+
+.resultsGrid
+{
+	width: 800px;
+	font-size: 0.7em;
+}
+
+.resultsGridHeader
+{
+	font-size: 1.0em;
+	font-weight: bold;
+	height: 1.5em;
+	background-color: #CCCCCC;
+	color: #330099;
+}
+
+.resultsGridFooter
+{
+	background-color: #CCCCCC;
+}

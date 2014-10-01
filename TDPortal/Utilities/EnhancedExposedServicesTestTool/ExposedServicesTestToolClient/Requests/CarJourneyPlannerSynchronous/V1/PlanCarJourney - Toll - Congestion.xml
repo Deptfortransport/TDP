@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PlanCarJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1">
+      <transactionId>testCarJourneyPlanner</transactionId>
+	  <request>
+		<JourneyRequests>
+			<JourneyRequest>
+			  <JourneyRequestId>01</JourneyRequestId>
+			  <OriginLocation>
+				<Description>Luton</Description>
+				<Type>Coordinate</Type>
+				<GridReference>
+					<Easting>509200</Easting>
+					<Northing>221600</Northing>
+				</GridReference>
+			  </OriginLocation>
+			  <DestinationLocation>
+				<Description>EC1R 3HN</Description>
+				<Type>Coordinate</Type>
+				<GridReference>
+					<Easting>531261</Easting>
+					<Northing>182230</Northing>
+				</GridReference>
+			  </DestinationLocation>
+			  <OutwardDateTime>2014-04-18T09:00:00</OutwardDateTime>
+			  <ReturnDateTime>2014-04-18T12:00:00</ReturnDateTime>
+			  <OutwardArriveBefore>false</OutwardArriveBefore>
+			  <ReturnArriveBefore>false</ReturnArriveBefore>
+			  <IsReturnRequired>true</IsReturnRequired>
+			</JourneyRequest>
+		</JourneyRequests>
+		<CarParameters>
+		</CarParameters>
+		<ResultSettings>
+			<DistanceUnit>Miles</DistanceUnit>
+		</ResultSettings>
+      </request>
+    </PlanCarJourney>
+  </soap:Body>
+</soap:Envelope>

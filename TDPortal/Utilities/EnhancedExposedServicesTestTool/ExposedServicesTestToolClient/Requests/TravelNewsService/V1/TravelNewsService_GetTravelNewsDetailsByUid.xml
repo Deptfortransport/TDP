@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetTravelNewsDetailsByUid xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1">
+      <transactionId>TransactionId12323</transactionId>
+      <language>en-GB</language>
+      <uid>RTM2170467</uid>
+    </GetTravelNewsDetailsByUid>
+  </soap:Body>
+</soap:Envelope>

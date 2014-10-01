@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	<PlanCycleJourney xmlns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1">
+      <transactionId>testCycleJourneyPlanner</transactionId>
+      <request>
+        <JourneyRequest>
+          <JourneyRequestId>01</JourneyRequestId>
+          <OriginLocation>
+            <Description>LE4 9HL</Description>
+			<Type>Coordinate</Type>
+			<GridReference>
+				<Easting>460900</Easting>
+				<Northing>306783</Northing>
+			</GridReference>
+          </OriginLocation>
+          <DestinationLocation>
+            <Description>LE5 0LF</Description>
+			<Type>Coordinate</Type>
+			<GridReference>
+				<Easting>461273</Easting>
+				<Northing>305895</Northing>
+			</GridReference>
+          </DestinationLocation>
+          <ViaLocation>
+			<Description>LE1 1</Description>
+			<Type>Coordinate</Type>
+			<GridReference>
+				<Easting>459234</Easting>
+				<Northing>304500</Northing>
+			</GridReference>
+		  </ViaLocation>
+          <OutwardDateTime>2014-04-30T15:35:00.0000+01:00</OutwardDateTime>
+          <OutwardArriveBefore>false</OutwardArriveBefore>
+        </JourneyRequest>
+        <CycleParameters/>
+	  <!-- <Algorithm>string</Algorithm>
+          <RequestPreferences>
+            <RequestPreference xsi:nil="true" />
+            <RequestPreference xsi:nil="true" />
+          </RequestPreferences> 
+        </CycleParamters>-->
+        <ResultSettings>
+          <IncludeGeometry>true</IncludeGeometry>
+          <PointSeparator>32</PointSeparator>
+          <EastingNorthingSeparator>44</EastingNorthingSeparator>
+          <DistanceUnit>Miles</DistanceUnit>
+          <Language>en-GB</Language>
+        </ResultSettings>
+      </request>
+    </PlanCycleJourney>
+  </soap:Body>
+</soap:Envelope>
