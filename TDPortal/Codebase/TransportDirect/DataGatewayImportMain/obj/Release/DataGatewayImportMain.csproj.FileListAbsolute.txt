@@ -1,0 +1,15 @@
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.dataimport.exe.config
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.dataimport.exe
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.common.propertyservice.databasepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.datagateway.framework.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\DataGatewayImportMain\obj\Release\td.dataimport.exe

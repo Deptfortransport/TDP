@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E73E56B4-CAC4-4B50-8BE9-7E17B305A262}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.enhancedexposedservices.datatransfer</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.EnhancedExposedServices.DataTransfer</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <Name>nunit.framework</Name>
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <Name>td.CJPInterface</Name>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Name>AdditionalDataModule</Name>
+      <Project>{1BF668A4-F9B2-4D64-85CB-ADD80C432849}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerControl\CyclePlannerControl.csproj">
+      <Project>{2E288B42-FABF-487E-B8D8-64AD18B90208}</Project>
+      <Name>CyclePlannerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{2E16F073-D95F-4DE8-8E60-381899A722DA}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DepartureBoardService\DepartureBoardService.csproj">
+      <Name>DepartureBoardService</Name>
+      <Project>{1CEE342F-B3DF-44AD-A56B-1B861292E016}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalLinkService\ExternalLinkService.csproj">
+      <Name>ExternalLinkService</Name>
+      <Project>{CD02DA6B-D3DE-4617-A58A-53DF11554B63}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyControl\JourneyControl.csproj">
+      <Name>JourneyControl</Name>
+      <Project>{27414D3D-9782-44C6-A5BD-A11ECEA591E5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyEmissions\JourneyEmissions.csproj">
+      <Project>{9737FC5A-5F4E-4CF3-8C52-918D64F59849}</Project>
+      <Name>JourneyEmissions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Name>LocationService</Name>
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\FilePropertyProvider\FilePropertyProvider.csproj">
+      <Project>{A3CB7929-0F74-4625-AB84-349C041B9B62}</Project>
+      <Name>FilePropertyProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Name>ResourceManager</Name>
+      <Project>{C0EADF9C-59D2-45EA-A67D-09CA8999746C}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\SessionManager.csproj">
+      <Name>SessionManager</Name>
+      <Project>{6F189D8B-6F30-4FC3-8EFC-5E3001A8C862}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TravelNewsInterface\TravelNewsInterface.csproj">
+      <Name>TravelNewsInterface</Name>
+      <Project>{E699CD07-D144-4EB4-929B-09AE4E0E01EC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TravelNews\TravelNews.csproj">
+      <Name>TravelNews</Name>
+      <Project>{D0CC64DB-B860-4087-8B51-1DCD6FE7C41F}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+
+    <Compile Include="CarJourneyPlanner\V1\CarCost.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarCostHelper.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarCostType.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarJourney.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarJourneyDetail.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarJourneyDetailFormatter.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarJourneyPlannerAssembler.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarJourneyResult.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarAlgorithmType.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarJourneyRequest.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarJourneySummary.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarParameters.cs" />
+    <Compile Include="CarJourneyPlanner\V1\CarSizeType.cs" />
+    <Compile Include="CarJourneyPlanner\V1\DistanceUnit.cs" />
+    <Compile Include="CarJourneyPlanner\V1\Emissions.cs" />
+    <Compile Include="CarJourneyPlanner\V1\FuelConsumptionUnit.cs" />
+    <Compile Include="CarJourneyPlanner\V1\FuelType.cs" />
+    <Compile Include="CarJourneyPlanner\V1\LocationType.cs" />
+    <Compile Include="CarJourneyPlanner\V1\JourneyRequest.cs" />
+    <Compile Include="CarJourneyPlanner\V1\RequestLocation.cs" />
+    <Compile Include="CarJourneyPlanner\V1\JourneyResult.cs" />
+    <Compile Include="CarJourneyPlanner\V1\ResponseLocation.cs" />
+    <Compile Include="CarJourneyPlanner\V1\ResultSettings.cs" />
+    <Compile Include="CarJourneyPlanner\V1\ResultType.cs" />
+    <Compile Include="CarJourneyPlanner\V1\VehicleType.cs" />
+    <Compile Include="CodeHandler\V1\CodeServiceAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeHandler\V1\CodeServiceCodeDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeHandler\V1\CodeServiceCodeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeHandler\V1\CodeServiceModeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeHandler\V1\CodeServiceRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeHandler\V1\Test\TestCodeServiceAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\CommonAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\CompletionStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\FuelRetailer.cs" />
+    <Compile Include="Common\V1\Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\Naptan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\OSGridReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\StatusType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\Test\TestCommonAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\V1\TimeSpan.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleAlgorithmAssembler.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleAttributeAssembler.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleJourneyDetailFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CycleJourneyPlanner\V1\CycleJourneyPlannerAssembler.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleAlgorithm.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleAttribute.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleCost.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleCostType.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleJourney.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleJourneyDetail.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleJourneyRequest.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleJourneyResult.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleJourneySummary.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleParameters.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleRequestPreference.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\CycleRequestPreferenceAssembler.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\DistanceUnit.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\JourneyRequest.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\JourneyResult.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\LocationType.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\RequestLocation.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\RequestPreference.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\ResponseLocation.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\ResultSettings.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\Test\TestCycleJourneyPlannerAssembler.cs" />
+    <Compile Include="CycleJourneyPlanner\V1\Test\TestMockCyclePlannerFromFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceActivityType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceCallingStopStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceCodeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceInternalRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceItinerary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceRangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceRealTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceRealTimeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceStopInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceTimeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceTimeRequestType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceTrainRealTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardServiceType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\Test\TestDepartureBoardAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindNearest\v1\FindNearestAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindNearest\v1\FindNearestFuelGenie.cs" />
+    <Compile Include="FindNearest\v1\NaptanProximity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindNearest\v1\NaptanType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindNearest\v1\Test\TestFindNearestAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GradientProfile\V1\GradientProfileAssembler.cs" />
+    <Compile Include="GradientProfile\V1\GradientProfileRequest.cs" />
+    <Compile Include="GradientProfile\V1\GradientProfileResult.cs" />
+    <Compile Include="GradientProfile\V1\HeightPoint.cs" />
+    <Compile Include="GradientProfile\V1\HeightPointGroup.cs" />
+    <Compile Include="GradientProfile\V1\Polyline.cs" />
+    <Compile Include="GradientProfile\V1\PolylineGroup.cs" />
+    <Compile Include="GradientProfile\V1\Settings.cs" />
+    <Compile Include="JourneyPlanner\V1\JourneyPlannerAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\JourneySummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\LegType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\LocationType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\ModeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\PublicAlgorithmType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\PublicJourney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\PublicJourneyCallingPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\PublicJourneyCallingPointType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\PublicJourneyDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\PublicJourneyRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\PublicJourneyResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\RequestLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\ResponseLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\ServiceDetails.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\Test\TestJourneyPlannerAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\VehicleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\ActivityType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Coordinate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Days.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Event.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\IntermediateStopsType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Leg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\LegType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\MessageType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\OpenJourneyPlannerAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\OperatorCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Operators.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\PublicAlgorithmType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\PublicJourney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\PublicParameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\RangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Request.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\RequestPlace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\RequestPlaceType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\RequestService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\RequestServiceType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\RequestStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Result.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Service.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\ServiceFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Stop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Test\TestOpenJourneyPlannerAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\TransportMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\TransportModes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\TransportModeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\WindowOfOpportunity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxiInformation\V1\TaxiInformationAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxiInformation\V1\TaxiInformationOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxiInformation\V1\TaxiInformationStopDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxiInformation\V1\Test\TestTaxiInformationAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\Test\TestTravelNewsAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsAssembler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsServiceDelayType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsServiceHeadlineItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsServiceNewsItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsServiceRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsServiceSeverityLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsServiceTransportType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="bin\Debug\ec1r3hn_paddington_BusOnly.xml" />
+    <Content Include="bin\Debug\FindNearestITNs1.xml" />
+    <Content Include="bin\Debug\FindStopsInGroupForStops1.xml" />
+    <Content Include="bin\Debug\FindStopsInGroupForStops2.xml" />
+    <Content Include="bin\Debug\InvalidJourneyResult.xml" />
+    <Content Include="bin\Debug\Inverness_Folkstone_Xml_Journey_Request.xml" />
+    <Content Include="bin\Debug\Inverness_Folkstone_Xml_Journey_Result.xml" />
+    <Content Include="bin\Debug\Inverness_Folkstone_Xml_Journey_Return_Result.xml" />
+    <Content Include="bin\Debug\nw90ps_ec1r3hn_return_sametimewarning.xml" />
+    <Content Include="bin\Debug\td.enhancedexposedservices.datatransfer.properties.xml" />
+    <None Include="bin\Debug\td.enhancedexposedservices.datatransfer.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CarJourneyPlanner\V1\Test\" />
+    <Folder Include="GradientProfile\V1\Test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

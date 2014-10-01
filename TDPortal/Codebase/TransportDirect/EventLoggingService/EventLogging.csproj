@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.common.logging</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.Common.Logging</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>SAK</SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <Name>nunit.framework</Name>
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Name>System.Messaging</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+
+    <Compile Include="ConsolePublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEmailEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEmailPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEventFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEventLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEventSwitch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefaultFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmailPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventPublisherGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilePublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEventFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEventFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEventPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Keys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoggingPropertyValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperationalEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperationalEventConsoleFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperationalEventEmailFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperationalEventEventLogFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperationalEventFileFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperationalEventFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PublisherGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueuePublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDEventCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDTraceLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDTraceLevelOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDTraceListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDTraceSwitch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestConsolePublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestCustomEmailPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestCustomEventSwitch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestEmailPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestEventLogPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestFilePublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomEventOne.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomEventOneConsoleFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomEventOneEmailFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomEventOneEventLogFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomEventOneFileFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomEventTwo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCustomPublishers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestOperationalEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestPublisherFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestQueuePublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestTDTraceListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestTDTraceSwitch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="bin\Debug\td.common.logging.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

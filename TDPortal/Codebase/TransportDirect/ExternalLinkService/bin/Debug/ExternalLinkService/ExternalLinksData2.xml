@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExternalLinksTestData>
+	<externallinks id="guardian" url="www.guardian.co.uk" testurl="TestURL www.guardian.co.uk" valid="1" description="URL for guardian"/>
+	<externallinks id="if" url="www.if.com" testurl="TESTURLwww.if.com" valid="1" description="URL for Intelligent Finance"/>
+	<externallinks id="channel4" url="Updatedwww.channel4.com" testurl="Updated testurl for channel 4" valid="1" description="updated URL for channel 4"/>
+</ExternalLinksTestData>

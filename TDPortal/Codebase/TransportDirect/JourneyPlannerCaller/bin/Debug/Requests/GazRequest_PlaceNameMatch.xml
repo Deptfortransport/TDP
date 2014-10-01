@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PlaceNameMatch xmlns="http://www.esriuk.com/gazops">
+      <sPlaceNameDescription>Beeston Railway Station</sPlaceNameDescription>
+      <bFuzzy>true</bFuzzy>
+      <lPlaceNameSizeMax>10</lPlaceNameSizeMax>
+      <lPlaceNameSizeMin>1</lPlaceNameSizeMin>
+      <gazid>MAJSTAT3</gazid>
+      <envelope></envelope>
+      <lMaxReturnRecords>10</lMaxReturnRecords>
+      <securityToken></securityToken>
+    </PlaceNameMatch>
+  </soap:Body>
+</soap:Envelope>

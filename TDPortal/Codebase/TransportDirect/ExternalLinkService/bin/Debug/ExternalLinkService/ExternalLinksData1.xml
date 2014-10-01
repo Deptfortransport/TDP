@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExternalLinksTestData>
+	<externallinks id="google" url="www.google.co.uk" testurl="TESTURLwww.google.co.uk" valid="0" description="URL for google"/>
+	<externallinks id="traffic" url="www.trafficengland.co.uk" testurl="test url for www.trafficengland.co.uk" valid="1" description="URL for trafficengland"/>
+	<externallinks id="channel4" url="www.channel4.com" testurl="testurl for channel 4" valid="0" description="URL for channel 4"/>
+</ExternalLinksTestData>

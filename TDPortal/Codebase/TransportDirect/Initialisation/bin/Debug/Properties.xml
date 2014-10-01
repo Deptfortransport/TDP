@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="">30000</property>
+  <property name="propertyservice.version" GID="" AID="">1</property>
+
+  <property name="Logging.Publisher.Console" GID="" AID=""></property>
+  <property name="Logging.Publisher.Custom" GID="" AID=""></property>
+  <property name="Logging.Publisher.Default" GID="" AID="">F1</property>
+  <property name="Logging.Publisher.Email" GID="" AID=""></property>
+  <property name="Logging.Publisher.EventLog" GID="" AID=""></property>
+  <property name="Logging.Publisher.File" GID="" AID="">F1</property>
+  <property name="Logging.Publisher.File.F1.Directory" GID="" AID="">D:\Temp</property>
+  <property name="Logging.Publisher.File.F1.Rotation" GID="" AID="">1024</property>
+  <property name="Logging.Publisher.Queue" GID="" AID=""></property>
+  <property name="Logging.Publisher.Queue.WorkloadQueue.Path" GID="" AID=""></property>
+  <property name="Logging.Publisher.Queue.WorkloadQueue.Delivery" GID="" AID=""></property>
+  <property name="Logging.Publisher.Queue.WorkloadQueue.Priority" GID="" AID=""></property>
+
+  <property name="Logging.Event.Custom.Trace" GID="" AID="">Off</property>
+  <property name="Logging.Event.Custom" GID="" AID=""></property>
+
+  <property name="Logging.Event.Operational.TraceLevel" GID="" AID="">Info</property>
+  <property name="Logging.Event.Operational.Info.Publishers" GID="" AID="">F1</property>
+  <property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="">F1</property>
+  <property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="">F1</property>
+  <property name="Logging.Event.Operational.Error.Publishers" GID="" AID="">F1</property>
+
+  <property name="ASPStateDB" GID="" AID="">Data Source=.\SQLEXPRESS;Initial Catalog=ASPState;Pooling=False;Timeout=30;User id=SJP_User;Password=!password!1</property>
+  <property name="UserInfoDB" GID="" AID="">Data Source=.\SQLEXPRESS;Initial Catalog=TDUserInfo;Pooling=False;Timeout=30;User id=SJP_User;Password=!password!1</property>
+  <property name="DefaultDB" GID="" AID="">Data Source=.\SQLEXPRESS;Initial Catalog=PermanentPortal;Pooling=False;Timeout=30;User id=SJP_User;Password=!password!1</property>
+  <property name="TransientPortalDB" GID="" AID="">Data Source=.\SQLEXPRESS;Initial Catalog=TransientPortal;Pooling=False;Timeout=30;User id=SJP_User;Password=!password!1</property>
+  <property name="TransientPortalDB" GID="SqlHelperGroup" AID="TestSqlHelper">Data Source=.\SQLEXPRESS;Initial Catalog=TransientPortal;Pooling=False;Timeout=30;User id=SJP_User;Password=!password!1</property>
+
+  <property name="usersupport.encryptionkey" GID="" AID="">mVMJbFV19FOiXCgcvXiKLfNJHUgjmjL6PgKjTUb1XF8=</property>
+  <property name="usersupport.encryptioniv" GID="" AID="">AIZaKZ0dTmCgigipXXGh6g==</property>
+
+  <property name="FindA.NaptanPrefix.Airport" GID="" AID="">9200</property>
+  <property name="FindA.NaptanPrefix.AirportVia" GID="" AID="">920F</property>
+  <property name="FindA.NaptanPrefix.Rail" GID="" AID="">9100</property>
+  <property name="FindA.NaptanPrefix.Coach" GID="" AID="">9000</property>
+
+  <property name="journeyparameters.eveningtime" GID="" AID="">21:00</property>
+  <property name="journeyparameters.morningtime" GID="" AID="">7:00</property>
+  <property name="journeyparameters.minutestoadd" GID="" AID="">15</property>
+
+  <property name="datagateway.sqlimport.airportlinks.database" GID="DataGateway" AID="">TransientPortalDB</property>
+  <property name="datagateway.sqlimport.airportlinks.schemea" GID="DataGateway" AID="">D:\Gateway\xml\AirportLinks.xsd</property>
+  <property name="datagateway.sqlimport.airportlinks.storedprocedure" GID="DataGateway" AID="">ImportAirportLinksData</property>
+  <property name="datagateway.sqlimport.airportlinks.xmlnamespace" GID="DataGateway" AID="">http://www.transportdirect.info/AirportLinks</property>
+  <property name="datagateway.sqlimport.airportlinks.xmlnamespacexsi" GID="DataGateway" AID="">http://www.w3.org/2001/XMLSchema-instance</property>
+  <property name="datagateway.sqlimport.airportlinks.xmlschemalocation" GID="DataGateway" AID="">http://www.transportdirect.info/AirportLinks.xsd</property>
+  <property name="datagateway.sqlimport.airportlinks.feedname" GID="DataGateway" AID="">pik611</property>
+  <property name="datagateway.sqlimport.airportlinks.Name" GID="DataGateway" AID="">airportlinks</property>
+
+</lookup>

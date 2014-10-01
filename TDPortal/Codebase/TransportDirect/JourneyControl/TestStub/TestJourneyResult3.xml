@@ -1,0 +1,1460 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<JourneyResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <messages>
+    <Message>
+      <code>516</code>
+      <description>Code 516 : Error at: {http://217.34.160.179/scripts/xmlplanner.dll}</description>
+    </Message>
+    <Message>
+      <code>1</code>
+      <description>No results found</description>
+    </Message>
+    <Message>
+      <code>2</code>
+      <description>System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+
+Server stack trace: 
+   at System.Runtime.Remoting.Channels.Http.HttpClientTransportSink.ProcessResponseException(WebException webException, HttpWebResponse&amp; response)
+   at System.Runtime.Remoting.Channels.Http.HttpClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders&amp; responseHeaders, Stream&amp; responseStream)
+   at System.Runtime.Remoting.Channels.SoapClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   at TransportDirect.JourneyPlanning.RoadHost.RoadHost.JourneyPlan(CJPRequest request)
+   at TransportDirect.JourneyPlanning.CJP.JourneyHandlers.PrivateJourneyHandler.JourneyPlan()</description>
+    </Message>
+  </messages>
+  <privateJourneys>
+    <PrivateJourney>
+      <startTime>0001-01-01T00:00:00.0000000-00:00</startTime>
+      <beforePublicJourney>false</beforePublicJourney>
+      <congestion>false</congestion>
+      <sections>
+        <Section xsi:type="DriveSection">
+          <distance>0</distance>
+          <turnCount>0</turnCount>
+          <turnDirection>Left</turnDirection>
+          <turnAngle>Turn</turnAngle>
+          <roundabout>false</roundabout>
+          <toll>0</toll>
+          <throughRoute>false</throughRoute>
+          <cost>0</cost>
+          <links>
+            <ITNLink>
+              <TOID>osgb4000000023390305</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023452744</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023452743</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023390304</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023390302</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023390301</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023430141</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023452739</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023430127</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023390299</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023297047</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263910</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023274735</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023452761</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023452758</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023297070</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023339208</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263911</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023259454</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023405549</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023353528</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023305245</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023439853</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023266173</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258450</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258448</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023338669</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023256597</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023451010</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263255</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023385455</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023451001</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023273427</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023385407</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258257</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258250</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023293914</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023293913</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023273328</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258247</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263194</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258242</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263187</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263180</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023256582</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263134</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023273136</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263121</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023256580</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023273097</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023293456</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023273085</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263099</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258206</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258204</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023263080</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258168</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258094</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272427</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023330427</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272423</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262724</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258087</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262706</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262695</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262692</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262688</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272340</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272315</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023291760</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272311</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262657</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272306</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272301</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262647</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023272248</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258043</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023258036</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023257855</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023327850</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023256317</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271479</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271477</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271474</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023262083</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023256530</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023257832</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023261966</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271328</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023290371</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271322</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023261963</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023257768</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023421939</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023448447</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023261950</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271268</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023261909</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023261906</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271226</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271224</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023257420</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023257416</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023270336</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023420392</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023375770</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023325016</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023260371</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023414977</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023445133</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023414979</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023268299</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023260372</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023261892</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023377828</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023271205</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023290115</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023377829</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023327148</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023377830</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023327149</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+            <ITNLink>
+              <TOID>osgb4000000023290119</TOID>
+              <congestion>0</congestion>
+            </ITNLink>
+          </links>
+        </Section>
+      </sections>
+      <start>
+        <name>Start point</name>
+        <node>
+          <TOID>osgb4000000023186956</TOID>
+        </node>
+      </start>
+      <finish>
+        <name>Finish point</name>
+        <node>
+          <TOID>osgb4000000023142971</TOID>
+        </node>
+      </finish>
+    </PrivateJourney>
+  </privateJourneys>
+  <publicJourneys>
+    <PublicJourney>
+      <legs>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T08:08:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DPBS8060</NaPTANID>
+              <name>Pilsley: Bridge St adj Rother St</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T08:08:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DPCS6150</NaPTANID>
+              <name>Pilsley: Church St adj Pear Tree Rd</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T08:08:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DPCS6150</NaPTANID>
+              <name>Pilsley: Church St adj Pear Tree Rd</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T08:32:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBS198</NaPTANID>
+              <name>Chesterfield: New Beetwell St. (F3)</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach East Midlands</operatorName>
+              <serviceNumber>96</serviceNumber>
+              <destinationBoard>Chesterfield: New Beetwell St. (F3)</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T08:32:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBS198</NaPTANID>
+              <name>Chesterfield: New Beetwell St. (F3)</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T08:39:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBSF70</NaPTANID>
+              <name>Chesterfield: New Beetwell St (F7)</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T08:45:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBSF70</NaPTANID>
+              <name>Chesterfield: New Beetwell St (F7)</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:15:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DSI00067</NaPTANID>
+              <name>Sheffield: Interchange</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach East Midlands</operatorName>
+              <serviceNumber>747</serviceNumber>
+              <destinationBoard>Meadowhall: Interchange</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:15:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DSI00067</NaPTANID>
+              <name>Sheffield: Interchange</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:22:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100SHEFFLD</NaPTANID>
+              <name>SHEFFIELD Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:46:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100SHEFFLD</NaPTANID>
+              <name>SHEFFIELD Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:07:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LINCLNC</NaPTANID>
+              <name>LINCOLN CENTRAL Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Arriva Nthn</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LINCOLN CENTRAL Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:07:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LINCLNC</NaPTANID>
+              <name>LINCOLN CENTRAL Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:17:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCB2616</NaPTANID>
+              <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:22:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCB2616</NaPTANID>
+              <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:37:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCA1656</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Roadcar</operatorName>
+              <serviceNumber>SB7</serviceNumber>
+              <destinationBoard>Lincoln: Melville St, City Bus Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:37:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCA1656</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:37:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>270000007518</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+      </legs>
+    </PublicJourney>
+    <PublicJourney>
+      <legs>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:00:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DPBS8060</NaPTANID>
+              <name>Pilsley: Bridge St adj Rother St</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:27:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DACR4332</NaPTANID>
+              <name>Alfreton: Cressy Road adj High Street</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach East Midlands</operatorName>
+              <serviceNumber>96</serviceNumber>
+              <destinationBoard>Peasehill Estate: PeaseHill adj PeaseCl</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:41:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DACR4332</NaPTANID>
+              <name>Alfreton: Cressy Road adj High Street</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:45:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DAMR2128</NaPTANID>
+              <name>Alfreton: Mansfield Rd o/s Rail Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Trent Barton</operatorName>
+              <serviceNumber>92</serviceNumber>
+              <destinationBoard>Mansfield: Bus Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:45:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DAMR2128</NaPTANID>
+              <name>Alfreton: Mansfield Rd o/s Rail Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:52:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ALFRETN</NaPTANID>
+              <name>ALFRETON Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T10:03:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ALFRETN</NaPTANID>
+              <name>ALFRETON Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T10:25:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100NTNG</NaPTANID>
+              <name>NOTTINGHAM Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Central</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>NORWICH Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T10:33:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100NTNG</NaPTANID>
+              <name>NOTTINGHAM Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:29:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LINCLNC</NaPTANID>
+              <name>LINCOLN CENTRAL Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Central</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LINCOLN CENTRAL Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:29:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LINCLNC</NaPTANID>
+              <name>LINCOLN CENTRAL Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:39:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCB2616</NaPTANID>
+              <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:52:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCB2616</NaPTANID>
+              <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:07:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCA1656</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Roadcar</operatorName>
+              <serviceNumber>SB7</serviceNumber>
+              <destinationBoard>Lincoln: Melville St, City Bus Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T12:07:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCA1656</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:07:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>270000007518</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+      </legs>
+    </PublicJourney>
+    <PublicJourney>
+      <legs>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:08:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DPBS8060</NaPTANID>
+              <name>Pilsley: Bridge St adj Rother St</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:08:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DPCS6150</NaPTANID>
+              <name>Pilsley: Church St adj Pear Tree Rd</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:08:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DPCS6150</NaPTANID>
+              <name>Pilsley: Church St adj Pear Tree Rd</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:32:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBS198</NaPTANID>
+              <name>Chesterfield: New Beetwell St. (F3)</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach East Midlands</operatorName>
+              <serviceNumber>96</serviceNumber>
+              <destinationBoard>Chesterfield: New Beetwell St. (F3)</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:32:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBS198</NaPTANID>
+              <name>Chesterfield: New Beetwell St. (F3)</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:39:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBSF70</NaPTANID>
+              <name>Chesterfield: New Beetwell St (F7)</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:45:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DCNBSF70</NaPTANID>
+              <name>Chesterfield: New Beetwell St (F7)</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T10:15:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DSI00067</NaPTANID>
+              <name>Sheffield: Interchange</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach East Midlands</operatorName>
+              <serviceNumber>747</serviceNumber>
+              <destinationBoard>Meadowhall: Interchange</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T10:15:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>1000DSI00067</NaPTANID>
+              <name>Sheffield: Interchange</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T10:22:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100SHEFFLD</NaPTANID>
+              <name>SHEFFIELD Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T10:46:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100SHEFFLD</NaPTANID>
+              <name>SHEFFIELD Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:06:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LINCLNC</NaPTANID>
+              <name>LINCOLN CENTRAL Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Arriva Nthn</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LINCOLN CENTRAL Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T12:06:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LINCLNC</NaPTANID>
+              <name>LINCOLN CENTRAL Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:16:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCB2616</NaPTANID>
+              <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T12:22:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCB2616</NaPTANID>
+              <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:37:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCA1656</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Roadcar</operatorName>
+              <serviceNumber>SB7</serviceNumber>
+              <destinationBoard>Lincoln: Melville St, City Bus Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T12:37:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>2700LLCA1656</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:37:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>270000007518</NaPTANID>
+              <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+      </legs>
+    </PublicJourney>
+  </publicJourneys>
+</JourneyResult>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ExchangePointQuery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <X>459385</X>
+  <Y>304100</Y>
+  <Radius>100000</Radius>
+  <Mode>Rail</Mode>
+  <Maximum>100</Maximum>
+  <QueryFunction>FindExchangePointsInRadius</QueryFunction>
+</ExchangePointQuery>

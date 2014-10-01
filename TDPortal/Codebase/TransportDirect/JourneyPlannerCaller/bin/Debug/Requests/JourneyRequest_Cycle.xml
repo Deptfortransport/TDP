@@ -1,0 +1,97 @@
+<JourneyRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<referenceTransaction xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">false</referenceTransaction>
+<requestID xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">0000-0000-0001-7901-0000</requestID>
+<language xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">en-GB</language>
+<sessionID xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">ksrmijfrxa0wmurzck0hhv55</sessionID>
+<userType xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">0</userType>
+<depart xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">true</depart>
+<penaltyFunction xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">Call C:\CyclePlanner\Services\RoadInterfaceHostingService\td.cp.CyclePenaltyFunctions.v2.dll, TransportDirect.JourneyPlanning.CyclePenaltyFunctions.QuietestV912</penaltyFunction>
+<origin xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">
+<givenName>M1</givenName>
+<timeDate>2010-05-19T16:10:00</timeDate>
+<roadPoints />
+<coordinate>
+<easting>384479</easting>
+<northing>398016</northing>
+</coordinate>
+</origin>
+<destination xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">
+<givenName>M24</givenName>
+<timeDate>0001-01-01T00:00:00</timeDate>
+<roadPoints />
+<coordinate>
+<easting>386769</easting>
+<northing>406510</northing>
+</coordinate>
+</destination>
+<journeyResultSettings xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">
+<includeToids>true</includeToids>
+<includeGeometry>true</includeGeometry>
+<includeText>true</includeText>
+<pointSeparator>32</pointSeparator>
+<eastingNorthingSeparator>44</eastingNorthingSeparator>
+</journeyResultSettings>
+<vias xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface" />
+<userPreferences xmlns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">
+<UserPreference>
+<parameterID>0</parameterID>
+<parameterValue>850</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>1</parameterID>
+<parameterValue>11000</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>2</parameterID>
+<parameterValue>Congestion</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>3</parameterID>
+<parameterValue>false</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>4</parameterID>
+<parameterValue>Bicycle</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>5</parameterID>
+<parameterValue>19</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>6</parameterID>
+<parameterValue>False</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>7</parameterID>
+<parameterValue>false</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>8</parameterID>
+<parameterValue>false</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>9</parameterID>
+<parameterValue>false</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>10</parameterID>
+<parameterValue />
+</UserPreference>
+<UserPreference>
+<parameterID>11</parameterID>
+<parameterValue />
+</UserPreference>
+<UserPreference>
+<parameterID>12</parameterID>
+<parameterValue>False</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>13</parameterID>
+<parameterValue>False</parameterValue>
+</UserPreference>
+<UserPreference>
+<parameterID>14</parameterID>
+<parameterValue>False</parameterValue>
+</UserPreference>
+</userPreferences>
+</JourneyRequest>

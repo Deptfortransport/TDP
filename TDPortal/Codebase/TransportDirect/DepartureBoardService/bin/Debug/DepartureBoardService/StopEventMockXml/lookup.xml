@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<lookup>
+	<query fromto="defaultd">template.xml</query>	
+	<query fromto="gldsgldsstndstndd">template.xml</query>
+	<query fromto="sglgata36243843a">BristolToEdinburghCoachArrive.xml</query>
+	<query fromto="sglgata36243843ac">BristolToEdinburghCoachArriveStops.xml</query>
+	<query fromto="sglgata36243843d">BristolToEdinburghCoachDepart.xml</query>
+	<query fromto="sglgata36243843dc">BristolToEdinburghCoachDepartStops.xml</query>
+	<query fromto="sglgatahalagpjta">BristolToRuncornCoachArrive.xml</query>
+	<query fromto="sglgatahalagpjtac">BristolToRuncornCoachArriveStops.xml</query>
+	<query fromto="sglgatahalagpjtd">BristolToRuncornCoachDepart.xml</query>
+	<query fromto="sglgatahalagpjtdc">BristolToRuncornCoachDepartStops.xml</query>
+	<query fromto="coradwtdbristol1a">PenzanceToBristolCoachArrive.xml</query>
+	<query fromto="coradwtdbristol1ac">PenzanceToBristolCoachArriveStops.xml</query>
+	<query fromto="coradwtdbristol1d">PenzanceToBristolCoachDepart.xml</query>
+	<query fromto="coradwtdbristol1dc">PenzanceToBristolCoachDepartStops.xml</query>
+	<query fromto="coradwtd36243843a">PenzanceToEdinburghCoachArrive.xml</query>
+	<query fromto="coradwtd36243843ac">PenzanceToEdinburghCoachArriveStops.xml</query>
+	<query fromto="coradwtd36243843d">PenzanceToEdinburghCoachDepart.xml</query>
+	<query fromto="coradwtd36243843dc">PenzanceToEdinburghCoachDepartStops.xml</query>
+	<query fromto="sglgataa">BristolCoachArrive.xml</query>
+	<query fromto="sglgatad">BristolCoachDepart.xml</query>
+	<query fromto="sglgataac">BristolCoachArriveStops.xml</query>
+	<query fromto="sglgatadc">BristolCoachDepartStops.xml</query>
+	<query fromto="eusdc">template.xml</query>
+	<query fromto="eusmandc">template.xml</query>	
+</lookup>

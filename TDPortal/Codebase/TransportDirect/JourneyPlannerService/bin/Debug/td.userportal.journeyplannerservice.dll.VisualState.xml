@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1026]D:\TDPortal\Codebase\TransportDirect\JourneyPlannerService\bin\Debug\td.userportal.journeyplannerservice.dll</TopNode>
+  <SelectedNode>[0-1023]TransportDirect.UserPortal.JourneyPlannerService.TestJourneyRequestHelper.CallCJPJourneyCheckForReturnOverlap</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1026]D:\TDPortal\Codebase\TransportDirect\JourneyPlannerService\bin\Debug\td.userportal.journeyplannerservice.dll" Expanded="true" />
+    <Node UniqueName="[0-1027]TransportDirect" Expanded="true" />
+    <Node UniqueName="[0-1028]TransportDirect.UserPortal" Expanded="true" />
+    <Node UniqueName="[0-1029]TransportDirect.UserPortal.JourneyPlannerService" Expanded="true" />
+    <Node UniqueName="[0-1014]TransportDirect.UserPortal.JourneyPlannerService.TestJourneyRequestHelper" Expanded="true" />
+  </Nodes>
+</VisualState>

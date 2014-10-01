@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FindNearestCarParksQuery>
+  <Easting>459385</Easting>
+  <Northing>304100</Northing>
+  <MaxRadius>1000</MaxRadius>
+  <InitialRadius>500</InitialRadius>
+  <MaxNoCarParks>50</MaxNoCarParks>
+  <QueryFunction>FindNearestCarParks</QueryFunction>
+  <GisResultPath/>
+</FindNearestCarParksQuery>

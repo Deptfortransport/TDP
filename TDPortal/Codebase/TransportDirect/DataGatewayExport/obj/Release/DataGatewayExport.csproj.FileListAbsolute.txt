@@ -1,0 +1,15 @@
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.dataexport.exe
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.common.propertyservice.databasepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.reportdataprovider.tdpcustomevents.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\td.enhancedexposedservices.common.dll
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\DataGatewayExport\obj\Release\td.dataexport.exe

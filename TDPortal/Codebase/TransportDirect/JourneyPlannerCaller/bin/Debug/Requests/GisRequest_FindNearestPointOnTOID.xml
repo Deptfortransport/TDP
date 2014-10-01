@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FindNearestQuery>
+  <X>459385</X>
+  <Y>304100</Y>
+  <MaxDistance>1000</MaxDistance>
+  <SearchDistance>0</SearchDistance>
+  <NaptanIds>
+    </NaptanIds>
+  <StopTypes>
+   </StopTypes>
+  <Address></Address>
+  <IgnoreMotorways>
+     false
+  </IgnoreMotorways>
+  <ToId>4000000016007590</ToId>
+  <QueryFunction>FindNearestStops</QueryFunction>
+  <GisResultPath/>
+
+</FindNearestQuery>

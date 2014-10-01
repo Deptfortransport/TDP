@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DBSStopEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Type>BusCoach</Type>
+	<CallingStopStatus>HasCallingStops</CallingStopStatus>
+	<Departure>
+		<ActivityType>Depart</ActivityType>
+		<DepartTime>2005-01-25T18:33:54.6396525-00:00</DepartTime>
+		<ArriveTime>2005-01-25T18:33:54.6396525-00:00</ArriveTime>
+		<RealTime>
+			<DepartTime>2005-01-25T18:38:54.6396525-00:00</DepartTime>
+			<DepartTimeType>Estimated</DepartTimeType>
+			<ArriveTime>0001-01-01T00:00:00.0000000-00:00</ArriveTime>
+			<ArriveTimeType>Estimated</ArriveTimeType>
+		</RealTime>
+		<Stop>
+			<NaptanId>9100PENZNCE</NaptanId>
+			<Name>Penzance coach station</Name>
+		</Stop>
+	</Departure>
+	<PreviousIntermediates>
+		<DBSEvent>
+			<ActivityType>Depart</ActivityType>
+			<DepartTime>2005-01-25T19:33:54.6396525-00:00</DepartTime>
+			<ArriveTime>2005-01-25T19:33:54.6396525-00:00</ArriveTime>
+			<RealTime>
+				<DepartTime>2005-01-25T19:38:54.6396525-00:00</DepartTime>
+				<DepartTimeType>Estimated</DepartTimeType>
+				<ArriveTime>2005-01-25T19:38:54.6396525-00:00</ArriveTime>
+				<ArriveTimeType>Estimated</ArriveTimeType>
+			</RealTime>
+			<Stop>
+				<NaptanId>9100BRSTPWY</NaptanId>
+				<Name>Bristol coach station</Name>
+			</Stop>
+		</DBSEvent>
+		<DBSEvent>
+			<ActivityType>Depart</ActivityType>
+			<DepartTime>2005-01-25T19:33:54.6396525-00:00</DepartTime>
+			<ArriveTime>2005-01-25T19:33:54.6396525-00:00</ArriveTime>
+			<RealTime>
+				<DepartTime>2005-01-25T19:38:54.6396525-00:00</DepartTime>
+				<DepartTimeType>Estimated</DepartTimeType>
+				<ArriveTime>2005-01-25T19:38:54.6396525-00:00</ArriveTime>
+				<ArriveTimeType>Estimated</ArriveTimeType>
+			</RealTime>
+			<Stop>
+				<NaptanId>9100RUNCORN</NaptanId>
+				<Name>Runcorn coach station</Name>
+			</Stop>
+		</DBSEvent>
+	</PreviousIntermediates>
+	<Stop>
+		<ActivityType>Arrive</ActivityType>
+		<DepartTime>2005-01-25T19:33:54.6396525-00:00</DepartTime>
+		<ArriveTime>2005-01-25T19:33:54.6396525-00:00</ArriveTime>
+		<RealTime>
+			<DepartTime>2005-01-25T19:38:54.6396525-00:00</DepartTime>
+			<DepartTimeType>Estimated</DepartTimeType>
+			<ArriveTime>2005-01-25T19:38:54.6396525-00:00</ArriveTime>
+			<ArriveTimeType>Estimated</ArriveTimeType>
+		</RealTime>
+		<Stop>
+			<NaptanId>9100EDINBUR</NaptanId>
+			<Name>Edinburgh coach station</Name>
+		</Stop>
+	</Stop>
+	<OnwardIntermediates />
+	<Service>
+		<OperatorCode>NX</OperatorCode>
+		<OperatorName>National Express</OperatorName>
+		<ServiceNumber>A6</ServiceNumber>
+	</Service>
+</DBSStopEvent>

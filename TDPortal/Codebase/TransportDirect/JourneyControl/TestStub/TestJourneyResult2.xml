@@ -1,0 +1,428 @@
+﻿<?xml version="1.0"?>
+<JourneyResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<publicJourneys>
+    <PublicJourney>
+    <legs>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T08:30:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>270000007518</NaPTANID>
+            <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T08:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LLCB2616</NaPTANID>
+            <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>Roadcar</operatorName>
+            <serviceNumber>SB8</serviceNumber>
+            <destinationBoard>Lincoln: Melville St, City Bus Station</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:00:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LLCB2616</NaPTANID>
+            <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T10:15:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LSMP2847</NaPTANID>
+            <name>Spilsby: High Street</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>Roadcar</operatorName>
+            <serviceNumber>6</serviceNumber>
+            <destinationBoard>Skegness: Richmond Drive, Bus Station</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T10:35:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LSMP2847</NaPTANID>
+            <name>Spilsby: High Street</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:00:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LAMP0024</NaPTANID>
+            <name>Alford: S Market Pl, Library and Clinic</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>TransLinc</operatorName>
+            <serviceNumber>6D</serviceNumber>
+            <destinationBoard>Alford: S Market Pl, Library and Clinic</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+        <mode>Walk</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:00:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LAMP0024</NaPTANID>
+            <name>Alford: S Market Pl, Library and Clinic</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:00:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LACA5841</NaPTANID>
+            <name>Alford: Coles Avenue, Higgins Road</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName />
+            <serviceNumber />
+            <destinationBoard />
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        <typicalDuration>0</typicalDuration>
+        </Leg>
+    </legs>
+    </PublicJourney>
+    <PublicJourney>
+    <legs>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T09:30:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>270000007518</NaPTANID>
+            <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T09:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LLCB2616</NaPTANID>
+            <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>Roadcar</operatorName>
+            <serviceNumber>SB8</serviceNumber>
+            <destinationBoard>Lincoln: Melville St, City Bus Station</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T10:00:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LLCB2616</NaPTANID>
+            <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T11:15:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LSMP2847</NaPTANID>
+            <name>Spilsby: High Street</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>Roadcar</operatorName>
+            <serviceNumber>6</serviceNumber>
+            <destinationBoard>Skegness: Richmond Drive, Bus Station</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:35:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LSMP2847</NaPTANID>
+            <name>Spilsby: High Street</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:00:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LAMP0024</NaPTANID>
+            <name>Alford: S Market Pl, Library and Clinic</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>TransLinc</operatorName>
+            <serviceNumber>6E</serviceNumber>
+            <destinationBoard>Alford: S Market Pl, Library and Clinic</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+        <mode>Walk</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T12:00:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LAMP0024</NaPTANID>
+            <name>Alford: S Market Pl, Library and Clinic</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:00:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LACA5841</NaPTANID>
+            <name>Alford: Coles Avenue, Higgins Road</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName />
+            <serviceNumber />
+            <destinationBoard />
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        <typicalDuration>0</typicalDuration>
+        </Leg>
+    </legs>
+    </PublicJourney>
+    <PublicJourney>
+    <legs>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T10:30:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>270000007518</NaPTANID>
+            <name>Lincoln: Chatterton Avenue</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T10:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LLCB2616</NaPTANID>
+            <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>Roadcar</operatorName>
+            <serviceNumber>SB8</serviceNumber>
+            <destinationBoard>Lincoln: Melville St, City Bus Station</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T11:00:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LLCB2616</NaPTANID>
+            <name>Lincoln: Melville St, City Bus Station</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T12:15:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LSMP2847</NaPTANID>
+            <name>Spilsby: High Street</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>Roadcar</operatorName>
+            <serviceNumber>6</serviceNumber>
+            <destinationBoard>Skegness: Richmond Drive, Bus Station</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+        <mode>Bus</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T12:35:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LSMP2847</NaPTANID>
+            <name>Spilsby: High Street</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T13:00:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LAMP0024</NaPTANID>
+            <name>Alford: S Market Pl, Library and Clinic</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName>TransLinc</operatorName>
+            <serviceNumber>6D</serviceNumber>
+            <destinationBoard>Alford: S Market Pl, Library and Clinic</destinationBoard>
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+        <mode>Walk</mode>
+        <validated>false</validated>
+        <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-06-17T13:00:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LAMP0024</NaPTANID>
+            <name>Alford: S Market Pl, Library and Clinic</name>
+            </stop>
+        </board>
+        <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-06-17T13:00:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+            <NaPTANID>2700LACA5841</NaPTANID>
+            <name>Alford: Coles Avenue, Higgins Road</name>
+            </stop>
+        </alight>
+        <services>
+            <Service>
+            <operatorName />
+            <serviceNumber />
+            <destinationBoard />
+            <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+            <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+            <openEnded>false</openEnded>
+            </Service>
+        </services>
+        <typicalDuration>0</typicalDuration>
+        </Leg>
+    </legs>
+    </PublicJourney>
+</publicJourneys>
+</JourneyResult>

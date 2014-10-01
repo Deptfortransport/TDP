@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Alan Gawthorpe (Thales Information Systems) -->
+<xs:schema targetNamespace="http://www.thales-is.com/rtti/EnquriyPorts/v6/rttiEPTSchema.xsd" xmlns="http://www.thales-is.com/rtti/EnquriyPorts/v6/rttiEPTSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="6.0">
+	<!--Copyright (c) 2003 Thales Information Systems Ltd-->
+	<!--Project 753 ATOC REAL TIME TRAIN INFORMATION-->
+	<!--ENQUIRY PORTS SCHEMA-->
+	<!-- $Header: /src/EnquiryPortSchema/rttiEPTSchema_V6.xsd 4     22/11/05 14:04 Ic $ -->
+	<!-- Last few changes:
+			03/02/2005
+				Created version 5.0
+				Added message categories and severity
+				Added platforms
+			25/08/2005
+				Improved Msg element to represent HTML content as XML elements
+			13/09/2005
+				No further comments: released as version 5 of the schema
+			20/09/2005
+				Created version 6.0
+				Added RunningReq and RunningResp elements
+				Changed to use complex types
+			03/10/2005
+				Renamed RunningReq and RunningResp to be TOCTrainReq and Resp.
+				Added time to TOCTrainsReq
+			17/11/2005
+				Fixed erroneous version attribute in xs:schema
+			22/11/2005
+				Released as version 6.0
+	-->
+	<xs:element name="Eport">
+		<xs:annotation>
+			<xs:documentation>The root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="StationReq" type="StationReqType">
+					<xs:annotation>
+						<xs:documentation>Request information on a specific station</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="StationResp" type="StationRespType">
+					<xs:annotation>
+						<xs:documentation>Information on a specific station</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TrainReq" type="TrainReqType">
+					<xs:annotation>
+						<xs:documentation>Request information on a specific train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TrainResp" type="TrainDataType" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Information on a specific train</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TripReq" type="TripReqType">
+					<xs:annotation>
+						<xs:documentation>Request extended station information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TripResp" type="TripRespType">
+					<xs:annotation>
+						<xs:documentation>Extended station information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TOCTrainsReq" type="TOCTrainsReqType">
+					<xs:annotation>
+						<xs:documentation>Request for information on trains currently running for a particular TOC</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TOCTrainsResp" type="TOCTrainsRespType">
+					<xs:annotation>
+						<xs:documentation>The trains currently running for a particular TOC</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FailureResp" type="FailureRespType">
+					<xs:annotation>
+						<xs:documentation>Failure Response</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="msgId" type="MsgIdType" use="required">
+				<xs:annotation>
+					<xs:documentation>Message ID string defined by client when making the enquiry.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="ts" type="RTTIDateTimeType" use="required">
+				<xs:annotation>
+					<xs:documentation>Local timestamp</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="version" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>The version number of the schema that defines this message</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--Simple Types-->
+	<xs:simpleType name="FullTiplocType">
+		<xs:annotation>
+			<xs:documentation>Full Tiploc Type (may include spaces which must be preserved)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="8"/>
+			<xs:maxLength value="8"/>
+			<xs:whiteSpace value="preserve"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TiplocType">
+		<xs:annotation>
+			<xs:documentation>Tiploc Type (This is the short version of a TIPLIC - without spaces)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="7"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="UIDType">
+		<xs:annotation>
+			<xs:documentation>Train UID Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RIDType">
+		<xs:annotation>
+			<xs:documentation>RTTI Train ID Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="16"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TOCType">
+		<xs:annotation>
+			<xs:documentation>ATOC Code Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MIMsgType">
+		<xs:annotation>
+			<xs:documentation>Manual intervention Message Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ErrorMsgType">
+		<xs:annotation>
+			<xs:documentation>Error Message Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="128"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CategoryType">
+		<xs:annotation>
+			<xs:documentation>Category Type  JJ=Join, VV=Split</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="JJ"/>
+			<xs:enumeration value="VV"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DateIndType">
+		<xs:annotation>
+			<xs:documentation>Date Indicator Type S=Standard, N=Over next midnight, P=Over previous midnight</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="S"/>
+			<xs:enumeration value="N"/>
+			<xs:enumeration value="P"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AssociationType">
+		<xs:annotation>
+			<xs:documentation>Association Type P=Passenger Use, O=Operating Use</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="P"/>
+			<xs:enumeration value="O"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MsgIdType">
+		<xs:annotation>
+			<xs:documentation>Client Supplied Message ID Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="32"/>
+			<xs:minLength value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CrsType">
+		<xs:annotation>
+			<xs:documentation>CRS Code Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ActivityType">
+		<xs:annotation>
+			<xs:documentation>Activity Type (a set of 6 x 2 character strings).  Full details are provided in Common Interface File End User Specification.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="12"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TrainIdType">
+		<xs:annotation>
+			<xs:documentation>Train ID or Head Code Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CancellationCodeType">
+		<xs:annotation>
+			<xs:documentation>Cancellation Code Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:int"/>
+	</xs:simpleType>
+	<xs:simpleType name="LateRunningCodeType">
+		<xs:annotation>
+			<xs:documentation>Late Running Code Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:int"/>
+	</xs:simpleType>
+	<xs:simpleType name="ErrorCodeType">
+		<xs:annotation>
+			<xs:documentation>Error Code Type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="32"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RTTITimeType">
+		<xs:annotation>
+			<xs:documentation>RTTI Time Type (HH:MM)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-1][0-9]|2[0-3]):[0-5][0-9]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RTTIDateType">
+		<xs:annotation>
+			<xs:documentation>RTTI Date Type (basic XML date)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:date"/>
+	</xs:simpleType>
+	<xs:simpleType name="RTTIDateTimeType">
+		<xs:annotation>
+			<xs:documentation>RTTI DateTime Type (basic XML date/time)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:dateTime"/>
+	</xs:simpleType>
+	<xs:simpleType name="ArrivalDepartureType">
+		<xs:annotation>
+			<xs:documentation>Set to show interest</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="arrive"/>
+			<xs:enumeration value="depart"/>
+			<xs:enumeration value="both"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="QOSType">
+		<xs:annotation>
+			<xs:documentation>Indicates the quality of the services running (as in punctuality)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:float"/>
+	</xs:simpleType>
+	<xs:simpleType name="TimeWindowType">
+		<xs:annotation>
+			<xs:documentation>A duration supplied for enhanced requests</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="720"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RunningWindowType">
+		<xs:annotation>
+			<xs:documentation>A duration supplied for train running requests</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="120"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SuffixType">
+		<xs:annotation>
+			<xs:documentation>Denotes the suffix for the TIPLOC that an association occurs</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MsgCategoryType">
+		<xs:annotation>
+			<xs:documentation>The category of operator message</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="Train"/>
+			<xs:enumeration value="Station"/>
+			<xs:enumeration value="Connections"/>
+			<xs:enumeration value="System"/>
+			<xs:enumeration value="Misc"/>
+			<xs:enumeration value="PriorTrains"/>
+			<xs:enumeration value="PriorOther"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MsgSeverityType">
+		<xs:annotation>
+			<xs:documentation>The severity of operator message</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PlatformType">
+		<xs:annotation>
+			<xs:documentation>Defines a platform number</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--Complex types-->
+	<xs:complexType name="ToTiplocType">
+		<xs:annotation>
+			<xs:documentation>A TIPLOC that is a destination and can have a via</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TiplocType">
+				<xs:attribute name="via" type="xs:string" use="optional">
+					<xs:annotation>
+						<xs:documentation>Via text displayed if available for the train at this location.  Indicates the route that the train will take</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="TrainDataType">
+		<xs:annotation>
+			<xs:documentation>Data representing the calling points of a train</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="OR" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Origin(s) of the train</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="ftl" type="FullTiplocType" use="required">
+						<xs:annotation>
+							<xs:documentation>Full TIPLOC</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="act" type="ActivityType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Activity Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="ptd" type="RTTITimeType" use="required">
+						<xs:annotation>
+							<xs:documentation>Public Timetabled Departure</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="etd" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Estimated Time of Departure</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="atd" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Actual Time of Departure</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="can" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Cancelled</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="cc" type="CancellationCodeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Cancellation Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="lrc" type="LateRunningCodeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Late Running Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="fd" type="TiplocType" use="optional">
+						<xs:annotation>
+							<xs:documentation>False destination for the location</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="odetd" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates the train should be displayed overdue on departure from this location</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="deld" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates this train has had its departure marked delayed</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IP" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Intermediate stopping Points</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="ftl" type="FullTiplocType" use="required">
+						<xs:annotation>
+							<xs:documentation>Full TIPLOC</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="act" type="ActivityType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Activity Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="pta" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Public Time of Arrival</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="ptd" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Public Time of Departure</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="eta" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Estimated Time of Arrival</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="ata" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Actual Time of Arrival</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="etd" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Estimated Time of Departure</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="atd" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Actual Time of Departure</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="can" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Cancelled</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="cc" type="CancellationCodeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Cancellation Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="lrc" type="LateRunningCodeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Late Running Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="fd" type="TiplocType" use="optional">
+						<xs:annotation>
+							<xs:documentation>False destination for the location</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="odeta" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates the train should be displayed overdue on arrival at this location</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="odetd" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates the train should be displayed overdue on departure from this location</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="dela" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates this train has had its arrival marked delayed</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="deld" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates this train has had its departure marked delayed</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DT" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Destination(s)</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="ftl" type="FullTiplocType" use="required">
+						<xs:annotation>
+							<xs:documentation>Full TIPLOC</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="act" type="ActivityType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Activity Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="pta" type="RTTITimeType" use="required">
+						<xs:annotation>
+							<xs:documentation>Public Time of Arrival</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="eta" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Estimated Time of Arrival</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="ata" type="RTTITimeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Actual Time of Arrival</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="can" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Cancelled</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="cc" type="CancellationCodeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Cancellation Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="lrc" type="LateRunningCodeType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Late Running Code</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="odeta" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates the train should be displayed overdue on arrival at this location</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="dela" type="xs:boolean" use="optional" default="false">
+						<xs:annotation>
+							<xs:documentation>Indicates this train has had its arrival marked delayed</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AS" type="TrainAssociationType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Association</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice minOccurs="0">
+				<xs:element name="OdAt">
+					<xs:complexType>
+						<xs:attribute name="loc" type="FullTiplocType" use="required"/>
+						<xs:attribute name="time" type="RTTITimeType" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="OdBetween">
+					<xs:complexType>
+						<xs:attribute name="after" type="FullTiplocType" use="required"/>
+						<xs:attribute name="before" type="FullTiplocType" use="required"/>
+						<xs:attribute name="time" type="RTTITimeType" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="uid" type="UIDType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Train UID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="rid" type="RIDType" use="required">
+			<xs:annotation>
+				<xs:documentation>RTTI Train ID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="trainId" type="TrainIdType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Train ID or Head Code</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ssd" type="RTTIDateType" use="required">
+			<xs:annotation>
+				<xs:documentation>Schedule Departure Date from Origin</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="toc" type="TOCType" use="optional">
+			<xs:annotation>
+				<xs:documentation>ATOC Code</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="TrainAtStopType">
+		<xs:annotation>
+			<xs:documentation>Defines the data for a train at a stopping point</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="From" type="TiplocType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Set of FROM locations (may be multiple locations due to associations)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="To" type="ToTiplocType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Set of TO locations (may be multiple locations due to associations)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="pta" type="RTTITimeType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Public Time of Arrival</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="eta" type="RTTITimeType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Estimated Time of Arrival</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ata" type="RTTITimeType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Actual Time of Arrival</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ptd" type="RTTITimeType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Public Time of Departure</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="etd" type="RTTITimeType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Estimated Time of Departure</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="atd" type="RTTITimeType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Actual Time of Departure</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="toc" type="TOCType" use="optional">
+			<xs:annotation>
+				<xs:documentation>ATOC Code</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="cr" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Circular Route - true if the train calls at this station again in its remaining journey</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="uid" type="UIDType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Train UID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="rid" type="RIDType" use="required">
+			<xs:annotation>
+				<xs:documentation>RTTI Train ID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="can" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Indicates that the train has been cancelled at this location</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="odeta" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Indicates the train should be displayed overdue on arrival at this location</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="odetd" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Indicates the train should be displayed overdue on departure from this location</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="dela" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Indicates this train has had its arrival marked delayed</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="deld" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Indicates this train has had its departure marked delayed</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="plat" type="PlatformType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="StationReqType">
+		<xs:annotation>
+			<xs:documentation>Defines a request for station information</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="ByCRS">
+				<xs:annotation>
+					<xs:documentation>By Station CRS Code</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="crs" type="CrsType" use="required">
+						<xs:annotation>
+							<xs:documentation>Station CRS</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ByTIPLOC">
+				<xs:annotation>
+					<xs:documentation>By Tiploc Code.  This resolves to a Station</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="tl" type="TiplocType" use="required">
+						<xs:annotation>
+							<xs:documentation>Station TIPLOC</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="HTMLParagraphType" mixed="true">
+		<xs:annotation>
+			<xs:documentation>Defines an HTML paragraph</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="a" type="HTMLAnchorType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HTMLAnchorType">
+		<xs:annotation>
+			<xs:documentation>Defines an HTML anchor</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="href" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="MessageType" mixed="true">
+		<xs:annotation>
+			<xs:documentation>Defines a message displayed at a station</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="p" type="HTMLParagraphType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="a" type="HTMLAnchorType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="cat" type="MsgCategoryType" use="required"/>
+		<xs:attribute name="sev" type="MsgSeverityType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="TrainReqType">
+		<xs:annotation>
+			<xs:documentation>Defines the request for train information</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="ByUID">
+				<xs:annotation>
+					<xs:documentation>By Train UID</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="uid" type="UIDType" use="required">
+						<xs:annotation>
+							<xs:documentation>Train UID</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="ssd" type="xs:date" use="required">
+						<xs:annotation>
+							<xs:documentation>Scheduled Start Date</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ByRID">
+				<xs:annotation>
+					<xs:documentation>By RTTI Train ID</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="rid" type="RIDType" use="required">
+						<xs:annotation>
+							<xs:documentation>RTTI Train RID</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ByID">
+				<xs:annotation>
+					<xs:documentation>By Train ID</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="trainId" type="TrainIdType" use="required"/>
+					<xs:attribute name="time" type="xs:dateTime" use="optional">
+						<xs:annotation>
+							<xs:documentation>This is the start time and date of the journey.  A time window is applied to this time if present, and all Train IDs that fall inside the window will be returned.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="TripReqType">
+		<xs:annotation>
+			<xs:documentation>Defines the request for extended station information</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="ByCRS">
+				<xs:annotation>
+					<xs:documentation>The request is using CRS codes</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="main" type="CrsType" use="required">
+						<xs:annotation>
+							<xs:documentation>The location of interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="interest" type="ArrivalDepartureType" use="optional" default="both">
+						<xs:annotation>
+							<xs:documentation>Whether arrivals or departures are the interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="time" type="xs:dateTime" use="optional">
+						<xs:annotation>
+							<xs:documentation>The time of interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="secondary" type="CrsType" use="optional">
+						<xs:annotation>
+							<xs:documentation>The secondary location of interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="dur" type="TimeWindowType" use="optional" default="120"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ByTIPLOC">
+				<xs:annotation>
+					<xs:documentation>The request is using TIPLOC codes</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="main" type="TiplocType" use="required">
+						<xs:annotation>
+							<xs:documentation>The location of interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="interest" type="ArrivalDepartureType" use="optional" default="both">
+						<xs:annotation>
+							<xs:documentation>Whether arrivals or departures are the interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="time" type="xs:dateTime" use="optional">
+						<xs:annotation>
+							<xs:documentation>The time of interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="secondary" type="TiplocType" use="optional">
+						<xs:annotation>
+							<xs:documentation>The secondary location of interest</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="dur" type="TimeWindowType" use="optional" default="120"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="TOCTrainsReqType">
+		<xs:annotation>
+			<xs:documentation>Defines a request for TOC based current running information</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="toc" type="TOCType" use="required"/>
+		<xs:attribute name="time" type="xs:dateTime" use="optional"/>
+		<xs:attribute name="window" type="RunningWindowType" use="optional" default="60"/>
+	</xs:complexType>
+	<xs:complexType name="StationRespType">
+		<xs:annotation>
+			<xs:documentation>Defines the response for a station information request</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Msg" type="MessageType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TAS" type="TrainAtStopType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="crs" type="CrsType" use="required">
+			<xs:annotation>
+				<xs:documentation>Station CRS</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="suppress" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>If true, then the information has been suppressed by the system operators</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="TripRespType">
+		<xs:annotation>
+			<xs:documentation>Defines the response to an for extended station information request</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Msg" type="MessageType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TAS" type="TrainAtStopType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="crs" type="CrsType" use="required">
+			<xs:annotation>
+				<xs:documentation>The CRS code of the station being queried</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="qos" type="QOSType" use="required">
+			<xs:annotation>
+				<xs:documentation>Gives an idea of the punctuality of the journeys returned</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="trunc" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Indicates whether this return has been truncated (the server has a maximum number of train details it will return per request)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="suppress" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>If true, then the information has been suppressed by the system operators</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="TOCTrainsRespType">
+		<xs:annotation>
+			<xs:documentation>Defines the response to a TOC based current running information request</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="Train" type="TrainDataType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FailureRespType" mixed="true">
+		<xs:annotation>
+			<xs:documentation>Defines the response used to report failures</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Error">
+				<xs:complexType>
+					<xs:attribute name="code" use="required">
+						<xs:annotation>
+							<xs:documentation>Error Code</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="ErrorCodeType">
+								<xs:minLength value="1"/>
+								<xs:maxLength value="32"/>
+								<xs:whiteSpace value="preserve"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="msg" use="optional">
+						<xs:annotation>
+							<xs:documentation>Error Text Message</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="ErrorMsgType">
+								<xs:minLength value="0"/>
+								<xs:maxLength value="128"/>
+								<xs:whiteSpace value="preserve"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrainAssociationType">
+		<xs:annotation>
+			<xs:documentation>Defines an association between two trains</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ASM">
+				<xs:annotation>
+					<xs:documentation>Main Train</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="uid" type="UIDType" use="optional"/>
+					<xs:attribute name="rid" type="RIDType" use="required"/>
+					<xs:attribute name="sfx" type="SuffixType" use="optional">
+						<xs:annotation>
+							<xs:documentation>The TIPLOC suffix that the association occurs at on this journey</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ASA">
+				<xs:annotation>
+					<xs:documentation>Associated Train</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="uid" type="UIDType" use="optional"/>
+					<xs:attribute name="rid" type="RIDType" use="required"/>
+					<xs:attribute name="sfx" type="SuffixType" use="optional">
+						<xs:annotation>
+							<xs:documentation>The TIPLOC suffix that the association occurs at on this journey</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="cat" type="CategoryType" use="required">
+			<xs:annotation>
+				<xs:documentation>Category</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="dateInd" type="DateIndType" use="required">
+			<xs:annotation>
+				<xs:documentation>Date Indicator</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="aType" type="AssociationType" use="required">
+			<xs:annotation>
+				<xs:documentation>Association Type</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="tpl" type="TiplocType" use="required"/>
+	</xs:complexType>
+</xs:schema>

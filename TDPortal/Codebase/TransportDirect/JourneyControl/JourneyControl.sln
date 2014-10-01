@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JourneyControl", "JourneyControl.csproj", "{27414D3D-9782-44C6-A5BD-A11ECEA591E5}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = /DEL5/TransportDirect/JourneyControl?PVCS\u0020Version\u0020Manager?P:\\TDPortal?
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:PVCS\u0020TrackerLink
+		CanCheckoutShared = true
+		SolutionUniqueID = {EE05011E-6295-4134-953F-96FC9E6C99B8}
+		SccProjectUniqueName1 = JourneyControl.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{27414D3D-9782-44C6-A5BD-A11ECEA591E5}.Debug.ActiveCfg = Debug|.NET
+		{27414D3D-9782-44C6-A5BD-A11ECEA591E5}.Debug.Build.0 = Debug|.NET
+		{27414D3D-9782-44C6-A5BD-A11ECEA591E5}.Release.ActiveCfg = Release|.NET
+		{27414D3D-9782-44C6-A5BD-A11ECEA591E5}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

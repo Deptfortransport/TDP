@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<InternationalPlannerTestData>
+	<Country>
+		<country CountryCode="GB" CountryCodeIANA="UK" CountryAdminCodeUIC="1234" CountryTimeZoneHours="0" CountrySchedulesRequired="Y" /> 
+		<country CountryCode="FR" CountryCodeIANA="FR" CountryAdminCodeUIC="4567" CountryTimeZoneHours="1" CountrySchedulesRequired="Y" /> 
+		<country CountryCode="BE" CountryCodeIANA="BG" CountryAdminCodeUIC="4567" CountryTimeZoneHours="1" CountrySchedulesRequired="Y" /> 
+	</Country>
+	<CountryJourney>
+		<countryjourney DepartureCountryCode="GB" ArrivalCountryCode="FR" /> 
+		<countryjourney DepartureCountryCode="FR" ArrivalCountryCode="GB" /> 
+		<countryjourney DepartureCountryCode="GB" ArrivalCountryCode="BE" /> 
+		<countryjourney DepartureCountryCode="BE" ArrivalCountryCode="GB" /> 
+	</CountryJourney>
+	<InternationalStop>
+		<internationalstop StopCode="LHR"	StopNaPTAN="9200LHR"	StopType="A"	StopName="London Heathrow"	StopOSGREasting="312345"	StopOSGRNorthing="412345"	StopCountryCode="GB"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL="www.google.co.uk"	StopDeparturesDescription="Departure URL"	StopAccessabilityURL="www.google.co.uk"	StopAccessabilityDescription="Accessability URL" />
+		<internationalstop StopCode="CDG"	StopNaPTAN="9200CDG"	StopType="A"	StopName="Charles de gaule"	StopOSGREasting="354321"	StopOSGRNorthing="454321"	StopCountryCode="FR"	StopTerminalNumber="1"	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="XXX"	StopNaPTAN="9200XXX"	StopType="X"	StopName="Invalid stop type"	StopOSGREasting="123456"	StopOSGRNorthing="123456"	StopCountryCode="GB"	StopTerminalNumber=""	StopInformationURL=""	StopInformationDescription=""	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="91007015400"	StopNaPTAN="91007015400"	StopType="R"	StopName="London St Pancras"	StopOSGREasting="312345"	StopOSGRNorthing="354321"	StopCountryCode="GB"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="91008700804"	StopNaPTAN="91008700804"	StopType="R"	StopName="Paris"	StopOSGREasting="312345"	StopOSGRNorthing="354321"	StopCountryCode="FR"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="91008700035"	StopNaPTAN="91008700035"	StopType="R"	StopName="Lille"	StopOSGREasting="312345"	StopOSGRNorthing="354321"	StopCountryCode="FR"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="91009876543"	StopNaPTAN="91009876543"	StopType="R"	StopName="Brussels"	StopOSGREasting="312345"	StopOSGRNorthing="354321"	StopCountryCode="BE"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="90001234123"	StopNaPTAN="90001234123"	StopType="C"	StopName="Leicester St Margarets"	StopOSGREasting="312345"	StopOSGRNorthing="354321"	StopCountryCode="GB"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="90004567123"	StopNaPTAN="90004567123"	StopType="C"	StopName="London Victoria"	StopOSGREasting="312345"	StopOSGRNorthing="354321"	StopCountryCode="GB"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+		<internationalstop StopCode="90004321123"	StopNaPTAN="90004321123"	StopType="C"	StopName="Paris Bus Station"	StopOSGREasting="312345"	StopOSGRNorthing="354321"	StopCountryCode="FR"	StopTerminalNumber=""	StopInformationURL="www.google.co.uk"	StopInformationDescription="Information URL"	StopDeparturesURL=""	StopDeparturesDescription=""	StopAccessabilityURL=""	StopAccessabilityDescription="" />
+	</InternationalStop>
+	<InternationalCity>
+		<internationalcity CityName="London"	CityCountryCode="GB"	CityURL="www.london.com"	CityOSGREasting="312345"	CityOSGRNorthing="414321" />
+		<internationalcity CityName="Paris"	CityCountryCode="FR"	CityURL="www.paris.com"	CityOSGREasting="322345"	CityOSGRNorthing="424321" />
+		<internationalcity CityName="Lille"	CityCountryCode="FR"	CityURL="www.lille.com"	CityOSGREasting="332345"	CityOSGRNorthing="434321" />
+		<internationalcity CityName="Brussels"	CityCountryCode="BE"	CityURL="www.brussels.com"	CityOSGREasting="342345"	CityOSGRNorthing="444321" />
+	</InternationalCity>
+	<InternationalCityStop>
+		<internationalcitystop CityId="1"	StopNaPTAN="9200LHR"	TransferTimeMinutes="60"	TransferInformation="60 minutes from airport to city" />
+		<internationalcitystop CityId="2"	StopNaPTAN="9200CDG"	TransferTimeMinutes="30"	TransferInformation="30 minutes from airport to city" />
+		<internationalcitystop CityId="1"	StopNaPTAN="91007015400"	TransferTimeMinutes="45"	TransferInformation="45 minutes from station to city" />
+		<internationalcitystop CityId="2"	StopNaPTAN="91008700804"	TransferTimeMinutes="25"	TransferInformation="25 minutes from station to city" />
+		<internationalcitystop CityId="3"	StopNaPTAN="91008700035"	TransferTimeMinutes="60"	TransferInformation="60 minutes from station to city" />
+		<internationalcitystop CityId="4"	StopNaPTAN="91009876543"	TransferTimeMinutes="60"	TransferInformation="60 minutes from station to city" />
+		<internationalcitystop CityId="1"	StopNaPTAN="90004567123"	TransferTimeMinutes="20"	TransferInformation="20 minutes from coach station to city" />
+		<internationalcitystop CityId="2"	StopNaPTAN="90004321123"	TransferTimeMinutes="40"	TransferInformation="40 minutes from coach station to city" />
+	</InternationalCityStop>
+	<StopDistances>
+		<StopDistances OriginStopCode="90004321123" DestinationStopCode="90004567123" Distance="2000000" />
+		<StopDistances OriginStopCode="90004567123" DestinationStopCode="90004321123" Distance="2000000" />
+		<StopDistances OriginStopCode="91007015400" DestinationStopCode="91008700804" Distance="1500000" />
+		<StopDistances OriginStopCode="91008700804" DestinationStopCode="91007015400" Distance="1500000" />
+		<StopDistances OriginStopCode="CDG" DestinationStopCode="LHR" Distance="2500000" />
+		<StopDistances OriginStopCode="LHR" DestinationStopCode="CDG" Distance="2500000" />
+	</StopDistances>
+	<InterchangeTime>
+		<interchangetime FromNaPTAN="9200LHR"	ToNaPTAN="920FLHR"	FromOperator=""	ToOperator=""	InterchangeTimeMinutes="60" />
+		<interchangetime FromNaPTAN="9200LHR"	ToNaPTAN="920FLHR"	FromOperator="BA"	ToOperator=""	InterchangeTimeMinutes="45" />
+		<interchangetime FromNaPTAN="9200LHR"	ToNaPTAN="920FLHR"	FromOperator="AF"	ToOperator=""	InterchangeTimeMinutes="30" />
+		<interchangetime FromNaPTAN="920FCDG"	ToNaPTAN="9200CDG"	FromOperator=""	ToOperator=""	InterchangeTimeMinutes="60" />
+		<interchangetime FromNaPTAN="920FCDG"	ToNaPTAN="9200CDG"	FromOperator="BA"	ToOperator=""	InterchangeTimeMinutes="15" />
+		<interchangetime FromNaPTAN="920FCDG"	ToNaPTAN="9200CDG"	FromOperator="AF"	ToOperator=""	InterchangeTimeMinutes="25" />
+		<interchangetime FromNaPTAN="91007015400"	ToNaPTAN="910F7015400"	FromOperator=""	ToOperator=""	InterchangeTimeMinutes="30" />
+		<interchangetime FromNaPTAN="910F8700804"	ToNaPTAN="91008700804"	FromOperator=""	ToOperator=""	InterchangeTimeMinutes="30" />
+		<interchangetime FromNaPTAN="90004567123"	ToNaPTAN="900F4567123"	FromOperator=""	ToOperator=""	InterchangeTimeMinutes="30" />
+	</InterchangeTime>
+	<DataVersion>
+		<dataversion DataType="Air"	VersionId="1"	Active="1"	DateStamp="2010-02-26 10:00:00"	Description="Air schedule data" />
+		<dataversion DataType="Car"	VersionId="1"	Active="1"	DateStamp="2010-02-26 10:00:00"	Description="Car schedule data" />
+		<dataversion DataType="Coach"	VersionId="1"	Active="1"	DateStamp="2010-02-26 10:00:00"	Description="Coach schedule data" />
+		<dataversion DataType="Rail"	VersionId="1"	Active="1"	DateStamp="2010-02-26 10:00:00"	Description="Rail schedule data" />
+	</DataVersion>
+	<ScheduleAir>
+		<scheduleair CarrierCode="BA"	FlightNumber="123"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="11:30:00"	ArrivalTime="13:40:00"	ArrivalDay="0"	DaysOfOperation="1234567"	AircraftTypeCode="MA123"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom="1"	TerminalNumberTo="1" VersionId="1" DataType="Air" />
+		<scheduleair CarrierCode="BA"	FlightNumber="123"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="11:30:00"	ArrivalTime="13:40:00"	ArrivalDay="0"	DaysOfOperation="1234567"	AircraftTypeCode="MA123"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom=""	TerminalNumberTo="1" VersionId="1" DataType="Air" />
+		<scheduleair CarrierCode="BA"	FlightNumber="123"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="11:30:00"	ArrivalTime="13:40:00"	ArrivalDay="0"	DaysOfOperation="1234567"	AircraftTypeCode="MA123"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom=""	TerminalNumberTo="" VersionId="1" DataType="Air" />
+		<scheduleair CarrierCode="BA"	FlightNumber="456"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="17:30:00"	ArrivalTime="18:40:00"	ArrivalDay="0"	DaysOfOperation="1234567"	AircraftTypeCode="MA100"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom=""	TerminalNumberTo="" VersionId="1" DataType="Air" />
+		<scheduleair CarrierCode="AF"	FlightNumber="100"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="18:30:00"	ArrivalTime="19:40:00"	ArrivalDay="0"	DaysOfOperation="23456"	AircraftTypeCode="CA123"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom="M1"	TerminalNumberTo="M1" VersionId="1" DataType="Air" />
+		<scheduleair CarrierCode="AF"	FlightNumber="100"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="18:30:00"	ArrivalTime="19:40:00"	ArrivalDay="0"	DaysOfOperation="23456"	AircraftTypeCode="CA123"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom=""	TerminalNumberTo="" VersionId="1" DataType="Air" />
+		<scheduleair CarrierCode="AF"	FlightNumber="101"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="23:30:00"	ArrivalTime="01:40:00"	ArrivalDay="1"	DaysOfOperation="12345"	AircraftTypeCode="CA123"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom="1"	TerminalNumberTo="2" VersionId="1" DataType="Air" />
+		<scheduleair CarrierCode="AF"	FlightNumber="101"	DepartureAirportStopCode="LHR"	ArrivalAirportStopCode="CDG"	DepartureTime="23:30:00"	ArrivalTime="01:40:00"	ArrivalDay="1"	DaysOfOperation="12345"	AircraftTypeCode="CA123"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30"	TerminalNumberFrom=""	TerminalNumberTo="" VersionId="1" DataType="Air" />
+	</ScheduleAir>
+	<ScheduleRail>
+		<schedulerail Id="1" OperatorCode="ES"	TrainNumber="1234"	DaysOfOperation="MoTuWeThFrSaSu"	ServiceFacilities="ABC"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30" VersionId="1" DataType="Rail" />
+	</ScheduleRail>
+	<ScheduleRailLeg>
+		<schedulerailleg ScheduleRailId="1"	VersionId="1" LegNum="1"	DepartureStationStopCode="91007015400"	ArrivalStationStopCode="91008700804"	DepartureTime="08:30:00"	DepartureDay="0"	ArrivalTime="09:55:00"	ArrivalDay="0" />
+		<schedulerailleg ScheduleRailId="1"	VersionId="1" LegNum="2"	DepartureStationStopCode="91008700804"	ArrivalStationStopCode="91008700035"	DepartureTime="10:30:00"	DepartureDay="0"	ArrivalTime="12:30:00"	ArrivalDay="0" />
+		<schedulerailleg ScheduleRailId="1"	VersionId="1" LegNum="3"	DepartureStationStopCode="91008700035"	ArrivalStationStopCode="91009876543"	DepartureTime="12:45:00"	DepartureDay="0"	ArrivalTime="14:20:00"	ArrivalDay="0" />
+	</ScheduleRailLeg>
+	<ScheduleCoach>
+		<schedulecoach Id="1" OperatorCode="NX"	CoachNumber="NX3425"	DaysOfOperation="MoTuWeThFrSaSu"	ServiceFacilities="ABC"	EffectiveFromDate="2010-01-30"	EffectiveToDate="2014-03-30" Notes="" VersionId="1" DataType="Coach" />
+	</ScheduleCoach>
+	<ScheduleCoachLeg>
+		<schedulecoachleg ScheduleCoachId="1" VersionId="1"	LegNum="1"	DepartureStationStopCode="90001234123"	ArrivalStationStopCode="90004567123"	DepartureTime="09:30:00"	DepartureDay="0"	ArrivalTime="11:45:00"	ArrivalDay="0" />
+		<schedulecoachleg ScheduleCoachId="1" VersionId="1"	LegNum="2"	DepartureStationStopCode="90004567123"	ArrivalStationStopCode="90004321123"	DepartureTime="12:30:00"	DepartureDay="0"	ArrivalTime="19:30:00"	ArrivalDay="0" />
+	</ScheduleCoachLeg>
+	<ScheduleCar>
+		<schedulecar DepartureCityId="1"	ArrivalCityId="2"	DepartureTime="00:00:00"	ArrivalTime="10:30:00"	ArrivalDay="0"	EmissionsGrammes="456"	JourneyInformation="Journey information"	JourneyURL="www.google.co.uk" VersionId="1" DataType="Car" />
+	</ScheduleCar>
+</InternationalPlannerTestData>

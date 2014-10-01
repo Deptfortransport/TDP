@@ -1,0 +1,1204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JourneyResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<messages>
+	<Message>
+      <code>2</code>
+      <description>System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+
+Server stack trace: 
+   at System.Runtime.Remoting.Channels.Http.HttpClientTransportSink.ProcessResponseException(WebException webException, HttpWebResponse&amp; response)
+   at System.Runtime.Remoting.Channels.Http.HttpClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders&amp; responseHeaders, Stream&amp; responseStream)
+   at System.Runtime.Remoting.Channels.SoapClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   at TransportDirect.JourneyPlanning.RoadHost.RoadHost.JourneyPlan(CJPRequest request)
+   at TransportDirect.JourneyPlanning.CJP.JourneyHandlers.PrivateJourneyHandler.JourneyPlan()</description>
+    </Message>
+  </messages>
+  <publicJourneys>
+    <PublicJourney>
+      <legs>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T09:57:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390022365</NaPTANID>
+              <name>Shimpling Street: Halifax Place, C386</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:27:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017020</NaPTANID>
+              <name>Bury St.Edmunds: St.Botolphs, Southgate Street</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Mulleys Motorways Ltd</operatorName>
+              <serviceNumber>375</serviceNumber>
+              <destinationBoard>Bury St.Edmunds: Bus Station (8) dep:, Off St.An</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:27:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017020</NaPTANID>
+              <name>Bury St.Edmunds: St.Botolphs, Southgate Street</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:32:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017030</NaPTANID>
+              <name>Bury St.Edmunds: Southgate, Alicia Court</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:32:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017030</NaPTANID>
+              <name>Bury St.Edmunds: Southgate, Alicia Court</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:35:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017255</NaPTANID>
+              <name>Bury St.Edmunds: Tayfen Road, Out Northgate</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>First Eastern Counties</operatorName>
+              <serviceNumber>86</serviceNumber>
+              <destinationBoard>Bury St.Edmunds: Bus Station (6) dep:, Off St.An</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:35:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017255</NaPTANID>
+              <name>Bury St.Edmunds: Tayfen Road, Out Northgate</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100BSTEDMS</NaPTANID>
+              <name>BURY ST EDMUNDS Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:58:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100BSTEDMS</NaPTANID>
+              <name>BURY ST EDMUNDS Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T11:26:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ELYY</NaPTANID>
+              <name>ELY (CAMBS) Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Anglia Rail</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>PETERBOROUGH Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T12:19:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ELYY</NaPTANID>
+              <name>ELY (CAMBS) Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T13:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LESTER</NaPTANID>
+              <name>LEICESTER Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Central</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LIVERPOOL LIME STREET Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:05:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LESTER</NaPTANID>
+              <name>LEICESTER Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:29:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100KETR</NaPTANID>
+              <name>KETTERING Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Midland Mainline</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LONDON ST PANCRAS Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:31:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100KETR</NaPTANID>
+              <name>KETTERING Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:36:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181RS</NaPTANID>
+              <name>Kettering: Rail Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:36:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181RS</NaPTANID>
+              <name>Kettering: Rail Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:39:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000452N</NaPTANID>
+              <name>Kettering: Rockingham Road / Satra House</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Arriva Fox County</operatorName>
+              <serviceNumber>100</serviceNumber>
+              <destinationBoard>Corby: Elizabeth St / opp Stuart Rd</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:39:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000452N</NaPTANID>
+              <name>Kettering: Rockingham Road / Satra House</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:41:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000589N</NaPTANID>
+              <name>Kettering: Rockingham Rd / Neale Ave</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:43:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000589N</NaPTANID>
+              <name>Kettering: Rockingham Rd / Neale Ave</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:55:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181L2</NaPTANID>
+              <name>Kettering: Library / Stop 2</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach in Northants</operatorName>
+              <serviceNumber>50</serviceNumber>
+              <destinationBoard>Bedford: Bus Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:55:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181L2</NaPTANID>
+              <name>Kettering: Library / Stop 2</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:55:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181LT</NaPTANID>
+              <name>Kettering: Lake Avenue / Thompson Way</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+      </legs>
+    </PublicJourney>
+    <PublicJourney>
+      <legs>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T09:57:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390022365</NaPTANID>
+              <name>Shimpling Street: Halifax Place, C386</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:27:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017020</NaPTANID>
+              <name>Bury St.Edmunds: St.Botolphs, Southgate Street</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Mulleys Motorways Ltd</operatorName>
+              <serviceNumber>375</serviceNumber>
+              <destinationBoard>Bury St.Edmunds: Bus Station (8) dep:, Off St.An</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:27:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017020</NaPTANID>
+              <name>Bury St.Edmunds: St.Botolphs, Southgate Street</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:32:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017030</NaPTANID>
+              <name>Bury St.Edmunds: Southgate, Alicia Court</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:32:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017030</NaPTANID>
+              <name>Bury St.Edmunds: Southgate, Alicia Court</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:35:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017255</NaPTANID>
+              <name>Bury St.Edmunds: Tayfen Road, Out Northgate</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>First Eastern Counties</operatorName>
+              <serviceNumber>86</serviceNumber>
+              <destinationBoard>Bury St.Edmunds: Bus Station (6) dep:, Off St.An</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:35:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017255</NaPTANID>
+              <name>Bury St.Edmunds: Tayfen Road, Out Northgate</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100BSTEDMS</NaPTANID>
+              <name>BURY ST EDMUNDS Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:58:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100BSTEDMS</NaPTANID>
+              <name>BURY ST EDMUNDS Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T11:26:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ELYY</NaPTANID>
+              <name>ELY (CAMBS) Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Anglia Rail</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>PETERBOROUGH Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T12:19:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ELYY</NaPTANID>
+              <name>ELY (CAMBS) Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T13:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LESTER</NaPTANID>
+              <name>LEICESTER Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Central</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LIVERPOOL LIME STREET Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:05:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LESTER</NaPTANID>
+              <name>LEICESTER Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:29:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100KETR</NaPTANID>
+              <name>KETTERING Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Midland Mainline</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LONDON ST PANCRAS Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:20:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100KETR</NaPTANID>
+              <name>KETTERING Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:25:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181RS</NaPTANID>
+              <name>Kettering: Rail Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:25:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181RS</NaPTANID>
+              <name>Kettering: Rail Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:30:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181WM</NaPTANID>
+              <name>Kettering: Market Place / Stop 1</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach in Northants</operatorName>
+              <serviceNumber>85</serviceNumber>
+              <destinationBoard>Kettering: Rail Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:30:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181WM</NaPTANID>
+              <name>Kettering: Market Place / Stop 1</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:30:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181LT</NaPTANID>
+              <name>Kettering: Lake Avenue / Thompson Way</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+      </legs>
+    </PublicJourney>
+    <PublicJourney>
+      <legs>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T09:57:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390022365</NaPTANID>
+              <name>Shimpling Street: Halifax Place, C386</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:27:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017020</NaPTANID>
+              <name>Bury St.Edmunds: St.Botolphs, Southgate Street</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Mulleys Motorways Ltd</operatorName>
+              <serviceNumber>375</serviceNumber>
+              <destinationBoard>Bury St.Edmunds: Bus Station (8) dep:, Off St.An</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:27:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017020</NaPTANID>
+              <name>Bury St.Edmunds: St.Botolphs, Southgate Street</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:32:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017030</NaPTANID>
+              <name>Bury St.Edmunds: Southgate, Alicia Court</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:32:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017030</NaPTANID>
+              <name>Bury St.Edmunds: Southgate, Alicia Court</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:35:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017255</NaPTANID>
+              <name>Bury St.Edmunds: Tayfen Road, Out Northgate</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>First Eastern Counties</operatorName>
+              <serviceNumber>86</serviceNumber>
+              <destinationBoard>Bury St.Edmunds: Bus Station (6) dep:, Off St.An</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:35:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>390017255</NaPTANID>
+              <name>Bury St.Edmunds: Tayfen Road, Out Northgate</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T10:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100BSTEDMS</NaPTANID>
+              <name>BURY ST EDMUNDS Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T10:58:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100BSTEDMS</NaPTANID>
+              <name>BURY ST EDMUNDS Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T11:26:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ELYY</NaPTANID>
+              <name>ELY (CAMBS) Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Anglia Rail</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>PETERBOROUGH Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T12:19:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100ELYY</NaPTANID>
+              <name>ELY (CAMBS) Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T13:50:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LESTER</NaPTANID>
+              <name>LEICESTER Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Central</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LIVERPOOL LIME STREET Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Rail</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T14:05:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100LESTER</NaPTANID>
+              <name>LEICESTER Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T14:29:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100KETR</NaPTANID>
+              <name>KETTERING Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Midland Mainline</operatorName>
+              <serviceNumber>Rail</serviceNumber>
+              <destinationBoard>LONDON ST PANCRAS Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:31:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>9100KETR</NaPTANID>
+              <name>KETTERING Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:36:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181RS</NaPTANID>
+              <name>Kettering: Rail Station</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:36:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181RS</NaPTANID>
+              <name>Kettering: Rail Station</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:39:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000452N</NaPTANID>
+              <name>Kettering: Rockingham Road / Satra House</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Arriva Fox County</operatorName>
+              <serviceNumber>100</serviceNumber>
+              <destinationBoard>Corby: Elizabeth St / opp Stuart Rd</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:39:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000452N</NaPTANID>
+              <name>Kettering: Rockingham Road / Satra House</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:41:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000589N</NaPTANID>
+              <name>Kettering: Rockingham Rd / Neale Ave</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+        <Leg xsi:type="TimedLeg">
+          <mode>Bus</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:43:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000589N</NaPTANID>
+              <name>Kettering: Rockingham Rd / Neale Ave</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:55:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181L2</NaPTANID>
+              <name>Kettering: Library / Stop 2</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName>Stagecoach in Northants</operatorName>
+              <serviceNumber>50</serviceNumber>
+              <destinationBoard>Bedford: Bus Station</destinationBoard>
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+        </Leg>
+        <Leg xsi:type="ContinuousLeg">
+          <mode>Walk</mode>
+          <validated>false</validated>
+          <board>
+            <activity>Depart</activity>
+            <arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+            <departTime>2003-07-24T15:55:00.0000000+01:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181L2</NaPTANID>
+              <name>Kettering: Library / Stop 2</name>
+            </stop>
+          </board>
+          <alight>
+            <activity>Arrive</activity>
+            <arriveTime>2003-07-24T15:55:00.0000000+01:00</arriveTime>
+            <departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+            <pass>false</pass>
+            <stop>
+              <NaPTANID>300000181LT</NaPTANID>
+              <name>Kettering: Lake Avenue / Thompson Way</name>
+            </stop>
+          </alight>
+          <services>
+            <Service>
+              <operatorName />
+              <serviceNumber />
+              <destinationBoard />
+              <firstDateOfOperation>0001-01-01T00:00:00.0000000-00:00</firstDateOfOperation>
+              <expiryDate>0001-01-01T00:00:00.0000000-00:00</expiryDate>
+              <openEnded>false</openEnded>
+            </Service>
+          </services>
+          <typicalDuration>0</typicalDuration>
+        </Leg>
+      </legs>
+    </PublicJourney>
+  </publicJourneys>
+</JourneyResult>

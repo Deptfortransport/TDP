@@ -1,0 +1,46 @@
+<xsd:schema targetNamespace="http://www.transportdirect.info/datafeedinfo" xmlns="http://www.transportdirect.info/datafeedinfo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en">
+			TransportDirect Data Feed Info.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="DataFeedInfo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="SupplierID" type="xsd:string" />
+				<xsd:element name="InterfaceNumber">
+					<xsd:complexType>
+						<xsd:simpleContent>
+							<xsd:extension base="xsd:string">
+								<xsd:attribute name="version" type="xsd:string" use="required" />
+							</xsd:extension>
+						</xsd:simpleContent>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="TimePrepared" type="xsd:dateTime" />
+				<xsd:element name="DataFeed">
+					<xsd:complexType>
+						<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+							<xsd:element name="Filename" type="xsd:string" />
+						</xsd:sequence>
+						<xsd:attribute name="isPresent" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:enumeration value="Y" />
+									<xsd:enumeration value="N" />
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="version" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="1.0" />
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

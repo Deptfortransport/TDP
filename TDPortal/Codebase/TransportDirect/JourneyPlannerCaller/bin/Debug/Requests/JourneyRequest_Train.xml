@@ -1,0 +1,79 @@
+<JourneyRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<referenceTransaction>false</referenceTransaction>
+<requestID>0000-0000-0001-7301-0000</requestID>
+<language>en-GB</language>
+<sessionID>yeodfzmrkgavzeznjkwpwa45</sessionID>
+<userType>2</userType>
+<modeFilter>
+<include>true</include>
+<modes>
+<Mode>
+<mode>Rail</mode>
+</Mode>
+</modes>
+</modeFilter>
+<depart>true</depart>
+<parkNRide>false</parkNRide>
+<origin>
+<givenName>Nottingham Rail Station</givenName>
+<locality>E0057221</locality>
+<type>NaPTAN</type>
+<isAlternativeVia>false</isAlternativeVia>
+<userSpecifiedVia>false</userSpecifiedVia>
+<stops>
+<RequestStop>
+<NaPTANID>9100NTNG</NaPTANID>
+<timeDate>2010-06-16T11:00:00</timeDate>
+<coordinate>
+<easting>457421</easting>
+<northing>339204</northing>
+</coordinate>
+</RequestStop>
+</stops>
+<coordinate>
+<easting>457421</easting>
+<northing>339204</northing>
+</coordinate>
+</origin>
+<destination>
+<givenName>Leicester Rail Station</givenName>
+<locality>E0057189</locality>
+<type>NaPTAN</type>
+<isAlternativeVia>false</isAlternativeVia>
+<userSpecifiedVia>false</userSpecifiedVia>
+<stops>
+<RequestStop>
+<NaPTANID>9100LESTER</NaPTANID>
+<timeDate>0001-01-01T00:00:00</timeDate>
+<coordinate>
+<easting>459300</easting>
+<northing>304100</northing>
+</coordinate>
+</RequestStop>
+</stops>
+<coordinate>
+<easting>459300</easting>
+<northing>304100</northing>
+</coordinate>
+</destination>
+<publicParameters>
+<walkSpeed>80</walkSpeed>
+<maxWalkDistance>2000</maxWalkDistance>
+<interchangeSpeed>0</interchangeSpeed>
+<rangeType>Interval</rangeType>
+<interval>0001-01-01T23:59:59</interval>
+<sequence>0</sequence>
+<extraInterval>0001-01-01T00:00:00</extraInterval>
+<extraSequence>0</extraSequence>
+<intermediateStops>All</intermediateStops>
+<algorithm>Default</algorithm>
+<trunkPlan>true</trunkPlan>
+<extraCheckInTime>0001-01-01T00:00:00</extraCheckInTime>
+<routingGuideInfluenced>false</routingGuideInfluenced>
+<rejectNonRGCompliantJourneys>false</rejectNonRGCompliantJourneys>
+<routeCodes />
+<vias />
+<notVias />
+<softVias />
+</publicParameters>
+</JourneyRequest>

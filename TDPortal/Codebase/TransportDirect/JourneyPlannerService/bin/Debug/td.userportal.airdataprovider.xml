@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	<property name="propertyservice.property" GID="" AID="">globalproperty</property>
+	<property name="Logging.Event.CustomTrace" GID="" AID="">Off</property>
+	<property name="Logging.Event.Custom.Trace" GID="" AID="">On</property>
+	<property name="Logging.Event.Custom" GID="" AID=""/>
+	<property name="Logging.Event.Operational.TraceLevel" GID="" AID="">Verbose</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.File" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.File.F1.Directory" GID="" AID="">C:\TDPortal</property>
+	<property name="Logging.Publisher.File.F1.Rotation" GID="" AID="">1024</property>
+	<property name="Logging.Publisher.Default" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.Queue" GID="" AID=""/>
+	<property name="Logging.Publisher.Email" GID="" AID=""/>
+	<property name="Logging.Publisher.EventLog" GID="" AID=""/>
+	<property name="Logging.Publisher.Console" GID="" AID=""/>
+	<property name="Logging.Publisher.Custom" GID="" AID=""/>
+
+	<property name="datagateway.sqlimport.airoperators.database" GID="" AID="">AirDataProviderDB</property>
+	<property name="datagateway.sqlimport.airoperators.schemea" GID="" AID="">.\AirDataProvider\airoperators.xsd</property>
+	<property name="datagateway.sqlimport.airoperators.storedprocedure" GID="" AID="">ImportAirOperators</property>
+	<property name="datagateway.sqlimport.airoperators.xmlnamespace" GID="" AID="">http://www.transportdirect.info/airoperators</property>
+	<property name="datagateway.sqlimport.airroutes.database" GID="" AID="">AirDataProviderDB</property>
+	<property name="datagateway.sqlimport.airroutes.schemea" GID="" AID="">.\AirDataProvider\flightroutes.xsd</property>
+	<property name="datagateway.sqlimport.airroutes.storedprocedure" GID="" AID="">ImportAirRouteMatrix</property>
+	<property name="datagateway.sqlimport.airroutes.xmlnamespace" GID="" AID="">http://www.transportdirect.info/flightroutes</property>
+	<property name="datagateway.sqlimport.travelnews.database" GID="" AID="">TransientPortalDB</property>
+	<property name="datagateway.sqlimport.travelnews.schemea" GID="" AID="">C:/Gateway/bin/xml/TravelNews.xsd</property>
+	<property name="datagateway.sqlimport.travelnews.storedprocedure" GID="" AID="">ImportTravelNews</property>
+	<property name="datagateway.sqlimport.travelnews.xmlnamespace" GID="" AID="">http://www.transportdirect.info/travelnews</property>
+
+	<property name="AirDataProviderDB" GID="" AID="">Integrated Security=SSPI;Initial Catalog=AirRouteMatrix;Data Source=localhost;Connect Timeout=30</property>
+
+	<property name="datagateway.airbackend.airoperator.feedname" GID="" AID="">far265</property>
+	<property name="datagateway.airbackend.routematrix.feedname" GID="" AID="">IF066</property>
+	<property name="datagateway.airbackend.schedules.feedname" GID="" AID="">arh321</property>
+
+	<property name="datagateway.data.live.directory" GID="" AID="">C:\Gateway\LiveSupportData\</property>
+	<property name="datagateway.data.static.directory" GID="" AID="">C:\Gateway\StaticSupportData\</property>
+
+	<property name="datagateway.ttbo.airbuilder.log" GID="" AID="">C:\Gateway\bin\utils\TTBOAirBuilder\makelog</property>
+	<property name="datagateway.ttbo.airbuilder.output" GID="" AID="">C:\Gateway\bin\utils\TTBOAirBuilder\Output\tt_data.zip</property>
+	<property name="datagateway.ttbo.airbuilder.process" GID="" AID="">C:/Gateway/bin/Utils/TTBOAirBuilder/make.bat C:/Gateway/bin/Utils/TTBOAirBuilder</property>
+
+	<property name="datagateway.ttbo.rail.feedname" GID="" AID="">kiq827</property>
+
+	<property name="datagateway.rtel.output.cif" GID="" AID="">airnaptan.cif</property>
+	<property name="datagateway.rtel.output.path" GID="" AID="">C:\Gateway\LiveSupportData\</property>
+	<property name="datagateway.rtel.output.xml" GID="" AID="">flightroutes.xml</property>
+	<property name="datagateway.rtel.output.prefix" GID="" AID="">RTELF</property>
+	<property name="datagateway.rtel.process" GID="" AID="">C:\Program Files\ATDBA\ATDBA.exe</property>
+
+	<property name="datagateway.ttbo.air.cjpserver1" GID="" AID="">\\sg035027\c\temp\tt_data.zip http://sg035027:80/cjp/cjp.rem</property>
+	<property name="datagateway.ttbo.air.cjpserver2" GID="" AID=""></property>
+	<property name="datagateway.ttbo.gatewayserver1" GID="" AID="">c:\temp\tt_data.zip http://localhost:80/gateway.rem</property>
+	<property name="datagateway.ttbo.gatewayserver2" GID="" AID=""></property>
+    <property name="datagateway.ttbo.rail.cjpserver1" GID="" AID="">\\sg035027\c\temp\tt_data.zip http://sg035027:80/cjp/cjp.rem</property>
+	<property name="datagateway.ttbo.rail.cjpserver2" GID="" AID=""></property>
+
+	<property name="FindA.NaptanPrefix.Airport" GID="" AID="">9200</property>
+
+	<property name="Gateway.ProcessingPath" GID="" AID="">C:/Gateway/dat/Processing/</property>
+</lookup>

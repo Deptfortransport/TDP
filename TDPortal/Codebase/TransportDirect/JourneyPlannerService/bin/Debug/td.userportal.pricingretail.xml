@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+<property name="propertyservice.refreshrate" GID="" AID="PricingRetail">10000</property>
+	<property name="propertyservice.version" GID="" AID="PricingRetail">1</property>		
+	
+	
+	<property name="Logging.Publisher.Queue.WorkloadQueue.Path" 	GID="" AID="PricingRetail"></property>
+	<property name="Logging.Publisher.Queue.WorkloadQueue.Delivery" GID="" AID="PricingRetail"></property>
+	<property name="Logging.Publisher.Queue.WorkloadQueue.Priority" GID="" AID="PricingRetail"></property>
+	
+	<property name="Logging.Event.CustomTrace" GID="" AID="PricingRetail">Off</property>
+	<property name="Logging.Event.Custom" GID="" AID="PricingRetail"></property>
+	
+	<property name="Logging.Event.Operational.TraceLevel" GID="" AID="PricingRetail">Verbose</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="" AID="PricingRetail">F1</property>
+	
+	<property name="Logging.Event.Custom.Trace" GID="" AID="PricingRetail">Off</property>
+	
+	<property name="Logging.Publisher.File" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Publisher.File.F1.Directory" GID="" AID="PricingRetail">C:\TDPortal</property>
+	<property name="Logging.Publisher.File.F1.Rotation" GID="" AID="PricingRetail">1024</property>
+	
+	<property name="Logging.Publisher.Default" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Publisher.Queue" GID="" AID="PricingRetail"></property>
+	<property name="Logging.Publisher.Email" GID="" AID="PricingRetail"></property>
+	<property name="Logging.Publisher.EventLog" GID="" AID="PricingRetail"></property>
+	<property name="Logging.Publisher.Console" GID="" AID="PricingRetail"></property>
+	<property name="Logging.Publisher.Custom" GID="" AID="PricingRetail"></property>
+	
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Assembly" GID="" AID="PricingRetail">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Name" GID="" AID="PricingRetail">JourneyPlanRequestEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Publishers" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Trace" GID="" AID="PricingRetail">On</property>
+	
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Assembly" GID="" AID="PricingRetail">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Name" GID="" AID="PricingRetail">JourneyPlanRequestVerboseEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Publishers" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Trace" GID="" AID="PricingRetail">On</property>
+
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Assembly" GID="" AID="PricingRetail">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Name" GID="" AID="PricingRetail">JourneyPlanResultsEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Publishers" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Trace" GID="" AID="PricingRetail">On</property>
+	
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Assembly" GID="" AID="PricingRetail">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Name" GID="" AID="PricingRetail">JourneyPlanResultsVerboseEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Publishers" GID="" AID="PricingRetail">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Trace" GID="" AID="PricingRetail">On</property>
+	
+	<property name="DefaultDB" GID="" AID="PricingRetail">Server=localhost;Initial Catalog=PermanentPortal;Trusted_Connection=true;</property>
+	<property name="ASPStateDB" GID="" AID="PricingRetail">Server=localhost;Initial Catalog=ASPState;Trusted_Connection=true;</property>
+	<property name="AirDataProviderDB" GID="" AID="PricingRetail">Server=localhost;Initial Catalog=AirRouteMatrix;Trusted_Connection=true;</property>
+	<property name="AdditionalDataDB" GID="" AID="PricingRetail">data source=D01; initial catalog=AdditionalData; user id=AdditionalDataUser; password=password; persist security info=False</property>
+	<property name="ProductAvailabilityDB" GID="" AID="PricingRetail">Server=localhost;Initial Catalog=ProductAvailability;Trusted_Connection=true;</property>
+	
+	<!-- Pool Properties -->
+	<property name="RetailBusinessObjects.HousekeepingCheckFrequency" GID="" AID="PricingRetail">3000</property>
+	<!-- Properties for CoachRoutesQuotaFaresImportTask -->
+	<property name="datagateway.sqlimport.coachroutesquotafares.feedname" GID="" AID="">ukm384</property>	
+	<property name="datagateway.sqlimport.coachroutesquotafares.Name" GID="" AID="">coachroutesquotafares</property>		
+	<property name="datagateway.sqlimport.coachroutesquotafares.storedprocedure" GID="" AID="">ImportCoachRoutesData</property>	 
+	<property name="datagateway.sqlimport.coachroutesquotafares.xmlnamespace" GID="" AID="">http://www.transportdirect.info/coachroutesquotafares</property>	
+	<property name="datagateway.sqlimport.coachroutesquotafares.xmlnamespacexsi" GID="" AID="">http://www.w3.org/2001/XMLSchema-instance</property>	
+	<property name="datagateway.sqlimport.coachroutesquotafares.xmlschemalocation" GID="" AID="">http://www.transportdirect.info/CoachRoutesSchema.xsd</property>		
+	<property name="datagateway.sqlimport.coachroutesquotafares.schemea" GID="" AID="">C:\Gateway\xml\CoachRoutesSchema.xsd</property>
+	<property name="datagateway.sqlimport.coachroutesquotafares.database" GID="" AID="">TransientPortalDB</property>
+	<property name="datagateway.sqlimport.coachroutesquotafares.additionalFileName" GID="" AID="">QuotaFares.csv</property>
+	
+
+	<property name="datagateway.sqlimport.coachroutesquotafares.additionalImportName" GID="" AID="">quotafares</property>
+	<property name="datagateway.sqlimport.quotafares.Name" GID="" AID="">quotafares</property>		
+	<property name="datagateway.sqlimport.quotafares.filename" GID="" AID="">QuotaFares.csv</property>
+	<property name="datagateway.sqlimport.quotafares.schemea" GID="" AID="">C:\Gateway\xml\QuotaFaresSchema.xsd</property>
+	<property name="datagateway.sqlimport.quotafares.storedprocedure" GID="" AID="">ImportQuotaFaresData</property>
+	<property name="datagateway.sqlimport.quotafares.xmlnamespace" GID="" AID="">http://www.transportdirect.info/coachroutesquotafares</property>	
+	<property name="datagateway.sqlimport.quotafares.xmlnamespacexsi" GID="" AID="">http://www.w3.org/2001/XMLSchema-instance</property>	
+	<property name="datagateway.sqlimport.quotafares.xmlschemalocation" GID="" AID="">http://www.transportdirect.info/CoachRoutesSchema.xsd</property>		
+	<property name="TransientPortalDB" GID="" AID="">Integrated Security=SSPI;Initial Catalog=TransientPortal;Data Source=localhost;Connect Timeout=30;</property>
+	
+	 <!-- Custom Event Email details-->		
+	<property name="Logging.Event.Custom.Trace" GID="UserPortal" AID="">On</property>
+	<property name="Logging.Event.Custom.EMAIL.Assembly" GID="UserPortal" AID="">td.common.logging</property>
+	<property name="Logging.Event.Custom.EMAIL.Name" GID="UserPortal" AID="">CustomEmailEvent</property>
+	<property name="Logging.Event.Custom.EMAIL.Publishers" GID="UserPortal" AID="">EMAIL</property>
+	<property name="Logging.Event.Custom.EMAIL.Trace" GID="UserPortal" AID="">On</property>
+	<property name="Logging.Publisher.Custom" GID="UserPortal" AID="">EMAIL</property>
+	<property name="Logging.Publisher.Custom.EMAIL.Name" GID="UserPortal" AID="">CustomEmailPublisher</property>
+    <property name="Logging.Publisher.Custom.EMAIL.SMTPServer" GID="UserPortal" AID="">localhost</property>
+    <property name="Logging.Publisher.Custom.EMAIL.WorkingDir" GID="UserPortal" AID="">C:\\Temp</property>	
+    
+	<!--COACH FARES INTERFACES -->	
+	<property name="PricingRetail.CoachFaresInterfaces.CoachFaresResponseTimeoutMilliSecs" GID="" AID="">90000</property>
+	<property name="Logging.Publisher.Custom.EMAIL.Sender" GID="" AID="">aa@aa.com</property>
+	
+	<!-- Pricing Unit Merge Policy -->
+	<property name="PricingRetail.Domain.PricingUnitMergePolicy.NXCode" GID="" AID="">NX</property>	
+	<property name="PricingRetail.Domain.PricingUnitMergePolicy.SCLCode" GID="" AID="">SCL</property>	
+	
+	<property name="FindA.NaptanPrefix.Coach"		GID="" AID="">9000</property>
+	<property name="FindA.NaptanPrefix.Rail"		GID="" AID="">9100</property>
+	<property name="FindA.NaptanPrefix.Airport"		GID="" AID="">9200</property>
+	<property name="FindA.NaptanPrefix.AirportVia"	GID="" AID="">920F</property>
+
+	<property name="LocationService.FilterGivenNameTag"	GID="" AID="">True</property>
+	<property name="LocationService.GivenNameTagFilterValues" GID="" AID="">Main Coach Stops|Main Rail / Coach|Main Rail Stations</property>
+	
+
+	<property name="PricingRetail.RetailXmlDocument.SchemaFilename" GID="" AID="">D:\\inetpub\\wwwroot\\web2\\030829 Journey_Interface v2.xsd</property>
+	<property name="PricingRetail.RetailXmlDocument.Version" GID="" AID="">1.0</property>
+
+  <!-- DisplayableRailTickets list -->
+  <property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.type" GID="" AID="">5</property>
+  <property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.db" GID="" AID="">DefaultDB</property>
+  <property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.query" GID="" AID="">SELECT KeyName, Value, Category, TicketGroup FROM CategorisedHashes WHERE DataSet = 'DisplayableRailTickets'</property>
+
+	
+</lookup>

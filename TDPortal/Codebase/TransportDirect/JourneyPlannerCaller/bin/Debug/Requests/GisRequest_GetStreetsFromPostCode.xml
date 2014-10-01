@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GisInfoQuery>
+  <X>459385</X>
+  <Y>304100</Y>
+  <Postcode>LE5 1QS</Postcode>
+  <Points>
+    <Point>
+      <X>459385</X>
+      <Y>304100</Y>
+    </Point>
+    <Point>
+      <X>459335</X>
+      <Y>304090</Y>
+    </Point>
+  </Points>
+  <SameAreaOnly>false</SameAreaOnly>
+  <NaptanId></NaptanId>
+  <LocalityId></LocalityId>
+  <ToIds></ToIds>
+  <QueryFunction>GetStreetsFromPostCode</QueryFunction>
+  <GisResultPath/>
+
+</GisInfoQuery>

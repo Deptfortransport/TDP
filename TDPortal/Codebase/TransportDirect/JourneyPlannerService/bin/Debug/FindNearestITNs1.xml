@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes"?>
+<QuerySchema xmlns="http://tempuri.org/QuerySchema.xsd">
+  <xs:schema id="QuerySchema" targetNamespace="http://tempuri.org/QuerySchema.xsd" xmlns:mstns="http://tempuri.org/QuerySchema.xsd" xmlns="http://tempuri.org/QuerySchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="QuerySchema" msdata:IsDataSet="true" msdata:Locale="en-GB">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="ClickPoint">
+            <xs:complexType>
+              <xs:attribute name="X" form="unqualified" type="xs:double" />
+              <xs:attribute name="Y" form="unqualified" type="xs:double" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PointX">
+            <xs:complexType>
+              <xs:attribute name="name" form="unqualified" type="xs:string" />
+              <xs:attribute name="desc" form="unqualified" type="xs:string" />
+              <xs:attribute name="street" form="unqualified" type="xs:string" />
+              <xs:attribute name="locality" form="unqualified" type="xs:string" />
+              <xs:attribute name="postcode" form="unqualified" type="xs:string" />
+              <xs:attribute name="X" form="unqualified" type="xs:double" />
+              <xs:attribute name="Y" form="unqualified" type="xs:double" />
+              <xs:attribute name="classification" form="unqualified" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Stops">
+            <xs:complexType>
+              <xs:attribute name="atcocode" form="unqualified" type="xs:string" />
+              <xs:attribute name="natgazid" form="unqualified" type="xs:string" />
+              <xs:attribute name="stoptype" form="unqualified" type="xs:string" />
+              <xs:attribute name="commonname" form="unqualified" type="xs:string" />
+              <xs:attribute name="street" form="unqualified" type="xs:string" />
+              <xs:attribute name="landmark" form="unqualified" type="xs:string" />
+              <xs:attribute name="X" form="unqualified" type="xs:double" />
+              <xs:attribute name="Y" form="unqualified" type="xs:double" />
+              <xs:attribute name="identifier" form="unqualified" type="xs:string" />
+              <xs:attribute name="smsnumber" form="unqualified" type="xs:string" />
+              <xs:attribute name="direction" form="unqualified" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ITN">
+            <xs:complexType>
+              <xs:attribute name="toid" form="unqualified" type="xs:string" />
+              <xs:attribute name="name" form="unqualified" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Roads">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="category" type="xs:int" />
+                <xs:element name="roadname" type="xs:string" />
+                <xs:element name="roadsectionname" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ITN toid="4000000013194143" name="A534" />
+  <ITN toid="4000000013194317" name="HEWITT STREET" />
+  <ITN toid="4000000013194231" name="GRESTY ROAD" />
+</QuerySchema>

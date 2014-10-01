@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <DrillDownAddressQuery xmlns="http://www.esriuk.com/gazops">
+      <sAddressQueryString>Carty Road, Leicester</sAddressQueryString>
+      <picklistcriteria></picklistcriteria>
+      <singleAddressSelect></singleAddressSelect>
+      <queryReference></queryReference>
+      <bFuzzy>true</bFuzzy>
+      <gazID>ADDP1</gazID>
+      <envelope></envelope>
+      <securityToken></securityToken>
+    </DrillDownAddressQuery>
+  </soap:Body>
+</soap:Envelope>

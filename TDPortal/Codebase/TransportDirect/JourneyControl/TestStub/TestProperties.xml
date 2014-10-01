@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<MinDelay>0</MinDelay><!-- Minimum server delay in seconds -->
+	<MaxDelay>0</MaxDelay><!-- Maximum server delay in seconds -->
+	<NumberOfJourneyResults>2</NumberOfJourneyResults><!-- Number of journey results that should be read.  Note: the number of journey results must match the number of filenames provided.-->
+	<JourneyResultPath>..\..\TestStub\TestJourneyResult3.xml</JourneyResultPath><!-- Path to the Xml file that contains ONE journey result -->
+	<JourneyResultPath>..\..\TestStub\TestJourneyResult1.xml</JourneyResultPath>
+</root>

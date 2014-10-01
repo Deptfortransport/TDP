@@ -1,0 +1,15 @@
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.enhancedexposedservices.security.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.enhancedexposedservices.common.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.userportal.partners.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.userportal.dataservices.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\td.common.resourcemanager.dll
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\EnhancedExposedServicesSecurity\obj\Release\td.enhancedexposedservices.security.dll

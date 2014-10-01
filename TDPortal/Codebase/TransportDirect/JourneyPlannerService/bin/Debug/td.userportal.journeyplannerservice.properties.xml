@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+	<property name="JourneyPlannerService.JourneyResultConsumer.Username" GID="" AID="">EnhancedExposedWebServiceTest</property>
+	<property name="JourneyPlannerService.JourneyResultConsumer.Uri" GID="" AID="">http://localhost/ExposedServicesTestToolClient/Templates/Reveiver.aspx</property>
+	<property name="JourneyPlannerService.JourneyResultConsumer.Password" GID="" AID="">EnhancedExposedWebServiceTest</property>	
+	<property name="JourneyPlannerService.MinimumSequence" GID="" AID="">3</property>	
+	<property name="TestTool.NUnitTestService.Uri" GID="" AID="">http://localhost/ExposedServicesTestToolClient/webservices/nunitservice.asmx</property>				
+	<property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	<property name="propertyservice.property" GID="" AID="">globalproperty</property>
+	<property name="Logging.Publisher.Default" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.Queue" GID="" AID=""/>
+	<property name="Logging.Event.CustomTrace" GID="" AID="">Off</property>
+	<property name="Logging.Event.Custom" GID="" AID="">EnhancedExposedServiceFinishEvent GAZ</property>
+	<property name="Logging.Event.Operational.TraceLevel" GID="" AID="">Verbose</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Custom.Trace" GID="" AID="">On</property>
+	<property name="Logging.Publisher.File" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.File.F1.Directory" GID="" AID="">c:\temp</property>
+	<property name="Logging.Publisher.File.F1.Rotation" GID="" AID="">1024</property>
+	<property name="Logging.Publisher.Default" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.Queue" GID="" AID=""/>
+	<property name="Logging.Publisher.Email" GID="" AID=""/>
+	<property name="Logging.Publisher.EventLog" GID="" AID=""/>
+	<property name="Logging.Publisher.Console" GID="" AID=""/>
+	<property name="Logging.Publisher.Custom" GID="" AID=""/>
+	<property name="TransientPortalDB" GID="" AID="">Integrated Security=SSPI;Initial Catalog=TransientPortal;Data Source=localhost;Connect Timeout=30;</property>
+	<property name="Logging.Event.Custom.GAZ.Assembly" GID="" AID="">td.reportdataprovider.tdpcustomevents</property>
+	<property name="Logging.Event.Custom.GAZ.Name" GID="" AID="">GazetteerEvent</property>
+	<property name="Logging.Event.Custom.GAZ.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Custom.GAZ.Trace" GID="" AID="">On</property>
+	<property name="Logging.Event.Custom.EnhancedExposedServiceFinishEvent.Assembly" GID="" AID="">td.reportdataprovider.tdpcustomevents</property>
+	<property name="Logging.Event.Custom.EnhancedExposedServiceFinishEvent.Name" GID="" AID="">EnhancedExposedServiceFinishEvent</property>
+	<property name="Logging.Event.Custom.EnhancedExposedServiceFinishEvent.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Custom.EnhancedExposedServiceFinishEvent.Trace" GID="" AID="">On</property>	
+	<property name="FindA.NaptanPrefix.Airport" GID="" AID="">9200</property>
+	<property name="FindA.NaptanPrefix.Rail" GID="" AID="">9100</property>
+	<property name="FindA.NaptanPrefix.Coach" GID="" AID="">9000</property>	
+	<property name="locationservice.gazopsweburl" GID="" AID="">http://SIGIS/GazopsWeb/GazopsWeb.asmx</property>		
+	<property name="locationservice.addressgazetteerid" GID="" AID="">ADDP1</property>
+	<property name="locationservice.attractionsgazetteerid" GID="" AID="">POINTX</property>
+	<property name="locationservice.localitygazetteerid" GID="" AID="">DRILL1</property>
+	<property name="locationservice.postcodegazetteerid" GID="" AID="">PCODE1</property>
+	<property name="locationservice.allstationsgazetteerid" GID="" AID="">ALLSTAT1</property>
+	<property name="locationservice.majorstationsgazetteerid.Airport" GID="" AID="">MAJSTAT1</property>
+	<property name="locationservice.majorstationsgazetteerid.Rail" GID="" AID="">MAJSTAT1</property>
+	<property name="locationservice.majorstationsgazetteerid.Coach" GID="" AID="">MAJSTAT1</property>
+	<property name="locationservice.majorstationsgazetteerid.Undetermined" GID="" AID="">MAJSTAT1</property>
+	<property name="locationservice.StopType.Airport" GID="" AID="">GAT</property>
+	<property name="locationservice.StopType.Rail" GID="" AID="">RLY</property>
+	<property name="locationservice.StopType.Coach" GID="" AID="">BCS</property>
+	<property name="locationservice.servername" GID="" AID="">tri-tdp-iis</property>
+	<property name="locationservice.servicename" GID="" AID="">tdp_del6</property>
+	<property name="locationservice.localitygazetteer.requestplacetype" GID="" AID="">NAPTAN</property>
+	<property name="locationservice.codegazetteerid" GID="" AID="">CODE</property>	
+	
+</lookup>

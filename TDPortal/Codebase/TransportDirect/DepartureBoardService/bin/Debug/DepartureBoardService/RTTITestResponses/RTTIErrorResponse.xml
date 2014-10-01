@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Eport msgId="35" ts="2004-08-27T12:04:50.3593750+01:00" version="2.0" xmlns="http://www.thales-is.com/rtti/EnquriyPorts/v4/rttiEPTSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.thales-is.com/rtti/EnquriyPorts/v4/rttiEPTSchema.xsd
+C:\Sanjeev\TDportal\DEL7\rttiEPTSchema.xsd">
+	<FailureResp>
+		<Error code="NO_DATA" msg="Failed to get data for enquiry"/>
+	</FailureResp>
+</Eport>

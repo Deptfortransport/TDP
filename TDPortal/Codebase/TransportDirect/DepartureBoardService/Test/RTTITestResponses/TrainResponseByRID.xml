@@ -1,0 +1,23 @@
+<?xml version="1.0" ?> 
+  <Eport xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" msgId="15" ts="2004-11-12T08:34:11.2968750-00:00" version="4.0" xmlns="http://www.thales-is.com/rtti/EnquriyPorts/v4/rttiEPTSchema.xsd">
+  <TrainResp uid="W41520" rid="200411120961691" trainId="1F07" ssd="2004-11-12" toc="SN">
+  <OR ftl="SEAFORD" act="TB" ptd="06:57" atd="06:57" /> 
+  <IP ftl="BSSN" act="T" pta="06:59" ptd="06:59" eta="06:59" etd="06:59" /> 
+  <IP ftl="NEWHVNH" act="T" pta="07:02" ptd="07:02" ata="07:02" atd="07:03" /> 
+  <IP ftl="NEWHVNT" act="T" pta="07:04" ptd="07:04" ata="07:04" atd="07:05" /> 
+  <IP ftl="SESARDM" act="T" pta="07:08" ptd="07:08" eta="07:09" etd="07:09" /> 
+  <IP ftl="LEWES" act="T" pta="07:16" ptd="07:23" ata="07:15" atd="07:24" /> 
+  <IP ftl="COKSBDG" act="T" pta="07:28" ptd="07:28" eta="07:28" etd="07:28" /> 
+  <IP ftl="PLMPTON" act="T" pta="07:33" ptd="07:33" eta="07:33" etd="07:33" /> 
+  <IP ftl="WVLSFLD" act="T" pta="07:39" ptd="07:39" eta="07:38" etd="07:39" /> 
+  <IP ftl="HYWRDSH" act="T" pta="07:43" ptd="07:44" ata="07:44" atd="07:45" /> 
+  <IP ftl="HORLEY" act="T" pta="07:59" ptd="07:59" eta="07:57" etd="07:59" /> 
+  <IP ftl="ECROYDN" act="T" pta="08:15" ptd="08:15" ata="08:16" atd="08:17" /> 
+  <IP ftl="CLPHMJC" act="T" pta="08:25" ptd="08:25" ata="08:26" atd="08:27" /> 
+  <DT ftl="VICTRIC" act="TF" pta="08:34" eta="08:33" /> 
+  <AS cat="JJ" dateInd="S" aType="P" tpl="LEWES">
+  <ASM uid="W41520" rid="200411120961691" sfx="" /> 
+  <ASA uid="W41710" rid="200411120961700" sfx="" /> 
+  </AS>
+  </TrainResp>
+  </Eport>

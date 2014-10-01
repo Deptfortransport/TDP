@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<Eport xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" msgId="2" ts="2004-11-12T07:49:58.1093750-00:00" version="4.0" xmlns="http://www.thales-is.com/rtti/EnquriyPorts/v4/rttiEPTSchema.xsd">
+  <TripResp crs="PNZ" qos="-1">
+  <Msg>some dummy message.</Msg> 
+  <Msg>London Underground: There are currently no service disruptions reported on the London Underground and Docklands Light Railway</Msg> 
+  <TAS pta="06:40" ata="07:07" ptd="06:40" toc="TT" uid="P33363" rid="200411120956567">
+  <From>PENZNCE</From>   
+  <To>EDINBUR</To>   
+  </TAS>
+  <TAS pta="06:45" ata="07:11" ptd="06:45" atd="07:12" toc="TT" uid="P33286" rid="200411120956492">
+  <From>PENZNCE</From> 
+  <To>EDINBUR</To> 
+  </TAS>
+  <TAS pta="07:23" ata="07:24" ptd="07:23" atd="07:26" toc="TT" uid="P33288" rid="200411120956494">
+  <From>PENZNCE</From> 
+  <To>EDINBUR</To> 
+  </TAS>
+  <TAS pta="07:56" ptd="07:56" toc="TT" uid="P33364" rid="200411120956568">
+  <From>PENZNCE</From> 
+  <To>EDINBUR</To> 
+  </TAS>
+  <TAS pta="08:08" ptd="08:08" toc="TT" uid="P33365" rid="200411120956569">
+  <From>PENZNCE</From> 
+  <To>EDINBUR</To> 
+  </TAS>
+  <TAS pta="08:19" ptd="08:19" toc="TT" uid="P33366" rid="200411120956570">
+  <From>PENZNCE</From> 
+  <To>EDINBUR</To> 
+  </TAS>
+  <TAS pta="08:40" ptd="08:40" toc="TT" uid="P32570" rid="200411120966332">
+  <From>PENZNCE</From> 
+  <To>EDINBUR</To> 
+  </TAS>
+  <TAS pta="08:44" ptd="08:44" toc="TT" uid="P33367" rid="200411120956571">
+  <From>PENZNCE</From> 
+  <To>EDINBUR</To> 
+  </TAS>
+  </TripResp>
+  </Eport>

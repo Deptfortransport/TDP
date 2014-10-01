@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CarCostCalculatorTestData>
+	<carcostrunningcost carsize="small" fueltype="petrol" cost="11" />
+	<carcostrunningcost carsize="small" fueltype="diesel" cost="12" />
+	<carcostrunningcost carsize="medium" fueltype="petrol" cost="13" />
+	<carcostrunningcost carsize="medium" fueltype="diesel" cost="14" />
+	<carcostrunningcost carsize="large" fueltype="petrol" cost="15" />
+	<carcostrunningcost carsize="large" fueltype="diesel" cost="16" />
+	<carcostfuelconsumption carsize="small" fueltype="petrol" consumption="17" />
+	<carcostfuelconsumption carsize="small" fueltype="diesel" consumption="18" />
+	<carcostfuelconsumption carsize="medium" fueltype="petrol" consumption="19" />
+	<carcostfuelconsumption carsize="medium" fueltype="diesel" consumption="20" />
+	<carcostfuelconsumption carsize="large" fueltype="petrol" consumption="21" />
+	<carcostfuelconsumption carsize="large" fueltype="diesel" consumption="22" />
+	<carcostfuelcost fueltype="petrol" cost="95" />
+	<carcostfuelcost fueltype="diesel" cost="97" />
+</CarCostCalculatorTestData>

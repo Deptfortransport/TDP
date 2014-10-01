@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<JourneyEmissionsFactorTestData>
+	<journeyemissionsfactor factortype="AirDefault" factorvalue="1010"  />
+	<journeyemissionsfactor factortype="BusDefault" factorvalue="2020"  />
+	<journeyemissionsfactor factortype="CoachDefault" factorvalue="3030"  />
+	<journeyemissionsfactor factortype="LightRailDefault" factorvalue="4040"  />
+	<journeyemissionsfactor factortype="RailDefault" factorvalue="5050"  />
+	<journeyemissionsfactor factortype="CarDefault" factorvalue="6060"  />
+	<journeyemissionsfactor factortype="FerryDefault" factorvalue="7070"  />
+	<lightrailsystemcode toccode="C5" service="LUL between Amersham and Baker street" mode="Underground" systemcode="XY" />
+	<lightrailsystemcode toccode="C3" service="Newcastle Metro" mode="Metro" systemcode="XZ" />
+</JourneyEmissionsFactorTestData>

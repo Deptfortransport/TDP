@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="JourneyPlannerCaller.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="JourneyPlannerCaller_CyclePlannerWebService_CyclePlannerService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.93.154.7/cycleplannerservice/service.asmx</Value>
+    </Setting>
+    <Setting Name="JourneyPlannerCaller_GazWebService_GazService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://gazops/GazopsWeb/GazopsWeb.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="">30000</property>
+  <property name="propertyservice.version" GID="" AID="">1</property>
+  
+  <!-- Required by the Event Logger -->
+<property name="Logging.Publisher.File"                       GID="" AID="">FilePub1</property>
+<property name="Logging.Publisher.Email"                      GID="" AID=""></property>
+<property name="Logging.Publisher.EventLog"                   GID="" AID=""></property>
+<property name="Logging.Publisher.Console"                    GID="" AID=""></property>
+<property name="Logging.Publisher.Queue"                      GID="" AID=""></property>
+<property name="Logging.Publisher.File.FilePub1.Directory"    GID="" AID="">C:\TDPortal</property>
+<property name="Logging.Publisher.File.FilePub1.Rotation"     GID="" AID="">20</property>
+<property name="Logging.Publisher.Custom"                     GID="" AID=""></property>
+<property name="Logging.Publisher.Default"                    GID="" AID="">FilePub1</property>
+<property name="Logging.Event.Custom.Trace"                   GID="" AID="">Off</property>
+<property name="Logging.Event.Operational.TraceLevel"         GID="" AID="">Info</property>
+<property name="Logging.Event.Custom"                         GID="" AID=""></property>
+<property name="Logging.Event.Operational.Info.Publishers"    GID="" AID="">FilePub1</property>
+<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="">FilePub1</property>
+<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="">FilePub1</property>
+<property name="Logging.Event.Operational.Error.Publishers"   GID="" AID="">FilePub1</property>
+
+<property name="TransientPortalDB" GID="" AID="ExternalLinkService">Server=.;Initial Catalog=TransientPortal;Trusted_Connection=true;</property>
+<property name="DefaultDB" GID="" AID="">Integrated Security=SSPI;Initial Catalog=PermanentPortal;Data Source=localhost;Connect Timeout=30;</property>
+ 
+</lookup>

@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="CostSearch">10000</property>
+	<property name="propertyservice.version" GID="" AID="CostSearch">1</property>
+	<property name="Logging.Publisher.Queue.WorkloadQueue.Path" GID="" AID="CostSearch"></property>
+	<property name="Logging.Publisher.Queue.WorkloadQueue.Delivery" GID="" AID="CostSearch"></property>
+	<property name="Logging.Publisher.Queue.WorkloadQueue.Priority" GID="" AID="CostSearch"></property>
+	<property name="Logging.Event.CustomTrace" GID="" AID="CostSearch">Off</property>
+	<property name="Logging.Event.Custom" GID="" AID="CostSearch"></property>
+	<property name="Logging.Event.Operational.TraceLevel" GID="" AID="CostSearch">Verbose</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Custom.Trace" GID="" AID="CostSearch">Off</property>
+	<property name="Logging.Publisher.File" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Publisher.File.F1.Directory" GID="" AID="CostSearch">C:\TDPortal</property>
+	<property name="Logging.Publisher.File.F1.Rotation" GID="" AID="CostSearch">1024</property>
+	<property name="Logging.Publisher.Default" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Publisher.Queue" GID="" AID="CostSearch"></property>
+	<property name="Logging.Publisher.Email" GID="" AID="CostSearch"></property>
+	<property name="Logging.Publisher.EventLog" GID="" AID="CostSearch"></property>
+	<property name="Logging.Publisher.Console" GID="" AID="CostSearch"></property>
+	<property name="Logging.Publisher.Custom" GID="" AID="CostSearch"></property>
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Assembly" GID="" AID="CostSearch">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Name" GID="" AID="CostSearch">JourneyPlanRequestEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUEST.Trace" GID="" AID="CostSearch">On</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Assembly" GID="" AID="CostSearch">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Name" GID="" AID="CostSearch">JourneyPlanRequestVerboseEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYREQUESTVERBOSE.Trace" GID="" AID="CostSearch">On</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Assembly" GID="" AID="CostSearch">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Name" GID="" AID="CostSearch">JourneyPlanResultsEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTS.Trace" GID="" AID="CostSearch">On</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Assembly" GID="" AID="CostSearch">td.userportal.journeycontrol</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Name" GID="" AID="CostSearch">JourneyPlanResultsVerboseEvent</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Publishers" GID="" AID="CostSearch">F1</property>
+	<property name="Logging.Event.Custom.JOURNEYRESULTSVERBOSE.Trace" GID="" AID="CostSearch">On</property>
+	<property name="DefaultDB" GID="" AID="CostSearch">Server=localhost;Initial Catalog=PermanentPortal;Trusted_Connection=true;</property>
+	<property name="ASPStateDB" GID="" AID="CostSearch">Server=localhost;Initial Catalog=ASPState;Trusted_Connection=true;</property>
+	<property name="AirDataProviderDB" GID="" AID="CostSearch">Server=localhost;Initial Catalog=AirRouteMatrix;Trusted_Connection=true;</property>
+	<property name="AdditionalDataDB" GID="" AID="CostSearch">data source=D01; initial catalog=AdditionalData; user id=AdditionalDataUser; password=password; persist security info=False</property>
+	<property name="ProductAvailabilityDB" GID="" AID="CostSearch">Server=localhost;Initial Catalog=ProductAvailability;Trusted_Connection=true;</property>
+	<property name="JourneyControl.CJPTimeoutMillisecs" GID="" AID="CostSearch">60000</property>
+	<property name="JourneyControl.LogAllRequests" GID="" AID="CostSearch">Y</property>
+	<property name="JourneyControl.LogAllResponses" GID="" AID="CostSearch">Y</property>
+	<property name="JourneyControl.LogCJPFailures" GID="" AID="CostSearch">Y</property>
+	<property name="JourneyControl.NumberOfPublicJourneys" GID="" AID="CostSearch">3</property>
+	<property name="JourneyControl.TrunkSearchInterval1.Coach" GID="" AID="CostSearch">2</property>
+	<property name="JourneyControl.TrunkSearchInterval1.Rail" GID="" AID="CostSearch">2</property>
+	<property name="JourneyControl.TrunkSearchInterval1.Air" GID="" AID="CostSearch">2</property>
+	<property name="JourneyControl.TrunkSearchInterval2.Coach" GID="" AID="CostSearch">22</property>
+	<property name="JourneyControl.TrunkSearchInterval2.Rail" GID="" AID="CostSearch">22</property>
+	<property name="JourneyControl.TrunkSearchInterval2.Air" GID="" AID="CostSearch">22</property>
+	<property name="JourneyControl.TrunkSearchInterval3.Coach" GID="" AID="CostSearch">22</property>
+	<property name="JourneyControl.TrunkSearchInterval3.Rail" GID="" AID="CostSearch">22</property>
+	<property name="JourneyControl.TrunkSearchInterval3.Air" GID="" AID="CostSearch">22</property>
+	<property name="JourneyControl.TrunkSearchInterval4.Coach" GID="" AID="CostSearch">2</property>
+	<property name="JourneyControl.TrunkSearchInterval4.Rail" GID="" AID="CostSearch">2</property>
+	<property name="JourneyControl.TrunkSearchInterval4.Air" GID="" AID="CostSearch">2</property>
+	<!-- NatExCodes list -->
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.type" GID="" AID="">1</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.items" GID="" AID="">14</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.1" GID="" AID="">AB</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.2" GID="" AID="">AL</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.3" GID="" AID="">CL</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.4" GID="" AID="">FK</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.5" GID="" AID="">FL</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.6" GID="" AID="">GD</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.7" GID="" AID="">HH</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.8" GID="" AID="">JL</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.9" GID="" AID="">NB</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.10" GID="" AID="">NG</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.11" GID="" AID="">NX</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.12" GID="" AID="">RA</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.13" GID="" AID="">SH</property>
+	<property name="TransportDirect.UserPortal.DataServices.NatExCodes.item.14" GID="" AID="">SP</property>
+	<!-- SLCCodes list -->
+	<property name="TransportDirect.UserPortal.DataServices.SCLCodes.type" GID="" AID="">1</property>
+	<property name="TransportDirect.UserPortal.DataServices.SCLCodes.items" GID="" AID="">1</property>
+	<property name="TransportDirect.UserPortal.DataServices.SCLCodes.item.1" GID="" AID="">SC</property>
+	<!-- DisplayableSupplements list -->
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.type" GID=""
+		AID="">1</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.items" GID=""
+		AID="">21</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.1" GID=""
+		AID="">LFS</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.2" GID=""
+		AID="">MG1</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.3" GID=""
+		AID="">NFA</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.4" GID=""
+		AID="">NFC</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.5" GID=""
+		AID="">OFS</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.6" GID=""
+		AID="">TUO</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.7" GID=""
+		AID="">TUR</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.8" GID=""
+		AID="">TUS</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.9" GID=""
+		AID="">VFF</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.10" GID=""
+		AID="">WAF</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.11" GID=""
+		AID="">WEW</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.12" GID=""
+		AID="">WFF</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.13" GID=""
+		AID="">WFG</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.14" GID=""
+		AID="">WFH</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.15" GID=""
+		AID="">WHF</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.16" GID=""
+		AID="">WSF</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.17" GID=""
+		AID="">WSU</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.18" GID=""
+		AID="">WW1</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.19" GID=""
+		AID="">WW2</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.20" GID=""
+		AID="">XWO</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableSupplements.item.21" GID=""
+		AID="">XWR</property>
+	<!-- DisplayableRailTickets list -->
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.type" GID=""
+		AID="">5</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.items" GID=""
+		AID="">101</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.1" GID=""
+		AID="">AVR|Advance Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.2" GID=""
+		AID="">AXR|Apex Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.3" GID=""
+		AID="">AXS|Apex Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.4" GID=""
+		AID="">BAO|Business Advance A Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.5" GID=""
+		AID="">BAR|Business Advance Return A|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.6" GID=""
+		AID="">BBO|Business Advance Single B|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.7" GID=""
+		AID="">BBR|Business Advance Return B|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.8" GID=""
+		AID="">BFA|Business Advance 1st Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.9" GID=""
+		AID="">BFO|Business Advance 1st Single A|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.10" GID=""
+		AID="">BFR|Business Advance 1st Return A|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.11" GID=""
+		AID="">BFS|Business First SIngle|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.12" GID=""
+		AID="">BGO|Business Advance 1st Single B|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.13" GID=""
+		AID="">BGR|Business Advance 1st Return B|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.14" GID=""
+		AID="">BRR|Standard Class Off Peak 1 Rtn|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.15" GID=""
+		AID="">BRS|Standard Class Off Peak 1 Sgl|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.16" GID=""
+		AID="">BSR|Standard Class Off Peak 2 Rtn|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.17" GID=""
+		AID="">BSS|Standard Class Off Peak 2 Sgl|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.18" GID=""
+		AID="">BVR|Business Saver|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.19" GID=""
+		AID="">C1B|Central Value 1 Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.20" GID=""
+		AID="">C1S|Central Value 1 Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.21" GID=""
+		AID="">C3R|Central Value 3 Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.22" GID=""
+		AID="">C3S|Central Value 3 Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.23" GID=""
+		AID="">C7R|Central Value 7 Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.24" GID=""
+		AID="">C7S|Central Value 7 Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.25" GID=""
+		AID="">CBP|Clubman+CR Only|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.26" GID=""
+		AID="">CDR|Cheap Day Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.27" GID=""
+		AID="">CDS|Cheap Day Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.28" GID=""
+		AID="">CVR|Central Value Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.29" GID=""
+		AID="">CVS|Central Value Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.30" GID=""
+		AID="">CVV|Virgin CC 14/14 Adv Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.31" GID=""
+		AID="">DAR|Day Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.32" GID=""
+		AID="">DTP|Day Tripper|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.33" GID=""
+		AID="">DXR|Daypex Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.34" GID=""
+		AID="">ECR|Economy Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.35" GID=""
+		AID="">ECS|Economy Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.36" GID=""
+		AID="">F3S|Value 3 Advance 1st|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.37" GID=""
+		AID="">F7S|Value 7 Advance 1st|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.38" GID=""
+		AID="">FAR|First Advance|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.39" GID=""
+		AID="">FCR|1st Cheap Day Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.40" GID=""
+		AID="">FDR|First Day Return|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.41" GID=""
+		AID="">FDS|First Day Single|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.42" GID=""
+		AID="">FFS|Value 14 Advance 1st|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.43" GID=""
+		AID="">FOR|First Open Return|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.44" GID=""
+		AID="">FOS|First Open Single|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.45" GID=""
+		AID="">FSR|First Saver Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.46" GID=""
+		AID="">FSS|First Saver Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.47" GID=""
+		AID="">FXR|1st Apex Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.48" GID=""
+		AID="">FXS|1st Apex Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.49" GID=""
+		AID="">GE1|Gatwick Express 1st Chp Day|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.50" GID=""
+		AID="">LEX|Flexi Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.51" GID=""
+		AID="">LFR|Leisure First Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.52" GID=""
+		AID="">MWA|MML Weekender|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.53" GID=""
+		AID="">MXR|Airport Apex Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.54" GID=""
+		AID="">NAR|Network Away Break|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.55" GID=""
+		AID="">NWD|North West Day Out|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.56" GID=""
+		AID="">OBR|FirstClassOffPeak1|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.57" GID=""
+		AID="">OCR|FirstClassOffPeak2|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.58" GID=""
+		AID="">ODR|FirstClassOffPeak3|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.59" GID=""
+		AID="">OER|GNER Leisure First|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.60" GID=""
+		AID="">OPR|Off Peak Saver Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.61" GID=""
+		AID="">OPS|Off Peak Saver Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.62" GID=""
+		AID="">PED|Peak Day Out Standard|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.63" GID=""
+		AID="">PRR|First Inclusive Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.64" GID=""
+		AID="">PRS|First Inclusive Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.65" GID=""
+		AID="">SAR|Super Advance Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.66" GID=""
+		AID="">SAS|Super Advance Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.67" GID=""
+		AID="">SDR|Standard Day Return|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.68" GID=""
+		AID="">SDS|Standard Day Single|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.69" GID=""
+		AID="">SER|Super Economy Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.70" GID=""
+		AID="">SES|Super Economy Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.71" GID=""
+		AID="">SFR|Saver First Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.72" GID=""
+		AID="">SOR|Standard Open Return|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.73" GID=""
+		AID="">SOS|Standard Open Single|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.74" GID=""
+		AID="">SS1|First Senior|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.75" GID=""
+		AID="">SS2|Standard Senior|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.76" GID=""
+		AID="">SSR|Supersaver Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.77" GID=""
+		AID="">SSS|Supersaver Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.78" GID=""
+		AID="">SVR|Saver Return|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.79" GID=""
+		AID="">SVS|Saver Single|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.80" GID=""
+		AID="">TPE|TP Express Student Getaway|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.81" GID=""
+		AID="">V3R|Virgin Value 3 day Advance Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.82" GID=""
+		AID="">V3S|Value 3 Day Adv Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.83" GID=""
+		AID="">V7S|Value 7 Day Adv Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.84" GID=""
+		AID="">V7R|Value 7 day Advance Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.85" GID=""
+		AID="">VAR|Virgin Value First Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.86" GID=""
+		AID="">VBR|Virgin Business Return|FullyFlexible</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.87" GID=""
+		AID="">VIA|Virgin Value 14 Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.88" GID=""
+		AID="">VIB|Virgin Value 14 Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.89" GID=""
+		AID="">VIC|Virgin Value 7 Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.90" GID=""
+		AID="">VID|Virgin Value 7 Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.91" GID=""
+		AID="">VIE|Virgin Value 3 Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.92" GID=""
+		AID="">VIF|Virgin Value 3 Return|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.93" GID=""
+		AID="">VVR|Virgin Value 14 Day Advance Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.94" GID=""
+		AID="">VVS|Value 14 Day Adv Single|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.95" GID=""
+		AID="">WDR|Saturday Day Out|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.96" GID=""
+		AID="">WFR|Weekend Day First|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.97" GID=""
+		AID="">WKR|Weekender|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.98" GID=""
+		AID="">XD1|Day Exec|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.99" GID=""
+		AID="">XD2|Day Exec.|NoFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.100" GID=""
+		AID="">XF|First Daypex|LimitedFlexibility</property>
+	<property name="TransportDirect.UserPortal.DataServices.DisplayableRailTickets.item.101" GID=""
+		AID="">XFR|First Daypex Return|LimitedFlexibility</property>
+	<!-- Naptan PROPERTIES -->
+	<property name="FindA.NaptanPrefix.Airport" GID="" AID="CostSearch">9200</property>
+	<property name="FindA.NaptanPrefix.Rail" GID="" AID="CostSearch">9100</property>
+	<property name="FindA.NaptanPrefix.Coach" GID="" AID="CostSearch">9000</property>
+	<property name="FindA.NaptanPrefix.AirportVia" GID="" AID="CostSearch">920F</property>
+	<!-- FBO PROPERTIES -->
+	<property name="RetailBusinessObjects.FBO.InterfaceVersion" GID="" AID="CostSearch">0101</property>
+	<property name="RetailBusinessObjects.FBO.PoolSize" GID="" AID="CostSearch">5</property>
+	<property name="RetailBusinessObjects.FBO.ObjectId" GID="" AID="CostSearch">FA</property>
+	<property name="RetailBusinessObjects.FBO.TimeoutDuration" GID="" AID="CostSearch">3000</property>
+	<property name="RetailBusinessObjects.FBO.TimeoutCheckFrequency" GID="" AID="CostSearch">1000</property>
+	<property name="RetailBusinessObjects.FBO.TimeoutChecking" GID="" AID="CostSearch">On</property>
+	<property name="RetailBusinessObjects.FBO.MinimumPoolSize" GID="" AID="CostSearch">5</property>
+	<!-- RBO PROPERTIES -->
+	<property name="RetailBusinessObjects.RBO.InterfaceVersion" GID="" AID="CostSearch">0200</property>
+	<property name="RetailBusinessObjects.RBO.PoolSize" GID="" AID="CostSearch">5</property>
+	<property name="RetailBusinessObjects.RBO.ObjectId" GID="" AID="CostSearch">RE</property>
+	<property name="RetailBusinessObjects.RBO.TimeoutDuration" GID="" AID="CostSearch">5000</property>
+	<property name="RetailBusinessObjects.RBO.TimeoutCheckFrequency" GID="" AID="CostSearch">1000</property>
+	<property name="RetailBusinessObjects.RBO.TimeoutChecking" GID="" AID="CostSearch">On</property>
+	<property name="RetailBusinessObjects.RBO.MinimumPoolSize" GID="" AID="CostSearch">5</property>
+	<!-- LBO PROPERTIES -->
+	<property name="RetailBusinessObjects.LBO.InterfaceVersion" GID="" AID="CostSearch">0100</property>
+	<property name="RetailBusinessObjects.LBO.PoolSize" GID="" AID="CostSearch">5</property>
+	<property name="RetailBusinessObjects.LBO.ObjectId" GID="" AID="CostSearch">LU</property>
+	<property name="RetailBusinessObjects.LBO.TimeoutDuration" GID="" AID="CostSearch">3000</property>
+	<property name="RetailBusinessObjects.LBO.TimeoutCheckFrequency" GID="" AID="CostSearch">1000</property>
+	<property name="RetailBusinessObjects.LBO.TimeoutChecking" GID="" AID="CostSearch">On</property>
+	<property name="RetailBusinessObjects.LBO.MinimumPoolSize" GID="" AID="CostSearch">5</property>
+	<!-- RVBO PROPERTIES -->
+	<property name="RetailBusinessObjects.RVBO.InterfaceVersion" GID="" AID="CostSearch">0200</property>
+	<property name="RetailBusinessObjects.RVBO.PoolSize" GID="" AID="CostSearch">5</property>
+	<property name="RetailBusinessObjects.RVBO.ObjectId" GID="" AID="CostSearch">RV</property>
+	<property name="RetailBusinessObjects.RVBO.TimeoutDuration" GID="" AID="CostSearch">5000</property>
+	<property name="RetailBusinessObjects.RVBO.TimeoutCheckFrequency" GID="" AID="CostSearch">1000</property>
+	<property name="RetailBusinessObjects.RVBO.TimeoutChecking" GID="" AID="CostSearch">On</property>
+	<property name="RetailBusinessObjects.RVBO.MinimumPoolSize" GID="" AID="CostSearch">5</property>
+	<property name="RetailBusinessObjects.RVBO.NrsUserID" GID="" AID="CostSearch">UUUUUUUU</property>
+	<property name="RetailBusinessObjects.RVBO.NrsIsTest" GID="" AID="CostSearch">N</property>
+	<property name="RetailBusinessObjects.RVBO.NrsIsTraining" GID="" AID="CostSearch">N</property>
+	<!-- SBO PROPERTIES -->
+	<property name="RetailBusinessObjects.SBO.InterfaceVersion" GID="" AID="CostSearch">0200</property>
+	<property name="RetailBusinessObjects.SBO.PoolSize" GID="" AID="CostSearch">5</property>
+	<property name="RetailBusinessObjects.SBO.ObjectId" GID="" AID="CostSearch">SU</property>
+	<property name="RetailBusinessObjects.SBO.TimeoutDuration" GID="" AID="CostSearch">5000</property>
+	<property name="RetailBusinessObjects.SBO.TimeoutCheckFrequency" GID="" AID="CostSearch">1000</property>
+	<property name="RetailBusinessObjects.SBO.TimeoutChecking" GID="" AID="CostSearch">On</property>
+	<property name="RetailBusinessObjects.SBO.MinimumPoolSize" GID="" AID="CostSearch">5</property>
+	<!-- Pool Properties -->
+	<property name="RetailBusinessObjects.HousekeepingCheckFrequency" GID="" AID="CostSearch">3000</property>
+	<!-- CoachRoutesQuotaFaresProvider properties -->
+	<property name="TransientPortalDB" GID="" AID="CostSearch">Integrated Security=SSPI;Initial Catalog=TransientPortal;Data Source=localhost;Connect Timeout=30;</property>
+	<property name="JourneyControl.MinUserTypeCJPLogging" GID="" AID="CostSearch">1</property>
+	
+	<property name="PlacesDB" GID="" AID="">Server=localhost;Initial Catalog=PermanentPortal;Trusted_Connection=true;</property>
+</lookup>

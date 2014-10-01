@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JourneyResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<messages>
+		<Message>
+			<code>158</code>
+			<description>TransportDirect.JourneyPlanning.RoadRoutingEngine.RoadRoutingEngineException: Object reference not set to an instance of an object. ---&gt; System.NullReferenceException: Object reference not set to an instance of an object.
+at TransportDirect.JourneyPlanning.RoadRoutingEngine.RouteBuilder.ValidateStopParameters(JourneyRequest RouteToCalculate, Int32[]&amp; OriginIndex, FeatureType[]&amp; OriginType, Int32[]&amp; originTimes, Int32[]&amp; DestinationIndex, FeatureType[]&amp; DestinationType, Int32[]&amp; destinationTimes, DateTime&amp; firstDate, Int32 ViaIndex, Boolean&amp; shortJourney)
+at TransportDirect.JourneyPlanning.RoadRoutingEngine.RouteBuilder.RequestRoute(CJPRequest RouteToCalculate)
+--- End of inner exception stack trace ---
+at TransportDirect.JourneyPlanning.RoadRoutingEngine.RouteBuilder.RequestRoute(CJPRequest RouteToCalculate)
+at TransportDirect.JourneyPlanning.RoadRouting.RoadInterface.JourneyPlan(CJPRequest request)
+System.NullReferenceException: Object reference not set to an instance of an object.
+at TransportDirect.JourneyPlanning.RoadRoutingEngine.RouteBuilder.ValidateStopParameters(JourneyRequest RouteToCalculate, Int32[]&amp; OriginIndex, FeatureType[]&amp; OriginType, Int32[]&amp; originTimes, Int32[]&amp; DestinationIndex, FeatureType[]&amp; DestinationType, Int32[]&amp; destinationTimes, DateTime&amp; firstDate, Int32 ViaIndex, Boolean&amp; shortJourney)
+at TransportDirect.JourneyPlanning.RoadRoutingEngine.RouteBuilder.RequestRoute(CJPRequest RouteToCalculate)</description>
+		</Message>
+	</messages>
+  <privateJourneys></privateJourneys>
+</JourneyResult>

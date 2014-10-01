@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EnvironmentalBenefitsTestData>
+	<EnvBenHighValueMotorway MotorwayName="M1" DuplicateMotorwayJunction="" AllHighValue="1"/>
+	<EnvBenHighValueMotorway MotorwayName="M11" DuplicateMotorwayJunction="" AllHighValue="1"/>
+	<EnvBenHighValueMotorway MotorwayName="M4" DuplicateMotorwayJunction="" AllHighValue="0"/>
+	<EnvBenHighValueMotorway MotorwayName="M62" DuplicateMotorwayJunction="" AllHighValue="1"/>
+	<EnvBenHighValueMotorwayJunction MotorwayName="M4" JunctionStart="1" JunctionEnd="1a" Distance="1000" Country="England"/>
+	<EnvBenHighValueMotorwayJunction MotorwayName="M4" JunctionStart="1a" JunctionEnd="2" Distance="1000" Country="England"/>
+	<EnvBenHighValueMotorwayJunction MotorwayName="M4" JunctionStart="32" JunctionEnd="33" Distance="4500" Country="Wales"/>
+	<EnvBenHighValueMotorwayJunction MotorwayName="M4" JunctionStart="4b" JunctionEnd="5" Distance="2400" Country="England"/>
+	<EnvBenHighValueMotorwayJunction MotorwayName="M4" JunctionStart="5" JunctionEnd="6" Distance="1000" Country="England"/>
+	<EnvBenRoadCategoryCost RoadCategory="MotorwayHigh" Country="England" PencePerMile="901"/>
+	<EnvBenRoadCategoryCost RoadCategory="MotorwayHigh" Country="Scotland" PencePerMile="902"/>
+	<EnvBenRoadCategoryCost RoadCategory="MotorwayHigh" Country="Wales" PencePerMile="903"/>
+	<EnvBenRoadCategoryCost RoadCategory="MotorwayStandard" Country="England" PencePerMile="801"/>
+	<EnvBenRoadCategoryCost RoadCategory="MotorwayStandard" Country="Scotland" PencePerMile="802"/>
+	<EnvBenRoadCategoryCost RoadCategory="MotorwayStandard" Country="Wales" PencePerMile="803"/>
+	<EnvBenRoadCategoryCost RoadCategory="RoadOther" Country="England" PencePerMile="33333"/> <!-- THIS VALUE [33333] IS DIFFERENT, USED IN TEST FOR CHANGE NOTIFICATION -->
+	<EnvBenRoadCategoryCost RoadCategory="RoadOther" Country="Scotland" PencePerMile="302"/>
+	<EnvBenRoadCategoryCost RoadCategory="RoadOther" Country="Wales" PencePerMile="303"/>
+	<EnvBenRoadCategoryCost RoadCategory="RoadStandardA" Country="England" PencePerMile="501"/>
+	<EnvBenRoadCategoryCost RoadCategory="RoadStandardA" Country="Scotland" PencePerMile="502"/>
+	<EnvBenRoadCategoryCost RoadCategory="RoadStandardA" Country="Wales" PencePerMile="503"/>
+	<EnvBenUnknownMotorwayJunction MotorwayName="M6" JoiningRoad="A14" JoiningJunction="" JunctionEntry="0" JunctionExit="0"/>
+	<EnvBenUnknownMotorwayJunction MotorwayName="M6" JoiningRoad="M1" JoiningJunction="" JunctionEntry="0" JunctionExit="0"/>
+	<EnvBenUnknownMotorwayJunction MotorwayName="M8" JoiningRoad="M73" JoiningJunction="" JunctionEntry="8" JunctionExit="8"/>
+</EnvironmentalBenefitsTestData>

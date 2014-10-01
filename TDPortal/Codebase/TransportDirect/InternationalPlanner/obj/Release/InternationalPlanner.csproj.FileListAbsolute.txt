@@ -1,0 +1,17 @@
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.userportal.internationalplanner.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.userportal.internationalplanner.pdb
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.userportal.dataservices.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.userportal.scriptrepository.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\td.common.resourcemanager.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\obj\Release\td.userportal.internationalplanner.dll
+D:\TDPortal\Codebase\TransportDirect\InternationalPlanner\obj\Release\td.userportal.internationalplanner.pdb

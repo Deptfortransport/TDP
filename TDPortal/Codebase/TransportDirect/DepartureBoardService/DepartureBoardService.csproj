@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CEE342F-B3DF-44AD-A56B-1B861292E016}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.userportal.departureboardservice</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.UserPortal.DepartureBoardService</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <Name>nunit.framework</Name>
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>system.web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>system.web.services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="td.CJP">
+      <Name>td.CJP</Name>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJP.dll</HintPath>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <Name>td.CJPInterface</Name>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Name>AdditionalDataModule</Name>
+      <Project>{1BF668A4-F9B2-4D64-85CB-ADD80C432849}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Name>DatabaseInfrastructure</Name>
+      <Project>{5F116712-53F6-4A9F-B11B-96D0812190AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Name>LocationService</Name>
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\DatabasePropertyProvider\DatabasePropertyProvider.csproj">
+      <Name>DatabasePropertyProvider</Name>
+      <Project>{946A95B4-3145-4F4E-9E8F-54B78F1FA5F4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportDataProvider\TDPCustomEvents\TDPCustomEvents.csproj">
+      <Name>TDPCustomEvents</Name>
+      <Project>{A377CDD7-9190-46F2-8938-65DF17478D21}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="td.RoadRoutingEngine">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.RoadRoutingEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="DBSValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\CallingStopStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSActivityType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSMessageIdentifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSRangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSRealTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSRealTimeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSRequest.cs" />
+    <Compile Include="DepartureBoardFacade\DBSResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSStopEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSTimeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DBSValidationType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\DepartureBoardType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\IDepartureBoardService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\TimeRequestType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\TrainRealTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardFacade\TrainStopEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoardServiceFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Keys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\BookmarkHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\BookmarkServiceFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\DeliveryMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\IOtaBookmarkSenderService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\ITDMobileBookmark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\MobileBookmarkFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\MobileDeviceTypesDropList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\OtaBookmarkSenderService.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\OtaBookmarkSenderServiceOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileBookmark\TDMobileBookmark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\DBWSConverter.cs" />
+    <Compile Include="RTTIManager\LDBHandler.cs" />
+    <Compile Include="RTTIManager\RDHandler\AttributeName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\ILookupTranslation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\InterestType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\IRDHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\IRDServiceConsumer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\IRTTILookupHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\LookupTranslation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandlerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RDServiceConsumer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RequestAttributeName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RequestElementName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTIElementName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTIErrorResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTIErrorType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTILookupHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTILookupHandlerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTIUtilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTIXmlExtractor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\RTTIXmlValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\SocketClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\TemplateRequestType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTTIManager\RDHandler\TripInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\CJPFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\CJPStopEventCall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\IStopEventManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\StopEventConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\StopEventDateComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\StopEventManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\StopEventManagerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopEventManager\StopEventMockManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\MockCodeGazetteers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\MockProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\MockServiceInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestDBSService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestDBSValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestMobileBookmark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestMockBookmarkSenderService.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Test\TestResultFromRTTI_CJP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestRTTIManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestStopEventManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\DepartureBoardWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <None Include="Web References\DepartureBoardWebService\DBWSResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DepartureBoardWebService\DepartureBoards.disco" />
+    <None Include="bin\Debug\td.userportal.departureboardservice.dll.config" />
+    <None Include="Message codes.xls" />
+    <None Include="Test\MockListener\SocketListner.exe.config" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\BRIEDIA.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\BRIEDID.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\BRIRUNA.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\BRIRUND.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\PNZBRIA.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\PNZBRID.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\PNZEDIA.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\PNZEDID.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\RTTIErrorResponse.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\StationResponseByCRS.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\TrainResponseByRID.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\RTTITestResponses\TripResponseByCRS.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolCoachArrive.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolCoachArriveStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolCoachDepart.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolCoachDepartStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToEdinburghCoachArrive.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToEdinburghCoachArriveStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToEdinburghCoachDepart.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToEdinburghCoachDepartStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToRuncornCoachArrive.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToRuncornCoachArriveStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToRuncornCoachDepart.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\BristolToRuncornCoachDepartStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\lookup.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToBristolCoachArrive.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToBristolCoachArriveStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToBristolCoachDepart.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToBristolCoachDepartStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToEdinburghCoachArrive.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToEdinburghCoachArriveStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToEdinburghCoachDepart.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\PenzanceToEdinburghCoachDepartStops.xml" />
+    <Content Include="bin\Debug\DepartureBoardService\StopEventMockXml\template.xml" />
+    <Content Include="bin\Debug\td.RoadRoutingEngine.dll" />
+    <Content Include="bin\Debug\td.userportal.departureboardservice.dll.xml" />
+    <Content Include="bin\Release\td.RoadRoutingEngine.dll" />
+    <Content Include="Test\MockListener\SocketListner.exe" />
+    <Content Include="Test\Schema\rttiEPTSchema.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web References\DepartureBoardWebService\DepartureBoards.wsdl" />
+    <None Include="Web References\DepartureBoardWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="RTTIManager\LDBHandler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DepartureBoardWebService\</RelPath>
+      <UpdateFromURL>http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>td_userportal_departureboardservice_DepartureBoardWebService_DepartureBoards</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,69 @@
+<?xml version="1.0" ?> 
+  <Eport xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" msgId="9" ts="2004-11-12T08:10:22.5000000-00:00" version="4.0" xmlns="http://www.thales-is.com/rtti/EnquriyPorts/v4/rttiEPTSchema.xsd">
+  <StationResp crs="SYB">
+  <TAS pta="08:06" eta="08:11" ptd="08:07" etd="08:11" toc="TP" uid="Y10168" rid="200411120336570">
+  <From>HULL</From> 
+  <To>MNCRPIC</To> 
+  </TAS>
+  <TAS pta="08:15" eta="08:19" ptd="08:15" etd="08:19" toc="NW" uid="C75232" rid="200411120320777">
+  <From>MNCRVIC</From> 
+  <To>HDRSFLD</To> 
+  </TAS>
+  <TAS pta="08:18" eta="08:24" ptd="08:18" etd="08:24" toc="TP" rid="200411120356721">
+  <From>LEEDS</From> 
+  <To>MNCRPIC</To> 
+  </TAS>
+  <TAS ptd="08:22" toc="NW" uid="C75281" rid="200411120320798">
+  <From>SBYD</From> 
+  <To>LVRPLSH</To> 
+  </TAS>
+  <TAS pta="08:25" eta="08:25" ptd="08:26" etd="08:26" toc="TP" uid="C33117" rid="200411120318930">
+  <From>LVRPLSH</From> 
+  <To>SCARBRO</To> 
+  </TAS>
+  <TAS pta="08:30" toc="NW" uid="C72150" rid="200411120320187">
+  <From>MNCRVIC</From> 
+  <To>SBYD</To> 
+  </TAS>
+  <TAS pta="08:31" eta="08:31" ptd="08:31" etd="08:31" toc="NW" uid="Y02073" rid="200411120336146">
+  <From>HDRSFLD</From> 
+  <To>MNCRVIC</To> 
+  </TAS>
+  <TAS pta="08:34" eta="08:33" ptd="08:35" etd="08:35" toc="TP" uid="Y10106" rid="200411120336538">
+  <From>MDLSBRO</From> 
+  <To>MNCRIAP</To> 
+  </TAS>
+  <TAS pta="08:46" ptd="08:47" toc="TP" uid="C33156" rid="200411120318946">
+  <From>MNCRPIC</From> 
+  <To>BRDLNGT</To> 
+  </TAS>
+  <TAS pta="09:01" ptd="09:01" toc="NW" uid="C72171" rid="200411120320198">
+  <From>GFLD</From> 
+  <To>MNCRVIC</To> 
+  </TAS>
+  <TAS pta="09:15" ptd="09:15" toc="NW" uid="C75234" rid="200411120320778">
+  <From>MNCRVIC</From> 
+  <To>HDRSFLD</To> 
+  </TAS>
+  <TAS pta="09:31" ptd="09:31" toc="NW" uid="Y02075" rid="200411120336147">
+  <From>HDRSFLD</From> 
+  <To>MNCRVIC</To> 
+  </TAS>
+  <TAS pta="09:37" toc="NW" uid="C72251" rid="200411120320203">
+  <From>MNCRVIC</From> 
+  <To>SBYD</To> 
+  </TAS>
+  <TAS pta="09:47" eta="09:46" ptd="09:48" etd="09:48" toc="TP" uid="Y10224" rid="200411120336588">
+  <From>SNDRLND</From> 
+  <To>LVRPLSH</To> 
+  </TAS>
+  <TAS pta="09:47" ptd="09:47" toc="TP" uid="C33160" rid="200411120318947">
+  <From>MNCRPIC</From> 
+  <To>BRDLNGT</To> 
+  </TAS>
+  <TAS ptd="09:55" toc="NW" uid="C72258" rid="200411120320209">
+  <From>SBYD</From> 
+  <To>MNCRVIC</To> 
+  </TAS>
+  </StationResp>
+  </Eport>

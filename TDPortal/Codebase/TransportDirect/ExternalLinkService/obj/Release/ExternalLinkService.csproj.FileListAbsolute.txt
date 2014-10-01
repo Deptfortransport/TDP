@@ -1,0 +1,14 @@
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.userportal.externallinkservice.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.userportal.dataservices.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\td.common.resourcemanager.dll
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\ExternalLinkService\obj\Release\td.userportal.externallinkservice.dll

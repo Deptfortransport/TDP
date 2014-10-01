@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FindNearestQuery>
+  <X>459385</X>
+  <Y>304100</Y>
+  <MaxDistance>1000</MaxDistance>
+  <SearchDistance>500</SearchDistance>
+  <NaptanIds>
+    <string>9100LESTER</string>
+    <string>269030087</string>
+  </NaptanIds>
+  <StopTypes>
+   </StopTypes>
+  <Address>75 Carty Road, Leicester, LE5 1QS</Address>
+  <IgnoreMotorways>
+     true
+  </IgnoreMotorways>
+  <ToId></ToId>
+  <QueryFunction>FindStopsInRadius</QueryFunction>
+  <GisResultPath/>
+
+</FindNearestQuery>
