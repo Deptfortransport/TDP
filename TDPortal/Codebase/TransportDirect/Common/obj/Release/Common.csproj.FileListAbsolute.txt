@@ -1,0 +1,4 @@
+D:\TDPortal\Codebase\TransportDirect\Common\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\Common\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\Common\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\Common\obj\Release\td.common.dll

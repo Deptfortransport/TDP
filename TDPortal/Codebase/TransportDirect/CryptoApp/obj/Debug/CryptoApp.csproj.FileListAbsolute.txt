@@ -1,0 +1,16 @@
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\CryptoApp.exe
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\CryptoApp.pdb
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\td.common.propertyservice.properties.pdb
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\td.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\td.common.pdb
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Debug\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Debug\TransportDirect.UserPortal.SupportApps.CryptoApp.TDCRApp.resources
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Debug\CryptoApp.exe
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Debug\CryptoApp.pdb
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Debug\CryptoApp.csprojResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Debug\CryptoApp.csproj.GenerateResource.Cache

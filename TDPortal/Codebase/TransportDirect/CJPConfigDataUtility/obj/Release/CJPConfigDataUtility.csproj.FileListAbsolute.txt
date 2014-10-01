@@ -1,0 +1,15 @@
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.cjpconfigdatautility.exe.config
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.cjpconfigdatautility.exe
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.cjpconfigdatautility.pdb
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\obj\Release\td.cjpconfigdatautility.exe
+D:\TDPortal\Codebase\TransportDirect\CJPConfigDataUtility\obj\Release\td.cjpconfigdatautility.pdb

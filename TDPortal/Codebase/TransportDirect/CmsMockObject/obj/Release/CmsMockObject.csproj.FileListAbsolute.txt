@@ -1,0 +1,5 @@
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\bin\Release\CmsMockObject.dll
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\bin\Release\CmsMockObject.pdb
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\obj\Release\CmsMockObject.dll
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\obj\Release\CmsMockObject.pdb

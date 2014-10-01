@@ -1,0 +1,15 @@
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.userportal.coordinateconvertorprovider.dll.config
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.userportal.coordinateconvertorprovider.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.userportal.coordinateconvertorprovider.XmlSerializers.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.userportal.coordinateconvertorprovider.pdb
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\obj\Release\td.userportal.coordinateconvertorprovider.dll
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\obj\Release\td.userportal.coordinateconvertorprovider.pdb
+D:\TDPortal\Codebase\TransportDirect\CoordinateConvertorProvider\obj\Release\td.userportal.coordinateconvertorprovider.XmlSerializers.dll

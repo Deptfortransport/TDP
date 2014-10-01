@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{318B00EE-684E-4632-93F3-84C8234493C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BatchJourneyPlannerService</RootNamespace>
+    <AssemblyName>BatchJourneyPlannerService</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>BatchJourneyPlannerService.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\ThirdParty\ICSharpCode\SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+    <Reference Include="td.CJP">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJP.dll</HintPath>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.interactivemapping">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdParty\ESRI\td.interactivemapping.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BatchJourneyPlannerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BatchJourneyPlannerService.Designer.cs">
+      <DependentUpon>BatchJourneyPlannerService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchJourneyPlannerServiceInitialisation.cs" />
+    <Compile Include="BatchJourneyPlannerServicePropertyValidator.cs" />
+    <Compile Include="BatchProcessor.cs" />
+    <Compile Include="CarSummary.cs" />
+    <Compile Include="CycleSummary.cs" />
+    <Compile Include="Keys.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="ProcessRequest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PublicTransportSummary.cs" />
+    <Compile Include="TestBatchJourneyPlannerService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{DCA9BC83-FE04-49DE-8255-E3ED482F601A}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoordinateConvertorProvider\CoordinateConvertorProvider.csproj">
+      <Project>{415887EA-EC67-4E72-9BF2-62B28D9272EC}</Project>
+      <Name>CoordinateConvertorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerControl\CyclePlannerControl.csproj">
+      <Project>{2E288B42-FABF-487E-B8D8-64AD18B90208}</Project>
+      <Name>CyclePlannerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{2E16F073-D95F-4DE8-8E60-381899A722DA}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Project>{5F116712-53F6-4A9F-B11B-96D0812190AA}</Project>
+      <Name>DatabaseInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Name>DataServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnhancedExposedServicesCommon\EnhancedExposedServicesCommon.csproj">
+      <Project>{7180B0C2-5587-40AB-AA37-49B06B88272F}</Project>
+      <Name>EnhancedExposedServicesCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLoggingService\EventLogging.csproj">
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Name>EventLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyControl\JourneyControl.csproj">
+      <Project>{27414D3D-9782-44C6-A5BD-A11ECEA591E5}</Project>
+      <Name>JourneyControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyEmissions\JourneyEmissions.csproj">
+      <Project>{9737FC5A-5F4E-4CF3-8C52-918D64F59849}</Project>
+      <Name>JourneyEmissions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Name>LocationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\DatabasePropertyProvider\DatabasePropertyProvider.csproj">
+      <Project>{946A95B4-3145-4F4E-9E8F-54B78F1FA5F4}</Project>
+      <Name>DatabasePropertyProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportDataProvider\TDPCustomEvents\TDPCustomEvents.csproj">
+      <Project>{A377CDD7-9190-46F2-8938-65DF17478D21}</Project>
+      <Name>TDPCustomEvents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{C0EADF9C-59D2-45EA-A67D-09CA8999746C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenFlow\ScreenFlow.csproj">
+      <Project>{75AE06DF-1B08-42E6-AF47-0B8B8035F0F6}</Project>
+      <Name>ScreenFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Name>ServiceDiscovery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\SessionManager.csproj">
+      <Project>{6F189D8B-6F30-4FC3-8EFC-5E3001A8C862}</Project>
+      <Name>SessionManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BatchJourneyPlannerService.resx">
+      <DependentUpon>BatchJourneyPlannerService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BatchFiles\install BatchService .bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BatchFiles\START BatchService.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BatchFiles\STOP BatchService.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BatchFiles\uninstall BatchService.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="remoting.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RequestData\1 record.csv" />
+    <None Include="RequestData\100K records.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RequestData\200K records.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RequestData\5 records.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RequestData\50001 records.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RequestData\501 records.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RequestData\50k records.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="D:\TDPortal\Codebase\TransportDirect\Web\Web2\Xslt\RtfJourneyTransform.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="D:\TDPortal\Codebase\TransportDirect\Web\Web2\Xslt\RtfSummaryTransform.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

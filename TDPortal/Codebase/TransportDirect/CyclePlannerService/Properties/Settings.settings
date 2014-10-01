@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TransportDirect.UserPortal.CyclePlannerService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="td_userportal_cycleplannerservice_CyclePlannerWebService_CyclePlannerService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.93.154.7/cycleplannerservice/service.asmx</Value>
+    </Setting>
+    <Setting Name="td_userportal_cycleplannerservice_GradientProfilerWebService_GradientProfilerService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://uk005744/GradientProfileService/service.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

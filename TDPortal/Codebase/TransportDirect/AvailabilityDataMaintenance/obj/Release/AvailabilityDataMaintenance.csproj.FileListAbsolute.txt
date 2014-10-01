@@ -1,0 +1,16 @@
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.userportal.availabilitydatamaintenance.exe.config
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.userportal.availabilitydatamaintenance.exe
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.common.propertyservice.databasepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.datagateway.framework.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.reportdataprovider.tdpcustomevents.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\td.enhancedexposedservices.common.dll
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\AvailabilityDataMaintenance\obj\Release\td.userportal.availabilitydatamaintenance.exe

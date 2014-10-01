@@ -1,0 +1,17 @@
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.userportal.cycleplannerservice.dll.config
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.userportal.cycleplannerservice.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.userportal.cycleplannerservice.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.logging.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.propertyservice.properties.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\td.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Debug\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\obj\Debug\td.userportal.cycleplannerservice.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\obj\Debug\td.userportal.cycleplannerservice.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\obj\Debug\CyclePlannerService.csprojResolveAssemblyReference.cache

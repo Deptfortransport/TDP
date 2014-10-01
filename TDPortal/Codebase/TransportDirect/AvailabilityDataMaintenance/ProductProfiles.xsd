@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<xs:schema targetNamespace="http://www.transportdirect.info/productprofiles" elementFormDefault="qualified" xmlns="http://www.transportdirect.info/productprofiles" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Mode" type="xs:string" />
+	<xs:element name="Origin" type="xs:string" />
+	<xs:element name="Destination" type="xs:string" />
+	<xs:element name="Category" type="xs:string" />
+	<xs:element name="DayType" type="xs:string" />
+	<xs:element name="DayRange" type="xs:string" />
+	<xs:element name="Probability" type="xs:string" />
+	<xs:element name="ProductProfiles">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Profile" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Profile">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Mode" minOccurs="1" />
+				<xs:element name="Origin" minOccurs="1" />
+				<xs:element name="Destination" minOccurs="1" />
+				<xs:element name="Category" minOccurs="1" />
+				<xs:element name="DayType" minOccurs="1" />
+				<xs:element name="DayRange" minOccurs="1" />
+				<xs:element name="Probability" minOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

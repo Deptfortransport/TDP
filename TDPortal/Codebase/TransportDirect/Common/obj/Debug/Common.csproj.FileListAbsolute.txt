@@ -1,0 +1,5 @@
+D:\TDPortal\Codebase\TransportDirect\Common\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\Common\bin\Debug\td.common.pdb
+D:\TDPortal\Codebase\TransportDirect\Common\bin\Debug\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\Common\obj\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\Common\obj\Debug\td.common.pdb

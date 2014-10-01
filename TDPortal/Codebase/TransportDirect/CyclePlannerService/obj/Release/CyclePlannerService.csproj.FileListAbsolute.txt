@@ -1,0 +1,15 @@
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.userportal.cycleplannerservice.dll.config
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.userportal.cycleplannerservice.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.userportal.cycleplannerservice.XmlSerializers.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.userportal.cycleplannerservice.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\obj\Release\td.userportal.cycleplannerservice.dll
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\obj\Release\td.userportal.cycleplannerservice.pdb
+D:\TDPortal\Codebase\TransportDirect\CyclePlannerService\obj\Release\td.userportal.cycleplannerservice.XmlSerializers.dll

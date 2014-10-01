@@ -1,0 +1,2 @@
+JourneyID,OriginType,Origin,DestinationType,Destination,OutwardDate,OutwardTime,OutwardArrDep,ReturnDate,ReturnTime,ReturnArrDep
+Game01,p,SW1A 0AA,p,HA9 0WS,15082013,900,a,,,

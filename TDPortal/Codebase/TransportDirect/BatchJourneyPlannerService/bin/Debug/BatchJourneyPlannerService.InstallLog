@@ -1,0 +1,56 @@
+﻿Installing assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 
+Installing service BatchJourneyPlannerService...
+Service BatchJourneyPlannerService has been successfully installed.
+Creating EventLog source BatchJourneyPlannerService in log Application...
+Committing assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 
+Uninstalling assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 
+Removing EventLog source BatchJourneyPlannerService.
+Service BatchJourneyPlannerService is being removed from the system...
+Service BatchJourneyPlannerService was successfully removed from the system.
+Installing assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 
+Installing service BatchJourneyPlannerService...
+Service BatchJourneyPlannerService has been successfully installed.
+Creating EventLog source BatchJourneyPlannerService in log Application...
+Committing assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 
+Uninstalling assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 
+Removing EventLog source BatchJourneyPlannerService.
+Service BatchJourneyPlannerService is being removed from the system...
+Service BatchJourneyPlannerService was successfully removed from the system.
+Attempt to stop service BatchJourneyPlannerService.
+Installing assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 
+Installing service BatchJourneyPlannerService...
+Service BatchJourneyPlannerService has been successfully installed.
+Creating EventLog source BatchJourneyPlannerService in log Application...
+Committing assembly 'D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe'.
+Affected parameters are:
+   assemblypath = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.exe
+   logfile = D:\TDPortal\Codebase\TransportDirect\BatchJourneyPlannerService\bin\Debug\BatchJourneyPlannerService.InstallLog
+   logtoconsole = 

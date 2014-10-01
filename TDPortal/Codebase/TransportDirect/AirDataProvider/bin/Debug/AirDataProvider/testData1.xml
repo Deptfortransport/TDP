@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<airDataProviderTestData>
+	<airport code="9200ABZ" name="Aberdeen" terminals="1" />
+	<airport code="9200ACI" name="Alderney" terminals="1" />
+	<airport code="9200ADX" name="Leuchars" terminals="1" />
+	<airport code="9200AYH" name="Alconbury" terminals="1" />
+	<airport code="9200BEB" name="Benbecula Aerodrome" terminals="1" />
+	<airport code="9200BEX" name="Benson" terminals="1" />
+	<airport code="9200BFS" name="Belfast/Aldergrove" terminals="1" />
+	<airport code="9200BHD" name="Belfast/City" terminals="1" />
+	<airport code="9200BHX" name="Birmingham" terminals="1" />
+	<airport code="9200BLK" name="Blackpool" terminals="1" />
+	<airport code="9200BOH" name="Bournemouth" terminals="1" />
+	<airport code="9200BQH" name="Biggin Hill" terminals="1" />
+	<airport code="9200BRR" name="Barra" terminals="1" />
+	<airport code="9200BRS" name="Bristol" terminals="1" />
+	<airport code="9200BWF" name="Barrow-In-Furness, Lancs, Eng" terminals="1" />
+	<airport code="9200BZZ" name="Brize Norton" terminals="1" />
+	<airport code="9200CAL" name="Campbeltown" terminals="1" />
+	<airport code="9200CAX" name="Carlisle" terminals="1" />
+	<airport code="9200CBG" name="Cambridge" terminals="1" />
+	<airport code="9200CEG" name="Hawarden" terminals="1" />
+	<airport code="9200CLF" name="Coltishall" terminals="1" />
+	<airport code="9200CVT" name="Coventry" terminals="1" />
+	<airport code="9200CWL" name="Cardiff" terminals="1" />
+	<airport code="9200DND" name="Dundee" terminals="1" />
+	<airport code="9200EDI" name="Edinburgh" terminals="1" />
+	<airport code="9200EMA" name="East Midlands" terminals="1" />
+	<airport code="9200ESH" name="Shoreham" terminals="1" />
+	<airport code="9200EXT" name="Exeter" terminals="1" />
+	<airport code="9200FAB" name="Farnborough" terminals="1" />
+	<airport code="9200FFD" name="Fairford" terminals="1" />
+	<airport code="9200FSS" name="Kinloss" terminals="1" />
+	<airport code="9200FZO" name="Filton" terminals="1" />
+	<airport code="9200GCI" name="Guernsey" terminals="1" />
+	<airport code="9200GLA" name="Glasgow" terminals="1" />
+	<airport code="9200GLO" name="Gloucestershire" terminals="1" />
+	<airport code="9200HRT" name="Linton On Ouse" terminals="1" />
+	<airport code="9200HUY" name="Humberside" terminals="1" />
+	<airport code="9200ILY" name="Islay Is, (Pt Ellen) Arg Scot" terminals="1" />
+	<airport code="9200INV" name="Inverness" terminals="1" />
+	<airport code="9200IOM" name="Isle Of Man" terminals="1" />
+	<airport code="9200ISC" name="Scilly Isles/St Mary's" terminals="1" />
+	<airport code="9200JER" name="Jersey" terminals="1" />
+	<airport code="9200KNF" name="Marham" terminals="1" />
+	<airport code="9200KOI" name="Kirkwall" terminals="1" />
+	<airport code="9200LBA" name="Leeds Bradford" terminals="1" />
+	<airport code="9200LCY" name="London City" terminals="1" />
+	<airport code="9200LDY" name="Londonderry/Eglinton" terminals="1" />
+	<airport code="9200LGW" name="London Gatwick" terminals="1" />
+	<airport code="9200LHR" name="London Heathrow" terminals="1" />
+	<airport code="9200LMO" name="Lossiemouth" terminals="1" />
+	<airport code="9200LPL" name="Liverpool" terminals="1" />
+	<airport code="9200LSI" name="Sumburgh" terminals="1" />
+	<airport code="9200LTN" name="London Luton" terminals="1" />
+	<airport code="9200LWK" name="Lerwick (Tingwall), Scot. Uk" terminals="1" />
+	<airport code="9200LYE" name="Lyneham" terminals="1" />
+	<airport code="9200LYX" name="Lydd" terminals="1" />
+	<airport code="9200MAN" name="Manchester" terminals="1" />
+	<airport code="9200MHZ" name="Mildenhall" terminals="1" />
+	<airport code="9200MME" name="Teesside" terminals="1" />
+	<airport code="9200MSE" name="Manston, Kent  England" terminals="1" />
+	<airport code="9200NCL" name="Newcastle" terminals="1" />
+	<airport code="9200NHT" name="Northolt" terminals="1" />
+	<airport code="9200NQY" name="St. Mawgan" terminals="1" />
+	<airport code="9200NWI" name="Norwich" terminals="1" />
+	<airport code="9200ODH" name="Odiham" terminals="1" />
+	<airport code="9200PIK" name="Glasgow Prestwick" terminals="1" />
+	<airport code="9200PLH" name="Plymouth" terminals="1" />
+	<airport code="9200PSL" name="Perth/Scone" terminals="1" />
+	<airport code="9200PZE" name="Penzance Heliport England" terminals="1" />
+	<airport code="9200QCY" name="Coningsby" terminals="1" />
+	<airport code="9200QUY" name="Wyton" terminals="1" />
+	<airport code="9200SCS" name="Scatsta" terminals="1" />
+	<airport code="9200SEN" name="Southend" terminals="1" />
+	<airport code="9200SOU" name="Southampton" terminals="1" />
+	<airport code="9200STN" name="London Stansted" terminals="1" />
+	<airport code="9200SWS" name="Swansea" terminals="1" />
+	<airport code="9200SYY" name="Stornoway" terminals="1" />
+	<airport code="9200SZD" name="Sheffield City" terminals="1" />
+	<airport code="9200TRE" name="Tiree" terminals="1" />
+	<airport code="9200TSO" name="Isles Of Scilly (Tresco)" terminals="1" />
+	<airport code="9200UNT" name="Unst" terminals="1" />
+	<airport code="9200WIC" name="Wick" terminals="1" />
+	<airport code="9200WTN" name="Waddington" terminals="1" />
+	<airport code="9200YEO" name="Yeovilton" terminals="1" />
+	<regionairport airportcode="9200ABZ" airregioncode="7" />
+	<regionairport airportcode="9200BEB" airregioncode="8" />
+	<regionairport airportcode="9200BHX" airregioncode="3" />
+	<regionairport airportcode="9200BLK" airregioncode="5" />
+	<regionairport airportcode="9200BOH" airregioncode="10" />
+	<regionairport airportcode="9200BOH" airregioncode="9" />
+	<regionairport airportcode="9200BRR" airregioncode="8" />
+	<regionairport airportcode="9200BRS" airregioncode="10" />
+	<regionairport airportcode="9200BRS" airregioncode="11" />
+	<regionairport airportcode="9200CAL" airregioncode="8" />
+	<regionairport airportcode="9200CWL" airregioncode="11" />
+	<regionairport airportcode="9200DND" airregioncode="7" />
+	<regionairport airportcode="9200EDI" airregioncode="7" />
+	<regionairport airportcode="9200EMA" airregioncode="3" />
+	<regionairport airportcode="9200EXT" airregioncode="10" />
+	<regionairport airportcode="9200GLA" airregioncode="7" />
+	<regionairport airportcode="9200HUY" airregioncode="4" />
+	<regionairport airportcode="9200ILY" airregioncode="8" />
+	<regionairport airportcode="9200INV" airregioncode="7" />
+	<regionairport airportcode="9200ISC" airregioncode="6" />
+	<regionairport airportcode="9200KOI" airregioncode="8" />
+	<regionairport airportcode="9200LBA" airregioncode="4" />
+	<regionairport airportcode="9200LCY" airregioncode="2" />
+	<regionairport airportcode="9200LCY" airregioncode="9" />
+	<regionairport airportcode="9200LGW" airregioncode="2" />
+	<regionairport airportcode="9200LGW" airregioncode="9" />
+	<regionairport airportcode="9200LHR" airregioncode="2" />
+	<regionairport airportcode="9200LHR" airregioncode="9" />
+	<regionairport airportcode="9200LPL" airregioncode="11" />
+	<regionairport airportcode="9200LPL" airregioncode="5" />
+	<regionairport airportcode="9200LSI" airregioncode="8" />
+	<regionairport airportcode="9200LTN" airregioncode="2" />
+	<regionairport airportcode="9200LTN" airregioncode="9" />
+	<regionairport airportcode="9200MAN" airregioncode="11" />
+	<regionairport airportcode="9200MAN" airregioncode="3" />
+	<regionairport airportcode="9200MAN" airregioncode="5" />
+	<regionairport airportcode="9200MME" airregioncode="4" />
+	<regionairport airportcode="9200NCL" airregioncode="4" />
+	<regionairport airportcode="9200NWI" airregioncode="1" />
+	<regionairport airportcode="9200PIK" airregioncode="7" />
+	<regionairport airportcode="9200PLH" airregioncode="10" />
+	<regionairport airportcode="9200SOU" airregioncode="9" />
+	<regionairport airportcode="9200STN" airregioncode="1" />
+	<regionairport airportcode="9200STN" airregioncode="2" />
+	<regionairport airportcode="9200STN" airregioncode="9" />
+	<regionairport airportcode="9200SWS" airregioncode="11" />
+	<regionairport airportcode="9200SYY" airregioncode="8" />
+	<regionairport airportcode="9200TRE" airregioncode="8" />
+	<regionairport airportcode="9200WIC" airregioncode="8" />
+	<airregion code="1" name="East Anglia" itemorder="0" />
+	<airregion code="10" name="South West" itemorder="9" />
+	<airregion code="11" name="Wales" itemorder="10" />
+	<airregion code="2" name="London" itemorder="1" />
+	<airregion code="3" name="Midlands" itemorder="2" />
+	<airregion code="4" name="North East" itemorder="3" />
+	<airregion code="5" name="North West" itemorder="4" />
+	<airregion code="6" name="Scilly Isles" itemorder="5" />
+	<airregion code="7" name="Scotland" itemorder="6" />
+	<airregion code="8" name="Scottish Islands" itemorder="7" />
+	<airregion code="9" name="South East" itemorder="8" />
+	<flightroute origincode="9200ABZ" destinationcode="9200GLA" operatorcode="WOW" />
+	<flightroute origincode="9200ABZ" destinationcode="9200LGW" operatorcode="6G" />
+	<flightroute origincode="9200BOH" destinationcode="9200GLA" operatorcode="GR" />
+	<flightroute origincode="9200CWL" destinationcode="9200GLA" operatorcode="BD" />
+	<flightroute origincode="9200CWL" destinationcode="9200LGW" operatorcode="II" />
+	<flightroute origincode="9200EDI" destinationcode="9200LHR" operatorcode="BA" />
+	<flightroute origincode="9200GLA" destinationcode="9200LGW" operatorcode="BS" />
+	<flightroute origincode="9200GLA" destinationcode="9200YEO" operatorcode="T3" />
+	<flightroute origincode="9200INV" destinationcode="9200GLA" operatorcode="U2" />
+	<flightroute origincode="9200LGW" destinationcode="9200GLA" operatorcode="BE" />
+	<flightroute origincode="9200LGW" destinationcode="9200YEO" operatorcode="HR" />
+	<flightroute origincode="9200LHR" destinationcode="9200EDI" operatorcode="5Y" />
+	<flightroute origincode="9200MAN" destinationcode="9200GLA" operatorcode="LC" />
+	<flightroute origincode="9200MAN" destinationcode="9200LGW" operatorcode="VZ" />
+	<flightroute origincode="9200SOU" destinationcode="9200GLA" operatorcode="CB" />
+	<operator code="5Y" name="Isle of Scilly Skybus" />
+	<operator code="6G" name="Air Wales" />
+	<operator code="BA" name="British Airways" />
+	<operator code="BD" name="British Midland" />
+	<operator code="BE" name="Fly Be" />
+	<operator code="BS" name="British International" />
+	<operator code="CB" name="Scot Airways" />
+	<operator code="GR" name="Aurigny Air Services" />
+	<operator code="HR" name="Highland Airways" />
+	<operator code="II" name="BMI Regional" />
+	<operator code="LC" name="Loganair" />
+	<operator code="T3" name="Eastern Airways" />
+	<operator code="U2" name="EasyJet" />
+	<operator code="VZ" name="My Travel Airways" />
+	<operator code="WOW" name="Air Southwest" />
+</airDataProviderTestData>

@@ -1,0 +1,12 @@
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Release\CryptoApp.exe
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Release\TransportDirect.UserPortal.SupportApps.CryptoApp.TDCRApp.resources
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Release\ResGen.read.1.tlog
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Release\ResGen.write.1.tlog
+D:\TDPortal\Codebase\TransportDirect\CryptoApp\obj\Release\CryptoApp.exe

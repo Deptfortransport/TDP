@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.atkinsglobal.com/journeyplanning/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.atkinsglobal.com/journeyplanning/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.atkinsglobal.com/journeyplanning/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="GetGradientProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GradientProfileRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GradientProfileRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="referenceTransaction" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="requestID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="language" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="userType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="polylineGroups" type="tns:ArrayOfPolylineGroup" />
+          <s:element minOccurs="0" maxOccurs="1" name="settings" type="tns:Settings" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPolylineGroup">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PolylineGroup" nillable="true" type="tns:PolylineGroup" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PolylineGroup">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="polylines" type="tns:ArrayOfPolyline" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPolyline">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Polyline" nillable="true" type="tns:Polyline" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Polyline">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="polylineID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="polyline" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="interpolateGradient" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Settings">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="resolution" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="eastingNorthingSeparator" type="s1:char" />
+          <s:element minOccurs="1" maxOccurs="1" name="pointSeparator" type="s1:char" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGradientProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGradientProfileResult" type="tns:GradientProfileResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GradientProfileResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="resolutionUsed" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="messages" type="tns:ArrayOfMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="gradientProfile" type="tns:GradientProfile" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Message">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GradientProfile">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="groups" type="tns:ArrayOfGroup" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGroup">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Group" nillable="true" type="tns:Group" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Group">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="heightPoints" type="tns:ArrayOfHeightPoint" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfHeightPoint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HeightPoint" nillable="true" type="tns:HeightPoint" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HeightPoint">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="pointID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="height" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort" />
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetGradientProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGradientProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetGradientProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGradientProfileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GradientProfilerServiceSoap">
+    <wsdl:operation name="GetGradientProfile">
+      <wsdl:input message="tns:GetGradientProfileSoapIn" />
+      <wsdl:output message="tns:GetGradientProfileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GradientProfilerServiceSoap" type="tns:GradientProfilerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGradientProfile">
+      <soap:operation soapAction="http://www.atkinsglobal.com/journeyplanning/GetGradientProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GradientProfilerServiceSoap12" type="tns:GradientProfilerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGradientProfile">
+      <soap12:operation soapAction="http://www.atkinsglobal.com/journeyplanning/GetGradientProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GradientProfilerService">
+    <wsdl:port name="GradientProfilerServiceSoap" binding="tns:GradientProfilerServiceSoap">
+      <soap:address location="http://uk005744/GradientProfileService/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GradientProfilerServiceSoap12" binding="tns:GradientProfilerServiceSoap12">
+      <soap12:address location="http://uk005744/GradientProfileService/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

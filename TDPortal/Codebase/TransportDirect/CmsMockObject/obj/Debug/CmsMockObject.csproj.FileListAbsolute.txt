@@ -1,0 +1,4 @@
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\bin\Debug\CmsMockObject.dll
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\bin\Debug\CmsMockObject.pdb
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\obj\Debug\CmsMockObject.dll
+D:\TDPortal\Codebase\TransportDirect\CmsMockObject\obj\Debug\CmsMockObject.pdb
