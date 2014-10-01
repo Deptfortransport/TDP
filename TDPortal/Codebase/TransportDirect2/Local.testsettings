@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="Local" id="cfe7d5e5-f1ce-4a58-8d3c-95655b159bc3" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="TestProject\Remoting.config" />
+    <DeploymentItem filename="TestProject\Test References\TestProject.Properties.xml" />
+    <DeploymentItem filename="TestProject\Test References\data\" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+      <DataCollectors>
+        <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+          <Configuration>
+            <CodeCoverage xmlns="">
+              <Regular>
+                <CodeCoverageItem binaryFile="EventLogging\bin\Debug\tdp.common.eventlogging.dll" pdbFile="EventLogging\bin\Debug\tdp.common.eventlogging.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Common\bin\Debug\tdp.common.dll" pdbFile="Common\bin\Debug\tdp.common.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="PropertyManager\bin\Debug\tdp.common.propertymanager.dll" pdbFile="PropertyManager\bin\Debug\tdp.common.propertymanager.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="PropertyProviders\bin\Debug\tdp.common.propertymanager.propertyproviders.dll" pdbFile="PropertyProviders\bin\Debug\tdp.common.propertymanager.propertyproviders.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="ServiceDiscovery\bin\Debug\tdp.common.servicediscovery.dll" pdbFile="ServiceDiscovery\bin\Debug\tdp.common.servicediscovery.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="LocationJsGenerator\bin\Debug\LocationJsGenerator.exe" pdbFile="LocationJsGenerator\bin\Debug\LocationJsGenerator.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CoordinateConvertorProvider\bin\Debug\tdp.userportal.coordinateconvertorprovider.dll" pdbFile="CoordinateConvertorProvider\bin\Debug\tdp.userportal.coordinateconvertorprovider.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="JourneyControl\bin\Debug\tdp.userportal.journeycontrol.dll" pdbFile="JourneyControl\bin\Debug\tdp.userportal.journeycontrol.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CyclePlannerService\bin\Debug\tdp.userportal.cycleplannerservice.dll" pdbFile="CyclePlannerService\bin\Debug\tdp.userportal.cycleplannerservice.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Retail\bin\Debug\tdp.userportal.retail.dll" pdbFile="Retail\bin\Debug\tdp.userportal.retail.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="ScreenFlow\bin\Debug\tdp.userportal.screenFlow.dll" pdbFile="ScreenFlow\bin\Debug\tdp.userportal.screenFlow.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="LocationService\bin\Debug\tdp.common.locationservice.dll" pdbFile="LocationService\bin\Debug\tdp.common.locationservice.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Reporting\Events\bin\Debug\tdp.reporting.events.dll" pdbFile="Reporting\Events\bin\Debug\tdp.reporting.events.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Reporting\EventPublishers\bin\Debug\tdp.reporting.eventpublishers.dll" pdbFile="Reporting\EventPublishers\bin\Debug\tdp.reporting.eventpublishers.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Reporting\EventReceiver\bin\Debug\EventReceiver.exe" pdbFile="Reporting\EventReceiver\bin\Debug\EventReceiver.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DataServices\bin\Debug\tdp.common.dataservices.dll" pdbFile="DataServices\bin\Debug\tdp.common.dataservices.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Extenders\bin\Debug\tdp.common.extenders.dll" pdbFile="Extenders\bin\Debug\tdp.common.extenders.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="ResourceManager\bin\Debug\tdp.common.resourcemanager.dll" pdbFile="ResourceManager\bin\Debug\tdp.common.resourcemanager.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Initialisation\bin\Debug\tdp.common.servicediscovery.initialisation.dll" pdbFile="Initialisation\bin\Debug\tdp.common.servicediscovery.initialisation.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DataImporters\bin\Debug\tdp.dataimporters.dll" pdbFile="DataImporters\bin\Debug\tdp.dataimporters.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="JourneyPlanRunner\bin\Debug\tdp.userportal.journeyplanrunner.dll" pdbFile="JourneyPlanRunner\bin\Debug\tdp.userportal.journeyplanrunner.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="StateServer\bin\Debug\tdp.userportal.stateserver.dll" pdbFile="StateServer\bin\Debug\tdp.userportal.stateserver.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="SessionManager\bin\Debug\tdp.userportal.sessionmanager.dll" pdbFile="SessionManager\bin\Debug\tdp.userportal.sessionmanager.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="TravelNews\bin\Debug\tdp.userportal.travelnews.dll" pdbFile="TravelNews\bin\Debug\tdp.userportal.travelnews.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.exe" pdbFile="CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\HashValidator\bin\Debug\HashValidator.exe" pdbFile="CommandAndControl\HashValidator\bin\Debug\HashValidator.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll" pdbFile="CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\CommandAndControlAgentService\bin\Debug\CommandAndControlAgent.exe" pdbFile="CommandAndControl\CommandAndControlAgentService\bin\Debug\CommandAndControlAgent.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DatabaseInfrastructure\bin\Debug\tdp.common.databaseinfrastructure.dll" pdbFile="DatabaseInfrastructure\bin\Debug\tdp.common.databaseinfrastructure.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommonWeb\bin\Debug\tdp.common.web.dll" pdbFile="CommonWeb\bin\Debug\tdp.common.web.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DataLoader\bin\Debug\tdp.dataloader.exe" pdbFile="DataLoader\bin\Debug\tdp.dataloader.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="UndergroundNews\bin\Debug\tdp.userportal.undergroundnews.dll" pdbFile="UndergroundNews\bin\Debug\tdp.userportal.undergroundnews.pdb" instrumentInPlace="true" />
+              </Regular>
+            </CodeCoverage>
+          </Configuration>
+        </DataCollector>
+      </DataCollectors>
+    </AgentRule>
+  </Execution>
+</TestSettings>

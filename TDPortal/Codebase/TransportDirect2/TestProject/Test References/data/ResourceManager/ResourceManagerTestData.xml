@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentData>
+  <tblGroup>
+    <tblGroup GroupId="1" Name="TDPGeneral" />
+    <tblGroup GroupId="2" Name="TDPSitemap" />
+    <tblGroup GroupId="3" Name="TDPJourneyOutput" />
+    <tblGroup GroupId="4" Name="TDPAnalytics" />
+  </tblGroup>
+  <tblContent>
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOpitons.LblTo.Text" Value-En="To" Value-Cy="Le To" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.Accessibility.RequireSpecialAssistance.Text" Value-En="does not have routes with special assistance." Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.Accessibility.RequireStepFreeAccess.Text" Value-En="does not include step free routes." Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.AccessibilityPlanJourneyInfo.Text" Value-En="To plan a journey to fully meet your requested accessibility needs, please choose a starting point with this facilities from the list below." Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.AdminAreaList.DefaultItem.Text" Value-En="Select county" Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.Back.Text" Value-En="&amp;lt; Back" Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.Back.ToolTip" Value-En="Back" Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.DistrictList.DefaultItem.Text" Value-En="Select London borough" Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.GNATList.DefaultItem.Text" Value-En="Select your stop" Value-Cy="Welsh" />
+	  <tblContent ThemeId="1" GroupId="1" ControlName="General" PropertyName="AccessibilityOptions.Heading.Text" Value-En="Select your accessible stop" Value-Cy="Welsh" />
+  </tblContent>
+</ContentData>

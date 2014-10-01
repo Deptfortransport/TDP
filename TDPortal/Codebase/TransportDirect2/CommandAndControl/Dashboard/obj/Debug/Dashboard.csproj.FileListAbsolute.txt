@@ -1,0 +1,7 @@
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\Dashboard\bin\CCDashboard.dll
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\Dashboard\bin\CCDashboard.pdb
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\Dashboard\bin\CCDashboard.dll.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\Dashboard\bin\CCDashboard.dll.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\Dashboard\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\Dashboard\obj\Debug\CCDashboard.dll
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\Dashboard\obj\Debug\CCDashboard.pdb

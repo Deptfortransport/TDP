@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode pageId="Homepage" url="http://localhost/Web2/Home.aspx" title="Homepage" resourceKey="TDP.Homepage">
+    
+    <siteMapNode pageId="Default" url="~/Default.aspx" title="Default" resourceKey="Pages.Default" />
+    <siteMapNode pageId="JourneyPlannerInput" url="~/Pages/JourneyPlannerInput.aspx" title="Journey Planner" resourceKey="Pages.JourneyPlannerInput">
+      <siteMapNode pageId="AccessibilityOptions" url="~/Pages/AccessibilityOptions.aspx" title="Accessibility Options" resourceKey="Pages.AccessibilityOptions" />
+      <siteMapNode pageId="JourneyLocations" url="~/Pages/JourneyLocations.aspx" title="Journey Locations" resourceKey="Pages.JourneyLocations" />
+      <siteMapNode pageId="JourneyOptions" url="~/Pages/JourneyOptions.aspx" title="Journey Options" resourceKey="Pages.JourneyOptions" />
+      <siteMapNode pageId="PrintableJourneyOptions" url="~/Pages/PrintableJourneyOptions.aspx" title="Journey Options" resourceKey="Pages.PrintableJourneyOptions" />
+      <siteMapNode pageId="CycleJourneyGPXDownload" url="~/Pages/CycleJourneyGPXDownload.aspx" title="Journey Options" resourceKey="Pages.CycleJourneyGPXDownload" />
+      <siteMapNode pageId="Retailers" url="~/Pages/Retailers.aspx" title="Retailers" resourceKey="Pages.Retailers" />
+      <siteMapNode pageId="RetailerHandoff" url="~/Pages/RetailerHandoff.aspx" title="Retailers" resourceKey="Pages.RetailerHandoff" />
+      <siteMapNode pageId="MapBing" url="~/Pages/Map1.aspx" title="Map" resourceKey="Pages.MapBing" />
+      <siteMapNode pageId="PrintableMapBing" url="~/Pages/PrintableMap1.aspx" title="Printable Cycle Map" resourceKey="Pages.PrintableMapBing" />
+      <siteMapNode pageId="MapGoogle" url="~/Pages/Map2.aspx" title="Map" resourceKey="Pages.MapGoogle" />
+            
+      <siteMapNode pageId="Error" url="~/Pages/ErrorPage.aspx" title="Error" resourceKey="Pages.Error" />
+      <siteMapNode pageId="Sorry" url="~/Pages/SorryPage.aspx" title="Sorry" resourceKey="Pages.Sorry" />
+      <siteMapNode pageId="PageNotFound" url="~/Pages/PageNotFound.aspx" title="Page Not Found" resourceKey="Pages.PageNotFound" />
+          
+    </siteMapNode>
+    <siteMapNode pageId="TravelNews" url="~/Pages/TravelNews.aspx" title="Travel News" resourceKey="Pages.TravelNews" />
+
+    <siteMapNode pageId="Login" url="http://localhost/Web2/LoginRegister.aspx" title="Login / Sign up" resourceKey="TDP.Login" />
+    <siteMapNode pageId="Contact" url="http://localhost/Web2/ContactUs/FeedbackPage.aspx" title="Contact us" resourceKey="TDP.Contact" />
+    <siteMapNode pageId="Sitemap" url="http://localhost/Web2/Sitemap/SiteMap.aspx" title="Sitemap" resourceKey="TDP.Sitemap" />
+
+    <!-- transfers to mobile -->
+    <siteMapNode pageId="MobileDefault" url="http://localhost/TDPMobile/Default.aspx" title="Mobile Transport Direct" resourceKey="Pages.MobileDefault" />
+    <siteMapNode pageId="MobileInput" url="http://localhost/TDPMobile/Input.aspx" title="Mobile Transport Direct" resourceKey="Pages.MobileInput" />
+    <siteMapNode pageId="MobileTravelNews" url="http://localhost/TDPMobile/TravelNews.aspx" title="Mobile Transport Direct" resourceKey="Pages.MobileTravelNews" />
+    <siteMapNode pageId="MobileSummary" url="http://localhost/TDPMobile/Summary.aspx" title="Mobile Transport Direct" resourceKey="Pages.MobileSummary" /> 
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode pageId="Homepage" url="http://localhost/Web2/Home.aspx" title="Homepage" resourceKey="TDP.Homepage">
+
+    <siteMapNode pageId="MobileDefault" url="~/Default.aspx" title="Transport Direct" resourceKey="Pages.MobileDefault" />
+    <siteMapNode pageId="MobileInput" url="~/Input.aspx" title="Input" resourceKey="Pages.MobileInput" />
+    <siteMapNode pageId="MobileSummary" url="~/Summary.aspx" title="Summary" resourceKey="Pages.MobileSummary" />
+    <siteMapNode pageId="MobileDetail" url="~/Detail.aspx" title="Details" resourceKey="Pages.MobileDetail" />
+    <siteMapNode pageId="MobileDirection" url="~/Direction.aspx" title="Directions" resourceKey="Pages.MobileDirection" />
+    <siteMapNode pageId="MobileMap" url="~/Map.aspx" title="Map" resourceKey="Pages.MobileMap" />
+    <siteMapNode pageId="MobileTravelNews" url="~/TravelNews.aspx" title="Travel news" resourceKey="Pages.MobileTravelNews" />
+    <siteMapNode pageId="MobileTravelNewsDetail" url="~/TravelNewsDetail.aspx" title="Travel news detail" resourceKey="Pages.MobileTravelNewsDetail" />
+    <siteMapNode pageId="MobileTerms" url="~/Terms.aspx" title="Terms" resourceKey="Pages.MobileTerms" />
+    <siteMapNode pageId="MobilePrivacy" url="~/Privacy.aspx" title="Privacy" resourceKey="Pages.MobilePrivacy" />
+    <siteMapNode pageId="MobileCookie" url="~/Cookie.aspx" title="Cookie" resourceKey="Pages.MobileCookie" />
+    <siteMapNode pageId="AccessibilityOptions" url="~/AccessibilityOptions.aspx" title="Accessible Stops" resourceKey="Pages.AccessibilityOptions" />
+    <siteMapNode pageId="MobileStopInformation" url="~/StopInformation.aspx" title="Stop Information" resourceKey="Pages.StopInformation" />
+    <siteMapNode pageId="MobileStopInformationDetail" url="~/StopInformationDetail.aspx" title="Stop Information Detail" resourceKey="Pages.StopInformationDetail" />
+
+    <siteMapNode pageId="MobileError" url="~/ErrorPage.aspx" title="Error" resourceKey="Pages.MobileError" />
+    <siteMapNode pageId="MobileSorry" url="~/SorryPage.aspx" title="Sorry" resourceKey="Pages.MobileSorry" />
+    <siteMapNode pageId="MobilePageNotFound" url="~/PageNotFound.aspx" title="Page Not Found" resourceKey="Pages.MobilePageNotFound" />
+
+    <siteMapNode pageId="Sitemap" url="http://www.transportdirect.info/Web2/Sitemap/SiteMap.aspx" title="Sitemap" resourceKey="TDP.Sitemap" />
+
+    <siteMapNode pageId="KizoomRail" url="http://tdtim.kizoom.co.uk/en/deps/find?mode=rail" title="Rail departure boards" resourceKey="Kizoom.RailDepartureBoard" />
+    <siteMapNode pageId="KizoomBus" url="http://tdtim.kizoom.co.uk/en/deps/find?mode=bus" title="Bus departure boards" resourceKey="Kizoom.BusDepartureBoard" />
+    <siteMapNode pageId="KizoomTravelNews" url="http://tdtim.kizoom.co.uk/en/news/find" title="Live Travel" resourceKey="Kizoom.TravelNews" />
+
+  </siteMapNode>
+</siteMap>

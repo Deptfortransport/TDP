@@ -1,0 +1,7 @@
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.pdb
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\ChecksumUtils\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\ChecksumUtils\obj\Debug\ChecksumHelper.dll
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\ChecksumUtils\obj\Debug\ChecksumHelper.pdb

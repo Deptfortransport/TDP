@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TDPWeb.Master.cs" Inherits="TDP.UserPortal.TDPWeb.TDPWeb" %>
+<%@ Import Namespace="TDP.UserPortal.TDPWeb" %>
+<%@ Register TagPrefix="uc1" TagName="HeaderControl" Src="~/Controls/HeaderControl.ascx" %>
+<%@ Register TagPrefix="uc1" TagName="FooterControl" Src="~/Controls/FooterControl.ascx" %>
+<%@ Register TagPrefix="uc1" TagName="SideBarLeftControl" Src="~/Controls/SideBarLeftControl.ascx" %>
+<%@ Register TagPrefix="uc1" TagName="SideBarRightControl" Src="~/Controls/SideBarRightControl.ascx" %>
+
+<%@ Register Namespace="TDP.UserPortal.TDPWeb.Controls" TagPrefix="uc1" assembly="tdp.userportal.tdpweb" %> 
+<%@ Register Namespace="TDP.Common.Web" TagPrefix="uc2" assembly="tdp.common.web" %> 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <asp:ContentPlaceHolder ID="contentHead" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body class="no-js">
+    <form id="formTDP" runat="server" class="tdpForm">
+    
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"></asp:ScriptManager>
+
+    <div class="tdpPage">
+        <uc1:HeaderControl id="headerControl" runat="server" enableviewstate="false"></uc1:HeaderControl>          
+
+        <div id="TDPPageContent" class="tdpPageContent" runat="server">
+            <a name="skip-navigation"></a>
+            
+            <div id="pageHeading" class="pageHeading">
+                <h1 id="mainHeading" runat="server" enableviewstate="false"></h1>
+            </div>
+
+            <div class="basicThreeCols">
+
+                <div class="sectionLeft">
+                    <uc1:SideBarLeftControl id="sideBarLeftControl" runat="server" enableviewstate="false"></uc1:SideBarLeftControl>
+                </div>
+
+                <div class="sectionMiddle">
+                    
+                    <div class="tdpContent sjpContent">
+
+                        <asp:ContentPlaceHolder ID="contentHeading" runat="server">
+                            <div id="sectionSubHeader" class="sectionSubHeader floatleft">
+                                <h2 id="sjpHeading" runat="server" enableviewstate="false"></h2>
+                            </div>
+
+                            <asp:UpdatePanel ID="printerFriendlyUpdater" runat="server" UpdateMode="Always">
+                                <ContentTemplate>
+                                    <div class="printerFriendly floatright">
+                                        <uc2:LinkButton ID="btnPrinterFriendly" style="display:none;" CssClass="linkButton" MouseOverClass="linkButtonMouseOver" runat="server" visible="false" />
+                                        <noscript>
+                                            <asp:hyperlink id="lnkPrinterFriendly" runat="server" target="_blank"></asp:hyperlink>
+                                        </noscript>
+                                    </div>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </asp:ContentPlaceHolder>
+                        
+                        <asp:ContentPlaceHolder ID="contentMessages" runat="server">
+                            <asp:UpdatePanel ID="contentMessagesUpdater" runat="server" UpdateMode="Always">
+                                <ContentTemplate>
+                                        <asp:Panel ID="pnlMessages" runat="server" EnableViewState="false" CssClass="contentMessages">
+
+                                            <asp:Repeater ID="rptrMessages" runat="server" EnableViewState="false" 
+                                                OnItemDataBound="rptrMessages_ItemDataBound">
+                                                <ItemTemplate>
+                                                    <asp:Label ID="lblMessage" runat="server" EnableViewState="false" ></asp:Label>
+                                                    <br />
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+
+                                        </asp:Panel>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </asp:ContentPlaceHolder>
+
+                        <div class="clear"></div>
+
+                        <asp:ContentPlaceHolder ID="contentMain" runat="server"></asp:ContentPlaceHolder>
+                    
+                    </div>
+
+                </div> 
+
+                <div class="sectionRight">
+                    <uc1:SideBarRightControl id="sideBarRightControl" runat="server" enableviewstate="true"></uc1:SideBarRightControl>
+                </div>
+
+            </div>
+
+            <div class="clear"> </div>
+           
+        </div>
+                           
+        <uc1:FooterControl id="footerControl" runat="server" enableviewstate="false"></uc1:FooterControl>
+            
+        <asp:HiddenField id="hdnSiteVersion" runat="server" EnableViewState="false" />   
+    
+    </div>
+    </form>    
+</body>
+</html>

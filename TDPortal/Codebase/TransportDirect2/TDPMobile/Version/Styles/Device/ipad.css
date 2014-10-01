@@ -1,0 +1,25 @@
+﻿/* ipad device - 768px wide*/
+div.locationsDiv .locationControl input.locationInput{width:680px;}
+div.locationsDiv .locationControl input.locationClear{width:650px;}
+
+div.dateSelect div.setdatebox input.dateEntry{width:350px;}
+div.dateSelect div.setdatebox input.dateEntryWithButton{width:315px;}
+div.timePicker div.settimebox input.timeInput{width:299px;}
+div.timePicker div.settimebox input.timeInputWithButton{width:266px;}
+
+div.advancedOptions div.setAdvancedOptionsBox input.btnAdvancedOptions{width:165px;}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelected{width:565px;line-height:40px;height:40px;padding:0px 0px 0px 0px;}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelected br{display:none;}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelected img{margin: 0 10px 5px 0;vertical-align:middle;}
+
+/* Prevent persisted hover touch style */
+#datepage div.collapseDate div.day:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#datepage div.collapseDate div.day input:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#datepage div.collapseDate div.daySelected:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+#datepage div.collapseDate div.daySelected input:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+#timepage div.minute:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#timepage div.minute input:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#timepage div.timeSelected:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+#timepage div.timeSelected input:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+div.transportModesDiv div.transportModeRow:hover{background-color:#EEEEEE;color:#555555;}
+div.accessibilityOptions div.mobilityOptionRow:hover{background-color:#EEEEEE;color:#555555;}

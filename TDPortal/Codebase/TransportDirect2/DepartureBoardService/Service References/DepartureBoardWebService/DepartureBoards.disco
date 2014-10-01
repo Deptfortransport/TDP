@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx?wsdl" docRef="http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx" xmlns:q1="http://www.transportdirect.info/DepartureBoardWebService" binding="q1:DepartureBoardsSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx" xmlns:q2="http://www.transportdirect.info/DepartureBoardWebService" binding="q2:DepartureBoardsSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

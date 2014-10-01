@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.esriuk.com/gazops" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.esriuk.com/gazops" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GAZOPS Web Service. (secure implementation)</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.esriuk.com/gazops">
+      <s:element name="SubscriptionInformationURL">
+        <s:complexType />
+      </s:element>
+      <s:element name="SubscriptionInformationURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubscriptionInformationURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListGazetteers">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListGazetteersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListGazetteersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginServiceURL">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoginServiceURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginServiceURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DriverCapabilities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gazID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DriverCapabilitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DriverCapabilitiesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DrillDownAddressQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAddressQueryString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="picklistcriteria" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="singleAddressSelect" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryReference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzy" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DrillDownAddressQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DrillDownAddressQueryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPostcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostcodeMatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlaceNameMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPlaceNameDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzy" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lPlaceNameSizeMax" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lPlaceNameSizeMin" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lMaxReturnRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlaceNameMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlaceNameMatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StreetMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sStreetDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzy" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lMaxReturnRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StreetMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StreetMatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeGeocode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPostcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeGeocodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostcodeGeocodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddressGeocodeNI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzyMatch" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddressGeocodeNIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddressGeocodeNIResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="recordtype" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="recordid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchRecordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchAddressAlias">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="recordid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchAddressAliasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchAddressAliasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceRestriction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gazID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceRestrictionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceRestrictionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SubscriptionInformationURLSoapIn">
+    <wsdl:part name="parameters" element="tns:SubscriptionInformationURL" />
+  </wsdl:message>
+  <wsdl:message name="SubscriptionInformationURLSoapOut">
+    <wsdl:part name="parameters" element="tns:SubscriptionInformationURLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListGazetteersSoapIn">
+    <wsdl:part name="parameters" element="tns:ListGazetteers" />
+  </wsdl:message>
+  <wsdl:message name="ListGazetteersSoapOut">
+    <wsdl:part name="parameters" element="tns:ListGazetteersResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginServiceURLSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginServiceURL" />
+  </wsdl:message>
+  <wsdl:message name="LoginServiceURLSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginServiceURLResponse" />
+  </wsdl:message>
+  <wsdl:message name="DriverCapabilitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:DriverCapabilities" />
+  </wsdl:message>
+  <wsdl:message name="DriverCapabilitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:DriverCapabilitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DrillDownAddressQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:DrillDownAddressQuery" />
+  </wsdl:message>
+  <wsdl:message name="DrillDownAddressQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:DrillDownAddressQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostcodeMatchSoapIn">
+    <wsdl:part name="parameters" element="tns:PostcodeMatch" />
+  </wsdl:message>
+  <wsdl:message name="PostcodeMatchSoapOut">
+    <wsdl:part name="parameters" element="tns:PostcodeMatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="PlaceNameMatchSoapIn">
+    <wsdl:part name="parameters" element="tns:PlaceNameMatch" />
+  </wsdl:message>
+  <wsdl:message name="PlaceNameMatchSoapOut">
+    <wsdl:part name="parameters" element="tns:PlaceNameMatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="StreetMatchSoapIn">
+    <wsdl:part name="parameters" element="tns:StreetMatch" />
+  </wsdl:message>
+  <wsdl:message name="StreetMatchSoapOut">
+    <wsdl:part name="parameters" element="tns:StreetMatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostcodeGeocodeSoapIn">
+    <wsdl:part name="parameters" element="tns:PostcodeGeocode" />
+  </wsdl:message>
+  <wsdl:message name="PostcodeGeocodeSoapOut">
+    <wsdl:part name="parameters" element="tns:PostcodeGeocodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddressGeocodeNISoapIn">
+    <wsdl:part name="parameters" element="tns:AddressGeocodeNI" />
+  </wsdl:message>
+  <wsdl:message name="AddressGeocodeNISoapOut">
+    <wsdl:part name="parameters" element="tns:AddressGeocodeNIResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchRecord" />
+  </wsdl:message>
+  <wsdl:message name="FetchRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressAliasSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchAddressAlias" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressAliasSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchAddressAliasResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceRestrictionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceRestriction" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceRestrictionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceRestrictionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GazopsServiceSoap">
+    <wsdl:operation name="SubscriptionInformationURL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Return the URL web page explaining how to subscribe to this web service.</wsdl:documentation>
+      <wsdl:input message="tns:SubscriptionInformationURLSoapIn" />
+      <wsdl:output message="tns:SubscriptionInformationURLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListGazetteers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List the gazetteer drivers which are supported by this web service.</wsdl:documentation>
+      <wsdl:input message="tns:ListGazetteersSoapIn" />
+      <wsdl:output message="tns:ListGazetteersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginServiceURL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Return the URL for the secure login web service. This web service will return a security token given valid credentials</wsdl:documentation>
+      <wsdl:input message="tns:LoginServiceURLSoapIn" />
+      <wsdl:output message="tns:LoginServiceURLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DriverCapabilities">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Return an XML document containing the capabilities of a specicif Gazetteer engine.</wsdl:documentation>
+      <wsdl:input message="tns:DriverCapabilitiesSoapIn" />
+      <wsdl:output message="tns:DriverCapabilitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DrillDownAddressQuery">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Perform a drill down address query operation. Will be recursively called to drill through the result set.</wsdl:documentation>
+      <wsdl:input message="tns:DrillDownAddressQuerySoapIn" />
+      <wsdl:output message="tns:DrillDownAddressQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostcodeMatch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Perform a postcode match operation.</wsdl:documentation>
+      <wsdl:input message="tns:PostcodeMatchSoapIn" />
+      <wsdl:output message="tns:PostcodeMatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PlaceNameMatch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Perform a placename match operation.</wsdl:documentation>
+      <wsdl:input message="tns:PlaceNameMatchSoapIn" />
+      <wsdl:output message="tns:PlaceNameMatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StreetMatch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Perform a street match operation.</wsdl:documentation>
+      <wsdl:input message="tns:StreetMatchSoapIn" />
+      <wsdl:output message="tns:StreetMatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostcodeGeocode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Perform a postcode geocode operation. (searches an address for the postcode and then geocodes it)</wsdl:documentation>
+      <wsdl:input message="tns:PostcodeGeocodeSoapIn" />
+      <wsdl:output message="tns:PostcodeGeocodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddressGeocodeNI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Perform an address geocode operation.</wsdl:documentation>
+      <wsdl:input message="tns:AddressGeocodeNISoapIn" />
+      <wsdl:output message="tns:AddressGeocodeNISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fecth an address record or specific alias (depending on the gazetteer engine).</wsdl:documentation>
+      <wsdl:input message="tns:FetchRecordSoapIn" />
+      <wsdl:output message="tns:FetchRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddressAlias">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fecth all aliases for an address (depends on the gazetteer driver).</wsdl:documentation>
+      <wsdl:input message="tns:FetchAddressAliasSoapIn" />
+      <wsdl:output message="tns:FetchAddressAliasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceRestriction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Find the restrictions which are in force for a particular gazetteer engine and user.</wsdl:documentation>
+      <wsdl:input message="tns:GetServiceRestrictionSoapIn" />
+      <wsdl:output message="tns:GetServiceRestrictionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GazopsServiceSoap" type="tns:GazopsServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubscriptionInformationURL">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/SubscriptionInformationURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListGazetteers">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/ListGazetteers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginServiceURL">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/LoginServiceURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DriverCapabilities">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/DriverCapabilities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DrillDownAddressQuery">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/DrillDownAddressQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostcodeMatch">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/PostcodeMatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlaceNameMatch">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/PlaceNameMatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StreetMatch">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/StreetMatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostcodeGeocode">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/PostcodeGeocode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddressGeocodeNI">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/AddressGeocodeNI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchRecord">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/FetchRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddressAlias">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/FetchAddressAlias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceRestriction">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/GetServiceRestriction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GazopsServiceSoap12" type="tns:GazopsServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubscriptionInformationURL">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/SubscriptionInformationURL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListGazetteers">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/ListGazetteers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginServiceURL">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/LoginServiceURL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DriverCapabilities">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/DriverCapabilities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DrillDownAddressQuery">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/DrillDownAddressQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostcodeMatch">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/PostcodeMatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlaceNameMatch">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/PlaceNameMatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StreetMatch">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/StreetMatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostcodeGeocode">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/PostcodeGeocode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddressGeocodeNI">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/AddressGeocodeNI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchRecord">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/FetchRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddressAlias">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/FetchAddressAlias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceRestriction">
+      <soap12:operation soapAction="http://www.esriuk.com/gazops/GetServiceRestriction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GazopsService">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GAZOPS Web Service. (secure implementation)</wsdl:documentation>
+    <wsdl:port name="GazopsServiceSoap" binding="tns:GazopsServiceSoap">
+      <soap:address location="http://gis/GazopsWeb/GazopsWeb.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GazopsServiceSoap12" binding="tns:GazopsServiceSoap12">
+      <soap12:address location="http://gis/GazopsWeb/GazopsWeb.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

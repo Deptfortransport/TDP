@@ -1,0 +1,81 @@
+﻿/* android device - 240px wide*/
+div.locationsDiv .locationControl input.locationInput{width:160px;}
+div.locationsDiv .locationControl input.locationClear{width:130px;}
+div.locationsDiv .locationControl div.ambiguityrow select{padding-top:3px}
+
+div.dateSelect div.setdatebox input.dateEntry{width:212px;}
+div.dateSelect div.setdatebox input.dateEntryWithButton{width:177px;}
+div.timePicker div.settimebox input.timeInput{width:146px;}
+div.timePicker div.settimebox input.timeInputWithButton{width:113px;}
+div.nowSelect{width:45px;}
+
+#datepage div.collapseDate ul.week li{width:12.5%;}
+#datepage div.collapseDate div.day{width:12.5%;}
+#datepage div.collapseDate div.day label{padding: 9px 0px;}
+
+#timepage div.hours{margin-left: 0px;}
+#timepage div.minute label{padding:12px 8px;}
+#timepage div.otherTimesDiv{margin-left:0px;}
+#timepage div.otherTimesDiv input{width:220px;}
+#timepage div.otherTimesDropContainer{margin-left:0px;}
+#timepage div.otherTimesDropContainer input{width:72px;}
+
+div.advancedOptions div.setAdvancedOptionsBox input.btnAdvancedOptions{width:210px;}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelected{padding: 0px 0px 0px 10px;}
+
+div.transportModesDiv div.transportModeRow label{line-height:20px;padding: 0 0 0 1px;}
+div.transportModesDiv div.transportModeRow input{height:20px;line-height:20px;}
+div.accessibilityOptions div.mobilityOptionRow label{line-height:20px;padding: 0 0 0 1px;}
+div.accessibilityOptions div.mobilityOptionRow input{height:20px;line-height:20px;}
+div.accessibilityOptions div.mobilityOptionRow a.accessibleNotesLink{line-height:20px;min-height:20px;}
+
+/* Prevent persisted hover touch style */
+#datepage div.collapseDate div.day:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#datepage div.collapseDate div.day input:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#datepage div.collapseDate div.daySelected:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+#datepage div.collapseDate div.daySelected input:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+#timepage div.minute:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#timepage div.minute input:hover{background-color:#dddddd;color:#444444;text-decoration:none;}
+#timepage div.timeSelected:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+#timepage div.timeSelected input:hover{background-color:#3D7291;color:#ffffff;text-decoration:none;}
+div.transportModesDiv div.transportModeRow:hover{background-color:#EEEEEE;color:#555555;}
+div.accessibilityOptions div.mobilityOptionRow:hover{background-color:#EEEEEE;color:#555555;}
+
+div.legsDetail div.leg{font-size:0.78em;}
+div.legsDetail div.leg div.columnMap{font-size:1.1em;}
+.statusInfo{max-width:200px;}
+
+/* Journey leg rows */
+div.legsDetail div.leg div.row div.row1 div.columnTimeLabel{width:35px;}
+div.legsDetail div.leg div.row div.row1 div.columnTime{width:45px;}
+div.legsDetail div.leg div.row div.row1 div.columnNode{width:20px;}
+
+div.legsDetail div.leg div.row div.row2 div.columnMode{width:80px;}
+div.legsDetail div.leg div.row div.row2 div.columnLine{width:20px;}
+
+div.legsDetail div.leg div.row div.row2a div.columnTime{width:80px;}
+div.legsDetail div.leg div.row div.row2a div.columnNode{width:20px;}
+
+div.legsDetail div.leg div.row div.row3 div.columnTimeLabel{width:35px;}
+div.legsDetail div.leg div.row div.row3 div.columnTime{width:45px;}
+div.legsDetail div.leg div.row div.row3 div.columnLine{width:20px;}
+
+/* travel news */
+div.travelNews div.news .ui-block-b{width:65%;}
+div.undergroundStatus div.undergroundNews .statusColour{width:43%;}
+div.undergroundStatus div.undergroundNews .statusInfo{width:47%;}
+
+/* Map */
+.mapContainer{height:250px;}
+.map{height:250px;}
+.copyrightfront{top:324px;}
+.copyrightback{top:325px;}
+
+/* to confirm */
+div.venues a.venuesLink{padding:7px 4px;width:50px;}
+#venuespage fieldset div.ui-grid-a label{font-size:0.9em;min-height:38px;}
+#venuespage fieldset div.ui-grid-a .ui-block-a{float:left;width:90%;}
+#venuespage fieldset div.ui-grid-a .ui-block-b{float:left;width:90%;}
+div.locationParkRow{width:223px;}
+div.journeyTypeRow div.cycling{width:231px;}
+div.journeyTypeRow div.cycling fieldset label{width:190px;}

@@ -1,0 +1,14 @@
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\tdp.dataimporters.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\tdp.dataimporters.pdb
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\tdp.dataimporters.dll.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\tdp.dataimporters.dll.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\td.datagateway.framework.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\bin\Debug\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\obj\Debug\tdp.dataimporters.dll
+D:\TDPortal\Codebase\TransportDirect2\DataImporters\obj\Debug\tdp.dataimporters.pdb

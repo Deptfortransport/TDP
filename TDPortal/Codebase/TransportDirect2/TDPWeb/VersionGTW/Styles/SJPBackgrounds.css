@@ -1,0 +1,143 @@
+﻿
+
+/* drop downs */
+.sjpContent .selectbox .display .arrow_btn
+{
+   background: url("./../images/arrows/drop_arrow_down.png") no-repeat scroll 0px -2px;
+}
+.sjpContent .selectbox .display.active .arrow_btn
+{
+    background: url("./../images/arrows/drop_arrow_down.png") no-repeat scroll 0px -47px;
+    -moz-box-shadow:inset 0 0 1px 1px #9eb0ba;
+    -webkit-box-shadow:inset 0 0 1px 1px #9eb0ba;
+}
+
+.tdpContent a.ui-state-default .ui-icon-triangle-1-s,
+.tdpContent a.ui-state-hover .ui-icon-triangle-1-s
+{
+   background: url("./../images/arrows/purple-arrow-down.png") no-repeat scroll 0px 0px;
+}
+
+
+.tdpContent a.ui-state-focus .ui-icon-triangle-1-s, 
+.tdpContent a.ui-state-active .ui-icon-triangle-1-s
+{
+    background: url("./../images/arrows/purple-arrow-up.png") no-repeat scroll 0px 0px;
+    -moz-box-shadow:inset 0 0 1px 1px #9eb0ba;
+    -webkit-box-shadow:inset 0 0 1px 1px #9eb0ba;
+}
+
+
+.sjpContent .selectbox ul li, 
+.sjpContent ul.selectbox li 
+{
+    background: none;
+}
+
+/* Check Boxes */
+.sjpContent span.checkbox span.box div
+{
+    background: url("./../images/presentation/checkbox.gif") no-repeat scroll 0 0px transparent; 
+}
+.sjpContent span.checkbox span.box div.disabled
+{
+    background-position: 0 -25px;
+}
+.sjpContent span.checkbox span.checked div
+{
+     background-position: 0 -50px;
+}
+.sjpContent span.checkbox span.checked div.disabled
+{
+     background-position: 0 -75px;
+}
+
+/* Non Javascript - Calendar - start */
+.sjpContent #sjp-calendar-tabs ul.tabbed-headers li input.monthTab
+{
+     background: url("../images/tabs/small-grey.png") no-repeat scroll -1px 0 transparent;
+}
+
+.sjpContent #sjp-calendar-tabs ul.tabbed-headers li.current input.monthTab
+{
+     background: url("../images/tabs/small-white.png") no-repeat scroll -1px 0 transparent;
+}
+
+.sjpContent #sjp-calendar-tabs #BlogCalendar table td input
+{
+    background: none;
+}
+/* Non Javascript - Calendar - end */
+
+/* Journey Summary Heading */
+.sjpContent div.journeySummary div.header, 
+.sjpContent div.stopEventResult div.header,
+.mapbing .sjpContent div.header,
+.printablemapbing .sjpContent div.header
+{
+    background: url("./../images/tabs/Tab_blue_Tall.png") no-repeat scroll 0px 0px transparent;
+}
+
+/* Generic javascript right down arrow */
+.sjpContent .js_arrow_btn{
+   background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0px -2px;
+}
+.sjpContent div.journeySummary div.leg div.row div.row2 div.columnDetail div.js_arrow_btn
+{
+   background: url("./../images/arrows/arrow_left_down_small.png") no-repeat scroll 0px -1px;    
+}
+
+/* Map Google */
+.mapgoogle .basicThreeCols
+{
+    background:none;
+}
+.mapgoogle .mapContainer .directions,
+.mapgoogle .mapContainer .map
+{
+    background:#ffffff;    
+}    
+
+/* Travel News Page */
+.sjpContent div.travelnews div.severity div.severityHeading .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -2px;
+}
+.sjpContent div.travelnews div.severity div.active .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -47px;
+}
+.sjpContent div.tnItem
+{
+    background: url(../images/presentation/dotted-border-grey.gif) repeat-x left bottom;
+}
+.sjpContent div.travelnews div.impact div.impactHeading .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -2px;
+}
+.sjpContent div.travelnews div.impact div.active .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -47px;
+}
+
+/* Printer friendly */
+.sjpContent div.printerFriendly input.linkButton, .sjpContent div.printerFriendly a
+{
+    background: url("../images/presentation/print_icon.gif") no-repeat scroll left top transparent;
+}
+
+/* Top Tips */
+div#top-tips div.navigation .prev 
+{
+    background: url("../images/arrows/white-arrow-left.png") no-repeat scroll left 5px transparent !important;
+}
+div#top-tips div.navigation .next 
+{
+    background: url("../images/arrows/white-arrow-right.png") no-repeat scroll right 5px transparent !important;
+}
+
+/* external links */
+.externalLink
+{
+    background: url("../images/presentation/link_external_blue.gif") no-repeat scroll right top transparent;
+}

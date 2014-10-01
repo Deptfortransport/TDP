@@ -1,0 +1,17 @@
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.propertymanager.propertyproviders.dll
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.propertymanager.propertyproviders.pdb
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.propertymanager.propertyproviders.dll.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.propertymanager.propertyproviders.dll.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.dll
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.eventlogging.dll
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.propertymanager.dll
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.extenders.dll
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.pdb
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.eventlogging.pdb
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.propertymanager.pdb
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.extenders.pdb
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\bin\Debug\tdp.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\obj\Debug\tdp.common.propertymanager.propertyproviders.dll
+D:\TDPortal\Codebase\TransportDirect2\PropertyProviders\obj\Debug\tdp.common.propertymanager.propertyproviders.pdb

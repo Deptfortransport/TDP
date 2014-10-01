@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6BCFB92-FFF1-4BE9-9B95-8A7063258597}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TDP.Common.LocationService</RootNamespace>
+    <AssemblyName>tdp.common.locationservice</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <!-- <CodeAnalysisLogFile>bin\Debug\tdp.common.locationservice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>  -->
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <!-- <CodeAnalysisLogFile>bin\Release\tdp.common.locationservice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>  -->
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="td.CJPInterface">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.interactivemapping">
+      <HintPath>..\..\..\ThirdParty\ESRI\td.interactivemapping.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\Levenstein.cs" />
+    <Compile Include="Cache\TDPNaptanCache.cs" />
+    <Compile Include="DataTypes\CycleStorageType.cs" />
+    <Compile Include="DataTypes\DaysOfWeek.cs" />
+    <Compile Include="DataTypes\RiverServiceAvailableType.cs" />
+    <Compile Include="DataTypes\RiverServiceAvailableTypeHelper.cs" />
+    <Compile Include="Gazetteer\AddressPostcodeGazetteer.cs" />
+    <Compile Include="Gazetteer\CodeDetail.cs" />
+    <Compile Include="Gazetteer\ITDPCodeGazetteer.cs" />
+    <Compile Include="Gazetteer\ITDPGazetteer.cs" />
+    <Compile Include="Gazetteer\LocalityGazetteer.cs" />
+    <Compile Include="Gazetteer\LocationChoice.cs" />
+    <Compile Include="Gazetteer\LocationChoiceComparer.cs" />
+    <Compile Include="Gazetteer\LocationChoiceList.cs" />
+    <Compile Include="Gazetteer\LocationQueryResult.cs" />
+    <Compile Include="Gazetteer\PickList.cs" />
+    <Compile Include="Gazetteer\TDPCodeGazetteer.cs" />
+    <Compile Include="Gazetteer\TDPGazetteer.cs" />
+    <Compile Include="Gazetteer\XmlGazetteerHandler.cs" />
+    <Compile Include="GIS\GisQuery.cs" />
+    <Compile Include="GIS\GisQueryFactory.cs" />
+    <Compile Include="Keys.cs" />
+    <Compile Include="DataTypes\LatitudeLongitude.cs" />
+    <Compile Include="LocationServiceHelper.cs" />
+    <Compile Include="LocationSearch.cs" />
+    <Compile Include="LocationService.cs" />
+    <Compile Include="LocationServiceFactory.cs" />
+    <Compile Include="Cache\TDPGNATLocationCache.cs" />
+    <Compile Include="DataTypes\ParkingInterchangeMode.cs" />
+    <Compile Include="LocationTypes\TDPCodeType.cs" />
+    <Compile Include="LocationTypes\TDPGNATAdminArea.cs" />
+    <Compile Include="LocationTypes\TDPGNATLocationType.cs" />
+    <Compile Include="LocationTypes\TDPLocationType.cs" />
+    <Compile Include="DataTypes\OSGridReference.cs" />
+    <Compile Include="LocationTypes\TDPVenueAccess.cs" />
+    <Compile Include="LocationTypes\TDPVenueAccessStation.cs" />
+    <Compile Include="LocationTypes\TDPVenueGateCheckConstraint.cs" />
+    <Compile Include="LocationTypes\TDPVenueGateNavigationPath.cs" />
+    <Compile Include="LocationTypes\TDPVenueGate.cs" />
+    <Compile Include="..\..\TransportDirect\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Service References\GazopsWeb\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TDPGNATLocation.cs" />
+    <Compile Include="TDPLocation.cs" />
+    <Compile Include="Cache\TDPLocationCache.cs" />
+    <Compile Include="Cache\TDPVenueLocationCache.cs" />
+    <Compile Include="LocationTypes\TDPLocationTypeHelper.cs" />
+    <Compile Include="LocationTypes\TDPPark.cs" />
+    <Compile Include="LocationTypes\TDPParkAvailability.cs" />
+    <Compile Include="LocationTypes\TDPPierVenueNavigationPath.cs" />
+    <Compile Include="LocationTypes\TDPVenueRiverService.cs" />
+    <Compile Include="LocationTypes\TDPVenueCarPark.cs" />
+    <Compile Include="LocationTypes\TDPVenueCyclePark.cs" />
+    <Compile Include="LocationTypes\TDPVenueJourneyMode.cs" />
+    <Compile Include="TDPStopLocation.cs" />
+    <Compile Include="TDPVenueLocation.cs" />
+    <Compile Include="LocationTypes\TransitShuttle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Project>{FA4D7979-1E66-488B-9A49-0E44818A4373}</Project>
+      <Name>AdditionalDataModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2EF9DD6E-4BA7-46BF-84CB-7509A5099F44}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Project>{ECA839BB-B752-49F6-9D60-69F20CC5BBA4}</Project>
+      <Name>DatabaseInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Project>{348204EC-DDF7-4735-8DA0-341F206CCCD9}</Project>
+      <Name>DataServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLogging\EventLogging.csproj">
+      <Project>{4AED788E-EA9A-4C3F-BB8D-07A7F1FBE8AA}</Project>
+      <Name>EventLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extenders\Extenders.csproj">
+      <Project>{F82632FB-A7EB-4121-B4C9-338450D024AF}</Project>
+      <Name>Extenders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyManager\PropertyManager.csproj">
+      <Project>{E3CBE746-9620-4433-9D53-6C334C9BBB7E}</Project>
+      <Name>PropertyManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyProviders\PropertyProviders.csproj">
+      <Project>{14ED9C55-9007-4689-8142-83B80CDCF6A9}</Project>
+      <Name>PropertyProviders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\Events\Events.csproj">
+      <Project>{280E29DE-E83B-4F66-A06C-EAACF5CFA35F}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Project>{81877B7C-61F6-46C5-B212-861065CD538F}</Project>
+      <Name>ServiceDiscovery</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\GazopsWeb\GazopsWeb.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GazopsWeb\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GazopsWeb\GazopsWeb.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GazopsWeb\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GazopsWeb\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GazopsWeb\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

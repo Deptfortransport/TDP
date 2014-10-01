@@ -1,0 +1,9 @@
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\CommandAndControl_Script.PreDeployment.sql
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\CommandAndControl_Script.PostDeployment.sql
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\CommandAndControl_Database.sqlsettings
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\CommandAndControl_Database.sqldeployment
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\CommandAndControl_Database.sqlcmdvars
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\CommandAndControl.deploymanifest
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\CommandAndControl.dbschema
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\sql\debug\TDPServerDatabase.dbschema
+D:\TDPortal\Codebase\TransportDirect2\DataBases\CommandAndControl\obj\Debug\CommandAndControl.dbschema

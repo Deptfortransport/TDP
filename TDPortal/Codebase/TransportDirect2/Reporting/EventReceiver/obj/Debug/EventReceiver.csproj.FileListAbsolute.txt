@@ -1,0 +1,38 @@
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\BatchFiles\InstallEventReceiver.bat
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\BatchFiles\UninstallEventReceiver.bat
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\BatchFiles\EventReceiver.bat
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\BatchFiles\START EventReceivert.bat
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\BatchFiles\STOP EventReceiver.bat
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\BatchFiles\TEST EventReceiver.bat
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\td.reportdataprovider.cjpcustomevents.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.eventlogging.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.propertymanager.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.propertymanager.propertyproviders.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.reporting.eventpublishers.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.reporting.events.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.extenders.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.databaseinfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.eventlogging.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.propertymanager.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.propertymanager.propertyproviders.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.reporting.eventpublishers.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.reporting.events.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\tdp.common.extenders.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\EventReceiver2.exe.config
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\EventReceiver2.exe
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\EventReceiver2.pdb
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\EventReceiver2.exe.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\EventReceiver2.exe.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\obj\Debug\EventReceiver2.exe
+D:\TDPortal\Codebase\TransportDirect2\Reporting\EventReceiver\obj\Debug\EventReceiver2.pdb

@@ -1,0 +1,2722 @@
+﻿/* Common styles */
+html,body,.error{font:100% Arial,Helvetica,sans-serif;}
+html,body,div,span,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;border:0;vertical-align:baseline;}
+html,body{width:100%;}
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;}
+a,a:link,a:visited{text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:underline;}
+ul,ol,li{list-style:none;}
+img{border:none;}
+.floatleft{float:left;}
+.floatright{float:right;}
+.clear{clear:both;height:0px;}
+.hide{display:none;}
+.show{display:block;}
+.jshide{display:none !important;}
+.jsshow{display:block !important;}
+.jsshowinline{display:inline-block !important;}
+.transparent{background-color: transparent !important}
+div.collapsed{display:none;}
+div.expanded{display: block;}
+
+/* Page */
+div#MainContent{min-height:350px;}
+div#datepage{min-height:420px;}
+div#timepage{min-height:320px;}
+div#advancedoptionspage{min-height:580px;}
+
+/* Headings */
+h1{font-size:1.4em;}
+.headingContent h1
+{
+    font-weight:normal;
+    padding:25px 10px 5px 10px;
+}
+.mobileerror .headingContent h1,
+.mobilesorry .headingContent h1,
+.mobilepagenotfound .headingContent h1
+{
+    font-size:1.1em;
+}
+
+/* Messages, Errors, Terms, Privacy, Cookie */
+.contentMessages{margin: 10px 5px 0px 5px;}
+.contentMessages br{margin: 0px 0px 5px 0px;}
+.error {font-size: 1em;font-weight:bold;}
+
+.subContent
+{
+    font-size:1.0em;
+    font-weight:normal;
+    padding:15px 10px 15px 10px;
+}
+.subContent h2
+{
+    font-size:1.2em;
+    font-weight:normal;
+    margin:15px 0px 0px 0px;
+}
+.subContent p{margin: 10px 0px 5px 0px;}
+.subContent a{font-weight: bold;}
+.mobileerror .subContent,
+.mobilesorry .subContent,
+.mobilepagenotfound .subContent{font-size:1.1em;}
+
+div.contentMessagesContainer
+{
+    background: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    position:absolute; 
+    top: 0px; 
+    left: 0px; 
+    height:100%; 
+    width: 100%; 
+    overflow: auto; 
+    z-index: 800; 
+}
+div.contentMessagesContainer div.contentMessages  
+{
+    background: #FFFFFF;
+    border: 1px solid #DD0000;
+    border-radius: 3px;
+    position: absolute;
+    height: 130px;
+    width: 210px;
+    overflow: auto;
+    z-index: 600;
+    margin: 0px 0px 0px 0px;
+    padding: 40px 25px 25px 25px;
+}
+div.contentMessagesContainer div.contentMessages .messages
+{
+    display: block;
+}
+div.contentMessagesContainer div.contentMessages span
+{
+    display: block;
+}
+div.contentMessagesContainer .messageHeaderDiv 
+{
+    background:#DD0000;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+div.messageHeaderDiv a.messageClose  
+{
+    background: url("../Images/Icons/closeIcon.png") no-repeat center center #DD0000;
+    border:1px solid #DD0000;
+    cursor: pointer;
+    height: 18px;
+    position: absolute;
+    padding: 7px;
+    right: 5px;
+    top: 0px;
+    width: 22px;
+}
+div.messageHeaderDiv a.messageClose:hover
+{
+    border:1px solid #ffffff;
+    border-radius:3px;
+}
+
+/* Button */
+.submittab
+{
+    padding: 15px 0px 15px 0px;
+}
+.buttonBlue,
+.buttonMag
+{
+    border: 0 none;
+    border-radius:0px;
+    box-shadow:none;
+    cursor:pointer;
+    display:block;
+    font-size:1.5em;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    width: 100%;
+}
+.buttonBlue,
+.buttonMag
+{
+    background: url("../Images/Arrows/white-arrow-right-wide.png") no-repeat scroll right center transparent;
+    background-color:#6464AC;   
+}
+.buttonBlue:hover,
+.buttonMag:hover
+{
+    background-color:#3D7291;   
+}
+.buttonMagDisabled{background-color:#BCBCD6;}
+
+.divPTLogo
+{
+    display:block;
+    margin-top:0px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+.divPTLogo .buttonPTLogo
+{
+    background: url("../Images/Logos/Journey.gif") no-repeat scroll center center transparent;
+    border: 0 none;
+    border-radius:0px;
+    cursor:pointer;
+    display:block;  
+    height:190px;
+    width:100%;  
+}
+
+/* Header and Footer styles */
+.header{margin: 0px 0px 0px 0px;padding:2px 0px 8px 0px;height:70px;position:relative;z-index:700;}
+
+.logoWrap
+{
+    display:inline-block;
+    width: 100%;    
+}
+.logoWrap .logo  
+{
+    margin: 0px 0px 0px 0px; 
+    width: 100%;    
+}
+.logoWrap .logo a 
+{
+    background: url("../Images/Logos/TDLogo.gif") no-repeat scroll center center transparent;
+    cursor:pointer; display:block; width: 130px; height: 70px; font-size: .1px; letter-spacing: -9999px; text-indent: -9999px; 
+    width: 100%;
+}
+.menuWrap
+{
+    display:inline-block;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 5px 24px 5px;
+    position:absolute;
+    right: 0px;
+    width:40px;
+}
+.menuWrap{}
+.menuWrapUp{}
+
+.menuWrap a
+{
+    background:url(../Images/Icons/menu.png) transparent center center no-repeat;
+    display:block;
+    font-size:0.9em;
+    font-weight:bold;
+    height:72px;
+    line-height:72px;
+    text-align:right;
+    text-transform:lowercase;
+    padding:0px;
+    width:100%;
+}
+.menuContainer
+{
+    background: url("../Images/Arrows/down_pointer_purple_wide.png") no-repeat top right #FFFFFF;
+    border:none;
+    display:none;
+    position:absolute;
+    top:80px;
+    padding:18px 0px 0px 0px;
+    width: 100%;
+    z-index:700;
+}
+.menuContainer .menuNav
+{
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius:0px;
+    -webkit-box-shadow: 2px 3px 2px #BBBBBB;
+    -moz-box-shadow:    2px 3px 2px #BBBBBB;
+    box-shadow:         2px 3px 2px #BBBBBB;
+    margin: 0px 10px 10px 10px;
+    padding:15px;    
+}
+.menuContainer .menuNav ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+.menuContainer .menuNav li
+{
+    border: 1px solid #CCCCCC;
+    -webkit-box-shadow: 2px 1px 2px #CCCCCC;
+    -moz-box-shadow:    2px 1px 2px #CCCCCC;
+    box-shadow:         2px 1px 2px #CCCCCC;
+    display: block;
+    font-size:1.0em;
+    font-weight: bold;
+}
+.menuContainer .menuNav li a
+{
+    display: block;
+    padding: 10px 7px;
+}
+.menuContainer .menuNav li,
+.menuContainer .menuNav li a
+{
+    color: #555555;
+}
+.menuContainer .menuNav li:hover,
+.menuContainer .menuNav li:hover a
+{
+    background:#3D7291;
+    color:#FFFFFF;
+}
+
+.footer{}
+.bottomNav{padding:15px 0px 10px 0px;}
+.navWrap{width:100%;overflow:hidden;}
+.navWrap .colNav{display:inline;float:left;text-align:center;width:32%;}
+.navWrap .colNav ul{margin:0px;padding-left:10px;}
+.navWrap .colNav ul li{padding-left:5px;}
+.navWrap .colNav ul li.navItem{font-size:1.0em;font-weight:bold;}
+.navWrap .colNav ul li.navItem a{display: block;min-height:30px;width:100%;}
+.navWrap .colNav ul li.navItem input
+{
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: -6px 0px 0px 0px;
+    min-height: 30px;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+    -webkit-appearance: none;    
+}
+.navWrap .colNav ul li.navItem input:hover
+{
+    text-decoration:underline;
+}
+
+.copyright{text-align:center;font-weight:bold;font-size:0.9em;padding-bottom:10px;}
+
+/* Back*/
+div.headerBack{
+    background: #31009C;
+    border: none;
+    display: inline-block;
+    height:74px;
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    left: 0px;
+    overflow: hidden;
+    top: 0px;
+}
+div.headerBack div.topNavLeftDiv,
+div.headerBack div.topNavRightDiv
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 50px;
+}
+div.headerBack input.topNavLeft,
+div.headerBack input.topNavRight
+{
+    background: url("../Images/Arrows/white-arrow-left.png") no-repeat scroll center center transparent;
+    border:none;
+    border-radius:0px;
+    box-shadow:none;
+    color: #ffffff;
+    cursor:pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    height:72px;
+    line-height: 72px;
+    margin: 0px;
+    text-align: left;
+    width:100%;
+}
+div.headerBack input.topNavRight
+{
+    background: url("../Images/Arrows/white-arrow-right.png") no-repeat scroll center center transparent;
+    text-align: right;
+}
+div.headerBackBlue
+{
+    background: #31009C;
+}
+
+/* Header - Page heading */
+div.pageTitle
+{
+    background: #31009C;
+    border: none;
+    display: block;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+div.pageTitle h1
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    text-align:center;
+}
+
+/* Input */
+div.screenReaderOnly,
+span.screenReaderOnly,
+legend.screenReaderOnly,
+h1.screenReaderOnly
+{
+    background: #FFFFFF;
+    color: #555555;
+    overflow: hidden;
+    position: absolute;
+    width: 0px;
+    clip: rect(0px,0px,0px,0px);
+}
+div.jssettings{position:absolute;left:-100px;}
+
+/* Input - location */
+div.journeyInput {margin:0px 0px 0px 0px;}
+div.journeyInput div.locationsDiv {margin:10px 0px 0px 10px;float:left;}
+div.journeyInput div.locationsDiv div.locationRow {margin:0px 0px 10px 0px; padding: 5px; background:#DDDDDD;}
+
+div.locationsDiv .locationControl {display:block;padding:0px 0px 5px 0px;position:relative;overflow:hidden;}
+
+div.locationsDiv .locationControl div.locationInputDiv
+{
+    float:left;
+    margin: 0px 5px 0px 1px;
+    -webkit-box-shadow: -1px 1px 2px #CCCCCC;
+    -moz-box-shadow:    -1px 1px 2px #CCCCCC;
+    box-shadow:         -1px 1px 2px #CCCCCC;
+}
+div.locationsDiv .locationControl input.locationInput
+{
+    border:1px solid #CCCCCC;
+    border-radius:0px;
+    font-size:0.9em;
+    font-weight:bold;
+    float:left;
+    padding:0px 0px 0px 5px;
+    height:40px;
+    line-height:40px;
+    width:240px;
+    -webkit-appearance: none;
+}
+div.locationsDiv .locationControl input.locationInput::-ms-clear /* hide IE10 auto-clear button */
+{
+    display: none;
+    height: 0;
+    width: 0;
+}
+div.locationsDiv .locationControl input.locationBox /* Added for input default mode */
+{ 
+    /*border-right-style: none;
+    width:200px;*/
+}
+div.locationsDiv .locationControl input.locationVenueLink /* Added for input venue link shown mode */
+{ 
+    /*border-right-style: none;   
+    width:200px;*/
+}
+div.locationsDiv .locationControl input.locationClear /* Added for clear button shown mode */
+{
+    border-right-style: none;
+    width:210px;
+}
+
+div.locationsDiv .locationControl > input[id*=locationInput] { background-color: #e6e6e6; }
+
+div.locationsDiv select.venueDropdownNonJS{width:268px;font-size:0.9em;height:34px;line-height:32px;padding:6px 0px 6px 0px;border:1px inset #aaaaaa;}
+
+div.locationsDiv .locationControl input.locationError
+{
+    border-color:#DD0000;
+    color:#DD0000;
+}
+
+/* Input - clear input text */
+div.locationsDiv .locationControl input.locationClearButton
+{
+    background: url("../Images/Icons/clearIcon.png") no-repeat scroll center center #FFFFFF;
+    border:1px solid #CCCCCC;
+    border-left-style: none;
+    border-radius:0px;
+    box-shadow:none;
+    cursor: pointer;
+    float:left;
+    height:42px;
+    width:31px;
+    -webkit-appearance: none;
+}
+
+/* Input - my location */
+div.locationsDiv .locationControl div.mylocation
+{
+    float: right;
+}
+* html div.locationsDiv .locationControl div.mylocation { float:none; }  /* for IE 6 */
+* + html div.locationsDiv .locationControl div.mylocation{ float:none; } /* for IE 7 */
+
+div.locationsDiv .locationControl div.mylocation input
+{
+    background: url("../Images/Icons/location.png") no-repeat scroll center center transparent !important;
+    border: 0px none;
+    box-shadow:none;
+    cursor: pointer;
+    height:42px;
+    width:36px;
+    margin-right:2px;
+}
+
+/* Input - toggle locations */
+div.locationsDiv .locationControl div.travelFromToDiv
+{
+    float: right;
+}
+* html div.locationsDiv .locationControl div.travelFromToDiv { float:none; }  /* for IE 6 */
+* + html div.locationsDiv .locationControl div.travelFromToDiv{ float:none; } /* for IE 7 */
+
+div.travelFromToDiv input
+{
+    background: url("../Images/arrows/Up_down_double_head.png") no-repeat scroll center center transparent !important;
+    border:0px none;
+    box-shadow:none;
+    cursor:pointer;
+    height:42px;
+    width:36px;
+    margin-right:2px;
+}
+
+/* Input - ambiguity */
+div.locationsDiv .locationControl div.ambiguityrow
+{
+    display:inline-block;
+    background:url("../Images/Arrows/pink-arrow-down.png") no-repeat scroll right 10px center #FFFFFF !important;
+    float: left;
+    margin-right:0px;
+    width:211px;
+}
+div.locationsDiv .locationControl div.ambiguityrowNoImage
+{
+    background-image: none !important;
+}
+div.locationsDiv .locationControl div.ambiguityrow select
+{
+    background: transparent;
+    border:1px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    color:#555555;
+    cursor:pointer;
+    font-size:0.9em;
+    font-weight:bold;
+    height:40px;
+    margin:0px;
+    padding:10px 0px 0px 2px;
+    text-decoration:none;
+    max-width:283px;
+}
+div.locationsDiv .locationControl div.ambiguityrow select option
+{
+    background-color:#ffffff;
+    border-bottom:1px solid #aaaaaa;
+    color:#555555;
+    margin:0px;
+    padding:10px 5px;
+}
+div.locationsDiv .locationControl div.resetDiv
+{
+    display: block;
+    float: left;
+    width: 80px;
+}
+div.locationsDiv .locationControl a.resetLink
+{
+    background-color:#6464AC;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:0.9em;
+    font-weight:bold;
+    overflow:hidden;
+    margin:0px;
+    padding:10px 6px 0px 6px;
+    position:absolute;
+    text-align:center;
+    height:30px;
+    width:64px;
+}
+div.locationsDiv .locationControl a.resetLink:hover{background-color:#3D7291;text-decoration:none;}
+div.locationsDiv .locationControl input.resetLocationNonJS
+{
+    background:#6464AC;
+    border: none;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:0.9em;
+    font-weight:bold;
+    height: 40px;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    width: 72px;
+}
+div.locationsDiv .locationControl input.resetLocationNonJS:hover{background-color:#3D7291;text-decoration:none;}
+
+div.locationsDiv .locationControl div.ambiguityrow select.locationError
+{
+    border-color:#DD0000;
+    color: #DD0000;
+}
+
+/* Input - venues */
+div.venues a.venuesLink
+{
+    background-color:#e6007e;
+    bottom:0px;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:0.9em;
+    font-weight:bold;
+    overflow:hidden;
+    margin:0px;
+    padding:7px 12px;
+    position:absolute;
+    text-align:center;
+    top:0px;
+}
+div.venues a.venuesLink:hover{text-decoration:underlne;}
+#venuespage {display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+#venuespage fieldset{margin:0px;padding:0px;border:0px;}
+#venuespage fieldset legend{color:#e6007e;font-weight:bold;font-size:1.5em;margin:5px 0px 0px 0px;text-align:center;width:100%;}
+#venuespage fieldset div.ui-grid-a input{margin-left:-50px;float:left;}
+#venuespage fieldset div.ui-grid-a label{display:block;cursor:pointer;font-weight:bold;padding:10px 10px 10px 10px;min-height:35px;}
+#venuespage fieldset div.ui-grid-a div{border:1px solid #cccccc;background-color:#eeeeee;margin:0px 5px;}
+#venuespage fieldset div.ui-grid-a div:hover{background-color:#dddddd;}
+#venuespage fieldset div.ui-grid-a .ui-block-a{float:left;width:47%;overflow:hidden;}
+#venuespage fieldset div.ui-grid-a .ui-block-b{float:left;width:47%;overflow:hidden;}
+#venuespage div.allVenuesDiv{border:1px solid #cccccc;background-color:#eeeeee;display:block;cursor:pointer;font-weight:bold;margin:5px 5px;text-align:center;width:95%;}
+#venuespage div.allVenuesDiv:hover{background-color:#dddddd;}
+#venuespage div.allVenuesDiv a{color:#1b1b1b;display:block;padding:15px 10px 15px 10px;width:100%;}
+#venuespage div.allVenuesDiv a:hover{text-decoration:none;}
+
+/* Input - Location Suggest */
+div#MainContent
+{
+    overflow:visible;
+}
+div#MainContent ul.locationSuggestList
+{
+    border: 1px solid;
+    border-bottom-style: none;
+    z-index:99999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    text-align:left;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-box-shadow: -2px 4px 5px #CCCCCC;
+    -moz-box-shadow:    -2px 4px 5px #CCCCCC;
+    box-shadow:         -2px 4px 5px #CCCCCC;
+}
+div#MainContent ul.locationSuggestList
+{
+   border-color: #CCCCCC;
+   background-color:white;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem{
+    display: block;
+    font-size:0.9em;
+    width: 100%;
+    border-bottom:1px solid #CCCCCC;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a
+{
+    display: block;
+    padding: 8px 0px 2px 3px;
+    min-height:35px;
+    width: 100%;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a, 
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a:hover
+{
+    text-decoration: none;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a
+{
+    color: #555555;   
+}
+div#MainContent ul.locationSuggestList li.locationSuggestSelectedItem
+{
+    background-color:#9E9ECF;
+    color:#ffffff;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestSelectedItem a
+{
+     color:#ffffff;
+}
+
+div#MainContent div.locationControl span.ambiguityinfo
+{
+    color:#DF0094;
+}
+
+/* Input - date and time picker */
+div.eventDateTime{display:block;margin:0px 0px 10px 10px;overflow:hidden;}
+
+/* Input - date */
+div.dateSelect{display:block;margin:0px 10px 0px 0px;padding:5px;float:left;background:#DDDDDD;}
+div.dateSelect div.setdatebox
+{
+    float:left;
+}
+div.dateSelect div.setdatebox input.dateEntry
+{
+    background:#DDDDDD;
+    border:0px none;
+    box-shadow:none;
+    cursor:pointer;
+    font-size:0.9em;
+    font-weight:bold;
+    float:left;
+    padding:0px 0px 0px 5px;
+    height:40px;
+    line-height:40px;
+    width:123px;
+}
+div.dateSelect div.setdatebox input.dateEntryWithButton /* Added for date button shown mode */
+{
+    width:93px;
+}
+/* Input - date button */
+div.dateSelect div.setdatebox input.btnOutwardDate
+{
+    background: url("../Images/Icons/calendaricon.png") no-repeat scroll center center #DDDDDD;
+    border:0px none;
+    box-shadow:none;
+    cursor: pointer;
+    float:left;
+    height:42px;
+    width:28px;
+}
+
+/* Input - date page */
+#datepage{display: none; position: absolute; top: 0px; left: 0px; width: 100%; overflow: auto; background: white; z-index: 500;}
+#datepage div.datepageContent{margin-top:0px;}
+#datepage fieldset{margin:0px;padding:0px;border:0px;}
+#datepage fieldset .months{margin:5px 0px 0px 0px;}
+#datepage fieldset h3
+{
+    color:#ffffff;cursor:pointer;font-size:1em;margin:0px 0px 0px 0px;padding:0px 0px 0px 26px;
+    background:url("../Images/Arrows/white-arrow-down.png") no-repeat scroll 7px 16px #6464AC !important;
+}
+#datepage fieldset h3:hover{text-decoration:underline;}
+#datepage fieldset h3 a{display:block;padding:10px 0px;color:#FFFFFF;}
+#datepage div.collapseDate {border-bottom:none;float:left;margin:0px 0px 5px 0px;width:100%}
+#datepage div.collapseDate .collapseDateDays{margin:0px 0px 0px 10px;}
+#datepage div.collapseDate ul.week{margin:0px;padding:0px;width:100%;display:block;}
+#datepage div.collapseDate ul.week li{float:left;font-size:0.8em;text-align:center;width:13%;margin:5px 2px 1px 0px;display:inline-block;}
+
+#datepage div.collapseDate div.day{float:left;font-weight:bold;text-align:center;margin:3px 1px;height:40px;width:13%;display:inline-block;overflow:hidden;}
+#datepage div.collapseDate div.day{background-color:#dddddd;}
+#datepage div.collapseDate div.day:hover{background-color:#6464AC;color:#ffffff;text-decoration:underline;}
+#datepage div.collapseDate div.dayDisabled{background-color:#eeeeee;color:#6F6868;cursor:default;}
+#datepage div.collapseDate div.dayDisabled:hover{background-color:#eeeeee;color:#6F6868;cursor:default;text-decoration:none;}
+#datepage div.collapseDate div.daySelected{background-color:#3D7291;color:#ffffff;}
+#datepage div.collapseDate div.daySelected:hover{background-color:#6464AC;color:#ffffff;text-decoration:none;}
+
+#datepage div.collapseDate div.day input{background-color:#dddddd;border:none;border-radius:0px;box-shadow:none;color:#444444;cursor:pointer;display:block;font-family:Helvetica;font-size:1.0em;font-weight:bold;height:100%;width:100%;-webkit-appearance: none;}
+#datepage div.collapseDate div.day input:hover{background-color:#6464AC;color:#ffffff;}
+#datepage div.collapseDate div.dayDisabled input{background-color:#eeeeee;color:#6F6868;cursor:default;}
+#datepage div.collapseDate div.dayDisabled:hover input{background-color:#eeeeee;color:#6F6868;cursor:default;text-decoration:none;}
+#datepage div.collapseDate div.daySelected input{background-color:#3D7291;color:#ffffff;}
+#datepage div.collapseDate div.daySelected input:hover{background-color:#6464AC;color:#ffffff;text-decoration:none;}
+
+/* Input - time */
+div.timePicker{display:block;margin:0px 0px 0px 0px;padding:5px;float:left;background:#DDDDDD;}
+div.timePicker div.settimebox
+{
+    float:left;
+}
+div.timePicker div.settimebox .timeType
+{
+    background:#DDDDDD;
+    border:0px none;
+    cursor:pointer;
+    font-size:0.9em;
+    font-weight:bold;
+    float:left;
+    padding:0px 0px 0px 5px;
+    height:40px;
+    line-height:40px;
+    width:63px;
+}
+div.timePicker div.settimebox input.timeInput
+{
+    background:#DDDDDD;
+    border:0px none;
+    box-shadow:none;
+    cursor:pointer;
+    font-size:0.9em;
+    font-weight:bold;
+    float:left;
+    padding:0px 0px 0px 1px;
+    height:40px;
+    line-height:40px;
+    width:95px;
+}
+div.timePicker div.settimebox input.timeInputWithButton /* Added for time button shown mode */
+{
+    width:48px;
+}
+/* Input - time button */
+div.timePicker div.settimebox input.btnOutwardTime
+{
+    background: url("../Images/Icons/clockicon.png") no-repeat scroll center center #DDDDDD;
+    border:0px none;
+    box-shadow:none;
+    cursor: pointer;
+    float:left;
+    height:42px;
+    width:28px;
+}
+
+/* Input - time page */
+#timepage{display: none; position: absolute; top: 0px; left: 0px; width: 100%; overflow: auto; background: white; z-index: 500;}
+#timepage div.timepageContent{margin-top:0px;}
+#timepage div.divLeaveArrive{float:left;margin:5px 0px 10px 0px;width:100%;}
+#timepage div.divLeaveArrive input{background-color:#dddddd;border:none;border-radius:0px;box-shadow:none;cursor:pointer;display:inline-block;float:left;font-size:1em;font-weight:bold;padding:15px 0px;width:50%;-webkit-appearance: none;}
+#timepage div.divLeaveArrive input:hover{background-color:#6464AC;color:#FFFFFF;}
+#timepage div.divLeaveArrive input.selected{background-color:#3D7291;color:#ffffff;}
+
+#timepage div.timeSelectorContainer{float:left;width:100%;}
+#timepage div.hourRow{float:left;margin-left:3%;width:97%;}
+
+#timepage div.minutes{float:left;width:100%;}
+#timepage div.minute{float:left;font-weight:bold;text-align:center;margin:3px 1% 3px 1%;height:50px;display:inline-block;overflow:hidden;width:22%;}
+#timepage div.minute{background-color:#dddddd;}
+#timepage div.minute:hover{background-color:#6464AC;color:#ffffff;text-decoration:underline;}
+
+#timepage div.timeDisabled{background-color:#eeeeee;color:#6F6868;cursor:default;}
+#timepage div.timeDisabled:hover{background-color:#eeeeee;color:#6F6868;cursor:default;text-decoration:none;}
+#timepage div.timeSelected{background-color:#3D7291;color:#ffffff;}
+#timepage div.timeSelected:hover{background-color:#6464AC;color:#ffffff;text-decoration:none;}
+
+#timepage div.minute input{background-color:#dddddd;border:none;border-radius:0px;box-shadow:none;color:#444444;cursor:pointer;display:block;font-family:Helvetica;font-size:1.0em;font-weight:bold;height:100%;width:100%;-webkit-appearance: none;}
+#timepage div.minute input:hover{background-color:#6464AC;color:#ffffff;}
+
+#timepage div.timeDisabled input{background-color:#eeeeee;color:#6F6868;cursor:default;}
+#timepage div.timeDisabled input:hover{background-color:#eeeeee;color:#6F6868;cursor:default;text-decoration:none;}
+#timepage div.timeSelected input{background-color:#3D7291;color:#ffffff;}
+#timepage div.timeSelected input:hover{background-color:#6464AC;color:#ffffff;text-decoration:none;}
+
+
+#timepage div.otherTimesDiv{float:left;margin:10px 0px 0px 0px;height:52px;width:100%;}
+#timepage div.otherTimesDiv input{background-color:#dddddd;border:none;border-radius:0px;box-shadow:none;cursor:pointer;display:inline-block;float:left;font-size:1em;font-weight:bold;margin:0px 1%;padding:15px 0px;width:98%;-webkit-appearance: none;}
+#timepage div.otherTimesDiv input:hover{background-color:#3D7291;color:#ffffff;}
+
+#timepage div.otherTimesDropContainer{float:left;margin:10px 0px 0px 0px;height:52px;width:100%;}
+#timepage div.otherTimesDropContainer select
+{
+    border: 2px solid #DDDDDD;
+    display: inline-block;
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    height: 52px;
+    line-height: 50px;
+    margin: 0px 1%;
+    padding: 10px 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 21%;
+}
+#timepage div.otherTimesDropContainer input{background-color:#6464AC;border:none;border-radius:0px;box-shadow:none;color:#FFFFFF;cursor:pointer;display:inline-block;float:left;font-size:1em;font-weight:bold;margin:0px 1%;padding:15px 0px;width:50%;-webkit-appearance: none;}
+#timepage div.otherTimesDropContainer input:hover{background-color:#3D7291;color:#ffffff;}
+
+/* Input - date and time picker - Non JS*/
+div.dateSelect div.setdatebox select.nonjs, 
+div.timePicker div.settimebox select.nonjs
+{
+    background: #ffffff;
+    border:1px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    color:#555555;
+    cursor:pointer;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 0px;
+    padding:0px 0px 0px 2px;
+    text-align:left;
+    text-decoration: none;
+}
+div.dateSelect div.setdatebox select.nonjs option, 
+div.timePicker div.settimebox select.nonjs option
+{
+    background-color:#ffffff;
+    border-bottom:1px solid #aaaaaa;
+    color:#555555;
+    margin:0px;
+    padding:5px 0px 5px 2px;
+}
+div.dateSelect div.setdatebox select.drpDays{width:45px;}
+div.dateSelect div.setdatebox select.drpMonths{width:90px;}
+div.timePicker div.settimebox select.drpHours{width:45px;}
+div.timePicker div.settimebox select.drpMinutes{width:45px;}
+
+
+/* Input - now */
+div.nowSelect{display:inline-block;margin:0px;padding:1px 0px;width:46px;}
+div.nowSelect a
+{
+    background-color: #E6007E;
+    border:0px;
+    border-radius: 0px;
+    color: #ffffff;
+    cursor:pointer;
+    display:block;
+    font-size:0.9em;
+    font-weight:bold;
+    margin:0px;
+    padding:12px 7px;
+    height:100%;
+    text-align:center;
+}
+div.nowSelect .nowLinkNonJS
+{
+    background:#E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    font-weight:bold;
+    margin:3px;
+    padding:2px;
+    width:70px;
+}
+div.nowSelect .nowLinkNonJS:hover{text-decoration:underline;}
+
+div.eventDateTitleDiv{display:inline-block;margin:0px 5px;}
+div.eventDateTitleDiv .eventDateLabel {
+    display: inline-block !important;
+    font-size: 0.9em;
+    margin-right: 0px;
+    width: 35px !important;
+}
+
+/* Input - advanced options  */
+div.advancedOptions{display:block;margin:0px 0px 10px 10px;padding:5px;float:left;background:#DDDDDD;}
+div.advancedOptions div.setAdvancedOptionsBox
+{
+    float:left;
+}
+div.advancedOptions div.setAdvancedOptionsBox input.btnAdvancedOptions
+{
+    background:#DDDDDD;
+    border:0px none;
+    border-radius:0px;
+    box-shadow:none;
+    cursor:pointer;
+    font-size:0.9em;
+    font-weight:bold;
+    float:left;
+    padding:0px 0px 0px 5px;
+    height:40px;
+    line-height:40px;
+    text-align: left;
+    width:90px;
+    -webkit-appearance: none;
+}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelected
+{
+    cursor:pointer;
+    display:block;
+    float:left;
+    font-size:0.9em;
+    font-weight:bold;
+    line-height:20px;
+    width:200px;
+}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelected img
+{
+    margin: 0px 4px 0px 0px;
+}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelectedWide
+{
+    line-height:40px;
+    height:40px;
+    padding:0px 0px 0px 0px;
+}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelectedWide br
+{
+    display:none;
+}
+div.advancedOptions div.setAdvancedOptionsBox span.advancedOptionsSelectedWide img
+{
+    margin: 0 10px 5px 0;
+    vertical-align:middle;
+}
+
+/* Input - advanced options page */
+#advancedoptionspage{display: none; position: absolute; top: 0px; left: 0px; width: 100%; overflow: auto; background: white; z-index: 500;}
+#advancedoptionspage div.advancedoptionspageContent{margin-top:0px;}
+
+#advancedoptionspage div.advancedOptionsConfirm
+{
+    display:block;
+    margin: 0px 1%;
+    float:left;
+    width:98%;
+}
+#advancedoptionspage div.advancedOptionsConfirm input
+{
+    background-color:#6464AC;
+    border:none;
+    border-radius:0px;
+    box-shadow:none;
+    color: #FFFFFF;
+    cursor:pointer;
+    display:inline-block;
+    font-size:1em;
+    font-weight:bold;
+    margin:5px 0px;
+    padding:15px 0px;
+    width:100%;
+    -webkit-appearance: none;
+}
+#advancedoptionspage div.advancedOptionsConfirm input:hover{background-color:#3D7291;color:#ffffff;}
+
+/* Input - transport modes */
+div.transportModesDiv{margin: 0px 5px 10px 5px;}
+div.transportModesDiv div.transportModesHead{padding:5px 0px 0px 10px;}
+div.transportModesDiv div.transportModesHead h2
+{
+    display:block;
+    font-size:1em;
+    font-weight:bold;
+    margin:5px 0px 0px 0px;
+}
+div.transportModesDiv div.transportModeRow
+{
+    background:#EEEEEE;cursor: pointer;display:block;
+    height: 40px;
+    margin:5px 0px;width:100%;
+}
+div.transportModesDiv div.transportModeRow:hover{background-color:#3D7291;color:#ffffff;}
+div.transportModesDiv div.transportModeRow div.transportModeLabelDiv
+{
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    width:86%;
+}
+div.transportModesDiv div.transportModeRow label
+{
+    float: left;cursor: pointer;display:inline-block;
+    font-size:0.9em;font-weight:bold;
+    line-height:40px;padding:0px 0px 0px 15px;
+}
+div.transportModesDiv div.transportModeRow div.transportModeImageDiv
+{
+    cursor: pointer;
+    float: right;
+    margin: 8px 0px 0px 0px;
+    min-width: 34px;
+    text-align: center;
+}
+div.transportModesDiv div.transportModeRow .transportModeCheckDiv
+{
+    display: inline-block;
+    float: left;
+    height: 100%;   
+    text-align: center;
+    width: 10%    
+}
+div.transportModesDiv div.transportModeRow input
+{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 18px;    
+}
+
+/* Input - accessible options */
+div.accessibilityOptions{margin: 5px 5px 10px 5px;}
+div.accessibilityOptions div.mobilityOptionsHead{padding:5px 0px 0px 10px;}
+div.accessibilityOptions div.mobilityOptionsHead h2
+{
+    font-size:1em;
+    font-weight:bold;
+}
+div.accessibilityOptions div.mobilityOptionRow
+{
+    background:#EEEEEE;cursor: pointer;display:block;
+    height: 40px;
+    margin:5px 0px;width:100%;
+}
+div.accessibilityOptions div.mobilityOptionRow:hover{background-color:#3D7291;color:#ffffff;}
+div.accessibilityOptions div.mobilityOptionRow div.mobilityOptionLabelDiv
+{
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    width:86%;
+}
+div.accessibilityOptions div.mobilityOptionRow label
+{
+    float: left;cursor: pointer;display:inline-block;
+    font-size:0.9em;font-weight:bold;
+    line-height:40px;padding:0px 0px 0px 15px;
+}
+div.accessibilityOptions div.mobilityOptionRow .mobilityOptionCheckDiv
+{
+    display: inline-block;
+    float: left;
+    height: 100%;   
+    text-align: center;
+    width: 10%    
+}
+div.accessibilityOptions div.mobilityOptionRow input
+{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 18px;
+}
+div.accessibilityOptions div.mobilityOptionRow .accessibleNotesLinkDiv
+{
+    display: inline-block;
+    float: left;
+    min-height: 40px;
+    min-width: 30px;
+}
+div.accessibilityOptions div.mobilityOptionRow a.accessibleNotesLink
+{
+    background: url("../Images/Icons/information-note.png") no-repeat right center transparent;
+    color: #6767AF;
+    display: inline-block;
+    font-size:0.9em;
+    font-weight:bold;
+    line-height:40px;
+    padding: 0px 15px 0px 10px;    
+    min-height: 40px;
+    min-width: 25px;
+}
+div.accessibilityOptions div.mobilityOptionRow a.accessibleNotesLink:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Input - cycle park option */
+div.locationParkRow
+{
+    overflow:hidden;
+    margin: 0px 0px 5px 0px;
+    width: 273px;
+}
+div.locationParkRow #park
+{
+    background-color: #E6007E;   
+    padding: 12px 0px;
+}
+div.locationParkRow a.cycleParkLink 
+{
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin:0px;
+    overflow: hidden;
+    text-align: center;
+    width:100%;
+}
+div.locationParkRowDisabled #park
+{
+    background-color: #FF96FF;
+}
+div.locationParkRowDisabled a.cycleParkLinkDisabled,
+div.locationParkRowDisabled a.cycleParkLinkDisabled:hover
+{
+    cursor: default;
+    text-decoration:none;
+}
+
+/* Cycle park map */
+div.cycleParkMapPage{ display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500; }
+div.cycleParkMapPage div.locationParkMapDiv div.locationParkInfoDiv{font-size:0.9em;padding:5px 5px;}
+div.cycleParkMapPage div.locationParkMapDiv a:hover{border:3px solid #e6007e;}
+#wrapper 
+{
+	top:65px;
+	left:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	-webkit-overflow-scrolling: touch!important;
+	background-color:#bacfe7!important;
+}
+#wrapper div.paks 
+{
+    background: url("../Images/cycle/CyclePark.png") no-repeat center center #FFFFFF !important;
+	border:solid 2px #ffffff;
+	color:transparent;
+    cursor:pointer;
+    display: block;
+    position: absolute;
+    overflow:hidden;
+	height: 40px;
+    width: 40px;
+	z-index:1000;
+    -webkit-box-shadow:4px 4px 3px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:4px 4px 3px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:4px 4px 3px 1px rgba(0, 0, 0, 0.3);
+}
+#wrapper div.paks input
+{
+    height: 100%;
+    left:-20px;
+    top: 0px;
+    position:absolute;
+}
+#wrapper div.paks label
+{
+    cursor:pointer;    
+    display: block;
+    z-index:1001;
+    font-size:0em;
+    padding:25px;
+}
+div.menuZoom {position:absolute; top:65px; right:20px; z-index:1000;}
+div.menuZoom a {background:#E6007E url(../Images/Icons/zoom.png) no-repeat;color:#ffffff; width:31px; height:31px; display:block; border:2px solid #000; text-indent:-2000px; overflow:hidden;}
+div.menuZoom #zoomin {margin-top:6px; background-position:top left;}
+div.menuZoom #zoomout {margin-top:6px; background-position:bottom left;}
+div.menuZoom .active{opacity:0.5!important;}
+#wrapper img {width:320px; height:284px; max-width:none!important;}
+#wrapper .contentMap{ width:240px; height:284px; position:absolute; display:block;}
+#wrapper.zoomIn img {width:720px; height:640px;}
+#wrapper.zoomIn .contentMap{ width:720px; height:640px;}
+
+#wrapper img[id*=venueMap] { width: 320px; height: auto; }
+#wrapper.zoomIn img[id*=venueMap] { width: auto; height: auto; }
+
+/* Cycle park icon - BND */
+div[id*=BNDCY01] {left:96px; top:182px;}
+#wrapper.zoomIn div[id*=BNDCY01] {left:273px; top:443px;}
+/* Cycle park icon - OPK */
+div[id*=OPKCYC01] {left:183px; top:238px;}
+#wrapper.zoomIn div[id*=OPKCYC01] {left:475px; top:590px;}
+div[id*=OPKCYC02] {left:4px; top:224px;}
+#wrapper.zoomIn div[id*=OPKCYC02] {left:31px; top:503px;}
+div[id*=OPKCYC03] {left:260px; top:79px;}
+#wrapper.zoomIn div[id*=OPKCYC03] {left:636px; top:177px;}
+/* Cycle park icon - VPL */
+div[id*=VPLCYC01] {left:186px; top:218px;}
+#wrapper.zoomIn div[id*=VPLCYC01] {left:473px; top:488px;}
+/* Cycle park icon - EAR */
+div[id*=EARCY01] {left:227px; top:128px;}
+#wrapper.zoomIn div[id*=EARCY01] {left:536px; top:291px;}
+/* Cycle park icon - ETD */
+div[id*=ETDCY02] {left:4px; top:132px;}
+#wrapper.zoomIn div[id*=ETDCY02] {left:47px; top:270px;}
+div[id*=ETDCY01] {left:160px; top:177px;}
+#wrapper.zoomIn div[id*=ETDCY01] {left:383px; top:400px;}
+/* Cycle park icon - EXL */
+div[id*=EXLCY01] {left:198px; top:57px;}
+#wrapper.zoomIn div[id*=EXLCY01] {left:473px; top:127px;}
+/* Cycle park icon - GRP */
+div[id*=GRPCYC02] {left:128px; top:22px;}
+#wrapper.zoomIn div[id*=GRPCYC02] {left:268px; top:6px;}
+div[id*=GRPCYC03_BH1] {left:190px; top:236px;}
+#wrapper.zoomIn div[id*=GRPCYC03_BH1] {left:561px; top:599px;}
+div[id*=GRPCYC03_BH6] {left:190px; top:236px;}
+#wrapper.zoomIn div[id*=GRPCYC03_BH6] {left:561px; top:599px;}
+/* Cycle park icon - HAD */
+div[id*=HADCY01] {left:113px; top:106px;}
+#wrapper.zoomIn div[id*=HADCY01] {left:244px; top:267px;}
+div[id*=HADCY02] {left:70px; top:192px;}
+#wrapper.zoomIn div[id*=HADCY02] {left:223px; top:466px;}
+/* Cycle park icon - HAM */
+div[id*=HAMCY01] {left:237px; top:126px;}
+#wrapper.zoomIn div[id*=HAMCY01] {left:558px; top:286px;}
+/* Cycle park icon - HGP */
+div[id*=HGPCY01] {left:218px; top:234px;}
+#wrapper.zoomIn div[id*=HGPCY01] {left:489px; top:536px;}
+/* Cycle park icon - HYD */
+div[id*=HYDCY01] {left:140px; top:29px;}
+#wrapper.zoomIn div[id*=HYDCY01] {left:345px; top:126px;}
+div[id*=HYDCY02] {left:257px; top:158px;}
+#wrapper.zoomIn div[id*=HYDCY02] {left:612px; top:356px;}
+div[id*=HYDCY03] {left:100px; top:206px;}
+#wrapper.zoomIn div[id*=HYDCY03] {left:270px; top:463px;}
+/* Cycle park icon - HPL */
+div[id*=HPLCY01] {left:140px; top:29px;}
+#wrapper.zoomIn div[id*=HPLCY01] {left:345px; top:126px;}
+div[id*=HPLCY02] {left:257px; top:158px;}
+#wrapper.zoomIn div[id*=HPLCY02] {left:612px; top:356px;}
+div[id*=HPLCY03] {left:100px; top:206px;}
+#wrapper.zoomIn div[id*=HPLCY03] {left:270px; top:463px;}
+/* Cycle park icon - LCG */
+div[id*=LCGCY01] {left:159px; top:175px;}
+#wrapper.zoomIn div[id*=LCGCY01] {left:386px; top:450px;}
+/* Cycle park icon - LVC */
+div[id*=LVCCY01] {left:146px; top:139px;}
+#wrapper.zoomIn div[id*=LVCCY01] {left:352px; top:314px;}
+/* Cycle park icon - MIL */
+div[id*=MILCY01] {left:52px; top:3px;}
+#wrapper.zoomIn div[id*=MILCY01] {left:143px; top:33px;}
+/* Cycle park icon - MLN */
+div[id*=MLNCY01] {left:201px; top:141px;}
+#wrapper.zoomIn div[id*=MLNCY01] {left:446px; top:321px;}
+div[id*=MLNCY02] {left:226px; top:162px;}
+#wrapper.zoomIn div[id*=MLNCY02] {left:491px; top:321px;}
+/* Cycle park icon - MLS */
+div[id*=MLSCY01] {left:217px; top:227px;}
+#wrapper.zoomIn div[id*=MLSCY01] {left:489px; top:534px;}
+/* Cycle park icon - NGA */
+div[id*=NGACY01] {left:227px; top:222px;}
+#wrapper.zoomIn div[id*=NGACY01] {left:511px; top:501px;}
+/* Cycle park icon - OLD */
+div[id*=OLDCY01] {left:139px; top:148px;}
+#wrapper.zoomIn div[id*=OLDCY01] {left:339px; top:395px;}
+/* Cycle park icon - RAB */
+div[id*=RABCY01] {left:80px; top:224px;}
+#wrapper.zoomIn div[id*=RABCY01] {left:240px; top:534px;}
+/* Cycle park icon - WAP */
+div[id*=WAPCY01] {left:118px; top:3px;}
+#wrapper.zoomIn div[id*=WAPCY01] {left:297px; top:6px;}
+div[id*=WAPCY02] {left:128px; top:228px;}
+#wrapper.zoomIn div[id*=WAPCY02] {left:311px; top:551px;}
+div[id*=WAPCY03] {left:28px; top:68px;}
+#wrapper.zoomIn div[id*=WAPCY03] {left:84px; top:153px;}
+div[id*=WAPCY04] {left:132px; top:1px;}
+#wrapper.zoomIn div[id*=WAPCY04] {left:289px; top:1px;}
+div[id*=WAPCY05] {left:25px; top:142px;}
+#wrapper.zoomIn div[id*=WAPCY05] {left:102px; top:322px;}
+/* Cycle park icon - WLB */
+div[id*=WLBCY01] {left:118px; top:3px;}
+#wrapper.zoomIn div[id*=WLBCY01] {left:297px; top:6px;}
+div[id*=WLBCY02] {left:128px; top:228px;}
+#wrapper.zoomIn div[id*=WLBCY02] {left:311px; top:551px;}
+div[id*=WLBCY03] {left:28px; top:68px;}
+#wrapper.zoomIn div[id*=WLBCY03] {left:84px; top:153px;}
+div[id*=WLBCY04] {left:132px; top:1px;}
+#wrapper.zoomIn div[id*=WLBCY04] {left:289px; top:1px;}
+div[id*=WLBCY05] {left:25px; top:142px;}
+#wrapper.zoomIn div[id*=WLBCY05] {left:102px; top:322px;}
+/* Cycle park icon - WEM */
+div[id*=WEACY01] {left:188px; top:171px;}
+#wrapper.zoomIn div[id*=WEACY01] {left:425px; top:431px;}
+/* Cycle park icon - WEM */
+div[id*=WEMCY01] {left:188px; top:171px;}
+#wrapper.zoomIn div[id*=WEMCY01] {left:425px; top:431px;}
+/* Cycle park icon - WIM */
+div[id*=WIMCY01] {left:153px; top:133px;}
+#wrapper.zoomIn div[id*=WIMCY01] {left:372px; top:300px;}
+
+/* Input - journey type*/
+div.journeyTypeRow {margin:0px 0px 0px 5px;}
+div.journeyTypeRow div.cycling{width:281px;padding-bottom:1px;}
+div.journeyTypeRow div.cycling h2
+{
+    font-size:0.9em;
+    cursor:pointer;
+    color:#ffffff;
+    background:url("../Images/Arrows/white-arrow-down.png") no-repeat scroll 250px center #e6007e !important;
+    border: 1px solid #E6007E;
+    margin:5px 3px 0px 5px;
+    min-height:25px;
+    padding: 10px 3px 3px 0px;
+    text-align:center;
+}
+div.journeyTypeRow div.cycling h2:hover{text-decoration:underline;}
+div.journeyTypeRow div.cycling input, 
+div.journeyTypeRow div.cycling label{cursor:pointer;font-size:0.9em;}
+div.journeyTypeRow div.cycling fieldset{border:0px;margin:0px 3px 5px 5px !important;padding:0px;}
+div.journeyTypeRow div.cycling fieldset .ui-controlgroup-controls{border: 1px solid #E6007E;border-top:0px;}
+div.journeyTypeRow div.cycling fieldset .ui-controlgroup-controls table td{padding-bottom:9px;}
+div.journeyTypeRow div.cycling fieldset div{padding: 10px 0px 5px 0px;}
+div.journeyTypeRow div.cycling fieldset input{display:inline-block;margin:0px 5px;vertical-align:middle;}
+div.journeyTypeRow div.cycling fieldset label{display:inline-block;margin:0px;width:235px;vertical-align:middle;}
+
+/* Accessible stops */
+#accessibility h3{margin:10px 10px;font-size:1em;}
+div.accessibilityStops {margin:10px 10px 15px 10px;}
+div.accessibilityStops .accessibleStopsInfoDiv
+{
+    font-size:1.0em;margin:10px 0px;
+}
+div.accessibilityStops .accessibleStopDiv
+{
+    background: none repeat scroll 0 0 #DDDDDD;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+div.accessibilityStops span.accessibleType{font-weight:bold;}
+div.accessibilityStops span.accessibleStopsLabel{font-size:1.0em;font-weight:bold;}
+div.accessibilityStops span.accessibleLocation{font-weight:bold;}
+div.accessibilityStops fieldset{border:none;margin:0px;padding:0px;}
+div.accessibilityStops .accessibleStopsDrop 
+{
+    width:100%;
+}
+div.accessibilityStops select.accessibleStopsDrop
+{
+    background: #FFFFFF;
+    border:1px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    color:#555555;
+    cursor:pointer;
+    font-size:1.0em;
+    font-weight:bold;
+    height:40px;
+    line-height:40px;
+    margin:5px 0px 0px 0px;
+    padding:0px 0px 0px 2px;
+    text-decoration:none;
+    vertical-align: middle;
+}
+div.accessibilityStops select.accessibleStopsDrop option
+{
+    background-color:#ffffff;
+    border-bottom:1px solid #aaaaaa;
+    color:#555555;
+    font-size:1.0em;
+    margin:0px;
+    padding:10px 5px;
+}
+
+/* Journey progress */
+div.waitContainer
+{
+}
+div.journeyProgress
+{
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position:absolute; 
+    top: 0px; 
+    left: 0px; 
+    height:100%; 
+    width: 100%; 
+    overflow: auto; 
+    z-index: 800; 
+}
+div.journeyProgress div.processMessage  
+{
+    background: white;
+    border: 1px solid #31009C;
+    border-radius: 3px;  
+    font-weight: bold; 
+    position: absolute;
+    height: 130px;
+    overflow: auto;
+    padding: 25px;
+    width: 210px;
+    z-index: 800;
+}
+div.journeyProgress div.processMessageNonJS  
+{
+    height: 210px;
+    margin: 0;
+    padding: 25px 0;
+    top:80px;
+    width: 99%;
+}
+div.journeyProgress div.loadingMessageDiv
+{
+    margin: 0px;
+}
+div.journeyProgress div.loadingImageDiv 
+{
+    padding:10px;
+}
+div.journeyProgress div.loadingImageDiv img
+{
+    margin: 10px 0px 10px 0px;
+}
+
+/* Journey summary detail heading */
+div.journeyHeadingContainer
+{
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    width:100%;
+}
+div.journeyHeadingContainerBottom
+{
+    float: left;
+    padding: 10px 0px 10px 0px;
+}    
+    
+div.journeyHeadingContainer .journeyHeadingDiv{background-color: #3D7291;}
+div.journeyHeadingContainer .journeyHeadingDiv:hover {background-color:#6464AC;}
+div.journeyHeadingContainer .journeyHeadingDiv a{color:#FFFFFF;}
+div.journeyHeadingContainer .journeyHeadingDiv a:hover{background-color:#6464AC;color:#FFFFFF;text-decoration:none;}
+div.journeyHeadingContainer .journeyHeadingDiv .headingJourney{display:block;font-size: 1.2em;padding: 10px 0px 0px 0px;}
+div.journeyHeadingContainer .journeyHeadingDiv .headingDate{display:block;padding: 0px 0px 10px 0px;}
+
+/* Journey summary detail duration */
+div.journeyHeadingContainer .journeyDurationDiv {display: block;float: left;padding: 10px 0px 10px 0px;width: 100%;}
+div.journeyHeadingContainer .journeyDurationDiv .leave{display:inline-block;float:left;min-height:40px;width:26%;text-align:center;}
+div.journeyHeadingContainer .journeyDurationDiv .arrive{display:inline-block;float:right;min-height:40px;width:26%;text-align:center;}
+div.journeyHeadingContainer .journeyDurationDiv .changes{display:none;}
+div.journeyHeadingContainer .journeyDurationDiv .duration{display:inline-block;float:left;min-height:40px;width:46%;text-align:center;}
+
+div.journeyHeadingContainer .journeyDurationDiv .leave .leaveHeading{display:block;min-height:15px;width:100%;font-size:0.80em;}
+div.journeyHeadingContainer .journeyDurationDiv .leave .leaveTime{display:block;width:100%;font-size:1.2em;}
+
+div.journeyHeadingContainer .journeyDurationDiv .arrive .arriveHeading{display:block;min-height:15px;width:100%;font-size:0.80em;}
+div.journeyHeadingContainer .journeyDurationDiv .arrive .arriveTime{display:block;width:100%;font-size:1.2em;}
+
+div.journeyHeadingContainer .journeyDurationDiv .duration .durationHeading{display:block;min-height:15px;width:100%;font-size:0.80em;}
+div.journeyHeadingContainer .journeyDurationDiv .duration .durationTime{display:block;width:100%;font-size:1.2em;}
+
+div.journeyHeadingContainerBottom .journeyDurationDiv {background-color: #3D7291;}
+div.journeyHeadingContainerBottom .journeyDurationDiv:hover{background-color: #3D7291;}
+
+/* Journey summary */
+div.journeySummary
+{
+    padding: 5px 0px 10px 0px;
+}
+div.journeySummary div.journeySummaryHead
+{
+    margin-top: 15px;
+}
+/* Journey summary - earlier later */
+#navresults{background-color:#6464AC;display:block;min-height:55px;width:100%;}
+#navresults .earlierJourneyDiv{float:left;display:inline-block;width:49%;}
+#navresults .laterJouneyDiv{float:right;display:inline-block;width:49%;}
+
+div.journeySummary #navresults .earlier,
+div.journeySummary #navresults .later
+{
+    color: #ffffff;
+    cursor:pointer;
+    display:block;
+    font-size: 1.2em;
+    margin:0px;
+    min-height: 40px;
+    padding:15px 20px 0px 25px;
+    
+}
+div.journeySummary #navresults .earlier
+{
+    background: url("../Images/Arrows/white-arrow-left.png") no-repeat 5px center #6464AC;
+    text-align: left;
+    z-index:2;
+}
+div.journeySummary #navresults .later
+{
+    background: url("../Images/Arrows/white-arrow-right-wide.png") no-repeat right center #6464AC;
+    padding-right:30px;
+    text-align: right;
+    z-index:2;
+}
+div.journeySummary #navresults .earlier:hover,
+div.journeySummary #navresults .later:hover
+{
+    background-color:#3D7291;
+}
+    
+/* Journey summary - earlier later - non JS*/
+div.journeySummary #navresults .earlierNonJS,
+div.journeySummary #navresults .laterNonJS
+{
+    border: none;
+    color: #ffffff;
+    cursor:pointer;
+    display:block;
+    font-weight:bold;
+    font-size: 1.2em;
+    margin:0px;
+    min-height: 55px;
+    padding:0px 20px 0px 25px;
+    width:100%;
+}
+div.journeySummary #navresults .earlierNonJS
+{
+    background: url("../Images/Arrows/white-arrow-left.png") no-repeat 5px center #6464AC;
+    text-align: left;
+    z-index:2;
+}
+div.journeySummary #navresults .laterNonJS
+{
+    background: url("../Images/Arrows/white-arrow-right-wide.png") no-repeat right center #6464AC;
+    padding-right:30px;
+    text-align: right;
+    z-index:2;
+}
+div.journeySummary #navresults .earlierNonJS:hover,
+div.journeySummary #navresults .laterNonJS:hover
+{
+    background-color:#3D7291;   
+    text-decoration:underline;
+}
+
+/* Journey details - previous next */
+div.journeyNavContainer
+{
+    background: #ffffff;
+    display:block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width:100%;
+}
+div.journeyNavContainer table.journeyNavTable
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+div.journeyNavContainer table.journeyNavTable tr,
+div.journeyNavContainer table.journeyNavTable td
+{
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+div.journeyNavContainer div.journeyNavDiv
+{
+    float: left;
+    display:inline-block;
+    margin:0px 0px 0px 0px;
+    padding: 0px 0px 16px 0px;
+    width:100%;
+}
+
+div.journeyNavContainer div.journeyNavSelected
+{
+    background: url("../Images/Arrows/down_pointer.png") no-repeat center bottom transparent !important;
+}
+
+div.journeyNavContainer div.journeyNavDiv input
+{
+    background: #BED7E4;
+    border-style:none;
+    border-right: 2px solid #ffffff;
+    border-radius:0px;
+    box-shadow:none;
+    cursor:pointer;
+    padding: 10px 0px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+div.journeyNavContainer div.journeyNavDiv input:hover
+{
+    background: #6464AC;
+    color: #FFFFFF;
+}
+div.journeyNavContainer div.journeyNavLast input
+{
+    border-style:none;
+}
+div.journeyNavContainer div.journeyNavSelected input,
+div.journeyNavContainer div.journeyNavSelected input:hover
+{
+    background: #3D7291;
+    color: #FFFFFF;   
+}
+
+/* Journey summary - results */
+div.journeySummary #results ul{margin:0px;padding:0px;}
+div.journeySummary #results ul li
+{
+    margin:8px;padding:0px;border:1px solid #6464AC;
+    color:#2F3E46;min-height:45px;
+    background: url("../Images/Arrows/purple-arrow-right-wide.png") no-repeat right center transparent;
+    -webkit-box-shadow: 3px 3px 5px #6464AC;
+    -moz-box-shadow:    3px 3px 5px #6464AC;
+    box-shadow:         3px 3px 5px #6464AC;
+}
+div.journeySummary #results ul li:hover
+{
+    background: url("../Images/Arrows/white-arrow-right-wide.png") no-repeat right center #007DA8;   
+    color:#ffffff;
+}
+div.journeySummary #results ul li:hover a{color:#ffffff;}
+div.journeySummary #results ul li a
+{
+    padding:3px 5px 0px 5px;color:#555555;text-decoration:none;display:inline-block;width:95%;min-height:45px;
+}
+div.journeySummary #results ul li a:hover{color:#ffffff;cursor:pointer;}
+div.journeySummary #results ul li a .summaryDetailContainer{display:block;float:left;padding:3px 0px 0px 0px;width:100%;}
+div.journeySummary #results ul li a .transportContainer{display:block;float:left;padding:7px 0px 0px 0px;width:100%;min-height:25px;text-align:center;}
+
+div.journeySummary #results ul .summaryDetailContainer .leave{display:inline-block;float:left;min-height:40px;width:26%;text-align:center;}
+div.journeySummary #results ul .summaryDetailContainer .arrive{display:inline-block;float:right;min-height:40px;width:26%;text-align:center;}
+div.journeySummary #results ul .summaryDetailContainer .changes{display:none;}
+div.journeySummary #results ul .summaryDetailContainer .duration{display:inline-block;float:left;min-height:40px;width:44%;text-align:center;}
+
+div.journeySummary #results ul .summaryDetailContainer .leave .leaveHeading{display:block;min-height:15px;width:100%;font-size:0.80em;}
+div.journeySummary #results ul .summaryDetailContainer .leave .leaveTime{display:block;width:100%;font-size:1.2em;}
+
+div.journeySummary #results ul .summaryDetailContainer .arrive .arriveHeading{display:block;min-height:15px;width:100%;font-size:0.80em;}
+div.journeySummary #results ul .summaryDetailContainer .arrive .arriveTime{display:block;width:100%;font-size:1.2em;}
+
+div.journeySummary #results ul .summaryDetailContainer .duration .durationHeading{display:block;min-height:15px;width:100%;font-size:0.80em;}
+div.journeySummary #results ul .summaryDetailContainer .duration .durationTime{display:block;width:100%;font-size:1.2em;}
+
+div.journeySummary #results ul li a .transportContainer .modeIconDiv{display:inline-block;padding:0px 5px 5px 5px;}
+div.journeySummary #results ul li a .transportContainer .modeIconDiv img{}
+
+* html div.journeySummary #results ul li a .transportContainer .modeIconDiv{ display:inline; }  /* for IE 6 */
+* + html div.journeySummary #results ul li a .transportContainer .modeIconDiv{ display:inline; } /* for IE 7 */
+
+div.journeySummary div.jsshow #results ul li a{width:90%;}
+div.journeySummary div.jsshow #results ul li a:hover{cursor:default;}
+div.journeySummary div.jsshow #results ul li input
+{
+    background: url("../Images/Arrows/white-arrow-right.png") no-repeat right center #6464AC;
+    border: none;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-weight:bold;
+    margin:0px 0px 0px 0px;
+    min-height:98px;
+    padding:5px 0px 5px 2px;
+    position:absolute;
+    right:9px;
+    text-align: left;
+    width:58px;
+}
+div.journeySummary div.jsshow #results ul li input:hover{text-decoration:underline;}
+
+/* Journey leg rows */
+div.legsDetail
+{
+    clear:both;
+}
+div.legsDetail div.leg
+{
+    font-size:0.8em;
+    width: 100%;
+}
+
+div.legsDetail div.leg div.row div.row1
+{
+    background: #DBE9F0;
+    border: 1px solid #BED7E4;
+}
+div.legsDetail div.leg div.row div.row2,
+div.legsDetail div.leg div.row div.row2a,
+div.legsDetail div.leg div.row div.row3
+{
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+    border-top: none;
+}
+
+div.legsDetail div.leg div.row div.row1 div
+{
+    display:inline-block;
+}
+* html div.legsDetail div.leg div.row div.row1 div { display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row1 div{ display:inline; } /* for IE 7 */
+
+div.legsDetail div.leg div.row div.row2 > div
+{
+    display:inline-block;
+}
+* html div.legsDetail div.leg div.row div.row2 div { display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row2 div{ display:inline; } /* for IE 7 */
+
+div.legsDetail div.leg div.row div.row2a div
+{
+    display:inline-block;
+}
+* html div.legsDetail div.leg div.row div.row2a div { display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row2a div{ display:inline; } /* for IE 7 */
+
+div.legsDetail div.leg div.row div.row3 div
+{
+    display:inline-block;
+}
+* html div.legsDetail div.leg div.row div.row3 div { display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row3 div{ display:inline; } /* for IE 7 */
+
+/* Journey leg rows - row 1 */
+div.legsDetail div.leg div.row div.row1 div.columnTimeLabel
+{
+    width: 8%;
+    vertical-align: middle;
+    text-align: right;
+}
+div.legsDetail div.leg div.row div.row1 div.columnTime
+{
+    width: 7%;
+    vertical-align: middle;
+    text-align: center;
+}
+div.legsDetail div.leg div.row div.row1 div.columnNode
+{
+    width: 20px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row1 div.columnLocation
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 54%;
+    vertical-align: middle;
+}
+
+div.legsDetail div.leg div.row div.row1 div.columnNodeStart
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Small.png") no-repeat bottom center transparent;
+}
+div.legsDetail div.leg div.row div.row1 div.columnNodeEnd
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Small.png") no-repeat top center transparent;
+}
+div.legsDetail div.leg div.row div.row1 div.columnNodeMiddle
+{
+    background: url("../Images/presentation/Journey_Line_Solid.png") repeat-y center center transparent;
+}
+
+/* Journey leg rows - row 1 - content*/
+div.legsDetail div.leg div.row div.timeDepart
+{
+    min-height: 15px;
+}
+div.legsDetail div.leg div.row div.columnTime div.timeDepart,
+div.legsDetail div.leg div.row div.rowEnd div.columnTime div.timeArrive
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+div.legsDetail div.leg div.row div.row1 div.columnLocation span
+{
+    padding: 0px 0px 0px 2px;
+}
+div.legsDetail div.leg div.row div.row1 div.columnLocation a
+{
+    background: url("../Images/Arrows/purple-arrow-right.png") no-repeat scroll right center;
+    display:block;
+    padding: 0px 0px 0px 2px;
+}
+
+/* Journey leg rows - row 2 */
+div.legsDetail div.leg div.row div.row2 div.columnMode
+{
+    width: 15%;
+    padding: 5px 0 0 0;
+    vertical-align: middle;
+    text-align: center;
+}
+div.legsDetail div.leg div.row div.row2 div.columnEmpty
+{
+    width: 0px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row2 div.columnLine
+{
+    width: 20px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail
+{
+    width: 54%;
+    padding: 15px 0 0 2px;
+    vertical-align: middle;
+}
+
+/* Journey leg rows - row 2 - content*/
+div.legsDetail div.leg div.row div.row2 div.columnMode div.legModeImgDiv
+{
+    display:block;
+    min-height: 45px;
+    min-width: 78px;
+    margin: 0 0 0 3px;
+    padding: 3px 1px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnMode div.legModeImgDivBorder
+{
+    border: 1px solid #999999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+div.legsDetail div.leg div.row div.row2 div.columnMode div.legModeImgDivBorder a
+{
+    display:block;
+}
+div.legsDetail div.leg div.row div.row2 div.columnMode span.hours,
+div.legsDetail div.leg div.row div.row2 div.columnMode span.minutes
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+div.legsDetail div.leg div.row div.row2 div.columnLine div.lineImage img
+{
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail div.instruction
+{
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail div.bookTicketDiv
+{
+    display:block;
+    min-height: 16px;
+    margin-top: 3px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail div.arrow_btn
+{
+    float: left;
+    clear: left;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 0px 2px 0px;
+    position: relative;
+    vertical-align: top;
+    height: 14px;
+    width: 14px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail div.arrow_btn input
+{
+    height: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail input.detailLinkButton
+{
+    height: 14px;
+    margin-left: 1px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail span.frequencyduration
+{
+    display: block;
+}
+div.legsDetail div.leg div.row div.row2 div.vehicleFeatures
+{
+    margin: 5px 0px;
+    display: block;
+}
+div.legsDetail div.leg div.row div.row2 div.vehicleFeatures div
+{
+    display: inline-block;
+}
+div.legsDetail div.leg div.row div.row2 div.jsLegLinks
+{
+    margin-top: 5px;
+}
+div.detailNotes
+{
+    margin-top: 5px;
+}
+div.detailNote
+{
+    margin-bottom: 3px;
+}
+a.travelNotesLink, 
+a.bookTicketInfo, 
+a.bookTicketLink
+{
+    cursor: pointer;
+}
+a.travelNotesLink span.linkText, 
+a.bookTicketInfo span.linkText, 
+a.bookTicketLink span.linkText
+{
+    vertical-align: middle;
+}
+a.travelNotesLink img.linkType, 
+a.bookTicketInfo img.linkType, 
+a.bookTicketLink img.linkType
+{
+    vertical-align: middle;
+}
+a.bookTicketInfo span.linkText
+{
+    width: auto;
+    height: auto;
+}
+div.legsDetail div.leg div.row div.row1 div.accessibleLinkDiv
+{
+    margin: 1px 0px 0px 1px;
+    display: block;
+}
+div.divAccessibleInstruction
+{
+    margin-top: 7px;
+}
+div.divAccessibleInstruction span
+{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.columnDetail a:link, .columnDetail a:visited
+{
+    font-weight: bold;
+    text-decoration:none;
+}
+.columnDetail a:hover
+{
+    text-decoration:underline;
+}
+
+/* Journey leg rows - row 2a (calling points) */
+div.legsDetail div.leg div.row div.row2a div.columnTime
+{
+    width: 15%;
+    vertical-align: middle;
+    text-align: right;
+}
+div.legsDetail div.leg div.row div.row2a div.columnEmpty
+{
+    width: 0px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row2a div.columnNode
+{
+    width: 20px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row2a div.columnLocation
+{
+    font-size: 1.0em;
+    width: 54%;
+    vertical-align: middle;
+}
+
+/* Journey leg rows - row 2a - content*/
+div.legsDetail div.leg div.row div.callingPointsDiv
+{
+    width: 100%;
+}
+div.legsDetail div.leg div.row div.row2a div.columnTime div.timeDepart
+{
+    font-size: 1.1em;
+    font-weight: normal;
+}
+div.legsDetail div.leg div.row div.row2a div.columnNode
+{
+    background: url("../Images/presentation/Journey_Line_Solid.png") repeat-y center center transparent;
+}
+div.legsDetail div.leg div.row div.row2a div.columnLocation span
+{
+    padding: 0px 0px 0px 2px;
+}
+
+/* Journey leg rows - row 3 */
+div.legsDetail div.leg div.row div.row3 div.columnTimeLabel
+{
+    width: 8%;
+    vertical-align: middle;
+    text-align: right;
+}
+div.legsDetail div.leg div.row div.row3 div.columnTime
+{
+    width: 7%;
+    vertical-align: middle;
+    text-align: center;
+}
+div.legsDetail div.leg div.row div.row3 div.columnLine
+{
+    width: 20px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row3 div.columnEmpty
+{
+    width: 0px;
+    vertical-align: middle;
+}
+
+/* Journey leg rows - row 3 - content*/
+div.legsDetail div.leg div.row div.timeArrive
+{
+    min-height: 15px;
+}
+div.legsDetail div.leg div.row div.row3 div.columnLine div.lineImage img
+{
+    vertical-align: middle;
+}
+
+
+/* IMPORTANT - Sorting out the space issues in ie6 and ie7 */
+* html div.legsDetail div.leg div.row div.row1 div.columnNode div.nodeImage img{ vertical-align: bottom; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row1 div.columnNode div.nodeImage img{  vertical-align: bottom; } /* for IE 7 */
+* html div.legsDetail div.leg div.row div.row2 div.columnLine div.lineImage img{ vertical-align: bottom; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row2 div.columnLine div.lineImage img{  vertical-align: bottom; } /* for IE 7 */
+* html div.legsDetail div.leg div.row div.row3 div.columnLine div.lineImage img{ vertical-align: bottom; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row3 div.columnLine div.lineImage img{  vertical-align: bottom; } /* for IE 7 */
+
+/* Journey leg rows - row map buttons */
+div.rowMap
+{
+    border: 0px solid red;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;   
+}
+div.rowEndMap
+{
+    margin: 0px;
+}
+div.rowMap .buttonMap
+{
+    height: auto;   
+    margin: 0px 5px 0px 0px;
+    padding: 6px;
+}
+.buttonMap 
+{
+    background-color: #E6007E;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: normal;
+    height: 27px;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    padding: 8px 5px 0 5px;
+    width: 80px;
+    text-align: center;
+    float: right;
+}
+.LogoContainer
+{
+    display:none;
+}
+
+/* Additional notes dialog */
+div#additionalInfoPage 
+{
+    background: rgba(0, 0, 0, 0.5); 
+    position:absolute; 
+    left: 0px; 
+    top: 0px; 
+    height:100%; 
+    overflow: auto; 
+    width: 100%; 
+    z-index: 800; 
+}
+div#additionaInfoDialog  
+{
+    background: #FFFFFF;
+    border: 1px solid #6464AC;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 340px;
+    margin-top: -165px;
+    margin-left: -115px;
+    overflow: auto;
+    padding: 0px 5px;
+    z-index: 800;
+    width: 230px;
+}
+div#additionaInfoDialog .headerBack 
+{
+    background:#6464AC !important;
+    height: auto;
+    min-height: 36px;
+    width: 100%;
+}
+div#additionaInfoDialog .headerBack h2 
+{
+    color: #FFFFFF;
+    font-size:0.9em;
+    margin:10px 5px;
+    text-align:left;
+    padding-left: 5px;
+    text-indent:0px;
+}
+div.headerBack a.additionalNotesClose  
+{
+    background: url("../Images/Icons/closeIcon.png") no-repeat center center #6464AC;
+    border:1px solid #6464AC;
+    cursor: pointer;
+    height: 18px;
+    position: absolute;
+    padding: 7px;
+    right: 5px;
+    top: 0px;
+    width: 22px;
+}
+div.headerBack a.additionalNotesClose:hover
+{
+    border:1px solid #ffffff;
+    border-radius:3px;
+}
+div#additionalInfoNotes 
+{
+    margin-top: 40px;
+    padding:6px 3px;
+    font-size:0.8em;
+}
+
+/* Journey directions */
+div.cycleLeg {font-size:0.9em;}
+div.cycleLeg div.summary{background-color: #E6E6E6;display: block;padding: 5px 5px 5px;text-align: center;}
+div.cycleLeg div.detail{padding: 2px;}
+div.cycleLeg div.detail table{width:100%;}
+div.cycleLeg div.detail table td{padding: 3px 2px;}
+div.cycleLeg div.detail table td.distance{text-align: center;}
+div.cycleLeg div.detail table td.infoimage{text-align: center;}
+div.cycleLeg div.detail table td.arrive{text-align: center;}
+
+/* Journey venue map */
+div[id*=venueMapPage]{ display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500; }
+div.venueMapTitleDiv{display:none;font-size:0.9em;padding-left:5px;}
+div.venueMapDiv #wrapper{top:45px;}
+
+/* Map */
+.mapContainer{padding:5px 5px 0px 5px;height:450px;}
+.mapContainer div.myLocationMap
+{
+    display:block;
+    margin:10px;
+    overflow:hidden;
+    position:absolute;
+    z-index:500;
+}
+.mapContainer div.myLocationMap input
+{
+    background: url("../Images/Icons/location.png") no-repeat scroll center center transparent !important;
+    border:0px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    cursor:pointer;
+    font-size:0.9em;
+    height:30px;
+    width:30px;    
+}
+.mapContainer .useLocationDiv
+{
+    display:none;
+    margin:10px 0px 0px 50px;
+    height:30px;
+    overflow:hidden;
+    position:absolute;
+    z-index:500;
+}
+.mapContainer .useLocationDiv a.useLocation
+{
+    background:#6464AC;
+    color:#ffffff;
+    display:block;
+    font-weight:bold;
+    padding:6px 20px 5px 20px;
+}
+.mapContainer .viewJourneyDiv 
+{
+    display:block;
+    margin:10px;
+    overflow:hidden;
+    position:absolute;
+    right:5px;
+    z-index:500;
+}
+.mapContainer .viewJourneyDiv input
+{
+    background: #6464AC;
+    border:0px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    color:#ffffff;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:0.9em;
+    height:30px;
+    margin:0px;
+    padding:0px;
+    width:110px;
+    -webkit-appearance: none;
+}
+.map{position:relative; width:auto; height:450px;}
+.mapPushPin img{cursor:pointer;}
+.mapPushPin div{color:#1b1b1b !important;text-align:left;}  
+.labelPushPin div{color:#1b1b1b !important;text-align:left;}  
+.labelPushPin img{display:none;}
+
+.mapLoading{z-index:500;position:absolute;margin:110px 10px 0px 10px;width:95%;height:120px;text-align:center;font-weight:bold;background-color:#ffffff;opacity:0.8;}
+.copyrightfront{color:black; left:7px; top:524px; position:absolute; font-size:0.7em;}
+.copyrightback{color:white; left:8px; top:525px; position:absolute; font-size:0.7em;}
+.infobox{background-color:black; color:white !important; width:150px;}
+.infobox_pointer{}
+.infobox_close{
+    background: url("../Images/Icons/ui-icons_ffffff_256x240.png") no-repeat -95px -127px transparent;
+    cursor: pointer;
+    display:block;
+    height: 19px;
+    position: absolute;
+    right: 5px;
+    text-indent: -8000px;
+    top: 5px;
+    width: 19px;
+}
+.infobox_content{padding-left:10px; padding-right:20px; padding-top:10px; padding-bottom:10px; font-size:0.8em;}
+.infobox_content a{text-decoration:underline !important; color:white !important;}
+.infoboxLocationImg{display:inline-block;width:30px;vertical-align:bottom;}
+.infoboxLocationImg img{width:30px;height:30px;}
+.infoboxLocationLink{display:inline-block;padding:0px 3px;width:80px;}
+
+/* Travel news */
+div.mobiletravelnews{min-height:200px;}
+
+.travelNewsUnavailable{text-align:center;margin:15px 0px;}
+.travelNewsLastUpdated{text-align:center;margin:2px 0px;padding: 8px 0px;color:#ffffff;background-color:#007da8;}
+.travelNewsLastUpdated span{font-weight: bold;font-size:0.8em;}
+
+/* Travel news filter */
+div.tnFilter{}
+div.tnFilter .collapseMagenta{border: 1px solid #cccccc;border-bottom:0xp;margin:0px;padding:0px;overflow:hidden;}
+div.tnFilter .collapseMagenta h2
+{
+    font-size:0.9em;
+    cursor:pointer;
+    background:url("../Images/Arrows/pink-arrow-down.png") no-repeat scroll 4px center #ffffff;
+    border-bottom: 1px solid #cccccc;
+    margin:0px 0px 0px 0px;
+    min-height:25px;
+    padding: 10px 3px 3px 20px;
+}
+div.tnFilter .collapseMagenta legend{text-indent:-1000px;}
+div.tnFilter .collapseMagenta input, 
+div.tnFilter .collapseMagenta label{cursor:pointer;font-size:0.9em;}
+div.tnFilter .collapseMagenta fieldset{border:0px;margin:0px 0px 0px 0px;padding:0px;}
+div.tnFilter .collapseMagenta fieldset .ui-controlgroup-controls{border: 0px solid #ffffff;border-top:0px;}
+div.tnFilter .collapseMagenta fieldset input{margin:0px 0px 0px -20px;float:left;width:0px;height:0px;vertical-align:middle;}
+div.tnFilter .collapseMagenta fieldset label{display:inline-block;border-bottom:1px solid #cccccc;padding:10px 19px;width:98%;vertical-align:middle;}
+div.tnFilter .collapseMagenta fieldset label:hover{background-color:#eeeeee;}
+div.tnFilter span.tnFilterVenue{display:block;text-align:center;margin:2px 0px;line-height:32px;color:#ffffff;background-color:#e6007e;font-weight: bold;font-size:0.8em;}
+
+/* Travel news filter - non JS */
+div.tnFilter .jsshow h2{display:none;}
+div.tnFilter .jsshow fieldset .tnFilterOptions{display:inline-block;float:left;}
+div.tnFilter .jsshow fieldset .tnFilterOptions br{display:inline-block;margin:10px;}
+div.tnFilter .jsshow fieldset input{margin:0px 0px 0px 10px;float:none;}
+div.tnFilter .jsshow fieldset label{border-bottom:0px;padding:5px 5px;width:auto;}
+div.tnFilter .jsshow fieldset label:hover{background-color:#ffffff;}
+div.tnFilter .jsshow input.tnFilterBtnNonJS
+{
+    background: url("../Images/Arrows/white-arrow-right.png") no-repeat 58px center #E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    display:block;
+    font-weight:bold;
+    height:32px;   
+    margin:5px 0px 0px 0px;
+    padding:3px 2px;
+    width:70px;
+}
+div.tnFilter .jsshow input.tnFilterBtnNonJS:hover{text-decoration:underline;}
+
+/* Travel news auto refresh */
+div.refreshLinkDiv{text-align:right;font-size:0.9em;font-weight:bold;margin:5px;}
+
+/* Travel news control*/
+div.travelNews div.news ul{margin:0px;padding:0px;}
+div.travelNews div.news ul li{border-bottom:1px solid #e0e0e0;}
+div.travelNews div.news ul li a{color:#1b1b1b;font-size:0.9em;display:inline-block;overflow:hidden;width:100%;}
+div.travelNews div.news ul li a:hover{background-color:#007da8;color:#ffffff;}
+div.travelNews div.news ul li a div.ui-grid-a{display:inline-block;min-height:45px;padding:5px 0px;width:100%;}
+div.travelNews div.news ul li a div.ui-grid-a div{display:inline-block;}
+
+div.travelNews div.news .newsTransportMode{width:62px;min-height:45px;padding:0px 0px 0px 3px;text-align:center;}
+div.travelNews div.news .newsTransportMode img.eurotunnel1{background-color:#ffffff;}
+div.travelNews div.news .ui-block-b{width:85%;}
+div.travelNews div.news .ui-block-b .newsHeadline{width:70%;white-space:normal;}
+div.travelNews div.news .ui-block-b .newsUpdated{width:15%;}
+
+/* Travel news page */
+.newsDetail {display:none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+.newsDetail div.newsDetailContent{margin-top:0px;}
+.newsDetail h3{background-color: #E7E7E7;color: #007DA8;font-size:1em;padding:7px 10px;}
+.newsDetail .newsDetails{margin:0px 5px 0px 10px;font-size:0.9em;}
+.newsDetail .newsDetails div{border:0px solid red;}
+.newsDetail .newsDetails .newsDetailLabel{font-weight:bold;}
+.newsDetail .newsDetails .dates{margin:15px 0px;}
+.newsDetail .newsDetails .startDate, .newsDetail .newsDetails .statusDate{display:inline-block;margin-right:8px;}
+.newsDetail .newsDetails .operator{margin:5px 0px;}
+.newsDetail .newsDetails .severity{margin:5px 0px;}
+.newsDetail .newsDetails .incidentType{margin:5px 0px;}
+.newsDetail .newsDetails .venueAffected{margin:5px 0px;}
+.newsDetail .newsDetails .detail{margin:20px 0px;}
+.newsDetail .newsDetails .advice{margin:20px 0px;}
+
+.mobiletravelnewsdetail .newsDetail {position: relative;display:block;}
+.mobiletravelnewsdetail .newsDetail .headerBack {display:none;}
+
+.providedBy{font-weight:normal;font-size:0.9em;text-align: center;margin:15px 0px 15px 0px;}
+.providedBy a {font-weight:bold;text-decoration: underline;}
+
+/* Travel news control - non JS */
+.travelNews .jsshow input.showDetailsBtnNonJS
+{
+    background: url("../Images/Arrows/white-arrow-right.png") no-repeat 58px center #E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-weight:bold;
+    margin:27px 3px 1px 3px;
+    padding:4px 2px;
+    width:70px;
+    position:absolute;
+    right:2px;
+}
+div.travelNews .jsshow ul li input.showDetailsBtnNonJS:hover{text-decoration:underline;}
+div.travelNews .jsshow ul li a div.ui-grid-a div.ui-block-b{display:inline-block;max-width:80%;width:auto;}
+
+/* Underground status control */
+.undergroundStatusUnavailable{text-align:center;margin:15px 0px;}
+.undergroundStatusLastUpdated{text-align:center;margin:2px 0px;padding: 8px 0px;color:#ffffff!important;background-color:#007da8;}
+.undergroundStatusLastUpdated span{font-weight: bold;font-size:0.8em;}
+
+div.undergroundStatus{clear:both;}
+div.undergroundStatus div.undergroundNews ul{margin:0px;padding:0px;} 
+div.undergroundStatus div.undergroundNews ul li{margin:0px;padding:0px;}
+div.undergroundStatus div.undergroundNews ul li br{display:none;}
+div.undergroundStatus div.undergroundNews ul li a{margin:0px 0px 1px 0px;padding:0px;color: #1b1b1b;display:block;}
+div.undergroundStatus div.undergroundNews ul li a.nodetail{cursor: default;}
+div.undergroundStatus div.undergroundNews .statusRow{display:inline-block;width:100%;border-bottom:1px solid #e0e0e0;}
+div.undergroundStatus div.undergroundNews .statusColour{width:30%;padding:8px 0px;margin-right:5px;text-align:center;font-weight:bold;font-size:0.9em;display:block;float:left;}
+div.undergroundStatus div.undergroundNews .statusInfo{width:60%;padding:8px 0px;display:block;float:left;font-weight:normal;font-size:0.9em;}
+div.undergroundStatus div.undergroundNews .statusInfo .highlight{font-weight:bold;}
+div.undergroundStatus div.undergroundNews .statusInfo .highlight:hover{text-decoration:underline;}
+
+/* Underground page */
+.undergroundDetail {display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+.undergroundDetail div.undergroundDetailContent{margin-top:0px;}
+.undergroundDetail h3{background-color: #E7E7E7;color: #007DA8;font-size:1.1em;margin:2px 0px 0px 0px;padding:7px 15px;}
+.undergroundDetail .undergroundDetails{margin:0px 5px 0px 15px;font-size:0.9em;}
+.undergroundDetail .undergroundDetails div{border:0px solid red;}
+.undergroundDetail .undergroundDetails .description{font-size:1.1em;font-weight:bold;margin:5px 0px;}
+.undergroundDetail .undergroundDetails .detail{margin:5px 0px;}
+
+.mobiletravelnewsdetail .undergroundDetail {position: relative;display:block;}
+.mobiletravelnewsdetail .undergroundDetail .headerBack {display:none;}
+
+/* Underground status control - non JS */
+div.undergroundStatus .jsshow ul a{cursor:default;text-decoration:none;}
+div.undergroundStatus .jsshow ul a:hover{text-decoration:none;}
+div.undergroundStatus .jsshow ul a:hover .statusInfo .highlight:hover{text-decoration:none;}
+div.undergroundStatus .jsshow input.showDetailsBtnNonJS
+{
+    background: url("../Images/Arrows/white-arrow-right.png") no-repeat 58px center #E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-weight:bold;
+    margin:3px 3px 1px 3px;
+    padding:4px 2px;
+    width:70px;
+    position:absolute;
+    right:2px;
+}
+div.undergroundStatus .jsshow input.showDetailsBtnNonJS:hover{text-decoration:underline;}
+
+/* Underground color code */
+.bakerloo, .undergroundDetail h3.bakerloo{ background-color: #AE6118 ; color: #ffffff; }
+.central, .undergroundDetail h3.central{ background-color: #E41F1F ; color: #ffffff; }
+.circle, .undergroundDetail h3.circle{ background-color: #F8D42D ; color: #000000; }
+.district, .undergroundDetail h3.district{ background-color: #00A575 ; color: #ffffff; }
+.hammersmithandcity, .undergroundDetail h3.hammersmithandcity{background-color:#E899A8; color:#113B92;}
+.jubilee, .undergroundDetail h3.jubilee{ background-color: #8F989E ; color: #ffffff; }
+.metropolitan, .undergroundDetail h3.metropolitan{ background-color: #893267 ; color: #ffffff; }
+.northern, .undergroundDetail h3.northern{ background-color: #000000 ; color: #ffffff; }
+.piccadilly, .undergroundDetail h3.piccadilly{ background-color: #0450A1 ; color: #ffffff; }
+.victoria, .undergroundDetail h3.victoria{ background-color: #009FE0 ; color: #ffffff; }
+.waterlooandcity, .undergroundDetail h3.waterlooandcity{ background-color: #70C3CE ; color: #113B92; }
+.overground, .undergroundDetail h3.overground{ background-color: #FF6600 ; color: #ffffff; }
+.dlr, .undergroundDetail h3.dlr{ background-color: #00BBB4 ; color: #ffffff; }
+
+/* Stop Info */
+div.stopInfo{display:block; padding:10px 0px 0px 0px;}
+div.stopInfo div.locationTitleDiv{background-color:#DBE9F0;border: 1px solid #BED7E4;display: block;margin:0px 0px 10px 0px;padding:10px 0px; text-align:center;}
+div.stopInfo div.locationTitleDiv span{font-size:1.2em;font-weight:bold;}
+
+/* Station board control */
+div.stationBoardUnavailable{padding:0px 0px 10px 0px;text-align:center;}
+
+div.stationBoard{padding:0px 0px 10px 0px;}
+div.stationBoard div.stationBoardResult div.stationBoardLastUpdated{display:block;background-color:#3D7291;margin:0px;padding:5px 0px 5px 0px;text-align:center;}
+div.stationBoard div.stationBoardResult div.stationBoardLastUpdated span{color:#FFFFFF;display:inline-block;font-weight:normal;font-size:0.8em;margin:0px 15px 0px 0px;padding:5px 0px 5px 0px;}
+div.stationBoard div.stationBoardResult div.stationBoardLastUpdated a.stationBoardUpdate{color:#FFFFFF;display:inline-block;font-weight:normal;font-size:0.8em;padding:5px 20px 5px 0px;background: url("../Images/Arrows/white-arrow-right.png") no-repeat scroll right center #3D7291;}
+
+div.stationBoard div.stationBoardResult ul{display:block;clear:both;margin:0px;padding:0px;}
+div.stationBoard div.stationBoardResult ul li{border-bottom:1px solid #e0e0e0; display:block;clear:both;margin:0px;padding:0px;}
+div.stationBoard div.stationBoardResult ul li a{color:#555555;font-size:0.9em;display:block;overflow:hidden;background: url("../Images/Arrows/purple-arrow-right-wide.png") no-repeat scroll right center;}
+div.stationBoard div.stationBoardResult ul li a:hover{color:#ffffff;text-decoration:none;background: url("../Images/Arrows/white-arrow-right-wide.png") no-repeat scroll right center #6464AC;}
+div.stationBoard div.stationBoardResult ul li div.stationBoardItem{display:block;min-height:40px;padding:5px 0px;}
+div.stationBoard div.stationBoardResult ul li div.stationBoardItem div{display:inline-block;vertical-align:top;}
+
+div.stationBoard div.stationBoardResult ul li div.stationBoardHead{background-color:#3D7291;min-height:0px;padding:0px 0px;}
+div.stationBoard div.stationBoardResult ul li div.stationBoardHead span{color: #FFFFFF;font-weight:bold;padding:5px 0px 5px 0px;}
+div.stationBoard div.stationBoardResult ul li div.stationBoardHead div{padding:5px 0px;vertical-align: middle;}
+
+div.stationBoard div.stationBoardResult div.serviceTime{width:22%;text-align:center;}
+div.stationBoard div.stationBoardResult div.serviceLocation{width:55%;}
+div.stationBoard div.stationBoardResult div.servicePlatform{width:10%;text-align:center;}
+
+div.stationBoard div.stationBoardResult div.serviceTime span{display:block;}
+div.stationBoard div.stationBoardResult div.serviceTime span.timeScheduled{font-size:1.1em;font-weight:bold;padding:0px 0px 3px 0px;}
+div.stationBoard div.stationBoardResult div.serviceTime span.timeActual{font-size:0.9em;}
+div.stationBoard div.stationBoardResult div.serviceTime span.timeActualLate{color:#DD0000;font-weight:bold;}
+
+div.stationBoard div.stationBoardResult ul li a:hover div.serviceTime span.timeActualLate{color:#ffffff;}
+
+div.stationBoard div.stationBoardResult div.serviceLocation span{display:block;}
+div.stationBoard div.stationBoardResult div.serviceLocation span.station{font-size:1.1em;font-weight:bold;padding:0px 0px 3px 0px;}
+div.stationBoard div.stationBoardResult div.serviceLocation span.report{font-size:0.9em;}
+div.stationBoard div.stationBoardResult div.serviceLocation span.reportLate{color:#DD0000;font-weight:bold;}
+
+div.stationBoard div.stationBoardResult ul li a:hover div.serviceLocation span.reportLate{color:#ffffff;}
+
+div.stationBoard div.stationBoardResult div.servicePlatform span{display:block;}
+div.stationBoard div.stationBoardResult div.servicePlatform span.platform{font-size:1.1em;padding-top: 10px;}
+
+/* Station board control - departure arrival selection*/
+div.stationBoard div.directionContainer
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+div.stationBoard div.directionContainer table.directionTable 
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+div.stationBoard div.directionContainer table.directionTable tr, 
+div.stationBoard div.directionContainer table.directionTable td 
+{
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+div.stationBoard div.directionContainer table.directionTable td 
+{
+    width:50%;
+}
+div.stationBoard div.directionContainer div.direction
+{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0 0 16px;
+    width: 100%;
+}
+div.stationBoard div.directionContainer div.directionSelected 
+{
+    background: url("../Images/Arrows/down_pointer.png") no-repeat center bottom transparent !important;
+}
+div.stationBoard div.directionContainer div.direction input
+{
+    background: #BED7E4;
+    border-style:none;
+    border-right: 2px solid #ffffff;
+    border-radius:0px;
+    box-shadow:none;
+    cursor:pointer;
+    font-weight:bold;
+    padding: 10px 0px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+div.stationBoard div.directionContainer div.direction input:hover
+{
+    background: #6464AC;
+    color: #FFFFFF;
+}
+div.stationBoard div.directionContainer div.directionSelected input,
+div.stationBoard div.directionContainer div.directionSelected input:hover
+{
+    background: #3D7291;
+    color: #FFFFFF;   
+}
+
+/* Service details control*/
+div.serviceUnavailable{padding:10px 0px 10px 0px;text-align:center;}
+div.serviceContainer
+{
+    padding:0px 0px 10px 0px;
+}
+div.serviceContainer div.serviceHeadingContainer .serviceTitleDiv,
+div.serviceContainer div.serviceHeadingContainer .serviceTitleDiv:hover
+{
+    background-color:#3D7291;
+}
+div.serviceContainer div.serviceHeadingContainer .serviceTitleDiv .headingService
+{
+    padding: 10px 0px 10px 0px;
+}
+div.serviceContainer div.callingPointsDiv div.row
+{
+    display: block;
+}
+div.serviceContainer div.callingPointsDiv div.row div
+{
+    display:inline-block;
+}
+* html div.serviceContainer div.callingPointsDiv div.row div { display:inline; }  /* for IE 6 */
+* + html div.serviceContainer div.callingPointsDiv div.row div{ display:inline; } /* for IE 7 */
+
+div.serviceContainer div.callingPointsDiv div.row div.columnTime
+{
+    margin-left: 5%;
+    width: 25%;
+    vertical-align: middle;
+    text-align: right;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNode
+{
+    width: 20px;
+    vertical-align: middle;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnLocation
+{
+    font-size: 1.0em;
+    vertical-align: middle;
+    width: 60%
+}
+div.serviceContainer div.callingPointsDiv
+{
+    width: 100%;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnTime div.timeDepart span{display:block;}
+div.serviceContainer div.callingPointsDiv div.row div.columnTime div.timeDepart span.timeScheduled{font-size:1.0em;font-weight:bold;padding-top:14px;}
+div.serviceContainer div.callingPointsDiv div.row div.columnTime div.timeDepart span.timeScheduledOnly{padding-top:0px;}
+div.serviceContainer div.callingPointsDiv div.row div.columnTime div.timeDepart span.timeActual{font-size:0.8em;padding-right:5px;}
+div.serviceContainer div.callingPointsDiv div.row div.columnTime div.timeDepart span.timeActualLate{color:#DD0000;font-weight:bold;}
+
+div.serviceContainer div.callingPointsDiv div.row div.columnNode
+{
+    background: url("../Images/presentation/Journey_Line_Solid.png") repeat-y center center transparent;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNodeArrived
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Arrived.png") repeat-y center center transparent;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNodeDeparted
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Departed.png") repeat-y center center transparent;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNodeStart
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Small.png") no-repeat bottom center transparent;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNodeStartDeparted
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Departed_Small.png") no-repeat bottom center transparent;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNodeEnd
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Small.png") no-repeat top center transparent;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNodeEndArrived
+{
+    background: url("../Images/presentation/Journey_Line_Solid_Departed_Small.png") no-repeat top center transparent;
+}
+
+div.serviceContainer div.callingPointsDiv div.row div.columnNode div.nodeImage
+{
+    position: relative;
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNode div.nodeImage img.pointImage
+{
+    position: absolute;
+    left: 0px;
+    top: 17px; /* Positions the image in the middle of the nodeImage */
+}
+div.serviceContainer div.callingPointsDiv div.row div.columnNode div.nodeImage img.pointImageDeparted
+{
+    position: absolute;
+    left: 0px;
+    top: -10px; /* Positions the image slightly above the nodeImage */
+}
+
+div.serviceContainer div.callingPointsDiv div.row div.columnLocation span{display:block;padding: 0px 0px 0px 2px;}
+div.serviceContainer div.callingPointsDiv div.row div.columnLocation span.station{font-size:1.0em;font-weight:bold;padding-top:14px;}
+div.serviceContainer div.callingPointsDiv div.row div.columnLocation span.stationOnly{padding-top:0px;}
+div.serviceContainer div.callingPointsDiv div.row div.columnLocation span.report{font-size:0.8em;}
+div.serviceContainer div.callingPointsDiv div.row div.columnLocation span.reportLate{color:#DD0000;}
+
+div.serviceContainer div.serviceMessageDiv{background-color:#DBE9F0;border: 1px solid #BED7E4;color:#DD0000;display:block;font-size:0.8em;font-weight:bold;margin:10px 0px 0px 0px;padding:10px 0px 10px 0px;text-align:center;}
+
+div.serviceContainer div.serviceOperatedDiv{display:block;font-size:0.8em;margin:0px;padding:0px 0px 10px 0px;text-align:center;}
+
+div.serviceContainer div.serviceLastUpdated{display:block;background-color:#3D7291;margin:0px;padding:5px 0px 5px 0px;text-align:center;}
+div.serviceContainer div.serviceLastUpdated span{color:#FFFFFF;display:inline-block;font-weight:normal;font-size:0.8em;margin:0px 15px 0px 0px;padding:5px 0px 5px 0px;}
+div.serviceContainer div.serviceLastUpdated a.serviceUpdate{color:#FFFFFF;display:inline-block;font-weight:normal;font-size:0.8em;padding:5px 20px 5px 0px;background: url("../Images/Arrows/white-arrow-right.png") no-repeat scroll right center #3D7291;}
+
+/* Mobile theme styles - Must be at bottom to ensure this theme is applied */
+body{color:#555555;}
+h1{color:#ffffff;}
+h1.screenReaderOnly{color:#1b1b1b;}
+.headingContent h1{color:#555555;}
+.subContent a{color:#6767AF;}
+.header{background:#31009C;}
+.menuWrap a{color:#ffffff;}
+.footer{background-color:#0B4DBF;color:#ffffff;}
+.footer a{color:#ffffff;}
+.footer input{color:#ffffff;}
+.error{color: #DD0000;}
+.buttonBlue,.buttonMag{color:#ffffff;}
+.locationInput{color: #555555;}
+.dateEntry{color: #555555;}
+.timeInput{color: #555555;}
+.btnAdvancedOptions{color: #555555;}
+.disabled{color:#6F6868;}
+.accessibilityOptions{color: #555555;}
+.journeyHeadingContainer{color: #ffffff;}
+.columnLocation a{color:#6767AF;}
+.columnDetail a{color:#6767AF;}
+.bookTicketDiv span a{color:#007bcc;}
+.refreshLinkDiv a{color:#6767AF;}
+.providedBy a {color:#6767AF !important;}
+.processMessage {color: #31009C;}
+.processMessage a{color:#6767AF;font-weight:bold;}
+.undergroundStatus .statusInfo .highlight{color:#6767AF;}
+.watermark {color:#6464AC; }
+.watermarkNonJS {color:#555555; }
+
+/* Debug */
+.debug{color: #00BA9C;font-size: 0.8em;}

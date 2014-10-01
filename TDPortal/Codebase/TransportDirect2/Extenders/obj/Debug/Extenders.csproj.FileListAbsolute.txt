@@ -1,0 +1,7 @@
+D:\TDPortal\Codebase\TransportDirect2\Extenders\bin\Debug\tdp.common.extenders.dll
+D:\TDPortal\Codebase\TransportDirect2\Extenders\bin\Debug\tdp.common.extenders.pdb
+D:\TDPortal\Codebase\TransportDirect2\Extenders\bin\Debug\tdp.common.extenders.dll.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\Extenders\bin\Debug\tdp.common.extenders.dll.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\Extenders\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\Extenders\obj\Debug\tdp.common.extenders.dll
+D:\TDPortal\Codebase\TransportDirect2\Extenders\obj\Debug\tdp.common.extenders.pdb

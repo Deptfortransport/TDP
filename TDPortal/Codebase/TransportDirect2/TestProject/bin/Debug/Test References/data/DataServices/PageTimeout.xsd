@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PageTimeout" type="complexType2"></xs:element>
+	<xs:complexType name="complexType1">
+		<xs:sequence />
+		<xs:attribute name="ControlId" type="xs:string" use="required"/>
+		<xs:attribute name="PageId" type="xs:string" use="required"/>
+		<xs:attribute name="ShowTimeout" type="xs:boolean" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="complexType2">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="page" type="complexType1"></xs:element>
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

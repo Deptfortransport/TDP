@@ -1,0 +1,9 @@
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\bin\Debug\tdp.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\bin\Debug\tdp.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\bin\Debug\tdp.common.servicediscovery.dll.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\bin\Debug\tdp.common.servicediscovery.dll.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\bin\Debug\tdp.common.dll
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\bin\Debug\tdp.common.pdb
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\obj\Debug\tdp.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect2\ServiceDiscovery\obj\Debug\tdp.common.servicediscovery.pdb

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageTimeout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PageTimeout.xsd">
+
+  <page PageId="MobileDefault" ControlId="publicTransportLogoBtn" ShowTimeout="false" />
+  <page PageId="MobileDefault" ControlId="publicTransportModeBtn" ShowTimeout="false" />
+
+  <page PageId="MobileDefault" ControlId="CONTROLDOESNOTEXIST" ShowTimeout="true" />
+
+  <page PageId="DOESNOTEXIST" ControlId="publicTransportModeBtn" ShowTimeout="false" />
+
+</PageTimeout>

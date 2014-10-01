@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.transportdirect.info/DepartureBoardWebService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.transportdirect.info/DepartureBoardWebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/DepartureBoardWebService">
+      <s:element name="GetStationBoard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:DBWSRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DBWSRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="tns:DBWSLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationFilter" type="tns:DBWSLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="LocationFilterType" type="tns:DBWSFilterType" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShowDepartures" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShowArrivals" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumberOfRows" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Duration" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeOffset" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RequestedTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DBWSLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LocationName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationNameVia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationCRS" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DBWSLocationCallingPoint">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DBWSLocation">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TimeScheduled" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeEstimated" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeActual" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AdhocAlerts" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DBWSFilterType">
+        <s:restriction base="s:string">
+          <s:enumeration value="ServicesTo" />
+          <s:enumeration value="ServicesFrom" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetStationBoardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStationBoardResult" type="tns:DBWSResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DBWSResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Messages" type="tns:ArrayOfDBWSMessage" />
+          <s:element minOccurs="1" maxOccurs="1" name="GeneratedAt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="tns:DBWSLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="StationBoardMessages" type="tns:ArrayOfDBWSMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="StationBoardServices" type="tns:ArrayOfDBWSService" />
+          <s:element minOccurs="1" maxOccurs="1" name="PlatformAvailable" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceDetail" type="tns:DBWSServiceDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDBWSMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DBWSMessage" nillable="true" type="tns:DBWSMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DBWSMessage">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDBWSService">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DBWSService" nillable="true" type="tns:DBWSService" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DBWSService">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceOperator" type="tns:DBWSOperator" />
+          <s:element minOccurs="0" maxOccurs="1" name="OriginLocations" type="tns:ArrayOfDBWSLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="DestinationLocations" type="tns:ArrayOfDBWSLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeOfArrivalScheduled" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeOfArrivalEstimated" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeOfDepartureScheduled" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeOfDepartureEstimated" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Platform" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCircularRoute" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DBWSOperator">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDBWSLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DBWSLocation" nillable="true" type="tns:DBWSLocation" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DBWSServiceDetail">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DBWSService">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="IsCancelled" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="DisruptionReason" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OverdueMessage" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AdhocAlerts" type="tns:ArrayOfString" />
+              <s:element minOccurs="0" maxOccurs="1" name="PreviousCallingPointLocations" type="tns:ArrayOfArrayOfDBWSLocationCallingPoint" />
+              <s:element minOccurs="0" maxOccurs="1" name="SubsequentCallingPointLocations" type="tns:ArrayOfArrayOfDBWSLocationCallingPoint" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeOfArrivalActual" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeOfDepartureActual" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfArrayOfDBWSLocationCallingPoint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfDBWSLocationCallingPoint" nillable="true" type="tns:ArrayOfDBWSLocationCallingPoint" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDBWSLocationCallingPoint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DBWSLocationCallingPoint" nillable="true" type="tns:DBWSLocationCallingPoint" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetStationBoardSocketXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:DBWSRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStationBoardSocketXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStationBoardSocketXmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:DBWSRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceDetailResult" type="tns:DBWSResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceDetailSocketXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:DBWSRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceDetailSocketXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceDetailSocketXmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestActive">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestActiveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestActiveResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestGetStationBoard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="locationCRS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterLocationCRS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numberOfRows" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeOffsetMins" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeWindowMins" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestGetStationBoardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestGetStationBoardResult" type="tns:DBWSResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestGetStationBoardSocketXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="locationCRS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterLocationCRS" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestGetStationBoardSocketXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestGetStationBoardSocketXmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetStationBoardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStationBoard" />
+  </wsdl:message>
+  <wsdl:message name="GetStationBoardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStationBoardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStationBoardSocketXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStationBoardSocketXml" />
+  </wsdl:message>
+  <wsdl:message name="GetStationBoardSocketXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStationBoardSocketXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceDetailSocketXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceDetailSocketXml" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceDetailSocketXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceDetailSocketXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestActiveSoapIn">
+    <wsdl:part name="parameters" element="tns:TestActive" />
+  </wsdl:message>
+  <wsdl:message name="TestActiveSoapOut">
+    <wsdl:part name="parameters" element="tns:TestActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestGetStationBoardSoapIn">
+    <wsdl:part name="parameters" element="tns:TestGetStationBoard" />
+  </wsdl:message>
+  <wsdl:message name="TestGetStationBoardSoapOut">
+    <wsdl:part name="parameters" element="tns:TestGetStationBoardResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestGetStationBoardSocketXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:TestGetStationBoardSocketXml" />
+  </wsdl:message>
+  <wsdl:message name="TestGetStationBoardSocketXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:TestGetStationBoardSocketXmlResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DepartureBoardsSoap">
+    <wsdl:operation name="GetStationBoard">
+      <wsdl:input message="tns:GetStationBoardSoapIn" />
+      <wsdl:output message="tns:GetStationBoardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStationBoardSocketXml">
+      <wsdl:input message="tns:GetStationBoardSocketXmlSoapIn" />
+      <wsdl:output message="tns:GetStationBoardSocketXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceDetail">
+      <wsdl:input message="tns:GetServiceDetailSoapIn" />
+      <wsdl:output message="tns:GetServiceDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceDetailSocketXml">
+      <wsdl:input message="tns:GetServiceDetailSocketXmlSoapIn" />
+      <wsdl:output message="tns:GetServiceDetailSocketXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestActive">
+      <wsdl:input message="tns:TestActiveSoapIn" />
+      <wsdl:output message="tns:TestActiveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestGetStationBoard">
+      <wsdl:input message="tns:TestGetStationBoardSoapIn" />
+      <wsdl:output message="tns:TestGetStationBoardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestGetStationBoardSocketXml">
+      <wsdl:input message="tns:TestGetStationBoardSocketXmlSoapIn" />
+      <wsdl:output message="tns:TestGetStationBoardSocketXmlSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DepartureBoardsSoap" type="tns:DepartureBoardsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStationBoard">
+      <soap:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetStationBoard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationBoardSocketXml">
+      <soap:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetStationBoardSocketXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceDetail">
+      <soap:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetServiceDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceDetailSocketXml">
+      <soap:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetServiceDetailSocketXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestActive">
+      <soap:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/TestActive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestGetStationBoard">
+      <soap:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/TestGetStationBoard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestGetStationBoardSocketXml">
+      <soap:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/TestGetStationBoardSocketXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DepartureBoardsSoap12" type="tns:DepartureBoardsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStationBoard">
+      <soap12:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetStationBoard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationBoardSocketXml">
+      <soap12:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetStationBoardSocketXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceDetail">
+      <soap12:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetServiceDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceDetailSocketXml">
+      <soap12:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/GetServiceDetailSocketXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestActive">
+      <soap12:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/TestActive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestGetStationBoard">
+      <soap12:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/TestGetStationBoard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestGetStationBoardSocketXml">
+      <soap12:operation soapAction="http://www.transportdirect.info/DepartureBoardWebService/TestGetStationBoardSocketXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DepartureBoards">
+    <wsdl:port name="DepartureBoardsSoap" binding="tns:DepartureBoardsSoap">
+      <soap:address location="http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DepartureBoardsSoap12" binding="tns:DepartureBoardsSoap12">
+      <soap12:address location="http://localhost/TDPWebServices/DepartureBoardWebService/DepartureBoards.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,9 @@
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\bin\Debug\HashValidator.exe
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\bin\Debug\HashValidator.pdb
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\bin\Debug\HashValidator.exe.CodeAnalysisLog.xml
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\bin\Debug\HashValidator.exe.lastcodeanalysissucceeded
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\bin\Debug\ChecksumHelper.dll
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\bin\Debug\ChecksumHelper.pdb
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\obj\Debug\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\obj\Debug\HashValidator.exe
+D:\TDPortal\Codebase\TransportDirect2\CommandAndControl\HashValidator\obj\Debug\HashValidator.pdb

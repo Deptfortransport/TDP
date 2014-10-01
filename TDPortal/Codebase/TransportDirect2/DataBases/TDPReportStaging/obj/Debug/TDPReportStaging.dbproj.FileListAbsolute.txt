@@ -1,0 +1,9 @@
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPReportStaging_Script.PreDeployment.sql
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPReportStaging_Script.PostDeployment.sql
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPReportStaging_Database.sqlsettings
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPReportStaging_Database.sqldeployment
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPReportStaging_Database.sqlcmdvars
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPReportStaging.deploymanifest
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPReportStaging.dbschema
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\sql\debug\TDPServerDatabase.dbschema
+D:\TDPortal\Codebase\TransportDirect2\DataBases\TDPReportStaging\obj\Debug\TDPReportStaging.dbschema

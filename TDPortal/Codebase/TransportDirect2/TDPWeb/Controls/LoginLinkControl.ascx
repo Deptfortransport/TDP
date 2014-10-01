@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LoginLinkControl.ascx.cs" Inherits="TDP.UserPortal.TDPWeb.Controls.LoginLinkControl" %>
+<asp:HyperLink ID="loginLink" runat="server" EnableViewState="false"></asp:HyperLink>

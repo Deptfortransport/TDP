@@ -1,0 +1,1 @@
+var ddData_1 = [["1066 Battle of Hastings:Abbey & Battlefield","PI00104","POI"]]; if(typeof registerLocationData == 'function'){ registerLocationData('Location_NoLocalities_1208280845', '1', ddData_1); }
