@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DataImporter>
+	<LogModule path="DataImporter.exe" name="ESRI.DataImporter.ScreenLog" />
+<LogModule path="DataImporter.exe" name="ESRI.DataImporter.ScreenLog">
+		<Settings Path = "c:\dataimporter3\logfiles\ImportAddp.log"/>
+	</LogModule>
+	<!-- LoadAddressPointModule -->
+	<PrepareDataModule path="modules/LoadAddressPoint.dll" name="LoadAddressPoint.AddressPointLoader">
+		<Settings>
+			<CSVSourceDirectory location="c:\data\addresspoint\">
+			</CSVSourceDirectory>
+			<Database 
+				integratedSecurity="False"
+				serverName="sqlbeast"
+				userName="gazadmin"
+				password="gazadmin"
+				databaseName="GAZ"
+				dataFile="GAZ_DATA"
+				indexFile="GAZ_INDEX"
+				addresspnttable="osaddp"
+			/>
+		</Settings>
+	</PrepareDataModule>
+	<PrepareDataModule path="Modules\DftAddressPointDataPrepare.dll" name="ESRIUK.DFT.DataPrepare.Addp.DftAddpDataPrepare">
+		<Settings>
+			<Database 
+				integratedSecurity="False"
+				serverName="sqlbeast"
+				userName="gazadmin"
+				password="gazadmin"
+				databaseName="GAZ"
+				dataFile="GAZ_DATA"
+				indexFile="GAZ_INDEX"
+				addresspnttable="osaddp"
+			/>
+		</Settings>
+	</PrepareDataModule>
+	<!-- END OF LoadAddressPointModule -->
+</DataImporter>

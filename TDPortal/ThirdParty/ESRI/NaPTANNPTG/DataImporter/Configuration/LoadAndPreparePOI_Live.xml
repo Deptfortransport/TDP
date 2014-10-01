@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DataImporter>
+	<LogModule path="DataImporter.exe" name="ESRI.DataImporter.ScreenLog">
+		<Settings Path = "logfiles\LastLoadPOI.log"/>
+	</LogModule>
+
+	<ImportDataModule path="Modules\ImportDataModule.dll" name="ImportDataModule.ImportData">
+		<Settings basePath="D:\Gateway\bin\Utils\NaPTANNPTG\DataImporter\">
+				<Database 
+					integratedsecurity="False"
+					servername="D03"
+					username="gazadmin"
+					password="Wh1t34lbum!"
+					databasename="GAZ"
+				/>
+
+			<!-- PointX data -->
+			<ImportFile path="D:\dataload\tempPointX\pointx.csv" destinationTable="px_places" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Unique_Reference_Number" destinationName="urn_id" />
+				<Column sourceName="TOID" destinationName="Toid" />
+				<Column sourceName="TOID_Version" destinationName="Toid_Version" />
+				<Column sourceName="Name" destinationName="Name" />
+				<Column sourceName="Address_detail" destinationName="Address_detail" />
+				<Column sourceName="Street_Name" destinationName="Street_name" />
+				<Column sourceName="Locality" destinationName="Locality" />
+				<Column sourceName="Postcode" destinationName="Postcode" />
+				<Column sourceName="PointX_Classification_Code" destinationName="classification_code" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Provenance" destinationName="Provenance" />
+				<Column sourceName="Date_of_Supply" destinationName="Date_of_supply" />
+				<Column sourceName="Positional_Accuracy_Code" destinationName="Positional_accuracy_code" />
+			</ImportFile>
+			
+			
+			
+		</Settings>
+	</ImportDataModule>
+
+
+	<PrepareDataModule path="Modules\PointXDataPrepareModule.dll" name="ESRIUK.DFT.DataPrepare.PointX.PointXDataPrepare">
+		<Settings>
+			<Database 					
+					integratedsecurity="False"
+					servername="D03"
+					username="gazadmin"
+					password="Wh1t34lbum!"
+					databasename="GAZ"
+				dataFile="GAZ_DATA"
+				indexFile="GAZ_INDEX"
+			/>
+			<!-- Classifications To Exclude -->
+			<PX_FILTER f="classification_code" v="01010006" a="include" t="Hotels"/>
+			<PX_FILTER f="classification_code" v="01020010" a="include" t="American Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020012" a="include" t="Banqueting And Function Rooms"/>
+			<PX_FILTER f="classification_code" v="01020013" a="include" t="Cafes, Snack Bars And Tea Rooms"/>
+			<PX_FILTER f="classification_code" v="01020014" a="include" t="Caribbean Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020015" a="include" t="Chinese And Oriental Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020017" a="include" t="English Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020018" a="include" t="Fast Food And Takeaway Outlets"/>
+			<PX_FILTER f="classification_code" v="01020019" a="include" t="Fast Food Delivery Services"/>
+			<PX_FILTER f="classification_code" v="01020020" a="include" t="Fish And Chip Shops"/>
+			<PX_FILTER f="classification_code" v="01020021" a="include" t="Fish And Seafood Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020022" a="include" t="French Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020023" a="include" t="Greek Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020024" a="include" t="Indian And Asian Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020025" a="include" t="Internet Cafes"/>
+			<PX_FILTER f="classification_code" v="01020026" a="include" t="Italian Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020027" a="include" t="Japanese Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020028" a="include" t="Lebanese Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020029" a="include" t="Mediterranean Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020030" a="include" t="Mexican Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020032" a="include" t="Pizza Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020033" a="include" t="Pub Food Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020034" a="include" t="Pubs, Bars And Inns"/>
+			<PX_FILTER f="classification_code" v="01020035" a="include" t="Roadside Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020036" a="include" t="Russian Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020038" a="include" t="Spanish Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020040" a="include" t="Thai Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020041" a="include" t="Turkish Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020042" a="include" t="Vegetarian Restaurants"/>
+			<PX_FILTER f="classification_code" v="01020043" a="include" t="Restaurants Unspecified"/>
+			<PX_FILTER f="classification_code" v="03160239" a="include" t="Zoos And Animal Collections"/>
+			<PX_FILTER f="classification_code" v="03170243" a="include" t="Heritage, Craft And Visitor Centres"/>
+			<PX_FILTER f="classification_code" v="03170244" a="include" t="Historic Buildings"/>
+			<PX_FILTER f="classification_code" v="03170246" a="include" t="Historic Ships"/>
+			<PX_FILTER f="classification_code" v="03170248" a="include" t="Museums And Art Galleries"/>
+			<PX_FILTER f="classification_code" v="03200265" a="include" t="Railways (Heritage, Steam And Miniature)"/>
+			<PX_FILTER f="classification_code" v="03200266" a="include" t="Theme And Adventure Parks"/>
+			<PX_FILTER f="classification_code" v="03200268" a="include" t="Tourist Information Centres"/>
+			<PX_FILTER f="classification_code" v="04240292" a="include" t="Golf Range, Courses And Clubs"/>
+			<PX_FILTER f="classification_code" v="04240293" a="include" t="Gymnasiums, Sports Halls, Leisure Centres"/>
+			<PX_FILTER f="classification_code" v="04240294" a="include" t="Ice Rinks"/>
+			<PX_FILTER f="classification_code" v="04240302" a="include" t="Sports Grounds, Stadia And Pitches"/>
+			<PX_FILTER f="classification_code" v="04250762" a="include" t="Conference And Exhibition Centres"/>
+			<PX_FILTER f="classification_code" v="04250315" a="include" t="Theatres And Concert Halls"/>
+			<PX_FILTER f="classification_code" v="05300371" a="include" t="Hospitals"/>
+			<PX_FILTER f="classification_code" v="05310375" a="include" t="First, Primary And Infant Schools"/>
+			<PX_FILTER f="classification_code" v="05310376" a="include" t="Higher Education Colleges"/>
+			<PX_FILTER f="classification_code" v="05310377" a="include" t="Independent And Preparatory Schools"/>
+			<PX_FILTER f="classification_code" v="05310378" a="include" t="Middle Schools"/>
+			<PX_FILTER f="classification_code" v="05310379" a="include" t="Secondary And Grammar Schools"/>
+			<PX_FILTER f="classification_code" v="05310380" a="include" t="Special Schools"/>
+			<PX_FILTER f="classification_code" v="05310381" a="include" t="Universities And Medical Schools"/>
+			<PX_FILTER f="classification_code" v="05320397" a="include" t="Pre And Nursery Schools"/>
+			<PX_FILTER f="classification_code" v="06330406" a="include" t="Benefits Agencies"/>
+			<PX_FILTER f="classification_code" v="06330409" a="include" t="Courts"/>
+			<PX_FILTER f="classification_code" v="06330410" a="include" t="Customs And Excise"/>
+			<PX_FILTER f="classification_code" v="06330411" a="include" t="Driving Test Centres"/>
+			<PX_FILTER f="classification_code" v="06330412" a="include" t="Embassies And Consulates"/>
+			<PX_FILTER f="classification_code" v="06330413" a="include" t="Environmental Health"/>
+			<PX_FILTER f="classification_code" v="06330414" a="include" t="Fire Brigade Stations"/>
+			<PX_FILTER f="classification_code" v="06330415" a="include" t="Government Agencies"/>
+			<PX_FILTER f="classification_code" v="06330416" a="include" t="Government Offices"/>
+			<PX_FILTER f="classification_code" v="06330417" a="include" t="Inland Revenue"/>
+			<PX_FILTER f="classification_code" v="06330420" a="include" t="Mot Testing Centres"/>
+			<PX_FILTER f="classification_code" v="06330422" a="include" t="Police Stations"/>
+			<PX_FILTER f="classification_code" v="06330424" a="include" t="Prisons"/>
+			<PX_FILTER f="classification_code" v="06330426" a="include" t="Registrars Offices"/>
+			<PX_FILTER f="classification_code" v="06360458" a="include" t="Libraries"/>
+			<PX_FILTER f="classification_code" v="06360763" a="include" t="Post Offices"/>
+			<!-- Provenance's To Exclude -->
+			<!-- PX_FILTER f="provenance" v="Ordnance Survey" a="exclude"/ -->
+		</Settings>
+	</PrepareDataModule>
+	
+	
+</DataImporter>

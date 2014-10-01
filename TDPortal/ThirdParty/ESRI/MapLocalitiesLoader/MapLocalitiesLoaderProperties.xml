@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationDetails>
+<ConnectionDetails server="DBM" instance="sde:sqlserver:DBM" database="TDP_MAPS" username="mapsadmin" password="R3d4lbum!" version="sde.DEFAULT" />
+<LocalitiesDataset>Localities</LocalitiesDataset>
+<SourceDatabaseConnection>data source=DBM;initial catalog=TDP_MAPS;user id=mapsadmin;password=R3d4lbum!</SourceDatabaseConnection>
+<CommitInterval>1000</CommitInterval>
+<AccessibleLocalitiesStopDistance>1400</AccessibleLocalitiesStopDistance>
+<AccessibleLocalitiesExcludeParents>True</AccessibleLocalitiesExcludeParents>
+<AccessibleLocalitiesSQLTimeout>1200</AccessibleLocalitiesSQLTimeout>
+<DebugLevel0-2>2</DebugLevel0-2>
+</ApplicationDetails>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DataImporter>
+	<LogModule path="DataImporter.exe" name="ESRI.DataImporter.ScreenLog">
+		<Settings Path = "D:\Gateway\log\NaPTANNPTG\NPTG_Adhoc_import.log"/>
+	</LogModule>
+
+	<ImportDataModule path="modules/ImportDataModule.dll" name="ImportDataModule.ImportData">
+		<Settings basePath="D:\dataload\gaz\">
+				<Database 
+					integratedsecurity="False"
+					servername="D03"
+					username="gazadmin"
+					password="Wh1t34lbum!"
+					databasename="GAZ_Staging"
+				/>
+	<!-- Naptan data -->
+			<ImportFile path="naptan\groupsingroup.csv" destinationTable="groupsingroup" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="ParentID" destinationName="ParentID" />
+				<Column sourceName="ChildID" destinationName="ChildID" />
+			</ImportFile>
+			<ImportFile path="naptan\altnames.csv" destinationTable="altnames" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="ATCOCode" destinationName="ATCOCode" />
+				<Column sourceName="CommonName" destinationName="CommonName" />
+			</ImportFile>
+			<ImportFile path="naptan\altnatgaz.csv" destinationTable="altnatgaz" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="ATCOCode" destinationName="ATCOCode" />
+				<Column sourceName="NatGazID" destinationName="NatGazID" />
+			</ImportFile>
+			<ImportFile path="naptan\groups.csv" columnSeparator="," type="csv" destinationTable="groups" textQualifier="{doubleQuote}">
+				<Column sourceName="GroupID" destinationName="GroupID" />
+				<Column sourceName="GroupName" destinationName="Name" />
+				<Column sourceName="Type" destinationName="GridEntityType" />
+				<Column sourceName="GridType" destinationName="GridType" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Lon" destinationName="Lon" />
+				<Column sourceName="Lat" destinationName="Lat" />
+				<Column sourceName="LastChanged" destinationName="LastChanged" />
+			</ImportFile>
+			<ImportFile path="naptan\stops.csv" columnSeparator="," destinationTable="stops" type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="ATCOCode" destinationName="ATCOCode" />
+				<Column sourceName="GridType" destinationName="GridType" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Lon" destinationName="Lon" />
+				<Column sourceName="Lat" destinationName="Lat" />
+				<Column sourceName="CommonName" destinationName="CommonName" />
+				<Column sourceName="Identifier" destinationName="Identifier" />
+				<Column sourceName="Direction" destinationName="Direction" />
+				<Column sourceName="Street" destinationName="Street" />
+				<Column sourceName="Landmark" destinationName="Landmark" />
+				<Column sourceName="NatGazID" destinationName="NatGazID" />
+				<Column sourceName="NatGazLocality" destinationName="NatGazLocality" />
+				<Column sourceName="ParentLocality" destinationName="ParentLocality" />
+				<Column sourceName="GrandParentLocality" destinationName="GrandParentLocality" />
+				<Column sourceName="Town" destinationName="Town" />
+				<Column sourceName="Suburb" destinationName="Suburb" />
+				<Column sourceName="StopType" destinationName="StopType" />
+				<Column sourceName="BusStopType" destinationName="BusStopType" />
+				<Column sourceName="BusRegistrationStatus" destinationName="BusRegistrationStatus" />
+				<Column sourceName="RecordStatus" destinationName="RecordStatus" />
+				<Column sourceName="Notes" destinationName="Notes" />
+				<Column sourceName="LocalityCentre" destinationName="LocalityCentre" />
+				<Column sourceName="SMSNumber" destinationName="SMSNumber" />
+				<Column sourceName="LastChanged" destinationName="LastChanged" />
+			</ImportFile>
+			<ImportFile path="naptan\hailride.csv" destinationTable="hailride" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="ATCOCode" destinationName="ATCOCode" />
+				<Column sourceName="StartGridType" destinationName="StartGridType" />
+				<Column sourceName="StartEasting" destinationName="StartEasting" />
+				<Column sourceName="StartNorthing" destinationName="StartNorthing" />
+				<Column sourceName="StartLon" destinationName="StartLon" />
+				<Column sourceName="StartLat" destinationName="StartLat" />
+				<Column sourceName="EndGridType" destinationName="EndGridType" />
+				<Column sourceName="EndEasting" destinationName="EndEasting" />
+				<Column sourceName="EndNorthing" destinationName="EndNorthing" />
+				<Column sourceName="EndLon" destinationName="EndLon" />
+				<Column sourceName="EndLat" destinationName="EndLat" />
+			</ImportFile>
+			<ImportFile path="naptan\stopsingroup.csv" destinationTable="stopsingroups" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="GroupID" destinationName="GroupID" />
+				<Column sourceName="ATCOCode" destinationName="ATCOCode" />
+			</ImportFile>
+
+	<!-- nptg data -->
+			<ImportFile path="nptg\admin areas.csv" destinationTable="adminareas" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Admin Area ID" destinationName="AdminAreaID" />
+				<Column sourceName="Admin Area Name" destinationName="AdminAreaName" />
+				<Column sourceName="Traveline Region ID" destinationName="TravelineRegionID" />
+				<Column sourceName="Country" destinationName="Country" />
+				<Column sourceName="ATCO Code" destinationName="ATCOCode" />
+				<Column sourceName="Call Centre ID" destinationName="CallCentreID" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\air exchanges.csv" destinationTable="airexchanges" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="NaPTAN" destinationName="NapTan" />
+				<Column sourceName="Name" destinationName="Name" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+				<Column sourceName="Group ID" destinationName="GroupID" />
+			</ImportFile>
+			<ImportFile path="nptg\Ferry Exchanges.csv" destinationTable="ferryexchanges" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+			  <Column sourceName="NaPTAN" destinationName="NapTan" />
+			  <Column sourceName="Name" destinationName="Name" />
+			  <Column sourceName="Easting" destinationName="Easting" />
+			  <Column sourceName="Northing" destinationName="Northing" />
+			  <Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+			  <Column sourceName="Issue Version" destinationName="IssueVersion" />
+			  <Column sourceName="Group ID" destinationName="GroupID" />
+      			</ImportFile>
+			<ImportFile path="nptg\alternate names.csv" destinationTable="alternatenames" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Primary ID" destinationName="PrimaryID" />
+				<Column sourceName="Alternate ID" destinationName="AlternateID" />
+				<Column sourceName="Date Of Last Change" destinationName="DateOfLastChange" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\areps.csv" destinationTable="areps" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="From Region" destinationName="FromRegion" />
+				<Column sourceName="To Region" destinationName="ToRegion" />
+				<Column sourceName="NapTan" destinationName="NapTan" />
+				<Column sourceName="Date Of Last Change" destinationName="DateOfLastChange" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\call centres.csv" destinationTable="callcentres" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Call Centre ID" destinationName="CallCentreID" />
+				<Column sourceName="Traveline Region ID" destinationName="TravelineRegionID" />
+				<Column sourceName="Call Centre Name" destinationName="CallCentreName" />
+				<Column sourceName="Call Centre Hours" destinationName="CallCentreHours" />
+				<Column sourceName="Transfer Phone No" destinationName="TransferPhoneNo" />
+				<Column sourceName="Power User Phone No" destinationName="PowerUserPhoneNo" />
+				<Column sourceName="Notes" destinationName="Notes" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\coach exchanges.csv" destinationTable="coachexchanges" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Exchange Point ID" destinationName="ExchangePointID" />
+				<Column sourceName="National Express ID" destinationName="NationalExpressID" />
+				<Column sourceName="Name" destinationName="Name" />
+				<Column sourceName="Long Name" destinationName="LongName" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+				<Column sourceName="CoachClusterCode" destinationName="NapTan" />
+				<Column sourceName="Group ID" destinationName="GroupID" />
+			</ImportFile>
+			<ImportFile path="nptg\districts.csv" destinationTable="districts" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="District ID" destinationName="DistrictID" />
+				<Column sourceName="District Name" destinationName="DistrictName" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\exchange groups.csv" destinationTable="exchangegroups" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Group ID" destinationName="GroupID" />
+				<Column sourceName="Name" destinationName="Name" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Date Of Last Change" destinationName="DateOfLastChange" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\exchange points.csv" destinationTable="exchangepoints" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Exchange Point ID" destinationName="ExchangePointID" />
+				<Column sourceName="Associated NG ID" destinationName="AssociatedNGID" />
+				<Column sourceName="Date Of Last Change" destinationName="DateOfLastChange" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+				<Column sourceName="NapTan" destinationName="NapTan" />
+			</ImportFile>
+			<ImportFile path="nptg\hierarchy.csv" destinationTable="hierarchy" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Parent ID" destinationName="ParentID" />
+				<Column sourceName="Child ID" destinationName="ChildID" />
+				<Column sourceName="Date Of Last Change" destinationName="DateOfLastChange" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\localities.csv" destinationTable="localities" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="National Gazetteer ID" destinationName="NationalGazetteerID" />
+				<Column sourceName="Locality Name" destinationName="LocalityName" />
+				<Column sourceName="District ID" destinationName="DistrictID" />
+				<Column sourceName="Admin Area ID" destinationName="AdminAreaID" />
+				<Column sourceName="Locality Type" destinationName="LocalityType" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Date Of Last Change" destinationName="DateOfLastChange" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+				<Column sourceName="Language" destinationName="Language" />
+			</ImportFile>
+			<ImportFile path="nptg\rail exchanges.csv" destinationTable="railexchanges" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Exchange Point ID" destinationName="ExchangePointID" />
+				<Column sourceName="Tiploc Code" destinationName="TiplocCode" />
+				<Column sourceName="CRS Code" destinationName="CRSCode" />
+				<Column sourceName="Station Name" destinationName="StationName" />
+				<Column sourceName="Easting" destinationName="Easting" />
+				<Column sourceName="Northing" destinationName="Northing" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+				<Column sourceName="NapTan" destinationName="NapTan" />
+				<Column sourceName="Group ID" destinationName="GroupID" />
+			</ImportFile>
+			<ImportFile path="nptg\travel regions.csv" destinationTable="travelregions" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Traveline Region ID" destinationName="TravelineRegionID" />
+				<Column sourceName="Region Name" destinationName="RegionName" />
+				<Column sourceName="Primary URL" destinationName="PrimaryURL" />
+				<Column sourceName="Secondary URL" destinationName="SecondaryURL" />
+				<Column sourceName="Tertiary URL" destinationName="TertiaryURL" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+				<Column sourceName="Jw Version" destinationName="JwVersion" />
+			</ImportFile>
+			<ImportFile path="nptg\unsupported.csv" destinationTable="unsupported" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Traveline Region ID" destinationName="TravellineRegionID" />
+				<Column sourceName="Capability" destinationName="Capability" />
+				<Column sourceName="Date Of Last Change" destinationName="DateOfLastChange" />
+				<Column sourceName="Date Of Issue" destinationName="DateOfIssue" />
+				<Column sourceName="Issue Version" destinationName="IssueVersion" />
+			</ImportFile>
+			<ImportFile path="locAliases\locAliases.csv" destinationTable="LocAliases" columnSeparator="," type="csv" textQualifier="{doubleQuote}">
+				<Column sourceName="Alias Name" destinationName="AliasName"/>
+				<Column sourceName="Primary ID" destinationName="PrimaryID"/>
+				<Column sourceName="MisSpelling" destinationName="MisSpelling"/>
+			</ImportFile>
+		</Settings>
+	</ImportDataModule>
+
+		<PreprocessDataModule path="modules/NPTGDataPrepareModule.dll" name="NPTGDataPrepareModule.NPTGDataPreprocess">
+			<Settings>
+			<Database 
+				integratedSecurity="False" 
+				serverName="D03" 
+				userName="gazadmin" 
+				password="Wh1t34lbum!" 
+				databaseName="GAZ_Staging"
+				dataFile="GAZ_DATA"
+				indexFile="GAZ_INDEX"
+			/>
+ 			</Settings>
+ 		</PreprocessDataModule>
+	
+	<!-- AllStatDataPrepareModule -->
+		<PrepareDataModule path="modules/AllStatDataPrepareClassLibrary.dll" name="AllStatDataPrepareClassLibrary.AllStatDataPrepare">
+			<Settings>
+				<Database 
+					integratedSecurity="False"
+					serverName="D03"
+					userName="gazadmin"
+					password="Wh1t34lbum!"
+					databaseName="GAZ_Staging"
+					dataFile="GAZ_DATA"
+					indexFile="GAZ_INDEX"
+				/>
+				<IdentifierLookup>
+					<item lookup="Opp" />
+					<item lookup="Opposite" />
+				</IdentifierLookup>
+				<ExcludeStopTypeFilters>
+					<StopType excludefilter="AIR" />
+					<StopType excludefilter="BCE" />
+					<StopType excludefilter="FTD" />
+					<StopType excludefilter="PLT" />
+					<StopType excludefilter="RSE" />
+					<StopType excludefilter="STR" />
+					<StopType excludefilter="TXR" />
+					<StopType excludefilter="TMU" />
+				</ExcludeStopTypeFilters>
+				<AbbrevsAndNullWords>
+					<NULL_WORD_PHRASES>
+						<NULL_WORD>-</NULL_WORD>
+						<NULL_WORD>--</NULL_WORD>
+						<NULL_WORD>---</NULL_WORD>
+						<NULL_WORD>*</NULL_WORD>
+						<NULL_WORD>**</NULL_WORD>
+						<NULL_WORD>_</NULL_WORD>
+						<NULL_WORD>N/A</NULL_WORD>
+						<NULL_WORD>TBA</NULL_WORD>
+						<NULL_WORD>?</NULL_WORD>
+						<NULL_WORD>??</NULL_WORD>
+						<NULL_WORD>???</NULL_WORD>
+						<NULL_WORD>/</NULL_WORD>
+						<NULL_WORD>/\</NULL_WORD>
+						<NULL_WORD>No Name</NULL_WORD>
+	
+						<ABBREV a="APP" v="APPROACH"/>
+						<ABBREV a="ADJ" v="ADJACENT"/>
+						<ABBREV a="ARC" v="ARCADE"/>
+						<ABBREV a="AV" v="AVENUE"/>
+						<ABBREV a="BLDG" v="BUILDING"/>
+						<ABBREV a="BLVD" v="BOULEVARD"/>
+						<ABBREV a="BR" v="BRIDGE"/>
+						<ABBREV a="BSNS" v="BUSINESS"/>
+						<ABBREV a="BWAY" v="BROADWAY"/>
+						<ABBREV a="CH" v="CHURCH"/>
+						<ABBREV a="CLO" v="CLOSE"/>
+						<ABBREV a="COL" v="COLLEGE"/>
+						<ABBREV a="CRES" v="CRESCENT"/>
+						<ABBREV a="CT" v="COURT"/>
+						<ABBREV a="CTR" v="CENTRE"/>
+						<ABBREV a="DRI" v="DRIVE"/>
+						<ABBREV a="EST" v="ESTATE"/>
+						<ABBREV a="GDNS" v="GARDENS"/>
+						<ABBREV a="GRN" v="GREEN"/>
+						<ABBREV a="GRO" v="GROVE"/>
+						<ABBREV a="GT" v="GREAT"/>
+						<ABBREV a="HOSP" v="HOSPITAL"/>
+						<ABBREV a="INFMY" v="INFIRMARY"/>
+						<ABBREV a="JCT" v="JUNCTION"/>
+						<ABBREV a="LN" v="LANE"/>
+						<ABBREV a="LT" v="LITTLE"/>
+						<ABBREV a="LWR" v="LOWER"/>
+						<ABBREV a="MKT" v="MARKET"/>
+						<ABBREV a="OPP" v="OPPOSITE"/>
+						<ABBREV a="MT" v="MOUNT"/>
+						<ABBREV a="PASS" v="PASSAGE"/>
+						<ABBREV a="PDE" v="PARADE"/>
+						<ABBREV a="PK" v="PARK"/>
+						<ABBREV a="PL" v="PLACE"/>
+						<ABBREV a="PO" v="POST OFFICE"/>
+						<ABBREV a="QUAD" v="QUADRANT"/>
+						<ABBREV a="RD" v="ROAD"/>
+						<ABBREV a="RDBT" v="ROUNDABOUT"/>
+						<ABBREV a="SCH" v="SCHOOL"/>
+						<ABBREV a="SQ" v="SQUARE"/>
+						<ABBREV a="STN" v="STATION"/>
+						<ABBREV a="TER" v="TERRACE"/>
+						<ABBREV a="UPR" v="UPPER"/>
+						<ABBREV a="WLK" v="WALK"/>
+						<ABBREV a="WY" v="WAY"/>
+						<ABBREV a="YD" v="YARD"/>
+						<ABBREV a="PH" v="PUBLIC HOUSE"/> 
+					</NULL_WORD_PHRASES>
+				</AbbrevsAndNullWords>
+			</Settings>
+		</PrepareDataModule>
+		<!-- End Of AllStatDataPrepareModule -->
+
+<!-- MajStatDataPrepareModule -->
+	<PrepareDataModule path="modules/MajStatDataPrepareModule.dll" name="MajStatDataPrepareModule.MajStatDataPrepare">
+		<Settings>
+			<Database 
+				integratedSecurity="False"
+					serverName="D03"
+					userName="gazadmin"
+					password="Wh1t34lbum!"
+					databaseName="GAZ_Staging"
+					dataFile="GAZ_DATA"
+					indexFile="GAZ_INDEX"
+			/>
+				 <LIGHT_RAIL_SYSTEM_ID t="BP" v="Blackpool Tram"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="CR" v="Croydon Tram"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="DL" v="Docklands Light Railway"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="FF" v="FF"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="GL" v="GL"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="GO" v="GO"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="LU" v="London Underground"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="MA" v="Manchester Metro"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="NO" v="NO"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="RH" v="RH"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="SY" v="SY"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="TW" v="TW"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="WE" v="WE"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="WM" v="WM"/>
+				 <LIGHT_RAIL_SYSTEM_ID t="SP" v="Strathspey Railway"/>
+				 
+
+		</Settings>
+	</PrepareDataModule>
+	<!-- END OF MajStatDataPrepareModule -->
+	
+	<!-- NPTGDataPrepareModule -->
+		<PrepareDataModule path="modules/NPTGDataPrepareModule.dll" name="NPTGDataPrepareModule.NPTGDataPrepare">
+			<Settings>
+				<Database 
+					integratedSecurity="False"
+					serverName="D03"
+					userName="gazadmin"
+					password="Wh1t34lbum!"
+					databaseName="GAZ_Staging"
+					dataFile="GAZ_DATA"
+					indexFile="GAZ_INDEX"
+				/>
+			</Settings>
+		</PrepareDataModule>
+	<!-- END OF NPTGDataPrepareModule -->
+	
+	<!-- This code gaz prepare must be the last one -->
+		<!-- CodeGazPrepareModule -->
+		<PrepareDataModule path="modules/CodeGazPrepareModule.dll" name="CodeGazPrepareModule.CodeGazPrepare">
+			<Settings>
+				<Database 
+					integratedSecurity="False"
+					serverName="D03"
+					userName="gazadmin"
+					password="Wh1t34lbum!"
+					databaseName="GAZ_Staging"
+					dataFile="GAZ_DATA"
+					indexFile="GAZ_INDEX"
+					codegaztable="CodeGaz"
+					nullSMScode="not_set"
+					dictionarybuildlog="logfiles\dat55.log"
+				/>
+			</Settings>
+		</PrepareDataModule>
+	<!-- END OF CodeGazPrepareModule -->
+	
+</DataImporter>

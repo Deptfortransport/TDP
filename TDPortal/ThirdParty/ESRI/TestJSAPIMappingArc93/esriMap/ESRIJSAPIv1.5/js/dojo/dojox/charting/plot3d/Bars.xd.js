@@ -1,0 +1,8 @@
+/*
+	Copyright (c) 2004-2009, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+
+dojo._xdResourceLoaded(function(_1,_2,_3){return {depends:[["provide","dojox.charting.plot3d.Bars"],["require","dojox.charting.plot3d.Base"]],defineResource:function(_4,_5,_6){if(!_4._hasResource["dojox.charting.plot3d.Bars"]){_4._hasResource["dojox.charting.plot3d.Bars"]=true;_4.provide("dojox.charting.plot3d.Bars");_4.require("dojox.charting.plot3d.Base");(function(){var _7=function(a,f,o){a=typeof a=="string"?a.split(""):a;o=o||_4.global;var z=a[0];for(var i=1;i<a.length;z=f.call(o,z,a[i++])){}return z;};_4.declare("dojox.charting.plot3d.Bars",_6.charting.plot3d.Base,{constructor:function(_d,_e,_f){this.depth="auto";this.gap=0;this.data=[];this.material={type:"plastic",finish:"dull",color:"lime"};if(_f){if("depth" in _f){this.depth=_f.depth;}if("gap" in _f){this.gap=_f.gap;}if("material" in _f){var m=_f.material;if(typeof m=="string"||m instanceof _4.Color){this.material.color=m;}else{this.material=m;}}}},getDepth:function(){if(this.depth=="auto"){var w=this.width;if(this.data&&this.data.length){w=w/this.data.length;}return w-2*this.gap;}return this.depth;},generate:function(_12,_13){if(!this.data){return this;}var _14=this.width/this.data.length,org=0,_16=this.depth=="auto"?_14-2*this.gap:this.depth,_17=this.height/_7(this.data,Math.max);if(!_13){_13=_12.view;}for(var i=0;i<this.data.length;++i,org+=_14){_13.createCube({bottom:{x:org+this.gap,y:0,z:0},top:{x:org+_14-this.gap,y:this.data[i]*_17,z:_16}}).setFill(this.material);}}});})();}}};});

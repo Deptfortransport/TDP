@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DataImporter>
+	<LogModule path="DataImporter.exe" name="ESRI.DataImporter.ScreenLog">
+		<Settings Path = "logfiles\LastLoadPOI.log"/>
+	</LogModule>
+
+	
+	<PrepareDataModule path="Modules\PointXDataPrepareModule.dll" name="ESRIUK.DFT.DataPrepare.PointX.PointXDataPrepare">
+		<Settings>
+			<Database 					
+					integratedsecurity="False"
+					servername="D03"
+					username="gazadmin"
+					password="Wh1t34lbum!"
+					databasename="GAZ_Staging"
+				dataFile="GAZ_DATA"
+				indexFile="GAZ_INDEX"
+			/>
+			<!-- Classifications To Exclude -->
+			<PX_FILTER f="classification_code" v="01010006" a="include" t="Hotels"/>
+			<PX_FILTER f="classification_code" v="01020012" a="include" t="Banqueting And Function Rooms"/>
+			<PX_FILTER f="classification_code" v="01020013" a="include" t="Cafes, Snack Bars And Tea Rooms"/>
+			<PX_FILTER f="classification_code" v="01020018" a="include" t="Fast Food And Takeaway Outlets"/>
+			<PX_FILTER f="classification_code" v="01020019" a="include" t="Fast Food Delivery Services"/>
+			<PX_FILTER f="classification_code" v="01020020" a="include" t="Fish And Chip Shops"/>
+			<PX_FILTER f="classification_code" v="01020025" a="include" t="Internet Cafes"/>
+			<PX_FILTER f="classification_code" v="01020034" a="include" t="Pubs, Bars And Inns"/>
+			<PX_FILTER f="classification_code" v="01020043" a="include" t="Restaurants"/>
+			<PX_FILTER f="classification_code" v="03160239" a="include" t="Zoos And Animal Collections"/>
+			<PX_FILTER f="classification_code" v="03170244" a="include" t="Historic Buildings Including Castles, Forts And Abbeys"/>
+			<PX_FILTER f="classification_code" v="03170246" a="include" t="Historic Ships"/>
+			<PX_FILTER f="classification_code" v="03170248" a="include" t="Museums"/>
+			<PX_FILTER f="classification_code" v="03170813" a="include" t="Art Galleries"/>
+			<PX_FILTER f="classification_code" v="03200265" a="include" t="Railways (Heritage, Steam And Miniature)"/>
+			<PX_FILTER f="classification_code" v="03200266" a="include" t="Theme And Adventure Parks"/>
+			<PX_FILTER f="classification_code" v="03200267" a="include" t="Siteseeing, Tours, Viewing And Visitor Centres"/>
+			<PX_FILTER f="classification_code" v="03200268" a="include" t="Information Centres"/>
+			<PX_FILTER f="classification_code" v="04240292" a="include" t="Golf Range, Courses, Clubs And Professionals"/>
+			<PX_FILTER f="classification_code" v="04240293" a="include" t="Gymnasiums, Sports Halls And Leisure Centres"/>
+			<PX_FILTER f="classification_code" v="04240294" a="include" t="Ice Rinks"/>
+			<PX_FILTER f="classification_code" v="04240302" a="include" t="Sports Grounds, Stadia And Pitches"/>
+			<PX_FILTER f="classification_code" v="04250308" a="include" t="Cinemas"/>
+			<PX_FILTER f="classification_code" v="04250762" a="include" t="Conference And Exhibition Centres"/>
+			<PX_FILTER f="classification_code" v="04250315" a="include" t="Theatres And Concert Halls"/>
+			<PX_FILTER f="classification_code" v="05280780" a="include" t="Accident and Emergency Hospitals"/>
+			<PX_FILTER f="classification_code" v="05280371" a="include" t="Hospitals"/>
+			<PX_FILTER f="classification_code" v="05310375" a="include" t="First, Primary And Infant Schools"/>
+			<PX_FILTER f="classification_code" v="05310376" a="include" t="Further Education Establishments"/>
+			<PX_FILTER f="classification_code" v="05310377" a="include" t="Independent And Preparatory Schools"/>
+			<PX_FILTER f="classification_code" v="05310382" a="include" t="Unspecified And Other Schools"/>
+			<PX_FILTER f="classification_code" v="05310379" a="include" t="Broad Age Range and Secondary State Schools"/>
+			<PX_FILTER f="classification_code" v="05310380" a="include" t="Special Schools and Colleges"/>
+			<PX_FILTER f="classification_code" v="05310381" a="include" t="Higher Education Establishments"/>
+			<PX_FILTER f="classification_code" v="05320397" a="include" t="Nursery Schools And Pre And After School Care"/>
+			<PX_FILTER f="classification_code" v="06330409" a="include" t="Courts, Court Services And Tribunals"/>
+			<PX_FILTER f="classification_code" v="06330411" a="include" t="Driving Test Centres"/>
+			<PX_FILTER f="classification_code" v="06330412" a="include" t="Embassies And Consulates"/>
+			<PX_FILTER f="classification_code" v="06330414" a="include" t="Fire Brigade Stations"/>
+			<PX_FILTER f="classification_code" v="06330415" a="include" t="Central Government"/>
+			<PX_FILTER f="classification_code" v="06330416" a="include" t="Local Government"/>
+			<PX_FILTER f="classification_code" v="06330417" a="include" t="Revenue And Customs Offices"/>
+			<PX_FILTER f="classification_code" v="06330422" a="include" t="Police Stations"/>
+			<PX_FILTER f="classification_code" v="06330424" a="include" t="Prisons"/>
+			<PX_FILTER f="classification_code" v="06330426" a="include" t="Registrars Offices"/>
+			<PX_FILTER f="classification_code" v="06340458" a="include" t="Libraries"/>
+			<PX_FILTER f="classification_code" v="09480763" a="include" t="Post Offices"/>
+			<PX_FILTER f="classification_code" v="DFT" a="include" t="DFT Manually Added"/>
+			<!-- Provenance's To Exclude -->
+			<!-- PX_FILTER f="provenance" v="Ordnance Survey" a="exclude"/ -->
+		</Settings>
+	</PrepareDataModule>
+	
+	
+</DataImporter>
+

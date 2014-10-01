@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+		
+	<!--property service!-->
+	<property name="propertyservice.refreshrate" GID="" AID="">30000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	
+		<!--JourneyWeb!-->
+	<property name="JourneyWeb.XslPath" GID="" AID="">D:\TransportDirect\Stylesheets\</property>	
+	<property name="JourneyWeb.LogPath" GID="" AID="">D:\TransportDirect\Logs\</property>
+	<property name="JourneyWeb.TraceLogging" GID="" AID="">0,1,2</property>
+	<property name="JourneyWeb.XMLLogging" GID="" AID="">0,1,2</property>
+	<property name="JourneyWeb.UseProxy" GID="" AID="">false</property>
+	<property name="JourneyWeb.ProxyServer" GID="" AID="">http://JWProxyServer:8080</property>
+	<property name="JourneyWeb.ProxyUser" GID="" AID="" />
+	<property name="JourneyWeb.ProxyPassword" GID="" AID="" />
+
+
+	<property name="JourneyWeb.InputTransform.99" GID="" AID="">CJPToSCL.1.0.xsl</property>					
+	<property name="JourneyWeb.OutputTransform.99" GID="" AID="">SCLToCJP.1.0.xsl</property>				
+	<property name="JourneyWeb.InputTransform.98" GID="" AID="">CJPToNXFares.2.1.0.xsl</property>			
+	<property name="JourneyWeb.OutputTransform.98" GID="" AID="">NXFaresToCJP.2.1.0.xsl</property>	
+	
+	<!-- Our Logging !-->
+	<property name="FaresProvider.LogStartupNarrative" GID="" AID="">True</property>
+	<property name="FaresProvider.LogNarrative" GID="" AID="">0,1,2</property>
+	
+	<!-- Atos Logging !-->
+	<property name="Logging.Publisher.Queue" GID="" AID=""/>
+	<property name="Logging.Publisher.Default" GID="" AID="">File1</property>
+	<property name="Logging.Publisher.File" GID="" AID="">File1</property>
+	<property name="Logging.Publisher.Email" GID="" AID=""/>
+	<property name="Logging.Publisher.Custom" GID="" AID=""/>
+	<property name="Logging.Publisher.EventLog" GID="" AID=""/>
+	<property name="Logging.Publisher.Console" GID="" AID=""/>
+	<property name="Logging.Publisher.File.File1.Directory" GID="" AID="">D:\TransportDirect\Logs\</property>
+	<property name="Logging.Publisher.File.File1.Rotation" GID="" AID="">1000</property>
+	<property name="Logging.Publisher.Email.Smtp" GID="" AID="">localhost</property>
+	<property name="Logging.Event.Operational.TraceLevel" GID="" AID="">Verbose</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="">File1</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="" AID="">File1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="">File1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="" AID="">File1</property>
+	<property name="Logging.Event.Custom" GID="" AID=""/>
+	<property name="Logging.Event.Custom.Trace" GID="" AID="">Off</property>
+	<property name="Logging.Event.Custom" GID="CJP" AID="CJP"></property>
+
+		
+	<!-- Scottish City Link (SCL) !-->
+	<property name="FaresProvider.SCL.URL" GID="" AID="">http://www.citylinkonlinesales.co.uk/TransportDirectFaresController.xml</property>
+	<property name="FaresProvider.SCL.Version" GID="" AID="">99</property>
+	
+	<!-- National Express (NX) !-->
+	<property name="FaresProvider.NX.URL" GID="" AID="">http://194.73.231.37/JourneyWebV2/JourneywebInterfaceWithNewFares.aspx</property>
+	<property name="FaresProvider.NX.Version" GID="" AID="">98</property>	
+	
+ </lookup>
+

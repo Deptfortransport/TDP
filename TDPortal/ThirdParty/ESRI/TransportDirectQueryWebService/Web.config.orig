@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="ESRI" type="TransportDirect.Presentation.InteractiveMapping.ESRISettingsSectionHandler,td.interactivemapping"/>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+  </configSections>
+  <ESRI>
+
+    <!-- THESE ARE THE THINGS THAT NEED TO BE CHANGED ON SITE -->
+    <MapServer name="full" serverName="tdpapp" mapService="tdparc93"/>
+    <Database name="maps" connection="data source=tdpdb\sql2008;initial catalog=TDP_MAPS;user id=mapsadmin;password=mapsadmin" tableowner="mapsadmin"/>
+    <Database name="routes" connection="data source=tdpdb\sql2008;initial catalog=TDP_ROUTES;user id=routesadmin;password=routesadmin" tableowner="routesadmin"/>
+    <!-- END OF ON SITE REQUIRED CHANGES - Also see Log4Net config log file location -->
+    
+    <Server url="/servlet/com.esri.esrimap.Esrimap" port="5300"/>
+    <ServerConnection tcphttp="tcp"/>
+
+    <Layer name="ITN" id="ITN Roads" tableName="ITN"/>
+    <Layer name="ITNZoom" id="Zoom ITN Roads" tableName="ITNZoom"/>
+    <Layer name="ITNRoadNode" id="Zoom ITN Road Node" tableName="ITNRoadNode"/>
+    <Layer name="Stops" id="Full Stops" tableName="Stops"/>
+    <Layer name="PointX" id="Full PointX" tableName="PointX" returnedFields="NAME,ADDRESS_DETAIL,STREET_NAME,LOCALITY,POST_CODE"/>
+    <Layer name="CarParks" id="CarParks" tableName="CarParks"/>
+
+    <Query distance="50"/>
+    <!-- Values used for FindNearestITN and FindNearestITNs method to set and multiply search radius-->
+    <PTStopSearch name="nearest" startdistance="50" widenfactor="2" widenmaxwidth="5000" widenmetres="2000" addressmatchiterations="6"/>
+    <!--
+		Incidents information
+		roadLayerID and publicLayerID are "id" in map service of those layers
+		returnedFields are the database fields to return for each incident (MUST include SEVERITYLEVELCODE for incident to be order in severity order)
+		dateFields must match returnedFields to specify whether those fields are dates (as these need special processing)
+		severeIncidents are the values in the data to use when considering SEVERE incidents
+		recentIncidentHours are the number of hours that recent incidents are considered as being
+		plannedIncidentOverlayImage is the GIF to use to identify an incident as a future/planned incident
+	-->
+    <ZoomRoute border="1.1"/>
+    <!-- 
+      **  IMPORTANT **
+      Incidents 'returnedFields' property must match list defined in ESRIUK.Config.js 
+    -->
+    <Incidents roadLayerID="RoadIncidents" publicLayerID="PublicIncidents" returnedFields="HEADLINETEXT,INCIDENTTYPE,SEVERITYLEVEL,DETAILTEXT,STARTDATETIME,EXPIRYDATETIME,LASTMODIFIEDDATETIME,PLANNEDINCIDENT" dateFields="false,false,false,false,true,true,true,false" severeIncidents="'Critical','Very Severe','Severe'" recentIncidentHours="1" />
+    <!-- Settings applied to QueryExtent functionality -->
+    <QueryExtent maxFeatures="500" />
+    <!-- Defines the logical categories that stop layers belong to for use in the QueryExtent method -->
+    <StopCategories busTaxi="BCX,TXR" other="FER,AIR,MET,RLY" />
+    <!-- Defines the stop types that are represented by stop layers -->
+    <StopLayerToTypeMappings bcx="BCT,BCS" txr="TXR,STR" fer="FER" air="GAT" met="MET" rly="RLY" />
+  </ESRI>
+
+  <log4net>
+    <appender name="GeneralAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="c:\\temp\\TransportDirectQueryWebService_Log.txt" />
+      <appendToFile value="true" />
+      <rollingStyle value="Size" />
+      <maxSizeRollBackups value="10" />
+      <maximumFileSize value="1000KB" />
+      <staticLogFileName value="true" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+      </layout>
+    </appender>
+    <root>
+      <!-- 
+      level is one of (in decreasing order):
+      ALL
+      DEBUG
+      INFO
+      WARN
+      ERROR
+      FATAL
+      OFF
+      -->
+      <level value="DEBUG" />
+      <appender-ref ref="GeneralAppender" />
+    </root>
+  </log4net>
+
+  <appSettings/>
+  <connectionStrings/>
+  <system.web>
+    <!-- 
+            Set compilation debug="true" to insert debugging 
+            symbols into the compiled page. Because this 
+            affects performance, set this value to true only 
+            during development.
+        -->
+    <compilation debug="true">
+    </compilation>
+    <!--
+            The <authentication> section enables configuration 
+            of the security authentication mode used by 
+            ASP.NET to identify an incoming user. 
+        -->
+    <authentication mode="Windows"/>
+    <!--
+            The <customErrors> section enables configuration 
+            of what to do if/when an unhandled error occurs 
+            during the execution of a request. Specifically, 
+            it enables developers to configure html error pages 
+            to be displayed in place of a error stack trace.
+
+        <customErrors mode="RemoteOnly" defaultRedirect="GenericErrorPage.htm">
+            <error statusCode="403" redirect="NoAccess.htm" />
+            <error statusCode="404" redirect="FileNotFound.htm" />
+        </customErrors>
+        -->
+  </system.web>
+  <system.codedom>
+  </system.codedom>
+  <!-- 
+        The system.webServer section is required for running ASP.NET AJAX under Internet
+        Information Services 7.0.  It is not necessary for previous version of IIS.
+    -->
+  <system.webServer>
+  </system.webServer>
+</configuration>

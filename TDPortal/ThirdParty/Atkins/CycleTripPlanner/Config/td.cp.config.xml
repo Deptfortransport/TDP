@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+
+	<!--property service!-->
+	<property name="propertyservice.property" GID="" AID="" >globalproperty</property>
+	<property name="propertyservice.refreshrate" GID="" AID="" >30000</property>
+	<property name="propertyservice.version" GID="" AID="" >2</property>
+  	<property name="Logging.Publisher.Queue" GID="" AID="">Queue1</property> 
+	<property name="Logging.Publisher.Default" GID="" AID="" >File1</property>
+	<property name="Logging.Publisher.File" GID="" AID="" >File1</property>
+	<property name="Logging.Publisher.Email" GID="" AID="" />
+	<property name="Logging.Publisher.Custom" GID="" AID="" />
+	<property name="Logging.Publisher.EventLog" GID="" AID="" />
+	<property name="Logging.Publisher.Console" GID="" AID="" />
+	<property name="Logging.Publisher.File.File1.Directory" GID="" AID="" >D:\TransportDirect\Logs\</property>
+	<property name="Logging.Publisher.File.File1.Rotation" GID="" AID="" >1000</property>
+	<property name="Logging.Publisher.Email.Smtp" GID="" AID="" >mail</property>
+	<property name="Logging.Event.Operational.TraceLevel" GID="" AID="" >Verbose</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="" >File1</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="" AID="" >File1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="" >File1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="" AID="" >File1</property>
+	<property name="Logging.Event.Custom" GID="" AID="" />
+	<property name="Logging.Event.Custom.Trace" GID="" AID="" >On</property>
+	<property name="Logging.Event.Custom" GID="" AID="" >C1 C2</property>
+	<property name="Logging.Event.Custom.Trace" GID="" AID="" >On</property>
+	<property name="Logging.Event.Custom.C1.Name" GID="" AID="" >JourneyWebRequestEvent</property>
+	<property name="Logging.Event.Custom.C1.Assembly" GID="" AID="" >td.reportdataprovider.cjpcustomevents</property>
+	<property name="Logging.Event.Custom.C1.Publishers" GID="" AID="" >File1</property>
+	<property name="Logging.Event.Custom.C1.Trace" GID="" AID="" >On</property>
+	<property name="Logging.Event.Custom.C2.Name" GID="" AID="" >LocationRequestEvent</property>
+	<property name="Logging.Event.Custom.C2.Assembly" GID="" AID="" >td.reportdataprovider.cjpcustomevents</property>
+	<property name="Logging.Event.Custom.C2.Publishers" GID="" AID="" >File1</property>
+	<property name="Logging.Event.Custom.C2.Trace" GID="" AID="" >On</property>
+  	<property name="Logging.Publisher.Queue.Queue1.Path" GID="" AID="">.\Private$\TDPrimaryQueue</property> 
+  	<property name="Logging.Publisher.Queue.Queue1.Delivery" GID="" AID="">Recoverable</property> 
+  	<property name="Logging.Publisher.Queue.Queue1.Priority" GID="" AID="">Normal</property> 
+
+	<property name="Logging.Event.Custom" GID="RoadHost" AID="RoadHost" >C1</property>
+	<property name="Logging.Event.Custom.Trace" GID="RoadHost" AID="RoadHost" >On</property>
+	<property name="Logging.Event.Custom.C1.Name" GID="RoadHost" AID="RoadHost" >InternalRequestEvent</property>
+	<property name="Logging.Event.Custom.C1.Assembly" GID="RoadHost" AID="RoadHost" >td.reportdataprovider.cjpcustomevents</property>
+	<property name="Logging.Event.Custom.C1.Publishers" GID="RoadHost" AID="RoadHost" >File1</property>
+	<property name="Logging.Event.Custom.C1.Trace" GID="RoadHost" AID="RoadHost" >On</property>
+
+	<!-- RoadInterface Remote configuration -->
+	<property name="CyclePlanner.RemoteConfigFile" GID="" AID="" >D:\TransportDirect\Web\CyclePlannerService\CyclePlanner.RemotingObjects.config</property>
+	
+	<!--RoadRouting Engine!-->
+	<property name="RoadRoutingEngine.RoutingNetworkDatabase" GID="" AID="" >Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=CP_Routing_B30;Data Source=ovs9\sqlexpress;Packet Size=4096;Workstation ID=localhost;</property>
+	<property name="RoadRoutingEngine.RoutingNetworkFile" GID="" AID="" >routingnetwork.txt</property>
+	<property name="RoadRoutingEngine.RoutingNetworkPath" GID="" AID="" >D:\TDPortal\Data\CycleData\Live</property>
+	<property name="RoadRoutingEngine.CongestionDataPath" GID="" AID="" >D:\TDPortal\Data\CycleData\Live</property>
+	<property name="RoadRoutingEngine.CongestionDataFile" GID="" AID="" >CongestionData.txt</property>
+	<property name="RoadRoutingEngine.RoutingNetworkLogFile" GID="" AID="" >RoutingNetwork.log</property>
+	<property name="RoadRoutingEngine.IsCongestionUsed" GID="" AID="" >true</property>
+	<property name="RoadRoutingEngine.WriteRoutingNetworkLogFile" GID="" AID="" >false</property>
+	<property name="RoadRoutingEngine.CloudRadius" GID="" AID="" >10000</property>
+	<property name="RoadRoutingEngine.UseClouds" GID="" AID="" >false</property>
+	<property name="RoadRoutingEngine.OldRoutingNetworkPath" GID="" AID="" >D:\TDPortal\Data\CycleData\old</property>
+	<property name="RoadRoutingEngine.NewRoutingNetworkPath" GID="" AID="" >D:\TDPortal\Data\CycleData\new</property>
+	<property name="RoadRoutingEngine.BadRoutingNetworkPath" GID="" AID="" >D:\TDPortal\Data\CycleData\bad</property>
+	<property name="RoadRoutingEngine.NewCongestionDataPath" GID="" AID="" >D:\TDPortal\Data\CycleData\new</property>
+	<property name="RoadRoutingEngine.OldCongestionDataPath" GID="" AID="" >D:\TDPortal\Data\CycleData\old</property>
+	<property name="RoadRoutingEngine.BadCongestionDataPath" GID="" AID="" >D:\TDPortal\Data\CycleData\bad</property>
+	<property name="RoadRoutingEngine.TextGeneration.BearAngle" GID="" AID="" >45</property>
+	<property name="RoadRoutingEngine.TextGeneration.ContinueAngle" GID="" AID="" >20</property>
+	<property name="RoadRoutingEngine.TextGeneration.DualCarriageWayAngle" GID="" AID="" >90</property>
+	<property name="RoadRoutingEngine.TextGeneration.IncludeMultipleRoadNames" GID="" AID="" >false</property>
+	<property name="RoadRoutingEngine.TextGeneration.IncludeNoEntryMissedTurns" GID="" AID="" >false</property>
+	<property name="RoadRoutingEngine.TextGeneration.MiniRoundaboutBearAngle" GID="" AID="" >45</property>
+	<property name="RoadRoutingEngine.TextGeneration.MiniRoundaboutContinueAngle" GID="" AID="" >20</property>
+	<property name="RoadRoutingEngine.TextGeneration.MiniRoundaboutUturnAngle" GID="" AID="" >30</property>
+	<property name="RoadHost.NumThreads" GID="" AID="" >1</property>
+	<property name="RoadRoutingEngine.TextGeneration.UseThroughRoute" GID="" AID="" >False</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus0" GID="" AID="" >True</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus1" GID="" AID="" >True</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus2" GID="" AID="" >False</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus3" GID="" AID="" >True</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus4" GID="" AID="" >False</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus5" GID="" AID="" >True</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus6" GID="" AID="" >True</property>
+	<property name="RoadRoutingEngine.TextGeneration.SlipRoadAmbiguityStatus7" GID="" AID="" >True</property>
+	<property name="RoadRoutingEngine.TextGeneration.LeavingSignificantLinkAttributes" GID="" AID="" >4096</property>
+	<property name="RoadRoutingEngine.TextGeneration.JoiningSignificantLinkAttributes" GID="" AID="" >0</property>
+	<property name="RoadRoutingEngine.TextGeneration.InterestingLinkAttributes" GID="" AID="" >0</property>	
+	<property name="RoadRoutingEngine.TextGeneration.SignificantNodeAttributes" GID="" AID="" >0</property>	
+	<property name="RoadRoutingEngine.ActualFerrySpeed" GID="" AID="" >7</property>
+	<property name="RoadRoutingEngine.FerryWaitTime" GID="" AID="" >900</property>
+	<property name="RoadRoutingEngine.DefaultCongestion" GID="" AID="" >0.9</property>
+	<property name="RoadRoutingEngine.FastestLinkSpeedReduction" GID="" AID="" >8</property>
+	<property name="RoadRoutingEngine.ShortJourneyLength" GID="" AID="" >0</property>
+	<property name="RoadInterface.LogNarrative" GID="" AID="" >0,1,2</property>
+	<property name="RoadInterface.LogStartupNarrative" GID="" AID="" >True</property>
+	<property name="RoadRoutingEngine.LinkFuelDistanceAddition" GID="" AID="" >19</property> 
+	<property name="RoadRoutingEngine.AvoidRoadInflationFactor" GID="" AID="" >5</property>
+	<property name="RoadRoutingEngine.PreferredRoadDeflationFactor" GID="" AID="" >5</property>
+	<property name="RoadRoutingEngine.IncludeRoundaboutSlipAndTrafficIsland" GID="" AID="" >false</property>
+	<property name="RoadRoutingEngine.AvoidMotorwayFactor" GID="" AID="" >100</property>
+	<property name="RoadRoutingEngine.AvoidTollFactor" GID="" AID="" >100</property>
+	<property name="RoadRoutingEngine.AvoidFerryFactor" GID="" AID="" >100</property>
+	<property name="RoadRoutingEngine.PrivateRoadInflationFactor" GID="" AID="" >100</property> 
+	<property name="RoadRoutingEngine.PedestrianisedStreetInflationFactor" GID="" AID="" >100</property>
+	<property name="RoadRoutingEngine.NodeSearchDistance" GID="" AID="" >1000</property>
+
+	<!-- The following are the inflation factors used to inflate the fuel cost of
+		 a link that contains 'real' congestion speed data -->
+	<property name="RoadRoutingEngine.FuelCongestion10" GID="" AID="" >100</property>
+	<property name="RoadRoutingEngine.FuelCongestion20" GID="" AID="" >95</property>
+	<property name="RoadRoutingEngine.FuelCongestion30" GID="" AID="" >92</property>
+	<property name="RoadRoutingEngine.FuelCongestion40" GID="" AID="" >90</property>
+	<property name="RoadRoutingEngine.FuelCongestion50" GID="" AID="" >90</property>
+	<property name="RoadRoutingEngine.FuelCongestion60" GID="" AID="" >95</property>
+	<property name="RoadRoutingEngine.FuelCongestion70" GID="" AID="" >103</property>
+	<property name="RoadRoutingEngine.FuelCongestion80" GID="" AID="" >119</property>
+	<property name="RoadRoutingEngine.FuelCongestion90" GID="" AID="" >149</property>
+	<property name="RoadRoutingEngine.FuelCongestion100" GID="" AID="" >266</property>
+
+	<!-- The following are the inflation factors used to inflate the fuel cost of
+		 a link that contains NTM congestion speed data -->
+	<property name="RoadRoutingEngine.FuelNTM10" GID="" AID="" >100</property>
+	<property name="RoadRoutingEngine.FuelNTM20" GID="" AID="" >100</property>
+	<property name="RoadRoutingEngine.FuelNTM30" GID="" AID="" >104</property>
+	<property name="RoadRoutingEngine.FuelNTM40" GID="" AID="" >106</property>
+	<property name="RoadRoutingEngine.FuelNTM50" GID="" AID="" >111</property>
+	<property name="RoadRoutingEngine.FuelNTM60" GID="" AID="" >121</property>
+	<property name="RoadRoutingEngine.FuelNTM70" GID="" AID="" >129</property>
+	<property name="RoadRoutingEngine.FuelNTM80" GID="" AID="" >157</property>
+	<property name="RoadRoutingEngine.FuelNTM90" GID="" AID="" >214</property>
+	<property name="RoadRoutingEngine.FuelNTM100" GID="" AID="" >329</property>
+	
+
+	<!-- Make Cyclepath (0x00100000) and footpath (0x00080000) significant and interesting attributes-->
+	<property name="RoadRoutingEngine.TextGeneration.LeavingSignificantLinkAttributes0" GID="" AID="">1052672</property>
+	<property name="RoadRoutingEngine.TextGeneration.LeavingSignificantLinkAttributes1" GID="" AID="">327680</property>
+	<property name="RoadRoutingEngine.TextGeneration.LeavingSignificantLinkAttributes2" GID="" AID="">13272</property>
+	<property name="RoadRoutingEngine.TextGeneration.LeavingSignificantLinkAttributes3" GID="" AID="">15</property>
+
+	<property name="RoadRoutingEngine.TextGeneration.JoiningSignificantLinkAttributes0" GID="" AID="">1077411840</property>
+	<property name="RoadRoutingEngine.TextGeneration.JoiningSignificantLinkAttributes1" GID="" AID="">458752</property>
+	<property name="RoadRoutingEngine.TextGeneration.JoiningSignificantLinkAttributes2" GID="" AID="">13279</property>
+	<property name="RoadRoutingEngine.TextGeneration.JoiningSignificantLinkAttributes3" GID="" AID="">3145743</property>
+
+	<property name="RoadRoutingEngine.TextGeneration.InterestingLinkAttributes0" GID="" AID="">1077411840</property>
+	<property name="RoadRoutingEngine.TextGeneration.InterestingLinkAttributes1" GID="" AID="">4292892416</property>
+	<property name="RoadRoutingEngine.TextGeneration.InterestingLinkAttributes2" GID="" AID="">1431650328</property>
+	<property name="RoadRoutingEngine.TextGeneration.InterestingLinkAttributes3" GID="" AID="">3568</property>
+
+	<property name="RoadRoutingEngine.TextGeneration.SignificantNodeAttributes0" GID="" AID="">2</property>
+
+	<property name="RoadRoutingEngine.TextGeneration.GradientInterpolationAttributes0" GID="" AID="">0</property>
+	<property name="RoadRoutingEngine.TextGeneration.GradientInterpolationAttributes1" GID="" AID="">4216832</property>
+	<property name="RoadRoutingEngine.TextGeneration.GradientInterpolationAttributes2" GID="" AID="">0</property>
+	<property name="RoadRoutingEngine.TextGeneration.GradientInterpolationAttributes3" GID="" AID="">12582912</property>
+
+
+	<!-- Directions for user attributes 1..3 (0 is hard coded to ITN direction mask) -->
+	<property name="RoadRoutingEngine.DirectionMask1.AtoB" GID="" AID="">85</property>
+	<property name="RoadRoutingEngine.DirectionMask1.BtoA" GID="" AID="">170</property>
+	<property name="RoadRoutingEngine.DirectionMask2.AtoB" GID="" AID="">1431952000</property>
+	<property name="RoadRoutingEngine.DirectionMask2.BtoA" GID="" AID="">2863904000</property>
+	<property name="RoadRoutingEngine.DirectionMask3.AtoB" GID="" AID="">0</property>
+	<property name="RoadRoutingEngine.DirectionMask3.BtoA" GID="" AID="">0</property>
+
+	<!-- daylight configuration -->
+	<property name="RoadRoutingEngine.MaxDaylightEasting"  GID="" AID="">10000</property>	<!-- 10km -->
+	<property name="RoadRoutingEngine.MaxDaylightNorthing"  GID="" AID="">10000</property>
+	<property name="RoadRoutingEngine.DuskDawnSeconds"  GID="" AID="">1800</property>	<!-- 30 minutes -->
+
+
+	<!-- Ban links with these attributes in the search for the nearest link to the given coordinate-->
+	<property name="RoadRoutingEngine.LinksSearchBannedAttributes.0" GID="" AID="">65537</property>
+	<property name="RoadRoutingEngine.LinksSearchBannedAttributes.1" GID="" AID="">4096</property>
+	<property name="RoadRoutingEngine.LinksSearchBannedAttributes.2" GID="" AID="">32</property>
+	<property name="RoadRoutingEngine.LinksSearchBannedAttributes.3" GID="" AID="">0</property>
+
+
+
+
+ </lookup>

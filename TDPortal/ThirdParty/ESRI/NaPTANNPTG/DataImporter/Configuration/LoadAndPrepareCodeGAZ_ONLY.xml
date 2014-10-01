@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DataImporter>
+	<LogModule path="DataImporter.exe" name="ESRI.DataImporter.ScreenLog">
+		<Settings Path = "logfiles\importnatpan.log"/>
+	</LogModule>
+<!-- This code gaz prepare must be the last one -->
+		<!-- CodeGazPrepareModule -->
+		<PrepareDataModule path="modules/CodeGazPrepareModule.dll" name="CodeGazPrepareModule.CodeGazPrepare">
+			<Settings>
+				<Database 
+					integratedSecurity="False"
+					serverName="D03"
+					userName="gazadmin"
+					password="Wh1t34lbum!"
+					databaseName="GAZ_Staging"
+					dataFile="GAZ_DATA"
+					indexFile="GAZ_INDEX"
+					codegaztable="CodeGaz"
+					nullSMScode="not_set"
+					dictionarybuildlog="logfiles\dat55.log"
+				/>
+			</Settings>
+		</PrepareDataModule>
+	<!-- END OF CodeGazPrepareModule -->
+	
+</DataImporter>
