@@ -1,0 +1,1 @@
+GIQ60.dll and GIQ60.dat were obtained from http://www.qgsl.com/?product=gridinquest

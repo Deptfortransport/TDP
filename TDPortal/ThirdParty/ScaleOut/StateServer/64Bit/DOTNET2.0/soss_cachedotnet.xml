@@ -1,0 +1,2073 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>soss_cachedotnet</name>
+    </assembly>
+    <members>
+        <member name="T:Soss.Client.CachedObjectDisposition">
+            <summary>
+            An enumeration used to indicate to the cache whether to save or remove an object upon return from a <see cref="E:Soss.Client.CachedDataAccessor.CachedObjExpired"/> event handler.
+            </summary>
+        </member>
+        <member name="F:Soss.Client.CachedObjectDisposition.Save">
+            <summary>
+            The client would like to keep the object in the store.
+            </summary>
+        </member>
+        <member name="F:Soss.Client.CachedObjectDisposition.Remove">
+            <summary>
+            The client would like the object removed from the store. 
+            </summary>
+        </member>
+        <member name="T:Soss.Client.CachedObjectEventCode">
+            <summary>
+            An enumeration containing the event codes providing the reason an event was fired. 
+            </summary>
+        </member>
+        <member name="F:Soss.Client.CachedObjectEventCode.LowMemory">
+            <summary>
+            A preemptable object was removed from memory due to a low memory condition.
+            </summary>
+        </member>
+        <member name="F:Soss.Client.CachedObjectEventCode.ObjectTimeout">
+            <summary>
+            An object's timeout expired. 
+            </summary>
+        </member>
+        <member name="F:Soss.Client.CachedObjectEventCode.Dependency">
+            <summary>
+            An object is being removed due to a dependency change.
+            </summary>
+        </member>
+        <member name="T:Soss.Client.CachedObjExpiredEventArgs">
+            <summary>
+            An EventArgs subclass that contains information specific to event handlers handling cached object expiration events.
+            </summary>
+            <remarks>
+            Object expiration event handlers may indicate to the shared cache that an expired object should not be deleted by setting <see cref="P:Soss.Client.CachedObjExpiredEventArgs.CachedObjectDisposition"/> to Save.
+            </remarks>
+        </member>
+        <member name="P:Soss.Client.CachedObjExpiredEventArgs.CachedDataAccessor">
+            <summary>
+            Returns a CachedDataAccessor suitable for manipulating the expiring cached object.
+            </summary>
+        </member>
+        <member name="P:Soss.Client.CachedObjExpiredEventArgs.CachedObjectDisposition">
+            <summary>
+            Gets or sets a value indicating what the cache should do with the object after the event handler runs. 
+            </summary>
+        </member>
+        <member name="P:Soss.Client.CachedObjExpiredEventArgs.AppId">
+            <summary>
+            Gets the Application ID corresponding to the affected cached object. 
+            </summary>
+        </member>
+        <member name="P:Soss.Client.CachedObjExpiredEventArgs.Key">
+            <summary>
+            Returns the StateServerKey structure used by StateServer to identify the expiring cached object.
+            </summary>
+        </member>
+        <member name="P:Soss.Client.CachedObjExpiredEventArgs.CachedObjectEventCode">
+            <summary>
+            Returns the reason the event was fired.
+            </summary>
+        </member>
+        <member name="T:Soss.Client.StringResources">
+             <summary>
+             A strongly-typed means of looking up resource names. 
+             </summary>
+             <remarks>
+             This is similar to the
+             approach taken in Whidbey.
+             <para>
+            	I use the following VisualStudio macro to find the names of the resources in
+            	the corresponding .resx file and generate the corresponding property to look
+            	up the name in the resource and return the corresponding string.
+             <code>
+            	Imports EnvDTE
+            	Imports System.Diagnostics
+            	Imports System.IO
+            	Imports System.Resources
+            	Imports System.Collections
+            
+            	Public Module ResxNameToProperty
+            		' uses the name of the current file to figure out the name of the
+            		' resx file.
+            
+            		Public Sub GenProperties()
+            			Dim modulePath As String = DTE.ActiveDocument.FullName
+            			Dim resxName As String = Path.ChangeExtension(modulePath, ".resx")
+            
+            			Dim reader As ResXResourceReader = New ResXResourceReader(resxName)
+            			Dim sel As TextSelection = DTE.ActiveDocument.Selection()
+            			sel.Delete()
+            			Dim de As DictionaryEntry
+            			For Each de In reader
+            				Dim propDeclaration As String
+            				propDeclaration = vbTab + vbTab + "public static string " + de.Key + " { get { return GetString(""" + de.Key + """); } }" + vbNewLine
+            				sel.TopPoint.CreateEditPoint.Insert(propDeclaration)
+            			Next
+            		End Sub
+            	End Module
+             </code>
+             </para>
+             </remarks>
+        </member>
+        <member name="T:Soss.Client.CachedDataAccessorException">
+            <summary>
+            Base exception class for the CachedDataAccessor module.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessorException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessorException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CachedDataAccessorException class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the CachedDataAccessorException class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message string.</param>
+            <param name="inner">The inner exception reference.</param>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CachedDataAccessorException class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Soss.Client.CachedObjectLockedException">
+            <summary>
+            An exception that is thrown when an CachedDataAccessor operation is attempted on an object that is locked 
+            by another client or another instance of the CachedDataAccessor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectLockedException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectLockedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CachedObjectLockedException class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectLockedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the CachedObjectLockedException class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message string.</param>
+            <param name="inner">The inner exception reference.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectLockedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CachedObjectLockedException class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Soss.Client.CachedObjectNotLockedException">
+            <summary>
+            An exception that is thrown during an Update or Remove operation when the CachedDataAccessor does
+            not have a lock on the cached object.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotLockedException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotLockedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CachedObjectNotLockedException class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotLockedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the CachedObjectNotLockedException class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message string.</param>
+            <param name="inner">The inner exception reference.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotLockedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CachedObjectNotLockedException class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Soss.Client.CachedObjectNotFoundException">
+            <summary>
+            An exception that is thrown when an operation is performed on an object that does not
+            exist in the cache.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotFoundException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CachedObjectNotFoundException class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the CachedObjectNotFoundException class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message string.</param>
+            <param name="inner">The inner exception reference.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CachedObjectNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Soss.Client.CachedObjectAlreadyExistsException">
+            <summary>
+            An exception that is thrown when an object that already exists is added to the cache.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectAlreadyExistsException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedObjectAlreadyExistsException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CachedObjectAlreadyExistsException class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectAlreadyExistsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the CachedObjectAlreadyExistsException class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message string.</param>
+            <param name="inner">The inner exception reference.</param>
+        </member>
+        <member name="M:Soss.Client.CachedObjectAlreadyExistsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CachedObjectAlreadyExistsException class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Soss.Client.CacheAccessNotLicensedException">
+            <summary>
+            An exception that is thrown when an application uses the CachedDataAccessor in a manner that is not permitted by the user's license with ScaleOut Software.
+            </summary>
+            <remarks>
+            This error could be occur if the server is licensed to run only as a SessionServer. It could also occur if an unlicensed remote client attempts to access the store.
+            </remarks>
+        </member>
+        <member name="M:Soss.Client.CacheAccessNotLicensedException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CacheAccessNotLicensedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CacheAccessNotLicensedException class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Soss.Client.CacheAccessNotLicensedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the CacheAccessNotLicensedException class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message string.</param>
+            <param name="inner">The inner exception reference.</param>
+        </member>
+        <member name="M:Soss.Client.CacheAccessNotLicensedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CacheAccessNotLicensedException class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Soss.Client.StateServerUnavailableException">
+            <summary>
+            An exception that is thrown when an unexpected error occurs while accessing ScaleOut StateServer.
+            </summary>
+            <remarks>
+            This exception may be returned if the ScaleOut StateServer service is not running or joined to an 
+            object store. It may also be thrown if an internal error has occurred that prevents the ScaleOut 
+            StateServer service from handling a request (for example, the service may be running low on memory, 
+            may be experiencing networking interruptions, or may be otherwise unable to complete an operation). 
+            Examining the InnerException will offer more insight into the exact nature of the error.
+            </remarks>
+        </member>
+        <member name="M:Soss.Client.StateServerUnavailableException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.StateServerUnavailableException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the StateServerUnavailableException class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Soss.Client.StateServerUnavailableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the StateServerUnavailableException class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message string.</param>
+            <param name="inner">The inner exception reference.</param>
+        </member>
+        <member name="M:Soss.Client.StateServerUnavailableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the StateServerUnavailableException class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Soss.Client.GuidKeyDataAccessor">
+            <summary>
+            Specialization of the DataAccessor that allows for Guid keys that have AppId support.
+            </summary>
+        </member>
+        <member name="T:Soss.Client.StringKeyDataAccessor">
+            <summary>
+            Specialization of the DataAccessor that allows for string keys of arbitrary length.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.StringKeyDataAccessor.#ctor(System.String,System.Boolean)">
+            <summary>
+            Create a new StringKeyDataAccessor instance to access the StateServer object identified by the provided string value.
+            </summary>
+            <param name="key">String key associated with the stored object.</param>
+            <param name="lockWhenReading">Indicates whether this StringKeyDataAccessor will attempt to set a per-object lock on the StateServer when performing Read operations.</param>
+        </member>
+        <member name="M:Soss.Client.StringKeyDataAccessor.#ctor(System.String,System.UInt32,System.Boolean)">
+            <summary>
+            Create a new StringKeyDataAccessor instance to access the StateServer object identified by the provided string and application values.
+            </summary>
+            <param name="key">String key associated with the stored object.</param>
+            <param name="appId">ID of the application to which the object belongs.</param>
+            <param name="lockWhenReading">Indicates whether this StringKeyDataAccessor will attempt to set a per-object lock on the StateServer when performing Read operations.</param>
+        </member>
+        <member name="M:Soss.Client.StringKeyDataAccessor.GenerateKey(System.String)">
+            <summary>
+            Creates a key using an an aribtrary-length string.
+            </summary>
+            <param name="key">String to convert.</param>
+            <returns>Instance of a StateServerKey.</returns>
+        </member>
+        <member name="M:Soss.Client.StringKeyDataAccessor.GenerateKey(System.String,System.UInt32)">
+            <summary>
+            Creates a key using a string and an application ID.
+            </summary>
+            <param name="key">String to use as key.</param>
+            <param name="appId">Application identifier.</param>
+            <returns>Instance of a StateServerKey.</returns>
+        </member>
+        <member name="M:Soss.Client.StringKeyDataAccessor.HashString(System.String)">
+            <summary>
+            Hashes an arbitrary-length string into a 128-bit byte array. Uses MD5.
+            </summary>
+            <param name="key">String to hash.</param>
+            <returns>Byte array.</returns>
+        </member>
+        <member name="T:Soss.Client.ByteKeyDataAccessor">
+            <summary>
+            Specialization of the DataAccessor that allows for byte array keys with AppId support.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.ByteKeyDataAccessor.#ctor(System.Byte[],System.Boolean)">
+            <summary>
+            Create a new ByteKeyDataAccessor instance to access the StateServer object identified by the provided string value.
+            </summary>
+            <param name="key">Byte array associated with the stored object.</param>
+            <param name="lockWhenReading">Indicates whether this StringKeyDataAccessor will attempt to set a per-object lock on the StateServer when performing Read operations.</param>
+        </member>
+        <member name="M:Soss.Client.ByteKeyDataAccessor.#ctor(System.Byte[],System.UInt32,System.Boolean)">
+            <summary>
+            Create a new ByteKeyDataAccessor instance to access the StateServer object identified by the provided string value.
+            </summary>
+            <param name="key">Byte array associated with the stored object.</param>
+            <param name="appId">ID of the application to which the object belongs.</param>
+            <param name="lockWhenReading">Indicates whether this StringKeyDataAccessor will attempt to set a per-object lock on the StateServer when performing Read operations.</param>
+        </member>
+        <member name="T:Soss.Client.StateServerKeyDataAccessor">
+            <summary>
+            Specialization of the DataAccessor that allows for construction of a DataAccessor using a StateServerKey.
+            (It's protected in the base DataAccessor class, so we're just using this to open it up).
+            </summary>
+        </member>
+        <member name="T:Soss.Client.CachedObjExpiredEventHandler">
+            <summary>
+            Delegate used by the CachedObjectExpired event.
+            </summary>
+        </member>
+        <member name="T:Soss.Client.CachedObjectPriority">
+            <summary>
+            Indicates the priority of keeping an object in the cache. Currently, only two priorities are defined, NotRemovable and Normal. Removable objects are removed from memory when memory runs low based on a least recently used algorithm.
+            </summary>
+        </member>
+        <member name="F:Soss.Client.CachedObjectPriority.Normal">
+            <summary>
+            The associated object is a candidate for removal if memory pressure warrants.
+            </summary>
+        </member>
+        <member name="F:Soss.Client.CachedObjectPriority.NotRemovable">
+            <summary>
+            The associated object must remain in memory until its absolute or sliding expiration is reached.
+            </summary>
+        </member>
+        <member name="T:Soss.Client.CachedDataAccessor">
+             <summary>
+             Provides access to an object that can be shared globally across multiple clients.
+             </summary>
+             <remarks>
+             <para>
+             The CachedDataAccessor class provides a simple, high-level API suitable for
+             sharing an object across multiple client machines and/or applications. The
+             CachedDataAccessor automatically manages issues that arise in developing
+             distributed systems: it will automatically perform retries when trying to
+             acquire a lock on a shared object, and its <see cref="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[],System.Boolean,System.Boolean)"/> method can automatically perform
+             an update if the shared object was already created by a different client. 
+             In contrast, the lower-level DataAccessor class (located in the soss_svcdotnet.dll 
+             assembly) requires that the developer explicitly handle the locking and 
+             concurrency semantics in both of these scenarios.
+             </para><para>
+             A number of advanced caching features are available through the CachedDataAccessor class. 
+             When adding an object to the cache, the duration of the timeout can be specified, as well the 
+             timeout's behavior (sliding vs. absolute). Dependencies between objects can also be defined, 
+             allowing a dependent object to be automatically removed when one of its parent objects is updated or removed.
+             </para><para>
+             ScaleOut StateServer allows an object to be locked across every server in the farm. 
+             This ensures that other clients do not alter the object while the lock is being held -- the 
+             client that is holding the lock is thus guaranteed that the object that it read at the time 
+             of the lock's acquisition will not be changed by another client until the lock is released (either 
+             by performing an <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>, or <see cref="M:Soss.Client.CachedDataAccessor.ReleaseLock"/> operation). 
+             Other clients can read the object through a call to <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(false) while the lock is 
+             being held, but they will not be able to acquire a lock of their own or alter the object in any way.
+             </para><para>
+             Every object in the cache can have up to 8 index values associated with it. Users are 
+             responsible for setting and managing these index values using the <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/> method, 
+             and, once set, these index values can be queried for using the <see cref="M:Soss.Client.CachedDataAccessor.Query(Soss.Client.IndexCollection)"/> method. 
+             The result of a <see cref="M:Soss.Client.CachedDataAccessor.Query(Soss.Client.IndexCollection)"/> operation is a collection of keys that can be used to 
+             access the matching objects in the cache.
+             </para><para>
+             Under low-memory situations, ScaleOut StateServer can be configured to remove the least 
+             frequently used objects from the shared cache in order to free up room for newer ones. By 
+             default, all objects in the cache are subject to this reclamation, but this behavior can be 
+             overridden by setting the object's priority when the object is first added to the cache (see 
+             the <c>priority</c> parameter in <see cref="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[],System.Boolean,System.Boolean)"/>). See the "Configuration Parameters" topic in 
+             the SOSS help file for details on how to enable object reclamation in the server with the <c>lru_threshold</c> parameter.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using System.Data;
+             using System.Data.SqlClient;
+             using System.Web;
+             using Soss.Client;
+            
+            	namespace Stocks
+             {
+             	// This page displays the most active stocks that are stored in a database.
+             	public class MostActive : System.Web.UI.Page
+             	{
+             		protected System.Web.UI.WebControls.DataGrid grdMostActive;
+             		private static string _cacheKey = "Active Stocks";
+             		private const int ACTIVE_COUNT = 10;
+             		private const int CACHE_TIMEOUT = 1;
+             
+             		private void Page_Load(object sender, System.EventArgs e)
+             		{
+             			DataSet mostActive = null;
+            
+            				// Getting the stock data from the DB is expensive, so we check to 
+             			// see if it's in the cache already:
+             			CachedDataAccessor cda = new CachedDataAccessor(_cacheKey);
+             			mostActive = cda.Retrieve(false) as DataSet;
+             			if (mostActive == null)
+             			{
+             				// The stock data wasn't in the cache; retrieve it from the DB
+             				// and then add it to the cache for subsequent requests:
+             				mostActive = GetMostActiveFromDB(ACTIVE_COUNT);
+             				cda.Add(mostActive, CACHE_TIMEOUT, true);
+             			}
+            
+            				grdMostActive.DataSource = mostActive;
+             			grdMostActive.DataBind();
+             		}
+            
+             		private DataSet GetMostActiveFromDB(int count)
+             		{
+             			string sQuery = @"SELECT TOP {0} Companies.TickerSymbol, FullName, LatestPrice, Volume 
+             						  FROM Companies, LatestPrices 
+             						  WHERE Companies.TickerSymbol = LatestPrices.TickerSymbol 
+             						  ORDER BY Volume DESC";
+             			string sConn = "Server=localhost;Database=Stocks;User ID=sa;Password=password";
+            
+            				SqlConnection conn = new SqlConnection(sConn);
+             			SqlCommand myCommand = new SqlCommand(string.Format(sQuery, count), conn);
+             			myCommand.CommandType = CommandType.Text;
+             			SqlDataAdapter adapter = new SqlDataAdapter();
+             			adapter.SelectCommand = myCommand;	
+             	
+             			DataSet mostActive = new DataSet("Actives");
+             			adapter.Fill(mostActive);
+             			return mostActive;
+             		}
+            
+            			override protected void OnInit(EventArgs e)
+             		{
+             			InitializeComponent();
+             			base.OnInit(e);
+             		}
+             	
+             		private void InitializeComponent()
+             		{    
+             			this.Load += new System.EventHandler(this.Page_Load);
+             		}
+            
+             	}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="F:Soss.Client.CachedDataAccessor.SOSSLIB_MAX_APP_ID">
+            <summary>
+            Maximum value allowed for an object's application ID. Originally defined in storlib.h.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="F:Soss.Client.CachedDataAccessor.MGTI_APPID_SPACE_MASK">
+            <summary>
+            SOSS application ID space mask. Passing this value with a query operation will cause the query to search all applications.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="F:Soss.Client.CachedDataAccessor.ADD_RETRY_COUNT">
+            <summary>
+            Maximum number of times the Add method tries to add or update an object.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="F:Soss.Client.CachedDataAccessor._MaxLockAttempts">
+            <summary>
+            Number of times to retry acquiring a lock.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="F:Soss.Client.CachedDataAccessor._SleepInterval">
+            <summary>
+            Milliseconds to wait between attempts to acquire a lock.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="F:Soss.Client.CachedDataAccessor._dataAccessor">
+            <summary>
+            DataAccessor used to access the StateServer store.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="F:Soss.Client.CachedDataAccessor._StoreKey">
+            <summary>
+            Key to the object stored in the cache. Used in exception text.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(Soss.Client.StateServerKey)">
+             <summary>
+             Creates a new CachedDataAccessor instance to access the cached object identified by the provided <see cref="T:Soss.Client.StateServerKey"/>.
+             </summary>
+             <remarks>
+             This constructor is typically used in conjunction with the <see cref="M:Soss.Client.CachedDataAccessor.Query(Soss.Client.IndexCollection)"/> method when enumerating through the results of a query operation.
+             </remarks>
+             <example>
+             <code>
+             // Perform a query:
+             IndexCollection querySpec = new IndexCollection();
+             querySpec[0] = new IndexValue("Index value 1");
+             QueryResult result = CachedDataAccessor.Query(querySpec);
+            
+             // Enumerate through the query results, accessing each object with a new CDA:
+             foreach (StateServerKey key in result)
+             {
+            		CachedDataAccessor cda = new CachedDataAccessor(key);
+            		Console.WriteLine(cda.Retrieve(false));
+            	}
+             </code>
+             </example>
+             <param name="key">The <see cref="T:Soss.Client.StateServerKey"/> associated with the object in the cache.</param>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(System.Guid)">
+            <summary>
+            Creates a new CachedDataAccessor instance to access the cached object identified by the provided unique identifier value.
+            </summary>
+            <param name="key">The GUID associated with the object in the cache.</param>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(System.Guid,System.UInt32)">
+            <summary>
+            Creates a new CachedDataAccessor instance to access the cached object identified by the provided unique identifier value. 
+            This object is associated with a specified application.
+            </summary>
+            <param name="key">The GUID associated with the object in the cache.</param>
+            <param name="appId">An application identifier obtained from <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/>.</param>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(System.String)">
+            <summary>
+            Creates a new CachedDataAccessor instance to access the cached object identified by the provided string value.
+            </summary>
+            <remarks>
+            Strings passed into this constructor are hashed into 128-bit keys using the MD5 hash algorithm.
+            </remarks>
+            <param name="key">The string associated with the object in the cache.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="key"/> is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="key"/> is zero-length.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(System.String,System.UInt32)">
+            <summary>
+            Creates a new CachedDataAccessor instance to access the cached object identified by the provided string value. 
+            This object is associated with a specified application.
+            </summary>
+            <remarks>
+            Strings passed into this constructor are hashed into 128-bit keys using the MD5 hash algorithm.
+            </remarks>
+            <param name="key">The string associated with the object in the cache.</param>
+            <param name="appId">An application identifier obtained from <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="key"/> is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="key"/> is zero-length.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(System.Byte[])">
+            <summary>
+            Creates a new CachedDataAccessor instance to access the cached object identified by the provided byte array.
+            </summary>
+            <param name="key">A 16- or 32-byte key value.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="key"/> is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="key"/> is not 16 or 32 bytes long.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(System.Byte[],System.UInt32)">
+            <summary>
+            Creates a new CachedDataAccessor instance to access the cached object identified by the provided byte array. 
+            This object is associated with a specified application.
+            </summary>
+            <param name="key">&gt;A 16- or 32-byte key value</param>
+            <param name="appId">An application identifier obtained from <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="key"/> is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="key"/> is not 16 or 32 bytes long.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.#ctor(Soss.Client.DataAccessor)">
+            <summary>
+            Creates a new CachedDataAccessor instance to access a cached object through the provided DataAccessor instance.
+            </summary>
+            <param name="da">The underlying Soss.Client.DataAccessor object used to access the cached object.</param>
+            <remarks>
+            This constructor specifies the underlying DataAccessor instance that the CachedDataAccessor will use to access an object in the cache. 
+            The DataAccessor is an advanced, low-level API that is located in soss_svcdotnet.dll, and it should only be used under rare situations 
+            under the guidance of the ScaleOut Software support team.
+            </remarks>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.TimeSpan,System.Boolean,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[],System.Boolean,System.Boolean,System.Boolean)">
+             <summary>
+             Adds a serializable object to the shared cache.
+             </summary>
+             <param name="objectToAdd">Serializable object to add to the shared cache. The argument cannot be null.</param>
+             <param name="timeout">The lifetime of the object in the store, with a minumum granularity of one second. Must be less than or equal to 4,194,303 seconds. A value of <see cref="F:System.TimeSpan.Zero"/> indicates an infinite timeout. Use the <paramref name="isAbsoluteTimeout"/> parameter to determine the object's expiration behavior (sliding vs. absolute timeout).</param>
+             <param name="updateIfExists">Determines behavior if the object already exists in the cache. If true, the object will be updated; if false, a <see cref="T:Soss.Client.CachedObjectAlreadyExistsException"/> will be thrown if the object already exists.</param>
+             <param name="isAbsoluteTimeout">If true, the object's expiration will be not reset after a read or update operation.</param>
+             <param name="priority">Indicates the priority of keeping the object in the cache during low-memory situations. Removable objects are removed from memory when memory runs low based on a least recently used algorithm.</param>
+             <param name="dependencies">Keys to objects on which the object being added depends. Items in the array must be of type string, byte[], Guid, or StateServerKey (defined in the soss_svcdotnet assembly). An object can be dependent upon a limited number of objects, defined by the <see cref="P:Soss.Client.CachedDataAccessor.MaxDependencies"/> property. Keys to parents that do not exist in the store will be ignored.</param>
+             <param name="allowReplication">Indicates whether the object to be added to the cache will be subject to GeoServer cross-store replication.</param>
+             <param name="lockAfterCreate">Allows the cached object to be locked immediately after it has been created, preventing other clients from modifying the object. This is useful if a call needs to be made to <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/> immediately after the object has been created.</param>
+             <param name="isAbsoluteTimeoutOnRead">If true, this property indicates that the object's timeout should not be reset when a read is performed, but it will be reset if an update is performed. If false, both reads and updates will cause the timeout to be reset. This parameter is overridden if <paramref name="isAbsoluteTimeout"/> is true.</param>
+             <exception cref="T:System.ArgumentException">Thrown if <paramref name="objectToAdd"/> is null, <paramref name="timeout"/> is negative or greater than 4,194,303 seconds, or items in the dependencies array are null or an invalid type.</exception>
+             <exception cref="T:Soss.Client.CachedObjectAlreadyExistsException">Thrown if an object associated with the same key already exists in the the shared cache and <paramref name="updateIfExists"/> is set to false.</exception>
+             <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+             <remarks>
+             <para>
+             Objects added to the cache with a priority of <see cref="F:Soss.Client.CachedObjectPriority.Normal"/> will only be removed under 
+             low memory situations if LRU functionality is enabled in StateServer. 
+             Edit the soss_params.txt file in the StateServer installation directory to enable this feature: the lru_threshold parameter 
+             should be set to a percentage of the max_memory parameter. Eligible objects will be deleted using a least recently used 
+             algorithm once memory usage has passed the threshold.
+             </para><para>
+             An object is currently limited to having two parent objects on which it can depend. Dependencies can only be established when an object is first added to the store; 
+             if <paramref name="updateIfExists"/> is <c>true</c> and the Add method performs an update on an existing object then the <paramref name="dependencies"/> parameter 
+             will be ignored and the object's dependency relationships will be unchanged. An object must be removed and re-added to the store for its dependency relationships 
+             to change.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             // Add an object to the cache:
+             CachedDataAccessor cdaParent = new CachedDataAccessor("parent key");
+             cdaParent.Add("I'm the parent object.", TimeSpan.FromMinutes(20), false);
+            
+             // Add a dependent object to the cache:
+             CachedDataAccessor cdaChild = new CachedDataAccessor("child key");
+             cdaChild.Add("I'm the child object.", TimeSpan.FromMinutes(20), false, true, CachedObjectPriority.NotRemovable, new object[] {"parent key"});
+            
+             // Remove the parent object and confirm that the dependent object also gets removed:
+             cdaParent.Remove();
+             Debug.Assert(cdaChild.Retrieve(false) == null);
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.GenerateCreateInfo(System.TimeSpan,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[],System.Boolean,System.Boolean)">
+            <summary>
+            Generates a CreateInfo struct for use with DataAccessor.Create()'s extended facilities (dependencies, priority, abs timeout).
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[],System.Boolean,System.Boolean,System.Boolean)">
+             <summary>
+             Adds a serializable object to the shared cache.
+             </summary>
+             <param name="objectToAdd">Serializable object to add to the shared cache. The argument cannot be null.</param>
+             <param name="timeoutMinutes">The lifetime of the object in the store. Must be less than or equal to 65535. A value of 0 indicates an infinite timeout. Use the <paramref name="isAbsoluteTimeout"/> parameter to determine the object's expiration behavior (sliding vs. absolute timeout).</param>
+             <param name="updateIfExists">Determines behavior if the object already exists in the cache. If true, the object will be updated; if false, a <see cref="T:Soss.Client.CachedObjectAlreadyExistsException"/> will be thrown if the object already exists.</param>
+             <param name="isAbsoluteTimeout">If true, the object's expiration will be not reset after a read or update operation.</param>
+             <param name="priority">Indicates the priority of keeping the object in the cache during low-memory situations. Removable objects are removed from memory when memory runs low based on a least recently used algorithm.</param>
+             <param name="dependencies">Keys to objects on which the object being added depends. Items in the array must be of type string, byte[], Guid, or StateServerKey (defined in the soss_svcdotnet assembly). An object can be dependent upon a limited number of objects, defined by the <see cref="P:Soss.Client.CachedDataAccessor.MaxDependencies"/> property. Keys to parents that do not exist in the store will be ignored.</param>
+             <param name="allowReplication">Indicates whether the object to be added to the cache will be subject to GeoServer cross-store replication.</param>
+             <param name="lockAfterCreate">Allows the cached object to be locked immediately after it has been created, preventing other clients from modifying the object. This is useful if a call needs to be made to <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/> immediately after the object has been created.</param>
+             <param name="isAbsoluteTimeoutOnRead">If true, this property indicates that the object's timeout should not be reset when a read is performed, but it will be reset if an update is performed. If false, both reads and updates will cause the timeout to be reset. This parameter is overridden if <paramref name="isAbsoluteTimeout"/> is true.</param>
+             <exception cref="T:System.ArgumentException">Thrown if <paramref name="objectToAdd"/> is null, <paramref name="timeoutMinutes"/> is negative or greater than 65535, or items in the dependencies array are null or an invalid type, </exception>
+             <exception cref="T:Soss.Client.CachedObjectAlreadyExistsException">Thrown if an object associated with the same key already exists in the the shared cache and <paramref name="updateIfExists"/> is set to false.</exception>
+             <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+             <remarks>
+             <para>
+             Objects added to the cache with a priority of <see cref="F:Soss.Client.CachedObjectPriority.Normal"/> will only be removed under 
+             low memory situations if LRU functionality is enabled in StateServer. 
+             Edit the soss_params.txt file in the StateServer installation directory to enable this feature: the lru_threshold parameter 
+             should be set to a percentage of the max_memory parameter. Eligible objects will be deleted using a least recently used 
+             algorithm once memory usage has passed the threshold.
+             </para><para>
+             An object is currently limited to having two parent objects on which it can depend. Dependencies can only be established when an object is first added to the store; 
+             if <paramref name="updateIfExists"/> is <c>true</c> and the Add method performs an update on an existing object then the <paramref name="dependencies"/> parameter 
+             will be ignored and the object's dependency relationships will be unchanged. An object must be removed and re-added to the store for its dependency relationships 
+             to change.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             // Add an object to the cache:
+             CachedDataAccessor cdaParent = new CachedDataAccessor("parent key");
+             cdaParent.Add("I'm the parent object.", 0, false);
+            
+             // Add a dependent object to the cache:
+             CachedDataAccessor cdaChild = new CachedDataAccessor("child key");
+             cdaChild.Add("I'm the child object.", 0, false, true, CachedObjectPriority.NotRemovable, new object[] {"parent key"});
+            
+             // Remove the parent object and confirm that the dependent object also gets removed:
+             cdaParent.Remove();
+             Debug.Assert(cdaChild.Retrieve(false) == null);
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[],System.Boolean,System.Boolean)">
+             <summary>
+             Adds a serializable object to the shared cache.
+             </summary>
+             <param name="objectToAdd">Serializable object to add to the shared cache. The argument cannot be null.</param>
+             <param name="timeoutMinutes">The lifetime of the object in the store. Must be less than or equal to 65535. A value of 0 indicates an infinite timeout. Use the <paramref name="isAbsoluteTimeout"/> parameter to determine the object's expiration behavior (sliding vs. absolute timeout).</param>
+             <param name="updateIfExists">Determines behavior if the object already exists in the cache. If true, the object will be updated; if false, a <see cref="T:Soss.Client.CachedObjectAlreadyExistsException"/> will be thrown if the object already exists.</param>
+             <param name="isAbsoluteTimeout">If true, the object's expiration will be not reset after a read or update operation.</param>
+             <param name="priority">Indicates the priority of keeping the object in the cache during low-memory situations. Removable objects are removed from memory when memory runs low based on a least recently used algorithm.</param>
+             <param name="dependencies">Keys to objects on which the object being added depends. Items in the array must be of type string, byte[], Guid, or StateServerKey (defined in the soss_svcdotnet assembly). An object can be dependent upon a limited number of objects, defined by the <see cref="P:Soss.Client.CachedDataAccessor.MaxDependencies"/> property. Keys to parents that do not exist in the store will be ignored.</param>
+             <param name="allowReplication">Indicates whether the object to be added to the cache will be subject to GeoServer cross-store replication.</param>
+             <param name="lockAfterCreate">Allows the cached object to be locked immediately after it has been created, preventing other clients from modifying the object. This is useful if a call needs to be made to <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/> immediately after the object has been created.</param>
+             <exception cref="T:System.ArgumentException">Thrown if <paramref name="objectToAdd"/> is null, <paramref name="timeoutMinutes"/> is negative or greater than 65535, or items in the dependencies array are null or an invalid type, </exception>
+             <exception cref="T:Soss.Client.CachedObjectAlreadyExistsException">Thrown if an object associated with the same key already exists in the the shared cache and <paramref name="updateIfExists"/> is set to false.</exception>
+             <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+             <remarks>
+             <para>
+             Objects added to the cache with a priority of <see cref="F:Soss.Client.CachedObjectPriority.Normal"/> will only be removed under 
+             low memory situations if LRU functionality is enabled in StateServer. 
+             Edit the soss_params.txt file in the StateServer installation directory to enable this feature: the lru_threshold parameter 
+             should be set to a percentage of the max_memory parameter. Eligible objects will be deleted using a least recently used 
+             algorithm once memory usage has passed the threshold.
+             </para><para>
+             An object is currently limited to having two parent objects on which it can depend. Dependencies can only be established when an object is first added to the store; 
+             if <paramref name="updateIfExists"/> is <c>true</c> and the Add method performs an update on an existing object then the <paramref name="dependencies"/> parameter 
+             will be ignored and the object's dependency relationships will be unchanged. An object must be removed and re-added to the store for its dependency relationships 
+             to change.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             // Add an object to the cache:
+             CachedDataAccessor cdaParent = new CachedDataAccessor("parent key");
+             cdaParent.Add("I'm the parent object.", 0, false);
+            
+             // Add a dependent object to the cache:
+             CachedDataAccessor cdaChild = new CachedDataAccessor("child key");
+             cdaChild.Add("I'm the child object.", 0, false, true, CachedObjectPriority.NotRemovable, new object[] {"parent key"});
+            
+             // Remove the parent object and confirm that the dependent object also gets removed:
+             cdaParent.Remove();
+             Debug.Assert(cdaChild.Retrieve(false) == null);
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[],System.Boolean)">
+             <summary>
+             Adds a serializable object to the shared cache.
+             </summary>
+             <param name="objectToAdd">Serializable object to add to the shared cache. The argument cannot be null.</param>
+             <param name="timeoutMinutes">The lifetime of the object in the store. Must be less than or equal to 65535. A value of 0 indicates an infinite timeout. Use the <paramref name="isAbsoluteTimeout"/> parameter to determine the object's expiration behavior (sliding vs. absolute timeout).</param>
+             <param name="updateIfExists">Determines behavior if the object already exists in the cache. If true, the object will be updated; if false, a <see cref="T:Soss.Client.CachedObjectAlreadyExistsException"/> will be thrown if the object already exists.</param>
+             <param name="isAbsoluteTimeout">If true, the object's expiration will be not reset after a read or update operation.</param>
+             <param name="priority">Indicates the priority of keeping the object in the cache during low-memory situations. Removable objects are removed from memory when memory runs low based on a least recently used algorithm.</param>
+             <param name="dependencies">Keys to objects on which the object being added depends. Items in the array must be of type string, byte[], Guid, or StateServerKey (defined in the soss_svcdotnet assembly). An object can be dependent upon a limited number of objects, defined by the <see cref="P:Soss.Client.CachedDataAccessor.MaxDependencies"/> property. Keys to parents that do not exist in the store will be ignored.</param>
+             <param name="allowReplication">Indicates whether the object to be added to the cache will be subject to GeoServer cross-store replication.</param>
+             <exception cref="T:System.ArgumentException">Thrown if <paramref name="objectToAdd"/> is null, <paramref name="timeoutMinutes"/> is negative or greater than 65535, or items in the dependencies array are null or an invalid type, </exception>
+             <exception cref="T:Soss.Client.CachedObjectAlreadyExistsException">Thrown if an object associated with the same key already exists in the the shared cache and <paramref name="updateIfExists"/> is set to false.</exception>
+             <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+             <remarks>
+             <para>
+             Objects added to the cache with a priority of <see cref="F:Soss.Client.CachedObjectPriority.Normal"/> will only be removed under 
+             low memory situations if LRU functionality is enabled in StateServer. 
+             Edit the soss_params.txt file in the StateServer installation directory to enable this feature: the lru_threshold parameter 
+             should be set to a percentage of the max_memory parameter. Eligible objects will be deleted using a least recently used 
+             algorithm once memory usage has passed the threshold.
+             </para><para>
+             An object is currently limited to having two parent objects on which it can depend. Dependencies can only be established when an object is first added to the store; 
+             if <paramref name="updateIfExists"/> is <c>true</c> and the Add method performs an update on an existing object then the <paramref name="dependencies"/> parameter 
+             will be ignored and the object's dependency relationships will be unchanged. An object must be removed and re-added to the store for its dependency relationships 
+             to change.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             // Add an object to the cache:
+             CachedDataAccessor cdaParent = new CachedDataAccessor("parent key");
+             cdaParent.Add("I'm the parent object.", 0, false);
+            
+             // Add a dependent object to the cache:
+             CachedDataAccessor cdaChild = new CachedDataAccessor("child key");
+             cdaChild.Add("I'm the child object.", 0, false, true, CachedObjectPriority.NotRemovable, new object[] {"parent key"});
+            
+             // Remove the parent object and confirm that the dependent object also gets removed:
+             cdaParent.Remove();
+             Debug.Assert(cdaChild.Retrieve(false) == null);
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean,System.Boolean,Soss.Client.CachedObjectPriority,System.Object[])">
+             <summary>
+             Adds a serializable object to the shared cache.
+             </summary>
+             <param name="objectToAdd">Serializable object to add to the shared cache. The argument cannot be null.</param>
+             <param name="timeoutMinutes">The lifetime of the object in the store. Must be less than or equal to 65535. A value of 0 indicates an infinite timeout. Use the <paramref name="isAbsoluteTimeout"/> parameter to determine the object's expiration behavior (sliding vs. absolute timeout).</param>
+             <param name="updateIfExists">Determines behavior if the object already exists in the cache. If true, the object will be updated; if false, a <see cref="T:Soss.Client.CachedObjectAlreadyExistsException"/> will be thrown if the object already exists.</param>
+             <param name="isAbsoluteTimeout">If true, the object's expiration will be not reset after a read or update operation.</param>
+             <param name="priority">Indicates the priority of keeping the object in the cache during low-memory situations. Removable objects are removed from memory when memory runs low based on a least recently used algorithm.</param>
+             <param name="dependencies">Keys to objects on which the object being added depends. Items in the array must be of type string, byte[], Guid, or StateServerKey (defined in the soss_svcdotnet assembly). An object can be dependent upon a limited number of objects, defined by the <see cref="P:Soss.Client.CachedDataAccessor.MaxDependencies"/> property. Keys to parents that do not exist in the store will be ignored.</param>
+             <exception cref="T:System.ArgumentException">Thrown if <paramref name="objectToAdd"/> is null, <paramref name="timeoutMinutes"/> is negative or greater than 65535, or items in the dependencies array are null or an invalid type, </exception>
+             <exception cref="T:Soss.Client.CachedObjectAlreadyExistsException">Thrown if an object associated with the same key already exists in the the shared cache and <paramref name="updateIfExists"/> is set to false.</exception>
+             <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+             <remarks>
+             <para>
+             Objects added to the cache with a priority of <see cref="F:Soss.Client.CachedObjectPriority.Normal"/> will only be removed under 
+             low memory situations if LRU functionality is enabled in StateServer. 
+             Edit the soss_params.txt file in the StateServer installation directory to enable this feature: the lru_threshold parameter 
+             should be set to a percentage of the max_memory parameter. Eligible objects will be deleted using a least recently used 
+             algorithm once memory usage has passed the threshold.
+             </para><para>
+             An object is currently limited to having two parent objects on which it can depend. Dependencies can only be established when an object is first added to the store; 
+             if <paramref name="updateIfExists"/> is <c>true</c> and the Add method performs an update on an existing object then the <paramref name="dependencies"/> parameter 
+             will be ignored and the object's dependency relationships will be unchanged. An object must be removed and re-added to the store for its dependency relationships 
+             to change.
+             </para><para>
+             If the GeoServer option has been configured then the object will be sent to all remote stores that are configured for replication.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             // Add an object to the cache:
+             CachedDataAccessor cdaParent = new CachedDataAccessor("parent key");
+             cdaParent.Add("I'm the parent object.", 0, false);
+            
+             // Add a dependent object to the cache:
+             CachedDataAccessor cdaChild = new CachedDataAccessor("child key");
+             cdaChild.Add("I'm the child object.", 0, false, true, CachedObjectPriority.NotRemovable, new object[] {"parent key"});
+            
+             // Remove the parent object and confirm that the dependent object also gets removed:
+             cdaParent.Remove();
+             Debug.Assert(cdaChild.Retrieve(false) == null);
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean)">
+             <summary>
+             Adds a serializable object to the shared cache.
+             </summary>
+             <param name="objectToAdd">Serializable object to add to the shared cache. The argument cannot be null.</param>
+             <param name="timeoutMinutes">Length of the sliding timeout in minutes (the length of inactivity after which the object will be automatically removed from StateServer). Must be less than or equal to 65535. A value of 0 indicates an infinite timeout.</param>
+             <param name="updateIfExists">Determines behavior if the object already exists in the cache. If true, the object will be updated; if false, a <see cref="T:Soss.Client.CachedObjectAlreadyExistsException"/> will be thrown if the object already exists.</param>
+             <exception cref="T:System.ArgumentException">Thrown if <paramref name="objectToAdd"/> is null or <paramref name="timeoutMinutes"/> is negative or greater than 65535.</exception>
+             <exception cref="T:Soss.Client.CachedObjectAlreadyExistsException">Thrown if an object associated with the same key already exists in the the shared cache and <paramref name="updateIfExists"/> is set to false.</exception>
+             <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+             <remarks>
+             <para>
+             Objects added to the cache with this method will have a priority of <see cref="F:Soss.Client.CachedObjectPriority.Normal"/>, 
+             allowing them to be removed under low-memory scenarios. These objects will only be 
+             removed, however, if LRU functionality is enabled in StateServer. Edit the soss_params.txt file in the StateServer 
+             installation directory to enable this feature: the lru_threshold parameter should be set to a percentage of the max_memory 
+             parameter. Eligible objects will be deleted using a least recently used algorithm once memory usage has passed the threshold.
+             </para><para>
+             Objects added with this method will be given a sliding timeout.
+             </para><para>
+             If the GeoServer option has been configured then the object will be sent to all remote stores that are configured for replication.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             // Add an object to the cache:
+             CachedDataAccessor cdaParent = new CachedDataAccessor("parent key");
+             cdaParent.Add("I'm the parent object.", 0, false);
+            
+             // Add a dependent object to the cache:
+             CachedDataAccessor cdaChild = new CachedDataAccessor("child key");
+             cdaChild.Add("I'm the child object.", 0, false, true, CachedObjectPriority.NotRemovable, new object[] {"parent key"});
+            
+             // Remove the parent object and confirm that the dependent object also gets removed:
+             cdaParent.Remove();
+             Debug.Assert(cdaChild.Retrieve(false) == null);
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)">
+            <summary>
+            Returns the latest value of the object from the cache.
+            </summary>
+            <remarks>
+            <para>
+            This method optionally locks the object in SOSS to prevent other clients from updating 
+            or removing the object. If the <paramref name="acquireLock"/> parameter is true, this 
+            call will block until the lock is acquired or the <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> limit 
+            has been met. The lock is released through a call to <see cref="M:Soss.Client.CachedDataAccessor.ReleaseLock"/>, 
+            <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>, or <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/>. If no subsequent call is 
+            made, the lock will automatically expire after the <see cref="P:Soss.Client.CachedDataAccessor.LockTimeout"/> interval. Passing true 
+            to an object that is already locked by the same instance of the CachedDataAccessor 
+            will reset the lock timeout.
+            </para><para>
+            <strong>Guidelines for Using the Deserialized Cache</strong>
+            </para><para>
+            The deserialized client cache, which is enabled by default, is a collection of object references retained by the SOSS client library to accelerate multiple retrieve accesses to an object stored in the SOSS service.  Changes made by client code to an object held in the deserialized cache may cause the deserialized cache to return the changed object on a subsequent retrieve instead of the version that is stored in the SOSS service.
+            </para><para>
+            The deserialized cache is only intended to be used with either read-only access or in a locked retrieve/update usage pattern. In the retrieve/update usage pattern, an object stored in the SOSS service is retrieved and locked, optionally updated, and then unlocked (either by the update or by an explicit unlock access). This pattern enables multiple processes on the same or different servers to reliably update a shared object. No changes should be made to the retrieved object outside of the retrieve/update pair because these changes would not be propagated to the distributed cache.
+            </para><para>
+            Sometimes a client application may want to retrieve an object from SOSS, make some changes to the object, and then discard it after using it without persisting the changes to the SOSS service. This usage model can cause the deserialized cache to get out of sync with SOSS. If an application requires that changes be made to a retrieved object outside of the above read/update usage pattern, steps should be taken to avoid corrupting the deserialized cache. Either the cache should be disabled by setting the <see cref="P:Soss.Client.CachedDataAccessor.AllowDeserializedCaching"/> property to <c>false</c>, or a deep copy of the retrieved object should be made with changes made only to this copy. Doing this will keep the locally cached object from getting out of sync with the authoritative object that is kept in the SOSS service.
+            </para>
+            </remarks>
+            <param name="acquireLock">
+            Indicates that the method should attempt to acquire or refresh a lock when reading the object. 
+            </param>
+            <returns>Object stored in the cache. Null if the object is not in the cache.</returns>
+            <exception cref="T:Soss.Client.CachedObjectLockedException">Thrown if <paramref name="acquireLock"/> is true and the call was unable to acquire a lock on the shared object after <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> retries.</exception>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Update(System.Object)">
+            <summary>
+            Updates a serializable object in the shared cache.
+            </summary>
+            <remarks>
+            The CachedDataAccessor instance must first acquire a lock on the object in SOSS prior to invoking this 
+            method, either through <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true). The lock on the 
+            object will be automatically released once the update is complete.
+            </remarks>
+            <param name="objectToUpdate">The serializable object to update in the shared cache. This argument cannot be null.</param>
+            <exception cref="T:Soss.Client.CachedObjectNotLockedException">Thrown if the current instance of the CachedDataAccessor did not acquire a lock on the object through a call to <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true).</exception>
+            <exception cref="T:Soss.Client.CachedObjectNotFoundException">Thrown if the object to update does not exist in the shared cache.</exception>
+            <exception cref="T:Soss.Client.CachedObjectLockedException">Thrown if the lock on the cached object exceeded the <see cref="P:Soss.Client.CachedDataAccessor.LockTimeout"/> period and another client acquired the lock.</exception>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="objectToUpdate"/> is null.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Update(System.Object,System.Boolean)">
+            <summary>
+            Updates a serializable object in the shared cache.
+            </summary>
+            <remarks>
+            <para>
+            The CachedDataAccessor instance must first acquire a lock on the object in SOSS prior to invoking this 
+            method, either through <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true). The lock on the 
+            can be optionally released once the update is complete. Retaining the lock after an update is useful for performing 
+            follow-up operations (like an <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/>) immediately after the update completes.
+            </para><para>
+            Locks can be released through a call to <see cref="M:Soss.Client.CachedDataAccessor.ReleaseLock"/>, 
+            <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/>, or <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>. If no call is made to release a locked object, the 
+            lock will expire after the <see cref="P:Soss.Client.CachedDataAccessor.LockTimeout"/> period. <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> can be used to reset lock timeout.
+            </para>
+            </remarks>
+            <param name="objectToUpdate">The serializable object to update in the shared cache. This argument cannot be null.</param>
+            <param name="unlockAfterUpdate">Specifes whether to release the lock on the object when the update operation completes.</param>
+            <exception cref="T:Soss.Client.CachedObjectNotLockedException">Thrown if the current instance of the CachedDataAccessor did not acquire a lock on the object through a call to <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true).</exception>
+            <exception cref="T:Soss.Client.CachedObjectNotFoundException">Thrown if the object to update does not exist in the shared cache.</exception>
+            <exception cref="T:Soss.Client.CachedObjectLockedException">Thrown if the lock on the cached object exceeded the <see cref="P:Soss.Client.CachedDataAccessor.LockTimeout"/> period and another client acquired the lock.</exception>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="objectToUpdate"/> is null.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)">
+            <summary>
+            Creates and updates settable index values for the object corresponding to this CachedDataAccessor and optionally unlocks the object.
+            </summary>
+            <param name="metadata">The new metadata for the object, containing a collection of index values.</param>
+            <param name="unlock">If true, unlocks the object associated with the current DataAccessor.</param>
+            <remarks>
+            The CachedDataAccessor instance must first acquire a lock on the object in SOSS prior to invoking this 
+            method, either through <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true). The lock on the 
+            object can be retained after the call by passing <c>false</c> into the <paramref name="unlock"/> parameter.
+            </remarks>
+            <exception cref="T:Soss.Client.CachedObjectNotLockedException">Thrown if the current instance of the CachedDataAccessor did not acquire a lock on the object through a call to <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true).</exception>
+            <exception cref="T:Soss.Client.CachedObjectNotFoundException">Thrown if the object to update does not exist in the shared cache.</exception>
+            <exception cref="T:Soss.Client.CachedObjectLockedException">Thrown if the lock on the cached object exceeded the <see cref="P:Soss.Client.CachedDataAccessor.LockTimeout"/> period and another client acquired the lock.</exception>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="objectToUpdate"/> is indexColl.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.RetrieveMetadata(System.Boolean)">
+            <summary>
+            Reads the index values from StateServer for the object corresponding to this CachedDataAccessor's key value.
+            </summary>
+            <param name="acquireLock">If true, indicates that the method should attempt to acquire a lock on the object when reading it from the server.</param>
+            <returns>An ObjectMetadata instance containing index values for the object, or null if the object is not found in the cache.</returns>
+            <remarks>
+            This method optionally locks the object in SOSS to prevent other clients from updating 
+            or removing the object. If the <paramref name="acquireLock"/> parameter is true, this 
+            call will block until the lock is acquired or the <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> limit 
+            has been met. The lock affects the entire object, not just its metadata, and can be released through a call to <see cref="M:Soss.Client.CachedDataAccessor.ReleaseLock"/>, 
+            <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>, or <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/>. If no subsequent call is 
+            made, the lock will automatically expire <see cref="P:Soss.Client.CachedDataAccessor.LockTimeout"/> period. Passing true 
+            to an object that is already locked by the same instance of the CachedDataAccessor 
+            will reset the lock.
+            </remarks>
+            <exception cref="T:Soss.Client.CachedObjectLockedException">Thrown if <paramref name="acquireLock"/> is true and the call was unable to acquire a lock on the shared object after <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> retries.</exception>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Remove">
+            <summary>
+            Removes the object from the shared cache.
+            </summary>
+            <remarks>
+            The Remove method first tries to acquire an exclusive lock on the object prior to removing it so as not to 
+            interfere with other clients that may be performing operations on the object. This call will block until 
+            the object has been removed or the <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> limit has been met.
+            </remarks>
+            <exception cref="T:Soss.Client.CachedObjectLockedException">Thrown if the call was unable to acquire a lock on the shared object after <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> retries.</exception>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.AcquireLock">
+            <summary>
+            Locks the cached object in SOSS to prevent other clients from updating or removing it.
+            </summary>
+            <remarks>
+            This call will block until the lock is acquired or the <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> limit 
+            has been met. The lock is released through a call to <see cref="M:Soss.Client.CachedDataAccessor.ReleaseLock"/>, 
+            <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/>, or <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>. If no subsequent call is made, the 
+            lock will expire after the <see cref="P:Soss.Client.CachedDataAccessor.LockTimeout"/> period. Calling this method on an instance of 
+            CachedDataAccessor that already has a lock on the cached object will reset the lock timeout.
+            </remarks>
+            <exception cref="T:Soss.Client.CachedObjectNotFoundException">Thrown if the object to lock does not exist in the shared cache.</exception>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+            <exception cref="T:Soss.Client.CachedObjectLockedException">Thrown if the call was unable to acquire a lock on the shared object after <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> retries.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.ReleaseLock">
+            <summary>
+            Releases the lock on the cached object.
+            </summary>
+            <remarks>
+            A lock will also be released by calls to <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>, or <see cref="M:Soss.Client.CachedDataAccessor.Dispose"/>. 
+            Calling Release on an instance of the CachedDataAccessor that doesn't have its object locked has no effect.
+            </remarks>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.DataAccessor_ObjectExpired(System.Object,Soss.Client.ObjectExpiredEventArgs)">
+            <summary>
+            Handler for the event raised by the DataAccessor. Fires off the CDA's version of the event. 
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.BytesToString(System.Byte[])">
+            <summary>
+            Converts a byte array into a string of hex values.
+            </summary>
+            <param name="bytes">Bytes to convert</param>
+            <returns>String value. Null if the byte array is null or zero-length.</returns>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String)">
+            <summary>
+            Returns the application ID corresponding to the application name <paramref name="appName"/> and 
+            indicates to StateServer that this client process will handle events for the given application. The default 
+            application ID for cached objects will be set to the identifier corresponding to the specified <paramref name="appName"/>.
+            </summary>
+            <remarks><para>
+            The ScaleOut StateServer shared cache can be divided into multiple application spaces, allowing for multiple 
+            objects with the same key value to co-exist in the cache. The RegisterAppName method associates a client 
+            application with a specific application name (creating a new application space, if necessary).
+            </para><para>
+            Additionally, the RegisterAppName method causes the calling application to start receiving 
+            <see cref="E:Soss.Client.CachedDataAccessor.CachedObjExpired"/> events for objects associated with the provided application name, should 
+            any event handlers be registered and event handling is enabled. A client application should call this method 
+            at most one time to register its application name.
+            </para><para>
+            Most ASP.NET users will not need to call this method. If code is executing in an AppDomain initialized by 
+            ASP.Net, cached objects will automatically be placed in a application namespace that is specific to the 
+            AppDomain. This ensures that CachedDataAccessor key collisions will not occur accross web applications. ASP.NET clients 
+            will also automatically register with the SOSS Server for this AppId's event notifications, but 
+            applications will only receive those notifications if a <see cref="E:Soss.Client.CachedDataAccessor.CachedObjExpired"/> handler is established. 
+            </para><para>
+            Applications running outside of ASP.NET will be automatically placed in a globally shared application 
+            namespace unless this method is called. Any application, ASP.NET or otherwise, may use this method to 
+            establish a preferred application namespace. Furthermore, individual objects can override the specified 
+            default namespace by passing a different AppID to the constructor of a CachedDataAccessor object.
+            </para></remarks>
+            <example>
+            <code>
+            // Demonstrate how a non-ASP.NET program can define its own application namespace within SOSS.
+            static void Main(string[] args)
+            {
+            	// Register the application with a distinct name to prevent our CachedDataAccessor keys
+            	// from collinding with keys in other applications:
+            	CachedDataAccessor.RegisterAppName("Sample App");
+            
+            	// Now that we've registered the app name, all CDA instances will manipulate cached objects
+            	// in the "Sample App" application namespace by default.  The app will also be able to handle
+            	// any expiration events for objects in the namespace.
+            	CachedDataAccessor cda1 = new CachedDataAccessor("key1");
+            	cda1.Add("Object value", 0, true);
+            }
+            </code>
+            </example>
+            <param name="appName">The name of the application to register.</param>
+            <returns>The ID that StateServer assigns to correspond to <paramref name="appName"/>. The method will always return the same invariant ID value to every client across the farm.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="appName"/> is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="appName"/> is zero-length.</exception>
+            <seealso cref="E:Soss.Client.CachedDataAccessor.CachedObjExpired"/>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)">
+            <summary>
+            Returns the application ID corresponding to the application name <paramref name="appName"/> and optionally 
+            indicates to StateServer that this client process will handle events for the given application. The default 
+            application ID for cached objects will be set to the identifier corresponding to the specified <paramref name="appName"/>.
+            </summary>
+            <remarks><para>
+            The ScaleOut StateServer shared cache can be divided into multiple application spaces, allowing for multiple 
+            objects with the same key value to co-exist in the cache. The RegisterAppName method associates a client 
+            application with an application name (creating a new application space, if necessary).
+            </para><para>
+            Additionally, the RegisterAppName method can cause the calling application to start receiving 
+            <see cref="E:Soss.Client.CachedDataAccessor.CachedObjExpired"/> events for objects associated with the provided application name, should 
+            any event handlers be registered and event handling is enabled.
+            </para><para>
+            This method can be called more than once to access object in multiple namespaces. In this case, 
+            <paramref name="registerForEvents"/> can be set to false. This allows a management application, for 
+            example, to access objects in other application namespaces without interfering with event handling 
+            in those applications.
+            </para><para>
+            Most ASP.NET users will not need to call this method. If code is executing in an AppDomain initialized by 
+            ASP.Net, cached objects will automatically be placed in a application namespace that is specific to the 
+            AppDomain. This ensures that CachedDataAccessor key collisions will not occur accross web applications. ASP.NET clients 
+            will also automatically register with the SOSS Server for this AppId's event notifications, but 
+            applications will only receive those notifications if a <see cref="E:Soss.Client.CachedDataAccessor.CachedObjExpired"/> handler is established. 
+            </para><para>
+            Applications running outside of ASP.NET will be automatically placed in a globally shared application 
+            namespace unless this method is called. Any application, ASP.NET or otherwise, may use this method to 
+            establish a preferred application namespace. Furthermore, individual objects can override the specified 
+            default namespace by passing a different AppID to the constructor of a CachedDataAccessor object.
+            </para></remarks>
+            <example>
+            <code>
+            // A method that could create and access objects in different applications. This could be useful
+            // in management applications that access multiple application namespaces.
+            public void CacheWithAppId()
+            {
+            	Guid key = Guid.NewGuid();
+            	// We don't want to receive events for these applications, so passing in false:
+            	uint appId1 = CachedDataAccessor.RegisterAppName("First App", false);
+            	uint appId2 = CachedDataAccessor.RegisterAppName("Second App", false);
+            
+            	CachedDataAccessor cda1 = new CachedDataAccessor(key, appId1);
+            	cda1.Add("First object.", 0, true);
+            
+            	CachedDataAccessor cda2 = new CachedDataAccessor(key, appId2);
+            	cda2.Add("Second object.", 0, true);
+            
+            	// Retrieve the first object and show that it wasn't overwritten by the second one:
+            	string val1 = cda1.Retrieve(false) as string;
+            	System.Diagnostics.Debug.Assert(val1 == "First object.");
+            
+            	// Show that the second made it successfully into the cache:
+            	string val2 = cda2.Retrieve(false) as string;
+            	System.Diagnostics.Debug.Assert(val2 == "Second object.");
+            
+            	// Remove the objects from the cache:
+            	cda1.Remove();
+            	cda2.Remove();
+            }
+            </code>
+            </example>
+            <param name="appName">The name of the application to register.</param>
+            <param name="registerForEvents">If true, this client will register with the SOSS server to receive object expriration event notifications for cached objects associated with appName.</param>
+            <returns>The ID that StateServer assigns to correspond to <paramref name="appName"/>. The method will always return the same invariant ID value to every client across the farm.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="appName"/> is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="appName"/> is zero-length.</exception>
+            <seealso cref="E:Soss.Client.CachedDataAccessor.CachedObjExpired"/>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.RegisterAppId(System.UInt32)">
+            <summary>
+            Registers the client application to receive events for the supplied application identifier.
+            </summary>
+            <param name="appId">Identifer of the application that the client will receive events for.</param>
+            <remarks>
+            Application IDs are used to group StateServer keys into distinct namespaces. Clients typically use 
+            <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/> to register for events in the StateServer service using a string name (which then gets mapped to 
+            a numeric application ID in the StateServer service). If the application name is unavailable, however, <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppId(System.UInt32)"/> 
+            can be used to register for events with just an ID.
+            </remarks>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.ClearObjects">
+            <summary>
+            Clears all of the cached objects from the default application namespace (as specified through the <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/> method).
+            </summary>
+            <remarks>Expiration events for the objects will not be fired. Also, dependent objects, in 
+            particular those that might have different application identifiers, are not notified and removed.</remarks>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.ClearObjects(System.String)">
+            <summary>
+            Clears all of the cached objects from the specified application namespace.
+            </summary>
+            <remarks>Expiration events for the objects will not be fired. Also, dependent objects, in 
+            particular those that might have different application identifiers, are not notified and removed.</remarks>
+            <param name="appName">The application namespace from which to clear the objects.</param>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.ClearObjects(System.UInt32)">
+            <summary>
+            Clears all of the cached objects associated with the supplied application ID.
+            </summary>
+            <remarks>Expiration events for the objects will not be fired. Also, dependent objects, in 
+            particular those that might have different application identifiers, are not notified and removed.</remarks>
+            <param name="appId">ID of the application namespace to be cleared of cached objects.</param>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.ClearAllObjects">
+            <summary>
+            Clears all objects (including session objects in all web applications) from the ScaleOut StateServer store.
+            </summary>
+            <remarks><para>Expiration events for the objects will not be fired.</para>
+            <para>Use <see cref="M:Soss.Client.CachedDataAccessor.ClearObjects"/> to clear objects for a specific application.</para></remarks>
+            <exception cref="T:Soss.Client.StateServerUnavailableException">Thrown if ScaleOut StateServer is unavailable or has experienced an internal error.</exception>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.QueryEx(System.String,Soss.Client.IFilter)">
+             <summary>
+             Queries an application namespace in the cache for objects that have matching values at the specified indexes.
+             </summary>
+             <param name="indexCollection">
+             An <see cref="T:Soss.Client.IFilter"/> collection of values to query for in the specified indexes. An 
+             <see cref="T:Soss.Client.IndexCollection"/> or <see cref="T:Soss.Client.FilterCollection"/> is suitable for this parameter.
+             </param>
+             <param name="appName">The name of the application namespace in which to search for objects.</param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. If an <see cref="T:Soss.Client.IndexCollection"/> collection is used, 
+             the index values must match all values in the IndexCollection for there to be a match (that is, the 
+             query performs a logical AND of all specified index values). If a <see cref="T:Soss.Client.FilterCollection"/> 
+             is used, a logical AND or OR operation can be performed with the values, depending on the <see cref="P:Soss.Client.FilterCollection.MatchOptions"/>
+             property. Indexes omitted from the specified <see cref="T:Soss.Client.IFilter"/> collection are not evaluated during the query, and passing an empty 
+             collection to the query will return every object in the specified application.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.Query(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.QueryEx(System.UInt32,Soss.Client.IFilter)">
+             <summary>
+             Queries an application namespace in the cache for objects that have matching values at the specified indexes.
+             </summary>
+             <param name="indexCollection">
+             An <see cref="T:Soss.Client.IFilter"/> collection of values to query for in the specified indexes. An 
+             <see cref="T:Soss.Client.IndexCollection"/> or <see cref="T:Soss.Client.FilterCollection"/> is suitable for this parameter.
+             </param>
+             <param name="appId">The ID application namespace in which to search for objects.</param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. If an <see cref="T:Soss.Client.IndexCollection"/> collection is used, 
+             the index values must match all values in the IndexCollection for there to be a match (that is, the 
+             query performs a logical AND of all specified index values). If a <see cref="T:Soss.Client.FilterCollection"/> 
+             is used, a logical AND or OR operation can be performed with the values, depending on the <see cref="P:Soss.Client.FilterCollection.MatchOptions"/>
+             property. Indexes omitted from the specified <see cref="T:Soss.Client.IFilter"/> collection are not evaluated during the query, and passing an empty 
+             collection to the query will return every object in the specified application.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.Query(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.QueryEx(Soss.Client.IFilter)">
+             <summary>
+             Queries the distributed cache for objects that have matching values at the specified indexes.
+             The query will search for objects in the default application namespace as specified through the <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/> method.
+             </summary>
+             <param name="indexCollection">
+             An <see cref="T:Soss.Client.IFilter"/> collection of values to query for in the specified indexes. An 
+             <see cref="T:Soss.Client.IndexCollection"/> or <see cref="T:Soss.Client.FilterCollection"/> is suitable for this parameter.
+             </param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. If an <see cref="T:Soss.Client.IndexCollection"/> collection is used, 
+             the index values must match all values in the IndexCollection for there to be a match (that is, the 
+             query performs a logical AND of all specified index values). If a <see cref="T:Soss.Client.FilterCollection"/> 
+             is used, a logical AND or OR operation can be performed with the values, depending on the <see cref="P:Soss.Client.FilterCollection.MatchOptions"/>
+             property. Indexes omitted from the specified <see cref="T:Soss.Client.IFilter"/> collection are not evaluated during the query, and passing an empty 
+             collection to the query will return every object in the application's default namespace.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.Query(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.QueryAllEx(Soss.Client.IFilter)">
+             <summary>
+             Queries the entire distributed cache for objects that have matching values at the specified indexes.
+             The query will search for objects in every namespace in the cache.
+             </summary>
+             <param name="indexCollection">
+             An <see cref="T:Soss.Client.IFilter"/> collection of values to query for in the specified indexes. An 
+             <see cref="T:Soss.Client.IndexCollection"/> or <see cref="T:Soss.Client.FilterCollection"/> is suitable for this parameter.
+             </param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. If an <see cref="T:Soss.Client.IndexCollection"/> collection is used, 
+             the index values must match all values in the IndexCollection for there to be a match (that is, the 
+             query performs a logical AND of all specified index values). If a <see cref="T:Soss.Client.FilterCollection"/> 
+             is used, a logical AND or OR operation can be performed with the values, depending on the <see cref="P:Soss.Client.FilterCollection.MatchOptions"/>
+             property. Indexes omitted from the specified <see cref="T:Soss.Client.IFilter"/> collection are not evaluated during the query, and passing an empty 
+             collection to the query will return every object in the store.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.QueryAll(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Query(System.String,Soss.Client.IndexCollection)">
+             <summary>
+             Queries an application namespace in the cache for objects that have matching values at the specified indexes.
+             </summary>
+             <param name="indexCollection">A collection of values to query for in the specified indexes.</param>
+             <param name="appName">The name of the application namespace in which to search for objects.</param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. The index values must match all values in the IndexCollection 
+             for there to be a match (that is, the query performs a logical AND of all specified index values). 
+             Indexes omitted from the IndexColection are not evaluated during the query, and passing an empty 
+             IndexCollection to the query will return every object in the specified application.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.Query(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Query(System.UInt32,Soss.Client.IndexCollection)">
+             <summary>
+             Queries an application namespace in the cache for objects that have matching values at the specified indexes.
+             </summary>
+             <param name="indexCollection">A collection of values to query for in the specified indexes.</param>
+             <param name="appId">The ID application namespace in which to search for objects.</param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. The index values must match all values in the IndexCollection 
+             for there to be a match (that is, the query performs a logical AND of all specified index values). 
+             Indexes omitted from the IndexColection are not evaluated during the query, and passing an empty 
+             IndexCollection to the query will return every object in the specified application.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.Query(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Query(Soss.Client.IndexCollection)">
+             <summary>
+             Queries the distributed cache for objects that have matching values at the specified indexes.
+             The query will search for objects in the default application namespace as specified through the <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/> method.
+             </summary>
+             <param name="indexCollection">A collection of values to query for in the specified indexes.</param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. The index values must match all values in the IndexCollection 
+             for there to be a match (that is, the query performs a logical AND of all specified index values). 
+             Indexes omitted from the IndexColection are not evaluated during the query, and passing an empty 
+             IndexCollection to the query will return every object in the application's default namespace.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.Query(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.QueryAll(Soss.Client.IndexCollection)">
+             <summary>
+             Queries the entire distributed cache for objects that have matching values at the specified indexes.
+             The query will search for objects in every namespace in the cache.
+             </summary>
+             <param name="indexCollection">A collection of values to query for in the specified indexes.</param>
+             <returns>An collection of StateServerKey objects associated with objects found in the cache.</returns>
+             <remarks>
+             The query operation will search for objects in the distributed cache that have index values matching 
+             those provided in the IndexCollection. The index values must match all values in the IndexCollection 
+             for there to be a match (that is, the query performs a logical AND of all specified index values). 
+             Indexes omitted from the IndexColection are not evaluated during the query, and passing an empty 
+             IndexCollection to the query will return every object in the store.
+             </remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class QuerySample
+             {
+            		static void Main(string[] args)
+            		{
+            			CacheObjectWithIndexEntry();
+            			QueryForObject();
+            		}
+             
+            		static void CacheObjectWithIndexEntry()
+            		{
+            			string itemToCache = "This is an item that is stored in the shared cache.";
+            			CachedDataAccessor cda = new CachedDataAccessor("key to item");
+             
+            			// Add the item to the cache. Setting the last parameter (lockAfterCreate) to true 
+            			// causes this instance of the CDA to hold a lock on the object, allowing us to immediately
+            			// set its index values without worrying about other clients interfering between the calls.
+            			cda.Add(itemToCache, 0, true, false, CachedObjectPriority.Normal, null, true, true);
+             
+            			ObjectMetadata metadata = new ObjectMetadata();
+            			metadata.IndexCollection[0] = new IndexValue("Index value 0");
+            			metadata.IndexCollection[1] = new IndexValue("Index value 1");
+            			// Set the index values, releasing the lock on the object:
+            			cda.UpdateMetadata(metadata, true);			
+            		}
+             
+            		static void QueryForObject()
+            		{
+            			// Query for the object based on one of its index values. 
+            			// Leaving the other items in the IndexCollection null indicates 
+            			// to the query that objects can contain any value in 
+            			// that particular index.
+            			IndexCollection querySpec = new IndexCollection();
+            			querySpec[1] = new IndexValue("Index value 1");
+            			QueryResult result = CachedDataAccessor.QueryAll(querySpec);
+             
+            			Console.WriteLine("Objects returned: " + result.Count.ToString());
+            			System.Diagnostics.Debug.Assert(result.Count == 1);
+             
+            			// Access the cached object that was found in the query:
+            			CachedDataAccessor cda = new CachedDataAccessor(result[0]);
+            			string objectValue = cda.Retrieve(false) as string;
+             
+            			Console.WriteLine("Object value: " + objectValue);
+            			System.Diagnostics.Debug.Assert(objectValue == "This is an item that is stored in the shared cache.");
+            		}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.ObjectExists">
+            <summary>
+            Checks for the existence of an object in the distributed cache.
+            </summary>
+            <remarks>
+            <para>
+            The result of the <c>ObjectExists</c> method is only accurate at the moment of the method's invocation; other clients 
+            may add or remove the object from the cache in the instant between the call to <c>ObjectExists</c> and any subsequent 
+            code. As such, the <c>ObjectExists</c> method is not well-suited for applications which require distributed synchronization 
+            and should only be used in a single-client scenario.
+            </para><para>
+            A safer, more reliable approach to distributed synchronization is to first attempt a retrieval of the cached object through 
+            a call to <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>, which returns the object's data and optionally locks the object for exclusive use by 
+            the client. If the object does not exist then it can be added to the cache by using 
+            <see cref="M:Soss.Client.CachedDataAccessor.Add(System.Object,System.Int32,System.Boolean)"/>, passing <c>true</c> into the <c>updateIfExists</c> parameter to avoid conflicts 
+            with other clients that may be trying to add the object at the same instant. See the example in the <see cref="T:Soss.Client.CachedDataAccessor"/> 
+            overview for an illustration of this pattern.
+            </para>
+            </remarks>
+            <returns><c>true</c> if the object is in the cache, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Dispose">
+            <summary>
+            Disposes the object's underlying DataAccessor, which ensures that any locks held on 
+            its behalf in SOSS are released.
+            </summary>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the DataAccessor used to access the object in the StateServer store.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Soss.Client.CachedDataAccessor.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Soss.Client.CachedDataAccessor.CachedObjExpired">
+             <summary>
+             An event that is fired when a cached object expires.
+             </summary>
+             <remarks><para>
+             The event-handling feature must be enabled in the ScaleOut StateServer service in order for this 
+             event to fire. This feature is disabled by default -- changing the <em>max_event_tries</em> 
+             parameter in the soss_params.txt file (located in the StateServer installation directory) to a 
+             value greater than zero will enable eventing. See the "Configuration Parameters" topic in the 
+             SOSS Help file for details on the soss_params.txt file.
+             </para><para>
+             If eventing is enabled, a client application will receive events for the currently registered 
+             application name. If code is executing in an AppDomain initialized by ASP.NET, it will automatically 
+             receive events for the application namespace that is specific to this AppDomain. Otherwise, it will 
+             receive events for objects in the default application namespace. The application can register a 
+             specific application name using the <see cref="M:Soss.Client.CachedDataAccessor.RegisterAppName(System.String,System.Boolean)"/> method.
+             </para><para>
+             Note that in a server farm that is running multiple ScaleOut hosts, it is not possible to predict 
+             which host will receive the event. This allows ScaleOut StateServer to maximize performance by 
+             distributing events across the server farm. It is important to have the event-handling code running 
+             on each ScaleOut server to ensure that the expiration event is not lost. If the server farm is 
+             accessed solely by remote clients, there must be at least as many active remote clients as there 
+             are ScaleOut hosts; this ensures that all ScaleOut hosts can deliver events to a client. This 
+             requirement applies to all applications which perform event handling.
+             </para><para>
+            	Cached objects can be added to the cache with either an absolute or a sliding expiration scheme; 
+            	performing a <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>, <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/>, or <see cref="M:Soss.Client.CachedDataAccessor.ReleaseLock"/> 
+            	operation will reset the object's lifetime if the object uses a sliding expiration.
+             </para></remarks>
+             <example>
+             <code>
+             using System;
+             using Soss.Client;
+            
+             class EventingSample
+             {
+             	private static uint _appId;
+            
+             	static void Main(string[] args)
+             	{
+             		// Register to receive events from the CDA:
+             		CachedDataAccessor.CachedObjExpired += new CachedObjExpiredEventHandler(CDA_ObjectExpired);
+            
+             		// Get our application's ID, which also tells SOSS that we want to handle its events.
+             		// (Not strictly required if the default application object space is sufficient):
+             		_appId = CachedDataAccessor.RegisterAppName("Eventing Sample");
+            
+             		// Create an object with a one minute lifetime:
+             		CachedDataAccessor cda = new CachedDataAccessor("123", _appId);
+             		cda.Add("This string is a cached object.", 1, true);
+             		Console.WriteLine("The object was created.");
+            
+             		// Wait for the object to expire so our program has a chance to receive the event.
+             		System.Threading.Thread.Sleep(70000);
+             	}
+            
+             	// Object expiration event handler:
+             	public static void CDA_ObjectExpired(object sender, CachedObjExpiredEventArgs e)
+             	{
+             		// Double-check that the expiring object is in our application, since we may also
+             		// receive events for the default object space:
+             		if (e.AppId != _appId)
+             		{
+             			return;
+             		}
+            		
+             		// We can choose between removing the object or allowing it to remain:
+             		e.CachedObjectDisposition = CachedObjectDisposition.Remove;
+            
+             		Console.WriteLine("The object has expired.");
+             	}
+             }
+             </code>
+             </example>
+        </member>
+        <member name="P:Soss.Client.CachedDataAccessor.DataAccessor">
+            <summary>
+            Returns the underlying Soss.Client.DataAccessor object used to access 
+            the cached object.
+            </summary>
+            <remarks>
+            The DataAccessor property allows access to the underlying DataAccessor instance that the 
+            CachedDataAccessor is using to access an object in the cache. The DataAccessor is an advanced, 
+            low-level API that is located in soss_svcdotnet.dll, and it should only be used under rare 
+            situations under the guidance of the ScaleOut Software support team.
+            </remarks>
+        </member>
+        <member name="P:Soss.Client.CachedDataAccessor.LockRetryInterval">
+            <summary>
+            Gets/Sets milliseconds between lock retries. Default is 500 milliseconds.
+            </summary>
+            <remarks>
+            The CachedDataAccessor will repeatedly attempt to acquire a lock in situations where another client 
+            already has a lock on the object. The LockRetryInterval property gets or sets the amount of time (in milliseconds) 
+            between attempts to acquire an exclusive lock on the cached object using <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/>, 
+            <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>, or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true). The default value is 500 milliseconds. The number 
+            of retries is determined by the <see cref="P:Soss.Client.CachedDataAccessor.MaxLockAttempts"/> property.
+            </remarks>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if the property is set to a value less than 0.</exception>
+        </member>
+        <member name="P:Soss.Client.CachedDataAccessor.MaxLockAttempts">
+            <summary>
+            Gets/Sets the number of lock attempts. The default is 200 attempts. 
+            </summary>
+            <remarks>
+            The CachedDataAccessor will repeatedly attempt to acquire a lock in situations where another client 
+            already has a lock on the object. This property determines the number of times the CachedDataAccessor attempts to acquire a 
+            lock when <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/>, <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>, <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)"/>(true), or <see cref="M:Soss.Client.CachedDataAccessor.RetrieveMetadata(System.Boolean)"/>(true) is called before these methods throw 
+            a <see cref="T:Soss.Client.CachedObjectLockedException"/>. The default is 200 attempts. 
+            Use the <see cref="P:Soss.Client.CachedDataAccessor.LockRetryInterval"/> property to set the amount of time between retries.
+            </remarks>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if the property is set to a value less than 1.</exception>
+        </member>
+        <member name="P:Soss.Client.CachedDataAccessor.Key">
+            <summary>
+            Returns the StateServerKey structure used by StateServer to identify the cached object.
+            </summary>
+            <remarks>
+            This property provides access to the underlying <see cref="T:Soss.Client.StateServerKey"/> structure that is being 
+            used by the CachedDataAccessor instance to access the object in the ScaleOut StateServer service.
+            </remarks>
+        </member>
+        <member name="P:Soss.Client.CachedDataAccessor.MaxDependencies">
+            <summary>
+            Returns the maximum number of objects on which an object can depend. In the current version, an object can be dependent upon up to 2 objects. Note that an object can have an unlimited number of dependents.
+            </summary>
+        </member>
+        <member name="P:Soss.Client.CachedDataAccessor.AllowDeserializedCaching">
+             <summary>
+             Gets/sets an flag indicating whether (deserialized) objects corresponding to this CachedDataAccessor are 
+             saved in the client-side cache when they are written to StateServer. Default is <c>true</c>.
+             </summary>
+             <remarks>
+             <para>
+             To maximize access performance, SOSS adds an internal cache for deserialized data objects within its .NET client 
+             libraries. When reading objects, this cache reduces access response time by eliminating data motion and 
+             deserialization overhead for objects that have not been updated in the SOSS distributed store. The 
+             AllowDeserializedCaching property controls whether the CachedDataAccessor will take advantage of this 
+             behavior.
+             </para>
+             <para>
+             The contents of the deserialized cache will automatically be invalidated if the object is changed or removed 
+             by any of the servers in the farm, so it will never return a stale version of the shared object. The client 
+             libraries always check with the SOSS service prior to returning the object in order to make sure that the 
+             deserialized version is up-to-date. While this check does involve a round-trip to the service, it is still 
+             much faster than retrieving and deserializing the entire object.
+             </para>
+             <para>
+             By default, AllowDeserializedCaching is set to <c>true</c>. Set this property to <c>false</c> prior to adding
+             or updating an object in the shared cache to prevent a deserialized copy of the object from being stored in
+             the .NET client library. Setting AllowDeserializedCaching to <c>false</c> also ensures that any deserialized 
+             copies that were previously held by this client will no longer be used.
+             </para>
+             <para>
+             The size of the deserialized cache is determined by the max_client_cache parameter in the soss_params.txt 
+             file (located in the ScaleOut StateServer program directory). By default, the cache can consume up to 100000 KB  
+             (100 MB) of memory. Once the limit has been met, the least recently used items will be purged from the cache to make
+             way for new items. Setting the max_client_cache parameter to 0 will disable the deserialized cache entirely, 
+             even if AllowDeserializedCaching is <c>true</c>.
+             </para><para>
+             <strong>Guidelines for Using the Deserialized Cache</strong>
+             </para><para>
+             The deserialized client cache, which is enabled by default, is a collection of object references retained by the SOSS client library to accelerate multiple retrieve accesses to an object stored in the SOSS service.  Changes made by client code to an object held in the deserialized cache may cause the deserialized cache to return the changed object on a subsequent retrieve instead of the version that is stored in the SOSS service.
+             </para><para>
+             The deserialized cache is only intended to be used with either read-only access or in a locked retrieve/update usage pattern. In the retrieve/update usage pattern, an object stored in the SOSS service is retrieved and locked, optionally updated, and then unlocked (either by the update or by an explicit unlock access). This pattern enables multiple processes on the same or different servers to reliably update a shared object. No changes should be made to the retrieved object outside of the retrieve/update pair because these changes would not be propagated to the distributed cache.
+             </para><para>
+             Sometimes a client application may want to retrieve an object from SOSS, make some changes to the object, and then discard it after using it without persisting the changes to the SOSS service. This usage model can cause the deserialized cache to get out of sync with SOSS. If an application requires that changes be made to a retrieved object outside of the above read/update usage pattern, steps should be taken to avoid corrupting the deserialized cache. Either the cache should be disabled by setting the <see cref="P:Soss.Client.CachedDataAccessor.AllowDeserializedCaching"/> property to <c>false</c>, or a deep copy of the retrieved object should be made with changes made only to this copy. Doing this will keep the locally cached object from getting out of sync with the authoritative object that is kept in the SOSS service.
+             </para>
+             <example>
+             <code>
+             CachedDataAccessor cda = new CachedDataAccessor("MyObject");
+            
+             // Setting the AllowDeserializedCaching property to false before updating/adding it 
+             // will ensure that the object will not be stored in the client-side cache:
+             cda.AllowDeserializedCaching = false;
+             cda.Add("Cached string.", 20, true);
+             </code>
+             </example>
+             </remarks>
+        </member>
+        <member name="P:Soss.Client.CachedDataAccessor.LockTimeout">
+            <summary>
+            Returns the amount of time (in seconds) that an instance of the CachedDataAccessor will hold a lock on a cached object before the lock times out. The property always returns 90.
+            </summary>
+            <remarks>
+            Locks can be acquired through a call to <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> or <see cref="M:Soss.Client.CachedDataAccessor.Retrieve(System.Boolean)">Retrieve(true)</see>. Locks can be released through
+            a call to <see cref="M:Soss.Client.CachedDataAccessor.ReleaseLock"/>, <see cref="M:Soss.Client.CachedDataAccessor.Update(System.Object)"/>, <see cref="M:Soss.Client.CachedDataAccessor.UpdateMetadata(Soss.Client.ObjectMetadata,System.Boolean)"/>, or <see cref="M:Soss.Client.CachedDataAccessor.Remove"/>. If no call is made 
+            to release a locked object, the lock will expire after 90 seconds. <see cref="M:Soss.Client.CachedDataAccessor.AcquireLock"/> can be used to reset the 90 second lock timeout.
+            </remarks>
+        </member>
+    </members>
+</doc>
