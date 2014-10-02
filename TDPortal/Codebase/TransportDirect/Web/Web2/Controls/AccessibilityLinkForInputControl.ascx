@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="True" Codebehind="AccessibilityLinkForInputControl.ascx.cs" Inherits="TransportDirect.UserPortal.Web.Controls.AccessibilityLinkForInputControl" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" EnableViewState="false"%>
+<div class="accessibilityLinkForInput"><asp:hyperlink runat="server" id="linkAccessibility"></asp:hyperlink></div>

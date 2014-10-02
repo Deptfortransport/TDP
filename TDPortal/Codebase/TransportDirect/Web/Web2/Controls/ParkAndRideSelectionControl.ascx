@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="True" Codebehind="ParkAndRideSelectionControl.ascx.cs" Inherits="TransportDirect.UserPortal.Web.Controls.ParkAndRideSelectionControl" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" EnableViewState="true"%>
+<div id="divDropDown" runat="server"><asp:label id="labelInstructionDropDown" cssclass="txtseven" runat="server"></asp:label><asp:dropdownlist id="listParkAndRideSchemes" cssclass="FindPlace_Dropdown" runat="server"></asp:dropdownlist></div>
