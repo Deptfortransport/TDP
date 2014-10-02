@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SuggestionLinksTestData>
+	<InternalLink>
+		<internallinks InternalLinkID="1000" RelativeURL="/URL0008.aspx" Description="null"/> 
+		<internallinks InternalLinkID="1001" RelativeURL="/URL0001.aspx" Description="null"/> 
+		<internallinks InternalLinkID="1002" RelativeURL="/URL0008.aspx" Description="null"/> 
+		<internallinks InternalLinkID="1003" RelativeURL="/URL0003.aspx" Description="null"/> 
+	</InternalLink>
+	<ResourceName>
+		<resourcename ResourceNameID="1000" ResourceName="RESOURCE1000"/>
+		<resourcename ResourceNameID="1001" ResourceName="RESOURCE1001"/>
+		<resourcename ResourceNameID="1002" ResourceName="RESOURCE1002"/>
+		<resourcename ResourceNameID="1003" ResourceName="RESOURCE1003"/>
+	</ResourceName>
+	<Context>
+		<context ContextID="1000" Name="CONTEXT1" Description="null"/>
+		<context ContextID="1001" Name="CONTEXT2" Description="null"/>
+	</Context>
+	<LinkCategory>
+		<linkcategory LinkCategoryID="1000" Priority="140" Name="Category1" Description="null"/>
+		<linkcategory LinkCategoryID="1001" Priority="120" Name="Category2" Description="null"/>
+		<linkcategory LinkCategoryID="1002" Priority="130" Name="Category3" Description="null"/>
+	</LinkCategory>
+	<SuggestionLink>
+		<suggestionlink SuggestionLinkId="1000" LinkCategoryId="1000" Priority="10" ResourceNameId="1000" ExternalInternalLinkId="1000" ExternalInternalLinkType="Internal" IsRoot="1" />
+		<suggestionlink SuggestionLinkId="1001" LinkCategoryId="1001" Priority="20" ResourceNameId="1001" ExternalInternalLinkId="1001" ExternalInternalLinkType="Internal" IsRoot="1" />
+		<suggestionlink SuggestionLinkId="1002" LinkCategoryId="1001" Priority="10" ResourceNameId="1002" ExternalInternalLinkId="1002" ExternalInternalLinkType="Internal" IsRoot="1" />
+		<suggestionlink SuggestionLinkId="1003" LinkCategoryId="1002" Priority="70" ResourceNameId="1001" ExternalInternalLinkId="1000" ExternalInternalLinkType="Internal" IsRoot="1" />
+		<suggestionlink SuggestionLinkId="1004" LinkCategoryId="1002" Priority="50" ResourceNameId="1003" ExternalInternalLinkId="1003" ExternalInternalLinkType="Internal" IsRoot="1" />
+	</SuggestionLink>
+	<Resource>
+		<resource ResourceID="1000" ResourceNameID="1000" Culture="en-GB" Text="1000 english test 2 {OriginLocation}"/>
+		<resource ResourceID="1001" ResourceNameID="1000" Culture="cy-GB" Text="1000 welsh text {OriginLocation]"/>
+		<resource ResourceID="1002" ResourceNameID="1001" Culture="en-GB" Text="1001 english text {OriginLocation}"/>
+		<resource ResourceID="1003" ResourceNameID="1001" Culture="cy-GB" Text="1001 welsh text {OriginLocation}"/>
+		<resource ResourceID="1004" ResourceNameID="1002" Culture="en-GB" Text="1002 english text {OriginLocation}"/>
+		<resource ResourceID="1005" ResourceNameID="1003" Culture="en-GB" Text="1003 english text {DestinationLocation}"/>
+		<resource ResourceID="1006" ResourceNameID="1003" Culture="cy-GB" Text="1003 welsh text {DestinationLocation}"/>
+	</Resource>
+	<ContextSuggestionLink>
+		<contextsuggestionlink ContextSuggestionLinkId="1000" ContextId="1000" SuggestionLinkId="1000"/>
+		<contextsuggestionlink ContextSuggestionLinkId="1001" ContextId="1000" SuggestionLinkId="1001"/>
+		<contextsuggestionlink ContextSuggestionLinkId="1002" ContextId="1000" SuggestionLinkId="1002"/>
+		<contextsuggestionlink ContextSuggestionLinkId="1003" ContextId="1001" SuggestionLinkId="1003"/>
+		<contextsuggestionlink ContextSuggestionLinkId="1004" ContextId="1001" SuggestionLinkId="1004"/>
+	</ContextSuggestionLink>
+</SuggestionLinksTestData>

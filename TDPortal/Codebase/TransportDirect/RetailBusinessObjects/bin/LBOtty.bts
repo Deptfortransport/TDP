@@ -1,0 +1,102 @@
+TESTNAME = {"LOOKUP - GET DATA"}
+TESTID = {"LUTTY01"}
+
+INHDR = {
+"STDIN   "
+"LU"		// BUSINESS OBJECT ID
+"GD"		// FUNCTION ID
+"        "
+"0100"		// OBJECT VERSION
+"0000"
+"I00023"		// HEDIN CLAUSE LENGTH
+"I00088"		// SELECT CLAUSE LENGTH
+"I00104"		// WHERE CLAUSE LENGTH
+"I00008"		// ORDER BY CLAUSE LENGTH
+"O00013"		// OUTPUT PREFIX = HEDOUT + NEXT RECORD ID eg 00003 (LENGTH = 8 + 5)
+"O02000"		// OUTPUT BUFFER LENGTH
+}
+
+
+INBFR = {
+"HEDIN   "				// HEDIN CLAUSE
+"TTY"					// TABLE ID
+"A"					// A = ALL
+"00005"					// NUMBER OF RECORDS TO RETRIEVE
+" "					// IGNORED UNLESS NUMBER OF RECORDS TO RETRIEVE IS GIVEN
+"00001"					// RECORD ID TO START RETRIEVAL AT
+"SELECT  "				// SELECT CLAUSE
+"TTY-CAPRI-CODE  "
+"TTY-CODE        "
+"TTY-DESCRIPTION "
+"TTY-TT-OR-RV    "
+"TTY-TYPE        "				// LIST OF SELECT FIELDS
+"WHERE   "				// WHERE CLAUSE
+"TTY-TT-OR-RV    = T                             "	// WHERE CONDITIONS
+"TTY-CODE        = SOR                           "
+"ORDER BY"				// ORDER BY CLAUSE
+
+}
+
+OUTHDR = {
+"STDOUT  "
+"        "
+"     "
+" "
+" "
+" "
+}
+
+// OUTPUT BUFFER
+OUTBFR = {
+"             "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+"                                                  "
+
+}
+

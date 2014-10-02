@@ -1,0 +1,7 @@
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Release\create_retro_folders.bat
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Release\UPDATE_retro_folders.bat
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Release\OldBookmarkRedirector.dll
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Release\OldBookmarkRedirector.pdb
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\obj\Release\OldBookmarkRedirector.dll
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\obj\Release\OldBookmarkRedirector.pdb

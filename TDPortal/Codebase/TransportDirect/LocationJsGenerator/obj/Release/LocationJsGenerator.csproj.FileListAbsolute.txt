@@ -1,0 +1,17 @@
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.userportal.locationjsgenerator.exe.config
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\LocationJsGenerator.Properties.xml
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\LocationJsGenerator.Themes.xml
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.userportal.locationjsgenerator.exe
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.userportal.locationjsgenerator.pdb
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\obj\Release\td.userportal.locationjsgenerator.exe
+D:\TDPortal\Codebase\TransportDirect\LocationJsGenerator\obj\Release\td.userportal.locationjsgenerator.pdb

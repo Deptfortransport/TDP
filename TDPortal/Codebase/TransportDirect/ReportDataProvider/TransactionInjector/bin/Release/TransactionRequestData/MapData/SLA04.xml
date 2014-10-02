@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MapTransaction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Category>SLA04</Category>
+  <SubSystem>MAPPING</SubSystem>
+  <Frequency>10</Frequency>
+  <Offset>0</Offset>
+  <ActivePoll>false</ActivePoll>
+  <ServiceLevelAgreement>true</ServiceLevelAgreement>
+  <Type>ZoomToPoint</Type>
+  <Easting>623280</Easting>
+  <Northing>308595</Northing>
+  <Scale>40000</Scale>
+  <Session></Session>
+</MapTransaction>

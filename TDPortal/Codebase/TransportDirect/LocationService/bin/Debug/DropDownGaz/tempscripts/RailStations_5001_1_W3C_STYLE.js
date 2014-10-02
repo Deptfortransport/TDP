@@ -1,0 +1,2 @@
+// RailStations_5001_1 file generated at 6/9/2012 15:25.36
+var ddData_1 = [["Leicester","","LEI","9100LEI",0],["London (Main Rail Stations)","London (All)","LEI","9100PADTON,9100RICHMND",1]]; if(typeof registerLocationData == 'function'){ registerLocationData('Rail', ddData_1); }

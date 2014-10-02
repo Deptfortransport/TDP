@@ -1,0 +1,130 @@
+<seasonalInformation xmlns="http://www.transportdirect.info/SeasonalInformation" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <SeasonalDataImport>
+    <SortOrder>1</SortOrder>
+    <Region>National</Region>
+    <TransportMode>Rail reservations</TransportMode>
+    <Information>A new rail reservation system is being introduced over the Christmas period. For technical reasons, the reservations service will be closed for a short period while information is moved across from the old system to the new. You can make rail reservations as usual up to 2359 on 23rd December  when the system will close, and from 1200 on 27th December when the new system will open. Train services are not affected and reservations made before this period for all December and New Year services will be handled normally.</Information>
+    <Effecteddates>24/12/2004 to 27/12/2004</Effecteddates>
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>2</SortOrder>
+    <Region>National</Region>
+    <TransportMode>Rail tickets</TransportMode>
+    <Information>The link from Transport Direct to thetrainline.com that allows you to purchase tickets on line will be available throughout the Christmas and New Year period. However, the introduction of a new rail reservation system over the Christmas period means you will not be able to purchase a rail ticket from thetrainline.com where a reservation is compulsory, or in connection with which you wish to make a reservation, from 2359 on 23rd December until 1200 on 27th December.  </Information>
+    <Effecteddates>24/12/2004 to 27/12/2004</Effecteddates>
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>3</SortOrder>
+    <Region>National</Region>
+    <TransportMode>Rail timetables</TransportMode>
+    <Information>It is expected that all Christmas rail timetables will be reflected in journeys planned by Transport Direct from early December. In the meantime it is possible that some services will be shown in error for Christmas Day and Boxing Day 25/26 December. To find out whether these services are scheduled to operate you should check with www.nationalrail.co.uk or telephone National Rail Enquiries on  08457 48 49 50. Information about services on other days may not be complete especially where engineering work is taking place. You should re-check your journey nearer the time of travel.</Information>
+    <Effecteddates>24/12/04 to 4/1/05</Effecteddates>
+    <LastUpdated>29-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>4</SortOrder>
+    <Region>National</Region>
+    <TransportMode>National Express Coaches</TransportMode>
+    <Information>The link from Transport Direct to National Express that allows you to purchase tickets on line will be available throughout the Christmas and New Year period. Timetable information in Transport Direct will include changes for the holiday period. </Information>
+    <Effecteddates />
+    <LastUpdated>26-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>5</SortOrder>
+    <Region>National</Region>
+    <TransportMode>Scottish Citylink Coaches</TransportMode>
+    <Information>The link from Transport Direct to Scottish Citylink that allows you to purchase tickets on line will be available throughout the Christmas and New Year period. Timetable information in Transport Direct will include changes for the holiday period. </Information>
+    <Effecteddates />
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>6</SortOrder>
+    <Region>East Anglia</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>No information received</Information>
+    <Effecteddates />
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>7</SortOrder>
+    <Region>East Midlands</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>Within the region different services will be operating between December 24th and January 4th and these may not be reflected in journeys planned using Transport Direct. You are advised to check for alterations by calling Traveline on 0870 608 2 608</Information>
+    <Effecteddates>24/12/2004 to 4/1/2005</Effecteddates>
+    <LastUpdated>30-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>8</SortOrder>
+    <Region>London</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>No information received</Information>
+    <Effecteddates />
+    <LastUpdated>26-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>9</SortOrder>
+    <Region>West Midlands</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>Across the region bus services will run at a reduced level during the holidays. There will be something close to Saturday working on December 24th, 28th, 29th, 30th and 31st December and Sunday services on 2nd and 3rd January 2005. There will be no bus services on December 25th and special services will run on 26th and 27th December and on 1st January 2005. Because it is possible that not all the alterations will be reflected in journeys that you plan using Transport Direct, you are advised to call Traveline on 0870 608 2608 for up to the minute details. Buses will be back to normal on Tuesday January 4th 2005.</Information>
+    <Effecteddates>24/12/2004 to 4/1/2005</Effecteddates>
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>10</SortOrder>
+    <Region>North East &amp; Cumbria</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>Across the region bus services will run at a reduced level during the holidays. Journeys that you plan using Transport Direct should reflect the changes to services in Co. Durham, Darlington, Northumberland, Teesside and Tyne &amp; Wear from early December. Until then, journeys offered may not reflect the exact variation in services. For services in Cumbria and North Yorkshire over the holiday period you should call Traveline on 0870 608 2608 to check details. </Information>
+    <Effecteddates>24/12/2004 to 4/1/2005</Effecteddates>
+    <LastUpdated>26-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>11</SortOrder>
+    <Region>North West</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>No information received</Information>
+    <Effecteddates />
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>12</SortOrder>
+    <Region>Scotland</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>Across the region services will be altered between December 24th and January 4th and not all of the changes will be reflected in journeys that you plan using Transport Direct. You are advised to check for special notices regarding alterations on the traveline Scotland website www.travelinescotland.com</Information>
+    <Effecteddates>24/12/2004 to 4/1/2005</Effecteddates>
+    <LastUpdated>28-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>13</SortOrder>
+    <Region>South East</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>Transport Direct is being updated weekly to show holiday period details as they become available for individual operators and their services.  Until detailed information is available Transport Direct will show the following: 24 Dec, all services finish before 2000; 25/26 Dec, no service; 27/28 Dec, Sunday service; 29/30 Dec, Saturday service; 31 Dec, Saturday service finishing before 2000 and 1/2/3 Jan, Sunday service. We expect to have almost all holiday details in Transport Direct by 11 December, but a few late entries may not be available until 18 December.  All journey plans for the holiday period should be checked after 18 December.</Information>
+    <Effecteddates>24/12/2004 to 4/1/2005</Effecteddates>
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>14</SortOrder>
+    <Region>South West &amp; Hampshire</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>No information received</Information>
+    <Effecteddates />
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>15</SortOrder>
+    <Region>Wales</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>No information received</Information>
+    <Effecteddates />
+    <LastUpdated>22-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+  <SeasonalDataImport>
+    <SortOrder>16</SortOrder>
+    <Region>Yorkshire</Region>
+    <TransportMode>Local Services</TransportMode>
+    <Information>Across the region services will be altered between December 24th and January 4th and not all of the changes will be reflected in journeys that you plan using Transport Direct. You are advised to check for special notices regarding alterations on the www.wymetro.com for services in West Yorkshire or phone 0870 608 2 608 for all services in Yorkshire, including West Yorkshire.</Information>
+    <Effecteddates>24/12/2004 to 4/1/2005</Effecteddates>
+    <LastUpdated>28-Nov-04</LastUpdated>
+  </SeasonalDataImport>
+</seasonalInformation>

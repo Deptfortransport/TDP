@@ -1,0 +1,4 @@
+D:\TDPortal\Codebase\TransportDirect\TravelNewsInterface\bin\Debug\td.userportal.travelnewsinterface.dll
+D:\TDPortal\Codebase\TransportDirect\TravelNewsInterface\bin\Debug\td.userportal.travelnewsinterface.pdb
+D:\TDPortal\Codebase\TransportDirect\TravelNewsInterface\obj\Debug\td.userportal.travelnewsinterface.dll
+D:\TDPortal\Codebase\TransportDirect\TravelNewsInterface\obj\Debug\td.userportal.travelnewsinterface.pdb

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="">30000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	<!-- TD EVENT LOGGING SERVICE PROPERTIES -->
+	<!-- Core Publishers -->
+	<property name="Logging.Publisher.Queue" GID="Pricing" AID="RBO"></property>
+	<property name="Logging.Publisher.Email" GID="Pricing" AID="RBO"/>
+	<property name="Logging.Publisher.EventLog" GID="Pricing" AID="RBO"></property>
+	<property name="Logging.Publisher.Console" GID="Pricing" AID="RBO"></property>
+	<property name="Logging.Publisher.Custom" GID="Pricing" AID="RBO"/>
+	<property name="Logging.Publisher.Default" GID="Pricing" AID="RBO">File1</property>
+	<property name="Logging.Publisher.File" GID="Pricing" AID="RBO">File1</property>
+	<property name="Logging.Publisher.File.File1.Directory" GID="Pricing" AID="RBO">C:\RBOData\TDLogs</property>
+	<property name="Logging.Publisher.File.File1.Rotation" GID="Pricing" AID="RBO">1024</property>
+	<property name="Logging.Publisher.Console.Console1.Stream" GID="Pricing" AID="RBO">Out</property>
+	<property name="Logging.Publisher.EventLog.EventLog1.Name" GID="Pricing" AID="RBO">ELName1</property>
+	<property name="Logging.Publisher.EventLog.EventLog1.Source" GID="Pricing" AID="RBO">Pricing-RBO</property>
+	<property name="Logging.Publisher.EventLog.EventLog1.Machine" GID="Pricing" AID="RBO">SCHLUMBE-DB17EC</property>
+	<!-- Operational Event Publisher assignment -->
+	<property name="Logging.Event.Operational.TraceLevel" GID="Pricing" AID="RBO">Verbose</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="Pricing" AID="RBO">File1</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="Pricing" AID="RBO">File1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="Pricing" AID="RBO">File1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="Pricing" AID="RBO">File1</property>
+	<!-- Custom Events -->
+	<property name="Logging.Event.Custom.Trace" GID="Pricing" AID="RBO">On</property>
+	<property name="Logging.Event.Custom" GID="Pricing" AID="RBO">DataGateway</property>
+	<property name="Logging.Event.Custom.DataGateway.Name" GID="Pricing" AID="RBO">DataGatewayEvent</property>
+	<property name="Logging.Event.Custom.DataGateway.Assembly" GID="Pricing" AID="RBO">td.ReportDataProvider.TDPCustomEvents</property>
+	<property name="Logging.Event.Custom.DataGateway.Publishers" GID="Pricing" AID="RBO">File1</property>
+	<property name="Logging.Event.Custom.DataGateway.Trace" GID="Pricing" AID="RBO">On</property>
+	<!-- FBO PROPERTIES -->
+	<property name="RetailBusinessObjects.FBO.InterfaceVersion" GID="Pricing" AID="RBO">0101</property>
+	<property name="RetailBusinessObjects.FBO.PoolSize" GID="Pricing" AID="RBO">5</property>
+	<property name="RetailBusinessObjects.FBO.ObjectId" GID="Pricing" AID="RBO">FA</property>
+	<property name="RetailBusinessObjects.FBO.TimeoutDuration" GID="Pricing" AID="RBO">3000</property>
+	<property name="RetailBusinessObjects.FBO.TimeoutCheckFrequency" GID="Pricing" AID="RBO">1000</property>
+	<property name="RetailBusinessObjects.FBO.TimeoutChecking" GID="Pricing" AID="RBO">On</property>
+	<property name="RetailBusinessObjects.FBO.MinimumPoolSize" GID="Pricing" AID="RBO">5</property>
+	<!-- RBO PROPERTIES -->
+	<property name="RetailBusinessObjects.RBO.InterfaceVersion" GID="Pricing" AID="RBO">0200</property>
+	<property name="RetailBusinessObjects.RBO.PoolSize" GID="Pricing" AID="RBO">5</property>
+	<property name="RetailBusinessObjects.RBO.ObjectId" GID="Pricing" AID="RBO">RE</property>
+	<property name="RetailBusinessObjects.RBO.TimeoutDuration" GID="Pricing" AID="RBO">5000</property>
+	<property name="RetailBusinessObjects.RBO.TimeoutCheckFrequency" GID="Pricing" AID="RBO">1000</property>
+	<property name="RetailBusinessObjects.RBO.TimeoutChecking" GID="Pricing" AID="RBO">On</property>
+	<property name="RetailBusinessObjects.RBO.MinimumPoolSize" GID="Pricing" AID="RBO">5</property>
+	<!-- LBO PROPERTIES -->
+	<property name="RetailBusinessObjects.LBO.InterfaceVersion" GID="Pricing" AID="RBO">0100</property>
+	<property name="RetailBusinessObjects.LBO.PoolSize" GID="Pricing" AID="RBO">5</property>
+	<property name="RetailBusinessObjects.LBO.ObjectId" GID="Pricing" AID="RBO">LU</property>
+	<property name="RetailBusinessObjects.LBO.TimeoutDuration" GID="Pricing" AID="RBO">3000</property>
+	<property name="RetailBusinessObjects.LBO.TimeoutCheckFrequency" GID="Pricing" AID="RBO">1000</property>
+	<property name="RetailBusinessObjects.LBO.TimeoutChecking" GID="Pricing" AID="RBO">On</property>
+	<property name="RetailBusinessObjects.LBO.MinimumPoolSize" GID="Pricing" AID="RBO">5</property>
+	<!-- RVBO PROPERTIES -->
+	<property name="RetailBusinessObjects.RVBO.InterfaceVersion" GID="Pricing" AID="RBO">0200</property>
+	<property name="RetailBusinessObjects.RVBO.PoolSize" GID="Pricing" AID="RBO">5</property>
+	<property name="RetailBusinessObjects.RVBO.ObjectId" GID="Pricing" AID="RBO">RV</property>
+	<property name="RetailBusinessObjects.RVBO.TimeoutDuration" GID="Pricing" AID="RBO">5000</property>
+	<property name="RetailBusinessObjects.RVBO.TimeoutCheckFrequency" GID="Pricing" AID="RBO">1000</property>
+	<property name="RetailBusinessObjects.RVBO.TimeoutChecking" GID="Pricing" AID="RBO">On</property>
+	<property name="RetailBusinessObjects.RVBO.MinimumPoolSize" GID="Pricing" AID="RBO">5</property>
+	<property name="RetailBusinessObjects.RVBO.NrsUserID" GID="Pricing" AID="RBO">UUUUUUUU</property>
+	<property name="RetailBusinessObjects.RVBO.NrsIsTest" GID="Pricing" AID="RBO">N</property>
+	<property name="RetailBusinessObjects.RVBO.NrsIsTraining" GID="Pricing" AID="RBO">N</property>	
+	
+	
+	<!-- SBO PROPERTIES -->
+	<property name="RetailBusinessObjects.SBO.InterfaceVersion" GID="Pricing" AID="RBO">0200</property>
+	<property name="RetailBusinessObjects.SBO.PoolSize" GID="Pricing" AID="RBO">5</property>
+	<property name="RetailBusinessObjects.SBO.ObjectId" GID="Pricing" AID="RBO">SU</property>
+	<property name="RetailBusinessObjects.SBO.TimeoutDuration" GID="Pricing" AID="RBO">5000</property>
+	<property name="RetailBusinessObjects.SBO.TimeoutCheckFrequency" GID="Pricing" AID="RBO">1000</property>
+	<property name="RetailBusinessObjects.SBO.TimeoutChecking" GID="Pricing" AID="RBO">On</property>
+	<property name="RetailBusinessObjects.SBO.MinimumPoolSize" GID="Pricing" AID="RBO">5</property>		
+	
+	<!-- Pool Properties -->
+	<property name="RetailBusinessObjects.HousekeepingCheckFrequency" GID="Pricing" AID="RBO">3000</property>
+	<!-- Import Utility Properties -->
+	
+	<property name="datagateway.retailbusinessobjects.fbofeedname" GID="Pricing" AID="RBO">kfq970</property>
+	<property name="datagateway.retailbusinessobjects.rbofeedname" GID="Pricing" AID="RBO">pgc328</property>
+	<property name="datagateway.retailbusinessobjects.lbofeedname" GID="Pricing" AID="RBO">nbv921</property>
+	<property name="datagateway.retailbusinessobjects.rvbofeedname" GID="Pricing" AID="RBO">bmc368</property>
+	<property name="datagateway.retailbusinessobjects.sbofeedname" GID="Pricing" AID="RBO">jzr690</property>
+
+</lookup>

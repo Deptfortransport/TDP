@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F01A6E85-FC2B-4A4A-A947-679CB6FA414D}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.reportdataprovider.transactioninjector</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TransportDirect.ReportDataProvider.TransactionInjector</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>SAK</SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Name>AdditionalDataModule</Name>
+      <Project>{1BF668A4-F9B2-4D64-85CB-ADD80C432849}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CyclePlannerControl\CyclePlannerControl.csproj">
+      <Project>{2E288B42-FABF-487E-B8D8-64AD18B90208}</Project>
+      <Name>CyclePlannerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{2E16F073-D95F-4DE8-8E60-381899A722DA}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Name>DatabaseInfrastructure</Name>
+      <Project>{5F116712-53F6-4A9F-B11B-96D0812190AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DepartureBoardService\DepartureBoardService.csproj">
+      <Name>DepartureBoardService</Name>
+      <Project>{1CEE342F-B3DF-44AD-A56B-1B861292E016}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyControl\JourneyControl.csproj">
+      <Name>JourneyControl</Name>
+      <Project>{27414D3D-9782-44C6-A5BD-A11ECEA591E5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LocationService\LocationService.csproj">
+      <Name>LocationService</Name>
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PricingRetail\PricingRetail.csproj">
+      <Name>PricingRetail</Name>
+      <Project>{0E8DF4E5-C028-4E85-8163-41F9E007ACB7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PropertiesService\FilePropertyProvider\FilePropertyProvider.csproj">
+      <Name>FilePropertyProvider</Name>
+      <Project>{A3CB7929-0F74-4625-AB84-349C041B9B62}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabasePublishers\DatabasePublishers.csproj">
+      <Name>DatabasePublishers</Name>
+      <Project>{7CEAAC84-1314-4C92-A832-6CAED98E8F08}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TDPCustomEvents\TDPCustomEvents.csproj">
+      <Name>TDPCustomEvents</Name>
+      <Project>{A377CDD7-9190-46F2-8938-65DF17478D21}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TransactionHelper\TransactionHelper.csproj">
+      <Name>TransactionHelper</Name>
+      <Project>{C4A6F482-58AB-43ED-8A59-D497F520712E}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TravelineChecker\TravelineChecker.csproj">
+      <Name>TravelineChecker</Name>
+      <Project>{E0BBC409-C1E0-4770-BD6A-6D5AE7F2D1FD}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="td.CJPInterface">
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TransactionRequestData\GazetteerData\SLA05.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\KPI01.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\KPI03.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\KPI05.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\KPI07.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\KPI09.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\KPI14.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\KPI15.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\SLA01.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\SLA02.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\JourneyRequestData\SLA03.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\MapData\SLA04.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\TravelineCheckerData\KPI04.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\TravelineCheckerData\KPI06.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\TravelineCheckerData\KPI08.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\TravelineCheckerData\KPI10.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\TravelineCheckerData\KPI13.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\TravelineCheckerData\KPI16.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\TravelNewsData\SLA06.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionInjectorProperties.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionInjectorThemes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config" />
+    <None Include="BatchFiles\Generate TDTransaction Proxy.bat" />
+    <None Include="BatchFiles\install Injector.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BatchFiles\START TransactionInjector.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BatchFiles\STOP TransactionInjector.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BatchFiles\uninstall Injector.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TransactionInjector.build" />
+    <Compile Include="..\..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+
+    <Compile Include="Test\TestJourneyRequestTransaction.cs" />
+    <Compile Include="Test\TestJourneyRequestTransactionGroup.cs" />
+    <Compile Include="TransactionTypes\TravelNewsTransactionGroup.cs" />
+    <Compile Include="TransactionTypes\CycleRequestTransaction.cs" />
+    <Compile Include="TransactionTypes\CycleRequestTransactionGroup.cs" />
+    <Compile Include="TransactionTypes\GazetteerTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\GazetteerTransactionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\JourneyRequestTransaction.cs" />
+    <Compile Include="TransactionTypes\JourneyRequestTransactionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Keys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\MapTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\MapTransactionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\EESRequestTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\EESRequestTransactionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDTransactionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDTransactionService.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="TDTransactionServiceOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestGazetteerTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestMapTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestMockProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestEESRequestTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestTransactionInjector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestTransactionInjectorPropertyValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestTravelineCheckerTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestTravelineCheckerTransactionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionInjector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionInjectorInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionInjectorPropertyValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionInjectorService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\TravelineCheckerTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\TravelineCheckerTransactionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionTypes\TravelNewsTransaction.cs" />
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionInjectorService.resx">
+      <DependentUpon>TransactionInjectorService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="TransactionRequestData\CycleRequestData\KPI02.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\EESRequestData\SLA12.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\EESRequestData\SLA13.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TransactionRequestData\EESRequestData\SLA14.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="TransactionRequestData\Templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

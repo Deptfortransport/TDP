@@ -1,0 +1,3 @@
+D:\TDPortal\Codebase\TransportDirect\Resource\bin\Release\td.userportal.resource.dll
+D:\TDPortal\Codebase\TransportDirect\Resource\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\Resource\obj\Release\td.userportal.resource.dll

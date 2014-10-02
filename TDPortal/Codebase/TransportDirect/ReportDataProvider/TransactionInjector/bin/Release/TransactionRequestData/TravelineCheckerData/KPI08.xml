@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TravelineCheckerTransaction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Category>KPI08</Category>
+  <SubSystem>KPI</SubSystem>
+  <ServiceLevelAgreement>false</ServiceLevelAgreement>
+  <Frequency>10</Frequency>
+  <Offset>5</Offset>
+  <OriginLocation>
+    <Description>Haslemere, Surrey</Description>
+    <Locality>E0051824</Locality>
+    <RequestPlaceType>Coordinate</RequestPlaceType>
+    <GridReference>
+      <Easting>490460</Easting>
+      <Northing>132820</Northing>
+    </GridReference>
+    <Toid>
+      <string></string>
+    </Toid>
+    <NaPTANs></NaPTANs>
+    <Status>Valid</Status>
+    <PartPostcode>false</PartPostcode>
+    <PartPostcodeMaxX>0</PartPostcodeMaxX>
+    <PartPostcodeMaxY>0</PartPostcodeMaxY>
+    <PartPostcodeMinX>0</PartPostcodeMinX>
+    <PartPostcodeMinY>0</PartPostcodeMinY>      
+  </OriginLocation>
+  <DestinationLocation>
+    <Description>Fernhurst, West Sussex</Description>
+    <Locality>E0052106</Locality>
+    <RequestPlaceType>Coordinate</RequestPlaceType>
+    <GridReference>
+      <Easting>489640</Easting>
+      <Northing>128490</Northing>
+    </GridReference> 
+    <Toid>
+      <string></string>
+    </Toid> 
+    <NaPTANs></NaPTANs>
+    <Status>Valid</Status>
+    <PartPostcode>false</PartPostcode>
+    <PartPostcodeMaxX>0</PartPostcodeMaxX>
+    <PartPostcodeMaxY>0</PartPostcodeMaxY>
+    <PartPostcodeMinX>0</PartPostcodeMinX>
+    <PartPostcodeMinY>0</PartPostcodeMinY>            
+  </DestinationLocation>    
+  <Travelines>
+    <Traveline>
+      <Url>http://217.158.134.8:80/JourneyWeb.cgi</Url>
+      <ProxyName>jwproxyserver:8080</ProxyName>
+      <UseProxy>false</UseProxy>
+    </Traveline>
+  </Travelines>
+</TravelineCheckerTransaction>

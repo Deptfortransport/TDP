@@ -1,0 +1,21 @@
+OperatorCode,RouteOriginName,RouteOriginNaPTAN,RouteDestinationName,RouteDestinationNaPTAN,TicketType,Fare
+NX,Aberdeen,900090017,Aberdeen,900090017,O,10
+NX,Aberystwyth,900012183,Aberystwyth,900012183,O,10
+NX,Ashford,900058016,Ashford,900058016,O,10
+NX,Bangor,900011621,Bangor,900011621,O,10
+NX,Barnsley,900025212,Barnsley,900025212,O,10
+NX,Barnstaple,900042025,Barnstaple,900042025,O,10
+NX,Basingstoke,900062036,Basingstoke,900062036,O,10
+NX,Bath Spa,900087025,Bath Spa,900087025,O,10
+NX,Bedford,900052444,Bedford,900052444,O,10
+NX,Berwick-upon-Tweed,900069032,Berwick-upon-Tweed,900069032,O,10
+NX,Birmingham,900033023,Birmingham,900033023,O,10
+NX,Blackburn,900073021,Blackburn,900073021,O,10
+NX,Blackpool,900077131,Blackpool,900077131,O,10
+NX,Bolton,900021041,Bolton,900021041,O,10
+NX,Bournemouth,900065026,Bournemouth,900065026,O,10
+NX,Bradford,900076122,Bradford,900076122,O,10
+NX,Brighton,900059076,Brighton,900059076,O,10
+NX,Bristol,900041065,Bristol,900041065,O,10
+NX,Burnley,900073141,Burnley,900073141,O,10
+NX,Bury St Edmunds,900053654,Bury St Edmunds,900053654,O,10

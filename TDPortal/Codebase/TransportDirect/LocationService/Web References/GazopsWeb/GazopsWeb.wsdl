@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.esriuk.com/gazops" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.esriuk.com/gazops" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.esriuk.com/gazops">
+      <s:element name="SubscriptionInformationURL">
+        <s:complexType />
+      </s:element>
+      <s:element name="SubscriptionInformationURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubscriptionInformationURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListGazetteers">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListGazetteersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListGazetteersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginServiceURL">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoginServiceURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginServiceURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DriverCapabilities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gazID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DriverCapabilitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DriverCapabilitiesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DrillDownAddressQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAddressQueryString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="picklistcriteria" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="singleAddressSelect" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryReference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzy" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DrillDownAddressQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DrillDownAddressQueryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPostcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostcodeMatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlaceNameMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPlaceNameDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzy" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lPlaceNameSizeMax" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lPlaceNameSizeMin" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lMaxReturnRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlaceNameMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlaceNameMatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StreetMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sStreetDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzy" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lMaxReturnRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StreetMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StreetMatchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="recordtype" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="recordid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchRecordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchAddressAlias">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="recordid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchAddressAliasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchAddressAliasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceRestriction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gazID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceRestrictionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceRestrictionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeGeocode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPostcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostcodeGeocodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostcodeGeocodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddressGeocodeNI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gazid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFuzzyMatch" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="envelope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddressGeocodeNIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddressGeocodeNIResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </types>
+  <message name="SubscriptionInformationURLSoapIn">
+    <part name="parameters" element="s0:SubscriptionInformationURL" />
+  </message>
+  <message name="SubscriptionInformationURLSoapOut">
+    <part name="parameters" element="s0:SubscriptionInformationURLResponse" />
+  </message>
+  <message name="ListGazetteersSoapIn">
+    <part name="parameters" element="s0:ListGazetteers" />
+  </message>
+  <message name="ListGazetteersSoapOut">
+    <part name="parameters" element="s0:ListGazetteersResponse" />
+  </message>
+  <message name="LoginServiceURLSoapIn">
+    <part name="parameters" element="s0:LoginServiceURL" />
+  </message>
+  <message name="LoginServiceURLSoapOut">
+    <part name="parameters" element="s0:LoginServiceURLResponse" />
+  </message>
+  <message name="DriverCapabilitiesSoapIn">
+    <part name="parameters" element="s0:DriverCapabilities" />
+  </message>
+  <message name="DriverCapabilitiesSoapOut">
+    <part name="parameters" element="s0:DriverCapabilitiesResponse" />
+  </message>
+  <message name="DrillDownAddressQuerySoapIn">
+    <part name="parameters" element="s0:DrillDownAddressQuery" />
+  </message>
+  <message name="DrillDownAddressQuerySoapOut">
+    <part name="parameters" element="s0:DrillDownAddressQueryResponse" />
+  </message>
+  <message name="PostcodeMatchSoapIn">
+    <part name="parameters" element="s0:PostcodeMatch" />
+  </message>
+  <message name="PostcodeMatchSoapOut">
+    <part name="parameters" element="s0:PostcodeMatchResponse" />
+  </message>
+  <message name="PlaceNameMatchSoapIn">
+    <part name="parameters" element="s0:PlaceNameMatch" />
+  </message>
+  <message name="PlaceNameMatchSoapOut">
+    <part name="parameters" element="s0:PlaceNameMatchResponse" />
+  </message>
+  <message name="StreetMatchSoapIn">
+    <part name="parameters" element="s0:StreetMatch" />
+  </message>
+  <message name="StreetMatchSoapOut">
+    <part name="parameters" element="s0:StreetMatchResponse" />
+  </message>
+  <message name="FetchRecordSoapIn">
+    <part name="parameters" element="s0:FetchRecord" />
+  </message>
+  <message name="FetchRecordSoapOut">
+    <part name="parameters" element="s0:FetchRecordResponse" />
+  </message>
+  <message name="FetchAddressAliasSoapIn">
+    <part name="parameters" element="s0:FetchAddressAlias" />
+  </message>
+  <message name="FetchAddressAliasSoapOut">
+    <part name="parameters" element="s0:FetchAddressAliasResponse" />
+  </message>
+  <message name="GetServiceRestrictionSoapIn">
+    <part name="parameters" element="s0:GetServiceRestriction" />
+  </message>
+  <message name="GetServiceRestrictionSoapOut">
+    <part name="parameters" element="s0:GetServiceRestrictionResponse" />
+  </message>
+  <message name="PostcodeGeocodeSoapIn">
+    <part name="parameters" element="s0:PostcodeGeocode" />
+  </message>
+  <message name="PostcodeGeocodeSoapOut">
+    <part name="parameters" element="s0:PostcodeGeocodeResponse" />
+  </message>
+  <message name="AddressGeocodeNISoapIn">
+    <part name="parameters" element="s0:AddressGeocodeNI" />
+  </message>
+  <message name="AddressGeocodeNISoapOut">
+    <part name="parameters" element="s0:AddressGeocodeNIResponse" />
+  </message>
+  <message name="SubscriptionInformationURLHttpGetIn" />
+  <message name="SubscriptionInformationURLHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="ListGazetteersHttpGetIn" />
+  <message name="ListGazetteersHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="LoginServiceURLHttpGetIn" />
+  <message name="LoginServiceURLHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="DriverCapabilitiesHttpGetIn">
+    <part name="gazID" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="DriverCapabilitiesHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="DrillDownAddressQueryHttpGetIn">
+    <part name="sAddressQueryString" type="s:string" />
+    <part name="picklistcriteria" type="s:string" />
+    <part name="singleAddressSelect" type="s:string" />
+    <part name="queryReference" type="s:string" />
+    <part name="bFuzzy" type="s:string" />
+    <part name="gazID" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="DrillDownAddressQueryHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="PostcodeMatchHttpGetIn">
+    <part name="sPostcode" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="PostcodeMatchHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="PlaceNameMatchHttpGetIn">
+    <part name="sPlaceNameDescription" type="s:string" />
+    <part name="bFuzzy" type="s:string" />
+    <part name="lPlaceNameSizeMax" type="s:string" />
+    <part name="lPlaceNameSizeMin" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="lMaxReturnRecords" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="PlaceNameMatchHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="StreetMatchHttpGetIn">
+    <part name="sStreetDescription" type="s:string" />
+    <part name="bFuzzy" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="lMaxReturnRecords" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="StreetMatchHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="FetchRecordHttpGetIn">
+    <part name="recordtype" type="s:string" />
+    <part name="recordid" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="FetchRecordHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="FetchAddressAliasHttpGetIn">
+    <part name="recordid" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="FetchAddressAliasHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetServiceRestrictionHttpGetIn">
+    <part name="gazID" type="s:string" />
+    <part name="SecurityToken" type="s:string" />
+  </message>
+  <message name="GetServiceRestrictionHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="PostcodeGeocodeHttpGetIn">
+    <part name="sPostcode" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="PostcodeGeocodeHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="AddressGeocodeNIHttpGetIn">
+    <part name="sAddress" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="bFuzzyMatch" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="AddressGeocodeNIHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="SubscriptionInformationURLHttpPostIn" />
+  <message name="SubscriptionInformationURLHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="ListGazetteersHttpPostIn" />
+  <message name="ListGazetteersHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="LoginServiceURLHttpPostIn" />
+  <message name="LoginServiceURLHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="DriverCapabilitiesHttpPostIn">
+    <part name="gazID" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="DriverCapabilitiesHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="DrillDownAddressQueryHttpPostIn">
+    <part name="sAddressQueryString" type="s:string" />
+    <part name="picklistcriteria" type="s:string" />
+    <part name="singleAddressSelect" type="s:string" />
+    <part name="queryReference" type="s:string" />
+    <part name="bFuzzy" type="s:string" />
+    <part name="gazID" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="DrillDownAddressQueryHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="PostcodeMatchHttpPostIn">
+    <part name="sPostcode" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="PostcodeMatchHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="PlaceNameMatchHttpPostIn">
+    <part name="sPlaceNameDescription" type="s:string" />
+    <part name="bFuzzy" type="s:string" />
+    <part name="lPlaceNameSizeMax" type="s:string" />
+    <part name="lPlaceNameSizeMin" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="lMaxReturnRecords" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="PlaceNameMatchHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="StreetMatchHttpPostIn">
+    <part name="sStreetDescription" type="s:string" />
+    <part name="bFuzzy" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="lMaxReturnRecords" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="StreetMatchHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="FetchRecordHttpPostIn">
+    <part name="recordtype" type="s:string" />
+    <part name="recordid" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="FetchRecordHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="FetchAddressAliasHttpPostIn">
+    <part name="recordid" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="FetchAddressAliasHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetServiceRestrictionHttpPostIn">
+    <part name="gazID" type="s:string" />
+    <part name="SecurityToken" type="s:string" />
+  </message>
+  <message name="GetServiceRestrictionHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="PostcodeGeocodeHttpPostIn">
+    <part name="sPostcode" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="PostcodeGeocodeHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="AddressGeocodeNIHttpPostIn">
+    <part name="sAddress" type="s:string" />
+    <part name="gazid" type="s:string" />
+    <part name="bFuzzyMatch" type="s:string" />
+    <part name="envelope" type="s:string" />
+    <part name="securityToken" type="s:string" />
+  </message>
+  <message name="AddressGeocodeNIHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <portType name="GazopsWebSoap">
+    <operation name="SubscriptionInformationURL">
+      <documentation>Return the URL web page explaining how to subscribe to this web service.</documentation>
+      <input message="s0:SubscriptionInformationURLSoapIn" />
+      <output message="s0:SubscriptionInformationURLSoapOut" />
+    </operation>
+    <operation name="ListGazetteers">
+      <documentation>List the gazetteer drivers which are supported by this web service.</documentation>
+      <input message="s0:ListGazetteersSoapIn" />
+      <output message="s0:ListGazetteersSoapOut" />
+    </operation>
+    <operation name="LoginServiceURL">
+      <documentation>Return the URL for the secure login web service. This web service will return a security token given valid credentials. (Not Required)</documentation>
+      <input message="s0:LoginServiceURLSoapIn" />
+      <output message="s0:LoginServiceURLSoapOut" />
+    </operation>
+    <operation name="DriverCapabilities">
+      <documentation>Return an XML document containing the capabilities of a specicif Gazetteer engine.</documentation>
+      <input message="s0:DriverCapabilitiesSoapIn" />
+      <output message="s0:DriverCapabilitiesSoapOut" />
+    </operation>
+    <operation name="DrillDownAddressQuery">
+      <documentation>Perform a drill down address query operation. Will be recursively called to drill through the result set.</documentation>
+      <input message="s0:DrillDownAddressQuerySoapIn" />
+      <output message="s0:DrillDownAddressQuerySoapOut" />
+    </operation>
+    <operation name="PostcodeMatch">
+      <documentation>Perform a postcode match operation.</documentation>
+      <input message="s0:PostcodeMatchSoapIn" />
+      <output message="s0:PostcodeMatchSoapOut" />
+    </operation>
+    <operation name="PlaceNameMatch">
+      <documentation>Perform a placename match operation.</documentation>
+      <input message="s0:PlaceNameMatchSoapIn" />
+      <output message="s0:PlaceNameMatchSoapOut" />
+    </operation>
+    <operation name="StreetMatch">
+      <documentation>Perform a street match operation.</documentation>
+      <input message="s0:StreetMatchSoapIn" />
+      <output message="s0:StreetMatchSoapOut" />
+    </operation>
+    <operation name="FetchRecord">
+      <documentation>Fecth an address record or specific alias (depending on the gazetteer engine).</documentation>
+      <input message="s0:FetchRecordSoapIn" />
+      <output message="s0:FetchRecordSoapOut" />
+    </operation>
+    <operation name="FetchAddressAlias">
+      <documentation>Fecth all aliases for an address (depends on the gazetteer driver).</documentation>
+      <input message="s0:FetchAddressAliasSoapIn" />
+      <output message="s0:FetchAddressAliasSoapOut" />
+    </operation>
+    <operation name="GetServiceRestriction">
+      <documentation>Find the restrictions which are in force for a particular gazetteer engine and user.</documentation>
+      <input message="s0:GetServiceRestrictionSoapIn" />
+      <output message="s0:GetServiceRestrictionSoapOut" />
+    </operation>
+    <operation name="PostcodeGeocode">
+      <documentation>Perform a postcode geocode operation. (searches an address for the postcode and then geocodes it)</documentation>
+      <input message="s0:PostcodeGeocodeSoapIn" />
+      <output message="s0:PostcodeGeocodeSoapOut" />
+    </operation>
+    <operation name="AddressGeocodeNI">
+      <documentation>Perform an address geocode operation.</documentation>
+      <input message="s0:AddressGeocodeNISoapIn" />
+      <output message="s0:AddressGeocodeNISoapOut" />
+    </operation>
+  </portType>
+  <portType name="GazopsWebHttpGet">
+    <operation name="SubscriptionInformationURL">
+      <documentation>Return the URL web page explaining how to subscribe to this web service.</documentation>
+      <input message="s0:SubscriptionInformationURLHttpGetIn" />
+      <output message="s0:SubscriptionInformationURLHttpGetOut" />
+    </operation>
+    <operation name="ListGazetteers">
+      <documentation>List the gazetteer drivers which are supported by this web service.</documentation>
+      <input message="s0:ListGazetteersHttpGetIn" />
+      <output message="s0:ListGazetteersHttpGetOut" />
+    </operation>
+    <operation name="LoginServiceURL">
+      <documentation>Return the URL for the secure login web service. This web service will return a security token given valid credentials. (Not Required)</documentation>
+      <input message="s0:LoginServiceURLHttpGetIn" />
+      <output message="s0:LoginServiceURLHttpGetOut" />
+    </operation>
+    <operation name="DriverCapabilities">
+      <documentation>Return an XML document containing the capabilities of a specicif Gazetteer engine.</documentation>
+      <input message="s0:DriverCapabilitiesHttpGetIn" />
+      <output message="s0:DriverCapabilitiesHttpGetOut" />
+    </operation>
+    <operation name="DrillDownAddressQuery">
+      <documentation>Perform a drill down address query operation. Will be recursively called to drill through the result set.</documentation>
+      <input message="s0:DrillDownAddressQueryHttpGetIn" />
+      <output message="s0:DrillDownAddressQueryHttpGetOut" />
+    </operation>
+    <operation name="PostcodeMatch">
+      <documentation>Perform a postcode match operation.</documentation>
+      <input message="s0:PostcodeMatchHttpGetIn" />
+      <output message="s0:PostcodeMatchHttpGetOut" />
+    </operation>
+    <operation name="PlaceNameMatch">
+      <documentation>Perform a placename match operation.</documentation>
+      <input message="s0:PlaceNameMatchHttpGetIn" />
+      <output message="s0:PlaceNameMatchHttpGetOut" />
+    </operation>
+    <operation name="StreetMatch">
+      <documentation>Perform a street match operation.</documentation>
+      <input message="s0:StreetMatchHttpGetIn" />
+      <output message="s0:StreetMatchHttpGetOut" />
+    </operation>
+    <operation name="FetchRecord">
+      <documentation>Fecth an address record or specific alias (depending on the gazetteer engine).</documentation>
+      <input message="s0:FetchRecordHttpGetIn" />
+      <output message="s0:FetchRecordHttpGetOut" />
+    </operation>
+    <operation name="FetchAddressAlias">
+      <documentation>Fecth all aliases for an address (depends on the gazetteer driver).</documentation>
+      <input message="s0:FetchAddressAliasHttpGetIn" />
+      <output message="s0:FetchAddressAliasHttpGetOut" />
+    </operation>
+    <operation name="GetServiceRestriction">
+      <documentation>Find the restrictions which are in force for a particular gazetteer engine and user.</documentation>
+      <input message="s0:GetServiceRestrictionHttpGetIn" />
+      <output message="s0:GetServiceRestrictionHttpGetOut" />
+    </operation>
+    <operation name="PostcodeGeocode">
+      <documentation>Perform a postcode geocode operation. (searches an address for the postcode and then geocodes it)</documentation>
+      <input message="s0:PostcodeGeocodeHttpGetIn" />
+      <output message="s0:PostcodeGeocodeHttpGetOut" />
+    </operation>
+    <operation name="AddressGeocodeNI">
+      <documentation>Perform an address geocode operation.</documentation>
+      <input message="s0:AddressGeocodeNIHttpGetIn" />
+      <output message="s0:AddressGeocodeNIHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="GazopsWebHttpPost">
+    <operation name="SubscriptionInformationURL">
+      <documentation>Return the URL web page explaining how to subscribe to this web service.</documentation>
+      <input message="s0:SubscriptionInformationURLHttpPostIn" />
+      <output message="s0:SubscriptionInformationURLHttpPostOut" />
+    </operation>
+    <operation name="ListGazetteers">
+      <documentation>List the gazetteer drivers which are supported by this web service.</documentation>
+      <input message="s0:ListGazetteersHttpPostIn" />
+      <output message="s0:ListGazetteersHttpPostOut" />
+    </operation>
+    <operation name="LoginServiceURL">
+      <documentation>Return the URL for the secure login web service. This web service will return a security token given valid credentials. (Not Required)</documentation>
+      <input message="s0:LoginServiceURLHttpPostIn" />
+      <output message="s0:LoginServiceURLHttpPostOut" />
+    </operation>
+    <operation name="DriverCapabilities">
+      <documentation>Return an XML document containing the capabilities of a specicif Gazetteer engine.</documentation>
+      <input message="s0:DriverCapabilitiesHttpPostIn" />
+      <output message="s0:DriverCapabilitiesHttpPostOut" />
+    </operation>
+    <operation name="DrillDownAddressQuery">
+      <documentation>Perform a drill down address query operation. Will be recursively called to drill through the result set.</documentation>
+      <input message="s0:DrillDownAddressQueryHttpPostIn" />
+      <output message="s0:DrillDownAddressQueryHttpPostOut" />
+    </operation>
+    <operation name="PostcodeMatch">
+      <documentation>Perform a postcode match operation.</documentation>
+      <input message="s0:PostcodeMatchHttpPostIn" />
+      <output message="s0:PostcodeMatchHttpPostOut" />
+    </operation>
+    <operation name="PlaceNameMatch">
+      <documentation>Perform a placename match operation.</documentation>
+      <input message="s0:PlaceNameMatchHttpPostIn" />
+      <output message="s0:PlaceNameMatchHttpPostOut" />
+    </operation>
+    <operation name="StreetMatch">
+      <documentation>Perform a street match operation.</documentation>
+      <input message="s0:StreetMatchHttpPostIn" />
+      <output message="s0:StreetMatchHttpPostOut" />
+    </operation>
+    <operation name="FetchRecord">
+      <documentation>Fecth an address record or specific alias (depending on the gazetteer engine).</documentation>
+      <input message="s0:FetchRecordHttpPostIn" />
+      <output message="s0:FetchRecordHttpPostOut" />
+    </operation>
+    <operation name="FetchAddressAlias">
+      <documentation>Fecth all aliases for an address (depends on the gazetteer driver).</documentation>
+      <input message="s0:FetchAddressAliasHttpPostIn" />
+      <output message="s0:FetchAddressAliasHttpPostOut" />
+    </operation>
+    <operation name="GetServiceRestriction">
+      <documentation>Find the restrictions which are in force for a particular gazetteer engine and user.</documentation>
+      <input message="s0:GetServiceRestrictionHttpPostIn" />
+      <output message="s0:GetServiceRestrictionHttpPostOut" />
+    </operation>
+    <operation name="PostcodeGeocode">
+      <documentation>Perform a postcode geocode operation. (searches an address for the postcode and then geocodes it)</documentation>
+      <input message="s0:PostcodeGeocodeHttpPostIn" />
+      <output message="s0:PostcodeGeocodeHttpPostOut" />
+    </operation>
+    <operation name="AddressGeocodeNI">
+      <documentation>Perform an address geocode operation.</documentation>
+      <input message="s0:AddressGeocodeNIHttpPostIn" />
+      <output message="s0:AddressGeocodeNIHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="GazopsWebSoap" type="s0:GazopsWebSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="SubscriptionInformationURL">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/SubscriptionInformationURL" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ListGazetteers">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/ListGazetteers" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="LoginServiceURL">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/LoginServiceURL" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DriverCapabilities">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/DriverCapabilities" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DrillDownAddressQuery">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/DrillDownAddressQuery" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="PostcodeMatch">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/PostcodeMatch" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="PlaceNameMatch">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/PlaceNameMatch" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="StreetMatch">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/StreetMatch" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="FetchRecord">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/FetchRecord" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="FetchAddressAlias">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/FetchAddressAlias" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetServiceRestriction">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/GetServiceRestriction" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="PostcodeGeocode">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/PostcodeGeocode" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AddressGeocodeNI">
+      <soap:operation soapAction="http://www.esriuk.com/gazops/AddressGeocodeNI" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="GazopsWebHttpGet" type="s0:GazopsWebHttpGet">
+    <http:binding verb="GET" />
+    <operation name="SubscriptionInformationURL">
+      <http:operation location="/SubscriptionInformationURL" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="ListGazetteers">
+      <http:operation location="/ListGazetteers" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="LoginServiceURL">
+      <http:operation location="/LoginServiceURL" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="DriverCapabilities">
+      <http:operation location="/DriverCapabilities" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="DrillDownAddressQuery">
+      <http:operation location="/DrillDownAddressQuery" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="PostcodeMatch">
+      <http:operation location="/PostcodeMatch" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="PlaceNameMatch">
+      <http:operation location="/PlaceNameMatch" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="StreetMatch">
+      <http:operation location="/StreetMatch" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="FetchRecord">
+      <http:operation location="/FetchRecord" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="FetchAddressAlias">
+      <http:operation location="/FetchAddressAlias" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetServiceRestriction">
+      <http:operation location="/GetServiceRestriction" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="PostcodeGeocode">
+      <http:operation location="/PostcodeGeocode" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="AddressGeocodeNI">
+      <http:operation location="/AddressGeocodeNI" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="GazopsWebHttpPost" type="s0:GazopsWebHttpPost">
+    <http:binding verb="POST" />
+    <operation name="SubscriptionInformationURL">
+      <http:operation location="/SubscriptionInformationURL" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="ListGazetteers">
+      <http:operation location="/ListGazetteers" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="LoginServiceURL">
+      <http:operation location="/LoginServiceURL" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="DriverCapabilities">
+      <http:operation location="/DriverCapabilities" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="DrillDownAddressQuery">
+      <http:operation location="/DrillDownAddressQuery" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="PostcodeMatch">
+      <http:operation location="/PostcodeMatch" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="PlaceNameMatch">
+      <http:operation location="/PlaceNameMatch" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="StreetMatch">
+      <http:operation location="/StreetMatch" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="FetchRecord">
+      <http:operation location="/FetchRecord" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="FetchAddressAlias">
+      <http:operation location="/FetchAddressAlias" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetServiceRestriction">
+      <http:operation location="/GetServiceRestriction" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="PostcodeGeocode">
+      <http:operation location="/PostcodeGeocode" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="AddressGeocodeNI">
+      <http:operation location="/AddressGeocodeNI" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="GazopsWeb">
+    <documentation>GAZOPS Web Service. (no security implementation)</documentation>
+    <port name="GazopsWebSoap" binding="s0:GazopsWebSoap">
+      <soap:address location="http://tri-tdp-iis/GazopsWeb/GazopsWeb.asmx" />
+    </port>
+    <port name="GazopsWebHttpGet" binding="s0:GazopsWebHttpGet">
+      <http:address location="http://tri-tdp-iis/GazopsWeb/GazopsWeb.asmx" />
+    </port>
+    <port name="GazopsWebHttpPost" binding="s0:GazopsWebHttpPost">
+      <http:address location="http://tri-tdp-iis/GazopsWeb/GazopsWeb.asmx" />
+    </port>
+  </service>
+</definitions>

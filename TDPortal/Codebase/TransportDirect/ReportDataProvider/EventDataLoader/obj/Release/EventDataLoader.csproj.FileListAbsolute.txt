@@ -1,0 +1,11 @@
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\td.reportdataprovider.eventdataloader.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\EventDataLoader\obj\Release\td.reportdataprovider.eventdataloader.dll

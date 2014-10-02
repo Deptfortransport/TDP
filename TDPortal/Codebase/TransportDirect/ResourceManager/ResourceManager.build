@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="ResourceManager" default="build" basedir="./../../">
+
+	<!-- Project properties. These should not be altered -->
+	<property name="project.dll.name" value="td.common.resourcemanager"/>
+	<property name="project.src.dir" value="./TransportDirect/ResourceManager" />
+	<property name="project.build.dir" value="${project.src.dir}/bin/Debug"/>
+    	<property name="project.cy-GB.build.dir" value="${project.build.dir}/cy-GB"/>
+    	<property name="project.cy-GB.dll.name" value="${project.dll.name}.resources"/>
+	<property name="project.resource.dir" value="${project.src.dir}/Resources"/>
+
+	<!-- Load solution properties from the file 'build.properties'. These are overriddable -->
+	<!--foreach item="Line" in="build.properties" delim="=" property="name,value" trim="Both">
+		<property name="${name}" value="${value}" />
+	</foreach-->
+
+    <!-- Delete the dll and pdb from the project build directory -->
+    <target name="clean" description="removes the build directory">
+        <delete file="${project.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+    	<delete file="${project.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+        <delete file="${solution.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+    	<delete file="${solution.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+
+	<!-- also delete the generated resource related files -->
+	<delete file="${project.resource.dir}/langStrings.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/UserSurveyStrings.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/FaresAndTickets.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/FindAFare.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/JourneyResults.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/VisitPlanner.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/JourneyPlannerService.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/Tools.cy-GB.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/RefineJourney.cy-GB.resources" failonerror="false" />
+
+	<delete file="${project.resource.dir}/FindAFare.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/langStrings.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/UserSurveyStrings.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/FaresAndTickets.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/JourneyResults.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/VisitPlanner.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/JourneyPlannerService.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/Tools.resources" failonerror="false" />
+	<delete file="${project.resource.dir}/RefineJourney.resources" failonerror="false" />
+
+	<delete dir="${project.cy-GB.build.dir}" failonerror="false" />
+    </target>
+
+	<!-- Create the project and solution build directories if necessary -->
+	<target name="init" depends="clean">
+		<mkdir dir="${solution.build.dir}" />
+		<mkdir dir="${project.build.dir}"/>
+		<mkdir dir="${project.cy-GB.build.dir}"/>
+	</target>
+
+	<!-- Compile the project to its build directory -->
+    <target name="build" depends="init" description="Compiles the project">
+		<echo message="Building ${project.dll.name}.dll. Debug=${build.debug}"/>
+		<csc target="library" output="${project.build.dir}/${project.dll.name}.dll" debug="${build.debug}" define="TRACE" doc="${solution.doc.working.dir}/${project.dll.name}.xml">
+			<nowarn>
+				<warning number="${suppress.warning.list}" />
+			</nowarn>
+			<sources basedir="${project.src.dir}">
+				<include name="**/*.cs" />
+				<exclude name="**/Test*.cs" unless="${build.debug}"/>
+			</sources>
+			<references basedir="${solution.build.dir}">
+				<include name="*.dll"/>
+				<include name="${solution.externals.dir}/*.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_1.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_2.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_3.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_4.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_5.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_6.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_7.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_8.dll"/>
+			</references>
+		</csc>
+
+		<!-- No longer needed for Del10. Mark Turner
+		<echo message="Using Welsh language bat file from Microsoft" />
+		<exec workingdir="${project.resource.dir}" program="cmd.exe" commandline="/c BuildCYLanguage.bat" >
+    		</exec>
+ 		-->
+	</target>
+
+    <!-- Build Welsh Language Resources -->
+    <target name="build_welsh">
+		<echo message="Creating Welsh language resources dll" />
+		<!-- No longer needef for Del10
+		<al output="${project.cy-GB.build.dir}/${project.cy-GB.dll.name}.dll" template="${project.build.dir}/${project.dll.name}.dll" culture="cy-GB"  target="lib">
+			<sources>
+				<include name="${project.resource.dir}/langStrings.cy-GB.resources"/>
+				<include name="${project.resource.dir}/UserSurveyStrings.cy-GB.resources"/>
+				<include name="${project.resource.dir}/FaresAndTickets.cy-GB.resources"/>
+				<include name="${project.resource.dir}/FindAFare.cy-GB.resources"/>
+				<include name="${project.resource.dir}/JourneyResults.cy-GB.resources"/>
+				<include name="${project.resource.dir}/VisitPlanner.cy-GB.resources"/>
+				<include name="${project.resource.dir}/JourneyPlannerService.cy-GB.resources"/>
+				<include name="${project.resource.dir}/Tools.cy-GB.resources"/>
+				<include name="${project.resource.dir}/RefineJourney.cy-GB.resources"/>
+			</sources>
+		</al>
+		-->
+	</target>
+
+	<!-- Build the project and copy its deliverables to the solution build directory -->
+    <target name="build_to_solution" depends="build, build_welsh"> -->
+		<echo message="Copying deliverables from ${project.build.dir} to ${solution.build.dir}"/>
+		<copy todir="${solution.build.dir}">
+			<fileset basedir="${project.build.dir}">
+				<include name="**.dll"/>
+			</fileset>
+		</copy>
+    </target>
+
+
+</project>

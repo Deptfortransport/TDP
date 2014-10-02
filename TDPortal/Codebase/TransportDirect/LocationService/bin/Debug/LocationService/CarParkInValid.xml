@@ -1,0 +1,23 @@
+<carpark xmlns="http://www.transportdirect.info/CarPark" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <CarParkDataImport>
+    <CarParkRef>929696</CarParkRef>
+    <CarParkName>Park and Ride</CarParkName>
+    <URL>http://www.stirling.gov.uk/index/services_homepage/roads/rt-park_and_ride.htm</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>281162</Easting>
+    <Northing>693357</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929704</CarParkRef>
+    <CarParkName>Falkirk West (Carmuirs) Park and Ride</CarParkName>
+    <URL>http://www.falkirk.gov.uk/DevServices/TransportPlanning/Businfo/parkandride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>285371</Easting>
+    <Northing>680769</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>&lt;</CarParkRef>
+  </CarParkDataImport>
+</carpark>

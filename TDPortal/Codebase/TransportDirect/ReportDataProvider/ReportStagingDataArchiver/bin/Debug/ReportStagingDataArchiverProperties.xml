@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="">800000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	<property name="propertyservice.property" GID="" AID="">globalproperty</property>
+	
+	<!-- Manual Setup: The value of the following property must be changed to use the location of the database hosting the staging tables. -->	
+	<property name="DefaultDB" GID="ReportDataProvider" AID="ReportStagingDataArchiver">Data Source=.\SQLEXPRESS;Initial Catalog=PermanentPortal;Trusted_Connection=true;</property>	
+	<property name="ReportStagingDB" GID="ReportDataProvider" AID="ReportStagingDataArchiver">Data Source=.\SQLEXPRESS;Initial Catalog=ReportStagingDB;Trusted_Connection=true;</property>	
+	<property name="ReportDataDB" GID="ReportDataProvider" AID="ReportStagingDataArchiver">Data Source=.\SQLEXPRESS;Initial Catalog=Reporting;Trusted_Connection=true;</property>	
+	
+  <property name="Logging.Publisher.Default" GID="ReportDataProvider" AID="ReportStagingDataArchiver">File1</property>
+	<property name="Logging.Publisher.Queue" GID="ReportDataProvider" AID="ReportStagingDataArchiver"></property>
+	<property name="Logging.Publisher.Email" GID="ReportDataProvider" AID="ReportStagingDataArchiver"></property>
+	<property name="Logging.Publisher.EventLog" GID="ReportDataProvider" AID="ReportStagingDataArchiver"></property>
+	<property name="Logging.Publisher.Console" GID="ReportDataProvider" AID="ReportStagingDataArchiver"></property>
+	<property name="Logging.Publisher.Custom" GID="ReportDataProvider" AID="ReportStagingDataArchiver"></property>
+	<property name="Logging.Publisher.File" GID="ReportDataProvider" AID="ReportStagingDataArchiver">File1</property>
+
+	<property name="Logging.Event.Custom.Trace" GID="ReportDataProvider" AID="ReportStagingDataArchiver">On</property>
+	<property name="Logging.Event.Custom" GID="ReportDataProvider" AID="ReportStagingDataArchiver"></property>
+	
+	<property name="Logging.Event.Operational.TraceLevel" GID="ReportDataProvider" AID="ReportStagingDataArchiver">Verbose</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="ReportDataProvider" AID="ReportStagingDataArchiver">File1</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="ReportDataProvider" AID="ReportStagingDataArchiver">File1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="ReportDataProvider" AID="ReportStagingDataArchiver">File1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="ReportDataProvider" AID="ReportStagingDataArchiver">File1</property>
+	
+	<property name="Logging.Publisher.File.File1.Directory" GID="ReportDataProvider" AID="ReportStagingDataArchiver">D:\TDPortal\</property>
+	<property name="Logging.Publisher.File.File1.Rotation" GID="ReportDataProvider" AID="ReportStagingDataArchiver">100000</property>
+		 
+</lookup>

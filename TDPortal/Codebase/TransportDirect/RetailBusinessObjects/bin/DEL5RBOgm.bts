@@ -1,0 +1,17 @@
+TESTNAME = {"RESTRICTIONS - GM"}
+TESTID = {"RBOGM08"}
+
+INHDR = {
+"STDIN   REGM        0101    I01356O00076 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000                                                  
+"
+}
+
+OUTHDR = {
+"STDOUT                 0127900010000000000000000000000000000000000000000000000000000                                                  "
+}
+
+INBFR = {"0025COVBLYPBOXEYSHVKCMEUSMYBSTPPADLBGVICWATKGXLSTZMGBFRCSTCHXWAE000200025NCOVEBLYEPBOE                            00000NXEYESHVE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  YKCMEUSMYBSTPPADLBGVICWATKGXLSTZMGBFRCSTCHXWAEVXHFST         00                                             CTIMLI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "}
+
+OUTBFR = {"                                                   "
+}
+

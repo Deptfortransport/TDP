@@ -1,0 +1,5 @@
+TD-OP	2007-10-16T15:37:49.424	Test Error 6: Page Index.aspx failed to load	Business	Warning	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 6	678
+TD-OP	2007-10-16T15:37:49.424	Test Error 7: Server SG12323 has failed	ThirdParty	Verbose	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 7	901
+TD-OP	2007-10-16T15:37:49.424	Test Error 8: Server SG123 failed to reboot	ThirdParty	Info	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 8	234
+TD-OP	2007-10-16T15:37:49.424	Test Error 9: Component C123 malfunction	ThirdParty	Info	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 9	567
+TD-OP	2007-10-16T15:37:49.424	Test Error 10: Hard disk failure on SG134	Business	Warning	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 10	890

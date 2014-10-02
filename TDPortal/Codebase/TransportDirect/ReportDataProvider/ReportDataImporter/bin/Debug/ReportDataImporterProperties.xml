@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="">800000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	<property name="propertyservice.property" GID="" AID="">globalproperty</property>
+	
+	<!-- Manual Setup: The value of the following property must be changed to use the location of the database hosting the staging tables. -->	
+	<property name="DefaultDB" GID="ReportDataProvider" AID="ReportDataImporter">Data Source=.\SQLEXPRESS;Initial Catalog=PermanentPortal;Trusted_Connection=true;</property>	
+	<property name="ReportStagingDB" GID="ReportDataProvider" AID="ReportDataImporter">Data Source=.\SQLEXPRESS;Initial Catalog=ReportStagingDB;Trusted_Connection=true;</property>	
+	<property name="ReportDataDB" GID="ReportDataProvider" AID="ReportDataImporter">Data Source=.\SQLEXPRESS;Initial Catalog=Reporting;Trusted_Connection=true;</property>	
+	
+  <property name="ReportDataImporter.CJPWebRequestWindow" GID="ReportDataProvider" AID="ReportDataImporter">1</property>
+	<property name="ReportDataImporter.TimeoutDuration" GID="ReportDataProvider" AID="ReportDataImporter">180</property>
+	
+	<property name="Logging.Publisher.Default" GID="ReportDataProvider" AID="ReportDataImporter">File1</property>
+	<property name="Logging.Publisher.Queue" GID="ReportDataProvider" AID="ReportDataImporter"></property>
+	<property name="Logging.Publisher.Email" GID="ReportDataProvider" AID="ReportDataImporter"></property>
+	<property name="Logging.Publisher.EventLog" GID="ReportDataProvider" AID="ReportDataImporter"></property>
+	<property name="Logging.Publisher.Console" GID="ReportDataProvider" AID="ReportDataImporter"></property>
+	<property name="Logging.Publisher.Custom" GID="ReportDataProvider" AID="ReportDataImporter"></property>
+	<property name="Logging.Publisher.File" GID="ReportDataProvider" AID="ReportDataImporter">File1</property>
+
+	<property name="Logging.Event.Custom.Trace" GID="ReportDataProvider" AID="ReportDataImporter">On</property>
+	<property name="Logging.Event.Custom" GID="ReportDataProvider" AID="ReportDataImporter"></property>
+	
+	<property name="Logging.Event.Operational.TraceLevel" GID="ReportDataProvider" AID="ReportDataImporter">Verbose</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="ReportDataProvider" AID="ReportDataImporter">File1</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="ReportDataProvider" AID="ReportDataImporter">File1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="ReportDataProvider" AID="ReportDataImporter">File1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="ReportDataProvider" AID="ReportDataImporter">File1</property>
+	
+	<property name="Logging.Publisher.File.File1.Directory" GID="ReportDataProvider" AID="ReportDataImporter">D:\TDPortal\</property>
+	<property name="Logging.Publisher.File.File1.Rotation" GID="ReportDataProvider" AID="ReportDataImporter">100000</property>
+	
+		 
+</lookup>

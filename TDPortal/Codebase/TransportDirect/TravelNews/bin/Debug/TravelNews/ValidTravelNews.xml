@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrafficAndTravelNewsData xmlns="http://www.transportdirect.info/travelnews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transportdirect.info/travelnews TravelNews.xsd" version="IF00908">
+  <Incident uid="RTM3715583" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="Southbound" road_number="M6" incidentType="Closures and Lane Restrictions" modeOfTransport="Road" location="M6 Lancashire" incidentStatus="O" roadType="M" headlineText="M6 : Restriction Southbound at J27" detailText="Lane closed southbound between J27, Standish and J26, Orrell Interchange, slow traffic." reportedDatetime="2010-05-27T15:29:48" lastModifiedDatetime="2010-05-27T16:07:29" startDatetime="2010-05-27T15:29:48" expiryDatetime="2010-05-27T16:47:05" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="354138" northing="410580">
+    <Region uid="RTM3715583" regionName="North West"/>
+    <IncidentDataSource>Government Agency (86)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000009205515</TOIDAffected>
+      <TOIDAffected>4000000009205517</TOIDAffected>
+      <TOIDAffected>4000000009212484</TOIDAffected>
+      <TOIDAffected>4000000009212496</TOIDAffected>
+      <TOIDAffected>4000000009212511</TOIDAffected>
+      <TOIDAffected>4000000009212512</TOIDAffected>
+      <TOIDAffected>4000000009212519</TOIDAffected>
+      <TOIDAffected>4000000009289717</TOIDAffected>
+      <TOIDAffected>4000000009289718</TOIDAffected>
+      <TOIDAffected>4000000009289724</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3695954" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="both ways" road_number="" incidentType="Cleared" modeOfTransport="Road" location="Mitford Street Filey, North Yorkshire" incidentStatus="C" roadType="U" headlineText="Filey: Road re-opened at Mitford Street" detailText="Road re-opened on Mitford Street both ways at the Chapel Street junction in Filey.. Until 1st June" reportedDatetime="2010-05-17T10:54:31" lastModifiedDatetime="2010-05-27T16:09:31" startDatetime="2010-05-24T00:00:00" expiryDatetime="2010-05-27T23:59:00" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="511697" northing="480818">
+    <Region uid="RTM3695954" regionName="Yorkshire and Humber"/>
+    <IncidentDataSource>Local Authority (19)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000026503226</TOIDAffected>
+      <TOIDAffected>4000000026579089</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3709737" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="A3212" incidentType="Closures/ blockages" modeOfTransport="Road" location="A3212 Westminster, London" incidentStatus="O" roadType="A" headlineText="A3212 : Road closed at Westminster" detailText="Millbank closed both ways between the A3203 junction and the A302 junction in Westminster, following Tuesdays State Opening of Parliament. Until 6:00 on 28th May" reportedDatetime="2010-05-25T05:27:58" lastModifiedDatetime="2010-05-27T13:59:35" startDatetime="2010-05-25T00:00:00" expiryDatetime="2010-05-28T07:30:00" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="530245" northing="178973">
+    <Region uid="RTM3709737" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030099833</TOIDAffected>
+      <TOIDAffected>4000000030237969</TOIDAffected>
+      <TOIDAffected>4000000030237970</TOIDAffected>
+      <TOIDAffected>4000000030237971</TOIDAffected>
+      <TOIDAffected>4000000030237974</TOIDAffected>
+      <TOIDAffected>4000000030417958</TOIDAffected>
+      <TOIDAffected>4000000030418101</TOIDAffected>
+      <TOIDAffected>4000000030418102</TOIDAffected>
+      <TOIDAffected>4000000030418104</TOIDAffected>
+      <TOIDAffected>4000000030458831</TOIDAffected>
+      <TOIDAffected>4000000030458832</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714052" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="None" road_number="A100" incidentType="Closures and Lane Restrictions" modeOfTransport="Road" location="A100 City Of London, London" incidentStatus="O" roadType="A" headlineText="A100 : Closure at City Of London" detailText="Bridge due to open at 16:45 and 18:00 on Tower Bridge Approach at the Tower Hill junction in City Of London, delays expected. Until 18:20 on 27th May" reportedDatetime="2010-05-27T05:47:28" lastModifiedDatetime="2010-05-27T16:08:57" startDatetime="2010-05-27T00:00:00" expiryDatetime="2010-05-27T16:50:00" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="533774" northing="180682">
+    <Region uid="RTM3714052" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030345773</TOIDAffected>
+      <TOIDAffected>4000000030459778</TOIDAffected>
+      <TOIDAffected>4000000030459779</TOIDAffected>
+      <TOIDAffected>4000000031066867</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714151" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Westbound" road_number="A12" incidentType="Congestion" modeOfTransport="Road" location="A12 Ilford, Greater London" incidentStatus="O" roadType="A" headlineText="A12 : Congestion at Ilford" detailText="Queueing traffic on Eastern Avenue westbound at the Gants Hill Roundabout junction in Ilford." reportedDatetime="2010-05-27T06:08:09" lastModifiedDatetime="2010-05-27T15:46:25" startDatetime="2010-05-27T06:08:09" expiryDatetime="2010-05-27T16:26:25" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="543287" northing="188426">
+    <Region uid="RTM3714151" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030361667</TOIDAffected>
+      <TOIDAffected>4000000031045989</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714045" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Westbound" road_number="A315" incidentType="Closures and Lane Restrictions" modeOfTransport="Road" location="A315 Knightsbridge, London" incidentStatus="O" roadType="A" headlineText="A315 : Restriction at Knightsbridge" detailText="One lane closed westbound at the Scotch Corner junction in Knightsbridge, slow traffic." reportedDatetime="2010-05-27T05:39:44" lastModifiedDatetime="2010-05-27T15:46:26" startDatetime="2010-05-27T05:39:44" expiryDatetime="2010-05-27T16:26:26" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="527778" northing="179695">
+    <Region uid="RTM3714045" regionName="London"/>
+    <IncidentDataSource>Government Agency (71)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030960564</TOIDAffected>
+      <TOIDAffected>4000000030960565</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714041" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="both ways" road_number="" incidentType="Delays" modeOfTransport="Road" location="Torpoint Ferry Plymouth, Devon" incidentStatus="O" roadType="U" headlineText="Plymouth: Delays at Tamar Wharf" detailText="Waiting times of up to ten minutes on Tamar Wharf both ways between the A374 Pottery Road junction and the A374 junction in Plymouth, three ferries running." reportedDatetime="2010-05-27T05:32:25" lastModifiedDatetime="2010-05-27T15:56:39" startDatetime="2010-05-27T05:32:25" expiryDatetime="2010-05-27T16:36:39" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="244875" northing="55154">
+    <Region uid="RTM3714041" regionName="South West"/>
+    <IncidentDataSource>Operator (25)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3710805" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Westbound" road_number="A406" incidentType="Closures/ blockages" modeOfTransport="Road" location="A406 Brent Cross, Greater London" incidentStatus="O" roadType="A" headlineText="A406 : Slip road closed at Brent Cross" detailText="Exit slip road closed on North Circular Road westbound at the Brent Cross Flyover junction in Brent Cross, earlier building fire at a derelict property. Diversion in operation." reportedDatetime="2010-05-25T12:08:16" lastModifiedDatetime="2010-05-27T16:08:35" startDatetime="2010-05-25T12:08:16" expiryDatetime="2010-05-27T16:48:35" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="523556" northing="187934">
+    <Region uid="RTM3710805" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030225259</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714274" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Westbound" road_number="A2" incidentType="Congestion" modeOfTransport="Road" location="A2 New Cross, London" incidentStatus="O" roadType="A" headlineText="A2 : Congestion at New Cross" detailText="Queueing traffic on New Cross Road westbound between the Jerningham Road junction and the A202 Kender Street junction in New Cross." reportedDatetime="2010-05-27T06:42:37" lastModifiedDatetime="2010-05-27T16:09:53" startDatetime="2010-05-27T06:42:37" expiryDatetime="2010-05-27T16:49:53" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="536150" northing="176903">
+    <Region uid="RTM3714274" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030237214</TOIDAffected>
+      <TOIDAffected>4000000030237259</TOIDAffected>
+      <TOIDAffected>4000000030237264</TOIDAffected>
+      <TOIDAffected>4000000030237401</TOIDAffected>
+      <TOIDAffected>4000000030341786</TOIDAffected>
+      <TOIDAffected>4000000030475187</TOIDAffected>
+      <TOIDAffected>4000000031090111</TOIDAffected>
+      <TOIDAffected>4000000031090122</TOIDAffected>
+      <TOIDAffected>4000000031182216</TOIDAffected>
+      <TOIDAffected>4000000031182217</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715091" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Southbound" road_number="A4200" incidentType="Congestion" modeOfTransport="Road" location="A4200 Holborn, London" incidentStatus="O" roadType="A" headlineText="B502 : Congestion at Holborn" detailText="Queueing traffic on Guilford Street southbound between the A4200 Russell Square junction and the A40 Vernon Place junction in Holborn." reportedDatetime="2010-05-27T11:10:49" lastModifiedDatetime="2010-05-27T15:46:26" startDatetime="2010-05-27T11:10:49" expiryDatetime="2010-05-27T16:26:26" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="530182" northing="182020">
+    <Region uid="RTM3715091" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030147338</TOIDAffected>
+      <TOIDAffected>4000000030239151</TOIDAffected>
+      <TOIDAffected>4000000030239153</TOIDAffected>
+      <TOIDAffected>4000000030239157</TOIDAffected>
+      <TOIDAffected>4000000030239158</TOIDAffected>
+      <TOIDAffected>4000000030344242</TOIDAffected>
+      <TOIDAffected>4000000030344245</TOIDAffected>
+      <TOIDAffected>4000000030344255</TOIDAffected>
+      <TOIDAffected>4000000030344256</TOIDAffected>
+      <TOIDAffected>4000000030344257</TOIDAffected>
+      <TOIDAffected>4000000030344260</TOIDAffected>
+      <TOIDAffected>4000000030459346</TOIDAffected>
+      <TOIDAffected>4000000030459347</TOIDAffected>
+      <TOIDAffected>4000000030995673</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715051" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="B5035" incidentType="Cleared" modeOfTransport="Road" location="B5035 Whatstandwell, Derbyshire" incidentStatus="C" roadType="B" headlineText="B5035 : Road re-opened at Whatstandwell" detailText="Road re-opened on Wash Green both ways between the Oakerthorpe Road junction and the Blundestone Lane junction in Whatstandwell.." reportedDatetime="2010-05-27T10:42:20" lastModifiedDatetime="2010-05-27T15:33:23" startDatetime="2010-05-27T10:42:20" expiryDatetime="2010-05-27T16:03:23" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="429978" northing="354134">
+    <Region uid="RTM3715051" regionName="East Midlands"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000015407844</TOIDAffected>
+      <TOIDAffected>4000000015460184</TOIDAffected>
+      <TOIDAffected>4000000015871469</TOIDAffected>
+      <TOIDAffected>4000000015871470</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715068" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Eastbound" road_number="A406" incidentType="Congestion" modeOfTransport="Road" location="A406 Walthamstow, Greater London" incidentStatus="O" roadType="A" headlineText="A406 : Congestion at Walthamstow" detailText="Very slow traffic on North Circular Road eastbound at the Crooked Billet Interchange junction in Walthamstow." reportedDatetime="2010-05-27T10:57:06" lastModifiedDatetime="2010-05-27T16:03:07" startDatetime="2010-05-27T10:57:06" expiryDatetime="2010-05-28T14:30:00" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="537473" northing="190975">
+    <Region uid="RTM3715068" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030359397</TOIDAffected>
+      <TOIDAffected>4000000030359403</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714488" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="None" road_number="A1301" incidentType="Cleared" modeOfTransport="Road" location="A1301 Trumpington, Cambridgeshire" incidentStatus="C" roadType="A" headlineText="A1301 : Earlier problem at Trumpington" detailText="Traffic lights now functioning on Shelford Road at the A1309 High Street junction in Trumpington." reportedDatetime="2010-05-27T07:39:43" lastModifiedDatetime="2010-05-27T15:33:09" startDatetime="2010-05-27T07:39:43" expiryDatetime="2010-05-27T16:03:07" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="544572" northing="254669">
+    <Region uid="RTM3714488" regionName="East Midlands"/>
+    <Region uid="RTM3714488" regionName="East Anglia"/>
+    <Region uid="RTM3714488" regionName="South East"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000028006768</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714991" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="" incidentType="Closures/ blockages" modeOfTransport="Road" location="Manor Road Pontllanfraith, Caerphilly" incidentStatus="O" roadType="U" headlineText="Pontllanfraith: Road closed at Manor Road" detailText="Manor Road closed both ways between the Brynteg Avenue junction and the St Mary's Road junction in Pontllanfraith, because of an accident." reportedDatetime="2010-05-27T09:35:11" lastModifiedDatetime="2010-05-27T16:00:40" startDatetime="2010-05-27T09:35:11" expiryDatetime="2010-05-27T17:40:39" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="317657" northing="195458">
+    <Region uid="RTM3714991" regionName="Wales"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000021641871</TOIDAffected>
+      <TOIDAffected>4000000021752423</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714403" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="A501" incidentType="Congestion" modeOfTransport="Road" location="A501 London" incidentStatus="O" roadType="A" headlineText="A501 : Congestion at London" detailText="Queueing traffic on Euston Road eastbound between the Euston Underpass junction and the King's Cross junction." reportedDatetime="2010-05-27T07:28:19" lastModifiedDatetime="2010-05-27T15:46:26" startDatetime="2010-05-27T07:28:19" expiryDatetime="2010-05-27T16:26:26" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="529418" northing="182368">
+    <Region uid="RTM3714403" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3714383" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="A4" incidentType="Congestion" modeOfTransport="Road" location="A4 Kensington, London" incidentStatus="O" roadType="A" headlineText="A4 : Congestion at Kensington" detailText="Slow traffic on Knightsbridge eastbound at the Scotch Corner junction in Kensington." reportedDatetime="2010-05-27T07:27:39" lastModifiedDatetime="2010-05-27T15:46:26" startDatetime="2010-05-27T07:27:39" expiryDatetime="2010-05-27T16:26:26" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="527778" northing="179695">
+    <Region uid="RTM3714383" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030323924</TOIDAffected>
+      <TOIDAffected>4000000030407406</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715308" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="both ways" road_number="A134" incidentType="Cleared" modeOfTransport="Road" location="A134 Ingham, Suffolk" incidentStatus="C" roadType="A" headlineText="A134 : Earlier accident at Ingham" detailText="Accident cleared both ways at the Culford Road junction in Ingham." reportedDatetime="2010-05-27T13:22:40" lastModifiedDatetime="2010-05-27T15:26:28" startDatetime="2010-05-27T13:22:40" expiryDatetime="2010-05-27T16:26:23" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="585544" northing="270818">
+    <Region uid="RTM3715308" regionName="East Anglia"/>
+    <Region uid="RTM3715308" regionName="South East"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000027875393</TOIDAffected>
+      <TOIDAffected>4000000027986138</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715364" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Southbound" road_number="A453" incidentType="Congestion" modeOfTransport="Road" location="A453 Nottingham, Nottinghamshire" incidentStatus="O" roadType="A" headlineText="A453 : Congestion at Nottingham" detailText="Slow traffic on Clifton Lane outbound at the Fabis Drive junction in Nottingham." reportedDatetime="2010-05-27T13:59:05" lastModifiedDatetime="2010-05-27T16:11:10" startDatetime="2010-05-27T13:59:05" expiryDatetime="2010-05-27T16:51:10" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="455449" northing="335648">
+    <Region uid="RTM3715364" regionName="East Midlands"/>
+    <IncidentDataSource>Local Authority (67)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000015550306</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715368" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="A417" incidentType="Cleared" modeOfTransport="Road" location="A417 Ledbury, Herefordshire" incidentStatus="C" roadType="A" headlineText="A417 : Congestion cleared at Ledbury" detailText="Traffic returned to normal eastbound between the A449 junction in Ledbury and the Ledbury junction in Redmarley D'abitot." reportedDatetime="2010-05-27T14:03:29" lastModifiedDatetime="2010-05-27T16:00:51" startDatetime="2010-05-27T14:03:29" expiryDatetime="2010-05-27T16:30:51" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="371492" northing="236797">
+    <Region uid="RTM3715368" regionName="West Midlands"/>
+    <Region uid="RTM3715368" regionName="South West"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000017822786</TOIDAffected>
+      <TOIDAffected>4000000017822903</TOIDAffected>
+      <TOIDAffected>4000000017822907</TOIDAffected>
+      <TOIDAffected>4000000017822915</TOIDAffected>
+      <TOIDAffected>4000000017832350</TOIDAffected>
+      <TOIDAffected>4000000017832496</TOIDAffected>
+      <TOIDAffected>4000000017832497</TOIDAffected>
+      <TOIDAffected>4000000017832498</TOIDAffected>
+      <TOIDAffected>4000000017832499</TOIDAffected>
+      <TOIDAffected>4000000017832503</TOIDAffected>
+      <TOIDAffected>4000000017847601</TOIDAffected>
+      <TOIDAffected>4000000017847613</TOIDAffected>
+      <TOIDAffected>4000000017847750</TOIDAffected>
+      <TOIDAffected>4000000017847754</TOIDAffected>
+      <TOIDAffected>4000000017872799</TOIDAffected>
+      <TOIDAffected>4000000017872969</TOIDAffected>
+      <TOIDAffected>4000000017905543</TOIDAffected>
+      <TOIDAffected>4000000017905722</TOIDAffected>
+      <TOIDAffected>4000000017905777</TOIDAffected>
+      <TOIDAffected>4000000017931520</TOIDAffected>
+      <TOIDAffected>4000000017931550</TOIDAffected>
+      <TOIDAffected>4000000017931552</TOIDAffected>
+      <TOIDAffected>4000000017945597</TOIDAffected>
+      <TOIDAffected>4000000017945709</TOIDAffected>
+      <TOIDAffected>4000000017945711</TOIDAffected>
+      <TOIDAffected>4000000018088225</TOIDAffected>
+      <TOIDAffected>4000000018088226</TOIDAffected>
+      <TOIDAffected>4000000018143982</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715350" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="" incidentType="Cleared" modeOfTransport="Road" location="Hungerford Road Kintbury, Berkshire" incidentStatus="C" roadType="U" headlineText="Kintbury: Road re-opened at Hungerford Road" detailText="Road re-opened on Hungerford Road both ways between the High Street junction and the Hungerford Lane junction in Kintbury." reportedDatetime="2010-05-27T13:46:01" lastModifiedDatetime="2010-05-27T15:47:04" startDatetime="2010-05-27T13:46:01" expiryDatetime="2010-05-27T16:17:04" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="437816" northing="166882">
+    <Region uid="RTM3715350" regionName="South East"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000023340555</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715331" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="clockwise" road_number="M25" incidentType="Congestion" modeOfTransport="Road" location="M25 Greater London" incidentStatus="O" roadType="M" headlineText="M25 : Congestion clockwise at J14" detailText="Long delays clockwise between J14, Heathrow Terminal 4 and J18, Chorley Wood." reportedDatetime="2010-05-27T13:35:07" lastModifiedDatetime="2010-05-27T15:59:23" startDatetime="2010-05-27T13:35:07" expiryDatetime="2010-05-27T16:57:41" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="503709" northing="175385">
+    <Region uid="RTM3715331" regionName="South East"/>
+    <IncidentDataSource>Camera (76)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030076221</TOIDAffected>
+      <TOIDAffected>4000000030076222</TOIDAffected>
+      <TOIDAffected>4000000030081481</TOIDAffected>
+      <TOIDAffected>4000000030081482</TOIDAffected>
+      <TOIDAffected>4000000030081515</TOIDAffected>
+      <TOIDAffected>4000000030081523</TOIDAffected>
+      <TOIDAffected>4000000030081524</TOIDAffected>
+      <TOIDAffected>4000000030094288</TOIDAffected>
+      <TOIDAffected>4000000030094289</TOIDAffected>
+      <TOIDAffected>4000000030094290</TOIDAffected>
+      <TOIDAffected>4000000030094291</TOIDAffected>
+      <TOIDAffected>4000000030127594</TOIDAffected>
+      <TOIDAffected>4000000030127595</TOIDAffected>
+      <TOIDAffected>4000000031032182</TOIDAffected>
+      <TOIDAffected>4000000031032183</TOIDAffected>
+      <TOIDAffected>4000000031032184</TOIDAffected>
+      <TOIDAffected>4000000031032185</TOIDAffected>
+      <TOIDAffected>4000000031032186</TOIDAffected>
+      <TOIDAffected>4000000031032187</TOIDAffected>
+      <TOIDAffected>4000000031032188</TOIDAffected>
+      <TOIDAffected>4000000031032189</TOIDAffected>
+      <TOIDAffected>4000000031032190</TOIDAffected>
+      <TOIDAffected>4000000031032191</TOIDAffected>
+      <TOIDAffected>4000000031032192</TOIDAffected>
+      <TOIDAffected>4000000031032193</TOIDAffected>
+      <TOIDAffected>4000000031032194</TOIDAffected>
+      <TOIDAffected>4000000031032195</TOIDAffected>
+      <TOIDAffected>4000000031032196</TOIDAffected>
+      <TOIDAffected>4000000031032197</TOIDAffected>
+      <TOIDAffected>4000000031032198</TOIDAffected>
+      <TOIDAffected>4000000031032199</TOIDAffected>
+      <TOIDAffected>4000000031032200</TOIDAffected>
+      <TOIDAffected>4000000031032203</TOIDAffected>
+      <TOIDAffected>4000000031032206</TOIDAffected>
+      <TOIDAffected>4000000031032207</TOIDAffected>
+      <TOIDAffected>4000000031032208</TOIDAffected>
+      <TOIDAffected>4000000031032209</TOIDAffected>
+      <TOIDAffected>4000000031032210</TOIDAffected>
+      <TOIDAffected>4000000031032211</TOIDAffected>
+      <TOIDAffected>4000000031032212</TOIDAffected>
+      <TOIDAffected>4000000031032213</TOIDAffected>
+      <TOIDAffected>4000000031032214</TOIDAffected>
+      <TOIDAffected>4000000031032215</TOIDAffected>
+      <TOIDAffected>4000000030076229</TOIDAffected>
+      <TOIDAffected>4000000030076230</TOIDAffected>
+      <TOIDAffected>4000000030081815</TOIDAffected>
+      <TOIDAffected>4000000030081816</TOIDAffected>
+      <TOIDAffected>4000000030081817</TOIDAffected>
+      <TOIDAffected>4000000030081818</TOIDAffected>
+      <TOIDAffected>4000000031202343</TOIDAffected>
+      <TOIDAffected>4000000031202344</TOIDAffected>
+      <TOIDAffected>4000000030076298</TOIDAffected>
+      <TOIDAffected>4000000030076299</TOIDAffected>
+      <TOIDAffected>4000000030096774</TOIDAffected>
+      <TOIDAffected>4000000030096775</TOIDAffected>
+      <TOIDAffected>4000000030096785</TOIDAffected>
+      <TOIDAffected>4000000030096786</TOIDAffected>
+      <TOIDAffected>4000000030096787</TOIDAffected>
+      <TOIDAffected>4000000030096788</TOIDAffected>
+      <TOIDAffected>4000000030136474</TOIDAffected>
+      <TOIDAffected>4000000030326083</TOIDAffected>
+      <TOIDAffected>4000000030326084</TOIDAffected>
+      <TOIDAffected>4000000030326086</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715329" parent_uid="0" incident_change_status="Unchanged" severity="Very Severe" carriageway_direction="Northbound" road_number="M74" incidentType="Closures and Lane Restrictions" modeOfTransport="Road" location="M74 South Lanarkshire" incidentStatus="O" roadType="M" headlineText="M74 : Restriction Northbound at J13" detailText="Main carriageway closed northbound at J13 A74(M), because of a serious accident. Diversion in operation." reportedDatetime="2010-05-27T13:32:59" lastModifiedDatetime="2010-05-27T16:06:27" startDatetime="2010-05-27T13:32:59" expiryDatetime="2010-05-27T16:46:27" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="292984" northing="624609">
+    <Region uid="RTM3715329" regionName="Scotland"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000005103594</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715327" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="A158" incidentType="Cleared" modeOfTransport="Road" location="A158 Lincoln, Lincolnshire" incidentStatus="C" roadType="A" headlineText="A158 : Congestion cleared at Lincoln" detailText="Traffic returned to normal eastbound between the A46 Lincoln Road junction in Lincoln and the A15 Wragby Road East junction in North Greetwell." reportedDatetime="2010-05-27T13:32:09" lastModifiedDatetime="2010-05-27T16:00:28" startDatetime="2010-05-27T13:32:09" expiryDatetime="2010-05-27T16:30:28" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="499270" northing="374071">
+    <Region uid="RTM3715327" regionName="East Midlands"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000015625853</TOIDAffected>
+      <TOIDAffected>4000000015625879</TOIDAffected>
+      <TOIDAffected>4000000015625898</TOIDAffected>
+      <TOIDAffected>4000000026914725</TOIDAffected>
+      <TOIDAffected>4000000026914726</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715324" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Westbound" road_number="A157" incidentType="Cleared" modeOfTransport="Road" location="A157 Louth, Lincolnshire" incidentStatus="C" roadType="A" headlineText="A157 : Congestion cleared at Louth" detailText="Traffic returned to normal westbound between the A16 junction in Louth and the B1225 High Street junction in Burgh on Bain." reportedDatetime="2010-05-27T13:30:27" lastModifiedDatetime="2010-05-27T16:00:12" startDatetime="2010-05-27T13:30:27" expiryDatetime="2010-05-27T16:30:12" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="531427" northing="387139">
+    <Region uid="RTM3715324" regionName="East Midlands"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000026871174</TOIDAffected>
+      <TOIDAffected>4000000026871397</TOIDAffected>
+      <TOIDAffected>4000000026871398</TOIDAffected>
+      <TOIDAffected>4000000026875806</TOIDAffected>
+      <TOIDAffected>4000000026875808</TOIDAffected>
+      <TOIDAffected>4000000026875824</TOIDAffected>
+      <TOIDAffected>4000000026875826</TOIDAffected>
+      <TOIDAffected>4000000026881780</TOIDAffected>
+      <TOIDAffected>4000000026881782</TOIDAffected>
+      <TOIDAffected>4000000026881803</TOIDAffected>
+      <TOIDAffected>4000000026881804</TOIDAffected>
+      <TOIDAffected>4000000026881808</TOIDAffected>
+      <TOIDAffected>4000000026890239</TOIDAffected>
+      <TOIDAffected>4000000026890240</TOIDAffected>
+      <TOIDAffected>4000000026890241</TOIDAffected>
+      <TOIDAffected>4000000026890931</TOIDAffected>
+      <TOIDAffected>4000000026902794</TOIDAffected>
+      <TOIDAffected>4000000026903748</TOIDAffected>
+      <TOIDAffected>4000000026915648</TOIDAffected>
+      <TOIDAffected>4000000026974255</TOIDAffected>
+      <TOIDAffected>4000000026974257</TOIDAffected>
+      <TOIDAffected>4000000026981788</TOIDAffected>
+      <TOIDAffected>4000000026882383</TOIDAffected>
+      <TOIDAffected>4000000026916406</TOIDAffected>
+      <TOIDAffected>4000000026977866</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715302" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Northbound" road_number="M6" incidentType="Congestion" modeOfTransport="Road" location="M6 West Midlands" incidentStatus="O" roadType="M" headlineText="M6 : Congestion Northbound at J8" detailText="Heavy traffic northbound between J8 M5 and J9, Wednesbury." reportedDatetime="2010-05-27T13:15:12" lastModifiedDatetime="2010-05-27T16:11:14" startDatetime="2010-05-27T13:15:12" expiryDatetime="2010-05-27T16:51:14" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="401787" northing="295314">
+    <Region uid="RTM3715302" regionName="West Midlands"/>
+    <IncidentDataSource>Government Agency (86)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000017891568</TOIDAffected>
+      <TOIDAffected>4000000019214735</TOIDAffected>
+      <TOIDAffected>4000000019214736</TOIDAffected>
+      <TOIDAffected>4000000019214737</TOIDAffected>
+      <TOIDAffected>4000000019214738</TOIDAffected>
+      <TOIDAffected>4000000019184112</TOIDAffected>
+      <TOIDAffected>4000000019184113</TOIDAffected>
+      <TOIDAffected>4000000019196899</TOIDAffected>
+      <TOIDAffected>4000000019214829</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715301" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Northbound" road_number="M5" incidentType="Congestion" modeOfTransport="Road" location="M5 West Midlands" incidentStatus="O" roadType="M" headlineText="M5 : Congestion Northbound at M6 J8" detailText="Queueing traffic northbound at M6 J8." reportedDatetime="2010-05-27T13:14:42" lastModifiedDatetime="2010-05-27T16:11:09" startDatetime="2010-05-27T13:14:42" expiryDatetime="2010-05-27T16:51:09" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="401787" northing="295314">
+    <Region uid="RTM3715301" regionName="West Midlands"/>
+    <IncidentDataSource>Government Agency (86)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000019196898</TOIDAffected>
+      <TOIDAffected>4000000019375992</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715294" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Eastbound" road_number="A13" incidentType="Hazards" modeOfTransport="Road" location="A13 Whitechapel, London" incidentStatus="O" roadType="A" headlineText="A13 : Breakdown at Whitechapel" detailText="Broken down lorry on Commercial Road eastbound before the Jubilee Street junction in Whitechapel, partially blocked." reportedDatetime="2010-05-27T13:10:26" lastModifiedDatetime="2010-05-27T16:05:22" startDatetime="2010-05-27T13:10:26" expiryDatetime="2010-05-27T16:43:39" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="535175" northing="181259">
+    <Region uid="RTM3715294" regionName="London"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030149533</TOIDAffected>
+      <TOIDAffected>4000000030480506</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715272" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Northbound" road_number="A20" incidentType="Congestion" modeOfTransport="Road" location="A20 New Cross, London" incidentStatus="O" roadType="A" headlineText="A20 : Congestion at New Cross" detailText="Queueing traffic on Lewisham Way northbound at the A2 Parkfield Road junction in New Cross." reportedDatetime="2010-05-27T12:55:22" lastModifiedDatetime="2010-05-27T16:09:52" startDatetime="2010-05-27T12:55:22" expiryDatetime="2010-05-27T16:49:52" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="536579" northing="176912">
+    <Region uid="RTM3715272" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000031207652</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715288" parent_uid="0" incident_change_status="Amended" severity="Medium" carriageway_direction="None" road_number="A5250" incidentType="Roadworks" modeOfTransport="Road" location="A5250 Derby, Derbyshire" incidentStatus="O" roadType="A" headlineText="A5250 : Roadworks at Derby" detailText="Temporary traffic lights on Burton Road between the Breedon Hill Road junction and the Stone Hill Road junction in Derby, unstable building." reportedDatetime="2010-05-27T13:04:47" lastModifiedDatetime="2010-05-27T16:11:10" startDatetime="2010-05-27T13:04:47" expiryDatetime="2010-05-27T17:41:06" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="434606" northing="335137">
+    <Region uid="RTM3715288" regionName="East Midlands"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715182" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="None" road_number="A55" incidentType="Severe weather" modeOfTransport="Road" location="A55 Llanfair Pwllgwyngyll, Isle Of Anglesey" incidentStatus="O" roadType="A" headlineText="A55 Isle Of Anglesey: Strong winds at Vaynol Hall" detailText="Strong winds on Britannia Bridge between the Holyhead Road junction and the Y Felinheli (Port Dinorwic junction in Llanfair Pwllgwyngyll" reportedDatetime="2010-05-27T12:06:20" lastModifiedDatetime="2010-05-27T16:00:42" startDatetime="2010-05-27T12:06:20" expiryDatetime="2010-05-27T19:00:42" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="253955" northing="371552">
+    <Region uid="RTM3715182" regionName="Wales"/>
+    <IncidentDataSource>Government Agency (73)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000012481419</TOIDAffected>
+      <TOIDAffected>4000000012486169</TOIDAffected>
+      <TOIDAffected>4000000012477450</TOIDAffected>
+      <TOIDAffected>4000000012477494</TOIDAffected>
+      <TOIDAffected>4000000012481418</TOIDAffected>
+      <TOIDAffected>4000000012486173</TOIDAffected>
+      <TOIDAffected>4000000012486174</TOIDAffected>
+      <TOIDAffected>4000000012486285</TOIDAffected>
+      <TOIDAffected>4000000012486287</TOIDAffected>
+      <TOIDAffected>4000000012486288</TOIDAffected>
+      <TOIDAffected>4000000012486289</TOIDAffected>
+      <TOIDAffected>4000000012492402</TOIDAffected>
+      <TOIDAffected>4000000012498886</TOIDAffected>
+      <TOIDAffected>4000000012506307</TOIDAffected>
+      <TOIDAffected>4000000012558619</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715110" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="A245" incidentType="Roadworks" modeOfTransport="Road" location="A245 Cobham, Surrey" incidentStatus="O" roadType="A" headlineText="A245 : Roadworks at Cobham" detailText="Temporary traffic lights on Stoke Road both ways at the Avenue Road junction in Cobham, because of a burst water main." reportedDatetime="2010-05-27T11:14:20" lastModifiedDatetime="2010-05-27T15:38:42" startDatetime="2010-05-27T11:14:20" expiryDatetime="2010-05-27T16:38:32" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="511965" northing="159536">
+    <Region uid="RTM3715110" regionName="South East"/>
+    <IncidentDataSource>Local Authority (19)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030292458</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715472" parent_uid="0" incident_change_status="Amended" severity="Severe" carriageway_direction="Southbound" road_number="A3" incidentType="Accidents" modeOfTransport="Road" location="A3 Petersfield, Hampshire" incidentStatus="O" roadType="A" headlineText="A3 : Accident at Petersfield" detailText="Accident, two vehicles involved southbound between the B2070 junction in Petersfield and the Chalton Lane junction in Clanfield, one lane closed." reportedDatetime="2010-05-27T14:51:06" lastModifiedDatetime="2010-05-27T16:10:17" startDatetime="2010-05-27T14:51:06" expiryDatetime="2010-05-27T16:51:22" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="472701" northing="120812">
+    <Region uid="RTM3715472" regionName="South East"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000023256398</TOIDAffected>
+      <TOIDAffected>4000000023256399</TOIDAffected>
+      <TOIDAffected>4000000023257231</TOIDAffected>
+      <TOIDAffected>4000000023260931</TOIDAffected>
+      <TOIDAffected>4000000023269778</TOIDAffected>
+      <TOIDAffected>4000000023269780</TOIDAffected>
+      <TOIDAffected>4000000023269782</TOIDAffected>
+      <TOIDAffected>4000000023269785</TOIDAffected>
+      <TOIDAffected>4000000023269789</TOIDAffected>
+      <TOIDAffected>4000000023287772</TOIDAffected>
+      <TOIDAffected>4000000023287774</TOIDAffected>
+      <TOIDAffected>4000000023323604</TOIDAffected>
+      <TOIDAffected>4000000023374367</TOIDAffected>
+      <TOIDAffected>4000000023374371</TOIDAffected>
+      <TOIDAffected>4000000023374375</TOIDAffected>
+      <TOIDAffected>4000000023374378</TOIDAffected>
+      <TOIDAffected>4000000023419492</TOIDAffected>
+      <TOIDAffected>4000000023419495</TOIDAffected>
+      <TOIDAffected>4000000023419496</TOIDAffected>
+      <TOIDAffected>4000000023419499</TOIDAffected>
+      <TOIDAffected>4000000023627718</TOIDAffected>
+      <TOIDAffected>4000000023627719</TOIDAffected>
+      <TOIDAffected>4000000023627733</TOIDAffected>
+      <TOIDAffected>4000000023717240</TOIDAffected>
+      <TOIDAffected>4000000023812372</TOIDAffected>
+      <TOIDAffected>4000000023813215</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715601" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="None" road_number="A28" incidentType="Congestion" modeOfTransport="Road" location="A28 Canterbury, Kent" incidentStatus="O" roadType="A" headlineText="A28 : Congestion at Canterbury" detailText="Slow traffic on Wincheap at the Wincheap Roundabout junction in Canterbury." reportedDatetime="2010-05-27T15:38:16" lastModifiedDatetime="2010-05-27T15:38:16" startDatetime="2010-05-27T15:38:16" expiryDatetime="2010-05-27T16:34:51" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="614539" northing="157365">
+    <Region uid="RTM3715601" regionName="South East"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000032983946</TOIDAffected>
+      <TOIDAffected>4000000032989642</TOIDAffected>
+      <TOIDAffected>4000000032994712</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715603" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="None" road_number="A2050" incidentType="Congestion" modeOfTransport="Road" location="A2050 Canterbury, Kent" incidentStatus="O" roadType="A" headlineText="A2050 : Congestion at Canterbury" detailText="Slow traffic on Rheims Way from the A290 St Peter's Place junction to the Wincheap Roundabout junction in Canterbury." reportedDatetime="2010-05-27T15:38:19" lastModifiedDatetime="2010-05-27T15:38:19" startDatetime="2010-05-27T15:38:19" expiryDatetime="2010-05-27T16:34:51" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="614427" northing="157773">
+    <Region uid="RTM3715603" regionName="South East"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715602" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Westbound" road_number="A28" incidentType="Congestion" modeOfTransport="Road" location="A28 Canterbury, Kent" incidentStatus="O" roadType="A" headlineText="A28 : Congestion at Canterbury" detailText="Very slow traffic on Pin Hill westbound between the Castle Row junction and the Wincheap Roundabout junction in Canterbury." reportedDatetime="2010-05-27T15:38:17" lastModifiedDatetime="2010-05-27T15:38:17" startDatetime="2010-05-27T15:38:17" expiryDatetime="2010-05-27T16:34:51" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="614615" northing="157347">
+    <Region uid="RTM3715602" regionName="South East"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000032968204</TOIDAffected>
+      <TOIDAffected>4000000032971265</TOIDAffected>
+      <TOIDAffected>4000000032976731</TOIDAffected>
+      <TOIDAffected>4000000032989645</TOIDAffected>
+      <TOIDAffected>4000000032992835</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715599" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Southbound" road_number="A1" incidentType="Congestion" modeOfTransport="Road" location="A1 Gateshead, Tyne And Wear" incidentStatus="O" roadType="A" headlineText="A1 : Congestion at Gateshead" detailText="Heavy traffic southbound between the Hollinside Road junction in Gateshead and the Coalhouse Roundabout junction in Lamesley." reportedDatetime="2010-05-27T15:37:40" lastModifiedDatetime="2010-05-27T15:39:08" startDatetime="2010-05-27T15:37:40" expiryDatetime="2010-05-27T16:37:49" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="420944" northing="562358">
+    <Region uid="RTM3715599" regionName="North East"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000007712508</TOIDAffected>
+      <TOIDAffected>4000000007744107</TOIDAffected>
+      <TOIDAffected>4000000007744108</TOIDAffected>
+      <TOIDAffected>4000000007744475</TOIDAffected>
+      <TOIDAffected>4000000007744476</TOIDAffected>
+      <TOIDAffected>4000000007916820</TOIDAffected>
+      <TOIDAffected>4000000007916821</TOIDAffected>
+      <TOIDAffected>4000000007735853</TOIDAffected>
+      <TOIDAffected>4000000007735865</TOIDAffected>
+      <TOIDAffected>4000000007736238</TOIDAffected>
+      <TOIDAffected>4000000007736243</TOIDAffected>
+      <TOIDAffected>4000000007736349</TOIDAffected>
+      <TOIDAffected>4000000007736350</TOIDAffected>
+      <TOIDAffected>4000000007743091</TOIDAffected>
+      <TOIDAffected>4000000007743092</TOIDAffected>
+      <TOIDAffected>4000000007743093</TOIDAffected>
+      <TOIDAffected>4000000007743094</TOIDAffected>
+      <TOIDAffected>4000000007743099</TOIDAffected>
+      <TOIDAffected>4000000007743100</TOIDAffected>
+      <TOIDAffected>4000000007743101</TOIDAffected>
+      <TOIDAffected>4000000007743102</TOIDAffected>
+      <TOIDAffected>4000000007743103</TOIDAffected>
+      <TOIDAffected>4000000007743104</TOIDAffected>
+      <TOIDAffected>4000000007743105</TOIDAffected>
+      <TOIDAffected>4000000007743106</TOIDAffected>
+      <TOIDAffected>4000000007743107</TOIDAffected>
+      <TOIDAffected>4000000007743108</TOIDAffected>
+      <TOIDAffected>4000000007743109</TOIDAffected>
+      <TOIDAffected>4000000007743110</TOIDAffected>
+      <TOIDAffected>4000000007743111</TOIDAffected>
+      <TOIDAffected>4000000007743112</TOIDAffected>
+      <TOIDAffected>4000000007743113</TOIDAffected>
+      <TOIDAffected>4000000007743114</TOIDAffected>
+      <TOIDAffected>4000000007743115</TOIDAffected>
+      <TOIDAffected>4000000007743123</TOIDAffected>
+      <TOIDAffected>4000000007743124</TOIDAffected>
+      <TOIDAffected>4000000007743125</TOIDAffected>
+      <TOIDAffected>4000000007743126</TOIDAffected>
+      <TOIDAffected>4000000007743127</TOIDAffected>
+      <TOIDAffected>4000000007743137</TOIDAffected>
+      <TOIDAffected>4000000007743142</TOIDAffected>
+      <TOIDAffected>4000000007743146</TOIDAffected>
+      <TOIDAffected>4000000007743152</TOIDAffected>
+      <TOIDAffected>4000000007743153</TOIDAffected>
+      <TOIDAffected>4000000007746314</TOIDAffected>
+      <TOIDAffected>4000000007746315</TOIDAffected>
+      <TOIDAffected>4000000007746318</TOIDAffected>
+      <TOIDAffected>4000000007746319</TOIDAffected>
+      <TOIDAffected>4000000007746335</TOIDAffected>
+      <TOIDAffected>4000000007746336</TOIDAffected>
+      <TOIDAffected>4000000007746366</TOIDAffected>
+      <TOIDAffected>4000000007746367</TOIDAffected>
+      <TOIDAffected>4000000007746569</TOIDAffected>
+      <TOIDAffected>4000000007746616</TOIDAffected>
+      <TOIDAffected>4000000007746836</TOIDAffected>
+      <TOIDAffected>4000000007746837</TOIDAffected>
+      <TOIDAffected>4000000007746843</TOIDAffected>
+      <TOIDAffected>4000000007746845</TOIDAffected>
+      <TOIDAffected>4000000007747057</TOIDAffected>
+      <TOIDAffected>4000000007747058</TOIDAffected>
+      <TOIDAffected>4000000007747136</TOIDAffected>
+      <TOIDAffected>4000000007747139</TOIDAffected>
+      <TOIDAffected>4000000007747142</TOIDAffected>
+      <TOIDAffected>4000000007747143</TOIDAffected>
+      <TOIDAffected>4000000007969997</TOIDAffected>
+      <TOIDAffected>4000000007969998</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715593" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Northbound" road_number="A380" incidentType="Congestion" modeOfTransport="Road" location="A380 Torquay, Devon" incidentStatus="O" roadType="A" headlineText="A380 : Congestion easing at Torquay" detailText="Delays easing on Torquay Road northbound before the A3022 Riviera Way junction in Torquay." reportedDatetime="2010-05-27T15:33:59" lastModifiedDatetime="2010-05-27T16:07:43" startDatetime="2010-05-27T15:33:59" expiryDatetime="2010-05-27T17:07:43" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="288837" northing="66450">
+    <Region uid="RTM3715593" regionName="South West"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000025350163</TOIDAffected>
+      <TOIDAffected>4000000025350165</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715596" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="both ways" road_number="A85" incidentType="Closures/ blockages" modeOfTransport="Road" location="A85 Tyndrum, Stirling" incidentStatus="O" roadType="A" headlineText="A85 : Road closed at Tyndrum" detailText="Closed both ways between the A82 junction in Tyndrum and the B8077 junction in Dalmally, because of an accident." reportedDatetime="2010-05-27T15:35:01" lastModifiedDatetime="2010-05-27T16:06:02" startDatetime="2010-05-27T15:35:01" expiryDatetime="2010-05-27T16:45:59" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="232599" northing="730737">
+    <Region uid="RTM3715596" regionName="Scotland"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000004292666</TOIDAffected>
+      <TOIDAffected>4000000004293564</TOIDAffected>
+      <TOIDAffected>4000000004293573</TOIDAffected>
+      <TOIDAffected>4000000004293574</TOIDAffected>
+      <TOIDAffected>4000000004295034</TOIDAffected>
+      <TOIDAffected>4000000004296906</TOIDAffected>
+      <TOIDAffected>4000000004301422</TOIDAffected>
+      <TOIDAffected>4000000004301426</TOIDAffected>
+      <TOIDAffected>4000000004301429</TOIDAffected>
+      <TOIDAffected>4000000004309769</TOIDAffected>
+      <TOIDAffected>4000000004292117</TOIDAffected>
+      <TOIDAffected>4000000004307757</TOIDAffected>
+      <TOIDAffected>4000000004307758</TOIDAffected>
+      <TOIDAffected>4000000004292343</TOIDAffected>
+      <TOIDAffected>4000000004301435</TOIDAffected>
+      <TOIDAffected>4000000004303273</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715591" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="A43" incidentType="Hazards" modeOfTransport="Road" location="A43 Moulton, Northamptonshire" incidentStatus="O" roadType="A" headlineText="A43 : Breakdown at Moulton" detailText="Broken down lorry on Kettering Road both ways at the Overstone Road junction in Moulton, queueing traffic." reportedDatetime="2010-05-27T15:33:55" lastModifiedDatetime="2010-05-27T15:57:53" startDatetime="2010-05-27T15:33:55" expiryDatetime="2010-05-27T16:57:21" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="479409" northing="266309">
+    <Region uid="RTM3715591" regionName="East Midlands"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000019359587</TOIDAffected>
+      <TOIDAffected>4000000019677280</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715588" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Westbound" road_number="A96" incidentType="Congestion" modeOfTransport="Road" location="A96 Aberdeen, Aberdeen City" incidentStatus="O" roadType="A" headlineText="A96 : Congestion at Aberdeen" detailText="Heavy traffic on Great Northern Road westbound between the A978 St Machar Drive junction and the A96 Auchmill Road junction in Aberdeen." reportedDatetime="2010-05-27T15:31:53" lastModifiedDatetime="2010-05-27T15:31:53" startDatetime="2010-05-27T15:31:53" expiryDatetime="2010-05-27T16:31:01" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="393106" northing="808354">
+    <Region uid="RTM3715588" regionName="Scotland"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000003769605</TOIDAffected>
+      <TOIDAffected>4000000003769606</TOIDAffected>
+      <TOIDAffected>4000000003769607</TOIDAffected>
+      <TOIDAffected>4000000003776734</TOIDAffected>
+      <TOIDAffected>4000000003776744</TOIDAffected>
+      <TOIDAffected>4000000003776757</TOIDAffected>
+      <TOIDAffected>4000000003776774</TOIDAffected>
+      <TOIDAffected>4000000003776775</TOIDAffected>
+      <TOIDAffected>4000000003776776</TOIDAffected>
+      <TOIDAffected>4000000003776798</TOIDAffected>
+      <TOIDAffected>4000000003776799</TOIDAffected>
+      <TOIDAffected>4000000003776800</TOIDAffected>
+      <TOIDAffected>4000000003776801</TOIDAffected>
+      <TOIDAffected>4000000003785871</TOIDAffected>
+      <TOIDAffected>4000000003785873</TOIDAffected>
+      <TOIDAffected>4000000003785894</TOIDAffected>
+      <TOIDAffected>4000000003785895</TOIDAffected>
+      <TOIDAffected>4000000003785931</TOIDAffected>
+      <TOIDAffected>4000000003785932</TOIDAffected>
+      <TOIDAffected>4000000003785933</TOIDAffected>
+      <TOIDAffected>4000000003785934</TOIDAffected>
+      <TOIDAffected>4000000003785935</TOIDAffected>
+      <TOIDAffected>4000000003785936</TOIDAffected>
+      <TOIDAffected>4000000003785937</TOIDAffected>
+      <TOIDAffected>4000000003795601</TOIDAffected>
+      <TOIDAffected>4000000003795621</TOIDAffected>
+      <TOIDAffected>4000000003795640</TOIDAffected>
+      <TOIDAffected>4000000003803203</TOIDAffected>
+      <TOIDAffected>4000000003803204</TOIDAffected>
+      <TOIDAffected>4000000003803205</TOIDAffected>
+      <TOIDAffected>4000000003807444</TOIDAffected>
+      <TOIDAffected>4000000003807445</TOIDAffected>
+      <TOIDAffected>4000000003807451</TOIDAffected>
+      <TOIDAffected>4000000003807476</TOIDAffected>
+      <TOIDAffected>4000000003809105</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715587" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="Northbound" road_number="A90" incidentType="Closures/ blockages" modeOfTransport="Road" location="A90 Brechin, Angus" incidentStatus="O" roadType="A" headlineText="A90 : Road blocked at Brechin" detailText="Road blocked northbound between the A935 junction in Brechin and the B966 junction in Keithock, because of a shed load of gravel." reportedDatetime="2010-05-27T15:30:47" lastModifiedDatetime="2010-05-27T15:35:24" startDatetime="2010-05-27T15:30:47" expiryDatetime="2010-05-27T16:33:51" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="357244" northing="759908">
+    <Region uid="RTM3715587" regionName="Scotland"/>
+    <IncidentDataSource>Government Agency (74)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000004501861</TOIDAffected>
+      <TOIDAffected>4000000004501865</TOIDAffected>
+      <TOIDAffected>4000000004501867</TOIDAffected>
+      <TOIDAffected>4000000004501886</TOIDAffected>
+      <TOIDAffected>4000000004501928</TOIDAffected>
+      <TOIDAffected>4000000004502434</TOIDAffected>
+      <TOIDAffected>4000000004502443</TOIDAffected>
+      <TOIDAffected>4000000004502444</TOIDAffected>
+      <TOIDAffected>4000000004504324</TOIDAffected>
+      <TOIDAffected>4000000004504327</TOIDAffected>
+      <TOIDAffected>4000000004571032</TOIDAffected>
+      <TOIDAffected>4000000004504320</TOIDAffected>
+      <TOIDAffected>4000000004504321</TOIDAffected>
+      <TOIDAffected>4000000004504325</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715578" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="" incidentType="Cleared" modeOfTransport="Road" location="Perry Road Sherwood, Nottingham, Nottinghamshire" incidentStatus="C" roadType="U" headlineText="Sherwood, Nottingham: Road re-opened at Perry Road" detailText="Road re-opened on Perry Road both ways near the A611 Hucknall Road junction in Sherwood, Nottingham." reportedDatetime="2010-05-27T15:27:56" lastModifiedDatetime="2010-05-27T15:49:58" startDatetime="2010-05-27T15:27:56" expiryDatetime="2010-05-27T16:19:58" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="456610" northing="343243">
+    <Region uid="RTM3715578" regionName="East Midlands"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000015571449</TOIDAffected>
+      <TOIDAffected>4000000015571484</TOIDAffected>
+      <TOIDAffected>4000000015571485</TOIDAffected>
+      <TOIDAffected>4000000015571486</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715547" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="None" road_number="A200" incidentType="Hazards" modeOfTransport="Road" location="A200 Greenwich, London" incidentStatus="O" roadType="A" headlineText="A200 : No traffic lights at Greenwich" detailText="Traffic light failure on King William Walk at the A206 Romney Road junction in Greenwich." reportedDatetime="2010-05-27T15:23:08" lastModifiedDatetime="2010-05-27T15:47:01" startDatetime="2010-05-27T15:23:08" expiryDatetime="2010-05-27T16:27:01" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="538414" northing="177678">
+    <Region uid="RTM3715547" regionName="London"/>
+    <IncidentDataSource>Government Agency (71)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030243380</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715541" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="Southbound" road_number="M1" incidentType="Accidents" modeOfTransport="Road" location="M1 Buckinghamshire" incidentStatus="O" roadType="M" headlineText="M1 : Accident Southbound at J14" detailText="Earlier accident, three vehicles involved southbound between J14, Milton Keynes and J13, Bedford, slow traffic." reportedDatetime="2010-05-27T15:22:04" lastModifiedDatetime="2010-05-27T15:54:26" startDatetime="2010-05-27T15:22:04" expiryDatetime="2010-05-27T16:54:08" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="489212" northing="240832">
+    <Region uid="RTM3715541" regionName="South East"/>
+    <IncidentDataSource>Government Agency (86)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000019192039</TOIDAffected>
+      <TOIDAffected>4000000019192040</TOIDAffected>
+      <TOIDAffected>4000000019204371</TOIDAffected>
+      <TOIDAffected>4000000019204372</TOIDAffected>
+      <TOIDAffected>4000000019204373</TOIDAffected>
+      <TOIDAffected>4000000019232016</TOIDAffected>
+      <TOIDAffected>4000000019282651</TOIDAffected>
+      <TOIDAffected>4000000019753607</TOIDAffected>
+      <TOIDAffected>4000000019753608</TOIDAffected>
+      <TOIDAffected>4000000019182912</TOIDAffected>
+      <TOIDAffected>4000000019182913</TOIDAffected>
+      <TOIDAffected>4000000019185618</TOIDAffected>
+      <TOIDAffected>4000000019185619</TOIDAffected>
+      <TOIDAffected>4000000019185627</TOIDAffected>
+      <TOIDAffected>4000000019185628</TOIDAffected>
+      <TOIDAffected>4000000019192025</TOIDAffected>
+      <TOIDAffected>4000000019192026</TOIDAffected>
+      <TOIDAffected>4000000019192027</TOIDAffected>
+      <TOIDAffected>4000000019192028</TOIDAffected>
+      <TOIDAffected>4000000019367461</TOIDAffected>
+      <TOIDAffected>4000000019485274</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715524" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Southbound" road_number="A3" incidentType="Cleared" modeOfTransport="Road" location="A3 Wisley, Surrey" incidentStatus="C" roadType="A" headlineText="A3 : Earlier accident at Wisley" detailText="Accident cleared southbound between the Wisley Interchange junction and the B2039 Portsmouth Road junction in Wisley." reportedDatetime="2010-05-27T15:13:29" lastModifiedDatetime="2010-05-27T15:47:26" startDatetime="2010-05-27T15:13:29" expiryDatetime="2010-05-27T16:17:26" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="508075" northing="159257">
+    <Region uid="RTM3715524" regionName="South East"/>
+    <IncidentDataSource>Eyewitness (91)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030075307</TOIDAffected>
+      <TOIDAffected>4000000030078243</TOIDAffected>
+      <TOIDAffected>4000000030078244</TOIDAffected>
+      <TOIDAffected>4000000030078453</TOIDAffected>
+      <TOIDAffected>4000000030087588</TOIDAffected>
+      <TOIDAffected>4000000030087590</TOIDAffected>
+      <TOIDAffected>4000000030088183</TOIDAffected>
+      <TOIDAffected>4000000030088184</TOIDAffected>
+      <TOIDAffected>4000000030180983</TOIDAffected>
+      <TOIDAffected>4000000030183470</TOIDAffected>
+      <TOIDAffected>4000000030183471</TOIDAffected>
+      <TOIDAffected>4000000030183472</TOIDAffected>
+      <TOIDAffected>4000000030183473</TOIDAffected>
+      <TOIDAffected>4000000030183474</TOIDAffected>
+      <TOIDAffected>4000000030289905</TOIDAffected>
+      <TOIDAffected>4000000030292433</TOIDAffected>
+      <TOIDAffected>4000000030292434</TOIDAffected>
+      <TOIDAffected>4000000030292435</TOIDAffected>
+      <TOIDAffected>4000000030387577</TOIDAffected>
+      <TOIDAffected>4000000030442739</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715533" parent_uid="0" incident_change_status="Amended" severity="Medium" carriageway_direction="Westbound" road_number="A458" incidentType="Accidents" modeOfTransport="Road" location="A458 Ford, Shropshire" incidentStatus="O" roadType="A" headlineText="A458 : Accident at Ford" detailText="Accident westbound between the But Lane junction and the B4393 Alberbury Road junction in Ford, because of recovery work." reportedDatetime="2010-05-27T15:20:58" lastModifiedDatetime="2010-05-27T16:11:09" startDatetime="2010-05-27T15:20:58" expiryDatetime="2010-05-27T16:51:09" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="341665" northing="313206">
+    <Region uid="RTM3715533" regionName="West Midlands"/>
+    <IncidentDataSource>Eyewitness (28)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000013063265</TOIDAffected>
+      <TOIDAffected>4000000013063267</TOIDAffected>
+      <TOIDAffected>4000000013063268</TOIDAffected>
+      <TOIDAffected>4000000013063270</TOIDAffected>
+      <TOIDAffected>4000000013063271</TOIDAffected>
+      <TOIDAffected>4000000013063272</TOIDAffected>
+      <TOIDAffected>4000000013063273</TOIDAffected>
+      <TOIDAffected>4000000013507030</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715531" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Westbound" road_number="A38" incidentType="Cleared" modeOfTransport="Road" location="A38 Ivybridge, Devon" incidentStatus="C" roadType="A" headlineText="A38 : Dangerous vehicle removed at Ivybridge" detailText="Broken down lorry removed westbound at the B3213 junction in Ivybridge." reportedDatetime="2010-05-27T15:19:49" lastModifiedDatetime="2010-05-27T16:03:56" startDatetime="2010-05-27T15:19:49" expiryDatetime="2010-05-27T16:33:56" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="262529" northing="55867">
+    <Region uid="RTM3715531" regionName="South West"/>
+    <IncidentDataSource>Camera (76)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000025291078</TOIDAffected>
+      <TOIDAffected>4000000025291167</TOIDAffected>
+      <TOIDAffected>4000000025313274</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715522" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Westbound" road_number="A12" incidentType="Accidents" modeOfTransport="Road" location="A12 Romford, Greater London" incidentStatus="O" roadType="A" headlineText="A12 : Accident at Romford" detailText="Accident on Eastern Avenue westbound at the B177 Barley Lane junction in Romford, one lane blocked." reportedDatetime="2010-05-27T15:12:25" lastModifiedDatetime="2010-05-27T16:09:24" startDatetime="2010-05-27T15:12:25" expiryDatetime="2010-05-27T16:49:24" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="546812" northing="189176">
+    <Region uid="RTM3715522" regionName="London"/>
+    <IncidentDataSource>Government Agency (71)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030259011</TOIDAffected>
+      <TOIDAffected>4000000030362497</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715519" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Southbound" road_number="A19" incidentType="Congestion" modeOfTransport="Road" location="A19 Willington, Tyne And Wear" incidentStatus="O" roadType="A" headlineText="A187 : Congestion at Willington" detailText="Queueing traffic southbound between the Tyne Tunnel junction and the Tyne Tunnel junction in Willington, delays." reportedDatetime="2010-05-27T15:11:10" lastModifiedDatetime="2010-05-27T15:58:26" startDatetime="2010-05-27T15:11:10" expiryDatetime="2010-05-27T16:58:22" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="433035" northing="566322">
+    <Region uid="RTM3715519" regionName="North East"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000007755236</TOIDAffected>
+      <TOIDAffected>4000000007755237</TOIDAffected>
+      <TOIDAffected>4000000007755238</TOIDAffected>
+      <TOIDAffected>4000000007755261</TOIDAffected>
+      <TOIDAffected>4000000007766055</TOIDAffected>
+      <TOIDAffected>4000000007766063</TOIDAffected>
+      <TOIDAffected>4000000007766064</TOIDAffected>
+      <TOIDAffected>4000000007766066</TOIDAffected>
+      <TOIDAffected>4000000007766093</TOIDAffected>
+      <TOIDAffected>4000000007766127</TOIDAffected>
+      <TOIDAffected>4000000007766128</TOIDAffected>
+      <TOIDAffected>4000000007766133</TOIDAffected>
+      <TOIDAffected>4000000007766163</TOIDAffected>
+      <TOIDAffected>4000000007766164</TOIDAffected>
+      <TOIDAffected>4000000007766166</TOIDAffected>
+      <TOIDAffected>4000000007766176</TOIDAffected>
+      <TOIDAffected>4000000007766177</TOIDAffected>
+      <TOIDAffected>4000000007766213</TOIDAffected>
+      <TOIDAffected>4000000007766214</TOIDAffected>
+      <TOIDAffected>4000000007766215</TOIDAffected>
+      <TOIDAffected>4000000007766230</TOIDAffected>
+      <TOIDAffected>4000000007766283</TOIDAffected>
+      <TOIDAffected>4000000007908968</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715518" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Northbound" road_number="A19" incidentType="Congestion" modeOfTransport="Road" location="A19 Jarrow, Tyne And Wear" incidentStatus="O" roadType="A" headlineText="A19 : Congestion at Jarrow" detailText="Queueing traffic northbound between the Tyne Tunnel junction and the Tyne Tunnel junction in Jarrow, delays." reportedDatetime="2010-05-27T15:11:06" lastModifiedDatetime="2010-05-27T15:58:44" startDatetime="2010-05-27T15:11:06" expiryDatetime="2010-05-27T16:58:40" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="433369" northing="564887">
+    <Region uid="RTM3715518" regionName="North East"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000007755236</TOIDAffected>
+      <TOIDAffected>4000000007755237</TOIDAffected>
+      <TOIDAffected>4000000007755238</TOIDAffected>
+      <TOIDAffected>4000000007755261</TOIDAffected>
+      <TOIDAffected>4000000007766055</TOIDAffected>
+      <TOIDAffected>4000000007766063</TOIDAffected>
+      <TOIDAffected>4000000007766064</TOIDAffected>
+      <TOIDAffected>4000000007766066</TOIDAffected>
+      <TOIDAffected>4000000007766093</TOIDAffected>
+      <TOIDAffected>4000000007766127</TOIDAffected>
+      <TOIDAffected>4000000007766128</TOIDAffected>
+      <TOIDAffected>4000000007766133</TOIDAffected>
+      <TOIDAffected>4000000007766163</TOIDAffected>
+      <TOIDAffected>4000000007766164</TOIDAffected>
+      <TOIDAffected>4000000007766166</TOIDAffected>
+      <TOIDAffected>4000000007766176</TOIDAffected>
+      <TOIDAffected>4000000007766177</TOIDAffected>
+      <TOIDAffected>4000000007766213</TOIDAffected>
+      <TOIDAffected>4000000007766214</TOIDAffected>
+      <TOIDAffected>4000000007766215</TOIDAffected>
+      <TOIDAffected>4000000007766230</TOIDAffected>
+      <TOIDAffected>4000000007766283</TOIDAffected>
+      <TOIDAffected>4000000007908968</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715513" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="Southbound" road_number="M6" incidentType="Cleared" modeOfTransport="Road" location="M6 Staffordshire" incidentStatus="C" roadType="M" headlineText="M6 : Earlier restriction Southbound at J15" detailText="Lane re-opened on exit slip road southbound at J15, Stoke-On-Trent." reportedDatetime="2010-05-27T15:09:33" lastModifiedDatetime="2010-05-27T15:37:48" startDatetime="2010-05-27T15:09:33" expiryDatetime="2010-05-27T16:07:48" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="384867" northing="342058">
+    <Region uid="RTM3715513" regionName="West Midlands"/>
+    <IncidentDataSource>Government Agency (86)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000013190113</TOIDAffected>
+      <TOIDAffected>4000000013190121</TOIDAffected>
+      <TOIDAffected>4000000013190126</TOIDAffected>
+      <TOIDAffected>4000000013190127</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715508" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="both ways" road_number="A31" incidentType="Closures/ blockages" modeOfTransport="Road" location="A31 Guildford, Surrey" incidentStatus="O" roadType="A" headlineText="A31 : Road closed at Guildford" detailText="Farnham Road closed both ways at the Hogs Back junction in Guildford, because of an accident, a van and a car involved." reportedDatetime="2010-05-27T15:08:43" lastModifiedDatetime="2010-05-27T15:54:01" startDatetime="2010-05-27T15:08:43" expiryDatetime="2010-05-27T16:47:34" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="496577" northing="148614">
+    <Region uid="RTM3715508" regionName="South East"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000023428700</TOIDAffected>
+      <TOIDAffected>4000000023428701</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715501" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Eastbound" road_number="M602" incidentType="Cleared" modeOfTransport="Road" location="M602 Greater Manchester" incidentStatus="C" roadType="M" headlineText="M602 : Congestion cleared Eastbound at J1" detailText="Traffic returned to normal eastbound between J1, Eccles Interchange and J3, Regent Road Roundabout." reportedDatetime="2010-05-27T15:06:49" lastModifiedDatetime="2010-05-27T15:56:13" startDatetime="2010-05-27T15:06:49" expiryDatetime="2010-05-27T16:26:13" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="375101" northing="399050">
+    <Region uid="RTM3715501" regionName="North West"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000013301412</TOIDAffected>
+      <TOIDAffected>4000000013301455</TOIDAffected>
+      <TOIDAffected>4000000013305934</TOIDAffected>
+      <TOIDAffected>4000000013305935</TOIDAffected>
+      <TOIDAffected>4000000013305936</TOIDAffected>
+      <TOIDAffected>4000000013305937</TOIDAffected>
+      <TOIDAffected>4000000013305938</TOIDAffected>
+      <TOIDAffected>4000000013305939</TOIDAffected>
+      <TOIDAffected>4000000013305940</TOIDAffected>
+      <TOIDAffected>4000000013305941</TOIDAffected>
+      <TOIDAffected>4000000013305942</TOIDAffected>
+      <TOIDAffected>4000000013305943</TOIDAffected>
+      <TOIDAffected>4000000013305944</TOIDAffected>
+      <TOIDAffected>4000000013305945</TOIDAffected>
+      <TOIDAffected>4000000013305946</TOIDAffected>
+      <TOIDAffected>4000000013305947</TOIDAffected>
+      <TOIDAffected>4000000013305948</TOIDAffected>
+      <TOIDAffected>4000000013305949</TOIDAffected>
+      <TOIDAffected>4000000013305950</TOIDAffected>
+      <TOIDAffected>4000000013305951</TOIDAffected>
+      <TOIDAffected>4000000013305952</TOIDAffected>
+      <TOIDAffected>4000000013305953</TOIDAffected>
+      <TOIDAffected>4000000013307291</TOIDAffected>
+      <TOIDAffected>4000000013307292</TOIDAffected>
+      <TOIDAffected>4000000013307293</TOIDAffected>
+      <TOIDAffected>4000000013307294</TOIDAffected>
+      <TOIDAffected>4000000013307301</TOIDAffected>
+      <TOIDAffected>4000000013307303</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715499" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="A27" incidentType="Congestion" modeOfTransport="Road" location="A27 Fareham, Hampshire" incidentStatus="O" roadType="A" headlineText="A27 : Congestion at Fareham" detailText="Queueing traffic on The Avenue both ways at the Paxton Road junction in Fareham." reportedDatetime="2010-05-27T15:06:33" lastModifiedDatetime="2010-05-27T16:00:40" startDatetime="2010-05-27T15:06:33" expiryDatetime="2010-05-27T16:40:40" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="456895" northing="106202">
+    <Region uid="RTM3715499" regionName="South East"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000023285096</TOIDAffected>
+      <TOIDAffected>4000000023317375</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715489" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Westbound" road_number="M8" incidentType="Congestion" modeOfTransport="Road" location="M8 Glasgow City" incidentStatus="O" roadType="M" headlineText="M8 : Congestion Westbound at J15" detailText="Slow traffic westbound between J15, Townhead and J20, Kingston Bridge." reportedDatetime="2010-05-27T15:03:16" lastModifiedDatetime="2010-05-27T16:06:57" startDatetime="2010-05-27T15:03:16" expiryDatetime="2010-05-27T17:06:57" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="260176" northing="666061">
+    <Region uid="RTM3715489" regionName="Scotland"/>
+    <IncidentDataSource>Government Agency (103)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000005152599</TOIDAffected>
+      <TOIDAffected>4000000005152600</TOIDAffected>
+      <TOIDAffected>4000000005152617</TOIDAffected>
+      <TOIDAffected>4000000005152618</TOIDAffected>
+      <TOIDAffected>4000000005152619</TOIDAffected>
+      <TOIDAffected>4000000005152620</TOIDAffected>
+      <TOIDAffected>4000000005152621</TOIDAffected>
+      <TOIDAffected>4000000005152626</TOIDAffected>
+      <TOIDAffected>4000000005152629</TOIDAffected>
+      <TOIDAffected>4000000005152631</TOIDAffected>
+      <TOIDAffected>4000000005152632</TOIDAffected>
+      <TOIDAffected>4000000005152633</TOIDAffected>
+      <TOIDAffected>4000000005152634</TOIDAffected>
+      <TOIDAffected>4000000005152642</TOIDAffected>
+      <TOIDAffected>4000000005152643</TOIDAffected>
+      <TOIDAffected>4000000005152644</TOIDAffected>
+      <TOIDAffected>4000000005152645</TOIDAffected>
+      <TOIDAffected>4000000005152646</TOIDAffected>
+      <TOIDAffected>4000000005152647</TOIDAffected>
+      <TOIDAffected>4000000005152648</TOIDAffected>
+      <TOIDAffected>4000000005152649</TOIDAffected>
+      <TOIDAffected>4000000005152650</TOIDAffected>
+      <TOIDAffected>4000000005152651</TOIDAffected>
+      <TOIDAffected>4000000005152652</TOIDAffected>
+      <TOIDAffected>4000000005152653</TOIDAffected>
+      <TOIDAffected>4000000005152654</TOIDAffected>
+      <TOIDAffected>4000000005152655</TOIDAffected>
+      <TOIDAffected>4000000005152656</TOIDAffected>
+      <TOIDAffected>4000000005152671</TOIDAffected>
+      <TOIDAffected>4000000005152681</TOIDAffected>
+      <TOIDAffected>4000000005152682</TOIDAffected>
+      <TOIDAffected>4000000005152683</TOIDAffected>
+      <TOIDAffected>4000000005152684</TOIDAffected>
+      <TOIDAffected>4000000005152685</TOIDAffected>
+      <TOIDAffected>4000000005152686</TOIDAffected>
+      <TOIDAffected>4000000005152687</TOIDAffected>
+      <TOIDAffected>4000000005152688</TOIDAffected>
+      <TOIDAffected>4000000005152689</TOIDAffected>
+      <TOIDAffected>4000000005152690</TOIDAffected>
+      <TOIDAffected>4000000005152702</TOIDAffected>
+      <TOIDAffected>4000000005152703</TOIDAffected>
+      <TOIDAffected>4000000005152704</TOIDAffected>
+      <TOIDAffected>4000000005152705</TOIDAffected>
+      <TOIDAffected>4000000005152706</TOIDAffected>
+      <TOIDAffected>4000000005152707</TOIDAffected>
+      <TOIDAffected>4000000005152708</TOIDAffected>
+      <TOIDAffected>4000000005152709</TOIDAffected>
+      <TOIDAffected>4000000005152710</TOIDAffected>
+      <TOIDAffected>4000000005152711</TOIDAffected>
+      <TOIDAffected>4000000005152712</TOIDAffected>
+      <TOIDAffected>4000000005152713</TOIDAffected>
+      <TOIDAffected>4000000005152714</TOIDAffected>
+      <TOIDAffected>4000000005152715</TOIDAffected>
+      <TOIDAffected>4000000005152726</TOIDAffected>
+      <TOIDAffected>4000000005152727</TOIDAffected>
+      <TOIDAffected>4000000005152728</TOIDAffected>
+      <TOIDAffected>4000000005152729</TOIDAffected>
+      <TOIDAffected>4000000005152730</TOIDAffected>
+      <TOIDAffected>4000000005152731</TOIDAffected>
+      <TOIDAffected>4000000005152732</TOIDAffected>
+      <TOIDAffected>4000000005152733</TOIDAffected>
+      <TOIDAffected>4000000005152734</TOIDAffected>
+      <TOIDAffected>4000000005152735</TOIDAffected>
+      <TOIDAffected>4000000005152736</TOIDAffected>
+      <TOIDAffected>4000000005152737</TOIDAffected>
+      <TOIDAffected>4000000005152738</TOIDAffected>
+      <TOIDAffected>4000000005152739</TOIDAffected>
+      <TOIDAffected>4000000005152753</TOIDAffected>
+      <TOIDAffected>4000000005152754</TOIDAffected>
+      <TOIDAffected>4000000005152755</TOIDAffected>
+      <TOIDAffected>4000000005152756</TOIDAffected>
+      <TOIDAffected>4000000005152757</TOIDAffected>
+      <TOIDAffected>4000000005152759</TOIDAffected>
+      <TOIDAffected>4000000005152760</TOIDAffected>
+      <TOIDAffected>4000000005152761</TOIDAffected>
+      <TOIDAffected>4000000005152762</TOIDAffected>
+      <TOIDAffected>4000000005152763</TOIDAffected>
+      <TOIDAffected>4000000005152764</TOIDAffected>
+      <TOIDAffected>4000000005152765</TOIDAffected>
+      <TOIDAffected>4000000005367028</TOIDAffected>
+      <TOIDAffected>4000000005155118</TOIDAffected>
+      <TOIDAffected>4000000005155119</TOIDAffected>
+      <TOIDAffected>4000000005155132</TOIDAffected>
+      <TOIDAffected>4000000005155133</TOIDAffected>
+      <TOIDAffected>4000000005155135</TOIDAffected>
+      <TOIDAffected>4000000005155136</TOIDAffected>
+      <TOIDAffected>4000000005155143</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715488" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="A361" incidentType="Accidents" modeOfTransport="Road" location="A361 Burford, Oxfordshire" incidentStatus="O" roadType="A" headlineText="A361 : Accident at Burford" detailText="Earlier accident on High Street both ways at the A40 junction in Burford, slow traffic." reportedDatetime="2010-05-27T15:03:01" lastModifiedDatetime="2010-05-27T15:36:56" startDatetime="2010-05-27T15:03:01" expiryDatetime="2010-05-27T16:36:49" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="425096" northing="211659">
+    <Region uid="RTM3715488" regionName="South East"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000019338653</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715484" parent_uid="0" incident_change_status="Amended" severity="Medium" carriageway_direction="None" road_number="A4000" incidentType="Hazards" modeOfTransport="Road" location="A4000 Acton, Greater London" incidentStatus="O" roadType="A" headlineText="A4000 : No traffic lights at Acton" detailText="Traffic light failure on Gunnersbury Lane at the A4020 Uxbridge Road junction in Acton." reportedDatetime="2010-05-27T15:00:28" lastModifiedDatetime="2010-05-27T16:09:37" startDatetime="2010-05-27T15:00:28" expiryDatetime="2010-05-27T16:49:37" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="519731" northing="180223">
+    <Region uid="RTM3715484" regionName="London"/>
+    <IncidentDataSource>Government Agency (71)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030322173</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715477" parent_uid="0" incident_change_status="Amended" severity="Medium" carriageway_direction="both ways" road_number="B667" incidentType="Accidents" modeOfTransport="Road" location="B667 Thurmaston, Leicester, Leicestershire" incidentStatus="O" roadType="B" headlineText="B667 : Accident at Thurmaston, Leicester" detailText="Accident on Melton Road both ways between the A607 Melton Road junction and the A607 junction in Thurmaston, Leicester, because of recovery work." reportedDatetime="2010-05-27T14:54:29" lastModifiedDatetime="2010-05-27T16:11:15" startDatetime="2010-05-27T14:54:29" expiryDatetime="2010-05-27T16:51:15" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="460773" northing="308825">
+    <Region uid="RTM3715477" regionName="East Midlands"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715473" parent_uid="0" incident_change_status="Amended" severity="Medium" carriageway_direction="both ways" road_number="B6047" incidentType="Closures/ blockages" modeOfTransport="Road" location="B6047 Great Dalby, Leicestershire" incidentStatus="O" roadType="B" headlineText="B6047 : Road closed at Great Dalby" detailText="Closed both ways between the Woodgate Hill junction and the Burrough End junction in Great Dalby, because of recovery work." reportedDatetime="2010-05-27T14:51:44" lastModifiedDatetime="2010-05-27T16:11:10" startDatetime="2010-05-27T14:51:44" expiryDatetime="2010-05-27T16:51:10" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="474748" northing="314497">
+    <Region uid="RTM3715473" regionName="East Midlands"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715471" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="both ways" road_number="A380" incidentType="Cleared" modeOfTransport="Road" location="A380 Kingskerswell, Devon" incidentStatus="C" roadType="A" headlineText="A380 : Road re-opened at Kingskerswell" detailText="Road re-opened on Torquay Road both ways near the Southey Lane junction in Kingskerswell." reportedDatetime="2010-05-27T14:49:25" lastModifiedDatetime="2010-05-27T15:52:39" startDatetime="2010-05-27T14:49:25" expiryDatetime="2010-05-27T16:22:39" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="288334" northing="66871">
+    <Region uid="RTM3715471" regionName="South West"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000025293251</TOIDAffected>
+      <TOIDAffected>4000000025303283</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715470" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Northbound" road_number="A5152" incidentType="Congestion" modeOfTransport="Road" location="A5152 Wrexham" incidentStatus="O" roadType="A" headlineText="A5152 : Congestion at Wrexham" detailText="Slow traffic on Bradley Road outbound at the Watery Road junction." reportedDatetime="2010-05-27T14:49:16" lastModifiedDatetime="2010-05-27T16:00:44" startDatetime="2010-05-27T14:49:16" expiryDatetime="2010-05-27T17:50:54" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="332986" northing="350326">
+    <Region uid="RTM3715470" regionName="Wales"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000013075046</TOIDAffected>
+      <TOIDAffected>4000000013648756</TOIDAffected>
+      <TOIDAffected>4000000013648757</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715469" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Northbound" road_number="A525" incidentType="Congestion" modeOfTransport="Road" location="A525 Wrexham" incidentStatus="O" roadType="A" headlineText="A525 : Congestion at Wrexham" detailText="Slow traffic on Kingsmills Road inbound around the Derby Road junction." reportedDatetime="2010-05-27T14:49:13" lastModifiedDatetime="2010-05-27T16:00:45" startDatetime="2010-05-27T14:49:13" expiryDatetime="2010-05-27T17:50:54" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="333998" northing="349664">
+    <Region uid="RTM3715469" regionName="Wales"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000013767811</TOIDAffected>
+      <TOIDAffected>4000000013767812</TOIDAffected>
+      <TOIDAffected>4000000013767813</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715468" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Eastbound" road_number="M54" incidentType="Congestion" modeOfTransport="Road" location="M54 Staffordshire" incidentStatus="O" roadType="M" headlineText="M54 : Congestion Eastbound at J1" detailText="Slow traffic eastbound between J1, Wolverhampton and M6 J10A." reportedDatetime="2010-05-27T14:47:59" lastModifiedDatetime="2010-05-27T16:11:10" startDatetime="2010-05-27T14:47:59" expiryDatetime="2010-05-27T16:51:10" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="394192" northing="304683">
+    <Region uid="RTM3715468" regionName="West Midlands"/>
+    <IncidentDataSource>Government Agency (86)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000013047408</TOIDAffected>
+      <TOIDAffected>4000000013047409</TOIDAffected>
+      <TOIDAffected>4000000013055783</TOIDAffected>
+      <TOIDAffected>4000000013055784</TOIDAffected>
+      <TOIDAffected>4000000013055785</TOIDAffected>
+      <TOIDAffected>4000000013055788</TOIDAffected>
+      <TOIDAffected>4000000013172700</TOIDAffected>
+      <TOIDAffected>4000000013172703</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715459" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="None" road_number="" incidentType="Cleared" modeOfTransport="Road" location="Cumberland Road Southville, Bristol" incidentStatus="C" roadType="U" headlineText="Southville: Earlier accident at Cumberland Road" detailText="Accident cleared on Cumberland Road near the Commercial Road junction in Southville." reportedDatetime="2010-05-27T14:41:39" lastModifiedDatetime="2010-05-27T15:45:10" startDatetime="2010-05-27T14:41:39" expiryDatetime="2010-05-27T16:45:03" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="358634" northing="172120">
+    <Region uid="RTM3715459" regionName="South West"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000022076016</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715456" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="A406" incidentType="Congestion" modeOfTransport="Road" location="A406 Arnos Grove, Greater London" incidentStatus="O" roadType="A" headlineText="A406 : Congestion at Arnos Grove" detailText="Queueing traffic on Bowes Road (North Circular Road) both ways between the A1110 Bowes Road junction and the B106 Brownlow Road junction in Arnos Grove." reportedDatetime="2010-05-27T14:39:33" lastModifiedDatetime="2010-05-27T16:00:15" startDatetime="2010-05-27T14:39:33" expiryDatetime="2010-05-27T16:40:15" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="529731" northing="192338">
+    <Region uid="RTM3715456" regionName="London"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030154773</TOIDAffected>
+      <TOIDAffected>4000000030253757</TOIDAffected>
+      <TOIDAffected>4000000030358155</TOIDAffected>
+      <TOIDAffected>4000000030358157</TOIDAffected>
+      <TOIDAffected>4000000030358158</TOIDAffected>
+      <TOIDAffected>4000000031170056</TOIDAffected>
+      <TOIDAffected>4000000031170057</TOIDAffected>
+      <TOIDAffected>4000000030253735</TOIDAffected>
+      <TOIDAffected>4000000031083381</TOIDAffected>
+      <TOIDAffected>4000000031198515</TOIDAffected>
+      <TOIDAffected>4000000031198519</TOIDAffected>
+      <TOIDAffected>4000000031198520</TOIDAffected>
+      <TOIDAffected>4000000031198523</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715447" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="M8" incidentType="Congestion" modeOfTransport="Road" location="M8 Glasgow City" incidentStatus="O" roadType="M" headlineText="M8 : Congestion Eastbound at J23" detailText="Slow traffic eastbound between J23, Dumbreck Road and J17, Great Western Road." reportedDatetime="2010-05-27T14:35:05" lastModifiedDatetime="2010-05-27T16:00:29" startDatetime="2010-05-27T14:35:05" expiryDatetime="2010-05-27T16:59:18" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="255462" northing="664177">
+    <Region uid="RTM3715447" regionName="Scotland"/>
+    <IncidentDataSource>Government Agency (103)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000005139672</TOIDAffected>
+      <TOIDAffected>4000000005139677</TOIDAffected>
+      <TOIDAffected>4000000005139678</TOIDAffected>
+      <TOIDAffected>4000000005139682</TOIDAffected>
+      <TOIDAffected>4000000005139683</TOIDAffected>
+      <TOIDAffected>4000000005139689</TOIDAffected>
+      <TOIDAffected>4000000005139692</TOIDAffected>
+      <TOIDAffected>4000000005139696</TOIDAffected>
+      <TOIDAffected>4000000005139700</TOIDAffected>
+      <TOIDAffected>4000000005152579</TOIDAffected>
+      <TOIDAffected>4000000005152580</TOIDAffected>
+      <TOIDAffected>4000000005152581</TOIDAffected>
+      <TOIDAffected>4000000005152582</TOIDAffected>
+      <TOIDAffected>4000000005152583</TOIDAffected>
+      <TOIDAffected>4000000005152584</TOIDAffected>
+      <TOIDAffected>4000000005152585</TOIDAffected>
+      <TOIDAffected>4000000005152587</TOIDAffected>
+      <TOIDAffected>4000000005152588</TOIDAffected>
+      <TOIDAffected>4000000005152589</TOIDAffected>
+      <TOIDAffected>4000000005152593</TOIDAffected>
+      <TOIDAffected>4000000005152595</TOIDAffected>
+      <TOIDAffected>4000000005152599</TOIDAffected>
+      <TOIDAffected>4000000005152600</TOIDAffected>
+      <TOIDAffected>4000000005152601</TOIDAffected>
+      <TOIDAffected>4000000005152602</TOIDAffected>
+      <TOIDAffected>4000000005152603</TOIDAffected>
+      <TOIDAffected>4000000005152604</TOIDAffected>
+      <TOIDAffected>4000000005152605</TOIDAffected>
+      <TOIDAffected>4000000005152606</TOIDAffected>
+      <TOIDAffected>4000000005152607</TOIDAffected>
+      <TOIDAffected>4000000005152608</TOIDAffected>
+      <TOIDAffected>4000000005152609</TOIDAffected>
+      <TOIDAffected>4000000005152610</TOIDAffected>
+      <TOIDAffected>4000000005152611</TOIDAffected>
+      <TOIDAffected>4000000005152612</TOIDAffected>
+      <TOIDAffected>4000000005152613</TOIDAffected>
+      <TOIDAffected>4000000005152614</TOIDAffected>
+      <TOIDAffected>4000000005152615</TOIDAffected>
+      <TOIDAffected>4000000005152616</TOIDAffected>
+      <TOIDAffected>4000000005152617</TOIDAffected>
+      <TOIDAffected>4000000005152618</TOIDAffected>
+      <TOIDAffected>4000000005152619</TOIDAffected>
+      <TOIDAffected>4000000005152620</TOIDAffected>
+      <TOIDAffected>4000000005152621</TOIDAffected>
+      <TOIDAffected>4000000005152623</TOIDAffected>
+      <TOIDAffected>4000000005152624</TOIDAffected>
+      <TOIDAffected>4000000005152625</TOIDAffected>
+      <TOIDAffected>4000000005152626</TOIDAffected>
+      <TOIDAffected>4000000005152627</TOIDAffected>
+      <TOIDAffected>4000000005152628</TOIDAffected>
+      <TOIDAffected>4000000005152629</TOIDAffected>
+      <TOIDAffected>4000000005152630</TOIDAffected>
+      <TOIDAffected>4000000005152631</TOIDAffected>
+      <TOIDAffected>4000000005152632</TOIDAffected>
+      <TOIDAffected>4000000005152633</TOIDAffected>
+      <TOIDAffected>4000000005152634</TOIDAffected>
+      <TOIDAffected>4000000005152635</TOIDAffected>
+      <TOIDAffected>4000000005152642</TOIDAffected>
+      <TOIDAffected>4000000005152643</TOIDAffected>
+      <TOIDAffected>4000000005152644</TOIDAffected>
+      <TOIDAffected>4000000005152645</TOIDAffected>
+      <TOIDAffected>4000000005152646</TOIDAffected>
+      <TOIDAffected>4000000005152647</TOIDAffected>
+      <TOIDAffected>4000000005152648</TOIDAffected>
+      <TOIDAffected>4000000005152649</TOIDAffected>
+      <TOIDAffected>4000000005152650</TOIDAffected>
+      <TOIDAffected>4000000005152651</TOIDAffected>
+      <TOIDAffected>4000000005152652</TOIDAffected>
+      <TOIDAffected>4000000005152653</TOIDAffected>
+      <TOIDAffected>4000000005152654</TOIDAffected>
+      <TOIDAffected>4000000005152655</TOIDAffected>
+      <TOIDAffected>4000000005152656</TOIDAffected>
+      <TOIDAffected>4000000005152657</TOIDAffected>
+      <TOIDAffected>4000000005152658</TOIDAffected>
+      <TOIDAffected>4000000005152659</TOIDAffected>
+      <TOIDAffected>4000000005152660</TOIDAffected>
+      <TOIDAffected>4000000005152671</TOIDAffected>
+      <TOIDAffected>4000000005152672</TOIDAffected>
+      <TOIDAffected>4000000005152673</TOIDAffected>
+      <TOIDAffected>4000000005152674</TOIDAffected>
+      <TOIDAffected>4000000005152675</TOIDAffected>
+      <TOIDAffected>4000000005152676</TOIDAffected>
+      <TOIDAffected>4000000005152677</TOIDAffected>
+      <TOIDAffected>4000000005152678</TOIDAffected>
+      <TOIDAffected>4000000005152681</TOIDAffected>
+      <TOIDAffected>4000000005152682</TOIDAffected>
+      <TOIDAffected>4000000005152683</TOIDAffected>
+      <TOIDAffected>4000000005152684</TOIDAffected>
+      <TOIDAffected>4000000005152685</TOIDAffected>
+      <TOIDAffected>4000000005152686</TOIDAffected>
+      <TOIDAffected>4000000005152687</TOIDAffected>
+      <TOIDAffected>4000000005152688</TOIDAffected>
+      <TOIDAffected>4000000005152689</TOIDAffected>
+      <TOIDAffected>4000000005152690</TOIDAffected>
+      <TOIDAffected>4000000005152691</TOIDAffected>
+      <TOIDAffected>4000000005152692</TOIDAffected>
+      <TOIDAffected>4000000005152693</TOIDAffected>
+      <TOIDAffected>4000000005152694</TOIDAffected>
+      <TOIDAffected>4000000005152695</TOIDAffected>
+      <TOIDAffected>4000000005152696</TOIDAffected>
+      <TOIDAffected>4000000005152702</TOIDAffected>
+      <TOIDAffected>4000000005152703</TOIDAffected>
+      <TOIDAffected>4000000005152704</TOIDAffected>
+      <TOIDAffected>4000000005152705</TOIDAffected>
+      <TOIDAffected>4000000005152706</TOIDAffected>
+      <TOIDAffected>4000000005152707</TOIDAffected>
+      <TOIDAffected>4000000005152708</TOIDAffected>
+      <TOIDAffected>4000000005152709</TOIDAffected>
+      <TOIDAffected>4000000005152710</TOIDAffected>
+      <TOIDAffected>4000000005152711</TOIDAffected>
+      <TOIDAffected>4000000005152712</TOIDAffected>
+      <TOIDAffected>4000000005152713</TOIDAffected>
+      <TOIDAffected>4000000005152714</TOIDAffected>
+      <TOIDAffected>4000000005152715</TOIDAffected>
+      <TOIDAffected>4000000005152716</TOIDAffected>
+      <TOIDAffected>4000000005152717</TOIDAffected>
+      <TOIDAffected>4000000005152726</TOIDAffected>
+      <TOIDAffected>4000000005152727</TOIDAffected>
+      <TOIDAffected>4000000005152728</TOIDAffected>
+      <TOIDAffected>4000000005152729</TOIDAffected>
+      <TOIDAffected>4000000005152730</TOIDAffected>
+      <TOIDAffected>4000000005152731</TOIDAffected>
+      <TOIDAffected>4000000005152732</TOIDAffected>
+      <TOIDAffected>4000000005152733</TOIDAffected>
+      <TOIDAffected>4000000005152734</TOIDAffected>
+      <TOIDAffected>4000000005152735</TOIDAffected>
+      <TOIDAffected>4000000005152736</TOIDAffected>
+      <TOIDAffected>4000000005152737</TOIDAffected>
+      <TOIDAffected>4000000005152738</TOIDAffected>
+      <TOIDAffected>4000000005152739</TOIDAffected>
+      <TOIDAffected>4000000005152740</TOIDAffected>
+      <TOIDAffected>4000000005152741</TOIDAffected>
+      <TOIDAffected>4000000005152742</TOIDAffected>
+      <TOIDAffected>4000000005152745</TOIDAffected>
+      <TOIDAffected>4000000005152753</TOIDAffected>
+      <TOIDAffected>4000000005152754</TOIDAffected>
+      <TOIDAffected>4000000005152755</TOIDAffected>
+      <TOIDAffected>4000000005152756</TOIDAffected>
+      <TOIDAffected>4000000005152757</TOIDAffected>
+      <TOIDAffected>4000000005152759</TOIDAffected>
+      <TOIDAffected>4000000005152760</TOIDAffected>
+      <TOIDAffected>4000000005152761</TOIDAffected>
+      <TOIDAffected>4000000005152762</TOIDAffected>
+      <TOIDAffected>4000000005152763</TOIDAffected>
+      <TOIDAffected>4000000005152764</TOIDAffected>
+      <TOIDAffected>4000000005152765</TOIDAffected>
+      <TOIDAffected>4000000005362174</TOIDAffected>
+      <TOIDAffected>4000000005362176</TOIDAffected>
+      <TOIDAffected>4000000005362182</TOIDAffected>
+      <TOIDAffected>4000000005362183</TOIDAffected>
+      <TOIDAffected>4000000005362184</TOIDAffected>
+      <TOIDAffected>4000000005370786</TOIDAffected>
+      <TOIDAffected>4000000005370787</TOIDAffected>
+      <TOIDAffected>4000000005370788</TOIDAffected>
+      <TOIDAffected>4000000005370789</TOIDAffected>
+      <TOIDAffected>4000000005386295</TOIDAffected>
+      <TOIDAffected>4000000005386296</TOIDAffected>
+      <TOIDAffected>4000000005386297</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715444" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="both ways" road_number="A390" incidentType="Cleared" modeOfTransport="Road" location="A390 Blackwater, Cornwall" incidentStatus="C" roadType="A" headlineText="A390 : Road re-opened at Blackwater" detailText="Road re-opened both ways near the Chiverton Cross Roundabout junction in Blackwater." reportedDatetime="2010-05-27T14:33:33" lastModifiedDatetime="2010-05-27T15:51:29" startDatetime="2010-05-27T14:33:33" expiryDatetime="2010-05-27T16:21:29" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="174737" northing="46941">
+    <Region uid="RTM3715444" regionName="South West"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000024969730</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715438" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="" incidentType="Cleared" modeOfTransport="Road" location="Merry Boys Road Cliffe Woods, Kent" incidentStatus="C" roadType="U" headlineText="Cliffe Woods: Road re-opened at Merry Boys Road" detailText="Road re-opened on Merry Boys Road both ways between the B2000 Town Road junction and the Cooling Common junction in Cliffe Woods." reportedDatetime="2010-05-27T14:30:43" lastModifiedDatetime="2010-05-27T15:44:44" startDatetime="2010-05-27T14:30:43" expiryDatetime="2010-05-27T16:14:44" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="573629" northing="173852">
+    <Region uid="RTM3715438" regionName="South East"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030104878</TOIDAffected>
+      <TOIDAffected>4000000030162995</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715437" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Southbound" road_number="M6" incidentType="Congestion" modeOfTransport="Road" location="M6 Staffordshire" incidentStatus="O" roadType="M" headlineText="M6 : Congestion Southbound at J11" detailText="Queueing traffic southbound between J11, Cannock and J8 M5." reportedDatetime="2010-05-27T14:30:30" lastModifiedDatetime="2010-05-27T16:11:09" startDatetime="2010-05-27T14:30:30" expiryDatetime="2010-05-27T17:51:27" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="395761" northing="306751">
+    <Region uid="RTM3715437" regionName="West Midlands"/>
+    <IncidentDataSource>Government Agency (86)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000013048502</TOIDAffected>
+      <TOIDAffected>4000000013048503</TOIDAffected>
+      <TOIDAffected>4000000013056221</TOIDAffected>
+      <TOIDAffected>4000000013056222</TOIDAffected>
+      <TOIDAffected>4000000013056951</TOIDAffected>
+      <TOIDAffected>4000000013056952</TOIDAffected>
+      <TOIDAffected>4000000013056956</TOIDAffected>
+      <TOIDAffected>4000000013056957</TOIDAffected>
+      <TOIDAffected>4000000013056958</TOIDAffected>
+      <TOIDAffected>4000000013056960</TOIDAffected>
+      <TOIDAffected>4000000013056961</TOIDAffected>
+      <TOIDAffected>4000000013056962</TOIDAffected>
+      <TOIDAffected>4000000013056963</TOIDAffected>
+      <TOIDAffected>4000000013056964</TOIDAffected>
+      <TOIDAffected>4000000013056965</TOIDAffected>
+      <TOIDAffected>4000000013056966</TOIDAffected>
+      <TOIDAffected>4000000013172706</TOIDAffected>
+      <TOIDAffected>4000000013172707</TOIDAffected>
+      <TOIDAffected>4000000013172708</TOIDAffected>
+      <TOIDAffected>4000000013172709</TOIDAffected>
+      <TOIDAffected>4000000013172714</TOIDAffected>
+      <TOIDAffected>4000000013209044</TOIDAffected>
+      <TOIDAffected>4000000013209045</TOIDAffected>
+      <TOIDAffected>4000000013209046</TOIDAffected>
+      <TOIDAffected>4000000013209047</TOIDAffected>
+      <TOIDAffected>4000000013209048</TOIDAffected>
+      <TOIDAffected>4000000013209049</TOIDAffected>
+      <TOIDAffected>4000000013734012</TOIDAffected>
+      <TOIDAffected>4000000013734013</TOIDAffected>
+      <TOIDAffected>4000000017955085</TOIDAffected>
+      <TOIDAffected>4000000017955086</TOIDAffected>
+      <TOIDAffected>4000000017826634</TOIDAffected>
+      <TOIDAffected>4000000017826635</TOIDAffected>
+      <TOIDAffected>4000000017826636</TOIDAffected>
+      <TOIDAffected>4000000017826637</TOIDAffected>
+      <TOIDAffected>4000000017838549</TOIDAffected>
+      <TOIDAffected>4000000017838550</TOIDAffected>
+      <TOIDAffected>4000000017838551</TOIDAffected>
+      <TOIDAffected>4000000017838552</TOIDAffected>
+      <TOIDAffected>4000000017838556</TOIDAffected>
+      <TOIDAffected>4000000017838557</TOIDAffected>
+      <TOIDAffected>4000000017838558</TOIDAffected>
+      <TOIDAffected>4000000017838559</TOIDAffected>
+      <TOIDAffected>4000000017859023</TOIDAffected>
+      <TOIDAffected>4000000017859024</TOIDAffected>
+      <TOIDAffected>4000000017859025</TOIDAffected>
+      <TOIDAffected>4000000017859026</TOIDAffected>
+      <TOIDAffected>4000000017859205</TOIDAffected>
+      <TOIDAffected>4000000017859206</TOIDAffected>
+      <TOIDAffected>4000000017859207</TOIDAffected>
+      <TOIDAffected>4000000017859208</TOIDAffected>
+      <TOIDAffected>4000000017859223</TOIDAffected>
+      <TOIDAffected>4000000017859233</TOIDAffected>
+      <TOIDAffected>4000000017859234</TOIDAffected>
+      <TOIDAffected>4000000017891568</TOIDAffected>
+      <TOIDAffected>4000000017891569</TOIDAffected>
+      <TOIDAffected>4000000017891941</TOIDAffected>
+      <TOIDAffected>4000000017891942</TOIDAffected>
+      <TOIDAffected>4000000017891943</TOIDAffected>
+      <TOIDAffected>4000000019214735</TOIDAffected>
+      <TOIDAffected>4000000019214736</TOIDAffected>
+      <TOIDAffected>4000000019214737</TOIDAffected>
+      <TOIDAffected>4000000019214738</TOIDAffected>
+      <TOIDAffected>4000000019184112</TOIDAffected>
+      <TOIDAffected>4000000019184113</TOIDAffected>
+      <TOIDAffected>4000000019196899</TOIDAffected>
+      <TOIDAffected>4000000019214829</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715422" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Northbound" road_number="M275" incidentType="Cleared" modeOfTransport="Road" location="M275 Portsmouth, Hampshire" incidentStatus="C" roadType="M" headlineText="M275 : Congestion cleared Northbound at Portsmouth" detailText="Traffic easing northbound from Rudmore Roundabout in Portsmouth." reportedDatetime="2010-05-27T14:25:18" lastModifiedDatetime="2010-05-27T15:59:37" startDatetime="2010-05-27T14:25:18" expiryDatetime="2010-05-27T16:29:37" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="464479" northing="101963">
+    <Region uid="RTM3715422" regionName="South East"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000023268707</TOIDAffected>
+      <TOIDAffected>4000000023318828</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715416" parent_uid="0" incident_change_status="Amended" severity="Medium" carriageway_direction="Westbound" road_number="A27" incidentType="Closures and Lane Restrictions" modeOfTransport="Road" location="A27 Fareham, Hampshire" incidentStatus="O" roadType="A" headlineText="A27 : Restriction at Fareham" detailText="One lane closed into town between the Fareham junction and the A32 Wallington Way junction in Fareham, queueing traffic." reportedDatetime="2010-05-27T14:23:11" lastModifiedDatetime="2010-05-27T16:09:53" startDatetime="2010-05-27T14:23:11" expiryDatetime="2010-05-27T16:49:34" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="459384" northing="107058">
+    <Region uid="RTM3715416" regionName="South East"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000023260491</TOIDAffected>
+      <TOIDAffected>4000000023260492</TOIDAffected>
+      <TOIDAffected>4000000023268688</TOIDAffected>
+      <TOIDAffected>4000000023268689</TOIDAffected>
+      <TOIDAffected>4000000023268690</TOIDAffected>
+      <TOIDAffected>4000000023285131</TOIDAffected>
+      <TOIDAffected>4000000023318605</TOIDAffected>
+      <TOIDAffected>4000000023318606</TOIDAffected>
+      <TOIDAffected>4000000023318607</TOIDAffected>
+      <TOIDAffected>4000000023318610</TOIDAffected>
+      <TOIDAffected>4000000023319614</TOIDAffected>
+      <TOIDAffected>4000000023370413</TOIDAffected>
+      <TOIDAffected>4000000023416724</TOIDAffected>
+      <TOIDAffected>4000000023416727</TOIDAffected>
+      <TOIDAffected>4000000023416728</TOIDAffected>
+      <TOIDAffected>4000000023445921</TOIDAffected>
+      <TOIDAffected>4000000023460225</TOIDAffected>
+      <TOIDAffected>4000000023460306</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715415" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="both ways" road_number="A4020" incidentType="Hazards" modeOfTransport="Road" location="A4020 Uxbridge, Greater London" incidentStatus="O" roadType="A" headlineText="A4020 : No traffic lights at Uxbridge" detailText="Traffic light failure on Hillingdon Road both ways at the Vine Street junction in Uxbridge." reportedDatetime="2010-05-27T14:21:57" lastModifiedDatetime="2010-05-27T15:46:26" startDatetime="2010-05-27T14:21:57" expiryDatetime="2010-05-27T16:26:26" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="505512" northing="183917">
+    <Region uid="RTM3715415" regionName="London"/>
+    <IncidentDataSource>Government Agency (71)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030217655</TOIDAffected>
+      <TOIDAffected>4000000030453708</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715408" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="None" road_number="A48" incidentType="Hazards" modeOfTransport="Road" location="A48 Port Talbot, Neath Port Talbot" incidentStatus="O" roadType="A" headlineText="A48 : Breakdown at Port Talbot" detailText="Broken down lorry at the Baglan junction in Port Talbot, because of recovery work." reportedDatetime="2010-05-27T14:18:47" lastModifiedDatetime="2010-05-27T16:01:45" startDatetime="2010-05-27T14:18:47" expiryDatetime="2010-05-27T17:15:20" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="276369" northing="190375">
+    <Region uid="RTM3715408" regionName="Wales"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000020965789</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715380" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Eastbound" road_number="A303" incidentType="Cleared" modeOfTransport="Road" location="A303 Stonehenge, Wiltshire" incidentStatus="C" roadType="A" headlineText="A303 : Congestion cleared at Stonehenge" detailText="Traffic returned to normal eastbound between the Stonehenge Fork junction and the A345 Countess Road junction in Stonehenge." reportedDatetime="2010-05-27T14:11:18" lastModifiedDatetime="2010-05-27T15:28:18" startDatetime="2010-05-27T14:11:18" expiryDatetime="2010-05-27T15:58:18" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="412733" northing="142068">
+    <Region uid="RTM3715380" regionName="South West"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000023256423</TOIDAffected>
+      <TOIDAffected>4000000023270075</TOIDAffected>
+      <TOIDAffected>4000000023324528</TOIDAffected>
+      <TOIDAffected>4000000023375209</TOIDAffected>
+      <TOIDAffected>4000000023420077</TOIDAffected>
+      <TOIDAffected>4000000023736574</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715374" parent_uid="0" incident_change_status="Unchanged" severity="Severe" carriageway_direction="Southbound" road_number="A90" incidentType="Closures/ blockages" modeOfTransport="Road" location="A90 Gallowfauld, Angus" incidentStatus="O" roadType="A" headlineText="A90 : Road closed at Gallowfauld" detailText="Closed southbound between the B9127 junction in Gallowfauld and the A928 junction in Todhills, because of recovery work." reportedDatetime="2010-05-27T14:07:17" lastModifiedDatetime="2010-05-27T15:53:19" startDatetime="2010-05-27T14:07:17" expiryDatetime="2010-05-27T16:53:19" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="344278" northing="745475">
+    <Region uid="RTM3715374" regionName="Scotland"/>
+    <IncidentDataSource>Emergency Services (40)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000004491809</TOIDAffected>
+      <TOIDAffected>4000000004491810</TOIDAffected>
+      <TOIDAffected>4000000004466030</TOIDAffected>
+      <TOIDAffected>4000000004491808</TOIDAffected>
+      <TOIDAffected>4000000004491811</TOIDAffected>
+      <TOIDAffected>4000000004492036</TOIDAffected>
+      <TOIDAffected>4000000004492037</TOIDAffected>
+      <TOIDAffected>4000000004492038</TOIDAffected>
+      <TOIDAffected>4000000004492039</TOIDAffected>
+      <TOIDAffected>4000000004492040</TOIDAffected>
+      <TOIDAffected>4000000004492041</TOIDAffected>
+      <TOIDAffected>4000000004492042</TOIDAffected>
+      <TOIDAffected>4000000004492043</TOIDAffected>
+      <TOIDAffected>4000000004492044</TOIDAffected>
+      <TOIDAffected>4000000004492045</TOIDAffected>
+      <TOIDAffected>4000000004492046</TOIDAffected>
+      <TOIDAffected>4000000004492047</TOIDAffected>
+      <TOIDAffected>4000000004492049</TOIDAffected>
+      <TOIDAffected>4000000004492050</TOIDAffected>
+      <TOIDAffected>4000000004492051</TOIDAffected>
+      <TOIDAffected>4000000004492052</TOIDAffected>
+      <TOIDAffected>4000000004492053</TOIDAffected>
+      <TOIDAffected>4000000004492054</TOIDAffected>
+      <TOIDAffected>4000000004533601</TOIDAffected>
+      <TOIDAffected>4000000004533610</TOIDAffected>
+      <TOIDAffected>4000000004582128</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715642" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Northbound" road_number="A90" incidentType="Congestion" modeOfTransport="Road" location="A90 Aberdeen, Aberdeen City" incidentStatus="O" roadType="A" headlineText="A90 : Congestion at Aberdeen" detailText="Traffic congestion on North Anderson Drive northbound between the A944 Westburn Road junction and the A96 Auchmill Road junction in Aberdeen." reportedDatetime="2010-05-27T15:47:56" lastModifiedDatetime="2010-05-27T15:47:56" startDatetime="2010-05-27T15:47:56" expiryDatetime="2010-05-27T16:47:53" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="391047" northing="806850">
+    <Region uid="RTM3715642" regionName="Scotland"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715661" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Northbound" road_number="A647" incidentType="Congestion" modeOfTransport="Road" location="A647 Leeds, West Yorkshire" incidentStatus="O" roadType="A" headlineText="Leeds: Congestion at Ledgard Way" detailText="Traffic building up on Ledgard Way outbound at the A647 Stanningley Road junction in Leeds." reportedDatetime="2010-05-27T15:53:00" lastModifiedDatetime="2010-05-27T15:53:00" startDatetime="2010-05-27T15:53:00" expiryDatetime="2010-05-27T16:52:17" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="427301" northing="433630">
+    <Region uid="RTM3715661" regionName="Yorkshire and Humber"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000010831913</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715758" parent_uid="0" incident_change_status="New" severity="Slight" carriageway_direction="Eastbound" road_number="A720" incidentType="Congestion" modeOfTransport="Road" location="A720 City Of Edinburgh" incidentStatus="O" roadType="A" headlineText="A720 : Congestion at City Of Edinburgh" detailText="Traffic building up on Edinburgh City By-Pass eastbound between the Calder Junction junction and the B701 junction." reportedDatetime="2010-05-27T16:11:01" lastModifiedDatetime="2010-05-27T16:11:01" startDatetime="2010-05-27T16:11:01" expiryDatetime="2010-05-27T16:50:28" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="318588" northing="670377">
+    <Region uid="RTM3715758" regionName="Scotland"/>
+    <IncidentDataSource>Government Agency (103)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000006239438</TOIDAffected>
+      <TOIDAffected>4000000006239534</TOIDAffected>
+      <TOIDAffected>4000000006239429</TOIDAffected>
+      <TOIDAffected>4000000006239430</TOIDAffected>
+      <TOIDAffected>4000000006239431</TOIDAffected>
+      <TOIDAffected>4000000006239432</TOIDAffected>
+      <TOIDAffected>4000000006239459</TOIDAffected>
+      <TOIDAffected>4000000006239460</TOIDAffected>
+      <TOIDAffected>4000000006239477</TOIDAffected>
+      <TOIDAffected>4000000006239478</TOIDAffected>
+      <TOIDAffected>4000000006239501</TOIDAffected>
+      <TOIDAffected>4000000006239517</TOIDAffected>
+      <TOIDAffected>4000000006248816</TOIDAffected>
+      <TOIDAffected>4000000006248817</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715757" parent_uid="0" incident_change_status="New" severity="Slight" carriageway_direction="both ways" road_number="A61" incidentType="Congestion" modeOfTransport="Road" location="A61 Sheffield, South Yorkshire" incidentStatus="O" roadType="A" headlineText="A61 : Congestion at Sheffield" detailText="Slow traffic on Hanover Way both ways at the A625 Moore Street junction in Sheffield." reportedDatetime="2010-05-27T16:10:58" lastModifiedDatetime="2010-05-27T16:10:58" startDatetime="2010-05-27T16:10:58" expiryDatetime="2010-05-27T17:08:19" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="434752" northing="386482">
+    <Region uid="RTM3715757" regionName="Yorkshire and Humber"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000015494645</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715751" parent_uid="0" incident_change_status="New" severity="Slight" carriageway_direction="Southbound" road_number="A380" incidentType="Congestion" modeOfTransport="Road" location="A380 Kingsteignton, Devon" incidentStatus="O" roadType="A" headlineText="A380 : Congestion at Kingsteignton" detailText="Queueing traffic on Besigheim Way southbound between the A383 Teignmouth Road junction and the Shaldon Road junction in Kingsteignton." reportedDatetime="2010-05-27T16:10:17" lastModifiedDatetime="2010-05-27T16:10:16" startDatetime="2010-05-27T16:10:17" expiryDatetime="2010-05-27T16:50:12" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="287974" northing="72978">
+    <Region uid="RTM3715751" regionName="South West"/>
+    <IncidentDataSource>Camera (16)</IncidentDataSource>
+    <TOIDsAffected></TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715749" parent_uid="0" incident_change_status="New" severity="Slight" carriageway_direction="Eastbound" road_number="A1071" incidentType="Congestion" modeOfTransport="Road" location="A1071 Ipswich, Suffolk" incidentStatus="O" roadType="A" headlineText="A1071 : Congestion at Ipswich" detailText="Queueing traffic on Woodbridge Road out of town between the A1156 Argyle Street junction and the Lattice Avenue junction in Ipswich." reportedDatetime="2010-05-27T16:10:12" lastModifiedDatetime="2010-05-27T16:10:28" startDatetime="2010-05-27T16:10:12" expiryDatetime="2010-05-27T17:09:53" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="616969" northing="244656">
+    <Region uid="RTM3715749" regionName="East Anglia"/>
+    <Region uid="RTM3715749" regionName="South East"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000029242789</TOIDAffected>
+      <TOIDAffected>4000000029242853</TOIDAffected>
+      <TOIDAffected>4000000029242908</TOIDAffected>
+      <TOIDAffected>4000000029252165</TOIDAffected>
+      <TOIDAffected>4000000029252344</TOIDAffected>
+      <TOIDAffected>4000000029262682</TOIDAffected>
+      <TOIDAffected>4000000029270393</TOIDAffected>
+      <TOIDAffected>4000000029270394</TOIDAffected>
+      <TOIDAffected>4000000029275608</TOIDAffected>
+      <TOIDAffected>4000000029352602</TOIDAffected>
+      <TOIDAffected>4000000029352604</TOIDAffected>
+      <TOIDAffected>4000000029361099</TOIDAffected>
+      <TOIDAffected>4000000029361100</TOIDAffected>
+      <TOIDAffected>4000000029361101</TOIDAffected>
+      <TOIDAffected>4000000029361102</TOIDAffected>
+      <TOIDAffected>4000000029361103</TOIDAffected>
+      <TOIDAffected>4000000029361104</TOIDAffected>
+      <TOIDAffected>4000000029361105</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715750" parent_uid="0" incident_change_status="New" severity="Medium" carriageway_direction="both ways" road_number="" incidentType="Closures/ blockages" modeOfTransport="Road" location="Corporation Street Birmingham, West Midlands" incidentStatus="O" roadType="U" headlineText="Birmingham: Road closed at Corporation Street" detailText="Corporation Street closed both ways between the Newton Street junction and the Steelhouse Lane junction in Birmingham, traffic congestion." reportedDatetime="2010-05-27T16:10:14" lastModifiedDatetime="2010-05-27T16:11:10" startDatetime="2010-05-27T16:10:14" expiryDatetime="2010-05-27T16:51:10" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="407323" northing="287234">
+    <Region uid="RTM3715750" regionName="West Midlands"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000019322454</TOIDAffected>
+      <TOIDAffected>4000000019322458</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715748" parent_uid="0" incident_change_status="New" severity="Slight" carriageway_direction="both ways" road_number="A414" incidentType="Congestion" modeOfTransport="Road" location="A414 Harlow, Essex" incidentStatus="O" roadType="A" headlineText="A414 : Congestion at Harlow" detailText="Queueing traffic both ways between the Harlow junction and the Clock Tower junction in Harlow." reportedDatetime="2010-05-27T16:09:39" lastModifiedDatetime="2010-05-27T16:09:39" startDatetime="2010-05-27T16:09:39" expiryDatetime="2010-05-27T17:09:30" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="547639" northing="207125">
+    <Region uid="RTM3715748" regionName="South East"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000027870255</TOIDAffected>
+      <TOIDAffected>4000000027870256</TOIDAffected>
+      <TOIDAffected>4000000027870276</TOIDAffected>
+      <TOIDAffected>4000000027878683</TOIDAffected>
+      <TOIDAffected>4000000027922102</TOIDAffected>
+      <TOIDAffected>4000000027922105</TOIDAffected>
+      <TOIDAffected>4000000027922108</TOIDAffected>
+      <TOIDAffected>4000000027922116</TOIDAffected>
+      <TOIDAffected>4000000027922117</TOIDAffected>
+      <TOIDAffected>4000000027961874</TOIDAffected>
+      <TOIDAffected>4000000027961878</TOIDAffected>
+      <TOIDAffected>4000000027962580</TOIDAffected>
+      <TOIDAffected>4000000027962581</TOIDAffected>
+      <TOIDAffected>4000000027962583</TOIDAffected>
+      <TOIDAffected>4000000027962584</TOIDAffected>
+      <TOIDAffected>4000000027962585</TOIDAffected>
+      <TOIDAffected>4000000027962648</TOIDAffected>
+      <TOIDAffected>4000000027962649</TOIDAffected>
+      <TOIDAffected>4000000027962652</TOIDAffected>
+      <TOIDAffected>4000000027962654</TOIDAffected>
+      <TOIDAffected>4000000027997000</TOIDAffected>
+      <TOIDAffected>4000000027997002</TOIDAffected>
+      <TOIDAffected>4000000027997003</TOIDAffected>
+      <TOIDAffected>4000000028017659</TOIDAffected>
+      <TOIDAffected>4000000028017660</TOIDAffected>
+      <TOIDAffected>4000000028017661</TOIDAffected>
+      <TOIDAffected>4000000028027282</TOIDAffected>
+      <TOIDAffected>4000000028029738</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715745" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="A133" incidentType="Congestion" modeOfTransport="Road" location="A133 Colchester, Essex" incidentStatus="O" roadType="A" headlineText="A133 : Congestion at Colchester" detailText="Queueing traffic on Colne Bank Avenue eastbound between the A134 Westway junction and the Greenstead Roundabout junction in Colchester." reportedDatetime="2010-05-27T16:08:52" lastModifiedDatetime="2010-05-27T16:09:13" startDatetime="2010-05-27T16:08:52" expiryDatetime="2010-05-27T17:08:29" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="599014" northing="225977">
+    <Region uid="RTM3715745" regionName="South East"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000029234964</TOIDAffected>
+      <TOIDAffected>4000000029239870</TOIDAffected>
+      <TOIDAffected>4000000029239888</TOIDAffected>
+      <TOIDAffected>4000000029247367</TOIDAffected>
+      <TOIDAffected>4000000029247380</TOIDAffected>
+      <TOIDAffected>4000000029247391</TOIDAffected>
+      <TOIDAffected>4000000029247426</TOIDAffected>
+      <TOIDAffected>4000000029247427</TOIDAffected>
+      <TOIDAffected>4000000029247428</TOIDAffected>
+      <TOIDAffected>4000000029258191</TOIDAffected>
+      <TOIDAffected>4000000029258193</TOIDAffected>
+      <TOIDAffected>4000000029258202</TOIDAffected>
+      <TOIDAffected>4000000029258203</TOIDAffected>
+      <TOIDAffected>4000000029258249</TOIDAffected>
+      <TOIDAffected>4000000029267735</TOIDAffected>
+      <TOIDAffected>4000000029267736</TOIDAffected>
+      <TOIDAffected>4000000029267752</TOIDAffected>
+      <TOIDAffected>4000000029267766</TOIDAffected>
+      <TOIDAffected>4000000029267767</TOIDAffected>
+      <TOIDAffected>4000000029267770</TOIDAffected>
+      <TOIDAffected>4000000029267772</TOIDAffected>
+      <TOIDAffected>4000000029274120</TOIDAffected>
+      <TOIDAffected>4000000029274121</TOIDAffected>
+      <TOIDAffected>4000000029274122</TOIDAffected>
+      <TOIDAffected>4000000029274123</TOIDAffected>
+      <TOIDAffected>4000000029277520</TOIDAffected>
+      <TOIDAffected>4000000029277521</TOIDAffected>
+      <TOIDAffected>4000000029277522</TOIDAffected>
+      <TOIDAffected>4000000029277523</TOIDAffected>
+      <TOIDAffected>4000000029277524</TOIDAffected>
+      <TOIDAffected>4000000029278277</TOIDAffected>
+      <TOIDAffected>4000000029278278</TOIDAffected>
+      <TOIDAffected>4000000029278279</TOIDAffected>
+      <TOIDAffected>4000000029278280</TOIDAffected>
+      <TOIDAffected>4000000029361463</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715744" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="" incidentType="Congestion" modeOfTransport="Road" location="Orchard Street Kempston, Bedfordshire" incidentStatus="O" roadType="U" headlineText="Kempston: Congestion at Orchard Street" detailText="Queueing traffic on Orchard Street eastbound at the Chantry Road junction in Kempston." reportedDatetime="2010-05-27T16:08:47" lastModifiedDatetime="2010-05-27T16:08:47" startDatetime="2010-05-27T16:08:47" expiryDatetime="2010-05-27T16:43:28" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="503121" northing="247106">
+    <Region uid="RTM3715744" regionName="South East"/>
+    <IncidentDataSource>Eyewitness (79)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000027931968</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715743" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Westbound" road_number="M4" incidentType="Congestion" modeOfTransport="Road" location="M4 Neath Port Talbot" incidentStatus="O" roadType="M" headlineText="M4 : Congestion Westbound at J43" detailText="Queueing traffic on exit slip road westbound at J43, Llandarcy." reportedDatetime="2010-05-27T16:08:45" lastModifiedDatetime="2010-05-27T16:08:45" startDatetime="2010-05-27T16:08:45" expiryDatetime="2010-05-27T16:48:11" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="272138" northing="196059">
+    <Region uid="RTM3715743" regionName="Wales"/>
+    <IncidentDataSource>Government Agency (93)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000020923402</TOIDAffected>
+      <TOIDAffected>4000000020942356</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715742" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Westbound" road_number="A66" incidentType="Closures/ blockages" modeOfTransport="Road" location="A66 Middlesbrough, North Yorkshire" incidentStatus="O" roadType="A" headlineText="A66 : Lane closed at Middlesbrough" detailText="Lane closed on entry slip road westbound at the A1032 Tees Newport Bridge Approach Road junction in Middlesbrough, because of a broken down car." reportedDatetime="2010-05-27T16:08:29" lastModifiedDatetime="2010-05-27T16:08:28" startDatetime="2010-05-27T16:08:29" expiryDatetime="2010-05-27T16:47:24" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="448172" northing="519770">
+    <Region uid="RTM3715742" regionName="North East"/>
+    <IncidentDataSource>Eyewitness (78)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000007803645</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715741" parent_uid="0" incident_change_status="Unchanged" severity="Medium" carriageway_direction="Westbound" road_number="A406" incidentType="Hazards" modeOfTransport="Road" location="A406 Walthamstow, Greater London" incidentStatus="O" roadType="A" headlineText="A406 : Breakdown at Walthamstow" detailText="Broken down lorry on Southend Road (North Circular Road) westbound between the Waterwork's Corner junction and the Crooked Billet Interchange junction in Walthamstow, one lane blocked." reportedDatetime="2010-05-27T16:08:09" lastModifiedDatetime="2010-05-27T16:08:09" startDatetime="2010-05-27T16:08:09" expiryDatetime="2010-05-27T16:45:44" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="539394" northing="190444">
+    <Region uid="RTM3715741" regionName="London"/>
+    <IncidentDataSource>Government Agency (71)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030082866</TOIDAffected>
+      <TOIDAffected>4000000030102239</TOIDAffected>
+      <TOIDAffected>4000000030102240</TOIDAffected>
+      <TOIDAffected>4000000030102241</TOIDAffected>
+      <TOIDAffected>4000000030102242</TOIDAffected>
+      <TOIDAffected>4000000030102243</TOIDAffected>
+      <TOIDAffected>4000000030102244</TOIDAffected>
+      <TOIDAffected>4000000030102771</TOIDAffected>
+      <TOIDAffected>4000000030102772</TOIDAffected>
+      <TOIDAffected>4000000030157104</TOIDAffected>
+      <TOIDAffected>4000000030157105</TOIDAffected>
+      <TOIDAffected>4000000030157106</TOIDAffected>
+      <TOIDAffected>4000000030157114</TOIDAffected>
+      <TOIDAffected>4000000030157115</TOIDAffected>
+      <TOIDAffected>4000000030157116</TOIDAffected>
+      <TOIDAffected>4000000030255133</TOIDAffected>
+      <TOIDAffected>4000000030258097</TOIDAffected>
+      <TOIDAffected>4000000030258098</TOIDAffected>
+      <TOIDAffected>4000000030258114</TOIDAffected>
+      <TOIDAffected>4000000030258115</TOIDAffected>
+      <TOIDAffected>4000000030359403</TOIDAffected>
+      <TOIDAffected>4000000030359404</TOIDAffected>
+      <TOIDAffected>4000000030463663</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715740" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Eastbound" road_number="A13" incidentType="Congestion" modeOfTransport="Road" location="A13 Benfleet, Essex" incidentStatus="O" roadType="A" headlineText="A13 : Congestion at Benfleet" detailText="Slow traffic on London Road eastbound at the Saddlers Farm Roundabout junction in Benfleet." reportedDatetime="2010-05-27T16:07:59" lastModifiedDatetime="2010-05-27T16:07:59" startDatetime="2010-05-27T16:07:59" expiryDatetime="2010-05-27T16:47:30" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="576270" northing="188460">
+    <Region uid="RTM3715740" regionName="South East"/>
+    <IncidentDataSource>Sensor (80)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000030271743</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715739" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Northbound" road_number="A120" incidentType="Congestion" modeOfTransport="Road" location="A120 Braintree, Essex" incidentStatus="O" roadType="A" headlineText="A120 : Congestion at Braintree" detailText="Slow traffic northbound between the Galley's Corner junction and the Marks Farm Roundabout junction in Braintree." reportedDatetime="2010-05-27T16:07:23" lastModifiedDatetime="2010-05-27T16:07:23" startDatetime="2010-05-27T16:07:23" expiryDatetime="2010-05-27T16:47:14" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="577879" northing="221988">
+    <Region uid="RTM3715739" regionName="South East"/>
+    <IncidentDataSource>Local Authority (94)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000027866034</TOIDAffected>
+      <TOIDAffected>4000000027866035</TOIDAffected>
+      <TOIDAffected>4000000027928866</TOIDAffected>
+      <TOIDAffected>4000000028001686</TOIDAffected>
+      <TOIDAffected>4000000028001689</TOIDAffected>
+      <TOIDAffected>4000000028001690</TOIDAffected>
+      <TOIDAffected>4000000028002431</TOIDAffected>
+      <TOIDAffected>4000000028002433</TOIDAffected>
+      <TOIDAffected>4000000028020047</TOIDAffected>
+      <TOIDAffected>4000000028020479</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715736" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Northbound" road_number="B1141" incidentType="Congestion" modeOfTransport="Road" location="B1141 Great Yarmouth, Norfolk" incidentStatus="O" roadType="B" headlineText="B1141 : Congestion at Great Yarmouth" detailText="Slow traffic on North Quay northbound around the A149 North Quay junction in Great Yarmouth." reportedDatetime="2010-05-27T16:05:45" lastModifiedDatetime="2010-05-27T16:05:45" startDatetime="2010-05-27T16:05:45" expiryDatetime="2010-05-27T16:45:16" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="652192" northing="308070">
+    <Region uid="RTM3715736" regionName="East Anglia"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000027499428</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715724" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Westbound" road_number="A610" incidentType="Congestion" modeOfTransport="Road" location="A610 Nottingham, Nottinghamshire" incidentStatus="O" roadType="A" headlineText="A610 : Congestion at Nottingham" detailText="Slow traffic outbound at the Nuthall Island junction in Nottingham." reportedDatetime="2010-05-27T16:03:28" lastModifiedDatetime="2010-05-27T16:11:10" startDatetime="2010-05-27T16:03:28" expiryDatetime="2010-05-27T17:33:25" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="452221" northing="343950">
+    <Region uid="RTM3715724" regionName="East Midlands"/>
+    <IncidentDataSource>Local Authority (67)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000015567564</TOIDAffected>
+      <TOIDAffected>4000000015567580</TOIDAffected>
+      <TOIDAffected>4000000015567595</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715723" parent_uid="0" incident_change_status="Amended" severity="Slight" carriageway_direction="Northbound" road_number="A6514" incidentType="Congestion" modeOfTransport="Road" location="A6514 Nottingham, Nottinghamshire" incidentStatus="O" roadType="A" headlineText="A6514 : Congestion at Nottingham" detailText="Queueing traffic on Clifton Boulevard outbound between the The Qmc Island junction and the Crown Island junction in Nottingham." reportedDatetime="2010-05-27T16:02:59" lastModifiedDatetime="2010-05-27T16:11:09" startDatetime="2010-05-27T16:02:59" expiryDatetime="2010-05-27T16:51:09" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="454507" northing="338859">
+    <Region uid="RTM3715723" regionName="East Midlands"/>
+    <IncidentDataSource>Local Authority (67)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000015555456</TOIDAffected>
+      <TOIDAffected>4000000015555457</TOIDAffected>
+      <TOIDAffected>4000000015555473</TOIDAffected>
+      <TOIDAffected>4000000015555474</TOIDAffected>
+      <TOIDAffected>4000000015555495</TOIDAffected>
+      <TOIDAffected>4000000015555496</TOIDAffected>
+      <TOIDAffected>4000000015555497</TOIDAffected>
+      <TOIDAffected>4000000015555498</TOIDAffected>
+      <TOIDAffected>4000000015555500</TOIDAffected>
+      <TOIDAffected>4000000015555501</TOIDAffected>
+      <TOIDAffected>4000000015555502</TOIDAffected>
+      <TOIDAffected>4000000015555504</TOIDAffected>
+      <TOIDAffected>4000000015555505</TOIDAffected>
+      <TOIDAffected>4000000015555523</TOIDAffected>
+      <TOIDAffected>4000000015555528</TOIDAffected>
+      <TOIDAffected>4000000015555529</TOIDAffected>
+      <TOIDAffected>4000000015555530</TOIDAffected>
+      <TOIDAffected>4000000015555563</TOIDAffected>
+      <TOIDAffected>4000000015556256</TOIDAffected>
+      <TOIDAffected>4000000015558314</TOIDAffected>
+      <TOIDAffected>4000000015558315</TOIDAffected>
+      <TOIDAffected>4000000015558316</TOIDAffected>
+      <TOIDAffected>4000000015558317</TOIDAffected>
+      <TOIDAffected>4000000015558318</TOIDAffected>
+      <TOIDAffected>4000000015558322</TOIDAffected>
+      <TOIDAffected>4000000015723454</TOIDAffected>
+      <TOIDAffected>4000000015723456</TOIDAffected>
+      <TOIDAffected>4000000015558347</TOIDAffected>
+      <TOIDAffected>4000000015558387</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715721" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Westbound" road_number="A1085" incidentType="Congestion" modeOfTransport="Road" location="A1085 North Ormesby, Middlesbrough, North Yorkshire" incidentStatus="O" roadType="A" headlineText="A1085 : Congestion at North Ormesby, Middlesbrough" detailText="Traffic building up on Longlands Road outbound from the Ormesby Road junction to the A66 junction in North Ormesby, Middlesbrough." reportedDatetime="2010-05-27T16:02:56" lastModifiedDatetime="2010-05-27T16:03:47" startDatetime="2010-05-27T16:02:56" expiryDatetime="2010-05-27T17:03:47" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="451216" northing="519357">
+    <Region uid="RTM3715721" regionName="North East"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000007805579</TOIDAffected>
+      <TOIDAffected>4000000007805633</TOIDAffected>
+      <TOIDAffected>4000000007805634</TOIDAffected>
+      <TOIDAffected>4000000007805675</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+  <Incident uid="RTM3715714" parent_uid="0" incident_change_status="Unchanged" severity="Slight" carriageway_direction="Southbound" road_number="A1018" incidentType="Congestion" modeOfTransport="Road" location="A1018 Sunderland, Tyne And Wear" incidentStatus="O" roadType="A" headlineText="A1018 : Congestion at Sunderland" detailText="Heavy traffic on North Bridge Street southbound between the Sheepfolds North junction and the A183 St Mary's Way junction in Sunderland." reportedDatetime="2010-05-27T16:00:38" lastModifiedDatetime="2010-05-27T16:00:37" startDatetime="2010-05-27T16:00:38" expiryDatetime="2010-05-27T16:59:30" daily_startDatetime="00:00:00" daily_endDatetime="23:59:59" daymask="SuMoTuWeThFrSa" plannedIncident="false" easting="439640" northing="557593">
+    <Region uid="RTM3715714" regionName="North East"/>
+    <IncidentDataSource>Camera (15)</IncidentDataSource>
+    <TOIDsAffected>
+      <TOIDAffected>4000000007726447</TOIDAffected>
+      <TOIDAffected>4000000007726448</TOIDAffected>
+      <TOIDAffected>4000000007726449</TOIDAffected>
+      <TOIDAffected>4000000007726634</TOIDAffected>
+    </TOIDsAffected>
+  </Incident>
+</TrafficAndTravelNewsData>
+<!-- Stats : Process end at 38457.2 (0.375(s)) -->
+<!-- Stats : 581 incident(s) -->

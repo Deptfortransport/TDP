@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E8DF4E5-C028-4E85-8163-41F9E007ACB7}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.userportal.pricingretail</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.UserPortal.PricingRetail</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>SAK</SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdditionalDataAccessModule">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\AdditionalDataAccessModule.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <Name>nunit.framework</Name>
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>system.web.services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="td.CJP">
+      <Name>td.CJP</Name>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJP.dll</HintPath>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <Name>td.CJPInterface</Name>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.FaresProvider">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.FaresProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="td.FaresProviderInterface">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.FaresProviderInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.interactivemapping">
+      <Name>td.interactivemapping</Name>
+      <HintPath>..\..\..\ThirdParty\ESRI\td.interactivemapping.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Name>AdditionalDataModule</Name>
+      <Project>{1BF668A4-F9B2-4D64-85CB-ADD80C432849}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Name>DatabaseInfrastructure</Name>
+      <Project>{5F116712-53F6-4A9F-B11B-96D0812190AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataGatewayFramework\DataGatewayFramework.csproj">
+      <Name>DataGatewayFramework</Name>
+      <Project>{39F3A8F8-7CB2-40E3-80BF-49394BF419E0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyControl\JourneyControl.csproj">
+      <Name>JourneyControl</Name>
+      <Project>{27414D3D-9782-44C6-A5BD-A11ECEA591E5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Name>LocationService</Name>
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PricingMessages\PricingMessages.csproj">
+      <Name>PricingMessages</Name>
+      <Project>{6A86E3D3-4DC4-4868-A6C1-8CCACD6428AE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\DatabasePropertyProvider\DatabasePropertyProvider.csproj">
+      <Project>{946A95B4-3145-4F4E-9E8F-54B78F1FA5F4}</Project>
+      <Name>DatabasePropertyProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\FilePropertyProvider\FilePropertyProvider.csproj">
+      <Project>{A3CB7929-0F74-4625-AB84-349C041B9B62}</Project>
+      <Name>FilePropertyProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{C0EADF9C-59D2-45EA-A67D-09CA8999746C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RetailBusinessObjects\RetailBusinessObjects.csproj">
+      <Name>RetailBusinessObjects</Name>
+      <Project>{24E807B4-27A3-42BB-848A-18AA8076E8DE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ThemeInfrastructure\ThemeInfrastructure.csproj">
+      <Project>{1F4158BC-4A8B-4A24-8A5F-1DF642D54BC2}</Project>
+      <Name>ThemeInfrastructure</Name>
+    </ProjectReference>
+    <Reference Include="td.RoadRoutingEngine">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.RoadRoutingEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+
+    <Compile Include="AvailabilityEstimator\AirAvailabilityEstimator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\AvailabilityEstimatorDBHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\AvailabilityEstimatorFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\AvailabilityRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\AvailabilityResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\AvailabilityResultService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\CoachAvailabilityEstimator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\IAvailabilityEstimator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityEstimator\RailAvailabilityEstimator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\AvailabilityScore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\CoachFare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\CoachFareForJourney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\CoachFareForRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\CoachFareRemoteForRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\CoachFaresInterfaceFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\CoachFaresInterfaceType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\CoachFaresService.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\DayRestriction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\FareErrorStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\FareRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\FareResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\FareResultRemote.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\FaresInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\FaresInterfaceForJourney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\FaresInterfaceForRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\ICoachFaresInterfaceFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\IFaresInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFareInterfaces\TimeRestriction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\CoachFareFilterAndMergeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\CoachFaresLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\CoachFareSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\CoachJourneyFareFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\CoachOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\CoachOperatorLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\ExceptionalFaresLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\ICoachFaresLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\ICoachOperatorLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\IExceptionalFaresLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\JourneyCoachFareSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\PricingResultsBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\PricingResultsHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\RouteCoachFareSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\TestCoachOperatorLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachFares\TimeBasedCoachFareSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\CoachOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\CoachOperatorList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\CoachRoutesQuotaFareProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\CoachRoutesQuotaFaresImportTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\ExchangeNaPTAN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\ExchangeNaPTANList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\ICoachRoutesQuotaFaresProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\InvalidExchangeOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\InvalidExchangeOperatorList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\Leg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\LegList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\NaPTAN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\NaPTANDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\QuotaFare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\QuotaFareList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\Route.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachRoutes\RouteList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\CoachFareData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\CostBasedJourney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\CostSearchTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\DateFlexibility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\DiscountCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\DiscountCardCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Discounts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Flexibility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\IJourneyFareFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\IJourneyFareFilterFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\IPricedServicesSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\IPricedServicesSupplierFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\IRoutePriceSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\IRoutePriceSupplierFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\ITimeBasedFareSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\ITimeBasedFareSupplierFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Itinerary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\ItineraryType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\JourneyFareFilterFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\PricedServicesSupplierFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\PricingResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\PricingUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\PricingUnitMergePolicy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Probability.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\PublicJourneyStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RailFareData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Retailer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RetailerCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RetailerCatalogueFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RetailerKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RetailerSortDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RetailerSortHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RoutePriceSupplierFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\RouteRestrictionsCatalogue.cs" />
+    <Compile Include="Domain\Ticket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TicketClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TicketOrderingComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TicketTravelMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TicketType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TimeBasedFaresSearchState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TimeBasedFareSupplierFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TravelDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\TravelDatesResultSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Upgrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\PriceRouteRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\PriceRouteResponseMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\PricingRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\PricingResponseMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\ServiceParameterRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\ServiceParametersResponseMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\ServiceValidationRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\ServiceValidationResponseMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOGateway\Gateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOGateway\GatewayTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOGateway\LocationConvertor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOGateway\PricingRequestBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOGateway\PricingResultBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOGateway\TicketUniqueKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOGateway\VehicleFeatureToDtoConvertor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RetailXmlHandoff\RetailXmlDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RetailXmlHandoff\RetailXmlSchema.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RetailXmlHandoff\RetailXmlSchemaFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\AvailabilityEstimator\TestAvailabilityEstimator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\AvailabilityEstimator\TestAvailabilityEstimatorDBHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\AvailabilityEstimator\TestAvailabilityRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\AvailabilityEstimator\TestAvailabilityResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\AvailabilityEstimator\TestAvailabilityResultService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFareInterfaces\TestCoachFare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFareInterfaces\TestCoachFaresInterfaceFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFareInterfaces\TestCoachFaresInterfaceInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFareInterfaces\TestFaresInterfaceForJourney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFareInterfaces\TestFaresInterfaceForRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFareInterfaces\TestMockFareInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestCoachFareFilterAndMergeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestCoachJourneyFareFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestJourneyCoachFareSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestMockCoachFaresLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestMockCoachOperatorLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestMockExceptionalFaresLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestPricingResultsBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestPricingResultsHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestRouteCoachFareSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestStubTimeBasedFareSupplierFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachFares\TestTimeBasedCoachFaresSupplier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachRoutes\TestCoachRoutesQuotaFaresImportTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\CoachRoutes\TestCoachRoutesQuotaFaresProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestDiscountCardCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestItinerary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestPricingRetailInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestPricingRetailMergePolicy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestPricingUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestPublicJourneyStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestRetailerCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestSampleJourneyData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestStubGisQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestTicketOrderingComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\Domain\TestTravelDatesResultSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\RBOGateway\TestGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\RBOGateway\TestGatewayTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\RBOGateway\TestLocationConvertor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\RBOGateway\TestPricingRequestBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\RBOGateway\TestPricingResultBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\RBOGateway\TestStubGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\RetailXmlHandoff\TestRetailXmlDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="bin\Debug\td.userportal.pricingretail.dll.config" />
+    <None Include="TestPricingRetail.build" />
+    <Content Include="bin\Debug\AvailabilityEstimator\CleanUp.sql" />
+    <Content Include="bin\Debug\AvailabilityEstimator\SetUp.sql" />
+    <Content Include="bin\Debug\NatExFares\CoachResult1_out.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult1_ret.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult2_out.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult2_ret.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult3_out.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult3_ret.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult4_out.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult_LegsNotCovered.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult_NoFares.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult_NoResults.xml" />
+    <Content Include="bin\Debug\NatExFares\CoachResult_NoSingleFares.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup1_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup2_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup3_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup4_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup5_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup6_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup7_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup8_Properties.xml" />
+    <Content Include="bin\Debug\NatExFares\PriceRoute_Setup9_Properties.xml" />
+    <Content Include="bin\Debug\td.FaresProvider.dll" />
+    <Content Include="bin\Debug\td.FaresProviderInterface.dll" />
+    <Content Include="bin\Debug\td.RoadRoutingEngine.dll" />
+    <Content Include="bin\Debug\td.userportal.pricingretail.xml" />
+    <Content Include="bin\Release\td.FaresProvider.dll" />
+    <Content Include="bin\Release\td.FaresProviderInterface.dll" />
+    <Content Include="bin\Release\td.RoadRoutingEngine.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

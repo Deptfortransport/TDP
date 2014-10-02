@@ -1,0 +1,24 @@
+TESTNAME = {"FBO - Terminate"}
+
+INHDR = {
+"STDIN   "
+"FA"
+"TE"
+"        "
+"0101"
+"    "
+}
+
+INBFR = {""}
+
+OUTHDR = {
+"STDOUT  "
+"INSTANCE"
+"STERR"
+"C"
+"S"
+"L"
+}
+
+OUTBFR = {""}
+

@@ -1,0 +1,576 @@
+ 01000901000100
+ 02ASEAT2999123120030101AIRL
+ 02BSEAT2999123120030101BACK
+ 02ESEAT2999123120030101ENDS
+ 02FBRTH2999123120030101FEML
+ 02FSEAT2999123120030101FACE
+ 02GSEAT2999123120030101AISL
+ 02ISEAT2999123120030101INDL
+ 02LBRTH2999123120030101LOWR
+ 02MBRTH2999123120030101MALE
+ 02MSEAT2999123120030101MIDD
+ 02NBRTH2999123120030101NSMK
+ 02NSEAT2999123120030101NSMK
+ 02RSEAT2999123120030101RSTY
+ 02SBRTH2999123120030101SMOK
+ 02SSEAT2999123120030101SMOK
+ 02TBRTH2999123120030101TOGR
+ 02UBRTH2999123120030101UPPR
+ 02VSEAT2999123120030101VIDO
+ 02WSEAT2999123120030101WIND
+ 02XBRTH2999123120030101SOLO
+ 03BVRVFF2999123120040920MMM
+ 03BVSVFF2999123120040920MMM
+ 03CDRVFF2999123120040920MMM
+ 03CDSVFF2999123120040920MMM
+ 03SDRVFF2999123120040920MMM
+ 03SDSVFF2999123120040920MMM
+ 03SORVFF2999123120040920HHH
+ 03SOSVFF2999123120040920HHH
+ 03SSRVFF2999123120040920MMM
+ 03SSSVFF2999123120040920MMM
+ 03SVRVFF2999123120040920MMM
+ 03SVSVFF2999123120040920MMM
+ 03WKRVFF2999123120040920MMM
+ 03BVRWAF2999123120040920MMM
+ 03BVSWAF2999123120040920MMM
+ 03CDRWAF2999123120040920MMM
+ 03CDSWAF2999123120040920MMM
+ 03SDRWAF2999123120040920MMM
+ 03SDSWAF2999123120040920MMM
+ 03SORWAF2999123120040920HHH
+ 03SOSWAF2999123120040920HHH
+ 03SSRWAF2999123120040920MMM
+ 03SSSWAF2999123120040920MMM
+ 03SVRWAF2999123120040920MMM
+ 03SVSWAF2999123120040920MMM
+ 03WKRWAF2999123120040920MMM
+ 03BVRWEW2999123120040920MMM
+ 03BVSWEW2999123120040920MMM
+ 03CDRWEW2999123120040920MMM
+ 03CDSWEW2999123120040920MMM
+ 03SDRWEW2999123120040920MMM
+ 03SDSWEW2999123120040920MMM
+ 03SORWEW2999123120040920HHH
+ 03SOSWEW2999123120040920HHH
+ 03SSRWEW2999123120040920MMM
+ 03SSSWEW2999123120040920MMM
+ 03SVRWEW2999123120040920MMM
+ 03SVSWEW2999123120040920MMM
+ 03WKRWEW2999123120040920MMM
+ 03BVRWFF2999123120040920MMM
+ 03BVSWFF2999123120040920MMM
+ 03CDRWFF2999123120040920MMM
+ 03CDSWFF2999123120040920MMM
+ 03SDRWFF2999123120040920MMM
+ 03SDSWFF2999123120040920MMM
+ 03SORWFF2999123120040920HHH
+ 03SOSWFF2999123120040920HHH
+ 03SSRWFF2999123120040920MMM
+ 03SSSWFF2999123120040920MMM
+ 03SVRWFF2999123120040920MMM
+ 03SVSWFF2999123120040920MMM
+ 03WKRWFF2999123120040920MMM
+ 03BVRWFG2999123120040920MMM
+ 03BVSWFG2999123120040920MMM
+ 03CDRWFG2999123120040920MMM
+ 03CDSWFG2999123120040920MMM
+ 03SDRWFG2999123120040920MMM
+ 03SDSWFG2999123120040920MMM
+ 03SORWFG2999123120040920HHH
+ 03SOSWFG2999123120040920HHH
+ 03SSRWFG2999123120040920MMM
+ 03SSSWFG2999123120040920MMM
+ 03SVRWFG2999123120040920MMM
+ 03SVSWFG2999123120040920MMM
+ 03WKRWFG2999123120040920MMM
+ 03BVRWFH2999123120040920MMM
+ 03BVSWFH2999123120040920MMM
+ 03CDRWFH2999123120040920MMM
+ 03CDSWFH2999123120040920MMM
+ 03SDRWFH2999123120040920MMM
+ 03SDSWFH2999123120040920MMM
+ 03SORWFH2999123120040920HHH
+ 03SOSWFH2999123120040920HHH
+ 03SSRWFH2999123120040920MMM
+ 03SSSWFH2999123120040920MMM
+ 03SVRWFH2999123120040920MMM
+ 03SVSWFH2999123120040920MMM
+ 03WKRWFH2999123120040920MMM
+ 03BVRWHF2999123120040920MMM
+ 03BVSWHF2999123120040920MMM
+ 03CDRWHF2999123120040920MMM
+ 03CDSWHF2999123120040920MMM
+ 03SDRWHF2999123120040920MMM
+ 03SDSWHF2999123120040920MMM
+ 03SORWHF2999123120040920HHH
+ 03SOSWHF2999123120040920HHH
+ 03SSRWHF2999123120040920MMM
+ 03SSSWHF2999123120040920MMM
+ 03SVRWHF2999123120040920MMM
+ 03SVSWHF2999123120040920MMM
+ 03WKRWHF2999123120040920MMM
+ 03BVRWSF2999123120040920MMM
+ 03BVSWSF2999123120040920MMM
+ 03CDRWSF2999123120040920MMM
+ 03CDSWSF2999123120040920MMM
+ 03ECRWSF2999123120040920MMM
+ 03ECSWSF2999123120040920MMM
+ 03HSTWSF2999123120040920MMM
+ 03LSSWSF2999123120040920MMM
+ 03LSTWSF2999123120040920MMM
+ 03SDRWSF2999123120040920MMM
+ 03SDSWSF2999123120040920MMM
+ 03SERWSF2999123120040920MMM
+ 03SESWSF2999123120040920MMM
+ 03SORWSF2999123120040920HHH
+ 03SOSWSF2999123120040920HHH
+ 03SRTWSF2999123120040920MMM
+ 03SSRWSF2999123120040920MMM
+ 03SSSWSF2999123120040920MMM
+ 03SSTWSF2999123120040920MMM
+ 03SVRWSF2999123120040920MMM
+ 03SVSWSF2999123120040920MMM
+ 03WKRWSF2999123120040920MMM
+ 03BVRWW12999123120040920MMM
+ 03BVSWW12999123120040920MMM
+ 03CDRWW12999123120040920MMM
+ 03CDSWW12999123120040920MMM
+ 03SDRWW12999123120040920MMM
+ 03SDSWW12999123120040920MMM
+ 03SORWW12999123120040920HHH
+ 03SOSWW12999123120040920HHH
+ 03SSRWW12999123120040920MMM
+ 03SSSWW12999123120040920MMM
+ 03SVRWW12999123120040920MMM
+ 03SVSWW12999123120040920MMM
+ 03WKRWW12999123120040920MMM
+ 03BVRWW22999123120040920MMM
+ 03BVSWW22999123120040920MMM
+ 03CDRWW22999123120040920MMM
+ 03CDSWW22999123120040920MMM
+ 03SDRWW22999123120040920MMM
+ 03SDSWW22999123120040920MMM
+ 03SORWW22999123120040920HHH
+ 03SOSWW22999123120040920HHH
+ 03SSRWW22999123120040920MMM
+ 03SSSWW22999123120040920MMM
+ 03SVRWW22999123120040920MMM
+ 03SVSWW22999123120040920MMM
+ 03WKRWW22999123120040920MMM
+ 03AXRXBA2999123120041125SAA
+ 03AXSXBA2999123120041125SAA
+ 03SARXBA2999123120041125SAA
+ 03SASXBA2999123120041125SAA
+ 03SORXBA2999123120041125SAA
+ 03SOSXBA2999123120041125SAA
+ 03SSRXBA2999123120041125SAA
+ 03SSSXBA2999123120041125SAA
+ 03SVRXBA2999123120041125SAA
+ 03SVSXBA2999123120041125SAA
+ 03AXRXBD2999123120041125SSC
+ 03AXSXBD2999123120041125SSC
+ 03SARXBD2999123120041125SSC
+ 03SASXBD2999123120041125SSC
+ 03SORXBD2999123120041125SSC
+ 03SOSXBD2999123120041125SSC
+ 03SSRXBD2999123120041125SSC
+ 03SSSXBD2999123120041125SSC
+ 03SVRXBD2999123120041125SSC
+ 03SVSXBD2999123120041125SSC
+ 03FORXBF2999123120041125FOO
+ 03FOSXBF2999123120041125FOO
+ 03FXRXBF2999123120041125FOO
+ 03SFRXBF2999123120041125FOO
+ 03BVRXCR2999123120040930SSO
+ 03BVSXCR2999123120040930SSO
+ 03SVRXCR2999123120040930SSO
+ 03SVSXCR2999123120040930SSO
+ 03WKRXCR2999123120040930SSO
+ 03EGRXSU2999123120040930CS1
+ 03FORXSU2999123120040930CS1
+ 03FOSXSU2999123120040930CS1
+ 03AXRXSV2999123120040930CS2
+ 03AXSXSV2999123120040930CS2
+ 03SARXSV2999123120040930CS2
+ 03SASXSV2999123120040930CS2
+ 03SORXSV2999123120040930CS2
+ 03SOSXSV2999123120040930CS2
+ 03SVRXSV2999123120040930CS2
+ 03SVSXSV2999123120040930CS2
+ 03SARXVS2999123120040930CS2
+ 03SASXVS2999123120040930CS2
+ 03SORXVS2999123120040930CS2
+ 03SOSXVS2999123120040930CS2
+ 03SVRXVS2999123120040930CS2
+ 03SVSXVS2999123120040930CS2
+ 03BVRXWO2999123120040920MMM
+ 03BVSXWO2999123120040920MMM
+ 03CDRXWO2999123120040920MMM
+ 03CDSXWO2999123120040920MMM
+ 03SDRXWO2999123120040920MMM
+ 03SDSXWO2999123120040920MMM
+ 03SORXWO2999123120040920HHH
+ 03SOSXWO2999123120040920HHH
+ 03SSRXWO2999123120040920MMM
+ 03SSSXWO2999123120040920MMM
+ 03SVRXWO2999123120040920MMM
+ 03SVSXWO2999123120040920MMM
+ 03WKRXWO2999123120040920MMM
+ 03BVRXWR2999123120040920MMM
+ 03BVSXWR2999123120040920MMM
+ 03CDRXWR2999123120040920MMM
+ 03CDSXWR2999123120040920MMM
+ 03SDRXWR2999123120040920MMM
+ 03SDSXWR2999123120040920MMM
+ 03SORXWR2999123120040920HHH
+ 03SOSXWR2999123120040920HHH
+ 03SSRXWR2999123120040920MMM
+ 03SSSXWR2999123120040920MMM
+ 03SVRXWR2999123120040920MMM
+ 03SVSXWR2999123120040920MMM
+ 03WKRXWR2999123120040920MMM
+ 04B2999123120030101BRTH
+ 04C2999123120030101CYCL
+ 04S2999123120030101SEAT
+ 05BIKE_TTY2999123120030101BIK                                               
+ 05NLC     29991231200301015                                                 
+ 05STR     29991231200301016                                                 
+ 06C2999123120030101BIKE
+ 07   2004011520031211000001002
+ 07   2999123120040116000001002
+ 07ACD2004011520031211XXX001XXX
+ 07ACD2999123120040116XXX001XXX
+ 07AIG2999123119980723060061000
+ 07ANG2999123120010107XXX055000
+ 07AVC2004011520031211021001XXX
+ 07AVC2999123120040116021001XXX
+ 07CCK2999123120021205027028000
+ 07CCT2004011520031211081001002
+ 07CCT2999123120040116081001002
+ 07CRC2999123120030603021000000
+ 07CRN2004112120020106021022023
+ 07CRN2999123120041122021022023
+ 07CTD2999123120030105021000000
+ 07DAD2004042520031211004000000
+ 07DAD2999123120040426004000000
+ 07DAT2999123120020602007000000
+ 07DCC2999123120010227090091092
+ 07DCP2004011520031211027001000
+ 07DCP2999123120040116027001000
+ 07DCT2999123120020213018019020
+ 07DIC2004011520020312063064065
+ 07DIC2004030220040116063064065
+ 07DIC2999123120040303063064065
+ 07DIS2004011520020312063064065
+ 07DIS2004030220040116063064065
+ 07DIS2999123120040303063064065
+ 07DRD2999123120000605024025026
+ 07DRF2004011520020501021064065
+ 07DRF2004030220040116021064065
+ 07DRF2999123120040303021064065
+ 07EDU2999123120011211051052053
+ 07EVC2999123120000605024025026
+ 07FAM2004011520020214009010002
+ 07FAM2999123120040116009010002
+ 07FAP2004011520020819009010002
+ 07FAP2999123120040116009010002
+ 07FCT2999123120010107084085002
+ 07FDM2999123119980814000000000
+ 07GRP2999123119970928060061062
+ 07GS32999123120021220030000XXX
+ 07GS42999123120021220031000XXX
+ 07HCC2999123120020929046XXXXXX
+ 07HCS2999123120031117045XXXXXX
+ 07HCT2999123120000605078079002
+ 07HMF2004011520021009012013014
+ 07HMF2999123120040116012013014
+ 07HOW2004010320030105021022XXX
+ 07HOW2004112120040104021022XXX
+ 07HOW2999123120041122021022XXX
+ 07HRC2999123120030506027XXXXXX
+ 07IRD2004011520031211073001035
+ 07IRD2999123120040116073001035
+ 07JUV2999123120010107054055002
+ 07LCS2999123120021205027028000
+ 07LCT2004011520031211072001002
+ 07LCT2999123120040116072001002
+ 07LTB2999123120021205027028029
+ 07LTE2999123120021205027028029
+ 07LUR2004011520040104076XXXXXX
+ 07LUR2999123120040116076XXXXXX
+ 07LUS2004011520040104075XXXXXX
+ 07LUS2999123120040116075XXXXXX
+ 07MCT2004011520031211027001029
+ 07MCT2999123120040116027001029
+ 07MOD2999123120010107066067068
+ 07MVS2999123120021205027XXXXXX
+ 07MYP2004011520031211005001002
+ 07MYP2999123120040116005001002
+ 07NCC2999123120010228093094095
+ 07NDC2004112320021104057XXXXXX
+ 07NDC2999123120041124057XXXXXX
+ 07NDJ2004112320030710057XXXXXX
+ 07NDJ2999123120041124057XXXXXX
+ 07NEW2004030220030928048049050
+ 07NEW2999123120040303048049050
+ 07NGC2999123120031211036037038
+ 07PBC2004011520031211021001023
+ 07PBC2999123120040116021001023
+ 07PBR2999123120030901021XXXXXX
+ 07PD42004030220020620082000000
+ 07PD42004033120040303082000000
+ 07PD42999123120040401082000000
+ 07PD52999123120020620070000000
+ 07PRC2999123120020929042043XXX
+ 07PRD2999123120000605015016017
+ 07PRV2999123120000605015016017
+ 07RBE2004011520031211007001002
+ 07RBE2999123120040116007001002
+ 07RES2999123120020117000000000
+ 07RTE2004011520031211004001002
+ 07RTE2004042520040116004001002
+ 07RTE2999123120040426004001002
+ 07RUT2999123120030905027XXX023
+ 07SCT2999123120010228087088002
+ 07SEP2004011520031211021001023
+ 07SEP2999123120040116021001023
+ 07SFC2999123120010107087088089
+ 07SMP2004011520031211021001023
+ 07SMP2999123120040116021001023
+ 07SRN2004011520031211006001008
+ 07SRN2004052220040116006001008
+ 07SRN2999123120040523006001008
+ 07SRS2999123120041002027XXXXXX
+ 07SSP2999123120021205027XXX029
+ 07STC2999123120021205027028000
+ 07S342004011520031211046001000
+ 07S342999123120040116046001000
+ 07TAD2999123120021031039040XXX
+ 07TBC2004011520031211027001002
+ 07TBC2999123120040116027001002
+ 07TCT2999123120020430069070002
+ 07TRB2004011520031211082001XXX
+ 07TRB2004030220040116082001XXX
+ 07TRB2004031420040303082001XXX
+ 07TRB2004033120040315082001XXX
+ 07TRB2999123120040401082001XXX
+ 07VLS2999123120030220027XXXXXX
+ 07VMR2004042520031211004004XXX
+ 07VMR2999123120040426004004XXX
+ 07WDC2004011520031211024001XXX
+ 07WDC2999123120040116024001XXX
+ 07WHC2999123120030728027XXXXXX
+ 07WMF2999123120021205027XXX029
+ 07WMP2999123120021205027XXX029
+ 07WMR2999123120021205027028029
+ 07WMS2999123120021205027XXX029
+ 07YNG2004011520031211003001002
+ 07YNG2004052220040116003001002
+ 07YNG2999123120040523003001002
+ 07YTH2999123120010107054055056
+ 50V001COut of sequence message received from NRS                   
+ 50V002ENot enough places available                                 
+ 50V003INRS Booking cancelled successfully                          
+ 50V004EReserved place not in NRS booking                           
+ 50V005EUnable to identify counted/ overbooked places to cancel     
+ 50V006IPlace(s) cancelled successfully                             
+ 50V007ETrying to cancel more bikes than booked                     
+ 50V008IBike(s) cancelled successfully                              
+ 50V009IBooking amended successfully                                
+ 50V010CNRS communication problem - contact help desk               
+ 50V011CUnexpected NRS version detected - contact help desk         
+ 50V012EUnable to identify counted/ overbooked places to cancel     
+ 50V013ENRS communications suspended due to earlier problem         
+ 50V014EObject is already initialised                               
+ 50V015EUser Id must be specified                                   
+ 50V016ETraining flag must be Y or N                                
+ 50V017ETest flag must be Y or N                                    
+ 50V018ECannot terminate when not initialised                       
+ 50V019EDirection must be O or R                                    
+ 50V020EDeparture Date must be in format CCYYMMDD                   
+ 50V021EDeparture Time must be in format HHMM                       
+ 50V022ESeatOrBerth must be D, E or space                           
+ 50V023ESmoking must be N, S or space                               
+ 50V024ELocation must be D, E or space                              
+ 50V025ELocation must be C, E or space                              
+ 50V026EPosition must be W, I, G, M or space                        
+ 50V027EPosition must be U, L or space                              
+ 50V028EDirection must be F, B, A or space                          
+ 50V029EGender must be blank for Seat Reservation                   
+ 50V030EGender must be M, F, T or S                                 
+ 50V031ENumber Of Places must be numeric                            
+ 50V032ENo of places specified is incorrect                         
+ 50V033ENearTo/Specific must be N, S or space                       
+ 50V034EPlace must be 4 characters                                  
+ 50V035EDirection must be space for Berth reservation               
+ 50V036EOnly one NearTo place may be specified                      
+ 50V037ETarget places must be specified                             
+ 50V038EDeparture Date must be in format CCYYMMDD                   
+ 50V039EDeparture Time must be in format HHMM                       
+ 50V040ENumber of Bikes must be numeric                             
+ 50V041EDirection must be O or R                                    
+ 50V042EDeparture Date must be in format CCYYMMDD                   
+ 50V043EPlace Type must be S, B or C                                
+ 50V044CInvalid data returned from NRS                              
+ 50V045ELeg Origin must be specified                                
+ 50V046ELeg Destination must be specified                           
+ 50V047ELeg Departure Date must be specified                        
+ 50V048ETrain Number must be specified                              
+ 50V049EPlace Id must be specified                                  
+ 50V050CNRS did not return the specified place                      
+ 50V051CInvalid response from NRS                                   
+ 50V052EInvalid response from NRS - no matching leg found           
+ 50V053ECancelling too many counted places                          
+ 50V054EComms failure trying to abort request                       
+ 50V055EDeparture Date must be in format CCYYMMDD                   
+ 50V056ECannot do Housekeeping while initialised                    
+ 50V057EBooking Reference must be specified                         
+ 50V058EBooking Reference must be specified                         
+ 50V059EBooking Reference must be specified                         
+ 50V060EBooking Reference must be specified                         
+ 50V061EDeparture Date must be in format CCYYMMDD                   
+ 50V062ECounted places to cancel must be numeric                    
+ 50V063EPlaces to cancel must be numeric                            
+ 50V064ENo of places specified is incorrect                         
+ 50V065EPlace Id must be 4 characters                               
+ 50V066EBooking Reference must be specified                         
+ 50V067EDeparture Date must be in format CCYYMMDD                   
+ 50V068EPlaces to cancel must be numeric                            
+ 50V069EUnable to parse XML returned from NRS                       
+ 50V070ENRS returned errors - see output parameter                  
+ 50V071ENRS returned too many legs                                  
+ 50V072ENRS returned too many place details                         
+ 50V073ENRS timed out while processing transaction                  
+ 50V074EComms Business object returned error                        
+ 50V075EUnable to parse XML returned from NRS                       
+ 50V076EDirection must be O or R                                    
+ 50V077ECancelling too many counted places                          
+ 50V078EInvalid response from NRS - no matching leg found           
+ 50V079ERVBO is not initialised                                     
+ 50V080ENRS Error - see NRS error message text                      
+ 50V081EInvalid response from NRS - wrong Booking Reference         
+ 50V082EInvalid response from NRS - wrong Booking Reference         
+ 50V083EDeparture Date must be in format CCYYMMDD                   
+ 50V084ECOM exception                                               
+ 50V085EUnable to open reference data                               
+ 50V086EUnable to read header record                                
+ 50V087ETrailer record count mismatch                               
+ 50V088EJourneyOrigin must be specified                             
+ 50V089EJourneyDestination must be specified                        
+ 50V090ERouteCode must be specified                                 
+ 50V091ELegOrigin must be specified                                 
+ 50V092ELegDestination must be specified                            
+ 50V093ELegTrainNum must be specified                               
+ 50V094ENRS returned unrecognised Attribute for Gender              
+ 50V095EUnknown Supplement/Ticket Type combination                  
+ 50V096EJourneyOrigin must be specified                             
+ 50V097EJourneyDestination must be specified                        
+ 50V098ERouteCode must be specified                                 
+ 50V099ELegOrigin must be specified                                 
+ 50V100ELegDestination must be specified                            
+ 50V101ELegTrainNum must be specified                               
+ 50V102EError parsing XML - expected element not found              
+ 50V103ENRS returned unrecognised Accommodation Type                
+ 50V104ENRS returned unrecognised Attribute for Gender              
+ 50V105ENRS returned unrecognised Accommodation Type                
+ 50V106ENRS returned unrecognised Attribute for Gender              
+ 50V107ELegOrigin must be specified                                 
+ 50V108ELegDestination must be specified                            
+ 50V109ELegTrainNum must be specified                               
+ 50V110EJourneyOrigin must be specified                             
+ 50V111EJourneyDestination must be specified                        
+ 50V112ERouteCode must be specified                                 
+ 50V113ELegOrigin must be specified                                 
+ 50V114ELegDestination must be specified                            
+ 50V115ELegTrainNum must be specified                               
+ 50V116EAt least one product must be requested                      
+ 50V117ELegOrigin must be specified                                 
+ 50V118ELegDestination must be specified                            
+ 50V119ELegTrainNum must be specified                               
+ 50V120IBikes cancelled successfully                                
+ 50V121ELegOrigin must be specified                                 
+ 50V122ELegDestination must be specified                            
+ 50V123ELegTrainNum must be specified                               
+ 50V124IAccommodation cancelled successfully                        
+ 50V125ELegOrigin must be specified                                 
+ 50V126ELegDestination must be specified                            
+ 50V127ELegTrainNum must be specified                               
+ 50V128ECoachId must be specified                                   
+ 50V129ENRS returned unrecognised Accommodation Type                
+ 50V130EOnly one gender at a time can be cancelled                  
+ 50V131EInput or output block too small                             
+ 50Z000INo download file present                                    
+ 50Z001ESection_ID must be "STDIN"                                  
+ 50Z002EInvalid object_ID                                           
+ 50Z003EInvalid function_ID                                         
+ 50Z004EInvalid instance_ID                                         
+ 50Z005EError_Code must be zeroes                                   
+ 50Z006EObject is not initialised                                   
+ 50Z007EIncorrect version number                                    
+ 50Z008EInvalid Error_Code                                          
+ 50Z009EUnknown Error_Code                                          
+ 50Z010ECannot access configuration file                            
+ 50Z011CDownload data version incompatible                          
+ 50Z012CCannot find header record                                   
+ 50Z013CHousekeeping in progress                                    
+ 50Z014WHousekeeping abended - no new data, using old data          
+ 50Z015WHousekeeping abended - new data may be corrupt, using old   
+ 50Z016WHousekeeping abended - new data recovered by initialise     
+ 50Z017WHousekeeping abended after successfully creating new data   
+ 50Z018EObject is initialised, cannot begin Housekeeping            
+ 50Z019CLast Housekeeping performed by later version of Business Obj
+ 50Z020ECannot find Windows directory                               
+ 50Z101CLocal configuration file missing                            
+ 50Z102CData version incompatible with business object version      
+ 50Z103CMissed an update                                            
+ 50Z104CServer configuration file missing                           
+ 50Z105CError opening server control file                           
+ 50Z106CError renaming download file                                
+ 50Z107CError locking the server configuration file                 
+ 50Z108CDownload file is too old - file removed                     
+ 50Z109IHousekeeping successful                                     
+ 50Z110IHousekeeping in progress - using current data files         
+ 50Z111IHousekeeping failed - using previous data files             
+ 50Z112CHousekeeping Error - Both EXE and DAT file exist            
+ 50Z113CHousekeeping Error - Unzip process timeout                  
+ 50Z114CHousekeeping Error - Terminate Unzip process failed         
+ 50Z115CHousekeeping Error - Unzip process failed                   
+ 50Z116CHousekeeping Error - Unzip process creation failed          
+ 50Z117EUnable to unzip download file                               
+ 50Z501CUnable to open data file                                    
+ 50Z502CUnable to open index file                                   
+ 50Z503CUnable to read Index header                                 
+ 50Z504CUnable to allocate Index memory                             
+ 50Z505CUnable to read index file to memory                         
+ 50Z506CUnknown record type                                         
+ 50Z507IKey not found                                               
+ 50Z508CUnable to read data file                                    
+ 50Z509IUnable to release memory                                    
+ 50Z510IUnable to close index file                                  
+ 50Z511IUnable to close header file                                 
+ 50Z512CIncorrect record length                                     
+ 50Z513CUnable to write to file                                     
+ 50Z514ERecord already exists                                       
+ 50Z515CUnable to write to index                                    
+ 50Z516CUnable to write Index header                                
+ 50Z517IEnd of file reached                                         
+ 50Z518CMissing record types in download file                       
+ 50Z519ETrailer record count incorrect                              
+ 50Z520CIncorrect business object version                           
+ 50Z521CInvalid file version                                        
+ 50Z522CInvalid Download Header action                              
+ 50Z523CInvalid Download Record action                              
+ 50Z524EAdding record that already exists                           
+ 50Z525EAmending record that does not exist                         
+ 50Z526EDeleting record that does not exist                         
+ 50Z527CLocalData not found in INI file                             
+ 50Z528CUnable to read data file to memory                          
+ 50Z529CServerIni not found in INI file                             
+ 50Z530CData file not found in INI file                             
+ 50Z531CIndex file not found in INI file                            
+ 50Z532CUnable to allocate Data memory                              
+ 50Z533ETrailer record does not exist                               
+ 50Z999IZ999I                                                       
+ 99070200000020030000021104000000030500000003060000000107000001325000000203
+

@@ -1,0 +1,1285 @@
+<JourneyResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<publicJourneys>
+		<PublicJourney> <!-- Public Journey #1 -->
+			<legs>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #1 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900057366</NaPTANID>
+							<name>London: Victoria Coach Stn</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900076052</NaPTANID>
+							<name>Leeds: Bus &amp; Coach Stn, Dyer St (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #2 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900076052</NaPTANID>
+							<name>Leeds: Bus &amp; Coach Stn, Dyer St (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>36B</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #3 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900066177</NaPTANID>
+							<name>Edinburgh (Haymarket): Coach Stop (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>SC</operatorCode>
+							<operatorName>Scottish City Link</operatorName>
+							<serviceNumber>120</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+			</legs>
+			<fares>
+				<PricingUnit> <!--- Pricing Unit #1 -->
+					<legs>
+						<int>0</int>
+						<int>1</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>3000</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>4500</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #3 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>2000</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #4 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>2500</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #5 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>5000</fare>
+							<single>false</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #6 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>6000</fare>
+							<single>false</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #7 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>3500</fare>
+							<single>false</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #8 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>4000</fare>
+							<single>false</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+				<PricingUnit> <!--- Pricing Unit #2 -->
+					<legs>
+						<int>2</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1500</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>2000</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #3 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType />
+							<fareType>Advance Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>2500</fare>
+							<single>false</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #4 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>2000</fare>
+							<single>false</single>
+							<fareRestrictionType>NotFlexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #5 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType />
+							<fareType>Advance Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1800</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+			</fares>
+		</PublicJourney>
+		<PublicJourney> <!-- Public Journey #2 -->
+			<legs>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #1 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900057366</NaPTANID>
+							<name>London: Victoria Coach Stn</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900076052</NaPTANID>
+							<name>Leeds: Bus &amp; Coach Stn, Dyer St (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #2 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900076052</NaPTANID>
+							<name>Leeds: Bus &amp; Coach Stn, Dyer St (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>MB</operatorCode>
+							<operatorName>MegaBus UK</operatorName>
+							<serviceNumber>36B</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #3 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900066177</NaPTANID>
+							<name>Edinburgh (Haymarket): Coach Stop (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>SC</operatorCode>
+							<operatorName>Scottish City Link</operatorName>
+							<serviceNumber>120</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+			</legs>
+			<fares>
+				<PricingUnit> <!--- Pricing Unit #1 -->
+					<legs>
+						<int>0</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1900</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType>Young Person</discountCardType>
+							<fareType>Young Person Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1500</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #3 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1700</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #4 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Off Peak Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1000</fare>
+							<single>true</single>
+							<fareRestrictionType>NotFlexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+				<PricingUnit> <!--- Pricing Unit #2 -->
+					<legs>
+						<int>1</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>5-16</childAgeRange>
+							<discountCardType />
+							<fareType>Open Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>500</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>5-16</childAgeRange>
+							<discountCardType />
+							<fareType>First Class Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1000</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #3 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>5-16</childAgeRange>
+							<discountCardType>Frequent Traveller</discountCardType>
+							<fareType>Frequent Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>400</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #4 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>5-16</childAgeRange>
+							<discountCardType />
+							<fareType>Advance Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>400</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+				<PricingUnit> <!--- Pricing Unit #3 -->
+					<legs>
+						<int>2</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType />
+							<fareType>Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>2200</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType>Student Card</discountCardType>
+							<fareType>Student Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1700</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #3 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>4-15</childAgeRange>
+							<discountCardType />
+							<fareType>Advance Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1600</fare>
+							<single>true</single>
+							<fareRestrictionType>NotFlexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+			</fares>
+		</PublicJourney>		
+		<PublicJourney>  <!-- Public Journey #3 -->
+			<legs>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #1 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900057366</NaPTANID>
+							<name>London: Victoria Coach Stn</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #2 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900066177</NaPTANID>
+							<name>Edinburgh (Haymarket): Coach Stop (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+			</legs>
+			<fares>
+				<PricingUnit>
+					<legs>
+						<int>0</int>
+						<int>1</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>4500</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>5500</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #3 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>3300</fare>
+							<single>true</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #4 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>3800</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #5 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>6000</fare>
+							<single>false</single>
+							<fareRestrictionType>NotFlexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #6 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>6800</fare>
+							<single>false</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #7 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>4700</fare>
+							<single>false</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #8 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>5200</fare>
+							<single>false</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+			</fares>
+		</PublicJourney>		
+		<PublicJourney>  <!-- Public Journey #4 -->
+			<legs>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #1 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900057366</NaPTANID>
+							<name>London: Victoria Coach Stn</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+				<Leg xsi:type="TimedLeg"> <!-- Leg #2 -->
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900069092</NaPTANID>
+							<name>Newcastle-upon-tyne: Coach Stn, St James (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900066177</NaPTANID>
+							<name>Edinburgh (Haymarket): Coach Stop (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>MB</operatorCode>
+							<operatorName>MegaBus UK</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+			</legs>
+			<fares>
+				<PricingUnit>
+					<legs>
+						<int>0</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>5000</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+				<PricingUnit>
+					<legs>
+						<int>1</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Open Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1500</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Open Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>2000</fare>
+							<single>false</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #3 -->
+							<passengerType>Child</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>false</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Open Single</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>1000</fare>
+							<single>true</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+			</fares>
+		</PublicJourney>		
+		<PublicJourney>  <!-- Public Journey #5 -->
+			<legs>
+				<Leg xsi:type="TimedLeg">
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-01T09:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900057366</NaPTANID>
+							<name>London: Victoria Coach Stn</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-01T19:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900066177</NaPTANID>
+							<name>Edinburgh (Haymarket): Coach Stop (Coach)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+			</legs>
+			<fares>
+				<PricingUnit>
+					<legs>
+						<int>0</int>
+					</legs>
+					<prices>
+						<Fare> <!-- fare #1 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Economy Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>6500</fare>
+							<single>false</single>
+							<fareRestrictionType>LimitedFlexibility</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+						<Fare> <!-- fare #2 -->
+							<passengerType>Adult</passengerType>
+							<passengerTypeConditions>Unknown</passengerTypeConditions>
+							<adult>true</adult>
+							<childAgeRange>3-15</childAgeRange>
+							<discountCardType />
+							<fareType>Standard Return</fareType>
+							<fareTypeConditions>Unknown</fareTypeConditions>
+							<fare>7000</fare>
+							<single>false</single>
+							<fareRestrictionType>Flexible</fareRestrictionType>
+							<bookingFee>0</bookingFee>
+							<taxes>0</taxes>
+							<additionalFees>0</additionalFees>
+						</Fare>
+					</prices>
+				</PricingUnit>
+			</fares>
+		</PublicJourney>
+	</publicJourneys>
+</JourneyResult>

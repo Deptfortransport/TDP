@@ -1,0 +1,5 @@
+TD-OP	2007-10-16T15:37:49.424	Test Error 1: There was a connection error with Database 123XY	Database	Error	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 1	123
+TD-OP	2007-10-16T15:37:49.424	Test Error 2: A problem occurred whilst attempting to load G5265	Business	Info	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 2	456
+TD-OP	2007-10-16T15:37:49.424	Test Error 3: Connection XYF failed	ThirdParty	Warning	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 3	789
+TD-OP	2007-10-16T15:37:49.424	Test Error 4: Timeout occurred processing H6001.aspx	ThirdParty	Verbose	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 4	012
+TD-OP	2007-10-16T15:37:49.424	Test Error 5: Error Number 1234HDJ has occurred	ThirdParty	Error	UK005744	TestFilePublisher	TestWriteEvent	td.common.logging	Test Target Number 5	345

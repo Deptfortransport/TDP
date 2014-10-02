@@ -1,0 +1,8 @@
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\bin\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\bin\Debug\td.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\bin\Debug\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\bin\Debug\td.common.pdb
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\obj\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\obj\Debug\td.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect\ServiceDiscovery\obj\Debug\ServiceDiscovery.csprojResolveAssemblyReference.cache

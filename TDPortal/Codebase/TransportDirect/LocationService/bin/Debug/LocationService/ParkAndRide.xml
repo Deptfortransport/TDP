@@ -1,0 +1,534 @@
+<parkandride xmlns="http://www.transportdirect.info/ParkAndRide" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Aberdeen</Location>
+    <URL>http://www.aberdeenshire.gov.uk/publictransport/parkandride/</URL>
+    <Comments>2 sites: Ellon (off A90 Ellon By-pass on the A920 Castle Road), Stonehaven (railway station)</Comments>
+    <Easting>394160</Easting>
+    <Northing>805870</Northing>
+    <CarParkRefs>929738, 929736</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Aberdeen</Location>
+    <URL>http://www.aberdeencity.gov.uk/acc_data/service/park_&amp;_ride_-_infrastructure.asp</URL>
+    <Comments>2 sites: Bridge of Don (near Aberdeen Exhibition and Conference Centre off the Ellon Road) and Kingswells (accessed from the A944 Skene road or the Kingswells - Newhills Road). (Both sites Mon-Sat only)
+</Comments>
+    <Easting>394160</Easting>
+    <Northing>805870</Northing>
+    <CarParkRefs>929733, 929734</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Wales</Region>
+    <Location>Aberystwyth</Location>
+    <URL>http://www.ceredigion.gov.uk/index.cfm?articleid=1133</URL>
+    <Comments>1 site: on Park Avenue (Mon-Sat only)</Comments>
+    <Easting>258495</Easting>
+    <Northing>281690</Northing>
+    <CarParkRefs>929693</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Barnstaple</Location>
+    <URL>http://www.devon.gov.uk/index/transport/parking/park_and_ride.htm</URL>
+    <Comments>1 site: south of town off A39</Comments>
+    <Easting>255933</Easting>
+    <Northing>133226</Northing>
+    <CarParkRefs>929695</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Basingstoke</Location>
+    <URL>http://www.basingstoke.gov.uk/services/transport/publictransport/CentreShuttle.htm</URL>
+    <Comments>1 site: Basingstoke Leisure Park</Comments>
+    <Easting>463795</Easting>
+    <Northing>151877</Northing>
+    <CarParkRefs>929700</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Bath</Location>
+    <URL>http://www.bathnes.gov.uk/BathNES/transportandroads/Parking/parkandride/default.htm</URL>
+    <Comments>3 sites: Lansdown (north of city), Newbridge (west of city), Odd Down (southwest of city)</Comments>
+    <Easting>375105</Easting>
+    <Northing>164843</Northing>
+    <CarParkRefs>929768, 929769, 929770</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Bristol</Location>
+    <URL>http://www.bristol-city.gov.uk/parkandride</URL>
+    <Comments>3 sites: A4 Bath Road (south east of city), Long Ashton (south west of city), A4 Portway (north west of city)</Comments>
+    <Easting>358640</Easting>
+    <Northing>173086</Northing>
+    <CarParkRefs>929748, 929749, 929750</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>East Anglia</Region>
+    <Location>Cambridge</Location>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>5 sites: Babraham Road (south of city), Cowley Road (north of city), Madingley Road (west of city ), Newmarket Road (east of city), Trumpington (south of Trumpington)</Comments>
+    <Easting>545238</Easting>
+    <Northing>258469</Northing>
+    <CarParkRefs>929817, 929818, 929819, 929820, 929821</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Canterbury</Location>
+    <URL>http://www.canterbury.gov.uk/cgi-bin/buildpage.pl?mysql=1566</URL>
+    <Comments>3 sites: Wincheap, New Dover Road, Sturry Road</Comments>
+    <Easting>614860</Easting>
+    <Northing>157865</Northing>
+    <CarParkRefs>929754, 929755, 929756</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Wales</Region>
+    <Location>Cardiff</Location>
+    <URL>http://www.cardiff.gov.uk/content.asp?nav=2870,4048,4195&amp;id=1237&amp;Positioning_Article_ID=&amp;Language=&amp;parent_directory_id=2865&amp;d1p1=1</URL>
+    <Comments>3 sites: County Hall (Cardiff Bay) (Sats and Suns only), Crown Way (Sats only), Leckwith Stadium (November to early January only)</Comments>
+    <Easting>318435</Easting>
+    <Northing>176430</Northing>
+    <CarParkRefs>929739, 929740, 929741</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Chatham</Location>
+    <URL>http://www.medway.gov.uk/index/environment/publictransport/buses/20119.htm</URL>
+    <Comments>1 site: Horsted (south of Chatham off A229) (Sats only)</Comments>
+    <Easting>575890</Easting>
+    <Northing>167800</Northing>
+    <CarParkRefs>929708</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Rochester</Location>
+    <URL>http://www.medway.gov.uk/index/environment/publictransport/buses/20119.htm</URL>
+    <Comments>1 site: Horsted (south of Chatham off A229) (Sats only)</Comments>
+    <Easting>574288</Easting>
+    <Northing>168058</Northing>
+    <CarParkRefs>929708</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Cheltenham</Location>
+    <URL>http://www.cheltenham.gov.uk/libraries/templates/ourservice.asp?URN=2886&amp;FolderID=0</URL>
+    <Comments>2 sites: Cheltenham Racecourse (north of city), Arle Court (west of city)</Comments>
+    <Easting>395083</Easting>
+    <Northing>222352</Northing>
+    <CarParkRefs>929737, 929735</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North West</Region>
+    <Location>Chester</Location>
+    <URL>http://www.chester.gov.uk/main.asp?page=183</URL>
+    <Comments>4 sites: Boughton Heath (south of city), Sealand Road (west of city), Upton - Zoo (north of city), Wrexham Road (south of city)</Comments>
+    <Easting>340544</Easting>
+    <Northing>366267</Northing>
+    <CarParkRefs>929787, 929788, 929789, 929790</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Coventry</Location>
+    <URL>http://www.centro.org.uk/wwwroot/Bus/parkride.asp</URL>
+    <Comments>2 sites: Coventry Memorial Park (south of city), Austin Drive Courthouse Green (north of city)</Comments>
+    <Easting>433445</Easting>
+    <Northing>279137</Northing>
+    <CarParkRefs>929742, 929743</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Yorkshire and Humber</Region>
+    <Location>Doncaster</Location>
+    <URL>http://www.doncaster.gov.uk/Living_in_Doncaster/Neighbourhoods/Transport_Strategy/Lakeside_Park_and_Ride.asp</URL>
+    <Comments>1 site: Lakeside (Vue Cinema)</Comments>
+    <Easting>457615</Easting>
+    <Northing>403238</Northing>
+    <CarParkRefs>929690</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Dorchester</Location>
+    <URL>http://www.dorsetforyou.com/index.jsp?articleid=1795</URL>
+    <Comments>1 site: Dorchester Football Stadium (Wednesdays only)</Comments>
+    <Easting>368952</Easting>
+    <Northing>90693</Northing>
+    <CarParkRefs>929703</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North East</Region>
+    <Location>Durham</Location>
+    <URL>http://www.durhamparkandride.com/sitefiles/pages/welcome.html</URL>
+    <Comments>3 sites: Sniperley (west of city), Belmont (east of city), Howlands Farm (south of city) all Mon-Sat only.</Comments>
+    <Easting>427400</Easting>
+    <Northing>542503</Northing>
+    <CarParkRefs>929751, 929752, 929753</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Edinburgh (All Schemes)</Location>
+    <URL>http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html</URL>
+    <Comments>4 sites: Ferrytoll (north of city), Newcraighall (east of city), Ingliston (west of city) and Hermiston (west of city)</Comments>
+    <Easting>325650</Easting>
+    <Northing>673940</Northing>
+    <CarParkRefs>929795, 929796, 929797, 929798</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Edinburgh (Ferrytoll)</Location>
+    <URL>http://www.ferrytoll.org/</URL>
+    <Comments>1 site: Ferrytoll (north side of Forth Bridge)</Comments>
+    <Easting>325650</Easting>
+    <Northing>673940</Northing>
+    <CarParkRefs>929705</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Exeter</Location>
+    <URL>http://www.exeter.gov.uk/index.aspx?articleid=1510</URL>
+    <Comments>4 sites: Honiton Road, Matford, Sowton, Digby (to the hospital)</Comments>
+    <Easting>292045</Easting>
+    <Northing>92685</Northing>
+    <CarParkRefs>929799, 929800, 929801, 929802</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Falkirk</Location>
+    <URL>http://www.falkirk.gov.uk/DevServices/TransportPlanning/Businfo/parkandride.htm</URL>
+    <Comments>1 site: Falkirk West (Carmuirs) (Mon-Sat only)</Comments>
+    <Easting>288738</Easting>
+    <Northing>679921</Northing>
+    <CarParkRefs>929704</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Gloucester</Location>
+    <URL>http://www.gloucestershire.gov.uk/index.cfm?articleID=1888</URL>
+    <Comments>2 sites: St Oswald's Park (old Cattle Market site), Waterwells Business Park (Quedgley)</Comments>
+    <Easting>383700</Easting>
+    <Northing>218500</Northing>
+    <CarParkRefs>929717, 929718</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Guildford</Location>
+    <URL>http://www.guildfordborough.co.uk/GuildfordWeb/Environment/Parking/ParkRide.htm</URL>
+    <Comments>4 sites: Arlington (Mon-Sat only), Spectrum (Mon-Fri only), Ladymead (Sat only), The University (Sat only)</Comments>
+    <Easting>499743</Easting>
+    <Northing>149475</Northing>
+    <CarParkRefs>929783, 929784, 929785, 929786</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Horsham</Location>
+    <URL>http://www.horsham.gov.uk/your_area/your_area_1931.asp</URL>
+    <Comments>1 site: Hop Oast (off A24 on Worthing Road)</Comments>
+    <Easting>517190</Easting>
+    <Northing>130460</Northing>
+    <CarParkRefs>929700</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Yorkshire and Humber</Region>
+    <Location>Hull</Location>
+    <URL>http://www.hullcc.gov.uk/portal/page?_pageid=221,99424&amp;_dad=portal&amp;_schema=PORTAL</URL>
+    <Comments>3 sites: Queen Elizabeth Dock Hedon Road (Mon-Fri only), Priory Park (Mon-Sat only), Walton Street (Mon-Sat only)</Comments>
+    <Easting>509515</Easting>
+    <Northing>428902</Northing>
+    <CarParkRefs>929780, 929781, 929782</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>East Anglia</Region>
+    <Location>Ipswich</Location>
+    <URL>http://www.suffolkcc.gov.uk/transport/park-and-ride/index.shtml</URL>
+    <Comments>3 sites: London Road (Mon-Sat only), Bury Road (Mon-Fri only), Martlesham (Mon-Sat only)</Comments>
+    <Easting>616357</Easting>
+    <Northing>244628</Northing>
+    <CarParkRefs>929771, 929772, 929773</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Kidderminster</Location>
+    <URL>http://www.wyreforestdc.gov.uk/wfdc_html/clacs/parkride.htm</URL>
+    <Comments>1 site: Stadium Close (next to Kidderminster Harriers Football Club)</Comments>
+    <Easting>383188</Easting>
+    <Northing>276695</Northing>
+    <CarParkRefs>929697</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>London</Region>
+    <Location>Kingston</Location>
+    <URL>http://www.kingston.gov.uk/transport_and_streets/parking/parkandride.htm</URL>
+    <Comments>1 site: Chessington World of Adventures (November to early January only)</Comments>
+    <Easting>518300</Easting>
+    <Northing>169300</Northing>
+    <CarParkRefs>929702</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>East Midlands</Region>
+    <Location>Leicester</Location>
+    <URL>http://www.leicester.gov.uk/departments/page.asp?pgid=7486</URL>
+    <Comments>1 site: Meynells Gorse </Comments>
+    <Easting>458792</Easting>
+    <Northing>304600</Northing>
+    <CarParkRefs>929691</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Maidstone</Location>
+    <URL>http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379</URL>
+    <Comments>4 sites: London Road (Mon-Sat only), Sittingbourne Road (Mon-Sat only), Willington Street (Mon-Sat only), Combe Quarry (Mon-Sat only) </Comments>
+    <Easting>575980</Easting>
+    <Northing>155793</Northing>
+    <CarParkRefs>929803, 929804, 929805, 929806</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North West</Region>
+    <Location>Manchester</Location>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <Comments>13 principal sites:  Broadbottom, Brooklands (close to Sale), Cheadle Hulme, Davenport, Hazel Grove, Horwich Parkway (alongside M61),  Ladywell (alongside Ladywell Metrolink station), Lostock (alongside M61), Radcliffe (close to Bury), Romiley, Shaw and Crompton (close to Oldham), Smithy Bridge (close to Rochdale), Westhoughton. </Comments>
+    <Easting>384244</Easting>
+    <Northing>398379</Northing>
+    <CarParkRefs>929678, 929679, 929680, 929681, 929682, 929683, 929684, 929685, 929686, 929687, 929898, 929692, 929688</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Milton Keynes </Location>
+    <URL>http://www.mkweb.co.uk/transport/documents/PR_Leaflet_18.01.04.pdf</URL>
+    <Comments>1 site: Milton Keynes Coachway</Comments>
+    <Easting>485183</Easting>
+    <Northing>238755</Northing>
+    <CarParkRefs>929899</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North East</Region>
+    <Location>Newcastle</Location>
+    <URL>http://www.newcastle.gov.uk/parking.nsf/a/parkride</URL>
+    <Comments>4 sites: Callerton Parkway Metro station, Kingston Park Metro station, Regent Centre Metro Station, New Bridge Street Car Park (Sats only)</Comments>
+    <Easting>424945</Easting>
+    <Northing>564480</Northing>
+    <CarParkRefs>929791, 929792, 929793, 929794</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>East Anglia</Region>
+    <Location>Norwich</Location>
+    <URL>http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm</URL>
+    <Comments>6 sites: Airport (Mon-Sat only), Costessey (Mon-Fri only), Harford (Mon-Sat only), Postwick (Mon-Sat only), Sprowston (Mon-Sat only), Thickthorn </Comments>
+    <Easting>623028</Easting>
+    <Northing>308510</Northing>
+    <CarParkRefs>929807, 929808, 929809, 929810, 929811, 929812</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>East Midlands</Region>
+    <Location>Nottingham</Location>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <Comments>5 tram sites: The Forest (north of city), Wilkinson Street (north of city), Moor Bridge (north of city), Hucknell (north of city), Phoenix Park (north of city)  2 Bus sites: Queens Drive (south of city), Racecourse (east of city)</Comments>
+    <Easting>457208</Easting>
+    <Northing>339885</Northing>
+    <CarParkRefs>929829, 929830, 929831, 929832, 929827, 929891, 929828</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Oxford</Location>
+    <URL>http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJDRUEhLzdfTV8zN00vMjQ2NDYz?WCM_PORTLET=PC_7_M_37M_WCM&amp;WCM_GLOBAL_CONTEXT=http://apps.oxfordshire.gov.uk/wps/wcm/connect/Internet/Council+Services/Roads+and+transport/Parking/RT+-+P+-+Park+and+ride</URL>
+    <Comments>5 sites: Peartree (north of city off A34), Redbridge (south of city off A4142), Seacourt (west of city off A34), Thornhill (east of city off A40), Water Eaton (north of city)</Comments>
+    <Easting>451325</Easting>
+    <Northing>206208</Northing>
+    <CarParkRefs>929822, 929823, 929824, 929825, 929826</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Perth</Location>
+    <URL>http://www.perthshire.com/residents/Transport+and+Roads/Public+transport/Park+and+ride/Park+and+Ride.htm</URL>
+    <Comments>2 sites: Glasgow Road (adjacent to Broxden roundabout), Scone (on A94 approach to Scone adjacent to Angus Road roundabout)  </Comments>
+    <Easting>311740</Easting>
+    <Northing>723470</Northing>
+    <CarParkRefs>929746, 929747</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>East Anglia</Region>
+    <Location>Peterborough</Location>
+    <URL>http://www.peterborough.gov.uk/page-4804</URL>
+    <Comments>3 sites: Lynch Wood (southwwest of city centre, off A605 in Alwalton), Maskew Avenue (north of city centre off Bourges Boulevard), Perkins (east of city centre off Oxney Road).  All Sats, Suns and Bank Holidays only, October-January.</Comments>
+    <Easting>519215</Easting>
+    <Northing>298633</Northing>
+    <CarParkRefs>929774, 929775, 929776</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Plymouth</Location>
+    <URL>http://www.plymouth.gov.uk/homepage/transportandstreets/publictransport/parkandride.htm</URL>
+    <Comments>3 sites: Coypool (Nr Marsh Mills roundabout off A38). George (Opposite the George Hotel on Tavistock Road. Access is only from the A386 Southbound from Tesco/Woolwell roundabout and then left into the site opposite the George Hotel, Southway. There is no access into the site from the city centre direction). Milehouse (follow the signs to Plymouth Argyle - no Saturday services from Milehouse when Argyle are playing at home). All sites Mon-Sat only.</Comments>
+    <Easting>247740</Easting>
+    <Northing>54690</Northing>
+    <CarParkRefs>929744, 929745</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North West</Region>
+    <Location>Preston</Location>
+    <URL>http://www.lancashire.gov.uk/environment/bus/park_and_ride/parkandride.asp</URL>
+    <Comments>2 sites: Walton-le-Dale (rear of Capitol Centre), Preston Portway (close to Preston Docks)</Comments>
+    <Easting>354090</Easting>
+    <Northing>429439</Northing>
+    <CarParkRefs>929729, 929730</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Reading</Location>
+    <URL>http://www.reading-travelinfo.co.uk/UTMC29B.NET/GeneralPages/Category.aspx?cat=9</URL>
+    <Comments>2 site: Loddon Bridge (adjacent to Showcase Cinema Wokingham Road) (Mon-Sat), Madejski Stadium (south of city, close to M4 junction 11) (Mon-Sat)  </Comments>
+    <Easting>471457</Easting>
+    <Northing>173460</Northing>
+    <CarParkRefs>929709, 929710</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Salisbury</Location>
+    <URL>http://www.salisbury.gov.uk/transport/park-and-ride/</URL>
+    <Comments>3 sites: Beehive (north of city), Britford (south of city), Wilton (west of city) </Comments>
+    <Easting>414498</Easting>
+    <Northing>129966</Northing>
+    <CarParkRefs>929757, 929758, 929759</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Yorkshire and Humber</Region>
+    <Location>Sheffield</Location>
+    <URL>http://www.sypte.co.uk/parkride</URL>
+    <Comments>4 sites: Halfway (tram stop), Meadowhall, Middlewood Road (tram stop), Nunnery Square (tram stop) </Comments>
+    <Easting>435330</Easting>
+    <Northing>387238</Northing>
+    <CarParkRefs>929764, 929765, 929766, 929767</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Shrewsbury</Location>
+    <URL>http://www.shropshire.gov.uk/traveltransport.nsf/open/DA9404E1142436FD802570900045A8BF</URL>
+    <Comments>3 sites: Oxon, Meole Brace, Harlescott</Comments>
+    <Easting>349249</Easting>
+    <Northing>312809</Northing>
+    <CarParkRefs>929777, 929778, 929779</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Solihull</Location>
+    <URL>http://www.solihull.gov.uk/section.asp?catid=2001&amp;docid=562&amp;pageNumber=2</URL>
+    <Comments>Monkspath Car Park (Mon-Sat only)</Comments>
+    <Easting>414997</Easting>
+    <Northing>279607</Northing>
+    <CarParkRefs>929698</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Solihull</Location>
+    <URL>http://www.solihull.gov.uk/section.asp?catid=2001#solcol</URL>
+    <Comments>Solihull College (Sat-Sun and Public Holidays only)</Comments>
+    <Easting>414997</Easting>
+    <Northing>279607</Northing>
+    <CarParkRefs>929701</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North West</Region>
+    <Location>Southport</Location>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <Comments>2 sites: The Esplanade, Fairways. 8 rail stations: Ainsdale, Aintree, Birkdale, Blundellsands and Crosby, Formby, Freshfield, Maghull, Seaforth and Litherland.</Comments>
+    <Easting>333596</Easting>
+    <Northing>417244</Northing>
+    <CarParkRefs>929719, 929720, 929721, 929722, 929723, 929724, 929725, 929726, 929727, 929728</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Stirling</Location>
+    <URL>http://www.stirling.gov.uk/index/services_homepage/roads/rt-park_and_ride.htm</URL>
+    <Comments>1 site: Springkerse (Saturday only)</Comments>
+    <Easting>279603</Easting>
+    <Northing>693497</Northing>
+    <CarParkRefs>929696</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Stoke</Location>
+    <URL>http://www.stoke.gov.uk/ccm/navigation/transport-and-streets-/park-and-ride/</URL>
+    <Comments>1 site: Hanley</Comments>
+    <Easting>387672</Easting>
+    <Northing>345197</Northing>
+    <CarParkRefs>929706</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Wales</Region>
+    <Location>Swansea</Location>
+    <URL>http://www.swansea.gov.uk/parkandride</URL>
+    <Comments>2 sites: Landore (north of city), Fabian Way (east of city)</Comments>
+    <Easting>265417</Easting>
+    <Northing>192987</Northing>
+    <CarParkRefs>929713, 929714</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Swindon</Location>
+    <URL>http://www.swindon.gov.uk/roadstransport/roadsandtransport-carparking/roadsandtransport-parkandride.htm</URL>
+    <Comments>2 sites: North Swindon (Cricklade Road), South Swindon (Croft Road, towards Wroughton)</Comments>
+    <Easting>415103</Easting>
+    <Northing>184936</Northing>
+    <CarParkRefs>929715, 929716</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West</Region>
+    <Location>Truro</Location>
+    <URL>http://www.cornwall.gov.uk</URL>
+    <Comments>1 site (July - September only)</Comments>
+    <Easting>182540</Easting>
+    <Northing>44912</Northing>
+    <CarParkRefs>929689</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Yorkshire and Humber</Region>
+    <Location>Whitby</Location>
+    <URL>http://www.scarborough.gov.uk/content/parking_services/car_parking_in_whitby.html</URL>
+    <Comments>Runs for Special Events.</Comments>
+    <Easting>489731</Easting>
+    <Northing>510826</Northing>
+    <CarParkRefs>929699</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Winchester</Location>
+    <URL>http://www.winchester.gov.uk/ServiceL.asp?id=310</URL>
+    <Comments>2 sites: Barfield (Bar End Road near M3 junction 10), St Catherines (Garnier Road near M3 junction 10)</Comments>
+    <Easting>448220</Easting>
+    <Northing>129442</Northing>
+    <CarParkRefs>929731, 929732</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Windsor</Location>
+    <URL>http://www.windsor.gov.uk/transport/park_and_ride.htm</URL>
+    <Comments>2 sites: Home Park (on B470 Datchet Road), Legoland </Comments>
+    <Easting>496500</Easting>
+    <Northing>176682</Northing>
+    <CarParkRefs>929711, 929712</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Wolverhampton</Location>
+    <URL>http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES</URL>
+    <Comments>4 sites: Black Lake, Priestfield (Wolverhampton), The Hawthorns, Wednesbury Parkway (all at tram stops)</Comments>
+    <Easting>391766</Easting>
+    <Northing>298636</Northing>
+    <CarParkRefs>929760, 929761, 929762, 929763</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Worcester</Location>
+    <URL>http://worcestershire.whub.org.uk/home/wccindex/wcc-transport/wcc-transport-project-express/wcc-transport-project-express-routes.htm</URL>
+    <Comments>1 site: Perdiswell (north of city on A38)</Comments>
+    <Easting>384972</Easting>
+    <Northing>254955</Northing>
+    <CarParkRefs>929694</CarParkRefs>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Yorkshire and Humber</Region>
+    <Location>York</Location>
+    <URL>http://www.york.gov.uk/parking/ride/</URL>
+    <Comments>5 sites: Askham Bar (west of city Centre adjacent to Tesco on Tadcaster Road), Grimston Bar (east of city Centre on A1079 Hull Road), McArthurGlen (south east of city adjacent to Designer Outlet on A19) (Mon-Sat only), Monks Cross (north east of city close to Monks Cross Shopping Centre, Huntington), Rawcliffe Bar (north west of city Centre on A19 Shipton Road) </Comments>
+    <Easting>460352</Easting>
+    <Northing>451925</Northing>
+    <CarParkRefs>929813, 929814, 929815, 929816, 929894</CarParkRefs>
+  </ParkAndRideDataImport>
+</parkandride>

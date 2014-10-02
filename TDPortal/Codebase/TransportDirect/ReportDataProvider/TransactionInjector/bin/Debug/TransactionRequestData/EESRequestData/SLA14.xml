@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EESRequestTransaction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Category>SLA14</Category>
+  <SubSystem>EES</SubSystem>
+  <Frequency>15</Frequency>
+  <Offset>10</Offset>
+  <ActivePoll>false</ActivePoll>
+  <ServiceLevelAgreement>true</ServiceLevelAgreement>
+  <Method>FindNearest</Method>
+  <SearchType>AddressPostCode</SearchType>
+  <Origin>LA1 1HY</Origin>
+  <Destination>LA1 1HY</Destination>  
+  <ServiceNumber></ServiceNumber>  
+  <ShowDepartures>false</ShowDepartures>
+  <ShowCallingPoints>false</ShowCallingPoints>
+  <Day>Today</Day>
+</EESRequestTransaction>

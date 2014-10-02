@@ -1,0 +1,26 @@
+TESTNAME = {"LBO - Terminate"}
+
+INHDR = {
+"STDIN   "
+"LU"
+"TE"
+"        "
+"0100"
+"    "
+"I00000"
+"O00050"
+}
+
+OUTHDR = {
+"STDOUT  "
+"INSTANCE"
+"STERR"
+"C"
+"S"
+"L"
+}
+
+INBFR = {""}
+
+OUTBFR = {"                                                                                                                                                          "}
+

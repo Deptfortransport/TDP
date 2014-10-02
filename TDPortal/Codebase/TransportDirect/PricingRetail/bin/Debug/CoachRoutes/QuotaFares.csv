@@ -1,0 +1,21 @@
+OperatorCode,RouteOriginName,RouteOriginNaPTAN,RouteDestinationName,RouteDestinationNaPTAN,TicketType,Fare
+NX,Aberdeen,900090017,Aberdeen,900090017,FunFare,10
+NX,Aberystwyth,900012183,Aberystwyth,900012183,FunFare,10
+NX,Ashford,900058016,Ashford,900058016,FunFare,10
+NX,Bangor,900011621,Bangor,900011621,FunFare,10
+NX,Barnsley,900025212,Barnsley,900025212,FunFare,10
+NX,Barnstaple,900042025,Barnstaple,900042025,FunFare,10
+NX,Basingstoke,900062036,Basingstoke,900062036,FunFare,10
+NX,Bath Spa,900087025,Bath Spa,900087025,FunFare,10
+NX,Bedford,900052444,Bedford,900052444,FunFare,10
+NX,Berwick-upon-Tweed,900069032,Berwick-upon-Tweed,900069032,FunFare,10
+NX,Birmingham,900033023,Birmingham,900033023,FunFare,10
+NX,Blackburn,900073021,Blackburn,900073021,FunFare,10
+NX,Blackpool,900077131,Blackpool,900077131,FunFare,10
+NX,Bolton,900021041,Bolton,900021041,FunFare,10
+NX,Bournemouth,900065026,Bournemouth,900065026,FunFare,10
+NX,Bradford,900076122,Bradford,900076122,FunFare,10
+NX,Brighton,900059076,Brighton,900059076,FunFare,10
+NX,Bristol,900041065,Bristol,900041065,FunFare,10
+NX,Burnley,900073141,Burnley,900073141,FunFare,10
+NX,Bury St Edmunds,900053654,Bury St Edmunds,900053654,FunFare,10

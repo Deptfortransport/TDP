@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24E807B4-27A3-42BB-848A-18AA8076E8DE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.userportal.retailbusiness</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.UserPortal.RetailBusinessObjects</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataGatewayFramework\DataGatewayFramework.csproj">
+      <Name>DataGatewayFramework</Name>
+      <Project>{39F3A8F8-7CB2-40E3-80BF-49394BF419E0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PricingMessages\PricingMessages.csproj">
+      <Name>PricingMessages</Name>
+      <Project>{6A86E3D3-4DC4-4868-A6C1-8CCACD6428AE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\DatabasePropertyProvider\DatabasePropertyProvider.csproj">
+      <Name>DatabasePropertyProvider</Name>
+      <Project>{946A95B4-3145-4F4E-9E8F-54B78F1FA5F4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\FilePropertyProvider\FilePropertyProvider.csproj">
+      <Name>FilePropertyProvider</Name>
+      <Project>{A3CB7929-0F74-4625-AB84-349C041B9B62}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportDataProvider\TDPCustomEvents\TDPCustomEvents.csproj">
+      <Name>TDPCustomEvents</Name>
+      <Project>{A377CDD7-9190-46F2-8938-65DF17478D21}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+
+    <Compile Include="AvailabilityRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AvailabilityResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjectInput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjectOutput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EngineAllocationIdentifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FareAvailability.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FareAvailabilityCombined.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FareRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FBOPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeaderInputParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeaderOutputParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IRestrictFares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Keys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LBOPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LegacyBusinessObjectWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LookupLocationGroupRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LookupLocationGroupResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LookupNlcNameRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LookupNlcNameResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LookupTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MandatoryReservations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MandatoryReservationsRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultipleAvailabilityRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OutputRecordDetails.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PostTimetableRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PreTimetableRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOImportProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOImportTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RBOPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresGR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RestrictFaresMR.cs" />
+    <Compile Include="RetailBusinessObjectConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RetailBusinessObjectPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RetailBusinessObjectPropertyValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RetailBusinessObjectsFacade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Route.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RouteIncludeExcludeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RVBOEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RVBOPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SBOPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Supplement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupplementAdditionalDataRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupplementRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Supplements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ticket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TicketClassType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValidateAdultFaresRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValidateFaresForJourneyRequest.cs" />
+    <Compile Include="ValidateFaresForRouteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValidateRouteList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValidateRoutes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValidateSpecificFareRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZPBOPool.cs" />
+    <Content Include="bin\td.userportal.retailbusiness.dll.config" />
+    <Content Include="bin\td.userportal.retailbusiness.properties.xml" />
+    <None Include="bin\FBCL0012.INI" />
+    <None Include="bin\FBCL0012.lib" />
+    <None Include="bin\FBFA0012.INI" />
+    <None Include="bin\fbfa0012.lib" />
+    <None Include="bin\FBLU0012.INI" />
+    <None Include="bin\Fblu0012.lib" />
+    <None Include="bin\FBRE0022.INI" />
+    <None Include="Test\HouseKeepingDataFiles\DLFA.DAT" />
+    <None Include="Test\HouseKeepingDataFiles\DLLU.DAT" />
+    <None Include="Test\HouseKeepingDataFiles\DLRE.DAT" />
+    <None Include="Test\HouseKeepingDataFiles\DLRV.DAT" />
+    <None Include="Test\HouseKeepingDataFiles\DLSU.DAT" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

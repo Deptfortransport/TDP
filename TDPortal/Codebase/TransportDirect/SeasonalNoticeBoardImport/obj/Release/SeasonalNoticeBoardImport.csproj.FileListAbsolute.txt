@@ -1,0 +1,16 @@
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.userportal.seasonalnoticeboardimport.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.propertyservice.databasepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.datagateway.framework.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.userportal.dataservices.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\td.common.resourcemanager.dll
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\SeasonalNoticeBoardImport\obj\Release\td.userportal.seasonalnoticeboardimport.dll

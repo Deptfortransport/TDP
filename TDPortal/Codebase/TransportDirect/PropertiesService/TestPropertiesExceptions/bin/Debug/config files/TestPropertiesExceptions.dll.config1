@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<configuration>
+<appSettings>
+   <add key="propertyservice.applicationid" value="TestAppID"/>
+   <add key="propertyservice.groupid" value="TestGroupID"/>
+   <add key="propertyservice.providerclass" value="TransportDirect.Common.PropertyService.Providers.FilePropertyProvider"/>
+   <add key="propertyservice.providerassembly" value="FilePropertyProvider"/>
+   <add key="propertyservice.providers.fileprovider.filepath" value=""/>
+   <add key="propertyservice.providers.databaseprovider.connectionstring" value="" />
+</appSettings>
+</configuration>

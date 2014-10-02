@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EESRequestTransaction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Category>SLA12</Category>
+  <SubSystem>EES</SubSystem>
+  <Frequency>15</Frequency>
+  <Offset>0</Offset>
+  <ActivePoll>false</ActivePoll>
+  <ServiceLevelAgreement>true</ServiceLevelAgreement>
+  <Method>JourneyPlan</Method>
+  <SearchType>PostCode</SearchType>
+  <Origin>NG5 5UT</Origin>
+  <Destination>NG9 1LA</Destination>
+  <OutwardTime>
+    <Days>0</Days>
+    <Hours>10</Hours>
+    <Minutes>0</Minutes>
+    <Seconds>0</Seconds>
+  </OutwardTime>
+  <OutwardDayOfWeek>2</OutwardDayOfWeek>
+  <ReturnTime>
+    <Days>0</Days>
+    <Hours>0</Hours>
+    <Minutes>0</Minutes>
+    <Seconds>0</Seconds>
+  </ReturnTime>
+  <IsReturnRequired>false</IsReturnRequired>
+  <OutwardArriveBefore>false</OutwardArriveBefore>
+  <ReturnArriveBefore>false</ReturnArriveBefore>
+  <ReturnDayOfWeek>0</ReturnDayOfWeek>
+  <ServiceNumber></ServiceNumber>  
+  <ShowDepartures>true</ShowDepartures>
+  <ShowCallingPoints>false</ShowCallingPoints>
+  <Day>Tomorrow</Day>
+  <Sequence>3</Sequence>
+  <WalkingSpeed>80</WalkingSpeed>
+  <InterchangeSpeed>0</InterchangeSpeed>
+  <MaxWalkingTime>25</MaxWalkingTime>
+</EESRequestTransaction>

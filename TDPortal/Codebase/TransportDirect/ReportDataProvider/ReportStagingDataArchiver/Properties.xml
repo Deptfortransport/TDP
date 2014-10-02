@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	<property name="propertyservice.property" GID="" AID="">globalproperty</property>
+
+	<property name="ReportDataStagingDB" GID="" AID="">Server=.;Initial Catalog=ReportDataStaging;Trusted_Connection=true;</property>
+
+
+  		
+	<property name="Logging.Publisher.Default" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.Queue" GID="" AID=""></property>
+	<property name="Logging.Publisher.Email" GID="" AID=""></property>
+	<property name="Logging.Publisher.EventLog" GID="" AID=""></property>
+	<property name="Logging.Publisher.Console" GID="" AID=""></property>
+	<property name="Logging.Publisher.Custom" GID="" AID=""></property>
+	
+	<property name="Logging.Event.Custom.Trace" GID="" AID="">Off</property>
+	<property name="Logging.Event.Custom" GID="" AID=""></property>
+	
+	<property name="Logging.Event.Operational.TraceLevel" GID="" AID="">Info</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="">F1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="" AID="">F1</property>
+	
+	<property name="Logging.Publisher.File" GID="" AID="">F1</property>
+	<property name="Logging.Publisher.File.F1.Directory" GID="" AID="">C:\TEMP</property>
+	<property name="Logging.Publisher.File.F1.Rotation" GID="" AID="">1024</property>
+  
+  
+</lookup>

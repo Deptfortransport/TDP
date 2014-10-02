@@ -1,0 +1,3 @@
+D:\TDPortal\Codebase\TransportDirect\TravelNewsInterface\bin\Release\td.userportal.travelnewsinterface.dll
+D:\TDPortal\Codebase\TransportDirect\TravelNewsInterface\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\TravelNewsInterface\obj\Release\td.userportal.travelnewsinterface.dll

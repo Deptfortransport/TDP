@@ -1,0 +1,58 @@
+-- **********************************************************************
+-- $Workfile:   ScriptHeaderFooterTemplate.txt  $
+-- AUTHOR       : A.Other
+-- DATE CREATED : dd/mm/2008
+-- REVISION     : $Revision:   1.1  $
+-- DESCRIPTION  : Creates the tables and functions to support service xxxxxxxx
+-- **********************************************************************
+-- $Log:   P:/TDPortal/archives/DotNet2.0Codebase/TransportDirect/Resource/DEL8_2/Templates/ScriptHeaderFooterTemplate.txt-arc  $
+
+   Rev 1.1   Jul 27 2008 13:04:14   jroberts
+Changed from SQL Server 2005 to SQL Server 2000
+--
+--
+--
+--
+
+
+USE [Reporting]
+--USE [Content]
+--USE [PermanentPortal]
+GO
+
+-- Script body here
+
+
+
+
+GO
+
+GO
+
+GO
+-- ************************************************ 
+-- Update the Change Log
+-- ************************************************ 
+
+USE [PermanentPortal]
+GO
+
+DECLARE @ScriptNumber INT
+DECLARE @ScriptDesc VARCHAR(200)
+
+SET @ScriptNumber = xxxx
+SET @ScriptDesc = 'description here xxxx'
+
+IF EXISTS (SELECT * FROM [dbo].[ChangeCatalogue] WHERE ScriptNumber = @ScriptNumber)
+  BEGIN
+    UPDATE [dbo].[ChangeCatalogue]
+    SET ChangeDate = getDate(), Summary = @ScriptDesc
+    WHERE ScriptNumber = @ScriptNumber
+  END
+ELSE
+  BEGIN
+    INSERT INTO [dbo].[ChangeCatalogue] (ScriptNumber, ChangeDate, Summary)
+    VALUES (@ScriptNumber, getDate(), @ScriptDesc)
+  END
+GO
+GO

@@ -1,0 +1,1433 @@
+<carpark xmlns="http://www.transportdirect.info/CarPark" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <CarParkDataImport>
+    <CarParkRef>929696</CarParkRef>
+    <CarParkName>Park and Ride</CarParkName>
+    <URL>http://www.stirling.gov.uk/index/services_homepage/roads/rt-park_and_ride.htm</URL>
+    <MinimumCost />
+    <Note>Operates Saturdays 10:00 to 18:00</Note>
+    <Easting>281162</Easting>
+    <Northing>693357</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929704</CarParkRef>
+    <CarParkName>Falkirk West (Carmuirs) Park and Ride</CarParkName>
+    <URL>http://www.falkirk.gov.uk/DevServices/TransportPlanning/Businfo/parkandride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Operates Monday to Saturday 07:30 to 18:00</Note>
+    <Easting>285371</Easting>
+    <Northing>680769</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929705</CarParkRef>
+    <CarParkName>Car Park</CarParkName>
+    <URL>http://www.ferrytoll.org/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 05:10 to 00:15 on Mondays to Saturdays; 05:10 to 00:30 on Saturdays; 05:10 to 00:15 on Sundays</Note>
+    <Easting>312976</Easting>
+    <Northing>683658</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929746</CarParkRef>
+    <CarParkName>Perth Park and Ride</CarParkName>
+    <URL>http://www.perthshire.com/residents/Transport+and+Roads/Public+transport/Park+and+ride/Park+and+Ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The Park &amp; Ride service operates between 07:00 and 19:14 Monday�to Saturday</Note>
+    <Easting>308281</Easting>
+    <Northing>722767</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929747</CarParkRef>
+    <CarParkName>Scone Park and Ride</CarParkName>
+    <URL>http://www.perthshire.com/residents/Transport+and+Roads/Public+transport/Park+and+ride/Park+and+Ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The park and ride service operates Monday to Friday 06:36�to 19:58; 07:16�to 19:58 on Saturdays; 09:56�to 19:58 on Sundays</Note>
+    <Easting>314315</Easting>
+    <Northing>726744</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929795</CarParkRef>
+    <CarParkName>Ferrytoll Park and Ride</CarParkName>
+    <URL>http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 05:10 to 00:15 on Mondays to Saturdays; 05:10 to 00:30 on Saturdays; 05:10 to 00:15 on Sundays</Note>
+    <Easting>312459</Easting>
+    <Northing>681972</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929796</CarParkRef>
+    <CarParkName>Newcraighall Park and Ride</CarParkName>
+    <URL>http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html</URL>
+    <MinimumCost>50</MinimumCost>
+    <Note>Up to 24 hours parking</Note>
+    <Easting>331762</Easting>
+    <Northing>671801</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929797</CarParkRef>
+    <CarParkName>Ingliston Park and Ride</CarParkName>
+    <URL>http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>315008</Easting>
+    <Northing>673384</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929798</CarParkRef>
+    <CarParkName>Hermiston Park and Ride</CarParkName>
+    <URL>http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>318590</Easting>
+    <Northing>670288</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929733</CarParkRef>
+    <CarParkName>Bridge of Don Park and Ride</CarParkName>
+    <URL>http://www.aberdeencity.gov.uk/acc_data/service/park_&amp;_ride_-_infrastructure.asp</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>394716</Easting>
+    <Northing>810346</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929734</CarParkRef>
+    <CarParkName>Kingswells Park and Ride</CarParkName>
+    <URL>http://www.aberdeencity.gov.uk/acc_data/service/park_&amp;_ride_-_infrastructure.asp</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>386638</Easting>
+    <Northing>806541</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929899</CarParkRef>
+    <CarParkName>Milton Keynes Coachway</CarParkName>
+    <URL>http://www.mkweb.co.uk/transport/documents/PR_Leaflet_18.01.04.pdf</URL>
+    <MinimumCost />
+    <Note>The Park and Ride car park will be closed and the gate at the entrance locked at 22:00 every evening and unlocked at 05:00 every morning (including Sundays and Bank Holidays)</Note>
+    <Easting>489203</Easting>
+    <Northing>240543</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929700</CarParkRef>
+    <CarParkName>Basingstoke Car Park</CarParkName>
+    <URL>http://www.basingstoke.gov.uk/services/transport/publictransport/CentreShuttle.htm</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>462047</Easting>
+    <Northing>152580</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929707</CarParkRef>
+    <CarParkName>Hop Oast Park and Ride</CarParkName>
+    <URL>http://www.horsham.gov.uk/your_area/your_area_1931.asp</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>The daily charge is for each car and the current charges are �1.50 per car on weekdays and �1 per car on Saturdays; Open from 06:30 to 22:00 Mondays to Saturdays</Note>
+    <Easting>516187</Easting>
+    <Northing>128743</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929708</CarParkRef>
+    <CarParkName>Horsted Park</CarParkName>
+    <URL>http://www.medway.gov.uk/index/environment/publictransport/buses/20119.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Operates Saturdays 09:00 to 18:00</Note>
+    <Easting>574734</Easting>
+    <Northing>164562</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929709</CarParkRef>
+    <CarParkName>Loddon Bridge Park and Ride</CarParkName>
+    <URL>http://www.reading-travelinfo.co.uk/UTMC29B.NET/GeneralPages/Category.aspx?cat=9</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Car park is open from 07:00 to 19:00 Monday to Friday; 08:00 to 19:00 on Saturdays</Note>
+    <Easting>476665</Easting>
+    <Northing>171450</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929710</CarParkRef>
+    <CarParkName>Madejski Stadium Park and Ride</CarParkName>
+    <URL>http://www.reading-travelinfo.co.uk/UTMC29B.NET/GeneralPages/Category.aspx?cat=9</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is supervised from 07:00 to 19:00</Note>
+    <Easting>470894</Easting>
+    <Northing>169686</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929711</CarParkRef>
+    <CarParkName>Home Park Car Park</CarParkName>
+    <URL>http://www.windsor.gov.uk/transport/park_and_ride.htm</URL>
+    <MinimumCost>50</MinimumCost>
+    <Note>Up to one hour 50p; up to 2 hours �1; up to 4 hours �1.50; up to 5 hours and over �2</Note>
+    <Easting>496891</Easting>
+    <Northing>177320</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929712</CarParkRef>
+    <CarParkName>Legoland Shuttle Park and Ride</CarParkName>
+    <URL>http://www.windsor.gov.uk/transport/park_and_ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The service operates 7 days a week from 10:15 to 18:45; this extends during the Park�s summer peak season (July and August) to run up until 20:15</Note>
+    <Easting>493105</Easting>
+    <Northing>173314</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929731</CarParkRef>
+    <CarParkName>Barfield Park and Ride</CarParkName>
+    <URL>http://www.winchester.gov.uk/ServiceL.asp?id=310</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>All day parking; car park opening times: Monday to Saturday 07:00 to 19:00; Car Parks are not open on Sundays or Public Holidays</Note>
+    <Easting>448690</Easting>
+    <Northing>128570</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929732</CarParkRef>
+    <CarParkName>St Catherines Park and Ride</CarParkName>
+    <URL>http://www.winchester.gov.uk/ServiceL.asp?id=310</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>All day parking; car park opening times: Monday to Saturday 07:00 to 19:00; Car Parks are not open on Sundays or Public Holidays</Note>
+    <Easting>448801</Easting>
+    <Northing>128223</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929754</CarParkRef>
+    <CarParkName>Wincheap Park And Pide</CarParkName>
+    <URL>http://www.canterbury.gov.uk/cgi-bin/buildpage.pl?mysql=1566</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>All day parking; service operates Monday to Saturday 07:00 to 19:30</Note>
+    <Easting>613628</Easting>
+    <Northing>156918</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929755</CarParkRef>
+    <CarParkName>New Dover Road Car Park</CarParkName>
+    <URL>http://www.canterbury.gov.uk/cgi-bin/buildpage.pl?mysql=1566</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>All day parking; service operates Monday to Saturday 07:00 to 19:30 and Sundays 10:00 to 18:00</Note>
+    <Easting>616546</Easting>
+    <Northing>156029</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929756</CarParkRef>
+    <CarParkName>Sturry Road</CarParkName>
+    <URL>http://www.canterbury.gov.uk/cgi-bin/buildpage.pl?mysql=1566</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>All day parking; service operates Monday to Saturday 07:00 to 19:30</Note>
+    <Easting>615329</Easting>
+    <Northing>158394</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929783</CarParkRef>
+    <CarParkName>Arlington Car Park</CarParkName>
+    <URL>http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 07:30 to 19:30 Monday to Saturday</Note>
+    <Easting>498972</Easting>
+    <Northing>148211</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929784</CarParkRef>
+    <CarParkName>Spectrum Car Park</CarParkName>
+    <URL>http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 07:27 to 23:10 Monday to Friday</Note>
+    <Easting>500613</Easting>
+    <Northing>150886</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929785</CarParkRef>
+    <CarParkName>Ladymead Car Park</CarParkName>
+    <URL>http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 08:30 to 18:00 Saturdays only</Note>
+    <Easting>499604</Easting>
+    <Northing>150867</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929786</CarParkRef>
+    <CarParkName>Car Park</CarParkName>
+    <URL>http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>498466</Easting>
+    <Northing>150458</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929803</CarParkRef>
+    <CarParkName>London Road Park and Ride</CarParkName>
+    <URL>http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 07:00 to 18:30 Monday to Friday; 08:00 to 18:30 Saturdays</Note>
+    <Easting>573662</Easting>
+    <Northing>157101</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929804</CarParkRef>
+    <CarParkName>Sittingbourne Road Park and Ride</CarParkName>
+    <URL>http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 07:00 to 18:32 Monday to Friday; 08:00 to 18:32 Saturdays</Note>
+    <Easting>576746</Easting>
+    <Northing>156026</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929805</CarParkRef>
+    <CarParkName>Willington Street Park and Ride</CarParkName>
+    <URL>http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 07:00 to 18:33 Monday to Friday; 08:00 to 18:33 Saturdays</Note>
+    <Easting>578559</Easting>
+    <Northing>155236</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929806</CarParkRef>
+    <CarParkName>Combe Quarry Park and Ride</CarParkName>
+    <URL>http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 07:00 to 18:29 Monday to Friday; 08:00 to 18:29 Saturdays</Note>
+    <Easting>576319</Easting>
+    <Northing>154132</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929822</CarParkRef>
+    <CarParkName>Pear Tree Car Park</CarParkName>
+    <URL>http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ</URL>
+    <MinimumCost>60</MinimumCost>
+    <Note>Maximum stay 24 hours (unless arranged)</Note>
+    <Easting>449491</Easting>
+    <Northing>210711</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929823</CarParkRef>
+    <CarParkName>Redbridge Park and Ride</CarParkName>
+    <URL>http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ</URL>
+    <MinimumCost>60</MinimumCost>
+    <Note>Maximum stay 24 hours (unless arranged)</Note>
+    <Easting>452007</Easting>
+    <Northing>203646</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929824</CarParkRef>
+    <CarParkName>Seacourt Car Park (Park and Ride)</CarParkName>
+    <URL>http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ</URL>
+    <MinimumCost>60</MinimumCost>
+    <Note>Maximum stay 24 hours (unless arranged)</Note>
+    <Easting>449157</Easting>
+    <Northing>206344</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929825</CarParkRef>
+    <CarParkName>Thornhill Car Park (Park And Ride)</CarParkName>
+    <URL>http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Maximum stay 72 hours</Note>
+    <Easting>456615</Easting>
+    <Northing>207365</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929826</CarParkRef>
+    <CarParkName>Water Eaton Park and Ride</CarParkName>
+    <URL>http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Maximum stay 72 hours</Note>
+    <Easting>450203</Easting>
+    <Northing>211632</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929689</CarParkRef>
+    <CarParkName>Car Park</CarParkName>
+    <URL>http://www.cornwall.gov.uk</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>182859</Easting>
+    <Northing>44513</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929695</CarParkRef>
+    <CarParkName>Barnstaple Park and Ride</CarParkName>
+    <URL>http://www.devon.gov.uk/index/transport/parking/park_and_ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: 07:00 to 18:40 Monday to Saturday</Note>
+    <Easting>256315</Easting>
+    <Northing>131859</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929703</CarParkRef>
+    <CarParkName>Dorchester Park and Ride (Football Stadium)</CarParkName>
+    <URL>http://www.dorsetforyou.com/index.jsp?articleid=1795</URL>
+    <MinimumCost>100</MinimumCost>
+    <Note>All day parking; service operates on Wednesdays 08:00 to 17:45</Note>
+    <Easting>368663</Easting>
+    <Northing>89153</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929715</CarParkRef>
+    <CarParkName>The Copse Park and Ride</CarParkName>
+    <URL>http://www.swindon.gov.uk/roadstransport/roadsandtransport-carparking/roadsandtransport-parkandride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 06:45 to 19:15 on Mondays to Saturdays</Note>
+    <Easting>415451</Easting>
+    <Northing>188611</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929716</CarParkRef>
+    <CarParkName>Wroughton Park and Ride</CarParkName>
+    <URL>http://www.swindon.gov.uk/roadstransport/roadsandtransport-carparking/roadsandtransport-parkandride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 06:45 to 19:15 on Mondays to Saturdays</Note>
+    <Easting>415127</Easting>
+    <Northing>182320</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929717</CarParkRef>
+    <CarParkName>St Oswalds Park Park and Ride</CarParkName>
+    <URL>http://www.gloucestershire.gov.uk/index.cfm?articleID=1888</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service times: 06:30 to 18:56 Monday to Friday; 07:30 to 18:38 on Saturdays</Note>
+    <Easting>382924</Easting>
+    <Northing>219377</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929718</CarParkRef>
+    <CarParkName>Waterwells Park and Ride</CarParkName>
+    <URL>http://www.gloucestershire.gov.uk/index.cfm?articleID=1888</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Operates: 06:45 to Monday - Friday 07:20 to 19:00, Saturday 08:00 to 17:50</Note>
+    <Easting>380984</Easting>
+    <Northing>213132</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929737</CarParkRef>
+    <CarParkName>Arle Court Park and Ride</CarParkName>
+    <URL>http://www.cheltenham.gov.uk/libraries/templates/ourservice.asp?URN=2886&amp;FolderID=0</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Operates: Monday - Friday 07:20 to 19:00, Saturday 08:00 to 17:50</Note>
+    <Easting>391077</Easting>
+    <Northing>221639</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929738</CarParkRef>
+    <CarParkName>Stonehaven Park and Ride</CarParkName>
+    <URL>http://www.aberdeenshire.gov.uk/publictransport/parkandride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>386435</Easting>
+    <Northing>786168</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929744</CarParkRef>
+    <CarParkName>Coypool Park and Ride</CarParkName>
+    <URL>http://www.plymouth.gov.uk/homepage/transportandstreets/publictransport/parkandride.htm</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>252106</Easting>
+    <Northing>56924</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929745</CarParkRef>
+    <CarParkName>Milehouse Park and Ride</CarParkName>
+    <URL>http://www.plymouth.gov.uk/homepage/transportandstreets/publictransport/parkandride.htm</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>247009</Easting>
+    <Northing>56533</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929748</CarParkRef>
+    <CarParkName>A4 Bath Road Park and Ride</CarParkName>
+    <URL>http://www.bristol-city.gov.uk/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Car park closes: Monday to Friday (except Thursday) at�19:45; Thursday at 21:00; Saturday at 19:45</Note>
+    <Easting>362635</Easting>
+    <Northing>170033</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929749</CarParkRef>
+    <CarParkName>Long Ashton Park and Ride</CarParkName>
+    <URL>http://www.bristol-city.gov.uk/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Car park closes: Monday to Friday (except Thursday) at�19:45; Thursday at 21:00; Saturday at 18:45</Note>
+    <Easting>355961</Easting>
+    <Northing>170929</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929750</CarParkRef>
+    <CarParkName>A4 Portway Park and Ride</CarParkName>
+    <URL>http://www.bristol-city.gov.uk/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Car park closes: Monday to Friday at�20:00 and Saturday at 19:30</Note>
+    <Easting>352355</Easting>
+    <Northing>176970</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929757</CarParkRef>
+    <CarParkName>Beehive Park and Ride</CarParkName>
+    <URL>http://www.salisbury.gov.uk/transport/park-and-ride/</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>Site opening and closing: Monday�Friday 06:45 to 20:00; Saturday 07:15 to 19:30; Sundays and Bank holidays: closed</Note>
+    <Easting>414389</Easting>
+    <Northing>133346</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929758</CarParkRef>
+    <CarParkName>Britford Park and Ride</CarParkName>
+    <URL>http://www.salisbury.gov.uk/transport/park-and-ride/</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>Site opening and closing: Monday�Friday 06:45 to 20:00; Saturday 07:15 to 19:30; Sundays and Bank holidays: closed</Note>
+    <Easting>415213</Easting>
+    <Northing>128157</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929759</CarParkRef>
+    <CarParkName>Wilton Park and Ride</CarParkName>
+    <URL>http://www.salisbury.gov.uk/transport/park-and-ride/</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note>Site opening and closing: Monday�Friday 06:45 to 20:00; Saturday 07:15 to 19:30; Sundays and Bank holidays: closed</Note>
+    <Easting>410683</Easting>
+    <Northing>132240</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929768</CarParkRef>
+    <CarParkName>Lansdown Park and Ride</CarParkName>
+    <URL>http://www.bathnes.gov.uk/BathNES/transportandroads/Parking/parkandride/default.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>373224</Easting>
+    <Northing>168074</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929769</CarParkRef>
+    <CarParkName>Newbridge Park and Ride</CarParkName>
+    <URL>http://www.bathnes.gov.uk/BathNES/transportandroads/Parking/parkandride/default.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>371836</Easting>
+    <Northing>165742</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929770</CarParkRef>
+    <CarParkName>Odd Down Park and Ride</CarParkName>
+    <URL>http://www.bathnes.gov.uk/BathNES/transportandroads/Parking/parkandride/default.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>373366</Easting>
+    <Northing>161601</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929799</CarParkRef>
+    <CarParkName>Honiton Road Park and Ride</CarParkName>
+    <URL>http://www.exeter.gov.uk/index.aspx?articleid=1510</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>296275</Easting>
+    <Northing>92655</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929800</CarParkRef>
+    <CarParkName>Matford Park and Ride</CarParkName>
+    <URL>http://www.exeter.gov.uk/index.aspx?articleid=1510</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>292747</Easting>
+    <Northing>89508</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929801</CarParkRef>
+    <CarParkName>Sowton Park and Ride</CarParkName>
+    <URL>http://www.exeter.gov.uk/index.aspx?articleid=1510</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>296299</Easting>
+    <Northing>91726</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929802</CarParkRef>
+    <CarParkName>Digby Park and Ride</CarParkName>
+    <URL>http://www.exeter.gov.uk/index.aspx?articleid=1510</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>295868</Easting>
+    <Northing>91430</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929735</CarParkRef>
+    <CarParkName>Racecourse Park and Ride</CarParkName>
+    <URL>http://www.cheltenham.gov.uk/libraries/templates/ourservice.asp?URN=2886&amp;FolderID=0</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Operates: Mon - Fri 07:30 to 18:15, Sat 08:30 to 18:15</Note>
+    <Easting>395406</Easting>
+    <Northing>225343</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929736</CarParkRef>
+    <CarParkName>Ellon Park and Ride</CarParkName>
+    <URL>http://www.aberdeenshire.gov.uk/publictransport/parkandride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service times: 06:08 to 23:00 Monday to Friday; 06:13 to 23:00 Saturdays; 09:10 to 23:00 Sundays</Note>
+    <Easting>397592</Easting>
+    <Northing>830769</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929693</CarParkRef>
+    <CarParkName>Aberystwyth Park and Ride</CarParkName>
+    <URL>http://www.ceredigion.gov.uk/index.cfm?articleid=1133</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Monday - Saturday, 08.00 - 18:00</Note>
+    <Easting>258548</Easting>
+    <Northing>281409</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929713</CarParkRef>
+    <CarParkName>Landore Park and Ride</CarParkName>
+    <URL>http://www.swansea.gov.uk/parkandride</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>All day parking; car park open between 06:45 and 19:30 on Mondays to Saturdays</Note>
+    <Easting>266164</Easting>
+    <Northing>195154</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929714</CarParkRef>
+    <CarParkName>Fabian Way Park and Ride</CarParkName>
+    <URL>http://www.swansea.gov.uk/parkandride</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>All day parking; car park open between 06:45 and 19:30 on Mondays to Saturdays</Note>
+    <Easting>267777</Easting>
+    <Northing>193070</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929739</CarParkRef>
+    <CarParkName>County Hall Car Park</CarParkName>
+    <URL>http://www.cardiff.gov.uk/content.asp?nav=2870,4048,4195&amp;id=1237&amp;Positioning_Article_ID=&amp;Language=&amp;parent_directory_id=2865&amp;d1p1=1</URL>
+    <MinimumCost>300</MinimumCost>
+    <Note>Service operates: Saturdays 09:00 to 18:00 and Sundays 10:00 to 17:30</Note>
+    <Easting>319269</Easting>
+    <Northing>175063</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929740</CarParkRef>
+    <CarParkName>Crown Way Car Park</CarParkName>
+    <URL>http://www.cardiff.gov.uk/content.asp?nav=2870,4048,4195&amp;id=1237&amp;Positioning_Article_ID=&amp;Language=&amp;parent_directory_id=2865&amp;d1p1=1</URL>
+    <MinimumCost>300</MinimumCost>
+    <Note>Service operates: Saturdays 09:00 to 18:00</Note>
+    <Easting>317449</Easting>
+    <Northing>178351</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929741</CarParkRef>
+    <CarParkName>Leckwith Stadium Park and Ride</CarParkName>
+    <URL>http://www.cardiff.gov.uk/content.asp?nav=2870,4048,4195&amp;id=1237&amp;Positioning_Article_ID=&amp;Language=&amp;parent_directory_id=2865&amp;d1p1=1</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Service operates: November to early January only</Note>
+    <Easting>316330</Easting>
+    <Northing>175685</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929694</CarParkRef>
+    <CarParkName>Worcester North Park and Ride</CarParkName>
+    <URL>http://worcestershire.whub.org.uk/home/wccindex/wcc-transport/wcc-transport-project-express/wcc-transport-project-express-routes.htm</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>385209</Easting>
+    <Northing>257749</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929697</CarParkRef>
+    <CarParkName>Stadium Close Park and Ride</CarParkName>
+    <URL>http://www.wyreforestdc.gov.uk/wfdc_html/clacs/parkride.htm</URL>
+    <MinimumCost>110</MinimumCost>
+    <Note>Service operates 08:00 to 19:00</Note>
+    <Easting>383625</Easting>
+    <Northing>275996</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929698</CarParkRef>
+    <CarParkName>Monkspath Car Park</CarParkName>
+    <URL>http://www.solihull.gov.uk/section.asp?catid=2001&amp;docid=562&amp;pageNumber=2</URL>
+    <MinimumCost>230</MinimumCost>
+    <Note>Up to 6 hours or �2.60 for greater than 6 hours; Sundays �1</Note>
+    <Easting>414291</Easting>
+    <Northing>276155</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929701</CarParkRef>
+    <CarParkName>Solihull College Weekend Park and Ride</CarParkName>
+    <URL>http://www.solihull.gov.uk/section.asp?catid=2001#solcol</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Saturdays 08:00 to 19:00; Sundays 10:00 to 18:00; Public Holidays 10:00 to 18:00</Note>
+    <Easting>414159</Easting>
+    <Northing>279146</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929706</CarParkRef>
+    <CarParkName>City Centre Park and Ride</CarParkName>
+    <URL>http://www.stoke.gov.uk/ccm/navigation/transport-and-streets-/park-and-ride/</URL>
+    <MinimumCost>200</MinimumCost>
+    <Note />
+    <Easting>388838</Easting>
+    <Northing>345052</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929742</CarParkRef>
+    <CarParkName>Park and Ride South</CarParkName>
+    <URL>http://www.centro.org.uk/wwwroot/Bus/parkride.asp</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>432208</Easting>
+    <Northing>277323</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929743</CarParkRef>
+    <CarParkName>Park and Ride North</CarParkName>
+    <URL>http://www.centro.org.uk/wwwroot/Bus/parkride.asp</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>435152</Easting>
+    <Northing>281160</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929760</CarParkRef>
+    <CarParkName>Black Lake Park and Ride</CarParkName>
+    <URL>http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>399517</Easting>
+    <Northing>292400</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929761</CarParkRef>
+    <CarParkName>Priestfield (Wolverhampton) Park and Ride</CarParkName>
+    <URL>http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>393406</Easting>
+    <Northing>297141</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929762</CarParkRef>
+    <CarParkName>The Hawthorns Park and Ride</CarParkName>
+    <URL>http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>402382</Easting>
+    <Northing>289694</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929763</CarParkRef>
+    <CarParkName>Wednesbury Parkway Park and Ride</CarParkName>
+    <URL>http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>397975</Easting>
+    <Northing>294586</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929777</CarParkRef>
+    <CarParkName>Oxon Park and Ride</CarParkName>
+    <URL>http://www.shropshire.gov.uk/traveltransport.nsf/open/DA9404E1142436FD802570900045A8BF</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open 07:30 to 18:40, Monday to Friday, 08:00 to 18:40 Saturdays</Note>
+    <Easting>345705</Easting>
+    <Northing>313363</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929778</CarParkRef>
+    <CarParkName>Meole Brace Park and Ride</CarParkName>
+    <URL>http://www.shropshire.gov.uk/traveltransport.nsf/open/DA9404E1142436FD802570900045A8BF</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open 07:30 to 18:40, Monday to Friday, 08:00 to 18:40 Saturdays</Note>
+    <Easting>348971</Easting>
+    <Northing>309909</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929779</CarParkRef>
+    <CarParkName>Car Park</CarParkName>
+    <URL>http://www.shropshire.gov.uk/traveltransport.nsf/open/DA9404E1142436FD802570900045A8BF</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open 07:30 to 18:40, Monday to Friday, 08:00 to 18:40 Saturdays</Note>
+    <Easting>351282</Easting>
+    <Northing>315839</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929690</CarParkRef>
+    <CarParkName>Lakeside Park and Ride</CarParkName>
+    <URL>http://www.doncaster.gov.uk/Living_in_Doncaster/Neighbourhoods/Transport_Strategy/Lakeside_Park_and_Ride.asp</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>459709</Easting>
+    <Northing>402566</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929699</CarParkRef>
+    <CarParkName>Park and Ride</CarParkName>
+    <URL>http://www.scarborough.gov.uk/content/parking_services/car_parking_in_whitby.html</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>340705</Easting>
+    <Northing>370297</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929764</CarParkRef>
+    <CarParkName>Halfway Park and Ride</CarParkName>
+    <URL>http://www.sypte.co.uk/parkride</URL>
+    <MinimumCost>360</MinimumCost>
+    <Note>Open: 06:30 to 19:30, Mon-Sat, exit after 19:30 is permissible with a valid Park &amp; Ride ticket</Note>
+    <Easting>443805</Easting>
+    <Northing>381424</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929765</CarParkRef>
+    <CarParkName>Meadowhall Park and Ride</CarParkName>
+    <URL>http://www.sypte.co.uk/parkride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open: 24 hours </Note>
+    <Easting>439045</Easting>
+    <Northing>391427</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929766</CarParkRef>
+    <CarParkName>Middlewood Road Park and Ride</CarParkName>
+    <URL>http://www.sypte.co.uk/parkride</URL>
+    <MinimumCost>360</MinimumCost>
+    <Note>Open: 06:30 to 19:30, Mon-Sat, exit after 19:30 is permissible with a valid Park &amp; Ride ticket</Note>
+    <Easting>432683</Easting>
+    <Northing>391069</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929767</CarParkRef>
+    <CarParkName>Nunnery Square Park and Ride</CarParkName>
+    <URL>http://www.sypte.co.uk/parkride</URL>
+    <MinimumCost>360</MinimumCost>
+    <Note>Open: 06:30 to 19:30, Mon-Sat, exit after 19:30 is permissible with a valid Park &amp; Ride ticket</Note>
+    <Easting>436882</Easting>
+    <Northing>387753</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929780</CarParkRef>
+    <CarParkName>Car Park</CarParkName>
+    <URL>http://www.hullcc.gov.uk/portal/page?_pageid=221,99424&amp;_dad=portal&amp;_schema=PORTAL</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>515391</Easting>
+    <Northing>428922</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929781</CarParkRef>
+    <CarParkName>Park and Ride</CarParkName>
+    <URL>http://www.hullcc.gov.uk/portal/page?_pageid=221,99424&amp;_dad=portal&amp;_schema=PORTAL</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>504525</Easting>
+    <Northing>426212</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929782</CarParkRef>
+    <CarParkName>Car Park</CarParkName>
+    <URL>http://www.hullcc.gov.uk/portal/page?_pageid=221,99424&amp;_dad=portal&amp;_schema=PORTAL</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>507283</Easting>
+    <Northing>429150</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929813</CarParkRef>
+    <CarParkName>Askham Bar Park and Ride</CarParkName>
+    <URL>http://www.york.gov.uk/parking/ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>458240</Easting>
+    <Northing>448885</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929814</CarParkRef>
+    <CarParkName>Grimston Bar Park and Ride</CarParkName>
+    <URL>http://www.york.gov.uk/parking/ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>464371</Easting>
+    <Northing>451344</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929815</CarParkRef>
+    <CarParkName>McArthurGlen Park and Ride</CarParkName>
+    <URL>http://www.york.gov.uk/parking/ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>460895</Easting>
+    <Northing>447632</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929894</CarParkRef>
+    <CarParkName>Rawcliffe Park and Ride</CarParkName>
+    <URL>http://www.york.gov.uk/parking/ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Please note the gates of the car park are locked at 20:30 Monday to Saturday and 18:30 on Sundays</Note>
+    <Easting>457528</Easting>
+    <Northing>454735</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929816</CarParkRef>
+    <CarParkName>Monks Cross Park and Ride</CarParkName>
+    <URL>http://www.york.gov.uk/parking/ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>462716</Easting>
+    <Northing>455006</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929771</CarParkRef>
+    <CarParkName>London Road Park and Ride</CarParkName>
+    <URL>http://www.suffolkcc.gov.uk/transport/park-and-ride/index.shtml</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open from 07:00 until 19:00 Mondays to Saturdays.</Note>
+    <Easting>612392</Easting>
+    <Northing>242660</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929772</CarParkRef>
+    <CarParkName>Bury Road Park and Ride</CarParkName>
+    <URL>http://www.suffolkcc.gov.uk/transport/park-and-ride/index.shtml</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open from 07:00 until 19:00 Mondays to Fridays, 08:00 until 19:00 Saturdays</Note>
+    <Easting>613635</Easting>
+    <Northing>247517</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929773</CarParkRef>
+    <CarParkName>Martlesham Park and Ride</CarParkName>
+    <URL>http://www.suffolkcc.gov.uk/transport/park-and-ride/index.shtml</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open from 07:00 until 19:00 Mondays to Saturdays</Note>
+    <Easting>624117</Easting>
+    <Northing>246306</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929774</CarParkRef>
+    <CarParkName>Lynchwood Park and Ride</CarParkName>
+    <URL>http://www.peterborough.gov.uk/page-4804</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>This service is currently not in operation</Note>
+    <Easting>514233</Easting>
+    <Northing>296411</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929775</CarParkRef>
+    <CarParkName>Maskew Avenue Park and Ride</CarParkName>
+    <URL>http://www.peterborough.gov.uk/page-4804</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>This service is currently not in operation</Note>
+    <Easting>517982</Easting>
+    <Northing>301036</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929776</CarParkRef>
+    <CarParkName>Perkins Park and Ride</CarParkName>
+    <URL>http://www.peterborough.gov.uk/page-4804</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>This service is currently not in operation</Note>
+    <Easting>521073</Easting>
+    <Northing>300429</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929807</CarParkRef>
+    <CarParkName>Airport Park and Ride</CarParkName>
+    <URL>http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>�1.50 per vehicle Monday to Friday after 12.30p.m. or �3 per vehicle for all day parking</Note>
+    <Easting>621207</Easting>
+    <Northing>313090</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929808</CarParkRef>
+    <CarParkName>Costessey Park and Ride</CarParkName>
+    <URL>http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>�1.50 per vehicle Monday to Friday after 12.30p.m. or �3 per vehicle for all day parking</Note>
+    <Easting>615650</Easting>
+    <Northing>310159</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929809</CarParkRef>
+    <CarParkName>Harford Park and Ride</CarParkName>
+    <URL>http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>�1.50 per vehicle Monday to Friday after 12.30p.m. or �3 per vehicle for all day parking</Note>
+    <Easting>621797</Easting>
+    <Northing>303986</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929810</CarParkRef>
+    <CarParkName>Postwick Park and Ride</CarParkName>
+    <URL>http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>�1.50 per vehicle Monday to Friday after 12.30p.m. or �3 per vehicle for all day parking</Note>
+    <Easting>628818</Easting>
+    <Northing>308326</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929811</CarParkRef>
+    <CarParkName>Sprowston Park and Ride</CarParkName>
+    <URL>http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>�1.50 per vehicle Monday to Friday after 12.30p.m. or �3 per vehicle for all day parking</Note>
+    <Easting>625526</Easting>
+    <Northing>312665</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929812</CarParkRef>
+    <CarParkName>Thickthorn Park and Ride</CarParkName>
+    <URL>http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm</URL>
+    <MinimumCost>150</MinimumCost>
+    <Note>�1.50 per vehicle Monday to Friday after 12.30p.m. or �3 per vehicle for all day parking</Note>
+    <Easting>618213</Easting>
+    <Northing>305496</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929817</CarParkRef>
+    <CarParkName>Babraham Road Park and Ride site</CarParkName>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>547757</Easting>
+    <Northing>254487</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929818</CarParkRef>
+    <CarParkName>Cowley Road Park and Ride Site</CarParkName>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>547031</Easting>
+    <Northing>261349</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929819</CarParkRef>
+    <CarParkName>Madingley Road Park and Ride Site</CarParkName>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>542456</Easting>
+    <Northing>259432</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929820</CarParkRef>
+    <CarParkName>Newmarket Road Park and Ride site</CarParkName>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>549176</Easting>
+    <Northing>259343</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929821</CarParkRef>
+    <CarParkName>Trumpington Park and Ride</CarParkName>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>544309</Easting>
+    <Northing>254247</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929691</CarParkRef>
+    <CarParkName>Meynells Gorse Park and Ride</CarParkName>
+    <URL>http://www.leicester.gov.uk/departments/page.asp?pgid=7486</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>454096</Easting>
+    <Northing>303641</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929829</CarParkRef>
+    <CarParkName>Moor Bridge Park and Ride</CarParkName>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>454624</Easting>
+    <Northing>346727</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929830</CarParkRef>
+    <CarParkName>Hucknell Park and Ride</CarParkName>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>454035</Easting>
+    <Northing>349150</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929831</CarParkRef>
+    <CarParkName>Phoenix Park and Ride</CarParkName>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>453304</Easting>
+    <Northing>343787</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929832</CarParkRef>
+    <CarParkName>Queens Drive Park and Ride</CarParkName>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <MinimumCost>230</MinimumCost>
+    <Note />
+    <Easting>456218</Easting>
+    <Northing>337215</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929827</CarParkRef>
+    <CarParkName>The Forest Park and Ride</CarParkName>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>456722</Easting>
+    <Northing>341443</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929891</CarParkRef>
+    <CarParkName>Racecourse Park and Ride</CarParkName>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <MinimumCost>230</MinimumCost>
+    <Note />
+    <Easting>459546</Easting>
+    <Northing>339412</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929828</CarParkRef>
+    <CarParkName>Wilkinson Street Park and Ride</CarParkName>
+    <URL>http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>455367</Easting>
+    <Northing>341976</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929702</CarParkRef>
+    <CarParkName>Kingston's Christmas Park &amp; Ride </CarParkName>
+    <URL>http://www.kingston.gov.uk/transport_and_streets/parking/parkandride.htm</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The 2006/ 7 service will start again in November</Note>
+    <Easting>517572</Easting>
+    <Northing>162723</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929751</CarParkRef>
+    <CarParkName>Sniperley Park and Ride</CarParkName>
+    <URL>http://www.durhamparkandride.com/sitefiles/pages/welcome.html</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open 7.00am to 7.00pm, Monday to Saturday</Note>
+    <Easting>426316</Easting>
+    <Northing>543731</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929752</CarParkRef>
+    <CarParkName>Belmont Park and Ride</CarParkName>
+    <URL>http://www.durhamparkandride.com/sitefiles/pages/welcome.html</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open 7.00am to 7.00pm, Monday to Saturday</Note>
+    <Easting>431191</Easting>
+    <Northing>544542</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929753</CarParkRef>
+    <CarParkName>Howlands Park and Ride</CarParkName>
+    <URL>http://www.durhamparkandride.com/sitefiles/pages/welcome.html</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open 7.00am to 7.00pm, Monday to Saturday</Note>
+    <Easting>427139</Easting>
+    <Northing>540713</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929791</CarParkRef>
+    <CarParkName>Callerton Parkway Metro station Park and Ride</CarParkName>
+    <URL>http://www.newcastle.gov.uk/parking.nsf/a/parkride</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>419078</Easting>
+    <Northing>570439</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929792</CarParkRef>
+    <CarParkName>Kingston Park Metro Station Park and Ride</CarParkName>
+    <URL>http://www.newcastle.gov.uk/parking.nsf/a/parkride</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>421512</Easting>
+    <Northing>568991</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929793</CarParkRef>
+    <CarParkName>Regent Centre Metro Station Park and Ride</CarParkName>
+    <URL>http://www.newcastle.gov.uk/parking.nsf/a/parkride</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>424305</Easting>
+    <Northing>568609</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929794</CarParkRef>
+    <CarParkName>New Bridge Street Car Park (Warner Bros.)</CarParkName>
+    <URL>http://www.newcastle.gov.uk/parking.nsf/a/parkride</URL>
+    <MinimumCost />
+    <Note />
+    <Easting>425449</Easting>
+    <Northing>564685</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929678</CarParkRef>
+    <CarParkName>Broadbottom Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>399172</Easting>
+    <Northing>393815</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929679</CarParkRef>
+    <CarParkName>Brooklands Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>378443</Easting>
+    <Northing>391183</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929680</CarParkRef>
+    <CarParkName>Cheadle Hulme Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>387662</Easting>
+    <Northing>386640</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929681</CarParkRef>
+    <CarParkName>Davenport Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>389680</Easting>
+    <Northing>388377</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929682</CarParkRef>
+    <CarParkName>Hazel Grove Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>391933</Easting>
+    <Northing>386823</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929683</CarParkRef>
+    <CarParkName>Horwich Parkway Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>364366</Easting>
+    <Northing>409203</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929684</CarParkRef>
+    <CarParkName>Ladywell Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>378664</Easting>
+    <Northing>398370</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929685</CarParkRef>
+    <CarParkName>Lostock Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>367402</Easting>
+    <Northing>408637</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929686</CarParkRef>
+    <CarParkName>Radcliffe Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>378713</Easting>
+    <Northing>407430</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929687</CarParkRef>
+    <CarParkName>Romiley Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>394223</Easting>
+    <Northing>390797</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929898</CarParkRef>
+    <CarParkName>Smithy Bridge Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>392627</Easting>
+    <Northing>415209</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929692</CarParkRef>
+    <CarParkName>Westhoughton Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>365439</Easting>
+    <Northing>406613</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929688</CarParkRef>
+    <CarParkName>Shaw and Crompton Park and Ride</CarParkName>
+    <URL>http://www.gmpte.com/parkandride</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>394196</Easting>
+    <Northing>409033</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929719</CarParkRef>
+    <CarParkName>The Esplanade Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>100</MinimumCost>
+    <Note>1st April to 30th September (summer): 7.30am-6.30pm (Mon-Sat); 1st October to 31st March (winter): 7.30am-6.30pm (Mon-Sat) 9.00am - 6.30pm (Sun)</Note>
+    <Easting>332546</Easting>
+    <Northing>417083</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929720</CarParkRef>
+    <CarParkName>Fairways Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>100</MinimumCost>
+    <Note>1st April to 30th September (summer): 10.00am-6.30pm (Sat) 9.00am-6.30pm (Sun); 1st October to 31st March (winter): 10.00am-6.30pm (Sat)</Note>
+    <Easting>334164</Easting>
+    <Northing>418761</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929721</CarParkRef>
+    <CarParkName>Ainsdale Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>331080</Easting>
+    <Northing>412204</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929722</CarParkRef>
+    <CarParkName>Aintree Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>336664</Easting>
+    <Northing>397857</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929723</CarParkRef>
+    <CarParkName>Birkdale Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>333028</Easting>
+    <Northing>415735</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929724</CarParkRef>
+    <CarParkName>Blundellsands and Crosby Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>331035</Easting>
+    <Northing>399495</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929725</CarParkRef>
+    <CarParkName>Formby Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>329185</Easting>
+    <Northing>406861</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929726</CarParkRef>
+    <CarParkName>Freshfield Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>329131</Easting>
+    <Northing>408361</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929727</CarParkRef>
+    <CarParkName>Maghull Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>338313</Easting>
+    <Northing>401506</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929728</CarParkRef>
+    <CarParkName>Seaforth and Litherland Station Park and Ride</CarParkName>
+    <URL>http://www.sefton.gov.uk/page&amp;3348</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note />
+    <Easting>333265</Easting>
+    <Northing>397109</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929729</CarParkRef>
+    <CarParkName>Walton-le-Dale Park and Ride</CarParkName>
+    <URL>http://www.lancashire.gov.uk/environment/bus/park_and_ride/parkandride.asp</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open from 07:30 to 19:00 Monday to Saturday. Also open on most Bank Holidays between 09:30 to 17:30 (Closed Christmas Day, Boxing Day and New Year's Day)</Note>
+    <Easting>355372</Easting>
+    <Northing>428231</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929730</CarParkRef>
+    <CarParkName>Preston Portway Park and Ride</CarParkName>
+    <URL>http://www.lancashire.gov.uk/environment/bus/park_and_ride/parkandride.asp</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>Open from 07:30 to 19:00 Monday to Saturday. Also open on most Bank Holidays between 09:30 to 17:30 (Closed Christmas Day, Boxing Day and New Year's Day)</Note>
+    <Easting>352653</Easting>
+    <Northing>429229</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929787</CarParkRef>
+    <CarParkName>Boughton Heath Park and Ride</CarParkName>
+    <URL>http://www.chester.gov.uk/main.asp?page=183</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays</Note>
+    <Easting>343174</Easting>
+    <Northing>365861</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929788</CarParkRef>
+    <CarParkName>Sealand Road Park and Ride</CarParkName>
+    <URL>http://www.chester.gov.uk/main.asp?page=183</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays</Note>
+    <Easting>337934</Easting>
+    <Northing>366876</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929789</CarParkRef>
+    <CarParkName>Upton - The Zoo Park and Ride</CarParkName>
+    <URL>http://www.chester.gov.uk/main.asp?page=183</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays</Note>
+    <Easting>340705</Easting>
+    <Northing>370370</Northing>
+  </CarParkDataImport>
+  <CarParkDataImport>
+    <CarParkRef>929790</CarParkRef>
+    <CarParkName>Wrexham Road Park and Ride</CarParkName>
+    <URL>http://www.chester.gov.uk/main.asp?page=183</URL>
+    <MinimumCost>0</MinimumCost>
+    <Note>The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays</Note>
+    <Easting>339155</Easting>
+    <Northing>363038</Northing>
+  </CarParkDataImport>
+</carpark>

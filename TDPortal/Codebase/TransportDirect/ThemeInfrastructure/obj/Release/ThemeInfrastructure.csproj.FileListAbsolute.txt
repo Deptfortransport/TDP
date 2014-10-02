@@ -1,0 +1,7 @@
+D:\TDPortal\Codebase\TransportDirect\ThemeInfrastructure\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ThemeInfrastructure\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\ThemeInfrastructure\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\ThemeInfrastructure\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\ThemeInfrastructure\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\ThemeInfrastructure\obj\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ThemeInfrastructure\obj\Release\TD.ThemeInfrastructure.pdb

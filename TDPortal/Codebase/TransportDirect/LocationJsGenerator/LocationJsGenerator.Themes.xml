@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <theme name="TransportDirect" domain="localhost">1</theme>
+  <theme name="TransportDirect" domain="sitest.transportdirect">1</theme>
+  <theme name="TransportDirect" domain="test.transportdirect">1</theme>
+  <theme name="TransportDirect" domain="www.transportdirect">1</theme>
+  <theme name="TransportDirect" domain="transportdirect">1</theme>
+
+  <theme name="version" domain="version">1</theme>
+</lookup>

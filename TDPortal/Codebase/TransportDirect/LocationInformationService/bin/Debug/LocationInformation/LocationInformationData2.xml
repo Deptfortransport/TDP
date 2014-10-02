@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LocationInformationTestData>
+	<ExternalLinks>
+		<externallinks 
+			ExternalLinkId="{E7A4CBCA-9833-MITE49b5-8929-EED3C9DF864C}" 
+			URL="http://www.ebay.co.uk" 
+			TestURL="null" 
+			Valid="1" 
+			Description="Updated text"
+			StartDate="01/01/2007" 
+			EndDate="12/06/2099" 
+			LinkText="9200JKL Updated text"/> 				
+	</ExternalLinks>	
+	<locationinformation>
+		<locationinformation Naptan="9200JKL" ExternalLinkId="{E7A4CBCA-9833-MITE49b5-8929-EED3C9DF864C}" LinkType="Departure"/>
+	</locationinformation>
+</LocationInformationTestData>

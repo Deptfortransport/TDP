@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<CryptoSaver xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RSAParams>
+    <Exponent>AQAB</Exponent>
+    <Modulus>rPpVRLpjPnQGlKJ3Ohrgnovjfpv5C11X6jNc61vhqQiULmubIMAQN0sbKwDIesN2LbQPzMrj01Bj
+QP3zrkN77yOmlp1pyhJLUslMTAxXmBO7Ax4MDFkzrGQsNtECAALeq7kSx5l8Dg7gzx8ktqb7UTou
+jhen7rLp28P8umUDn5s=</Modulus>
+    <P>12oRYom/dyqtiN98eOtDxLGlB0dWDShuZmvIFwxSUw4TdmV8UhvSmI2xp+zejHCCaQMqx6b5LTzH
+XNSVmntvrw==</P>
+    <Q>zZF0yLxkv09AyDqX99a2o7/o1HBm6PS7x3hAKHlL9uwgrjTctfxo27BTz9SHIN8ZAOYfL1sB5C3a
++A3FCj091Q==</Q>
+    <DP>NUcNj7KEAWQz0WN89KczdqV9LISvOsfiLkDAFzs77UDQ/XpyOhiZiJOa+e5yyIdXKcPXw9N/U3nx
+0PrfGXsoDw==</DP>
+    <DQ>rSQpR/WdqaC4AK2RV/bpyAwYr+2oT+fpzT0UVMKtX+FMOU5e440gSIFAZlksI1ylM6OfeoRdmHGi
+77CxWElyrQ==</DQ>
+    <InverseQ>u6ePe7kW2Nmt+KJB4TxXzr2vLcTA0BDGtXLBtgP/3D+A2INxeppKIiJYVa6kwXtSDV+6O7ES/xQM
+ZELLdVfBEA==</InverseQ>
+    <D>k/2g0io9GoOd1bCiHN496qd4PSwoiGaV/tNu3hZAHKQwUv7RO9XWidgCKGqFGzL7euKg2e+Dt5kB
+MeuTfjZSYsCKjol4okBNB44mOJkuCjUvpdjX1QvLiB/05ZKnPdw3627lEoPlSZvvRmOlfvP8ypKj
+kEP2d1hmRrcdc2pLNJE=</D>
+  </RSAParams>
+  <CryptSymKey>JZ5CJ4XmMp2McZye4Ew4m1R8XQvsxZqIVLEstEIGCElMhEOxIvmaYCjPdJD5c8jocihsos1wLIFW3FeSP/t40fwEJgPYU4FDAjyTUgpije1g4rf7kCmJXpTTvloxvojPPrJia6LY0UIku6PwuAXHZIhGI64JkOapkUxCCG0Bv20=</CryptSymKey>
+  <SymIV>E0GWuHxK+KynG25sg7M7SQ==</SymIV>
+  <Store>TDPCryptStore</Store>
+  <UseMachineStore>true</UseMachineStore>
+</CryptoSaver>

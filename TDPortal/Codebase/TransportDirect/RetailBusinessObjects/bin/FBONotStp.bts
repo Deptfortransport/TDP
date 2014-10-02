@@ -1,0 +1,30 @@
+TESTNAME = {"FBO - NOTSTP"}
+
+INHDR = {
+"STDIN   FAGF        0101    I00210O02000"
+}
+
+INBFR = {"SELECT  "
+"ROUTE-CODE      "
+"TICKET-TYPE     "
+"ADULT-FARE      "
+"9999999999999999"
+"WHERE   "
+"ORIGIN          = 1826            "
+"DESTINATION     = 1072            "
+"9999999999999999999999999999999999"
+"ORDER BY"
+"99999999999999999"
+}
+
+OUTHDR = {
+"STDOUT  "
+"INSTANCE"
+"STERR"
+"C"
+"S"
+"L"
+}
+
+OUTBFR = {"                                                                                                                                 "}
+

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<scripts>
+<script name="JavaScriptDetection">
+  <scriptfile domsupport="W3C_STYLE" filepath="detectjavascript.js"/>
+</script>
+<script name="TestControl" >
+  <scriptfile domsupport="W3C_STYLE" filepath="testcontrol_w3cstyle.js"/>
+  <scriptfile domsupport="IE4_STYLE" filepath="testcontrol_ie4style.js"/>
+</script>
+<script name="TestControl2" >
+  <scriptfile domsupport="IE4_STYLE" filepath="testcontrol2_ie4style.js"/>
+</script>
+</scripts> 

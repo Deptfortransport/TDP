@@ -1,0 +1,28 @@
+<dropdownalias xmlns="http://www.transportdirect.info/DropDownAlias" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <Alias>
+    <StopType>R</StopType>
+    <StopNaPTAN>9100LESTER</StopNaPTAN>
+    <AliasName>Lester</AliasName>
+    <a3>INVALIDCOLUMN</a3>
+  </Alias>
+  <Alias>
+    <StopType>R</StopType>
+    <StopNaPTAN>9100HAYESAH</StopNaPTAN>
+    <AliasName>Harlington (Greater London)</AliasName>
+  </Alias>
+  <Alias>
+    <StopType>R</StopType>
+    <StopNaPTAN>9100GTSHDMC</StopNaPTAN>
+    <AliasName>Gateshead Metrocentre</AliasName>
+  </Alias>
+  <Alias>
+    <StopType>R</StopType>
+    <StopNaPTAN>9100SNDWDUD</StopNaPTAN>
+    <AliasName>Dudley</AliasName>
+  </Alias>
+  <Alias>
+    <StopType>R</StopType>
+    <StopNaPTAN>9100BLFR</StopNaPTAN>
+    <AliasName>Blackfriars</AliasName>
+  </Alias>
+</dropdownalias>

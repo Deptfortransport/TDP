@@ -1,0 +1,65 @@
+<JourneyResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<publicJourneys>
+		<PublicJourney>
+			<legs>
+				<Leg xsi:type="TimedLeg">
+					<mode>Coach</mode>
+					<validated>true</validated>
+					<board>
+						<activity>Depart</activity>
+						<arriveTime>0001-01-01T00:00:00.0000000-00:00</arriveTime>
+						<departTime>2005-01-02T08:30:00.0000000-00:00</departTime>
+						<interchangeTime>40</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900057366</NaPTANID>
+							<name>London: Victoria Coach Stn</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>528629</easting>
+								<northing>178693</northing>
+							</coordinate>
+						</stop>
+					</board>
+					<alight>
+						<activity>Arrive</activity>
+						<arriveTime>2005-01-02T18:05:00.0000000-00:00</arriveTime>
+						<departTime>0001-01-01T00:00:00.0000000-00:00</departTime>
+						<interchangeTime>30</interchangeTime>
+						<confirmedVia>false</confirmedVia>
+						<stop>
+							<NaPTANID>900066157</NaPTANID>
+							<name>Edinburgh: Bus Stn (Coach Stop)</name>
+							<timingPoint>false</timingPoint>
+							<coordinate>
+								<easting>325705</easting>
+								<northing>674233</northing>
+							</coordinate>
+						</stop>
+					</alight>
+					<services>
+						<Service>
+							<operatorCode>NX</operatorCode>
+							<operatorName>Network (NX)</operatorName>
+							<serviceNumber>591</serviceNumber>
+							<firstDateOfOperation>2004-03-01T00:00:00.0000000-00:00</firstDateOfOperation>
+							<expiryDate>2005-03-06T00:00:00.0000000-00:00</expiryDate>
+							<openEnded>false</openEnded>
+							<direction>O</direction>
+							<daysOfOperation>
+								<Days>Monday</Days>
+								<Days>Tuesday</Days>
+								<Days>Wednesday</Days>
+								<Days>Thursday</Days>
+								<Days>Friday</Days>
+								<Days>Saturday</Days>
+								<Days>Sunday</Days>
+							</daysOfOperation>
+						</Service>
+					</services>
+				</Leg>
+			</legs>
+			<fares /> <!-- No Fares -->
+		</PublicJourney>
+	</publicJourneys>
+</JourneyResult>

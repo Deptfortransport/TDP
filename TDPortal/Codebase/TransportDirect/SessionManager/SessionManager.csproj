@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F189D8B-6F30-4FC3-8EFC-5E3001A8C862}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.userportal.sessionmanager</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.UserPortal.SessionManager</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>SAK</SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\AirDataProvider\AirDataProvider.csproj">
+      <Name>AirDataProvider</Name>
+      <Project>{F28705AF-3A71-4735-82FD-DBDBC2611611}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\CostSearch\CostSearch.csproj">
+      <Name>CostSearch</Name>
+      <Project>{309CBD3E-2CC1-4808-98E3-B33526AE8627}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerControl\CyclePlannerControl.csproj">
+      <Project>{2E288B42-FABF-487E-B8D8-64AD18B90208}</Project>
+      <Name>CyclePlannerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Name>DatabaseInfrastructure</Name>
+      <Project>{5F116712-53F6-4A9F-B11B-96D0812190AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\EnvironmentalBenefits\EnvironmentalBenefits.csproj">
+      <Project>{6C76042C-B2F0-4ABB-8019-AAAAE2140E12}</Project>
+      <Name>EnvironmentalBenefits</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalLinkService\ExternalLinkService.csproj">
+      <Name>ExternalLinkService</Name>
+      <Project>{CD02DA6B-D3DE-4617-A58A-53DF11554B63}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyControl\JourneyControl.csproj">
+      <Name>JourneyControl</Name>
+      <Project>{27414D3D-9782-44C6-A5BD-A11ECEA591E5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Name>LocationService</Name>
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PricingRetail\PricingRetail.csproj">
+      <Name>PricingRetail</Name>
+      <Project>{0E8DF4E5-C028-4E85-8163-41F9E007ACB7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportDataProvider\TDPCustomEvents\TDPCustomEvents.csproj">
+      <Name>TDPCustomEvents</Name>
+      <Project>{A377CDD7-9190-46F2-8938-65DF17478D21}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource\Resource.csproj">
+      <Name>Resource</Name>
+      <Project>{4F2E2410-0F55-43FB-B729-C326F602B8F2}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TravelNews\TravelNews.csproj">
+      <Name>TravelNews</Name>
+      <Project>{D0CC64DB-B860-4087-8B51-1DCD6FE7C41F}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="td.CJPInterface">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.interactivemapping">
+      <HintPath>..\..\..\ThirdParty\ESRI\td.interactivemapping.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\DisplayableCostSearchTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\DisplayableCostSearchTickets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\DisplayableTravelDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\DisplayableTravelDates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\DisplayableTravelDateSortOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\PricedJourneySegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\RequiredTicketTableLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\RetailUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\SelectedTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters\TicketRetailerInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AmbiguityResolutionState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+
+    <Compile Include="BusinessLinksStage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessLinkState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClearCacheHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CostBasedFaresSearchState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CostBasedServicesSearchState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CostSearchParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtendItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtendSegmentStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FavouriteJourney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindBusPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindCarPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindCarParkPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindCoachPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindCoachTrainPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindCostBasedPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindCyclePageState.cs" />
+    <Compile Include="FindEBCPageState.cs" />
+    <Compile Include="FindFarePageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindFlightPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindInternationalPageState.cs" />
+    <Compile Include="FindJourneyPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindJourneySummaryData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindParkAndRidePageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindStationAirportPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindStationPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindTrainPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindTrunkCostBasedPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindTrunkPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindTrunkStationPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISessionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITDSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITDSessionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItineraryManagerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItineraryManagerMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVisitPlanItineraryManagerRemote.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyEmissionsPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyMapState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NullItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PricingRetailOptionsState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProfileKeys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RailCostPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReplanItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReplanPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResultsPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoadAndRideItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TabSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDJourneyParameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDJourneyParametersFlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDJourneyParametersMulti.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDJourneyParametersVisitPlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDRoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDSegmentStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDSessionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDSessionManagerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDSessionPartition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDSessionSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDUserJourneyPreferences.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDUserType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestFindFlightPageState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestTDJourneyParametersFlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestTDSessionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestTypeSafeDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestClearCacheHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestExtendItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestExtendSegmentStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestGenerateMockSessionManagerData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockSessionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestMockSimpleSessionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestNullItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestPricedJourneySegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestPricingRetailOptionsState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestReplanItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestRequiredTicketTableLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestRetailUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestSelectedTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestSessionManagerInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestTDJourneyParametersVisitPlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestTicketRetailerInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestVisitPlannerItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test\TestVisitPlannerSegmentStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeSafeDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValidationError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VisitPlannerItineraryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VisitPlannerSegmentStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VisitPlanState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="bin\Debug\td.userportal.sessionmanager.dll.config" />
+    <None Include="SessionManager.build" />
+    <Content Include="bin\Debug\SessionManager\mockAirDataProviderData.xml" />
+    <Content Include="bin\Debug\td.userportal.sessionmanager.dll.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

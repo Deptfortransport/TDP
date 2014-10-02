@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="PricingRetail" default="build" >
+
+	<!-- Project properties. These should not be altered -->
+	<property name="basedir" value="./.."/>
+	<property name="project.dll.name" value="td.userportal.pricingretail"/>
+	<property name="project.src.dir" value="${basedir}/PricingRetail" />
+	<property name="project.build.dir" value="${project.src.dir}/bin/Debug"/>
+
+	<!-- Solution properties. These are overriddable -->
+	<property name="build.debug" value="true" />
+	<property name="solution.externals.dir" value="C:/TDPortal/DEL5/build/Externals" />
+
+	<property name="project.report.dir" value="${project.src.dir}/Report"/>
+
+	<property name="project.testresults.file" value="${project.dll.name}.dll-results.xml"/>
+
+
+	<target name="clean">
+		<delete dir="${project.report.dir}" failonerror="false"/>
+		<delete file="${project.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+		<delete file="${project.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+		<delete file="${project.build.dir}/${project.testresults.file}" failonerror="false"/>
+	</target>
+
+	<target name="init" depends="clean">
+
+		<mkdir dir="${project.report.dir}"/>
+
+		<!-- this is used for testing -->
+		<!--
+		<copy file="${basedir}\PropertiesService\DatabasePropertyProvider\bin\Debug\td.common.propertyservice.databasepropertyprovider.dll" todir="${project.build.dir}"/>
+
+		-->
+	</target>
+
+	<target name="compile" depends="init">
+		<!-- Compile the dll to the project build directory (DEBUG) -->
+		<echo message="Building ${project.dll.name}.dll with debug=${build.debug} from files under ${project.src.dir}"/>
+		<csc target="library" output="${project.build.dir}/${project.dll.name}.dll" debug="${build.debug}">
+			<nowarn>
+				<warning number="${suppress.warning.list}" />
+			</nowarn>
+                <sources basedir="${project.src.dir}">
+       	            <include name="**/*.cs" />
+       	            <exclude name="**/RetailXMLDocument/**"/>
+               	</sources>
+              <references basedir="${project.build.dir}">
+                    <include name="*.dll"/>
+                    <exclude name="td.CJP.dll"/>
+                    <exclude name="td.CJPInterface.dll"/>
+                    <include name="${solution.externals.dir}/*.dll"/>
+		    <exclude name="${solution.externals.dir}/fbtt0012_1.dll"/>
+         	    <exclude name="${solution.externals.dir}/fbtt0012_2.dll"/>
+		    <exclude name="${solution.externals.dir}/fbtt0012_3.dll"/>
+		    <exclude name="${solution.externals.dir}/fbtt0012_4.dll"/>
+		    <exclude name="${solution.externals.dir}/fbtt0012_5.dll"/>
+		    <exclude name="${solution.externals.dir}/fbtt0012_6.dll"/>
+		    <exclude name="${solution.externals.dir}/fbtt0012_7.dll"/>
+		    <exclude name="${solution.externals.dir}/fbtt0012_8.dll"/>
+                </references>
+		</csc>
+
+	</target>
+
+	<target name="test" depends="compile" >
+		<nunit2 haltonerror="false" haltonfailure="false" failonerror="false" verbose="true">
+			<formatter type="Xml" usefile="true" />
+			<test assemblyname="${project.build.dir}/${project.dll.name}.dll"
+				appconfig="${project.build.dir}/${project.dll.name}.dll.config"
+			/>
+		</nunit2>
+
+	</target>
+
+	<target name="test_report" depends="test">
+		<echo message="About to create report"/>
+		<nunit2report out="index.html" todir="${project.report.dir}" format="frames">
+			  <fileset>
+					<includes name="**/${project.testresults.file}" />
+			  </fileset>
+		</nunit2report>
+
+	</target>
+</project>

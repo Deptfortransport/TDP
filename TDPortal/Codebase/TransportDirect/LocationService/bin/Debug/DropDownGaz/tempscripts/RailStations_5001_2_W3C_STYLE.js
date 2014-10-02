@@ -1,0 +1,2 @@
+// RailStations_5001_2 file generated at 6/9/2012 15:25.36
+var ddData_2 = [["London Paddington","London Paddington","PAD","9100PADTON",0],["Paddington","","PAD","9100PADTON",0]]; if(typeof registerLocationData == 'function'){ registerLocationData('Rail', ddData_2); }

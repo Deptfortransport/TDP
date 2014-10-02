@@ -1,0 +1,28 @@
+-- ==================================================
+-- DROP old FK constraint if it exists (without delete cascade)
+-- ==================================================
+IF EXISTS(SELECT 1 
+            FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS
+           WHERE CONSTRAINT_NAME = 'myFKName'
+             AND DELETE_RULE <> 'CASCADE')
+BEGIN
+    ALTER TABLE myTable
+     DROP CONSTRAINT myFKName
+END
+GO
+
+
+-- ==================================================
+-- CREATE new FK constraint (with delete cascade)
+-- ==================================================
+IF NOT EXISTS(SELECT 1 
+                FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS
+               WHERE CONSTRAINT_NAME = 'myFKName')
+BEGIN
+    ALTER TABLE myTable WITH CHECK 
+      ADD CONSTRAINT myFKName
+          FOREIGN KEY(RefTableId)
+          REFERENCES RefTable(RefTableId)
+       ON DELETE CASCADE
+END
+GO

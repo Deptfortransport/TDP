@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+  <property name="propertyservice.version" GID="" AID="">1</property>
+
+  <property name="AtosAdditionalDataDB" GID="LocationJsGenerator" AID="LocationJsGenerator">Data Source=.\SQLEXPRESS;Initial Catalog=AtosAdditionalData;Pooling=False;Timeout=30;User id=SJP_User;Password=!password!1;</property>
+
+  <property name="LocationsDatabase" GID="LocationJsGenerator" AID="LocationJsGenerator">AtosAdditionalDataDB</property>
+  <property name="LocationsStoredProcedure" GID="LocationJsGenerator" AID="LocationJsGenerator">GetLocations_Staging</property>
+  <property name="LocationStoredProcedure" GID="LocationJsGenerator" AID="LocationJsGenerator">GetLocation_Staging</property>
+  <property name="LocationsAliasFile" GID="LocationJsGenerator" AID="LocationJsGenerator">D:\dataload\gaz\SjpStyleGaz\alias.csv</property>
+
+  <property name="ScriptFolder.TDPDefault" GID="LocationJsGenerator" AID="LocationJsGenerator">D:\dataload\gaz\SjpStyleGaz\OutputScripts</property>
+  <property name="ScriptFolder.TDPNoGroups" GID="LocationJsGenerator" AID="LocationJsGenerator">D:\dataload\gaz\SjpStyleGaz\OutputScripts</property>
+  <property name="ScriptFolder.TDPNoGroupsNoLocalitiesNoPOIs" GID="LocationJsGenerator" AID="LocationJsGenerator">D:\dataload\gaz\SjpStyleGaz\OutputScripts</property>
+  <property name="ScriptFolder.TDPNoLocalities" GID="LocationJsGenerator" AID="LocationJsGenerator">D:\dataload\gaz\SjpStyleGaz\OutputScripts</property>
+  <property name="ScriptFolder.TDPNoLocalitiesNoPOIs" GID="LocationJsGenerator" AID="LocationJsGenerator">D:\dataload\gaz\SjpStyleGaz\OutputScripts</property>
+
+  <property name="ScriptName.TDPDefault" GID="LocationJsGenerator" AID="LocationJsGenerator">Location</property>
+  <property name="ScriptName.TDPNoGroups" GID="LocationJsGenerator" AID="LocationJsGenerator">Location_NoGroups</property>
+  <property name="ScriptName.TDPNoGroupsNoLocalitiesNoPOIs" GID="LocationJsGenerator" AID="LocationJsGenerator">Location_NoGroupsNoLocalitiesNoPOIs</property>
+  <property name="ScriptName.TDPNoLocalities" GID="LocationJsGenerator" AID="LocationJsGenerator">Location_NoLocalities</property>
+  <property name="ScriptName.TDPNoLocalitiesNoPOIs" GID="LocationJsGenerator" AID="LocationJsGenerator">Location_NoLocalitiesNoPOIs</property>
+ 
+  
+  <property name="Logging.Publisher.Default" GID="LocationJsGenerator" AID="LocationJsGenerator">FILE1</property>
+
+  <property name="Logging.Publisher.Console" GID="LocationJsGenerator" AID="LocationJsGenerator">CONSOLEERROR</property>
+  <property name="Logging.Publisher.Custom" GID="LocationJsGenerator" AID="LocationJsGenerator"></property>
+  <property name="Logging.Publisher.Email" GID="LocationJsGenerator" AID="LocationJsGenerator"></property>
+  <property name="Logging.Publisher.EventLog" GID="LocationJsGenerator" AID="LocationJsGenerator"></property>
+  <property name="Logging.Publisher.File" GID="LocationJsGenerator" AID="LocationJsGenerator">FILE1</property>
+  <property name="Logging.Publisher.Queue" GID="LocationJsGenerator" AID="LocationJsGenerator"></property>
+
+  <property name="Logging.Publisher.File.FILE1.Directory" GID="LocationJsGenerator" AID="LocationJsGenerator">D:\TDPortal</property>
+  <property name="Logging.Publisher.File.FILE1.Rotation" GID="LocationJsGenerator" AID="LocationJsGenerator">20000</property>
+
+  <property name="Logging.Publisher.Console.CONSOLEERROR.Stream" GID="LocationJsGenerator" AID="LocationJsGenerator">Error</property>
+
+  <property name="Logging.Event.Operational.TraceLevel" GID="LocationJsGenerator" AID="LocationJsGenerator">Verbose</property>
+  <property name="Logging.Event.Operational.Verbose.Publishers" GID="LocationJsGenerator" AID="LocationJsGenerator">FILE1</property>
+  <property name="Logging.Event.Operational.Info.Publishers" GID="LocationJsGenerator" AID="LocationJsGenerator">FILE1</property>
+  <property name="Logging.Event.Operational.Warning.Publishers" GID="LocationJsGenerator" AID="LocationJsGenerator">FILE1</property>
+  <property name="Logging.Event.Operational.Error.Publishers" GID="LocationJsGenerator" AID="LocationJsGenerator">CONSOLEERROR FILE1</property>
+
+  <property name="Logging.Event.Custom.Trace" GID="LocationJsGenerator" AID="LocationJsGenerator">Off</property>
+  <property name="Logging.Event.Custom" GID="LocationJsGenerator" AID="LocationJsGenerator"></property>
+
+</lookup>

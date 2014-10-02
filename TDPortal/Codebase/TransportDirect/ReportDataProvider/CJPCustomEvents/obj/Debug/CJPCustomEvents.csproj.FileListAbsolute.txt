@@ -1,0 +1,16 @@
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.reportdataprovider.cjpcustomevents.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.reportdataprovider.cjpcustomevents.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.logging.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.propertyservice.properties.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\td.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Debug\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\obj\Debug\td.reportdataprovider.cjpcustomevents.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\obj\Debug\td.reportdataprovider.cjpcustomevents.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\obj\Debug\CJPCustomEvents.csprojResolveAssemblyReference.cache

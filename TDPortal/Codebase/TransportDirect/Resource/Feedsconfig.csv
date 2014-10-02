@@ -1,0 +1,2 @@
+MachineId,HomeDir,IncomingDir,ProcessingDir,HoldingDir,BackupDir
+.,C:\Gateway\dat\Reception\,C:\Gateway\dat\Incoming\,C:\Gateway\dat\Processing\,C:\Gateway\dat\Holding\,C:\Gateway\dat\Backup\

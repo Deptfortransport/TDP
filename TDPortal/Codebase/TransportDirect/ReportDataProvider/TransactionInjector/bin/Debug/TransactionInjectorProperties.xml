@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="" ThemeId="1">800000</property>
+  <property name="propertyservice.version" GID="" AID="" ThemeId="1">2</property>
+  <property name="propertyservice.property" GID="" AID="" ThemeId="1">globalproperty</property>
+
+  <property name="LocationService.FilterGivenNameTag" GID="" AID="" ThemeId="1">False</property>
+  <property name="LocationService.GivenNameTagFilterValues" GID="" AID="" ThemeId="1"></property>
+
+
+  <property name="TransactionInjector.Transaction" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1"></property>
+  <property name="TransactionInjector.Timeout" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">30</property>
+  <property name="TransactionInjector.Frequency" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">300</property>	
+  <property name="TransactionInjector.WebService" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">http://localhost/TDPWebServices/TransactionWebService/TDTransactionService.asmx</property>
+  <property name="TransactionInjector.TransactionGap" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">3</property>
+  
+  <property name="Logging.Publisher.Default" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">File1</property>
+  <property name="Logging.Publisher.Queue" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Queue1</property>
+  <property name="Logging.Publisher.Email" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1"></property> 
+  <property name="Logging.Publisher.EventLog" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">EventLog1</property>
+  <property name="Logging.Publisher.Console" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1"></property>
+  <property name="Logging.Publisher.Custom" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1"></property>
+  <property name="Logging.Publisher.File" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">File1 File2</property>
+
+  <property name="Logging.Event.Custom.Trace" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">On</property>
+  <property name="Logging.Event.Custom" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">RefTran</property>
+  <property name="Logging.Event.Custom.RefTran.Name" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">ReferenceTransactionEvent</property>
+  <property name="Logging.Event.Custom.RefTran.Assembly" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">td.ReportDataProvider.TDPCustomEvents</property>
+  <property name="Logging.Event.Custom.RefTran.Publishers" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Queue1 File2</property>
+  <property name="Logging.Event.Custom.RefTran.Trace" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">On</property>
+	
+  <property name="Logging.Event.Operational.TraceLevel" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Verbose</property>
+  <property name="Logging.Event.Operational.Verbose.Publishers" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">File1</property>
+  <property name="Logging.Event.Operational.Info.Publishers" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">File1</property>
+  <property name="Logging.Event.Operational.Warning.Publishers" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Queue1 File1 EventLog1</property>
+  <property name="Logging.Event.Operational.Error.Publishers" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Queue1 File1 EventLog1</property>
+	
+  <property name="Logging.Publisher.File.File1.Directory" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\TILogs\OP</property>
+  <property name="Logging.Publisher.File.File1.Rotation" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">10000</property>
+
+  <property name="Logging.Publisher.File.File2.Directory" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\TILogs\REF</property>
+  <property name="Logging.Publisher.File.File2.Rotation" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">10000</property>
+			
+  <property name="Logging.Publisher.Queue.Queue1.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">.\Private$\TDPrimaryQueue</property>
+  <property name="Logging.Publisher.Queue.Queue1.Delivery" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Recoverable</property>
+  <property name="Logging.Publisher.Queue.Queue1.Priority" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Normal</property>
+	
+  <property name="Logging.Publisher.EventLog.EventLog1.Name" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Application</property>
+  <property name="Logging.Publisher.EventLog.EventLog1.Source" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">TransactionInjector</property>
+  <property name="Logging.Publisher.EventLog.EventLog1.Machine" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">.</property>
+
+  <property name="TransactionInjector.transactioninjector.Transaction" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">Journey Map Gazetteer Cycle EES TravelNews TravelineChecker</property>
+  <property name="TransactionInjector.transactioninjector.Offset" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">0</property> 
+
+  <!-- Transaction Types -->
+
+  <!-- Template Locations -->
+  <!-- Dummy DO NOT DELETE -->
+  <property name="TransactionInjector.TemplateFileDirectory" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\Templates</property>		
+
+  <!-- Cycle -->
+  <property name="TransactionInjector.Transaction.Cycle.Class" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">CycleRequestTransaction</property>		
+  <property name="TransactionInjector.Transaction.Cycle.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\CycleRequestData</property>	
+
+  <!-- Journey -->
+  <property name="TransactionInjector.Transaction.Journey.Class" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">JourneyRequestTransaction</property>		
+  <property name="TransactionInjector.Transaction.Journey.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\JourneyRequestData</property>	
+
+  <!-- Map -->
+  <property name="TransactionInjector.Transaction.Map.Class" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">MapTransaction</property> 
+  <property name="TransactionInjector.Transaction.Map.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\MapData</property> 
+
+  <!-- Gazetteer -->
+  <property name="TransactionInjector.Transaction.Gazetteer.Class" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">GazetteerTransaction</property> 
+  <property name="TransactionInjector.Transaction.Gazetteer.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\GazetteerData</property> 
+
+  <!-- TravelineChecker -->
+  <property name="TransactionInjector.Transaction.TravelineChecker.Class" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">TravelineCheckerTransaction</property> 
+  <property name="TransactionInjector.Transaction.TravelineChecker.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\TravelineCheckerData</property> 
+
+  <!-- EES -->
+  <property name="TransactionInjector.Transaction.EES.Class" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">EESRequestTransaction</property> 
+  <property name="TransactionInjector.Transaction.EES.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\EESRequestData</property>
+
+  <!-- TravelNews -->
+  <property name="TransactionInjector.Transaction.TravelNews.Class" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">TravelNewsTransaction</property> 
+  <property name="TransactionInjector.Transaction.TravelNews.Path" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">D:\TDPortal\Components\TransactionInjector\TravelNewsData</property>
+
+
+  <!-- End of Template Locations -->
+
+  <!-- Timeout Values --> 
+  <property name="TransactionInjector.AlertThreshold.SLA01.AmberThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">4000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA01.RedThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">7000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA02.AmberThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">4000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA02.RedThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">7000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA03.AmberThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">1000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA03.RedThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">4000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA04.AmberThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">1500</property>
+  <property name="TransactionInjector.AlertThreshold.SLA04.RedThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">5000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA05.AmberThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">1500</property>
+  <property name="TransactionInjector.AlertThreshold.SLA05.RedThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">5000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA06.AmberThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">1000</property>
+  <property name="TransactionInjector.AlertThreshold.SLA06.RedThreshold" GID="ReportDataProvider" AID="TransactionInjector" ThemeId="1">4000</property>
+  <!-- End of Timeout Values --> 
+
+<!-- End of Transaction Types -->
+
+</lookup>

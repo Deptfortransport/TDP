@@ -1,0 +1,68 @@
+<parkandride xmlns="http://www.transportdirect.info/ParkAndRide" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <ParkAndRideDataImport>
+    <Region>East Anglia</Region>
+    <Location>Cambridge</Location>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>No information received</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>East Midlands</Region>
+    <Location>Leicesture</Location>
+    <URL>http://www.leicestureshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>Within the region different services will be operating between December 24th and January 4th and these may not be reflected in journeys planned using Transport Direct. You are advised to check for alterations by calling Traveline on 0870 608 2 608</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>London</Region>
+    <Location>Cambridge</Location>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>No information received</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>West Midlands</Region>
+    <Location>Leicesture</Location>
+    <URL>http://www.leicestureshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>Across the region bus services will run at a reduced level during the holidays. There will be something close to Saturday working on December 24th, 28th, 29th, 30th and 31st December and Sunday services on 2nd and 3rd January 2005. There will be no bus services on December 25th and special services will run on 26th and 27th December and on 1st January 2005. Because it is possible that not all the alterations will be reflected in journeys that you plan using Transport Direct, you are advised to call Traveline on 0870 608 2608 for up to the minute details. Buses will be back to normal on Tuesday January 4th 2005.</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North East &amp; Cumbria</Region>
+    <Location>Cambridge</Location>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>Across the region bus services will run at a reduced level during the holidays. Journeys that you plan using Transport Direct should reflect the changes to services in Co. Durham, Darlington, Northumberland, Teesside and Tyne &amp; Wear from early December. Until then, journeys offered may not reflect the exact variation in services. For services in Cumbria and North Yorkshire over the holiday period you should call Traveline on 0870 608 2608 to check details. </Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>North West</Region>
+    <Location>Leicesture</Location>
+    <URL>http://www.leicestureshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>No information received</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Scotland</Region>
+    <Location>Cambridge</Location>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>Across the region services will be altered between December 24th and January 4th and not all of the changes will be reflected in journeys that you plan using Transport Direct. You are advised to check for special notices regarding alterations on the traveline Scotland website www.travelinescotland.com</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South East</Region>
+    <Location>Leicesture</Location>
+    <URL>http://www.leicestureshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>Transport Direct is being updated weekly to show holiday period details as they become available for individual operators and their services.  Until detailed information is available Transport Direct will show the following: 24 Dec, all services finish before 2000; 25/26 Dec, no service; 27/28 Dec, Sunday service; 29/30 Dec, Saturday service; 31 Dec, Saturday service finishing before 2000 and 1/2/3 Jan, Sunday service. We expect to have almost all holiday details in Transport Direct by 11 December, but a few late entries may not be available until 18 December.  All journey plans for the holiday period should be checked after 18 December.</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>South West &amp; Hampshire</Region>
+    <Location>Cambridge</Location>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>No information received</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Wales</Region>
+    <Location>Leicesture</Location>
+    <URL>http://www.leicestureshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>No information received</Comments>
+  </ParkAndRideDataImport>
+  <ParkAndRideDataImport>
+    <Region>Yorkshire</Region>
+    <Location>Cambridge</Location>
+    <URL>http://www.cambridgeshire.gov.uk/transport/around/park_ride/</URL>
+    <Comments>Across the region services will be altered between December 24th and January 4th and not all of the changes will be reflected in journeys that you plan using Transport Direct. You are advised to check for special notices regarding alterations on the www.wymetro.com for services in West Yorkshire or phone 0870 608 2 608 for all services in Yorkshire, including West Yorkshire.</Comments>
+  </ParkAndRideDataImport>
+</parkandride>

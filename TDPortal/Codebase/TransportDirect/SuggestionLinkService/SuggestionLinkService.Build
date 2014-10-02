@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="SuggestionLinkService" default="build" basedir="./../../">
+
+	<!-- Project properties. These should not be altered -->
+	<property name="project.dll.name" value="td.userportal.suggestionlinkservice"/>
+	<property name="project.src.dir" value="./TransportDirect/SuggestionLinkService" />
+	<property name="project.build.dir" value="${project.src.dir}/bin/Debug"/>
+
+	<!-- Load solution properties from the file 'build.properties'. These are overriddable -->
+	<!--foreach item="Line" in="build.properties" delim="=" property="name,value" trim="Both">
+		<property name="${name}" value="${value}" />
+	</foreach-->
+
+    <!-- Delete the dll and pdb from the project build directory -->
+    <target name="clean" description="removes the build directory">
+        <delete file="${project.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+    	<delete file="${project.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+        <delete file="${solution.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+    	<delete file="${solution.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+	</target>
+
+	<!-- Create the project and solution build directories if necessary -->
+	<target name="init" depends="clean">
+		<mkdir dir="${solution.build.dir}" />
+		<mkdir dir="${project.build.dir}"/>
+	</target>
+
+	<!-- Compile the project to its build directory -->
+    <target name="build" depends="init" description="Compiles the project">
+		<echo message="Building ${project.dll.name}.dll. Debug=${build.debug}"/>
+		<csc target="library" output="${project.build.dir}/${project.dll.name}.dll" debug="${build.debug}" define="TRACE" doc="${solution.doc.working.dir}/${project.dll.name}.xml">
+			<nowarn>
+				<warning number="${suppress.warning.list}" />
+			</nowarn>
+			<sources basedir="${project.src.dir}">
+				<include name="**/*.cs" />
+				<exclude name="**/Test*.cs" unless="${build.debug}"/>
+			</sources>
+			<references basedir="${solution.build.dir}">
+				<include name="*.dll"/>
+				<include name="${solution.externals.dir}/*.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_1.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_2.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_3.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_4.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_5.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_6.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_7.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_8.dll"/>
+			</references>
+		</csc>
+	</target>
+
+	<!-- Build the project and copy its deliverables to the solution build directory -->
+	<target name="build_to_solution" depends="build">
+		<echo message="Copying deliverables from ${project.build.dir} to ${solution.build.dir}"/>
+		<copy todir="${solution.build.dir}" file="${project.build.dir}/${project.dll.name}.dll" />
+    </target>
+
+</project>

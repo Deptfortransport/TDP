@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SpecialContentTestData>
+	<SpecialContent>
+		<specialcontent 
+			Posting="LatestNews" 
+			Placeholder ="TestPlaceholder" 
+			Culture = "en-GB"
+			Text = "This is a test LatestNews in english" />
+		<specialcontent 
+			Posting="LatestNews" 
+			Placeholder ="TestPlaceholder" 
+			Culture = "cy-GB"
+			Text = "This is a test LatestNews in welsh" /> 
+		<specialcontent 
+			Posting="SpecialNoticeBoard" 
+			Placeholder ="TestPlaceholder" 
+			Culture = "en-GB"
+			Text = "This is a test SpecialNotice in english" /> 
+		<specialcontent 
+			Posting="SpecialNoticeBoard" 
+			Placeholder ="TestPlaceholder" 
+			Culture = "cy-GB"
+			Text = "This is a test SpecialNotice in english" /> 
+	</SpecialContent>
+</SpecialContentTestData>

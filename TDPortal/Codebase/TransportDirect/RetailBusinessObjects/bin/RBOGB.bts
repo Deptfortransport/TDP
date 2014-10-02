@@ -1,0 +1,17 @@
+TESTNAME = {"RESTRICTIONS - GB"}
+TESTID = {"RBOGBR3"}
+
+INHDR = {
+"STDIN   REGB        0101    I00767O00003 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000                                                  
+"
+}
+
+OUTHDR = {
+"STDOUT                 0000300010000000000000000000000000000000000000000000000000000                                                  "
+}
+
+INBFR = {"1444    9813   200112202001122720011227OVGF00032     72RVZ   SY0002OC55643EUSGLC10301531GLC1531B     IRG01162GLCEUS15362148EUS2148B     IBOE                    00094N                                        00345N                                        00400N                                        00446N                                        00452NPBOEBDMEBANERDGE                        00481NSHFEWFJELEIE                            00499N                                                                                                                                                                                                                                                                                                          00032                                     
+"}
+
+OUTBFR = {"   "}
+

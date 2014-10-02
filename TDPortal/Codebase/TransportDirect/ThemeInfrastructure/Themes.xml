@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+	<theme name="TransportDirect" domain="localhost">1</theme>
+	<theme name="TransportDirect" domain="sitest.transportdirect">1</theme>
+	<theme name="TransportDirect" domain="test.transportdirect">1</theme>
+	<theme name="TransportDirect" domain="www.transportdirect">1</theme>
+	<theme name="TransportDirect" domain="transportdirect">1</theme>
+
+	<theme name="VisitBritain" domain="visitbritain">2</theme>
+	<theme name="VisitBritain" domain="visitbritain.sitest.transportdirect">2</theme>
+	<theme name="VisitBritain" domain="visitbritain.test.transportdirect">2</theme>
+	<theme name="VisitBritain" domain="visitbritain.transportdirect">2</theme>
+
+	<theme name="BBC" domain="bbc">3</theme>
+	<theme name="BBC" domain="bbc.sitest.transportdirect">3</theme>
+	<theme name="BBC" domain="bbc.test.transportdirect">3</theme>
+	<theme name="BBC" domain="bbc.transportdirect">3</theme>
+
+	<theme name="DirectGov" domain="directgov">5</theme>
+	<theme name="DirectGov" domain="directgov.sitest.transportdirect">5</theme>
+	<theme name="DirectGov" domain="directgov.test.transportdirect">5</theme>
+	<theme name="DirectGov" domain="directgov.transportdirect">5</theme>
+
+	<theme name="version" domain="version">1</theme>
+</lookup>

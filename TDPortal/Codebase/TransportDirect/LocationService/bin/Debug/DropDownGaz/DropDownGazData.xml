@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DropDownGazTestData>
+  <DropDownSyncStatus>
+    <DropDownSyncStatus DropDownType="Rail" SequenceNumCurrent="5000" SequenceNumNew="5000" ServerSynchFileCreatedCount="0" ServerSynchFileUsingCount="0" UpdateLock="0" UpdateStartedDateTime="" UpdateCompletedDateTime="" />
+  </DropDownSyncStatus>
+  <DropDownStop>
+    <DropDownStop DropDownType="Rail" Name="Leicester"  DisplayName="" Naptans="9100LEI" ShortCode="LEI" IsGroup="0" IsAlias="0" />
+    <DropDownStop DropDownType="Rail" Name="London Paddington" DisplayName="London Paddington" Naptans="9100PADTON" ShortCode="PAD" IsGroup="0" IsAlias="1" />
+    <DropDownStop DropDownType="Rail" Name="Paddington" DisplayName="" Naptans="9100PADTON" ShortCode="PAD" IsGroup="0" IsAlias="0" />
+    <DropDownStop DropDownType="Rail" Name="London" DisplayName="London (All)" Naptans="9100PADTON,9100RICHMND" ShortCode="LEI" IsGroup="1" IsAlias="0" />
+    <DropDownStop DropDownType="Rail" Name="Richmond (London)" DisplayName="" Naptans="9100RICHMND" ShortCode="LEI" IsGroup="0" IsAlias="0" />
+  </DropDownStop>
+  <StopAlias>
+    <StopAlias StopNaptan="9100LESTER" StopType="R" AliasName="Lester" />
+  </StopAlias>
+  <NPTG_RailExchanges>
+    <NPTG_RailExchanges ExchangePoint_ID='"R0001117"' Tiploc_Code='"HAYESAH"' 	CRS_Code='"HAY"' Station_Name='"Hayes &amp; Harlington Rail Station"' 	Easting="509714" Northing="179422" Date_of_Issue='"25/05/2010"' Issue_Version='"386"' NaPTAN='"9100HAYESAH"' Group_ID='' />
+	<NPTG_RailExchanges ExchangePoint_ID='"R0001389"' Tiploc_Code='"LESTER"' 	CRS_Code='"LEI"' Station_Name='"Leicester Rail Station"' 			Easting="459300" Northing="304100" Date_of_Issue='"25/05/2010"' Issue_Version='"386"' NaPTAN='"9100LESTER"' Group_ID='"G92"' />
+	<NPTG_RailExchanges ExchangePoint_ID='"R0001474"' Tiploc_Code='"BLFR"' 		CRS_Code='"BFR"' Station_Name='"London Blackfriars Rail Station"' 	Easting="531714" Northing="180914" Date_of_Issue='"25/05/2010"' Issue_Version='"386"' NaPTAN='"9100BLFR"' Group_ID='"G1"' />
+	<NPTG_RailExchanges ExchangePoint_ID='"R0001595"' Tiploc_Code='"GTSHDMC"' 	CRS_Code='"MCE"' Station_Name='"Metrocentre Rail Station"' 			Easting="421510" Northing="562730" Date_of_Issue='"25/05/2010"' Issue_Version='"386"' NaPTAN='"9100GTSHDMC"' Group_ID='' />
+	<NPTG_RailExchanges ExchangePoint_ID='"R0002033"' Tiploc_Code='"SNDWDUD"' 	CRS_Code='"SAD"' Station_Name='"Sandwell &amp; Dudley Rail Station"' 	Easting="399310" Northing="290085" Date_of_Issue='"25/05/2010"' Issue_Version='"386"' NaPTAN='"9100SNDWDUD"' Group_ID='' />
+  </NPTG_RailExchanges>
+  <NPTG_ExchangeGroups>
+    <NPTG_ExchangeGroups Group_ID='"G1"' 	Name='"London"' 	Easting="530120" Northing="180570" Date_of_Last_Change='"05/02/2007 08:41:53"' Date_of_Issue='"25/05/2010"' Issue_Version='"386"'  />
+	<NPTG_ExchangeGroups Group_ID='"G92"' 	Name='"Leicester"' 	Easting="459300" Northing="304100" Date_of_Last_Change='"05/02/2007 08:41:53"' Date_of_Issue='"25/05/2010"' Issue_Version='"386"'  />
+  </NPTG_ExchangeGroups>
+</DropDownGazTestData>

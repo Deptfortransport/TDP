@@ -1,0 +1,10 @@
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\td.reportdataprovider.cjpcustomevents.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\ReportDataProvider\CJPCustomEvents\obj\Release\td.reportdataprovider.cjpcustomevents.dll

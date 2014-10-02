@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TravelNewsTransaction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Category>SLA06</Category>
+  <SubSystem>TRAVELNEWS</SubSystem>
+  <Frequency>5</Frequency>
+  <Offset>0</Offset>
+  <ActivePoll>false</ActivePoll>
+  <ServiceLevelAgreement>true</ServiceLevelAgreement>
+  <Region>North West</Region>
+  <Transport>All</Transport>
+  <Delays>Major</Delays>
+  <Type>All</Type>
+  <Day>0</Day> <!-- Day of week to search for news for (0 = today) -->
+</TravelNewsTransaction>

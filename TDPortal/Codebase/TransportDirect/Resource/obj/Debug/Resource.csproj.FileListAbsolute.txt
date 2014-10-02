@@ -1,0 +1,4 @@
+D:\TDPortal\Codebase\TransportDirect\Resource\bin\Debug\td.userportal.resource.dll
+D:\TDPortal\Codebase\TransportDirect\Resource\bin\Debug\td.userportal.resource.pdb
+D:\TDPortal\Codebase\TransportDirect\Resource\obj\Debug\td.userportal.resource.dll
+D:\TDPortal\Codebase\TransportDirect\Resource\obj\Debug\td.userportal.resource.pdb

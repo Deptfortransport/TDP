@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EESRequestTransaction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Category>SLA13</Category>
+  <SubSystem>EES</SubSystem>
+  <Frequency>15</Frequency>
+  <Offset>5</Offset>
+  <ActivePoll>false</ActivePoll>
+  <ServiceLevelAgreement>true</ServiceLevelAgreement>
+  <Method>DepartureBoard</Method>
+  <SearchType>CRS</SearchType>
+  <Origin>VIC</Origin>
+  <Destination>GTW</Destination>
+  <OriginAlternative>VIC</OriginAlternative>
+  <DestinationAlternative>CLJ</DestinationAlternative>
+  <ServiceNumber></ServiceNumber>  
+  <ShowDepartures>true</ShowDepartures>
+  <ShowCallingPoints>false</ShowCallingPoints>
+  <Day>Now</Day>
+</EESRequestTransaction>

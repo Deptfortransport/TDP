@@ -1,0 +1,13 @@
+<JourneyResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<messages>
+<Message xsi:type="JourneyWebMessage">
+<code>0</code>
+<description>No results found</description>
+<subClass>1</subClass>
+</Message>
+<Message>
+<code>18</code>
+<description>Insufficient publicJourneys were returned from the previous requests, see the previous error messages for details</description>
+</Message>
+</messages>
+</JourneyResult>

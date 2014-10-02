@@ -1,0 +1,6 @@
+OperatorCode,RouteOriginName,RouteOriginNaPTAN,RouteDestinationName,RouteDestinationNaPTAN,TicketType,Fare
+NX,Bedford,900052444,Durham,900070022,FunFare,25000
+NX,Bedford,900052444,Durham,900070022,YoungPersons,18000
+NX,London,900057366,Edinburgh,900066154,FunFare,250000
+SCL,Dundee,900090097,Dumfries,900067407,SCLFunFare,120000
+SCL,Edinburgh,900066154,Dundee,900090097,SCLFunFare,350000

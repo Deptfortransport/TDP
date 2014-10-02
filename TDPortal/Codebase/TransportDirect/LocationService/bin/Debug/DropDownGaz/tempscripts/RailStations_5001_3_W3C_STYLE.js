@@ -1,0 +1,2 @@
+// RailStations_5001_3 file generated at 6/9/2012 15:25.36
+var ddData_3 = [["Richmond (London)","","LEI","9100RICHMND",0]]; if(typeof registerLocationData == 'function'){ registerLocationData('Rail', ddData_3); }

@@ -1,0 +1,16 @@
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.propertyservice.filepropertyprovider.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.logging.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.propertyservice.properties.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\td.common.servicediscovery.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\bin\Debug\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\obj\Debug\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\obj\Debug\td.common.propertyservice.filepropertyprovider.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\FilePropertyProvider\obj\Debug\FilePropertyProvider.csprojResolveAssemblyReference.cache

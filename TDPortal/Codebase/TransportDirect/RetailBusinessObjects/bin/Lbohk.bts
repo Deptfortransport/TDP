@@ -1,0 +1,26 @@
+TESTNAME = {"LBO - Housekeeping"}
+
+INHDR = {
+"STDIN   "
+"LU"
+"HK"
+"        "
+"0100"
+"    "
+"I00000"
+"O00050"
+}
+
+OUTHDR = {
+"STDOUT  "
+"INSTANCE"
+"STERR"
+"C"
+"S"
+"L"
+}
+
+INBFR = {""}
+
+OUTBFR = {"                                                                                                                                                          "}
+

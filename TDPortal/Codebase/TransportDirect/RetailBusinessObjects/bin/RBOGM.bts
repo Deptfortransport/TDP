@@ -1,0 +1,17 @@
+TESTNAME = {"RESTRICTIONS - GM"}
+TESTID = {"RBOGM08"}
+
+INHDR = {
+"STDIN   REGM        0101    I01356O00076 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000                                                  
+"
+}
+
+OUTHDR = {
+"STDOUT                 0127900010000000000000000000000000000000000000000000000000000                                                  "
+}
+
+INBFR = {"0012SHVAMRBDMHWYRDGPBOWFJWHDGCRWOSHHYSRA                        000400000YSHVE                                    00032NAMREBDMEHWYERDGEPBOE                    00265Y                                        00305YWFJEWHDEBDMERDGEGCREWOSEHHYEPBOESRAE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          NKCMEUSMYBSTPPADLBGVICWATKGXLSTZMGBFRCSTCHXWAEVXHFST         00                                                                            "}
+
+OUTBFR = {"                                                   "
+}
+

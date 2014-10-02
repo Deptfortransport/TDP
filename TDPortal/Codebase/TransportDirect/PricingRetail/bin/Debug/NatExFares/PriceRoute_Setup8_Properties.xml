@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<MinDelay>0</MinDelay><!-- Minimum server delay in seconds -->
+	<MaxDelay>0</MaxDelay><!-- Maximum server delay in seconds -->
+	<NumberOfJourneyResults>2</NumberOfJourneyResults><!-- Number of journey results that should be read.  Note: the number of journey results must match the number of filenames provided.-->
+	<!-- The order of journeys is important. All outward results for a result should come before the return results-->
+	<JourneyResultPath>NatExFares\CoachResult_NoResults.xml</JourneyResultPath><!-- Path to the Xml file that contains ONE journey result -->
+	<JourneyResultPath>NatExFares\CoachResult3_ret.xml</JourneyResultPath><!-- Path to the Xml file that contains ONE journey result -->
+</root>

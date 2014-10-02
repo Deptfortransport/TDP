@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GazetteerTransaction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Category>SLA05</Category>
+  <SubSystem>MAPPING</SubSystem>
+  <Frequency>10</Frequency>
+  <Offset>5</Offset>
+  <ActivePoll>false</ActivePoll>
+  <ServiceLevelAgreement>true</ServiceLevelAgreement>
+  <SearchType>AddressPostCode</SearchType>
+  <SearchText>Market Street, Lancaster</SearchText>
+  <Fuzzy>false</Fuzzy>
+  <Picklist>false</Picklist>
+  <Drilldown>false</Drilldown>
+</GazetteerTransaction>

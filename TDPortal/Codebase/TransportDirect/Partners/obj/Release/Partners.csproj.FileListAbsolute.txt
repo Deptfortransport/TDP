@@ -1,0 +1,14 @@
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.userportal.partners.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.common.databaseinfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.common.propertyservice.databasepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.userportal.dataservices.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\td.common.resourcemanager.dll
+D:\TDPortal\Codebase\TransportDirect\Partners\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\Partners\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\Partners\obj\Release\td.userportal.partners.dll

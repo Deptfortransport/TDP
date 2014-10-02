@@ -1,0 +1,12 @@
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\td.testpropertiesexceptions.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\nunit.framework.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\td.common.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\td.common.propertyservice.databasepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\td.common.propertyservice.filepropertyprovider.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\td.common.propertyservice.properties.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\td.common.servicediscovery.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\td.common.logging.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\TD.ThemeInfrastructure.dll
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\bin\Release\TD.ThemeInfrastructure.pdb
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\obj\Release\ResolveAssemblyReference.cache
+D:\TDPortal\Codebase\TransportDirect\PropertiesService\TestPropertiesExceptions\obj\Release\td.testpropertiesexceptions.dll

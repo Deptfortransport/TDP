@@ -1,0 +1,160 @@
+CarParkRef,CarParkName,URL,MinimumCost,Note,Easting,Northing
+929696,Park and Ride,http://www.stirling.gov.uk/index/services_homepage/roads/rt-park_and_ride.htm,,Operates Saturdays 10:00 to 18:00,281162,693357
+929704,Falkirk West (Carmuirs) Park and Ride,http://www.falkirk.gov.uk/DevServices/TransportPlanning/Businfo/parkandride.htm,0,Operates Monday to Saturday 07:30 to 18:00,285371,680769
+929705,Car Park,http://www.ferrytoll.org/,0,The car park is open from 05:10 to 00:15 on Mondays to Saturdays; 05:10 to 00:30 on Saturdays; 05:10 to 00:15 on Sundays,312976,683658
+929746,Perth Park and Ride,http://www.perthshire.com/residents/Transport+and+Roads/Public+transport/Park+and+ride/Park+and+Ride.htm,0,The Park & Ride service operates between 07:00 and 19:14 Monday to Saturday,308281,722767
+929747,Scone Park and Ride,http://www.perthshire.com/residents/Transport+and+Roads/Public+transport/Park+and+ride/Park+and+Ride.htm,0,The park and ride service operates Monday to Friday 06:36 to 19:58; 07:16 to 19:58 on Saturdays; 09:56 to 19:58 on Sundays,314315,726744
+929795,Ferrytoll Park and Ride,http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html,0,The car park is open from 05:10 to 00:15 on Mondays to Saturdays; 05:10 to 00:30 on Saturdays; 05:10 to 00:15 on Sundays,312459,681972
+929796,Newcraighall Park and Ride,http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html,50,Up to 24 hours parking,331762,671801
+929797,Ingliston Park and Ride,http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html,0,,315008,673384
+929798,Hermiston Park and Ride,http://www.edinburgh.gov.uk/transportedinburgh/roads/Rides/ride.html,0,,318590,670288
+929733,Bridge of Don Park and Ride,http://www.aberdeencity.gov.uk/acc_data/service/park_&_ride_-_infrastructure.asp,0,,394716,810346
+929734,Kingswells Park and Ride,http://www.aberdeencity.gov.uk/acc_data/service/park_&_ride_-_infrastructure.asp,0,,386638,806541
+929899,Milton Keynes Coachway,http://www.mkweb.co.uk/transport/documents/PR_Leaflet_18.01.04.pdf,,The Park and Ride car park will be closed and the gate at the entrance locked at 22:00 every evening and unlocked at 05:00 every morning (including Sundays and Bank Holidays),489203,240543
+929700,Basingstoke Car Park,http://www.basingstoke.gov.uk/services/transport/publictransport/CentreShuttle.htm,,,462047,152580
+929707,Hop Oast Park and Ride,http://www.horsham.gov.uk/your_area/your_area_1931.asp,150,The daily charge is for each car and the current charges are £1.50 per car on weekdays and £1 per car on Saturdays; Open from 06:30 to 22:00 Mondays to Saturdays,516187,128743
+929708,Horsted Park,http://www.medway.gov.uk/index/environment/publictransport/buses/20119.htm,0,Operates Saturdays 09:00 to 18:00,574734,164562
+929709,Loddon Bridge Park and Ride,http://www.reading-travelinfo.co.uk/UTMC29B.NET/GeneralPages/Category.aspx?cat=9,0,Car park is open from 07:00 to 19:00 Monday to Friday; 08:00 to 19:00 on Saturdays,476665,171450
+929710,Madejski Stadium Park and Ride,http://www.reading-travelinfo.co.uk/UTMC29B.NET/GeneralPages/Category.aspx?cat=9,0,The car park is supervised from 07:00 to 19:00,470894,169686
+929711,Home Park Car Park,http://www.windsor.gov.uk/transport/park_and_ride.htm,50,Up to one hour 50p; up to 2 hours £1; up to 4 hours £1.50; up to 5 hours and over £2,496891,177320
+929712,Legoland Shuttle Park and Ride,http://www.windsor.gov.uk/transport/park_and_ride.htm,0,The service operates 7 days a week from 10:15 to 18:45; this extends during the Park’s summer peak season (July and August) to run up until 20:15,493105,173314
+929731,Barfield Park and Ride,http://www.winchester.gov.uk/ServiceL.asp?id=310,200,All day parking; car park opening times: Monday to Saturday 07:00 to 19:00; Car Parks are not open on Sundays or Public Holidays,448690,128570
+929732,St Catherines Park and Ride,http://www.winchester.gov.uk/ServiceL.asp?id=310,200,All day parking; car park opening times: Monday to Saturday 07:00 to 19:00; Car Parks are not open on Sundays or Public Holidays,448801,128223
+929754,Wincheap Park And Pide,http://www.canterbury.gov.uk/cgi-bin/buildpage.pl?mysql=1566,200,All day parking; service operates Monday to Saturday 07:00 to 19:30,613628,156918
+929755,New Dover Road Car Park,http://www.canterbury.gov.uk/cgi-bin/buildpage.pl?mysql=1566,200,All day parking; service operates Monday to Saturday 07:00 to 19:30 and Sundays 10:00 to 18:00,616546,156029
+929756,Sturry Road,http://www.canterbury.gov.uk/cgi-bin/buildpage.pl?mysql=1566,200,All day parking; service operates Monday to Saturday 07:00 to 19:30,615329,158394
+929783,Arlington Car Park,http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm,0,Service operates: 07:30 to 19:30 Monday to Saturday,498972,148211
+929784,Spectrum Car Park,http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm,0,Service operates: 07:27 to 23:10 Monday to Friday,500613,150886
+929785,Ladymead Car Park,http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm,0,Service operates: 08:30 to 18:00 Saturdays only,499604,150867
+929786,Car Park,http://www.guildford.gov.uk/GuildfordWeb/Environment/Transport/ParkRide.htm,0,,498466,150458
+929803,London Road Park and Ride,http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379,0,Service operates: 07:00 to 18:30 Monday to Friday; 08:00 to 18:30 Saturdays,573662,157101
+929804,Sittingbourne Road Park and Ride,http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379,0,Service operates: 07:00 to 18:32 Monday to Friday; 08:00 to 18:32 Saturdays,576746,156026
+929805,Willington Street Park and Ride,http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379,0,Service operates: 07:00 to 18:33 Monday to Friday; 08:00 to 18:33 Saturdays,578559,155236
+929806,Combe Quarry Park and Ride,http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=379,0,Service operates: 07:00 to 18:29 Monday to Friday; 08:00 to 18:29 Saturdays,576319,154132
+929822,Pear Tree Car Park,http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ,60,Maximum stay 24 hours (unless arranged),449491,210711
+929823,Redbridge Park and Ride,http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ,60,Maximum stay 24 hours (unless arranged),452007,203646
+929824,Seacourt Car Park (Park and Ride),http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ,60,Maximum stay 24 hours (unless arranged),449157,206344
+929825,Thornhill Car Park (Park And Ride),http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ,0,Maximum stay 72 hours,456615,207365
+929826,Water Eaton Park and Ride,http://www.oxfordshire.gov.uk/wps/portal/publicsite/kcxml/04_Sj9SPykssy0xPLMnMz0vM0Y_QjzKL94039HcCSZnFO8WHOepHogtZIoR8PfJzU4ESkeZAAWNzX_2onNT0xORK_WB9b_0A_YLc0IjyfEdFAKdrMCU!/delta/base64xml/L0lJSk03dWlDU1lBIS9JTGpBQUV5QUJFUkVSRUlrLzRGR2dkWW5LSjBGUm9YZnJ,0,Maximum stay 72 hours,450203,211632
+929689,Car Park,http://www.cornwall.gov.uk,,,182859,44513
+929695,Barnstaple Park and Ride,http://www.devon.gov.uk/index/transport/parking/park_and_ride.htm,0,Service operates: 07:00 to 18:40 Monday to Saturday,256315,131859
+929703,Dorchester Park and Ride (Football Stadium),http://www.dorsetforyou.com/index.jsp?articleid=1795,100,All day parking; service operates on Wednesdays 08:00 to 17:45,368663,89153
+929715,The Copse Park and Ride,http://www.swindon.gov.uk/roadstransport/roadsandtransport-carparking/roadsandtransport-parkandride.htm,0,The car park is open from 06:45 to 19:15 on Mondays to Saturdays,415451,188611
+929716,Wroughton Park and Ride,http://www.swindon.gov.uk/roadstransport/roadsandtransport-carparking/roadsandtransport-parkandride.htm,0,The car park is open from 06:45 to 19:15 on Mondays to Saturdays,415127,182320
+929717,St Oswalds Park Park and Ride,http://www.gloucestershire.gov.uk/index.cfm?articleID=1888,0,Service times: 06:30 to 18:56 Monday to Friday; 07:30 to 18:38 on Saturdays,382924,219377
+929718,Waterwells Park and Ride,http://www.gloucestershire.gov.uk/index.cfm?articleID=1888,0,"Operates: 06:45 to Monday - Friday 07:20 to 19:00, Saturday 08:00 to 17:50",380984,213132
+929737,Arle Court Park and Ride,http://www.cheltenham.gov.uk/libraries/templates/ourservice.asp?URN=2886&FolderID=0,0,"Operates: Monday - Friday 07:20 to 19:00, Saturday 08:00 to 17:50",391077,221639
+929738,Stonehaven Park and Ride,http://www.aberdeenshire.gov.uk/publictransport/parkandride/,0,,386435,786168
+929744,Coypool Park and Ride,http://www.plymouth.gov.uk/homepage/transportandstreets/publictransport/parkandride.htm,,,252106,56924
+929745,Milehouse Park and Ride,http://www.plymouth.gov.uk/homepage/transportandstreets/publictransport/parkandride.htm,,,247009,56533
+929748,A4 Bath Road Park and Ride,http://www.bristol-city.gov.uk/parkandride,0,Car park closes: Monday to Friday (except Thursday) at 19:45; Thursday at 21:00; Saturday at 19:45,362635,170033
+929749,Long Ashton Park and Ride,http://www.bristol-city.gov.uk/parkandride,0,Car park closes: Monday to Friday (except Thursday) at 19:45; Thursday at 21:00; Saturday at 18:45,355961,170929
+929750,A4 Portway Park and Ride,http://www.bristol-city.gov.uk/parkandride,0,Car park closes: Monday to Friday at 20:00 and Saturday at 19:30,352355,176970
+929757,Beehive Park and Ride,http://www.salisbury.gov.uk/transport/park-and-ride/,200,Site opening and closing: Monday–Friday 06:45 to 20:00; Saturday 07:15 to 19:30; Sundays and Bank holidays: closed,414389,133346
+929758,Britford Park and Ride,http://www.salisbury.gov.uk/transport/park-and-ride/,200,Site opening and closing: Monday–Friday 06:45 to 20:00; Saturday 07:15 to 19:30; Sundays and Bank holidays: closed,415213,128157
+929759,Wilton Park and Ride,http://www.salisbury.gov.uk/transport/park-and-ride/,200,Site opening and closing: Monday–Friday 06:45 to 20:00; Saturday 07:15 to 19:30; Sundays and Bank holidays: closed,410683,132240
+929768,Lansdown Park and Ride,http://www.bathnes.gov.uk/BathNES/transportandroads/Parking/parkandride/default.htm,0,,373224,168074
+929769,Newbridge Park and Ride,http://www.bathnes.gov.uk/BathNES/transportandroads/Parking/parkandride/default.htm,0,,371836,165742
+929770,Odd Down Park and Ride,http://www.bathnes.gov.uk/BathNES/transportandroads/Parking/parkandride/default.htm,0,,373366,161601
+929799,Honiton Road Park and Ride,http://www.exeter.gov.uk/index.aspx?articleid=1510,0,,296275,92655
+929800,Matford Park and Ride,http://www.exeter.gov.uk/index.aspx?articleid=1510,0,,292747,89508
+929801,Sowton Park and Ride,http://www.exeter.gov.uk/index.aspx?articleid=1510,0,,296299,91726
+929802,Digby Park and Ride,http://www.exeter.gov.uk/index.aspx?articleid=1510,0,,295868,91430
+929735,Racecourse Park and Ride,http://www.cheltenham.gov.uk/libraries/templates/ourservice.asp?URN=2886&FolderID=0,0,"Operates: Mon - Fri 07:30 to 18:15, Sat 08:30 to 18:15",395406,225343
+929736,Ellon Park and Ride,http://www.aberdeenshire.gov.uk/publictransport/parkandride/,0,Service times: 06:08 to 23:00 Monday to Friday; 06:13 to 23:00 Saturdays; 09:10 to 23:00 Sundays,397592,830769
+929693,Aberystwyth Park and Ride,http://www.ceredigion.gov.uk/index.cfm?articleid=1133,0,"Monday - Saturday, 08.00 - 18:00",258548,281409
+929713,Landore Park and Ride,http://www.swansea.gov.uk/parkandride,150,All day parking; car park open between 06:45 and 19:30 on Mondays to Saturdays,266164,195154
+929714,Fabian Way Park and Ride,http://www.swansea.gov.uk/parkandride,150,All day parking; car park open between 06:45 and 19:30 on Mondays to Saturdays,267777,193070
+929739,County Hall Car Park,"http://www.cardiff.gov.uk/content.asp?nav=2870,4048,4195&id=1237&Positioning_Article_ID=&Language=&parent_directory_id=2865&d1p1=1",300,Service operates: Saturdays 09:00 to 18:00 and Sundays 10:00 to 17:30,319269,175063
+929740,Crown Way Car Park,"http://www.cardiff.gov.uk/content.asp?nav=2870,4048,4195&id=1237&Positioning_Article_ID=&Language=&parent_directory_id=2865&d1p1=1",300,Service operates: Saturdays 09:00 to 18:00,317449,178351
+929741,Leckwith Stadium Park and Ride,"http://www.cardiff.gov.uk/content.asp?nav=2870,4048,4195&id=1237&Positioning_Article_ID=&Language=&parent_directory_id=2865&d1p1=1",0,Service operates: November to early January only,316330,175685
+929694,Worcester North Park and Ride,http://worcestershire.whub.org.uk/home/wccindex/wcc-transport/wcc-transport-project-express/wcc-transport-project-express-routes.htm,,,385209,257749
+929697,Stadium Close Park and Ride,http://www.wyreforestdc.gov.uk/wfdc_html/clacs/parkride.htm,110,Service operates 08:00 to 19:00,383625,275996
+929698,Monkspath Car Park,http://www.solihull.gov.uk/section.asp?catid=2001&docid=562&pageNumber=2,230,Up to 6 hours or £2.60 for greater than 6 hours; Sundays £1,414291,276155
+929701,Solihull College Weekend Park and Ride,http://www.solihull.gov.uk/section.asp?catid=2001#solcol,0,Saturdays 08:00 to 19:00; Sundays 10:00 to 18:00; Public Holidays 10:00 to 18:00,414159,279146
+929706,City Centre Park and Ride,http://www.stoke.gov.uk/ccm/navigation/transport-and-streets-/park-and-ride/,200,,388838,345052
+929742,Park and Ride South,http://www.centro.org.uk/wwwroot/Bus/parkride.asp,0,,432208,277323
+929743,Park and Ride North,http://www.centro.org.uk/wwwroot/Bus/parkride.asp,0,,435152,281160
+929760,Black Lake Park and Ride,http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES,0,,399517,292400
+929761,Priestfield (Wolverhampton) Park and Ride,http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES,0,,393406,297141
+929762,The Hawthorns Park and Ride,http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES,0,,402382,289694
+929763,Wednesbury Parkway Park and Ride,http://www.centro.org.uk/wwwroot/AboutCentro/usrACMetroParkRide.asp?hdWhichMenu=FACILITIES,0,,397975,294586
+929777,Oxon Park and Ride,http://www.shropshire.gov.uk/traveltransport.nsf/open/DA9404E1142436FD802570900045A8BF,0,"Open 07:30 to 18:40, Monday to Friday, 08:00 to 18:40 Saturdays",345705,313363
+929778,Meole Brace Park and Ride,http://www.shropshire.gov.uk/traveltransport.nsf/open/DA9404E1142436FD802570900045A8BF,0,"Open 07:30 to 18:40, Monday to Friday, 08:00 to 18:40 Saturdays",348971,309909
+929779,Car Park,http://www.shropshire.gov.uk/traveltransport.nsf/open/DA9404E1142436FD802570900045A8BF,0,"Open 07:30 to 18:40, Monday to Friday, 08:00 to 18:40 Saturdays",351282,315839
+929690,Lakeside Park and Ride,http://www.doncaster.gov.uk/Living_in_Doncaster/Neighbourhoods/Transport_Strategy/Lakeside_Park_and_Ride.asp,0,,459709,402566
+929699,Park and Ride,http://www.scarborough.gov.uk/content/parking_services/car_parking_in_whitby.html,,,340705,370297
+929764,Halfway Park and Ride,http://www.sypte.co.uk/parkride,360,"Open: 06:30 to 19:30, Mon-Sat, exit after 19:30 is permissible with a valid Park & Ride ticket",443805,381424
+929765,Meadowhall Park and Ride,http://www.sypte.co.uk/parkride,0,Open: 24 hours ,439045,391427
+929766,Middlewood Road Park and Ride,http://www.sypte.co.uk/parkride,360,"Open: 06:30 to 19:30, Mon-Sat, exit after 19:30 is permissible with a valid Park & Ride ticket",432683,391069
+929767,Nunnery Square Park and Ride,http://www.sypte.co.uk/parkride,360,"Open: 06:30 to 19:30, Mon-Sat, exit after 19:30 is permissible with a valid Park & Ride ticket",436882,387753
+929780,Car Park,"http://www.hullcc.gov.uk/portal/page?_pageid=221,99424&_dad=portal&_schema=PORTAL",0,,515391,428922
+929781,Park and Ride,"http://www.hullcc.gov.uk/portal/page?_pageid=221,99424&_dad=portal&_schema=PORTAL",0,,504525,426212
+929782,Car Park,"http://www.hullcc.gov.uk/portal/page?_pageid=221,99424&_dad=portal&_schema=PORTAL",0,,507283,429150
+929813,Askham Bar Park and Ride,http://www.york.gov.uk/parking/ride/,0,,458240,448885
+929814,Grimston Bar Park and Ride,http://www.york.gov.uk/parking/ride/,0,,464371,451344
+929815,McArthurGlen Park and Ride,http://www.york.gov.uk/parking/ride/,0,,460895,447632
+929894,Rawcliffe Park and Ride,http://www.york.gov.uk/parking/ride/,0,Please note the gates of the car park are locked at 20:30 Monday to Saturday and 18:30 on Sundays,457528,454735
+929816,Monks Cross Park and Ride,http://www.york.gov.uk/parking/ride/,0,,462716,455006
+929771,London Road Park and Ride,http://www.suffolkcc.gov.uk/transport/park-and-ride/index.shtml,0,Open from 07:00 until 19:00 Mondays to Saturdays.,612392,242660
+929772,Bury Road Park and Ride,http://www.suffolkcc.gov.uk/transport/park-and-ride/index.shtml,0,"Open from 07:00 until 19:00 Mondays to Fridays, 08:00 until 19:00 Saturdays",613635,247517
+929773,Martlesham Park and Ride,http://www.suffolkcc.gov.uk/transport/park-and-ride/index.shtml,0,Open from 07:00 until 19:00 Mondays to Saturdays,624117,246306
+929774,Lynchwood Park and Ride,http://www.peterborough.gov.uk/page-4804,0,This service is currently not in operation,514233,296411
+929775,Maskew Avenue Park and Ride,http://www.peterborough.gov.uk/page-4804,0,This service is currently not in operation,517982,301036
+929776,Perkins Park and Ride,http://www.peterborough.gov.uk/page-4804,0,This service is currently not in operation,521073,300429
+929807,Airport Park and Ride,http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm,150,£1.50 per vehicle Monday to Friday after 12.30p.m. or £3 per vehicle for all day parking,621207,313090
+929808,Costessey Park and Ride,http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm,150,£1.50 per vehicle Monday to Friday after 12.30p.m. or £3 per vehicle for all day parking,615650,310159
+929809,Harford Park and Ride,http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm,150,£1.50 per vehicle Monday to Friday after 12.30p.m. or £3 per vehicle for all day parking,621797,303986
+929810,Postwick Park and Ride,http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm,150,£1.50 per vehicle Monday to Friday after 12.30p.m. or £3 per vehicle for all day parking,628818,308326
+929811,Sprowston Park and Ride,http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm,150,£1.50 per vehicle Monday to Friday after 12.30p.m. or £3 per vehicle for all day parking,625526,312665
+929812,Thickthorn Park and Ride,http://www.passengertransport.norfolk.gov.uk/publictransport/parkandride.htm,150,£1.50 per vehicle Monday to Friday after 12.30p.m. or £3 per vehicle for all day parking,618213,305496
+929817,Babraham Road Park and Ride site,http://www.cambridgeshire.gov.uk/transport/around/park_ride/,0,,547757,254487
+929818,Cowley Road Park and Ride Site,http://www.cambridgeshire.gov.uk/transport/around/park_ride/,0,,547031,261349
+929819,Madingley Road Park and Ride Site,http://www.cambridgeshire.gov.uk/transport/around/park_ride/,0,,542456,259432
+929820,Newmarket Road Park and Ride site,http://www.cambridgeshire.gov.uk/transport/around/park_ride/,0,,549176,259343
+929821,Trumpington Park and Ride,http://www.cambridgeshire.gov.uk/transport/around/park_ride/,0,,544309,254247
+929691,Meynells Gorse Park and Ride,http://www.leicester.gov.uk/departments/page.asp?pgid=7486,0,,454096,303641
+929829,Moor Bridge Park and Ride,http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm,0,,454624,346727
+929830,Hucknell Park and Ride,http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm,0,,454035,349150
+929831,Phoenix Park and Ride,http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm,0,,453304,343787
+929832,Queens Drive Park and Ride,http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm,230,,456218,337215
+929827,The Forest Park and Ride,http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm,0,,456722,341443
+929891,Racecourse Park and Ride,http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm,230,,459546,339412
+929828,Wilkinson Street Park and Ride,http://www.nottinghamcity.gov.uk/sitemap/transport_and_streets/cdtp_public_transport/cdt_park_and_ride.htm,0,,455367,341976
+929702,Kingston's Christmas Park & Ride ,http://www.kingston.gov.uk/transport_and_streets/parking/parkandride.htm,0,The 2006/ 7 service will start again in November,517572,162723
+929751,Sniperley Park and Ride,http://www.durhamparkandride.com/sitefiles/pages/welcome.html,0,"Open 7.00am to 7.00pm, Monday to Saturday",426316,543731
+929752,Belmont Park and Ride,http://www.durhamparkandride.com/sitefiles/pages/welcome.html,0,"Open 7.00am to 7.00pm, Monday to Saturday",431191,544542
+929753,Howlands Park and Ride,http://www.durhamparkandride.com/sitefiles/pages/welcome.html,0,"Open 7.00am to 7.00pm, Monday to Saturday",427139,540713
+929791,Callerton Parkway Metro station Park and Ride,http://www.newcastle.gov.uk/parking.nsf/a/parkride,,,419078,570439
+929792,Kingston Park Metro Station Park and Ride,http://www.newcastle.gov.uk/parking.nsf/a/parkride,,,421512,568991
+929793,Regent Centre Metro Station Park and Ride,http://www.newcastle.gov.uk/parking.nsf/a/parkride,,,424305,568609
+929794,New Bridge Street Car Park (Warner Bros.),http://www.newcastle.gov.uk/parking.nsf/a/parkride,,,425449,564685
+929678,Broadbottom Park and Ride,http://www.gmpte.com/parkandride,0,,399172,393815
+929679,Brooklands Park and Ride,http://www.gmpte.com/parkandride,0,,378443,391183
+929680,Cheadle Hulme Park and Ride,http://www.gmpte.com/parkandride,0,,387662,386640
+929681,Davenport Park and Ride,http://www.gmpte.com/parkandride,0,,389680,388377
+929682,Hazel Grove Park and Ride,http://www.gmpte.com/parkandride,0,,391933,386823
+929683,Horwich Parkway Park and Ride,http://www.gmpte.com/parkandride,0,,364366,409203
+929684,Ladywell Park and Ride,http://www.gmpte.com/parkandride,0,,378664,398370
+929685,Lostock Park and Ride,http://www.gmpte.com/parkandride,0,,367402,408637
+929686,Radcliffe Park and Ride,http://www.gmpte.com/parkandride,0,,378713,407430
+929687,Romiley Park and Ride,http://www.gmpte.com/parkandride,0,,394223,390797
+929898,Smithy Bridge Park and Ride,http://www.gmpte.com/parkandride,0,,392627,415209
+929692,Westhoughton Park and Ride,http://www.gmpte.com/parkandride,0,,365439,406613
+929688,Shaw and Crompton Park and Ride,http://www.gmpte.com/parkandride,0,,394196,409033
+929719,The Esplanade Park and Ride,http://www.sefton.gov.uk/page&3348,100,1st April to 30th September (summer): 7.30am-6.30pm (Mon-Sat); 1st October to 31st March (winter): 7.30am-6.30pm (Mon-Sat) 9.00am - 6.30pm (Sun),332546,417083
+929720,Fairways Park and Ride,http://www.sefton.gov.uk/page&3348,100,1st April to 30th September (summer): 10.00am-6.30pm (Sat) 9.00am-6.30pm (Sun); 1st October to 31st March (winter): 10.00am-6.30pm (Sat),334164,418761
+929721,Ainsdale Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,331080,412204
+929722,Aintree Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,336664,397857
+929723,Birkdale Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,333028,415735
+929724,Blundellsands and Crosby Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,331035,399495
+929725,Formby Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,329185,406861
+929726,Freshfield Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,329131,408361
+929727,Maghull Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,338313,401506
+929728,Seaforth and Litherland Station Park and Ride,http://www.sefton.gov.uk/page&3348,0,,333265,397109
+929729,Walton-le-Dale Park and Ride,http://www.lancashire.gov.uk/environment/bus/park_and_ride/parkandride.asp,0,"Open from 07:30 to 19:00 Monday to Saturday. Also open on most Bank Holidays between 09:30 to 17:30 (Closed Christmas Day, Boxing Day and New Year's Day)",355372,428231
+929730,Preston Portway Park and Ride,http://www.lancashire.gov.uk/environment/bus/park_and_ride/parkandride.asp,0,"Open from 07:30 to 19:00 Monday to Saturday. Also open on most Bank Holidays between 09:30 to 17:30 (Closed Christmas Day, Boxing Day and New Year's Day)",352653,429229
+929787,Boughton Heath Park and Ride,http://www.chester.gov.uk/main.asp?page=183,0,The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays,343174,365861
+929788,Sealand Road Park and Ride,http://www.chester.gov.uk/main.asp?page=183,0,The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays,337934,366876
+929789,Upton - The Zoo Park and Ride,http://www.chester.gov.uk/main.asp?page=183,0,The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays,340705,370370
+929790,Wrexham Road Park and Ride,http://www.chester.gov.uk/main.asp?page=183,0,The car park is open from 07:00 to 19:00 on Mondays to Saturdays; 09:30 to 18:00 on Sundays and Bank Holidays,339155,363038

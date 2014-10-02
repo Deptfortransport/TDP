@@ -1,0 +1,24 @@
+TESTNAME = {"RBO - IN"}
+
+INHDR = {
+"STDIN   "
+"RE"
+"IN"
+"        "
+"0101"
+"    "
+}
+
+OUTHDR = {
+"STDOUT  "
+"INSTANCE"
+"STERR"
+"C"
+"S"
+"L"
+}
+
+INBFR = {""}
+
+OUTBFR = {""}
+

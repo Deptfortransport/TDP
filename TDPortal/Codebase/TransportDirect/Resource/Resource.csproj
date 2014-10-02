@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F2E2410-0F55-43FB-B729-C326F602B8F2}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.userportal.resource</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Resource</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>SAK</SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="IKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITDDeferredArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITDSessionPartionable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Key.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SessionKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="DataGatewayAddFeeds.vbs" />
+    <Content Include="DataGatewayRemoveFeeds.vbs" />
+    <Content Include="FTPAddFeeds.vbs" />
+    <Content Include="FTPRemoveFeeds.vbs" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1990_AccessibleLocation_Content_4.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1991_StopInformation_AccessibleLink.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1992_AccessibleLocation_DataImport_Procs.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1993_BatchLoggingProperties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1994_BatchCoordinateDefence.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1995_GISQueryEvent_Properties_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1996_AccessibleLocation_Properties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1997_BatchCoordinateDefence_ProdValues.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1998_ExternalLinkes_AccessibleInformationLinks.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP1999_AccessibleLocation_Content_5.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2000_AccessibleOperator_Tables_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2001_AccessibleOperator_DataImport_Procs_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2002_BatchJourneyPlannerMaxLines_Property.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2003_BatchJourneyPlanner_FAQ_Menu_Link.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2004_JourneyNoteFilter_Tables.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2005_JourneyNoteFilter_StoredProcs.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2006_JourneyNoteFilter_DataImport.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2007_JourneyNoteFilter_DataImport_Procs.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2008_JourneyNoteFilter_DataImport_Properties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2009_JourneyNoteFilter_Properties_DataNotification.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2010_ServiceDetailRequestOperatorCodes_DataImport.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2011_ServiceDetailRequestOperatorCodes_DataImport_Properties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2012_ServiceDetailRequestOperatorCodes_DataImport_Procs.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2013_ServiceDetailRequestOperatorCodes_Properties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2014_ServiceDetailRequestOperatorCodes_Database_Objects.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2015_ServiceDetailRequestOperatorCodes_Properties_DataNotification.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2016_BatchUpdates.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2017_BatchConnectionString.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2018_BatchQueuedPosition.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2019_AccessibleLocation_MultiRegionFlag_Properties_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2020_UpdateTrapezeRegionsParameter.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2021_BatchStartDate.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2022_BatchJourneyPlanner_StoredProc_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2023_UpdateTransferLandingPageEventSP.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2024_AccessibleLocation_Content_5.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2025_UpdateLocationInformationFurtherDetailsURL.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2028_EES_Coordinate_Updates.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2029_POI_Location_Updates.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2030_UPdatePromLinksSchedule_IncludeRideLondon.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2031_SpecialEventsObjects.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2032_SpecialEventsProperties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2033_UpdateChangeCatalogue.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2034_Retailers.table.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2035_AddUpdateProperty.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2036_AddUpdateRetailer.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2037_AddUpdateRetailerLookup.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2038_GetRetailers.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2039_ChangeNotification.table.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2040_AddChangeNotificationTable.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2041_UpdateChangeNotificationTable.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2042_GetChangeTable.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2043_AddContent.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2044_AddGroup.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2045_DeleteGroup.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2046_DeleteContentOverride.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2047_DeleteContent.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2048_DeleteAllGroupContent.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2049_GetContent.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2050_AdminAreas.table.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2051_GetNPTGAdminAreas.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2052_Districts.table.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2053_GetNPTGDistricts.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2054_StopAccessibilityLinks.table.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2055_ImportStopAccessibilityLinks.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2056_GetStopAccessibilityLinks.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2057_UndergroundStatus.table.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2058_ImportUndergroundStatusData.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2059_GetUndergroundStatus.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2063_SiteRedirect_Properties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2064_Footer_ContentUpdate.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2065_Footer_PropertiesUpdate.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2067_UndergroundStatus.table.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2068_ImportUndergroundStatusData.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2069_GetUndergroundStatus.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2070_POI_DataImport.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2073_Batch_Properties.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2071_Reporting_GazetteerType_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2072_Reporting_PageEntryType_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2074_GetPOILocation_Update.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2075_BatchStoredProcChange.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2076_DepartureBoardLinks_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2077_GetRetailers.proc.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2078_Reporting_ReferenceTransactionType_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2080_BatchHousekeepingChange.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2079_Update_air_feeds_for_GZI5907193.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2084_CarCosts_Content_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2085_Gateway_PropertiesUpdate.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2086_WelshContent.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2089_AccessibleLinks_Content_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2090_AccessibleLinks_ExternalLinks_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2091_LoginPage_Content_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2092_CarParks_Content_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2093_Properties_DepartureBoardService.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2094_Properties_DepartureBoardWebService.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2095_Properties_DepartureBoardWebService_EventLogging.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2096_DataSet_DepartureBoardService_MobileTimeRequestDrop.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2097_Update_Custom_EMAIL_Sender_Property.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2098_Content_Overide_Promotion_Calendar_2014.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2099_MAS_Content.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2105_DigitalTV_Properties_Update.sql" />
+    <Content Include="Scripts\Incremental\CurrentScripts\DUP2108_Content_Overide_Promotion_Calendar_2014.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\ChangeNotification\ChangeNotification.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\ContentGroup\ContentGroup.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\Content\Content.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\Content\ContentAnalytics.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\Content\ContentHeaderFooter.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\Content\ContentJourneyOutput.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\Content\ContentMobile.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\Content\ContentSitemap.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\Content\DevSettings.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\BBPSettings.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\DevSettings.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\DropDownLists\DropDownData.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_Database.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_DataLoader.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_DataLoader_EventLogging.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_EventReceiver.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_EventReceiver_EventLogging.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_TDP.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_TDPMobile.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_TDPMobile_EventLogging.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_TDPWeb.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Properties\Properties_TDPWeb_EventLogging.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\ReferenceNum\ReferenceNum.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\Retailers\Retailers.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\PermanentPortal\SITestSettings.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\TransientPortal\AdminArea\AdminArea.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\TransientPortal\ChangeNotification\ChangeNotificationData.data.sql" />
+    <Content Include="Scripts\Incremental\TransportDirect2Scripts\TransientPortal\Districts\Districts.data.sql" />
+    <Content Include="Scripts\MDS\MDS019_BankHoliday_Update.sql" />
+    <Content Include="Scripts\MDS\MDS021_Special_Event_Update.sql" />
+    <None Include="Scripts\Incremental\DEV - SET UP DATABASE.bat" />
+    <None Include="Scripts\Incremental\LatestState\AtosAdditionalData.mdf" />
+    <None Include="Scripts\Incremental\LatestState\BatchJourneyPlanner.mdf" />
+    <None Include="Scripts\Incremental\LatestState\CarParks.mdf" />
+    <None Include="Scripts\Incremental\LatestState\content_Data.MDF" />
+    <None Include="Scripts\Incremental\LatestState\GAZ.mdf" />
+    <None Include="Scripts\Incremental\LatestState\GAZ_Staging.mdf" />
+    <None Include="Scripts\Incremental\LatestState\InternationalData.mdf" />
+    <Content Include="Scripts\Incremental\DEV_01_DatabaseUpdate.sql" />
+    <Content Include="Scripts\Incremental\DEV_04_Properties_Update.sql" />
+    <Content Include="Scripts\Incremental\DEV_02_StoredProceduresUpdate.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10501_BusinessLink_Theme_1.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10502_BusinessLink_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10503_BusinessLink_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10504_BusinessLink_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10505_BusinessLink_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10506_BusinessLink_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10507_BusinessLink_7_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10601_DirectGov_1_Theme.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10602_DirectGov_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10603_DirectGov_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10604_DirectGov_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10605_DirectGov_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10606_DirectGov_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10607_DirectGov_7_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10701_London2012_1_Theme.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10702_London2012_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10703_London2012_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10704_London2012_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10705_London2012_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\Old\SCP10706_London2012_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10101_WhiteLabel_5_FAQs_All.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10201_AOCycle_Cycle_1_Theme.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10202_AOCycle_Cycle_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10203_AOCycle_Cycle_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10204_AOCycle_Cycle_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10205_AOCycle_Cycle_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10206_AOCycle_Cycle_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10207_AOCycle_Cycle_7_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10301_BBC_1_Theme.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10302_BBC_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10303_BBC_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10304_BBC_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10305_BBC_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10306_BBC_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10307_BBC_7_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10308_BBC_8_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10401_BusinessGateway_Theme_1.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10402_BusinessGateway_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10403_BusinessGateway_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10404_BusinessGateway_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10405_BusinessGateway_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10406_BusinessGateway_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10407_BusinessGateway_7_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10801_VisitBritain_1_Theme.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10802_VisitBritain_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10803_VisitBritain_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10804_VisitBritain_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10805_VisitBritain_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10806_VisitBritain_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10807_VisitBritain_7_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10901_CycleRoutes_Cycle_1_Theme.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10902_CycleRoutes_Cycle_2_Properties.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10903_CycleRoutes_Cycle_3_Left_hand_links.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10904_CycleRoutes_Cycle_4_Content.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10905_CycleRoutes_Cycle_5_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10906_CycleRoutes_Cycle_6_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\PartnerScripts\SCP10907_CycleRoutes_Cycle_7_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10001_TransportDirect_Content_1_MiniHome_PlanAJourney.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10002_TransportDirect_Content_2_MiniHome_FindAPlace.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10003_TransportDirect_Content_3_MiniHome_LiveTravel.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10004_TransportDirect_Content_4_MiniHome_TipsAndTools.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10005_TransportDirect_Content_5_Home_RightHandPanel.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10006_TransportDirect_Content_6_Home_TipsToolsPanel.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10007_TransportDirect_Content_7_FAQs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10008_TransportDirect_Content_8_AboutUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10009_TransportDirect_Content_9_NetworkMaps.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10010_TransportDirect_Content_10_SiteMap.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10011_TransportDirect_Content_11_PrivacyPolicy.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10012_TransportDirect_Content_12_DataProviders.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10013_TransportDirect_Content_13_Accessibility.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10014_TransportDirect_Content_14_ContactUs.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10015_TransportDirect_Content_15_TermsConditions.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10016_TransportDirect_Content_16_Relatedsites.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10017_CyclePlanner_Content_17_RightHandPanel.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10018_TransportDriect_Content_18_Help_JourneyDetails.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10019_TransportDriect_Content_19_Help_JourneyPlannerInput.sql" />
+    <Content Include="Scripts\Incremental\SoftContent\SC10020_TransportDriect_Content_20_Help_FindNearestAccessibleStop.sql" />
+    <None Include="Scripts\Incremental\ArchivedScripts\DUP0438 to DUP0619.zip" />
+    <None Include="Scripts\Incremental\ArchivedScripts\DUP0700 to DUP0999.zip" />
+    <None Include="Scripts\Incremental\ArchivedScripts\DUP1000 to DUP1299.zip" />
+    <None Include="Scripts\Incremental\ArchivedScripts\DUP1300 to DUP1623.zip" />
+    <None Include="Scripts\Incremental\ArchivedScripts\DUP1606 to DUP1989.zip" />
+    <None Include="Scripts\Incremental\IncrementalUpdates Databases Only.bat" />
+    <None Include="Scripts\Incremental\LatestState\AirInterchange.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\AirInterchange_Staging.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\AirRouteMatrix.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\ASPState.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\PermanentPortal.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\ProductAvailability.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\Reporting.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\ReportStagingDB.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\TDUserInfo.mdf">
+    </None>
+    <None Include="Scripts\Incremental\LatestState\TransientPortal.mdf">
+    </None>
+    <None Include="Scripts\Incremental\DEV_03_DatabasePermissions.sql" />
+    <Content Include="Scripts\MDS\MDS010_AddWrexhamAndShropshire.sql" />
+    <Content Include="Scripts\MDS\MDS011_journeycallpartner.sql" />
+    <Content Include="Scripts\MDS\MDS012_UpdateEmissionFactors.sql" />
+    <Content Include="Scripts\MDS\MDS013_CityToCityTables.sql" />
+    <Content Include="Scripts\MDS\MDS014_TraveNewsDataSources.sql" />
+    <Content Include="Scripts\MDS\MDS016_TicketTypeGroups.sql" />
+    <Content Include="Scripts\MDS\MDS017_ZoneNLCs.sql" />
+    <Content Include="Scripts\MDS\MDS018_EBC_Data.sql" />
+    <Content Include="Scripts\MDS\MDS020_AvailabilityMatrix_TicketCategory_Update.sql" />
+    <Content Include="ProdConfig\ACP\TransactionInjectorProperties.xml" />
+    <Content Include="ProdConfig\BBP\TransactionInjectorProperties.xml" />
+    <None Include="Delete_feeds.csv" />
+    <None Include="Feeds.csv" />
+    <None Include="Feedsconfig.csv" />
+    <None Include="InstallReportDataDatabaseLocationHelper.xls" />
+    <None Include="Resource.build" />
+    <None Include="Scripts\Incremental\IncrementalUpdates.bat" />
+    <None Include="Scripts\Incremental\LatestState\AttachAllDatabases.sql" />
+    <None Include="Scripts\Incremental\LatestState\DropAllDatabases.sql" />
+    <None Include="Scripts\Incremental\TransportDirect2Scripts.bat" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS01_InternationalData_Country.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS02_InternationalData_CountryJourney.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS03_InternationalData_Stops.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS04_InternationalData_City.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS05_InternationalData_CityStops.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS06_InternationalData_InterchangeTime.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS07_InternationalData_RailSchedule.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS08_InternationalData_CoachSchedule.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS09_InternationalData_Car.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS10_InternationalData_AirSchedule.dtsx" />
+    <None Include="Scripts\MDS\DataTransferScripts\DTS11_InternationalData_StopDistances.dtsx" />
+    <None Include="Scripts\MDS\MDS000 - Test.sql" />
+    <None Include="Scripts\MDS\MDS001_RailTicketTypes.sql" />
+    <None Include="Scripts\MDS\MDS002_Tip_of_the_day_data.sql" />
+    <None Include="Scripts\MDS\MDS003_HomepageText.sql" />
+    <None Include="Scripts\MDS\MDS004_AvailabilityMatrix_Update.sql" />
+    <None Include="Scripts\MDS\MDS005_Special_Notice_Board_Update.sql" />
+    <None Include="Scripts\MDS\MDS006_FindTrainPromoText.sql" />
+    <None Include="Scripts\MDS\MDS007_TicketCategory.sql" />
+    <None Include="Scripts\MDS\MDS008_TicketRouteRestrictions.sql" />
+    <None Include="ProdConfig\ACP\atdba.reg" />
+    <None Include="ProdConfig\ACP\cjp.client.config" />
+    <None Include="ProdConfig\ACP\machine.config" />
+    <None Include="ProdConfig\ACP\td.reportdataprovider.eventreceiver.exe.config" />
+    <None Include="ProdConfig\ACP\td.reportdataprovider.reportdataimporter.exe.config" />
+    <None Include="ProdConfig\ACP\td.reportdataprovider.reportstagingdataarchiver.exe.config" />
+    <None Include="ProdConfig\ACP\td.reportdataprovider.transactioninjector.exe.config" />
+    <None Include="ProdConfig\ACP\td.reportdataprovider.weblogreader.exe.config" />
+    <None Include="ProdConfig\ACP\td.usersurveyexport.exe.config" />
+    <None Include="ProdConfig\ACP\TransactionWebService\cjp.client.config" />
+    <None Include="ProdConfig\ACP\TransactionWebService\Web.config" />
+    <None Include="ProdConfig\ACP\Web.config" />
+    <None Include="ProdConfig\BBP\atdba.reg" />
+    <None Include="ProdConfig\BBP\cjp.client.config" />
+    <None Include="ProdConfig\BBP\machine.config" />
+    <None Include="ProdConfig\BBP\td.dataimport.exe.config" />
+    <None Include="ProdConfig\BBP\td.ftppull.exe.config" />
+    <None Include="ProdConfig\BBP\td.reportdataprovider.eventreceiver.exe.config" />
+    <None Include="ProdConfig\BBP\td.reportdataprovider.reportdataimporter.exe.config" />
+    <None Include="ProdConfig\BBP\td.reportdataprovider.reportstagingdataarchiver.exe.config" />
+    <None Include="ProdConfig\BBP\td.reportdataprovider.transactioninjector.exe.config" />
+    <None Include="ProdConfig\BBP\td.reportdataprovider.weblogreader.exe.config" />
+    <None Include="ProdConfig\BBP\td.usersurveyexport.exe.config" />
+    <None Include="ProdConfig\BBP\TransactionWebService\cjp.client.config" />
+    <None Include="ProdConfig\BBP\TransactionWebService\Web.config" />
+    <None Include="ProdConfig\BBP\Web.config" />
+    <None Include="ProdConfig\devkeys.cryinf" />
+    <None Include="ProdConfig\prodkeys.cryinf" />
+    <None Include="ProdConfig\SIT\atdba.reg" />
+    <None Include="ProdConfig\SIT\td.userportal.SeasonalNoticeBoardImport.dll.config" />
+    <None Include="ProdConfig\SIT\td.usersurveyexport.exe.config" />
+    <None Include="Scripts\Incremental\PartnerSoftContentUpdates.bat" />
+    <None Include="Scripts\Incremental\SoftContentUpdates.bat" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

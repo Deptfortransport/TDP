@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.userportal.locationservice</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.UserPortal.LocationService</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>SAK</SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <Name>nunit.framework</Name>
+      <HintPath>..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <Name>td.CJPInterface</Name>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.interactivemapping">
+      <Name>td.interactivemapping</Name>
+      <HintPath>..\..\..\ThirdParty\ESRI\td.interactivemapping.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Name>AdditionalDataModule</Name>
+      <Project>{1BF668A4-F9B2-4D64-85CB-ADD80C432849}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\AirDataProvider\AirDataProvider.csproj">
+      <Name>AirDataProvider</Name>
+      <Project>{F28705AF-3A71-4735-82FD-DBDBC2611611}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Name>DatabaseInfrastructure</Name>
+      <Project>{5F116712-53F6-4A9F-B11B-96D0812190AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataGatewayFramework\DataGatewayFramework.csproj">
+      <Name>DataGatewayFramework</Name>
+      <Project>{39F3A8F8-7CB2-40E3-80BF-49394BF419E0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalLinkService\ExternalLinkService.csproj">
+      <Name>ExternalLinkService</Name>
+      <Project>{CD02DA6B-D3DE-4617-A58A-53DF11554B63}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\DatabasePropertyProvider\DatabasePropertyProvider.csproj">
+      <Name>DatabasePropertyProvider</Name>
+      <Project>{946A95B4-3145-4F4E-9E8F-54B78F1FA5F4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\FilePropertyProvider\FilePropertyProvider.csproj">
+      <Name>FilePropertyProvider</Name>
+      <Project>{A3CB7929-0F74-4625-AB84-349C041B9B62}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportDataProvider\TDPCustomEvents\TDPCustomEvents.csproj">
+      <Name>TDPCustomEvents</Name>
+      <Project>{A377CDD7-9190-46F2-8938-65DF17478D21}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{C0EADF9C-59D2-45EA-A67D-09CA8999746C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScriptRepository\ScriptRepository.csproj">
+      <Project>{21895BF5-B20D-40FC-85AC-EDC1976C2D71}</Project>
+      <Name>ScriptRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="td.NPTGAccessModule">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.NPTGAccessModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessibleAdminAreasDataImporter.cs" />
+    <Compile Include="AccessibleLocationsDataImporter.cs" />
+    <Compile Include="AddressPostcodeGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddressSyntaxChecker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AirportTerminalNaptans.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttractionsAliasImporter.cs" />
+    <Compile Include="AllStationsGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+
+    <Compile Include="AttractionsGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cache\Levenstein.cs" />
+    <Compile Include="Cache\LocationService.cs" />
+    <Compile Include="Cache\LocationServiceFactory.cs" />
+    <Compile Include="Cache\TDLocationAccessibleCache.cs" />
+    <Compile Include="Cache\TDLocationCache.cs" />
+    <Compile Include="CarPark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkAccessPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkCatalogueFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkImportTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkingAdditionalData.cs" />
+    <Compile Include="CarParkingImportTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkingParkAndRideScheme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarParkOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CityAirport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CityCoachStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CityInterchange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CityRailStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoachNaPTANImport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGazetteerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DropDownLocationProvider\DropDownDataFileGenerator.cs" />
+    <Compile Include="DropDownLocationProvider\DropDownLocation.cs" />
+    <Compile Include="DropDownLocationProvider\DropDownLocationHelper.cs" />
+    <Compile Include="DropDownLocationProvider\DropDownLocationImporter.cs" />
+    <Compile Include="DropDownLocationProvider\DropDownLocationProviderService.cs" />
+    <Compile Include="DropDownLocationProvider\DropDownLocationProviderServiceFactory.cs" />
+    <Compile Include="DropDownLocationProvider\DropDownLocationType.cs" />
+    <Compile Include="DropDownLocationProvider\IDropDownLocationProviderService.cs" />
+    <Compile Include="DuplicateTiplocProvider.cs" />
+    <Compile Include="DuplicateTiplocProviderFactory.cs" />
+    <Compile Include="FindAPlace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GisQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GisQueryFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICarParkCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDuplicateTiplocProvider.cs" />
+    <Compile Include="IGisQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ILocalityTravelineLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportantPlaceGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InternationalPlaceGazetteer.cs" />
+    <Compile Include="InternationalPlaceGazetteerFactory.cs" />
+    <Compile Include="IParkAndRideCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPlaceDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITDCodeGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITDGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITDGazetteerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LatitudeLongitude.cs" />
+    <Compile Include="LocalityGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalityTravelineCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalityTravelineLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationChoice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationQueryResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationSeriveConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LSKeys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MajorStationsGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MockGisQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MockGisQueryFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NaptanLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NPTGAdminDistrict.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OSGridReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParkAndRideCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParkAndRideCatalogueFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParkAndRideImportTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParkAndRideInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PickList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlaceDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlaceDataProviderFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlaceType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PostcodeSyntaxChecker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDAccessibleAdminArea.cs" />
+    <Compile Include="TDBusStopNaptan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDCodeDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDCodeGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDCodeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDCountry.cs" />
+    <Compile Include="TDGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDGazetteerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDLocationAccessible.cs" />
+    <Compile Include="TDModeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDNaptan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDPolyline.cs" />
+    <Compile Include="TDRailNaptan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDStopType.cs" />
+    <Compile Include="TooVagueException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrainTaxiImportClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestAddressPostcodeGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestAllStationsGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestAttractionsGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestCarParkCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestCarParkImport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestCarParkInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestCodeGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestDropDownLocationHelper.cs" />
+    <Compile Include="UnitTest\TestDropDownLocationImporter.cs" />
+    <Compile Include="UnitTest\TestDropDownLocationProviderService.cs" />
+    <Compile Include="UnitTest\TestHelper.cs" />
+    <Compile Include="UnitTest\TestImportantPlaceGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestInternationalPlaceGazetteer.cs" />
+    <Compile Include="UnitTest\TestLocalityGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestLocalityTravelineLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestLocationCache.cs" />
+    <Compile Include="UnitTest\TestLocationChoiceComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestLocationSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestMajorStationsGazetteer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestMockAirDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestMockCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestMockGisQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestMockPlaceDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestParkAndRideCatalogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestParkAndRideImportTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestPickList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestPlaceDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestPostcodeSyntaxChecker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestStringHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestTDGazetteerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestTDLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\TestTDLocationCyclePlanner.cs" />
+    <Compile Include="Web References\GazopsWeb\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="XmlGazetteerHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="bin\Debug\DropDownGaz\DropDownGazData.xml" />
+    <Content Include="bin\Debug\DropDownGaz\scripts.xml" />
+    <Content Include="bin\Debug\td.NPTGAccessModule.dll" />
+    <Content Include="bin\Debug\td.userportal.locationservice.properties.xml" />
+    <Content Include="bin\Debug\TestLocationServicePlaceData.xml" />
+    <Content Include="bin\Release\td.interactivemapping.dll" />
+    <Content Include="bin\Release\td.NPTGAccessModule.dll" />
+    <Content Include="F:\Journey Request ver 4.xml">
+      <Link>Journey Request ver 4.xml</Link>
+    </Content>
+    <Content Include="ParkandRide.xml" />
+    <Content Include="ParkAndRide.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="bin\Debug\DropDownGaz\DropDownGazCleanUp.sql" />
+    <None Include="bin\Debug\DropDownGaz\DropDownGazSetup.sql" />
+    <None Include="bin\Debug\LocationService\CarPark.csv" />
+    <None Include="bin\Debug\LocationService\ParkAndRide.csv" />
+    <None Include="bin\Debug\LocationService\ParkAndRideTestData1.csv" />
+    <None Include="bin\Debug\LocationService\ParkAndRideTestData2.csv" />
+    <None Include="bin\Debug\LocationService\ParkAndRide_WithNodata.csv" />
+    <None Include="bin\Debug\td.userportal.locationservice.dll.config" />
+    <None Include="ParkAndRide.csv" />
+    <None Include="Web References\GazopsWeb\GazopsWeb.disco" />
+    <None Include="Web References\GazopsWeb\GazopsWeb.wsdl" />
+    <None Include="Web References\GazopsWeb\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <WebReferenceUrl Include="http://tri-tdp-iis/GazopsWeb/GazopsWeb.asmx">
+      <RelPath>Web References\GazopsWeb\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\DropDownGaz\tempscripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

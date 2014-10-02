@@ -1,0 +1,42 @@
+TESTNAME = {"RBOGAD1"}
+TESTID = {"RBOGAD1"}
+
+INBFR = {"LEI NOT20031012        O          TN0001O      LEINOT08500925LCN1012  CT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            0000000025                                                                                                                   0026SVR018AR84SDS01  S87SDR01  R81FDS01  S87FDR01  R81CDR01B2R85SSA02SSS87SBS02SSS87NP202  R80NP102  R80MLS02  S88MLR02  R84MFB02  S87MFA02  S87FS402ATR97FS302ATR97FS202ATR97FSC02ATR97FSB02ATR97FSA02ATR974DR02ATR974CR02ATR97FSR02FSR97RSS01  S87RSR01  R81RCR01B2R85"}
+
+INHDR = {
+"STDIN   "
+"RE"
+"GA"
+"        "
+"0101"
+"    "
+"I01125O00329 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000 00000                                                  "
+}
+
+OUTHDR = {
+"STDOUT  "
+"INSTANCE"
+"STERR"
+"C"
+"S"
+"L"
+}
+
+OUTBFR = {
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+"                                                                                                            "
+}
+

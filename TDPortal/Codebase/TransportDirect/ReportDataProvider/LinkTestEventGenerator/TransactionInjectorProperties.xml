@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+	<property name="propertyservice.version" GID="" AID="">1</property>
+	<property name="propertyservice.property" GID="" AID="">globalproperty</property>
+	
+	<property name="TransactionInjector.Transaction" GID="ReportDataProvider" AID="TransactionInjector">Journey Soft Price Station</property>
+	<property name="TransactionInjector.Frequency" GID="ReportDataProvider" AID="TransactionInjector">60</property>	
+	<property name="TransactionInjector.WebService" GID="ReportDataProvider" AID="TransactionInjector">http://localhost/TDPWebServices/TransactionWebService/TDTransactionService.asmx</property>	
+	<property name="TransactionInjector.Transaction.Journey.Class" GID="ReportDataProvider" AID="TransactionInjector">JourneyRequestTransaction</property>		
+	<property name="TransactionInjector.Transaction.Journey.Path" GID="ReportDataProvider" AID="TransactionInjector">C:\TDPortal\DEL5\TransportDirect\ReportDataProvider\TransactionInjector\bin\Debug\JourneyRequestData</property>	
+	<property name="TransactionInjector.Transaction.Soft.Class" GID="ReportDataProvider" AID="TransactionInjector">SoftContentTransaction</property>		
+	<property name="TransactionInjector.Transaction.Soft.Path" GID="ReportDataProvider" AID="TransactionInjector">C:\TDPortal\DEL5\TransportDirect\ReportDataProvider\TransactionInjector\bin\Debug\SoftContentData</property>
+	<property name="TransactionInjector.Transaction.Price.Class" GID="ReportDataProvider" AID="TransactionInjector">PricingTransaction</property>		
+	<property name="TransactionInjector.Transaction.Price.Path" GID="ReportDataProvider" AID="TransactionInjector">C:\TDPortal\DEL5\TransportDirect\ReportDataProvider\TransactionInjector\bin\Debug\PricingRequestData</property>
+	<property name="TransactionInjector.Transaction.Station.Class" GID="ReportDataProvider" AID="TransactionInjector">StationInfoTransaction</property>		
+	<property name="TransactionInjector.Transaction.Station.Path" GID="ReportDataProvider" AID="TransactionInjector">C:\TDPortal\DEL5\TransportDirect\ReportDataProvider\TransactionInjector\bin\Debug\StationInfoData</property>		
+	<property name="TransactionInjector.TemplateFileDirectory" GID="ReportDataProvider" AID="TransactionInjector">C:\TDPortal\DEL5\TransportDirect\ReportDataProvider\TransactionInjector\bin\Debug\Templates</property>		
+	<property name="TransactionInjector.AlertThreshold.SimpleJourneyRequest1" GID="ReportDataProvider" AID="TransactionInjector">2000</property>
+	<property name="TransactionInjector.AlertThreshold.SimpleJourneyRequest2" GID="ReportDataProvider" AID="TransactionInjector">2000</property>
+	<property name="TransactionInjector.AlertThreshold.ComplexJourneyRequest" GID="ReportDataProvider" AID="TransactionInjector">5000</property>
+		
+	<property name="Logging.Publisher.Default" GID="ReportDataProvider" AID="TransactionInjector">File1</property>
+	<property name="Logging.Publisher.Queue" GID="ReportDataProvider" AID="TransactionInjector">Queue1</property>
+	<property name="Logging.Publisher.Email" GID="ReportDataProvider" AID="TransactionInjector"></property>
+	<property name="Logging.Publisher.EventLog" GID="ReportDataProvider" AID="TransactionInjector">EventLog1</property>
+	<property name="Logging.Publisher.Console" GID="ReportDataProvider" AID="TransactionInjector"></property>
+	<property name="Logging.Publisher.Custom" GID="ReportDataProvider" AID="TransactionInjector"></property>
+	
+	<property name="Logging.Event.Custom.Trace" GID="ReportDataProvider" AID="TransactionInjector">On</property>
+	<property name="Logging.Event.Custom" GID="ReportDataProvider" AID="TransactionInjector">RefTran</property>
+	<property name="Logging.Event.Custom.RefTran.Name" GID="ReportDataProvider" AID="TransactionInjector">ReferenceTransactionEvent</property>
+	<property name="Logging.Event.Custom.RefTran.Assembly" GID="ReportDataProvider" AID="TransactionInjector">td.ReportDataProvider.TDPCustomEvents</property>
+	<property name="Logging.Event.Custom.RefTran.Publishers" GID="ReportDataProvider" AID="TransactionInjector">Queue1</property>
+	<property name="Logging.Event.Custom.RefTran.Trace" GID="ReportDataProvider" AID="TransactionInjector">On</property>
+	
+	<property name="Logging.Event.Operational.TraceLevel" GID="ReportDataProvider" AID="TransactionInjector">Verbose</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="ReportDataProvider" AID="TransactionInjector">File1</property>
+	<property name="Logging.Event.Operational.Info.Publishers" GID="ReportDataProvider" AID="TransactionInjector">Queue1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="ReportDataProvider" AID="TransactionInjector">Queue1</property>
+	<property name="Logging.Event.Operational.Error.Publishers" GID="ReportDataProvider" AID="TransactionInjector">EventLog1 Queue1</property>
+	
+	<property name="Logging.Publisher.File" GID="ReportDataProvider" AID="TransactionInjector">File1</property>
+	<property name="Logging.Publisher.File.File1.Directory" GID="ReportDataProvider" AID="TransactionInjector">C:\TDPortal</property>
+	<property name="Logging.Publisher.File.File1.Rotation" GID="ReportDataProvider" AID="TransactionInjector">100</property>
+	
+	<property name="Logging.Publisher.Queue.Queue1.Path" GID="ReportDataProvider" AID="TransactionInjector">.\Private$\TDInjectorQueue</property>
+	<property name="Logging.Publisher.Queue.Queue1.Delivery" GID="ReportDataProvider" AID="TransactionInjector">Express</property>
+	<property name="Logging.Publisher.Queue.Queue1.Priority" GID="ReportDataProvider" AID="TransactionInjector">Normal</property>
+	
+	<property name="Logging.Publisher.EventLog.EventLog1.Name" GID="ReportDataProvider" AID="TransactionInjector">Application</property>
+	<property name="Logging.Publisher.EventLog.EventLog1.Source" GID="ReportDataProvider" AID="TransactionInjector">TransactionInjector</property>
+	<property name="Logging.Publisher.EventLog.EventLog1.Machine" GID="ReportDataProvider" AID="TransactionInjector">.</property>
+	 
+</lookup>

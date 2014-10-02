@@ -1,0 +1,6 @@
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Debug\create_retro_folders.bat
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Debug\UPDATE_retro_folders.bat
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Debug\OldBookmarkRedirector.dll
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\bin\Debug\OldBookmarkRedirector.pdb
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\obj\Debug\OldBookmarkRedirector.dll
+D:\TDPortal\Codebase\TransportDirect\OldBookmarkRedirector\obj\Debug\OldBookmarkRedirector.pdb
