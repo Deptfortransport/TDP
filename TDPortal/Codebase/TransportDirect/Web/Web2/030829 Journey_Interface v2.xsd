@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by SLB (SchlumbergerSema) -->
+<!-- Type enum meaning: I = Interchange at, C= Calling at -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="Root">
+        <xs:annotation>
+            <xs:documentation>Comment describing your root element</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="User" minOccurs="0" />
+                <xs:element ref="User_Preferences" />
+                <xs:element ref="Outward_Journey" />
+                <xs:element ref="Return_Journey" minOccurs="0" />
+                <xs:element ref="Passenger_Detail" minOccurs="0" />
+            </xs:all>
+            <xs:attribute name="Version" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Requested_Vias">
+        <xs:complexType>
+            <xs:attribute name="NaPTAN" type="xs:string" use="required" />
+            <xs:attribute name="NLC" type="xs:string" use="optional" />
+            <xs:attribute name="CRS" type="xs:string" use="optional" />
+            <xs:attribute name="Type" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="I" />
+                        <xs:enumeration value="C" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="User_Preferences">
+        <xs:complexType>
+            <xs:attribute name="Interchange_Speed" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Slow" />
+                        <xs:enumeration value="Average" />
+                        <xs:enumeration value="Fast" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="No_Changes" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Y" />
+                        <xs:enumeration value="N" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="User">
+        <xs:complexType>
+            <xs:attribute name="eMail" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Outward_Journey">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Journey_Legs" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Return_Journey">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="Journey_Legs" maxOccurs="unbounded" />
+                <xs:element ref="Return_Option" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Return_Option">
+        <xs:complexType>
+            <xs:attribute name="Return_Flag" type="xs:boolean" use="optional" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Passenger_Detail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Discount" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="Number_of_Adults" type="xs:int" use="required" />
+            <xs:attribute name="Number_of_Children" type="xs:int" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Journey_Legs">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="Leg_Start" />
+                <xs:element ref="Leg_End" />
+                <xs:element ref="Mode" />
+                <xs:element ref="Requested_Vias" minOccurs="0" />
+            </xs:all>
+            <xs:attribute name="Date" type="xs:date" use="required" />
+            <xs:attribute name="Time" type="xs:time" use="required" />
+            <xs:attribute name="OperatorCode" type="xs:string" use="optional" />
+            <xs:attribute name="ServiceNumber" type="xs:string" use="optional" />
+            <xs:attribute name="Direction" type="xs:string" use="optional" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Leg_Start">
+        <xs:complexType>
+            <xs:attribute name="NaPTAN" type="xs:string" use="required" />
+            <xs:attribute name="NLC" type="xs:string" use="optional" />
+            <xs:attribute name="CRS" type="xs:string" use="optional" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Leg_End">
+        <xs:complexType>
+            <xs:attribute name="NaPTAN" type="xs:string" use="required" />
+            <xs:attribute name="NLC" type="xs:string" use="optional" />
+            <xs:attribute name="CRS" type="xs:string" use="optional" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Mode">
+        <xs:complexType>
+            <xs:attribute name="Mode" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="air" />
+                        <xs:enumeration value="bus" />
+                        <xs:enumeration value="coach" />
+                        <xs:enumeration value="cycle" />
+                        <xs:enumeration value="ferry" />
+                        <xs:enumeration value="metro" />
+                        <xs:enumeration value="rail" />
+                        <xs:enumeration value="taxi" />
+                        <xs:enumeration value="tram" />
+                        <xs:enumeration value="underground" />
+                        <xs:enumeration value="walk" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Discount">
+        <xs:complexType>
+            <xs:attribute name="Discount_Card_Type" type="xs:string" use="required" />
+            <xs:attribute name="Number_of_Discounts" type="xs:int" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
