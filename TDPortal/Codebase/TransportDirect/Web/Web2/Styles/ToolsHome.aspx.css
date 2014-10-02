@@ -1,0 +1,49 @@
+.HomepageLayoutTable 
+{
+	width:840px;
+}
+
+.HyperlinkTableCell
+{
+	width:160px;
+}
+
+.panelHeight
+{
+	/*height:353px;*/
+}
+
+#boxtypeeightstd
+{
+	width: 565px;
+}
+
+.MinihomeSoftContent
+{
+	overflow:auto;
+	height: 300px;
+}
+
+.MinihomeHyperlinksInfoHeader
+{
+	width:626px;
+}
+
+.MinihomeHyperlinksInfoContent 
+{
+	width:636px;
+	margin-right: 2px;
+}
+
+.digitalTvAccess h2
+{
+	font-size: 0.8em;
+}
+
+.digitalTvAccess h4
+{
+	font-size: 0.8em;
+}
+
+ul {margin: 0px 0px 10px 10px; padding: 0px 0px 0px 10px;}
+ul.lister {list-style: outside; font-size: 0.7em; line-height: 1.5; list-style-type: disc;}

@@ -1,0 +1,53 @@
+#boxtypeJEone
+{
+	width: 570px;
+}
+
+#boxtypeJEtwo
+{
+	padding: 0px;
+	border: none;
+}
+
+#boxtypeJEthree
+{
+	border: none;
+}
+
+#boxtypeJEfour
+{
+	width: 570px;
+}
+
+#boxtypeJEfive
+{
+	width: 570px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content
+{
+	border: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 208px;
+}
+
+.JourneyEmissionInformationColumn .HomePageMenu
+{
+	width: 208px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content .HomePageMenu .categoryLink
+{
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	margin-left: 3px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content .HomePageMenu .categoryLink li
+{
+	background: url(../../App_Themes/BusinessGateway/images/gifs/Partner/linkArrowBlack.gif) no-repeat left 7px;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	border-bottom: solid 1px #E0E0E0;
+}

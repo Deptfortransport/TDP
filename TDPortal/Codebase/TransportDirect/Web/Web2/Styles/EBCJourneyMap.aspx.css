@@ -1,0 +1,105 @@
+﻿#boxjourneychangesearchcontrol,
+.boxtypesixteen
+{
+	width: 830px;
+}
+
+.ebcMapContainer
+{
+    width: 806px;
+}
+
+.boxtypeerrormsgtwo
+{
+	width: 831px;
+	padding-left: 0px;
+}
+
+/* Styles for EBC details control*/
+DIV.ebcJourneyDetailsPanel
+{
+	margin: 5px 0px 5px 5px;
+}
+
+.ebcMapDetailsBoxType1
+{
+	background-color: #ccccff;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #330099;
+}
+
+.ebcMapDetailsBoxType2
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	height: 1%;
+}
+html>body .ebcMapDetailsBoxType2
+{
+	height: auto;
+}
+
+.ebcMapDetailsBoxType3
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #330099;
+}
+
+.ebcMapDetailsBoxType4
+{
+	margin-bottom: 5px;
+}
+/* -------------------------------------- */
+
+/* Styles for Car journey summary table */
+.boxtypetenfifteen
+{
+	margin: 0px 0px 5px 0px;
+	padding: 5px 5px 5px 5px;
+	height: 1%;
+	width: auto;
+}
+
+html>body .cycleJourneySummaryBoxType1
+{
+	height: auto;
+}
+/* -------------------------------------- */
+
+
+/* Styles for map - overridden from Map.css to fit the map into the EBC control*/
+.mcMapControlContainer
+{
+    width: 784px; /* width is same as mcMapControl width */
+}
+
+.mcMapControl
+{
+    width: 784px;   /* width and height are 2px larger than the maps config.js file */
+    height: 556px;
+}
+
+.mcMapControlsContainer
+{
+    width: 806px;
+    margin: 0px 0px 0px 0px;
+}
+
+.mkMapKeyContainer
+{
+    width: 168px;
+    margin: 0px 5px 0px 0px;
+}
+
+.msMapSymbolContainer
+{
+    margin: 0px 0px 0px 0px;
+}
+
+.mjTitleAreaBox
+{
+    margin: 0px 0px 5px 0px;
+}
+/* -------------------------------------- */

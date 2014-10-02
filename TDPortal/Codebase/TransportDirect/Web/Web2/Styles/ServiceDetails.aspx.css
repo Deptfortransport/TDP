@@ -1,0 +1,50 @@
+#boxtypetwelve
+{
+	width:815px;
+}
+
+#dmtitle,#dmview
+{
+	width:805px;
+}
+
+#maincontenttable
+{	
+	width:840px;
+	height:620px;
+}
+
+table#sdTableBeforeAfter, table.sdTableBeforeAfter
+{
+	width:780px;
+}
+
+TABLE#sdTableleg, TABLE.sdTableleg  
+{
+	width:780px;
+}
+
+#topofpagecontrols
+{
+	width:833px;	
+}
+
+#boxtypeeightstd h2
+{
+	font-size: 1.2em;
+	padding-bottom: 5px;
+	font-weight:normal;
+}
+/* Service Details page css */
+#boxtypetwelve #dmtitle h3
+{
+	font-style: normal;
+}
+
+th#sdHeaderBeforeAfterCol1 h4, th#sdHeaderLegCol1 h4, th.sdHeaderBeforeAfterCol1 h4, th.sdHeaderLegCol1 h4
+{
+	font-size:1em;
+	font-weight:bold;
+	margin: 0px;
+	
+}

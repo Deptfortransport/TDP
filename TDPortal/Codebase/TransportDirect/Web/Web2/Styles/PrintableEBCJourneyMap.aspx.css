@@ -1,0 +1,160 @@
+﻿.boxtypeonem, #boxtypeonem 
+{
+    width: 629px;
+}
+
+.printableImage
+{
+    width: 629px;
+}
+
+.sumdetail
+{
+    border: solid 1px #330099;
+    margin-bottom: 5px;
+    padding: 3px;
+    width: 642px;
+}
+
+.EBCTableContent
+{
+    width: 640px;
+}
+
+.ebcCalculationDetailsBoxType1
+{
+    width: 460px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.ebcCalculationDetailsBoxType2
+{
+    display: none;
+}
+
+.ebcCalculationDetailsBoxType3 table tr td.ebcCalculationTableHeader6 hr.bluerule
+{
+    display: none;
+}
+
+
+.ebcCalculationTable 
+{
+    border: 1px solid #330099;
+
+}
+
+.ebcCalculationTableHeader1, /* Road category */
+.ebcCalculationTableHeader2, /* England */
+.ebcCalculationTableHeader3, /* Scotland */
+.ebcCalculationTableHeader4, /* Wales */
+.ebcCalculationTableHeader5, /* Total */
+.ebcCalculationTableHeader6  /* horizontal rule */
+{ 
+    padding: 0px 2px 0px 2px;
+    text-align: left;
+}
+
+.ebcCalculationTableHeader1, /* Road category */
+.ebcCalculationTableHeader2, /* England */
+.ebcCalculationTableHeader3, /* Scotland */
+.ebcCalculationTableHeader4 /* Wales */
+{
+    border-right:1px solid #330099;
+    border-bottom: 1px solid #330099;
+    padding: 5px;
+}
+
+.ebcCalculationTableHeader5
+{
+    border-bottom: 1px solid #330099;
+}
+
+.ebcCalculationTableCell1, /* Road category - Row 1*/
+.ebcCalculationTableCell2, /* England - Row 1*/
+.ebcCalculationTableCell3, /* Scotland - Row 1*/
+.ebcCalculationTableCell4, /* Wales - Row 1*/
+.ebcCalculationTableCell5,  /* Total - Row 1*/
+.ebcCalculationTableCell6, /* Road category - Row 2*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableCell10  /* Total - Row 2*/
+{ 
+    padding: 4px 2px 4px 3px;
+    text-align: left;
+}
+
+.ebcCalculationTableFooter1, /* Road category */
+.ebcCalculationTableFooter2, /* England */
+.ebcCalculationTableFooter3, /* Scotland */
+.ebcCalculationTableFooter4, /* Wales */
+.ebcCalculationTableFooter5  /* Total */
+{ 
+    padding: 4px 2px 4px 3px;
+    text-align: left;
+}
+
+.ebcCalculationTableCell1, /* Road category - Row 1*/
+.ebcCalculationTableCell2, /* England - Row 1*/
+.ebcCalculationTableCell3, /* Scotland - Row 1*/
+.ebcCalculationTableCell4, /* Wales - Row 1*/
+.ebcCalculationTableCell6, /* Road category - Row 2*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableFooter1, /* Road category */
+.ebcCalculationTableFooter2, /* England */
+.ebcCalculationTableFooter3, /* Scotland */
+.ebcCalculationTableFooter4 /* Wales */
+{
+    border-right: solid 1px #330099;
+}
+
+
+.ebcCalculationTableCell6, /* Road category - Row 2*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableCell10  /* Total - Row 2*/
+{
+    border-bottom: solid 1px #330099;
+}
+
+.ebcCalculationTableHeader2, /* England */
+.ebcCalculationTableCell2, /* England - Row 1*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableFooter2 /* England */
+{
+    width: 65px;
+    text-align: center;
+}
+
+.ebcCalculationTableHeader3, /* Scotland */
+.ebcCalculationTableCell3, /* Scotland - Row 1*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableFooter3 /* Scotland */
+{
+    width: 65px;
+    text-align: center;
+}
+
+.ebcCalculationTableHeader4, /* Wales */
+.ebcCalculationTableCell4, /* Wales - Row 1*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableFooter4 /* Wales */
+{
+    width: 65px;
+    text-align: center;
+}
+
+.ebcCalculationTableHeader5, /* Total */
+.ebcCalculationTableCell5,  /* Total - Row 1*/
+.ebcCalculationTableCell10,  /* Total - Row 2*/
+.ebcCalculationTableFooter5  /* Total */
+{
+    width: 65px;
+    text-align: center;
+}
+

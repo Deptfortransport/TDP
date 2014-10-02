@@ -1,0 +1,17 @@
+﻿#topMenuWrapper
+{
+	position:relative;
+	top:-4px;
+}
+
+#middleContentWrapper
+{
+	position:relative;
+	top:-8px;
+}
+
+#footerWrapper
+{
+	position:relative;
+	top:-12px;
+}

@@ -1,0 +1,35 @@
+.TitleText
+{
+	font-size:large;
+}
+
+.DescriptionText
+{
+	font-size:small;
+}
+
+.ticketTypeTable
+{
+ 
+}
+
+.ticketTypeTableDescCol
+{
+	width: 237px;
+	background-color:#CCECFF;
+	font-size:small;
+	font-weight:bold;
+}
+
+
+
+
+td { border: 1px; border-style:solid; border-color: #ACD6FF; } 
+
+tr{ vertical-align:top; }
+
+div#TopWrapper, div.TopWrapper {
+	width:775px;
+}
+
+

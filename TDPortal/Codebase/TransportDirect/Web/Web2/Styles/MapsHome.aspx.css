@@ -1,0 +1,39 @@
+.HomepageLayoutTable 
+{
+	width:840px;
+}
+
+#boxtypeeightstd
+{
+	width: 565px;
+}
+
+.MinihomeSoftContent
+{
+	overflow:auto;
+	height:400px;
+	padding-left:0px;
+	padding-right:0px;
+	width:636px;
+}
+
+.MinihomeHyperlinksInfoContent
+{
+	width:635px;
+	margin-right:3px;
+	margin-left:3px;
+	*margin-left:0px;
+}
+
+.MinihomeHyperlinksInfoHeader
+{
+	width:625px;
+}
+
+.HyperlinkTableCell
+{
+	width : 100px;
+	height: 72px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

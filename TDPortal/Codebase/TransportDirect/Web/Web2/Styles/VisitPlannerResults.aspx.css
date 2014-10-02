@@ -1,0 +1,74 @@
+#boxtypeeightalt
+{
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.boxtypeeightstd, #boxtypethirteen, .boxtypetwelveamendcontrol
+{
+	margin-left: 10px;
+}
+
+.labelVisitResultsTitle
+{
+    margin: 0px 0px 5px 10px;
+}
+
+#boxjourneychangesearchcontrolfullwidth
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 10px;
+	width: 828px;
+}
+
+
+#boxtypethirteen
+{
+	width : 811px;
+	padding-left: 0px;
+}
+
+.boxtypetwelveamendcontrol
+{
+	width : 816px;
+}
+
+.ErrorDisplayTable, .ErrorMessageBase
+{
+	margin-left: 9px;
+	width: 821px;
+}
+
+table.jdtgrid 
+{
+    table-layout: fixed;
+}
+
+th.jdtheader4
+{
+    width: 13%;
+}
+
+th.jdtheader6
+{
+    width: 9%;
+}
+
+th.jdtheader9
+{
+    width: 8%;
+}
+
+th.jdtheader1
+{
+    width: 10%;
+}
+
+th.jdtheader2, th.jdtheader8
+{
+    width: 15%;
+}
+
+
+
+

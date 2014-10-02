@@ -1,0 +1,29 @@
+/* Service Details page css */
+#boxtypetwelve #dmtitle 
+{
+	background-color:#F2F1EF;
+}
+
+
+#boxtypeeightstd h2
+{
+	padding-bottom: 5px;
+}
+/* Service Details page css */
+#boxtypetwelve #dmtitle h3
+{
+	font-style: normal;
+}
+
+th#sdHeaderBeforeAfterCol1 h4, th#sdHeaderLegCol1 h4
+{
+	font-size:1em;
+	font-weight:bold;
+	margin: 0px;
+	
+}
+
+tr#sdHeaderBeforeAfter
+{
+	background-color:#E0E0E0;
+}

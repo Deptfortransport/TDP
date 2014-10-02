@@ -1,0 +1,33 @@
+#centralpagecontent
+{
+	width: 815px;	
+}
+
+#contentareawl 
+{ 
+	padding-left:0px;	
+}
+
+#mainpagecontent
+{
+	margin-bottom: 5px; 
+	margin-left: 5px;
+	width: 755px;
+}
+
+#primcontent 
+{
+	margin-left: 0px;
+}
+
+DIV#boxtypetwo
+{
+	width: 809px;
+	margin-right:0px;
+	margin-left:0px;
+}
+
+.listround
+{
+	list-style-type: disc; 	
+}

@@ -1,0 +1,19 @@
+.boxtypelargeeight
+{
+	width: 828px;
+	margin: 0px 0px 5px 10px;
+}
+
+#mboxtypetwonoborder, #mapContainer
+{
+	margin-left: 0px;
+}
+
+.boxtypeJourneyBuilderWithPadding
+{
+	width: 828px;
+}
+
+.mjMapJourneyControlContainer .mkMapKeyContainer, .mjMapJourneyControlContainer .msMapSymbolContainer {
+    height:350px;
+}

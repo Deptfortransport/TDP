@@ -1,0 +1,345 @@
+﻿#boxjourneychangesearchcontrol,
+.boxtypesixteen
+{
+	width: 830px;
+}
+
+.ebcMapContainer
+{
+    width: 814px;
+}
+
+.boxtypeerrormsgtwo
+{
+	width: 831px;
+	padding-left: 0px;
+}
+
+/* Styles for EBC details control*/
+.ebcJourneyDetailsPanel
+{
+	margin: 5px 0px 5px 5px;
+}
+
+.ebcAllDetailsBoxType1
+{
+	background-color: #ccccff;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #330099;
+}
+
+.ebcAllDetailsBoxType2
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	height: 1%;
+}
+html>body .ebcAllDetailsBoxType2
+{
+	height: auto;
+}
+
+.ebcAllDetailsBoxType3
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #330099;
+	width: 814px;
+}
+
+.ebcAllDetailsBoxType4
+{
+	margin-bottom: 5px;
+}
+/* -------------------------------------- */
+
+/* Styles for Car journey summary table */
+.boxtypetenfifteen
+{
+	margin: 0px 0px 5px 0px;
+	padding: 5px 5px 5px 5px;
+	height: 1%;
+	width: auto;
+}
+
+html>body .cycleJourneySummaryBoxType1
+{
+	height: auto;
+}
+/* -------------------------------------- */
+
+/* Styles for Car journey details table */
+.carJourneyDetailsBoxType1
+{
+	width: 470px;
+	height: 440px;
+	border: 1px solid #330099;
+	padding: 5px 0px 5px 0px;
+	margin-bottom: 0px;
+}
+
+.carJourneyDetailsBoxType2
+{
+	padding: 0px 5px 10px 5px;
+	height: 16px;
+	overflow: hidden;
+}
+
+.carJourneyDetailsBoxType3
+{
+	width: 464px;
+	min-height: 350px;
+	height: 420px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 0px 5px 0px 0px;
+}
+
+.carJourneyDetailsBoxType3 .txterror
+{
+    font-size: 0.8em;
+}
+
+.carJourneyDetailsTableHeader1, /* step */
+.carJourneyDetailsTableHeader2, /* total distance */
+.carJourneyDetailsTableHeader3, /* direction */
+.carJourneyDetailsTableHeader4, /* time */
+.carJourneyDetailsTableHeader5, /* direction distance */
+.carJourneyDetailsTableHeader6, /* map button */
+.carJourneyDetailsTableHeader7  /* horizontal rule */
+{ 
+    padding: 0px 4px 0px 4px;
+    font-size: 0.7em;
+}
+
+.carJourneyDetailsTableHeader1, /* step */
+.carJourneyDetailsTableCell1,
+.carJourneyDetailsTableFooter1
+{ 
+    width: 20px;
+}
+
+.carJourneyDetailsTableHeader2, /* total distance */
+.carJourneyDetailsTableCell2,
+.carJourneyDetailsTableFooter2
+{ 
+    width: 40px;
+    text-align: center;
+}
+
+.carJourneyDetailsTableHeader4, /* time */
+.carJourneyDetailsTableCell4,
+.carJourneyDetailsTableFooter4
+{ 
+    width: 45px;
+}
+
+.carJourneyDetailsTableHeader5, /* direction distance */
+.carJourneyDetailsTableCell5,
+.carJourneyDetailsTableFooter5
+{ 
+    width: 38px;
+}
+
+.carJourneyDetailsTableHeader6, /* map button */
+.carJourneyDetailsTableCell6,
+.carJourneyDetailsTableFooter6
+{ 
+    width: 1px;
+}
+/* -------------------------------------- */
+
+/* Styles for Calculation details table */
+.ebcCalculationDetailsBoxType1
+{
+	width: 335px;
+	height: 440px;
+	border: 1px solid #330099;
+	padding: 5px 0px 5px 0px;
+	margin-bottom: 0px;
+}
+
+.ebcCalculationDetailsBoxType2
+{
+	padding: 0px 5px 10px 5px;
+	height: 16px;
+	overflow: hidden;
+}
+
+.ebcCalculationDetailsBoxType3
+{
+    padding: 0px 5px 0px 5px;
+}
+
+.ebcCalculationTable 
+{
+    border: none 0;
+}
+
+.ebcCalculationTableHeader1, /* Road category */
+.ebcCalculationTableHeader2, /* England */
+.ebcCalculationTableHeader3, /* Scotland */
+.ebcCalculationTableHeader4, /* Wales */
+.ebcCalculationTableHeader5, /* Total */
+.ebcCalculationTableHeader6  /* horizontal rule */
+{ 
+    padding: 0px 2px 0px 2px;
+    text-align: left;
+}
+
+.ebcCalculationTableCell1, /* Road category - Row 1*/
+.ebcCalculationTableCell2, /* England - Row 1*/
+.ebcCalculationTableCell3, /* Scotland - Row 1*/
+.ebcCalculationTableCell4, /* Wales - Row 1*/
+.ebcCalculationTableCell5,  /* Total - Row 1*/
+.ebcCalculationTableCell6, /* Road category - Row 2*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableCell10  /* Total - Row 2*/
+{ 
+    padding: 5px 2px 5px 4px;
+    text-align: left;
+}
+
+.ebcCalculationTableFooter1, /* Road category */
+.ebcCalculationTableFooter2, /* England */
+.ebcCalculationTableFooter3, /* Scotland */
+.ebcCalculationTableFooter4, /* Wales */
+.ebcCalculationTableFooter5  /* Total */
+{ 
+    padding: 5px 2px 5px 4px;
+    text-align: left;
+}
+
+.ebcCalculationTableCell1, /* Road category - Row 1*/
+.ebcCalculationTableCell2, /* England - Row 1*/
+.ebcCalculationTableCell3, /* Scotland - Row 1*/
+.ebcCalculationTableCell4, /* Wales - Row 1*/
+.ebcCalculationTableCell6, /* Road category - Row 2*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableFooter1, /* Road category */
+.ebcCalculationTableFooter2, /* England */
+.ebcCalculationTableFooter3, /* Scotland */
+.ebcCalculationTableFooter4 /* Wales */
+{
+    border-right: solid 1px #ccccff;
+}
+
+
+.ebcCalculationTableCell6, /* Road category - Row 2*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableCell10  /* Total - Row 2*/
+{
+    border-bottom: solid 1px #ccccff;
+}
+
+.ebcCalculationTableHeader2, /* England */
+.ebcCalculationTableCell2, /* England - Row 1*/
+.ebcCalculationTableCell7, /* England - Row 2*/
+.ebcCalculationTableFooter2 /* England */
+{
+    width: 55px;
+    text-align: center;
+}
+
+.ebcCalculationTableHeader3, /* Scotland */
+.ebcCalculationTableCell3, /* Scotland - Row 1*/
+.ebcCalculationTableCell8, /* Scotland - Row 2*/
+.ebcCalculationTableFooter3 /* Scotland */
+{
+    width: 55px;
+    text-align: center;
+}
+
+.ebcCalculationTableHeader4, /* Wales */
+.ebcCalculationTableCell4, /* Wales - Row 1*/
+.ebcCalculationTableCell9, /* Wales - Row 2*/
+.ebcCalculationTableFooter4 /* Wales */
+{
+    width: 55px;
+    text-align: center;
+}
+
+.ebcCalculationTableHeader5, /* Total */
+.ebcCalculationTableCell5,  /* Total - Row 1*/
+.ebcCalculationTableCell10,  /* Total - Row 2*/
+.ebcCalculationTableFooter5  /* Total */
+{
+    width: 45px;
+    text-align: center;
+}
+
+/* -------------------------------------- */
+
+.ebcMapDetailsBoxType1
+{
+	background-color: #ccccff;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #330099;
+}
+
+.ebcMapDetailsBoxType2
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	height: 1%;
+}
+html>body .ebcMapDetailsBoxType2
+{
+	height: auto;
+}
+
+.ebcMapDetailsBoxType3
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #330099;
+}
+
+.ebcMapDetailsBoxType4
+{
+	margin-bottom: 5px;
+}
+
+/* Styles for map - overridden from Map.css to fit the map into the EBC control*/
+
+.mcMapControlContainer
+{
+    width: 792px; /* width is same as mcMapControl width */
+}
+
+.mcMapControl
+{
+    width: 792px;   /* width and height are 2px larger than the maps config.js file */
+    height: 556px;
+}
+
+.mcMapControlsContainer
+{
+    width: 814px;
+    margin: 0px 0px 0px 0px;
+}
+
+.mkMapKeyContainer
+{
+    width: 176px;
+    margin: 0px 5px 0px 0px;
+}
+
+.msMapSymbolContainer
+{
+    margin: 0px 0px 0px 0px;
+}
+
+.mjTitleAreaBox
+{
+    margin: 0px 0px 5px 0px;
+}
+/* -------------------------------------- */

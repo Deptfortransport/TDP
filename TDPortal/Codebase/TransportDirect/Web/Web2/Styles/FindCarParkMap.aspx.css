@@ -1,0 +1,31 @@
+#boxjourneychangesearchcontrol 
+{
+	width: 828px;
+	padding: 0px 0px 0px 0px;
+	margin: 5px 0px 5px 10px;
+}
+
+#boxtypestationresults
+{
+	width: 826px;
+	margin-left:10px;
+}
+
+#boxtypeeightstd, .boxtypeeightstd
+{
+	width: 827px;
+	margin-left:10px;
+}
+
+div#helpboxoutput
+{
+	width: 820px;
+	margin-left: 10px;
+}
+
+.boxtypeerrormsgfour
+{
+    width: 827px;
+    padding: 0px;
+    margin-left: 0px;
+}

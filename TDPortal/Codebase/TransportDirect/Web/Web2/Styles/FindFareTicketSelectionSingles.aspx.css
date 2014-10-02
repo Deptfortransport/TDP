@@ -1,0 +1,80 @@
+.HomepageOutlineTable
+{ 
+	width: 100%;
+}
+
+#boxtypetdtheadernodiscount, #boxtypetdtitemsnodiscount, #boxtypeeightstd, #boxtype11, .boxtype11, #boxtypetdtitemsnodiscountscroll, .boxtypeeightstd, .boxtypetdtheadernodiscount, .boxtypetdtitemsnodiscount, .boxtypetdtitemsnodiscountscroll
+{
+	width: 817px;
+	margin-left: 10px;
+}
+
+#boxtypetdtheadertitlenodiscount, .boxtypetdtheadertitlenodiscount
+{
+	width: 807px;
+	margin-left: 10px;
+}
+
+#outwardTicketSelectionControl_repeaterResultTable, #inwardTicketSelectionControl_repeaterResultTable
+{
+	width: 100%;
+}
+
+#boxjourneychangesearchcontrol
+{
+	width: 820px;
+	padding-left:0px;
+	margin-left: 10px;
+}
+
+div#helpboxoutput
+{
+	width: 820px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.boxtypeerrormsg
+{
+	padding-left: 0px;
+	margin-left: 10px;
+}
+
+.tdttypecolumnheader
+{
+	width:290px;
+}
+
+.tdtflexibilitycolumnheader
+{
+	width:150px;
+}
+
+
+/*----------------------------------------*/
+.tdtprobabilityitem
+{
+	width: 85px;
+}
+
+.tdtselectitemscroll, .tdtselectitem
+{
+	width:55px;
+	padding-left: 15px;
+}
+
+#boxtypetdtheadernodiscount TABLE, .boxtypetdtheadernodiscount TABLE
+{
+	width: 817px;
+}
+
+#boxtypethirteen
+{
+	padding-left: 0px;
+}
+
+.boxtypethirteen
+{
+	padding-left: 0px;
+}

@@ -1,0 +1,50 @@
+/* CSS Document for Transport Direct Portal */
+/* Styles for JourneyEmissionsCompareJourney page */
+/* This style sheet inherits from jpstd.css and should be used in addition to it */
+
+.boxtypetwentyfive
+{	
+	width: 606px;
+}
+
+.boxtypetwentysix
+{
+	width: 616px;
+}
+
+.ejdetail
+{
+	width: 616px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 208px;
+}
+
+.JourneyEmissionInformationColumn .JourneyEmissionsPageRelatedLinks
+{
+	width: 208px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content .JourneyEmissionsPageRelatedLinks .categoryLink
+{
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	margin-left: 3px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content .JourneyEmissionsPageRelatedLinks .categoryLink a
+{
+	color: #333333; /* hyperlink colour */
+}
+
+.JourneyEmissionInformationColumn .Column3Content .JourneyEmissionsPageRelatedLinks .categoryLink li
+{
+	background: url(../../App_Themes/VisitBritain/images/gifs/Partner/linkArrowGreen.gif) no-repeat left 7px;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	border-bottom: solid 1px #E0E0E0;
+}

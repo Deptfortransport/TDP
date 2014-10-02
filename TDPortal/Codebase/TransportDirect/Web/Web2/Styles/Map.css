@@ -1,0 +1,430 @@
+﻿/* Styles for map controls */
+
+/* --------------------------------------- Common map control styles ------------------------------------------ */
+/* ---- Base map control ---- */
+.mcMapControlContainer
+{
+    width: 806px; /* width is same as mcMapControl width */
+    padding: 10px 10px 10px 10px;
+    background-color: #CCCCFF;
+    border: solid 1px #330099;
+}
+
+.mcMapControl
+{
+    width: 806px;   /* width and height are 2px larger than the maps config.js file */
+    height: 556px;
+}
+
+/* ---- Map Symbols control ---- */
+.msMapSymbolContainer
+{
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 5px 0px;
+    background-color: #99CCFF;
+    border: solid 1px #330099;
+}
+
+.msMapSymbolsHeading
+{
+    background-color: #FFFFFF;
+    padding: 3px 3px 3px 3px;
+    margin: 0px 0px 5px 0px;
+    width: 800px;
+    height: 20px;
+}
+
+.msPanelOnlyViewBox
+{
+    width: 800px; /* same width as msMapSymbolsHeading */
+}
+
+.msPanelOnlyInfoHeading
+{
+    margin: 0px 0px 5px 0px;
+}
+
+.msPanelKeysTransport
+{
+    background-color: #CCCCFF;
+    width: 179px;
+    min-height: 222px; /* Same height as msPanelKeysOther, mkMapKeys */
+}
+
+.msTransportSymbolsHeading
+{
+    padding-left: 4px;
+}
+
+.msPanelKeysOther
+{
+    background-color: #CCCCFF;
+    width: 618px;
+    min-height: 222px; /* Same height as msPanelKeysTransport, mkMapKeys */
+    padding-left: 4px;
+    margin: 0px 0px 0px 5px;
+}
+
+.msPanelKeysOtherOptions
+{
+    padding: 21px 0px 0px 0px; /* Push it inline with transport symbols */
+}
+
+.msPanelKeysOtherOptionsTable
+{
+    margin: 0px 0px 4px 0px; /* Spacing between the other options tables */
+}
+
+.msPanelKeysSelectedCategory
+{
+    padding: 2px 0px 0px 0px; /* Push it inline with other options categories*/
+}
+
+.msPanelKeysSelectedCategoryHeading
+{
+    padding: 0px 0px 0px 5px;
+}
+
+.msPanelKeysButton
+{
+    margin: 0px 5px 0px 0px;
+}
+
+.msTravelNewsContainer
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.msTravelNewsOptions
+{
+    width: 50%;
+}
+
+.msPanelTravelNewsDateSelector
+{
+    padding:5px 5px 5px 7px;
+    text-align:right;
+    width:47%;
+}
+
+.msTravelNewsContainer .msPanelKeysButton
+{
+    margin: 0px 7px 0px 0px;
+}
+
+
+
+.msTravelNewsToggle
+{
+    padding: 5px;
+    margin-right: 2px;
+    
+}
+
+
+
+
+
+/* ---- Map Key control ---- */
+.mkMapKeyContainer
+{
+    width: 190px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 5px 5px 0px; /* Space between Key and Symbols box */
+    background-color: #99CCFF;
+    border: solid 1px #330099;
+}
+
+.mkMapKeyHeading
+{
+    background-color: #FFFFFF;
+    padding: 3px 3px 3px 3px;
+    margin: 0px 0px 5px 0px;
+    height: 20px;
+}
+
+.mkMapKeys
+{
+    background-color: #CCCCFF;
+    min-height: 222px; /* Same height as msPanelKeysTransport, msPanelKeysOther */
+}
+
+.mkMapKeyTable
+{
+    width: 100%;
+}
+
+.mkMapKeyTable td
+{
+    padding: 1px 0px 2px 5px;
+}
+
+/* ---- Contains the MapControl2, MapSymbolsSelectControl, and MapKeyControl ---- */
+/* ---- All map custom controls should have these controls within these two divs, see MapFindControl for example */
+.mcMapControlsContainer
+{
+    width: 828px; /* As mcMapControlContainer width + padding leftright + border width leftright */
+    margin: 0px 0px 0px 10px;
+}
+
+.mcMapControlsAboveContainer
+{
+    margin: 5px 0px 0px 0px;
+}
+
+.mcMapControlsBelowContainer
+{
+    margin: 5px 0px 0px 0px;
+}
+
+
+/* ------------------------------------- Customisation of above map styles ------------------------------------ */
+/* ---- MapFindControl custom/override the above styles ---- */
+.mcMapFindControlContainer .msPanelKeysTransport,
+.mcMapFindControlContainer .msPanelKeysOther
+{
+    min-height: 180px;
+}
+
+/* ---- MapNearestControl custom/override the above styles ---- */
+.mnMapNearestControlContainer .msPanelKeysTransport,
+.mnMapNearestControlContainer .msPanelKeysOther
+{
+    min-height: 180px;
+}
+
+/* ---- MapNearestControl for FindNearestAccessibleStop page custom/override the above styles ---- */
+.fnAccessibleStopMap .mnMapNearestControlContainer .mcMapControlsContainer
+{
+    width: 627px; /* As mcMapControlContainer width + padding leftright + border width leftright */
+}
+
+.fnAccessibleStopMap .mnMapNearestControlContainer .mcMapControlsContainer .mcMapControlContainer
+{
+    width: 605px; /* width is same as mcMapControl width */
+}
+
+.fnAccessibleStopMap .mnMapNearestControlContainer .mcMapControlsContainer .mcMapControlContainer .mcMapControl
+{
+    /* FindNearestAccessibleStop page map dimensions are specified in MapNearestControl.ascx. */
+    width: 605px;
+    height: 502px;
+}
+
+
+/* ---- MapJourneyControl custom/override the above styles ---- */
+.mjMapJourneyControlContainer .mkMapKeyContainer,
+.mjMapJourneyControlContainer .msMapSymbolContainer
+{
+    height: 252px; /* Ensures Key and Symbol boxes are same height */
+}
+
+.mjMapJourneyControlContainer .msMapSymbolsHeading
+{
+    width: 583px;
+}
+
+.mjMapJourneyControlContainer .msPanelOnlyViewBox
+{
+    width: 583px; /* same width as msMapSymbolsHeading */
+}
+
+.mjMapJourneyControlContainer .msPanelKeysOther
+{
+    width: 401px;
+}
+
+.mjMapJourneyControlContainer .msPanelKeysSelectedCategory
+{
+    width: 185px; /* Ensures select category symbols div doesnt move on to next line */
+}
+
+
+/* ---- MapInputControl custom/override the above styles ---- */
+.mcMapInputBox
+{
+    margin: 0px 0px 5px 0px;
+}
+
+.miMapInputControlContainer .mcMapControlsContainer
+{
+    width: 622px; /* As mcMapControlContainer width + padding leftright + border width leftright */
+}
+
+.miMapInputControlContainer .mcMapControlsContainer .mcMapControlContainer
+{
+    width: 610px; /* width is same as mcMapControl width */
+    padding: 5px 5px 5px 5px;
+    background-color: #99CCFF;
+}
+
+.miMapInputControlContainer .mcMapControlsContainer .mcMapControlContainer .mcMapControl
+{
+    /* Journey input page map dimensions are specified in MapInputControl.ascx. */
+    width: 610px;
+    height: 502px;
+}
+
+/* ---- MapBasicControl custom/override the above styles ---- */
+.mbMapBasicControlContainer .mcMapControlsContainer
+{
+    width: 391px; /* As mcMapControlContainer width + padding leftright + border width leftright */
+    margin: 0px 0px 0px 0px;
+}
+
+.mbMapBasicControlContainer .mcMapControlsContainer .mcMapControlContainer
+{
+    width: 391px; /* width is same as mcMapControl width */
+    padding: 0px 0px 0px 0px;
+    border: none;
+}
+
+.mbMapBasicControlContainer .mcMapControlsContainer .mcMapControlContainer .mcMapControl
+{
+    /* Stop Information page map dimensions are specified in MapBasicControl.ascx. */
+    width: 391px;
+    height: 226px;
+}
+
+/* Hide the pan map toolbar */
+.mbMapBasicControlContainer .mcMapControlsContainer .mcMapControlContainer .mcMapControl .esriuk-custom-mapbase .navPanelContainer
+{
+    display:none;
+}
+
+/* Hide the zoom slider toolbar */
+.mbMapBasicControlContainer .mcMapControlsContainer .mcMapControlContainer .mcMapControl .esriuk-custom-mapbase .sliderPanelContainer 
+{
+    display:none;
+}
+
+/* ---- MapBasicControl custom/override the above styles ---- */
+.mtMapTravelNewsContainer
+{
+    margin: 0px 0px 5px 0px;
+}
+
+
+/* --------------------------------------- Control styles (not affecting map)---------------------------------- */
+/* ---- MapJourneyControl styles ---- */
+.mjTitleAreaBox
+{
+    width: 806px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 5px 10px;
+    background-color: #CCCCFF;
+    border: solid 1px #330099;
+}
+
+.mjMapJourneyTitleLabels
+{
+    margin: 0px 0px 5px 0px;
+}
+
+.mjMapJourneySelectButtons
+{
+    margin: 0px 0px 5px 0px;
+    text-align: right;
+}
+
+/* ---- MapSelectLocationControl2 styles ---- */
+.mlMapSelectLocationContainer
+{
+    width: 806px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 5px 0px;
+    background-color: #99CCFF;
+    border: solid 1px #330099;
+}
+
+.mlMapSelectLocationsInfo,
+.mlMapSelectLocationsList,
+.mlMapSelectLocationsError
+{
+    margin: 5px 0px 0px 0px;
+    height: 25px;
+}
+
+.mlMapSelectLocationListDiv
+{
+    padding: 2px 2px 2px 2px;
+    margin: 0px 0px 0px 0px;
+    background-color: #FFFF00;
+}
+
+.mlMapSelectLocationButtonsDiv
+{
+    padding: 2px 2px 2px 2px;
+}
+
+.mlMapLocationList
+{
+    width: 350px;
+}
+
+.mlMapSelectLocationError
+{
+    padding: 2px 2px 2px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* MapSelectLocationControl2 styles overridden for input page */
+.miMapInputControlContainer .mcMapControlsAboveContainer
+{
+    margin: 0px 0px 0px 0px;
+}
+
+.miMapInputControlContainer .mlMapSelectLocationContainer
+{
+    width: 600px;
+}
+
+.miMapInputControlContainer .mlMapSelectLocationsInfo,
+.miMapInputControlContainer .mlMapSelectLocationsList,
+.miMapInputControlContainer .mlMapSelectLocationsError
+{
+    height: 40px;
+}
+
+.miMapInputControlContainer .mlMapSelectLocationListDiv
+{
+    width: 460px;
+}
+
+/* ---- MapNearestControl styles ---- */
+.mnMapLocationTitleArea
+{
+    width: 806px;
+    padding: 10px 10px 0px 10px;
+    margin: 0px 0px 5px 10px;
+    background-color: #CCCCFF;
+    border: solid 1px #330099;
+}
+.fnAccessibleStopMap .mnMapLocationTitleArea
+{
+    width: 605px;
+}
+.mnMapLocationTitleArea h1
+{
+    margin: 0px 0px 8px 0px;
+}
+
+/* ---- TravelNewsMapKeyControl styles ---- */
+.mtTravelNewsMapKeyControl
+{
+    width: 806px;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 5px 0px;
+    background-color: #CCCCFF;
+    border: solid 1px #330099;
+    font-size: 0.7em;
+	line-height:1.5;
+}
+
+/* -------------------------- Styles within Map - (complimenting ESRI Styles) ---------------------------------- */
+/* Style used for adding a custom information link to the ESRI info popup for a location point */
+.mapInfoWindow_InformationLink 
+{
+    margin-bottom: 3px;
+}

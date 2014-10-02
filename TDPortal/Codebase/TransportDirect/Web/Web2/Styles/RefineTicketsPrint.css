@@ -1,0 +1,289 @@
+.fdtrowheader
+{
+	background-color:#ffffff;
+}
+
+.fdetail 
+{
+	width: 600px; 
+}
+
+.fdtctable
+{ 
+	border-top: solid 1px #330099;    
+	border-left: solid 1px #330099;   
+	border-right: solid 1px #330099;  
+	margin: 3px;
+	width: 99%; 
+}
+
+.fdtcellheader
+{
+	text-align:left;
+	border-bottom: solid 1px #330099;
+}
+
+.fdtcellheaderb
+{
+	text-align: left;
+	font-weight: bold;
+	border-bottom: solid 1px #330099;
+}
+
+.fdtcbody1 {text-align:left;}
+.fdtcbody2 {text-align:left;}
+.fdtcbody3 {text-align:left;}
+.fdtcbody4 {text-align:left;}
+.fdtcbody5 {text-align:left;}
+.fdtcbody6 {text-align:left;}
+.fdtcbody7 {text-align:left; border-bottom: solid 1px #330099;}
+.fdtcbody8 {text-align:left; border-bottom: solid 1px #330099;}
+
+.fdtcrow{background-color: #E6FFFE;}
+.fdtcrowg{background-color: #FFFFFF;}
+.fdtcrowy{font-weight: bold; background-color: #FFFF00;}
+
+.legTable
+{
+	border: 1px solid #330099;
+	margin: 3px;
+	width: 99%;
+}
+
+.legTableRow
+{
+	border: 1px solid #330099;
+}
+
+.RefineTicketsOuterControl
+{
+	border: solid 5px #ccccff;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 630px;
+}
+
+.RefineTicketsOuterControlHeading
+{
+	border-bottom: solid 5px #ccccff;
+	font-weight: bold;
+	font-size: 0.9em;
+	padding-top: 8px;
+	padding-left: 10px;
+	height: 25px;
+	width: 622px;
+}
+
+.LocationsLabel
+{
+	padding-left: 10px;
+	font-weight: normal;
+	font-size: 0.85em;
+}
+
+.LocationsTitleLabel
+{
+	padding-left: 10px;
+	font-weight: normal;
+	font-size: 0.75em;
+}
+.LocationsLabelSmall
+{
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.JourneyTicketCostsItem
+{
+	padding: 5px;
+}
+
+.JourneyTicketCostsCarItem
+{
+	background-color: White;
+}
+
+.JourneyTicketCostsPublicItem
+{
+	background-color: White;
+}
+
+.fdetail
+{
+	background-color: #FFFFFF;
+}
+
+#boxtypetwelve{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:600px;
+}	
+
+#dmtitle 
+{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	width:590px; 
+}
+
+#boxtypeninenew {	
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:600px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}	
+
+
+.dmtitletickets
+{
+	border: 1px solid #330099;
+	background-color: #CCCCFF;
+	width: 610px;
+}
+
+.dmview
+{
+	font-size: 0.7em;
+	border-left: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-right: 1px solid #330099;
+	background-color: #FFFFFF;
+	padding: 5px;
+}
+
+.boxtypetwelvetickets
+{	
+	width: 610px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+}	
+
+#boxtypelargeeight
+{
+	border: 0px;
+	padding: 5px 0px 0px 0px;
+	background-color: #ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width: 630px;
+}
+
+.ExtendedButtons
+{
+	float: right;
+	vertical-align: top;
+	margin-right: 17px;
+}
+
+.ExtendedLabels
+{
+	float: left;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+table#cct
+{
+	width: 580px;
+	background-color: #ffffff;
+}
+
+.footnotes
+{
+	width: 400px;
+}
+
+
+td#cc2 { width: 149px; }
+td#cc3 { width: 10px; text-align:left; }
+td#cc4 { width: 10px; text-align:right; }
+td#cc5 { width: 300px; }
+td#cc6 { font-weight:bold; text-align:right; }
+td#cc7 { font-weight:bold; text-align:right; }
+td#cc8 { width: 388px; padding: 0px;}
+td#cc9 { width: 378px; padding: 0px;}
+
+td#ccPounds { font-weight:bold; text-align:right; width: 70px;}
+td#ccPence { font-weight:bold; text-align:left; width: 40px;}
+td#ccTotalPounds { font-weight:bold; text-align:right; width: 86px;}
+td#ccTotalPence { font-weight:bold; text-align:left; width: 86px;}
+.ccPounds { font-weight:bold; text-align:right; width: 70px;}
+.ccPence { font-weight:bold; text-align:left; width: 40px;}
+.ccUnknown { font-weight:bold; text-align:right; width: 110px; padding-right: 20px}
+
+.faresIncludedAbove
+{
+	font-size: 1.1em;
+	margin-left: 5px;
+}
+
+/* Printable Page Header Styles */
+div.TopWrapper 
+{
+	width: 640px;
+	height: 70px;
+}
+
+div.PrintDirlogo 
+{
+	border-width: 0;
+	vertical-align: super;
+	position: relative;
+	float:left;
+	padding: 10px 10px 10px 10px;
+}
+
+div.PrintStrap 
+{
+	border-width: 0;
+	vertical-align: super;
+	position: relative;
+	padding: 25px 10px 10px 10px;
+	float: right;
+}
+/* End of: Printable Page Header Styles */
+
+div#hhd {
+	font-weight: bold;
+	background-color: #FF9933;
+	padding: 2px;
+	font-size: 0.8em;
+}
+div#hline {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #cc6600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: static;              
+    position/* */:/**/relative;    
+    position:relative;
+    /*AS - IE 5.0 does not support border-bottom so the above position settings
+are the fix.*/
+}
+
+div#htxt {
+	color: #000000;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	border: 1px solid #FF6633;
+}
+
+div#htxt p {font-size: 0.7em;}
+
+#himg {float: right; clear: right; padding: 3px;}

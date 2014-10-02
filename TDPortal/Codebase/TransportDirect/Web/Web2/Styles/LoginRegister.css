@@ -1,0 +1,36 @@
+DIV.controlWrap
+{
+	width:826px;
+	/* height:20px; */
+	height:auto;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+	padding-bottom:10px
+}
+
+DIV.controlText
+{
+	background-color:#CCECFF;
+	/*height:20px; */
+	height:auto;
+	width:823px;
+	font-weight:bold;
+	color:#330099;
+}
+
+#logoutTitle
+{
+	font-size:1.2em;
+}
+
+#logoutTitle ul
+{
+	font-size:0.9em;
+	padding:10px;
+}
+
+#backButtonCell
+{
+	padding: 6px;
+}

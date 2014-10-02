@@ -1,0 +1,36 @@
+.TitleText
+{
+	font-size:large;
+}
+
+.DescriptionText
+{
+	font-size:small;
+}
+
+.ticketTypeTable
+{
+ 
+}
+
+.ticketTypeTableDescCol
+{
+	width: 237px;
+	background-color:#CECBFF; //was ff9933
+	font-size:small;
+	font-weight:bold;
+}
+
+
+
+
+td { border: 1px; border-style:solid; border-color: #E0E0E0;} 
+
+tr{ vertical-align:top; }
+
+
+.hdtypethree
+{
+	border:1px solid #E0E0E0;
+	background-color:#CECBFF; //was ff9933
+}

@@ -1,0 +1,59 @@
+/* Style sheet for use with the SuggestionBox user control */
+
+/* Defins the style for a category */
+.Category
+{
+	width: 142px;
+	border: 2px solid #CCCCCC;
+	padding-right: 3px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	margin: 3px;
+	padding-top: 8px;
+}
+/* Defines the style for the control container */
+.SuggestionBoxPanel
+{
+	width: 150px;
+}
+/* Defines the style for an individual links placeholder */
+#LineItem
+{
+	font-size: 0.75em;
+	padding: 3px;
+}
+
+    #LineItem p{
+	color: #330099;
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size:100%;
+	line-height:1.5;
+	margin-bottom: 0.1em;
+	}
+
+	#LineItem a:link{
+	color: #330099;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	}
+
+	#LineItem a:visited {
+	color: #330099;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+}
+
+	#LineItem a:hover {
+	color: #330099;
+	height: 20px;
+	padding: 3px;
+	text-decoration: underline;
+	display: block;
+	margin: 0;
+}

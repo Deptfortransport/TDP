@@ -1,0 +1,15 @@
+#boxtypetwo
+{
+	width: 814px;	
+}
+
+#panelFeedbackDetails
+{
+	width: 814px;
+	border: solid 1px #330099;
+	background-color: #99CCFF;
+	margin-left: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}

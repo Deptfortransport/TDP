@@ -1,0 +1,39 @@
+﻿/* CSS Document for Transport Direct Portal */
+/* Styles for JourneyEmissions page */
+/* This style sheet inherits from jpstd.css and should be used in addition to it */
+
+#boxtypetwelve
+{	
+	border: solid 1px #E0E0E0;
+	background-color:#FFFFFF;
+	width: 601px;
+}
+
+.boxtypetwentyfive
+{	
+	width: 591px;
+}
+
+.boxtypetwentysix
+{
+	width: 598px;
+}
+
+.ejdetail
+{
+	width: 600px;
+}
+
+#boxtypetwentyeight
+{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	background-color:#FFFFFF;
+	width:567px;
+}
+
+.transportHeader, .emissionHeader, .costHeader 
+{
+	border: solid 1px #000000;
+}

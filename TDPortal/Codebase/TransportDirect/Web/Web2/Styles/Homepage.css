@@ -1,0 +1,648 @@
+/* Style sheet for specific homepage and mini-homepages  */
+
+.TravelNewsHeadlines
+{
+	overflow:auto;
+	height: 179px;
+	background-color: white;
+	color: black;
+	font-size: 0.7em;
+	line-height:1.5;
+}
+
+H3 {font-style: italic; font-weight: bold}
+
+/* alternating style for TravelNewsHeadlines */
+.txtninenalt {font-size: 0.9em; background-color: #ececfe; color: black}	
+
+/* main layout boxes on screen */
+.Column1Header
+{
+	background-color : #0099fe;
+	color: black;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 2px;
+	padding-bottom : 0px;
+	width: 100%;					/* for ie55 */
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 280px;					/* for compliant browsers */
+}  
+html>.Column1Header {width: 280px}  /* for opera */
+
+.Column1Content1
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom : solid 10px #ffffff;
+	width: 300px;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 300px;					/* for compliant browsers */
+	min-height: 201px;
+}  
+html>.Column1Header {width: 300px}  /* for opera */
+
+.Column1Content2
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 300px;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 300px;					/* for compliant browsers */
+}  
+html>.Column1Header {width: 300px}  /* for opera */
+
+.Column2Header
+{
+	background-color : #a099fe;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 2px;
+	padding-bottom : 0px;
+	color: #ffffff;
+	width: 100%;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 280px;					/* for compliant browsers */
+}  
+html>.Column1Header {width: 280px}  /* for opera */
+
+.Column2Content1
+{
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 10px;
+	padding-bottom : 0px;
+	border-bottom : solid 10px #ffffff;
+	width: 100%;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 280px;					/* for compliant browsers */
+}  
+html>.Column1Header {width: 280px}  /* for opera */
+
+.Column2Content2
+{
+	color: black;
+	background-color: #ffffff;
+	padding: 0px;
+	border: solid 10px #CCCCFE;
+	width: 100%;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 280px;					/* for compliant browsers */
+}  
+html>.Column1Header {width: 280px}  /* for opera */
+
+.Column3Header
+{
+	background-color : #99fe99;
+	color: black;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 2px;
+	padding-bottom : 0px;
+	width: 100%;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 190px;					/* for compliant browsers */
+}  
+html>.Column1Header {width: 190px}  /* for opera */
+
+.Column3Content
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 100%;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 190px;					/* for compliant browsers */
+}  
+html>.Column1Header {width: 190px}  /* for opera */
+
+.Column3ContentMASWidget
+{
+    padding-left: 4px;
+    padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 100%;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+}
+
+.polling
+{
+    width:202px;
+    height:190px; 
+}
+
+.Column1Header h2,
+.Column2Header h2
+{
+	display: block;
+	font-size: 1.0em;
+}
+
+.Column1HeaderLink:visited,.Column1HeaderLink:hover, .Column2HeaderLink:visited, .Column2HeaderLink:hover
+{
+	color: #000000;
+	cursor: pointer;
+}
+
+.Column1Header h2:hover, .Column2Header h2:hover
+{
+	text-decoration: underline;
+	color: #000000;
+}
+
+
+.Column3HeaderLink, .Column3HeaderLink:link
+{
+	color: #000000;
+}
+
+.Column3HeaderLink:visited,.Column3HeaderLink:hover
+{
+	color: #000000;
+	cursor: pointer;
+}
+
+/* end of main layout boxes on screen */
+
+.HomepageLayoutTable
+{
+	width : 850px;
+	/* border-bottom : solid 10px #ffffff; <-- Commented out to ensure that controls touch the footer as per screen designs. */
+}
+
+.WhiteSpaceBetweenColumns
+{
+	background-color: White;
+	padding-left: 11px;
+}
+
+.WhiteSpaceBetweenColumns2
+{
+	background-color: White;
+	padding-left: 26px;
+}
+
+.WhiteSpaceBetweenControls
+{
+	background-color: White;
+	padding-left: 8px;
+}
+
+.FindALayoutTable
+{
+	width : 850px; 
+	border-left: solid 10px white;
+	border-right: solid 10px white;
+	border-top: solid 10px white;
+	padding-bottom: 10px;
+}
+
+.HomepageMainLayoutColumn1
+{
+	background-color : #99ccff;
+	color: black;
+	vertical-align : top;
+	width : 300px;
+}
+
+.HomepageMainLayoutColumn2
+{
+	background-color : #ccccfe;
+	color: black;
+	vertical-align : top;
+	width : 300px;
+}
+
+.HomepageMainLayoutColumn3
+{
+	background-color : #e3fbeb;
+	color: black;
+	vertical-align : top;
+	width : 210px;
+	height: 600px;
+	min-height:440px;
+	-moz-min-height:440px;
+}
+
+/* ie hack */
+* html .HomepageMainLayoutColumn3 {
+	height: 600px;
+}
+
+.HomepageMainLayoutColumn3 ul
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 1.0em;
+	list-style-type: disc;
+}
+
+.HomepageMainLayoutColumn4
+{
+	background-color : #e3fbeb;
+	color: black;
+	vertical-align : top;
+	width : 210px;
+	border-top: solid 9px white;
+	*border-top: solid 5px white;
+	border-bottom: solid 0px white;
+	height: 440px;
+	min-height:440px;
+	-moz-min-height:440px;
+}
+
+
+
+/* ie hack */
+* html .HomepageMainLayoutColumn4 {
+	height: 440px;
+}
+
+.FindATableCell
+{
+	width: 137px;
+	font-size : 0.7em;
+	margin-bottom: 5px;
+}
+
+.FindATableTrunkCell
+{
+	width : 140px;	/* make 140 for phase2*/
+	font-size : 0.7em;
+}
+
+.FindATableImage
+{
+	float : left;
+	padding-right : 5px;
+}
+
+.txtsevenbwl
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	background-color: inherit;
+	color: #000000;
+	float: left;
+}
+
+a.txtsevenbwrlink
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	background-color: inherit;
+	color: #000000;	
+	float: right;
+}
+
+a.txtsevenbwrlink:visited
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #000000;	
+	background-color: inherit;
+	float: right;
+}
+
+a.txtsevenbwrlink:hover
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #000000;	
+	background-color: inherit;
+	float: right;
+}
+
+txtsevenbwr
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #ffffff;	
+	background-color: inherit;
+	float: right;
+}
+
+.txtsevenbbl
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #000000;
+	background-color: inherit;
+	float: left;
+}
+
+.txtsevenbb
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #000000;
+	background-color: inherit;
+}
+
+.txtsevenbn
+{
+	font-size: 0.7em;
+	font-weight: normal;
+	color: #000000;
+	background-color: inherit;
+}
+
+.TipsToolsTable
+{
+	font-size: 0.7em;
+	width: 100%;
+}
+
+.TipsToolsIconPadding
+{
+	padding-right: 10px;
+}
+
+.TipsToolsRightPadding
+{
+	width: 15%;
+}
+
+.NewFeaturesTable
+{
+	font-size: 0.7em;
+	border: 0;
+	width: 100%;
+}
+
+.floatright
+{
+	float: right;
+}
+
+.VertAlignTop
+{
+	vertical-align: top;
+}
+
+.planAJourneyControlmboxtypetwo
+{
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	color: black;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+}
+
+.paddingtop2
+{
+	padding-top: 4px;
+}
+
+.txtsevenaligntop
+{
+	vertical-align: top;
+	font-size: 0.7em;
+}
+
+
+.findAPlaceControlmboxtypetwo
+{
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	color: black;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;	
+}
+
+
+.HomepageControlColumn1
+{
+	width: 40px;
+}
+
+.HomepageControlColumn1PJ
+{
+    vertical-align: top;
+    padding-top: 7px;
+}
+
+.HomepageControlColumn2
+{
+	width: 165px;
+	padding-left: 4px;
+}
+
+.HomepageControlColumn2TextBox
+{
+	width: 96%;
+}
+
+.HomepageControlColumn2DropDown
+{
+	width: 100%;
+}
+
+.HomepageControlColumn2DropDownSpan2
+{
+	width: 222px;
+}
+.HomepageControlColumn2Span2
+{
+	width: 216px;
+	padding-left: 4px;
+}
+.HomepageControlColumn2 div.locationControl
+{
+    margin: 0 3px 0 0;
+}
+.HomepageControlColumn2 div.locationControl div.locationInputRow
+{
+    margin: 0px 0px 5px 0px;
+}
+.HomepageControlColumn2 div.locationControl input.locationBox
+{
+    height: 16px;
+    line-height: 16px;
+    width: 158px;
+}
+.HomepageControlColumn2 div.locationControl div.locationTypesRow .locationTypeDrop option
+{
+    height: 17px;
+}
+
+.HomepageControlColumn3
+{
+	padding-right: 10px;
+	width: 71px;
+}
+
+.HomepageButtonRow
+{
+	padding-top: 4px;
+	padding-right: 20px;
+}
+
+.HomepageButtonRow2
+{
+	padding-top: 4px;
+	padding-right: 18px;
+}
+
+.HPControlLayoutTable
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 300px;
+}
+
+.TextAlignRight
+{
+	text-align: right;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}  
+
+.MinihomeHyperlinksTable
+{	
+	width : 620px;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 10px;
+}
+
+.MinihomeHyperlinksInfoHeader
+{
+	background-color : #ccccfe;
+	color: black;
+	padding-left : 10px;
+	width: 100%;
+	voice-family: "\"}\"";  
+	voice-family: inherit;  
+	width: 610px;					/* for compliant browsers */
+	padding-bottom:7px;
+	padding-top:7px;
+}  
+html>.MinihomeHyperlinksInfoHeader {width: 610px}  /* for opera */
+
+
+.HomepageOutlineTable
+{
+	background-color: white;
+	color: black;
+}
+
+/* changed by apatel - for setting the min height of the body area */
+
+.bodyArea 
+{ 
+	background-color: white; 
+	color: black;
+	padding-top:5px; 
+	padding-bottom:0px; 
+	width:100%;
+	height: auto;
+	min-height:451px;
+	-moz-min-height:451px;
+}
+
+/* min-height doesn't work in ie - added for ie by apatel*/
+* html .bodyArea {
+	height: 451px;
+}
+
+
+
+
+.MinihomeHyperlinksInfoContent
+{
+	background-color : White;
+	color : black;
+	border-color : #ccccfe;
+	border-style : solid;
+	border-width : thin;
+	width: 620px;
+	text-align: left;
+}
+
+.MinihomeSoftContent
+{
+	padding-left:10px;
+	padding-right:10px;
+}
+	
+.HyperlinkTableCell
+{
+	width : 128px;
+	font-size : 0.7em;
+	text-align : center;
+	padding-top: 10px;	
+	padding-bottom : 40px;
+}
+
+.HyperlinkImage
+{
+	clear : both;
+	display : block;
+}
+
+.HomepageBookmark
+{
+	font-size: 0.7em;
+	width: 120px;
+}
+
+.ClientLinkImageStyle
+{
+	float: left;
+	padding-right: 5px;
+}
+
+.LeftHandNavigationBar
+{
+	background-color: #ccecff;
+}
+
+.PlanAJourneyDateSelectionCell
+{
+	white-space:nowrap;
+}
+
+/* Added to center the Content of the web site.*/
+.CenteredContent
+{
+	margin-left:auto; 
+	margin-right:auto; 
+	width:1003px;
+	background-color:White;
+}
+
+#bookmarkStar
+{
+	float:left;
+	height:50px;
+}
+
+#bookmarkText
+{
+	float:right;
+}

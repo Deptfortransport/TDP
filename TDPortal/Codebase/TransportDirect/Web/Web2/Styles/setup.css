@@ -1,0 +1,1449 @@
+/* ===========================================1 1/9/03 known issues ===========================================
+	CSS tested against IE5 IE5/5 IE6 windows NT XP and 98 renders fine 
+	Opera Mac fine
+	
+	Known Mac issues include IE5 NS7 + Mozilla txt in the header blue nav bar aligns right rather than finishing under the buttons
+	NS7 and Mozilla add the custom link class to the images in the top nav causing them to spoil the apperance of the header where an image is a
+	link
+	
+	The broken box model in CSS has the relivant hack set up (l33t hack) the correct values will be added once Testing begins
+
+*/
+
+/* =========================================== CSS Document for Transport Direct =========================================== */
+/* ================= generic setup ================= */
+
+fieldset {border: none}
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color:#000;
+	
+	}
+	
+p, div, td, li, ul, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, textarea{
+	font-family: verdana, arial, helvetica, sans-serif;
+	}
+	
+
+/*AS. 03/04. Added as IE5.5 does not correctly format text inside tables*/
+table, td, tr {
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size:100%
+	}
+	
+p {
+	margin-top:0;
+	margin-bottom: 0.2em;
+	text-align:left;
+	font-size:0.7em;
+	line-height:1.5;
+	}
+	
+.helpindent1
+{
+	padding-left:2%;
+}
+
+.helpindent2
+{
+	padding-left:4%;
+}
+
+.clearboth
+{
+	clear: both;
+}
+
+.clearright
+{
+	clear: right;
+}
+	
+.clearleft
+{
+	clear: left;
+}
+
+/*AS. 03/04. Added for use by screenreader to read label text */
+.screenreader,
+.screenReaderOnly
+{
+	position:absolute;
+	left: 0px;
+	top: -100px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/*PSC. 09/03/05. Added to allow "skip to links" invisible but readable by screenreader */
+.skiptolinks
+{
+	position:absolute;
+	left: 0px;	
+	top: -100px;
+	border-width: 0px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+/* Move spotlight tag div out of the way */
+.spotlighttag
+{
+	clear: none;
+	float: right;
+}
+
+.HomePageCopyHeader 
+{ 
+	font-size: 0.7em; line-height: 2;  font-weight:bold;
+	
+}
+.HomePageCopy
+{
+	font-size: 0.7em; line-height: 2;
+}
+	
+.txtnote {font-size: 0.6em;}
+.txtnoteb {color:Red;}
+	
+ul { margin-top: 0px; margin-bottom:0px;}
+ul.lister, ul#lister {list-style: outside; font-size: 0.7em; line-height: 1.5;}
+ul.sublister {list-style: outside; font-size: 0.7em; line-height: 1.5; margin-left: 60px; list-style-type: disc; }
+ul#sublister {list-style: outside; font-size: 1em; line-height: 1.5;}
+ul.listerdisc, ul#listerdisc {list-style: outside; font-size: 0.7em; line-height: 1.5; list-style-type: disc; margin-left: 20px; padding-left: 20px;}
+
+.txterror ul.listerdisc, .txterror ul#listerdisc {list-style: outside; font-size: 1em; line-height: 1.5; list-style-type: disc; color: #000000;}
+/*disc url(i/p/lister2.gif) if you wanna add an image add to above line :)*/ 
+
+ol.numberlist {font-size: 0.7em;}
+ol#subnumberlister {list-style: outside; font-size: 1em; line-height: 1.5;  }
+
+
+.txtseven, span.txtseven {font-size: 0.7em;}
+.txtsevenwhite {font-size: 0.7em; color:White}
+.txtsevenr {font-size: 0.7em; float:right}
+.txtseveng { font-size: 0.7em; color: Gray; }
+.txtsevenb {font-size: 0.7em; font-weight: bold;}
+.txtsevenbred {font-size: 0.7em; font-weight: bold; color: Red;}
+.txtelevenb {font-size: 0.9em; font-weight: bold;}
+.txtsevenrb {font-size: 0.7em; font-weight: bold; float:right}
+.txteight {font-size: 0.8em;}	
+.txteightb {font-size: 0.8em; font-weight: bold;}
+/*hdbox*/
+.txtnine {font-size: 0.9em;}	
+.txtninen {font-size: 0.9em; font-weight: normal;}	
+.txtnineb {font-size: 0.9em; font-weight: bold;}
+/* used for map header - should be equilavent to h1 */
+.txttenb {font-size: 1em; font-weight: bold; }
+.txterror {color:#DD0000; font-size: 0.7em; line-height: 1.5;}
+.alertSign {color:White; font-weight:bold; font-size:0.9em;}
+/*monospace text used in login box for del 5.2 */
+.txtmonospace {font-family:Courier New, Courier, Monospace; font-size:1.1em; font-weight: bold;}
+	
+.txtseventxtbox {font-size: 0.7em; font-family: verdana, arial, helvetica, sans-serif;}
+
+.txtlineheight15{line-height: 1.5em;}
+
+strong {
+	font-weight: bold;
+}
+	
+h1 {
+	font-size: 1em;
+	font-weight: bold;
+	padding:0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 1em;
+	font-weight: bold;
+	padding:0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+h3 
+{
+	font-size: 0.8em; 
+	font-weight: bold;
+	display: inline;
+}
+
+h4
+{
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+h5
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+
+h6
+{
+	font-size: 0.7em;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+	
+/* b-ing :) 2 Opera 5 */
+
+html>#h3 {width:575px;}
+	
+img { border:0px; display:inline;}
+
+.inline {display: inline;}
+
+a {color:#330099; font-family: verdana, arial, helvetica, sans-serif;}
+	
+a:link { color:#3300FF; text-decoration:none;}
+
+a.selected {font-weight:bolder;}
+
+a:visited { color:#3300FF; text-decoration:none;}
+
+a:hover { color:#8800CC; text-decoration:underline;}
+
+.jptablelink,
+
+a.jptablelink{
+	color: #330099;
+	text-decoration: none;
+	font-size: 0.7em;
+}
+
+a:link.jptablelink {
+	color: #330099;
+	text-decoration: none;
+	font-size: 0.7em;
+}
+
+a:hover.jptablelink{
+	color: #330099;
+	text-decoration: underline;
+	font-size: 0.7em;
+}
+
+.BlueLink,
+
+a.BlueLink{
+	color: #3300FF;
+	text-decoration: none;
+}
+
+a:link.BlueLink {
+	color: #3300FF;
+	text-decoration: none;
+}
+
+a:hover.BlueLink{
+	color: #8800CC;
+	text-decoration: underline;
+}
+
+.QuestionLink,
+
+a.QuestionLink{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:link.QuestionLink {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.plainlink,
+a:link.plainlink,
+a:hover.plainlink,
+a:visited.plainlink
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* =========================================== CSS Document for Transport Direct  =========================================== */
+
+/* ================= login box=================*/
+#hometravelbox {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:100%;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:100%;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#hometravelbox {width:100%;}
+
+#Quickplanner
+{
+	border:1px solid #330099;
+	width:735px;
+	padding:5px 5px 5px 5px;
+	margin-left: 5px;
+	
+}
+
+#lbout {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:150px;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:150px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#lbout {width:150px;}
+
+#lbo a:link, #hbo a:visited {color: #330099; text-decoration: none;}
+#hbo a:hover {color: #330099; text-decoration: underline;}
+#lbd {font-weight: bold; background-color: #CCECFF;}
+.lbd {font-weight: bold; background-color: #CCECFF;}
+
+#lbl {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #330099;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#lbc {
+	color: #000000;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	font-weight: normal;
+}
+
+.lbc {
+	color: #000000;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	font-weight: normal;
+}
+
+#lc {font-weight: bold; text-align: right;}
+#lcimg{float: right; clear: right; padding: 3px;}
+#limg{float: right; clear: right; vertical-align: top;}
+
+
+/* =========================================== CSS Document for Transport Direct  =========================================== */
+
+/*  Skip to content area  */
+div.SkipToMainContentArea
+{
+	width:1003px;
+	height:15px;
+	background-color:#330099;
+	border:0px;
+	margin-left:auto; 
+	margin-right:auto; 
+	padding:0px;
+	position:relative;
+}
+    
+a.SkipToMainContentLink
+{
+    color:#FFFFFF;
+    position:absolute;
+    left:-500em;
+	font-size:0.7em;
+}
+
+a.SkipToMainContentLink:visited
+{
+    color:#FFFFFF;
+}
+
+a.SkipToMainContentLink:focus, a.HackFocusSkipMain
+{
+    color:#FFFFFF;
+    position:absolute;
+    left:10px;
+    top:2px;
+    text-decoration:underline;
+	font-size:0.7em;
+}
+
+/* ================= head setup =================*/
+/* changed by apatel - added position css attribute */
+#headerarea {
+	background-color:#330099;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#headerarea { height:70px; }
+
+
+#headerarealrg {
+	background-color:#330099;
+	height:140px; 
+	border:0px;
+	margin:0px;
+	padding:0px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#headerarealrg { height:140px; }
+
+
+#lrglogo {
+	width:140px;
+	height:140px;
+	padding:0px;
+	}
+/* b-ing :) 2 Opera 5 */
+body>#lrglogo {width:140px; height:140px;}
+
+#lrgstrap {
+	position:absolute;
+	top:0px;
+	left:140px;
+	width:620px;
+	padding:0px;
+	height:117px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#lrgstrap {width:620px; height:117px;}
+
+#menubuttonslrg {
+	position: absolute;
+	top:117px;
+	left:326px;
+	width:434px;
+	padding:0px;
+	height:23px;
+}
+
+/* b-ing :) 2 Opera 5 */
+html>#menubuttonslrg {
+	width:434px; height:23px;}
+
+#smalllogo {
+	height:73px;
+	background-color:#330099;
+	}
+/* b-ing :) 2 Opera 5 */
+body>#smalllogo {width:140px; height:70px;}
+
+/* changed by apatel - remvoed left css attribute and added right css attribute */
+#smallstrap {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:840px;
+	padding:0px;
+	height:47px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#smallstrap {width:620px; height:47px;}
+
+#menubuttons2
+{
+	padding:0px;
+	margin: 0px;
+	height:auto;
+	min-height: 30px;
+}
+
+#menubuttons2 table /* needed to center the table containing nav buttons */
+{
+	margin: 0px auto;
+}
+
+#menubuttonsw {
+ position: absolute;
+ top:50px;
+ left:150px;
+ width:672px;
+ padding:0px;
+ height:23px;
+}
+ 
+/* b-ing :) 2 Opera 5 */
+html>#menubuttonsw {width:442px; height:23px;}
+ 
+#navarea {background-color:#CCECFF; border:0px; margin:0px; padding:0px;height: auto; min-height:30px; text-align:center;}
+#navarea {background: url(../App_Themes/TransportDirect/images/gifs/SoftContent/TabsBackground.gif) repeat left; }
+
+.divnavpoweredby
+{
+	display: none;
+}
+
+/* ---------------- css for top navigation bar buttons */
+/* default style attributes that are common to all incarnations */
+.TDNavButton, .TDNavButton:hover, .TDNavButtonMouseOver, a.TDNavButtonLink, .TDNavButtonBorder
+{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align: center;
+	text-decoration: none;
+	border-style:none;
+	cursor: pointer;
+	cursor: hand;
+	width: auto;
+	padding: 0px 15px 0px 15px;
+	#padding: 0px 5px 0px 5px; /* ie7 hack */
+	_padding: 0px 5px 0px 5px; /* hack for ie <6 */
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	float:left;
+}
+
+.HackFocusTDNavButton
+{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+	width: auto;
+	padding: 0px 15px 0px 15px;
+	#padding: 0px 5px 0px 4px; /* ie7 hack */
+	_padding: 0px 5px 0px 4px; /* hack for ie <6 */
+	height: 30px;
+	margin: 0px -2px 0px -1px;
+	float:left;
+    border-style:dashed;
+    border-width:1px;
+	color: #264266;
+	background:#E0E0E0 url(../App_Themes/TransportDirect/images/gifs/SoftContent/TabsBackground.gif) repeat scroll top left;
+}
+
+/* Additional style attributes for default for TDButton and hyperlink that looks like a TDButton */
+.TDNavButton
+{
+	color: #264266;
+	background:#E0E0E0 url(../App_Themes/TransportDirect/images/gifs/SoftContent/TabsBackground.gif) repeat scroll top left;
+}
+
+/* Additional style attributes for default for non IE hover for TDButton and hyperlink that looks like a TDButton */
+.TDNavButton:hover, .TDNavButtonMouseOver
+{	
+	color: #31009C;
+	background:#E0E0E0 url(../App_Themes/TransportDirect/images/gifs/SoftContent/ActiveTabBackground.gif) repeat scroll top left;
+}
+
+.TDNavButtonActive
+{
+	background:#CECFCE url(../App_Themes/TransportDirect/images/gifs/SoftContent/ActiveTabBackground.gif) repeat-x top left ;
+}
+
+.TDNavButtonSeperator
+{
+	background-color: #A0A0A0;
+	width: 1px;
+	height: 30px;
+	float:left;
+}
+
+.TDNavButtonDefaultAction,
+.TDNavButtonDefaultActionMouseOver
+{
+	background: url(../App_Themes/TransportDirect/images/gifs/SoftContent/tddefaultbutton.gif);
+	border: none;
+}
+
+.TDNavButtonHomeLogo,
+.TDNavButtonHomeLogoMouseOver
+{
+	background: url(../App_Themes/TransportDirect/images/gifs/SoftContent/en/tdlogo.gif);
+	border: none;
+	width: 134px;
+	height: 60px;
+}
+
+/* ------------------------ STYLE ADDED TO FIX THE ISSUE WITH ACCESSIBILITY COMPLIANCE ------------------------- */
+a.TDNavButtonHomeLogoLink
+{
+    position:relative;
+    bottom: 20px;
+    left:10px;
+    cursor:hand;
+}
+
+a.TDNavButtonHomeLogoLink .TDNavButtonHomeLogo
+{
+	display:block;
+	margin-left: 4px;
+}
+
+a.TDNavButtonHomeLogoLink:active
+{
+	border:dotted 1px #ffffff;
+}
+
+
+.TDNavButtonBorder
+{
+    border: solid 1px #a5dbff;
+}
+
+.TDNavButtonBorder:hover
+{
+    border: solid 1px #a5dbff;
+}
+
+
+
+a.TDNavButtonLink, a.TDNavButtonLink:link, a.TDNavButtonLink:visited
+{
+    color:#214163;
+    font-family: Arial;
+    cursor: hand;
+    font-size: 0.9em;
+	text-align: center;
+	text-decoration: none;
+}
+
+a.TDNavButtonLink .TDNavButtonLinkDiv
+{
+    height: 100%;
+    font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	padding: 8px 21px 0px 21px;
+	position:relative;
+	top: 8px;
+}
+
+a.TDNavButtonLink:active {
+
+    color: #31009C;
+	background:#E0E0E0 url(../App_Themes/TransportDirect/images/gifs/SoftContent/ActiveTabBackground.gif) repeat scroll top left;
+}
+
+
+a.TDNavButtonLink:hover{
+
+    color: #31009C;
+	background:#E0E0E0 url(../App_Themes/TransportDirect/images/gifs/SoftContent/ActiveTabBackground.gif) repeat scroll top left;
+     
+ }
+ 
+/* ------------------------ END --- STYLE ADDED TO FIX THE ISSUE WITH ACCESSIBILITY COMPLIANCE ------------------------- */
+/* =========================================== CSS Document for Transport Direct =========================================== */
+
+/* ================= sitemap ================= */
+
+table#smb {width: 755px; font-size: 0.7em;}
+#smb div {margin-right: 5px;}
+#smc {margin-right: 5px; margin-left: 5px;}
+#smh {font-weight: bold; background-color: #CCECFF; padding: 5px;}
+.smh {font-weight: bold; background-color: #CCECFF; padding: 5px;}
+.smh h2 
+{
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+.smcSiteMapLink 
+{
+	padding-bottom: 2px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 0.7em;
+}
+
+.smcSiteMapLink li { font-size: 1.4em; }
+.smcSiteMapSubCategory {font-size: 0.7em; padding-bottom: 5px; padding-left: 20px;}
+.smcSiteMapSubCategoryContent { color: #000000; }
+
+/* =========================================== CSS Document for Transport Direct =========================================== */
+
+/* ================= left hand template and menu setup & right hand soft content setup ================= */
+
+/*  column template */
+table#ColumnLeftPage {
+	width: 916px;	
+}
+
+td#LeftHeader {
+	width: 150px;
+}
+
+td#RightHeader {
+	width: 450px;
+}
+td#RightHeaderButtons {
+	width: 220px;
+	padding-left: 40px;	
+}
+td#RightFiller {
+	width: 150px;
+}
+
+td#LeftColumn {
+	width: 150px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #003399;
+}
+
+
+/* menu stuff */
+#menuarea {
+	left:5px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	position: absolute;
+}	
+
+#menuarealocationinfo {
+	left:5px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 170px;
+}	
+
+/* b-ing :) 2 Opera 5 */
+html>#menuarea {width:155px;}
+
+#butl {
+	width: 155px;
+	font-size: 0.75em;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid #CCCCCC;
+	
+}
+
+	#butl p{
+	color: #3300FF;
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size:100%;
+	line-height:1.5;
+	margin-bottom: 0.2em;
+	}
+
+	#butl a:link{
+	color: #3300FF;
+	width: 100%;
+	height: 30px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+}
+
+	#butl a:visited {
+	color: #3300FF;
+	width: 100%;
+	height: 30px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+}
+
+	#butl a:hover {
+	color: #3300FF;
+	width: 100%;
+	height: 30px;
+	padding: 3px;
+	text-decoration: underline;
+	display: block;
+	margin: 0;
+}
+
+	#butl #heading{
+	color: Black;
+	font-weight: bold;
+	width: 100%;
+	height: 15px;
+	padding: 7px 3px 7px 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+}
+	
+	#butl hr{
+	color: #CCCCCC;
+	width: 100%;
+}
+
+#TopOfPageRight, .TopOfPageRight
+{
+	float:right;
+}
+
+/* soft content stuff */
+
+#primcontent {	
+	position: relative;
+	/*this needs to be turned on to work in Microsoft Content Manager however it makes mucks things up on DW MX code view */ 
+	border: 0;
+	padding: 0;
+	margin: 0;
+	margin-left: 180px;
+	width: 580px;
+}
+
+#primcontentlocationinfo {	
+	position: relative;
+	/*this needs to be turned on to work in Microsoft Content Manager however it makes mucks things up on DW MX code view */ 
+	border: 0;
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+	width: 390px;
+}
+
+#contentarea {
+	width:567px;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left-width: 2px;
+	border-left-style: dashed;
+	border-left-color: #999999;
+	background-color:#ffffff;
+/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:567px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#contentarea {width:567px;}
+
+#contentareawl {
+	width:567px;
+	margin-left: 5px;
+	padding-left: 5px;
+	/*border-left-width: 2px;
+	border-left-style: dashed;
+	border-left-color: #999999;*/
+	background-color:#ffffff;
+/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:567px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#contentarea {width:567px;}
+
+#contentareaprint {
+	width:575px;
+	margin-left: 5px;
+	padding-left: 5px;
+	background-color:#ffffff;
+/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#contentareaprint {width:575px;}
+
+#pbut {
+	float: right;
+	vertical-align: top;
+	font-size:0.7em;
+	clear: both;
+}
+
+#boxtypeeight{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	width:755px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	voice-family: "\";}\"";
+	clear: both;
+	voice-family:inherit;
+	width:755px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeight {width:755px;}
+
+#boxtypeeight h1 {font-size: 1em; font-weight: bold;}
+
+#boxtypeeightsm{
+	border:0px;
+	padding: 8px 5px 0px 8px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	voice-family: "\";}\"";
+	clear: both;
+	voice-family:inherit;
+	width:977px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightsm {width:977px;}
+
+#hdtypeone {
+	font-size: 0.9em;
+	color: #FFFFFF;
+	width: 100%;
+	background-color: #330099;
+	border: 1px solid #993366;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+.hdtypetwo, #hdtypetwo {
+	font-size: 0.8em;
+	color: #000000;
+	width: 100%;
+	background-color: #ffffff;
+	border: 1px solid #330099;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+
+.hdtypethree, #hdtypethree {
+	font-size: 0.9em;
+	color: #000000;
+	width: 100%;
+	background-color: #ccecff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+.hdtypethree h2, #hdtypethree h2  {
+	font-size: 1.0em;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#hdtypethreeclean {
+	color: #000000;
+	width: 100%;
+	background-color: #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+
+#hdtypefour, .hdtypefour {
+	font-size: 0.8em;
+	color: #000000;
+	width: 100%;
+	background-color: #ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+#hdtypefourblue {
+	font-size: 0.8em;
+	color: #330099;
+	width: 100%;
+	background-color: #ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+/* ================= homepage ================= */
+
+table#homer {width: 755px; margin-left: 5px; margin-top: 5px; border: 0;}
+td#homernav {width: 608px; margin-right: 5px; vertical-align: top;}
+td#homercont {width: 755px; border-left: 1px; padding-left: 5px; vertical-align: top;}
+
+/* ================= Home login box list =================*/
+#lbouthome {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:810px;
+	font-size: 0.7em;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;	
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#lbouthome {width:747px;}
+
+.lbouthome {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:810px;
+	font-size: 0.7em;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;	
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.lbouthome {width:747px;}
+
+table#macfix {width: 585px; border: 0; padding: 0; font-size: 0.7em;}
+
+#newsbox {	
+	border:1px solid #cccccc;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:100%;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#newsbox {width:100%;}
+
+#disclaimerbox  
+{
+	background-color: #ffffff;
+	width: 745px;
+	padding: 5px 5px 5px 5px;
+	font-size: 0.7em;
+	font-weight: bold;
+	clear: both;
+	margin: 5px 5px 5px 5px;
+}
+
+#HomepageTitle
+{
+	width: 745px;
+}
+
+#FindAImagebox  
+{
+	width: 745px;
+	height: 62px;
+	border: 1px solid #330099;
+	padding:5px 5px 5px 5px;
+	margin-left: 10px;	
+	
+}
+
+.QuickPlannerHome
+{
+	vertical-align:middle;
+}
+
+.informationBoxHome
+{
+	width:750px;
+	height:36px;
+	margin-left:10px;
+}
+
+.login
+{
+	width:468px;
+}
+
+#LeftJPBox  
+{
+	width: 256px;
+	height: 305px
+}
+
+.TravelNews
+{
+	overflow:auto;
+	width: 459px; 
+	height: 310px; 
+	background-color: white;
+}
+
+#logviewerbox {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:755px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#logviewerbox {width:755px;}
+
+/* =========================================== CSS Document for Transport Direct =========================================== */
+
+/* ================= footer setup ================= */
+
+#foot {
+	position:relative;
+	left:-1px;
+	font-size: 0.7em;
+	line-height: 1.5em;
+	width: 1000px;
+	clear: both;
+}
+
+html>#foot {width: 760px;}
+#footer {background-color:#CCECFF; border:0px; margin:0px; padding:0px;}	
+table#nsiefixFooter {width:755px; height:35px; border:0px; margin-left: 0px; text-align: right; font-size: 0.7em; background-color: #CCECFF; line-height:1.3em;}
+#top {text-align: right; font-size: 0.7em; width: 760px; padding-bottom: 0px;}
+#ver 
+{
+	text-align:left; 
+	color: #330099; 
+	background-color: #CCECFF; 
+	padding-bottom: 2px;
+	padding-left: 10px;
+}
+	
+#verSpace {text-align:left; background-color: #CCECFF;}
+#fnav{text-align: center; background-color: #CCECFF; float:right; padding-right: 40px;}
+.footerVersion { vertical-align: bottom; }
+.footerNavigation { float: right; width: 500px; }
+
+
+/* ================= button styles for image button replacement ================= */
+/* NOTES ON BUTTON STYLES IN Web Control TDButton.cs class */
+
+/* default style attributes that are common to all incarnations */
+.TDButtonDefault, .TDButtonDefault:hover, .TDButtonDefaultMouseOver, .TDButtonHyperlink, .TDButtonHyperlink:hover,
+.buttonToolbarDownload, .buttonToolbarDownload:hover, .buttonToolbarDownloadMouseOver
+{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align: center;
+	text-decoration: none;
+	border-left: solid 1px #C0C0C0;
+	border-right: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-top: solid 1px #C0C0C0;
+	cursor: pointer;
+	cursor: hand;
+	width: auto;
+	overflow: visible;
+	padding: 0px 0px 0px 0px;
+	voice-family: "\";}\"";  /* Prevent IE5 from seeing following attributes */
+	voice-family: inherit;
+	padding: 0px 3px 1px 3px;
+}
+/* Allow Opera to see attributes hidden from IE5 */
+HTML>.TDButtonDefault, HTML>.TDButtonDefault:hover, HTML>.TDButtonDefaultMouseOver, HTML>.TDButtonHyperlink, HTML>.TDButtonHyperlink:hover,
+HTML>.buttonToolbarDownload, HTML>.buttonToolbarDownload:hover, HTML>.buttonToolbarDownloadMouseOver
+{
+	padding: 0px 3px 1px 3px;
+}
+
+/* Additional style attributes for default for TDButton and hyperlink that looks like a TDButton */
+.TDButtonDefault, .TDButtonHyperlink, .buttonToolbarDownload
+{
+	color: #264266; 
+	background-color: #EBEBEB;
+}
+
+/* Additional style attributes for default for non IE hover for TDButton and hyperlink that looks like a TDButton */
+.TDButtonDefault:hover, .TDButtonHyperlink:hover, .buttonToolbarDownload:hover
+{	
+	color: #FFFFFF;
+	background-color: #6F6F6F; /*#96A297;*/
+}
+
+/* Additional style attributes for default for IE javascript hover - additional attributes */
+.TDButtonDefaultMouseOver, .buttonToolbarDownloadMouseOver
+{	
+	color: #FFFFFF;
+	background-color: #6F6F6F; /*#96A297;*/
+}
+
+/* Additional style attributes for hyperlink that looks like a TDButton */
+.TDButtonHyperlink, .TDButtonHyperlink:hover
+{
+	vertical-align:1px;
+	padding: 1px 3px 2px 3px; /* Padding for non-IE */
+	_padding: 1px 3px 3px 3px; /* Padding for IE only */
+}
+
+/*Additional style attributes for ToolbarDownload page button*/
+.buttonToolbarDownload, .buttonToolbarDownload:hover, .buttonToolbarDownloadMouseOver
+{
+	font-size: 1.2em;
+	padding: 5px 40px 5px 40px; /*IE5*/
+	voice-family: "\";}\"";  /* Prevent IE5 from seeing following attributes */
+	voice-family: inherit;
+	font-size: 1.2em;
+	padding: 5px 40px 5px 40px; /* Everything but IE5 and Opera */
+}
+/* Allow Opera to see attributes hidden from IE5 */
+HTML>.buttonToolbarDownload, HTML>.buttonToolbarDownload:hover, HTML>.buttonToolbarDownloadMouseOver
+{
+	font-size: 1.2em;
+	padding: 5px 40px 5px 40px;
+}
+
+
+/* default style attributes that are common to a TDButton looking like a Hyperlink */
+.TDHyperLinkStyleButton, .TDHyperLinkStyleButton:hover, .TDHyperLinkStyleButtonMouseOver
+{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	cursor: pointer;
+	cursor: hand;
+	color: #0000EE;
+	background-color:#FFFFFF;
+	width: auto;
+	overflow: visible;
+	padding: 0px 0px 0px 0px;
+	voice-family: "\";}\"";  /* Prevent IE5 from seeing following attributes */
+	voice-family: inherit;
+	padding: 0px 3px 1px 3px;
+}
+/* Allow Opera to see attributes hidden from IE5 */
+HTML>.TDHyperLinkStyleButton, HTML>.TDHyperLinkStyleButton:hover, HTML>.TDHyperLinkStyleButtonMouseOver
+{
+	padding: 0px 3px 1px 3px;
+}
+
+/* Additional style attributes for default for to a TDButton looking like a Hyperlink  */
+.TDHyperLinkStyleButton:hover, .TDHyperLinkStyleButtonMouseOver
+{
+	color: #8800CC; 
+	background-color:  #FFFFFF;
+	text-decoration: underline;
+}
+
+/* Additional style attributes for default for non IE hover for to a TDButton looking like a Hyperlink  */
+ .TDHyperLinkStyleButton:hover, .TDHyperLinkStyleButtonMouseOver
+{	
+	color: #4B0082;
+	background-color:  #FFFFFF;
+	text-decoration: underline;
+}
+
+/* Additional style attributes for default for IE javascript hover - additional attributes */
+.TDHyperLinkStyleButton:hover, .TDHyperLinkStyleButtonMouseOver
+{	
+	color: #4B0082;
+	background-color:  #FFFFFF;
+	text-decoration: underline;
+}
+
+/* End of to TDButton looking like a Hyperlink  */
+
+.TDCalendarButton,
+.TDCalendarButtonMouseOver
+{
+	/*background: url(../App_Themes/TransportDirect/images/gifs/journeyplanning/calendaricon.gif) no-repeat top center;*/
+	/*border: none;*/
+	cursor: hand;
+	vertical-align: bottom;
+	padding-bottom: 2px;
+}
+
+.dateContainer /* used to align calendar button in the date select row */
+{
+    padding: 0px;
+    margin: 0px;
+    height: 24px;
+}
+
+/* ================= end of styles for image button replacement ================= */
+
+.businesslinktermsdiv
+{
+	height: 150px;	
+	width: 768px;	
+	border: 1px solid ;	
+	font-size: 0.7em;
+	overflow:auto;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+.businesslinktermsdivtable
+{
+	padding: 0px; 
+	border: 0px; 
+	table-layout: fixed;
+}
+
+.businesslinkboldcenter
+{
+	font-weight:bold;
+	text-align:center;
+}
+.businesslinktablebold
+{
+	vertical-align:text-top;
+	font-weight:bold;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.businesslinktable
+{
+	vertical-align:text-top;
+}
+.businesslinlklist
+{
+	list-style-type:none;
+	font-size: 1em;
+}
+.businesslinkpadtop
+{
+	padding-top:10px
+}
+
+.ambiguousdateselectcontrolnormal
+{
+	padding: 0px 3px 3px 3px;
+}
+.ambiguousdateselectcontrolshort
+{
+	padding:3px 0px 3px 3px;
+}
+
+
+.toptitlediv
+{
+	width:auto;
+	margin-left:7px;
+}
+
+
+/* css for soft content information panel shown on input pages */
+.SoftContentPanel
+{
+	margin-left: 10px;
+	margin-right: 0px;
+	padding-right: 0px;
+	width: 615px;
+}
+
+DIV.PageSoftContentContainer
+{
+	display:block;
+	padding-bottom:25px;
+	text-align:left;
+	width:auto;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+DIV.PageSoftContent
+{
+	width: 100%;
+	margin: 0px;
+}
+
+DIV.PageSoftContent ul
+{
+	list-style-type: disc; 
+	margin-left: 15px;
+}
+
+.milesshow,
+.kmsshow
+{
+	display: inline;
+}
+
+.mileshide,
+.kmshide
+{
+	display: none;
+}
+
+.divCycleAreas
+{
+	margin-left: 20px;
+	width: 600px;
+	font-size: 0.7em;
+}
+
+.tableCycleAreas
+{
+	border-top: solid 1px #000000;
+}
+
+.colCycleName
+{
+	border: solid 1px #000000;
+	border-top: 0px;
+	padding: 4px;
+	width: 120px;
+	vertical-align: top;
+}
+
+.colCycleCovering
+{
+	border: solid 1px #000000;
+	border-left: 0px;
+	border-top: 0px;
+	padding: 4px;
+	vertical-align: top;
+}
+
+.cjperror {color:#DD0000; font-size: 10px; line-height: 1.5; font-family: verdana, arial, helvetica, sans-serif; font-weight: normal;}
+.cjperroreight {color:#DD0000; font-size: 0.8em; line-height: 1.5;}

@@ -1,0 +1,74 @@
+/* CSS for map results */
+#HelpControlMapToolsSecond
+{
+	vertical-align:top;
+}
+
+table#headerbox 
+{
+	width: 825px;
+}
+
+#labelInstructions
+{
+	font-size:0.6em;
+	
+}
+
+#mapContainer 
+{
+	margin-left:10px;
+}
+
+#boxtypeeightstd
+{
+	padding:2px 0px;
+	margin-bottom: 0px;
+	margin-left:10px;
+}
+
+#panelMapKey #mapbox
+{
+	height: auto;
+	min-height: 85px;
+	padding:2px;
+}
+
+* html #panelMapKey #mapbox {
+	height: 86px;
+}
+
+
+
+TABLE#traffkey
+{
+	width:180px;
+}
+
+
+#TrafficMapResults div#helpboxoutput
+{
+	width: 821px;
+	margin-left: 10px;
+}
+
+#SearchTrafficMapRow div#helpboxoutput
+{
+	width: 614px;
+	margin-left: 10px;
+}
+
+#SearchTrafficMapRow div#helpboxoutput #htxt
+{
+    font-size: 0.7em;
+}
+
+.panelMapBoxTools
+{
+	height: auto;
+	min-height: 84px;
+}
+
+* html .panelMapBoxTools {
+	height: 84px;
+}

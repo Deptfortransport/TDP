@@ -1,0 +1,37 @@
+﻿/* Style sheet for Live Travel/Home page  */
+
+
+.HomepageLayoutTable
+{
+	width : 840px;
+}
+
+#boxtypeeightstd
+{
+	width: 565px;
+}
+
+.MinihomeSoftContent
+{
+	overflow:auto;
+	height: 280px;
+}
+
+.MinihomeHyperlinksInfoHeader
+{
+	width:628px;
+}
+
+.MinihomeHyperlinksInfoContent 
+{
+	width:638px;
+	margin-right: 2px;
+}
+
+.Column2Content1 {
+border-bottom:0;
+padding-left:10;
+padding-right:10;
+voice-family:inherit;
+width:280px;
+}

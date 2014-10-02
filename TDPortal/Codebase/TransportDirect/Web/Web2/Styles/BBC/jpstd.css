@@ -1,0 +1,1045 @@
+/* ---------------------------- JOURNEYPLANNER PAGE STYLES -----------------------------*/
+
+/* ---------------------------- INPUT PAGES --------------------------------*/
+/* Input boxes */
+.boxtypetwo, #boxtypetwo,
+.boxtypetwoalt, #boxtypetwoalt,
+.mboxtypetwo, #mboxtypetwo,
+.boxtypeJEthree, #boxtypeJEthree,
+.boxtypelargetwomargintop,
+.boxtypetwentyseven, #boxtypetwentyseven,
+#panelAdvancedPlanningOptionsPanel #boxtypelargetwo,
+.boxtypeinformation
+{
+	background-color: #99CCFF;
+	border:1px solid #333333;
+}
+
+/* Input boxes - alternate colour */
+#lbd, .lbd, /* used on Login/Register page */
+.boxtypeten, #boxtypeten, /* Feedback - Another journey input */
+.boxtypetwentyeight, #boxtypetwentyeight
+{
+	background-color: #FFFFFF;
+}
+
+/* Text align in input boxes */
+.findafromcolumn 
+{
+	text-align: left;
+	padding-left: 8px;
+}
+
+
+#boxtypesixalt  /* Advanced option headings */
+{
+	background-color:#FFFFFF;
+	width: 595px;
+	border: none;
+	border-bottom: none;
+	padding-left: 5px;
+}
+
+/* ---------------------------- WARNINGS/ERRORS --------------------------------*/
+/* Shown on ambiguity pages */
+.alertwarning, #alertwarning 
+{
+	background-color: #FFFF00;
+	border: none;
+	font-weight:bold;
+	color: #333333;
+}
+.alertwarning .txtseven /* warning text */
+{
+	color: #333333;
+}
+
+.boxtypeerrormsg, #boxtypeerrormsg
+{
+	background-color: #FFFFFF;
+	font-weight:bold;
+	color: #F00;
+}
+
+.ErrorDisplayTable, #ErrorDisplayTable,
+.ErrorMessageBase, #ErrorMessageBase
+{
+	border:1px solid #F00;
+}
+
+.ErrorMessageBase, #ErrorMessageBase
+{
+	border-top-width: 0px;
+}
+
+/*----------------------------- Wait Page --------------------------------------*/
+DIV#tipofday
+{
+	background-color: #FFFFFF;
+	border: solid 1px #E0E0E0;
+}
+
+/* ---------------------------- RESULT PAGES -----------------------------------*/
+/* ---------------------------- Journey Summary --------------------------------*/
+/* Journey Results tables */
+.outputnavdiv, /* Results table navigation controls, e.g. Summary, Details, ... */
+.boxtypeseventeen,
+.boxtypeeighteen, /* return journey */
+#boxtypeeighteen,
+.fscheaderbox,
+.fscbodybox,
+.fscpanelshow,
+.boxtypetwelvetickets,
+.boxtypetwelverefine,
+.requestvisittable, .boxtyperesultsarea, /* Visit Planner Results */
+#boxtypejourneyoverviewcontrol, .boxtypejourneyoverviewcontrol /* City to City Compare Journey results summary */
+{
+	background-color: #99CCFF;
+	border:1px solid #666666;
+}
+
+.boxtypeten874x768blue /* visit planner results */
+{
+	background-color: #FFFFFF;
+	border:1px solid #E0E0E0;
+}
+
+.jpsumout,
+.jpsumoutfinda,
+.jpsumrtnfinda
+{
+	background-color: #FFFFFF;
+	border:1px solid #666666;
+}
+
+/* Journey Results tables - specific borders */
+.outputnavdiv, .jpsumoutfinda, .jpsumrtnfinda, .fscpanelshow {	border-bottom: none; }
+.boxtypeseventeen, .jpsumrtnfinda {	border-top: none; }
+.jpsumout, .jpsumoutfinda, .jpsumrtnfinda, .fscheaderbox, .fscpanelshow { border-left: none; }
+.jpnumbhd, .jptypehd, .jpchanhd, .jpleavhd, .jparrihd, .jpdurahd /* Results table column headings borders */
+{
+	border-bottom: solid 1px #666666;
+}
+.jpimgbhd
+{
+	border-left: solid 1px #666666;
+}
+.fscbodybox
+{
+	border: none;
+}
+
+/* Journey Results table - Car only journey */
+td.fscheader10c, td.fscheader9c, td.fscheader1c, td.fscheader2c, td.fscheader3c, 
+td.fscheader4c, td.fscheader5c, td.fscheader6c, td.fscheader7c
+{
+	border: none;
+} 
+td.fscheader8c, td.fscbody8c
+{
+	border-left-color: #666666;
+}
+
+/* Journey Results table - Cycle only journey */
+td.fscheader9cycle, td.fscheader5cycle, td.fscheader6cycle, td.fscheader7cycle, td.fscheader8cycle
+{
+	border-bottom: none;
+}
+td.fscheader8cycle, td.fscbody8cycle
+{
+	border-left-color: #666666;
+}
+
+/* -------------------- RESULTS TABLES - COLUMNS AND ROWS --------------------*/
+/* Results tables - "Select" column */
+td.fscheader8, th.fscheader8, /* Results summary - heading */
+td.fscbody8, td.fscbody8g, /* Results summary - radios normal and alternative */
+.jpimgbhd, .jpimgb, .jpimgbg, /* Results summary - (door to door) */
+td.fscheader8c, td.fscbody8c, /* Find car results summary */
+td.fscheader8cycle, td.fscbody8cycle, /* Find cycle results summary */
+.tdstationheaderp /* Find station summary table - Selected sort column */
+{
+	background-color: #99CCFF;
+	border-right-color: #99CCFF;
+}
+.ejseleet, .ejpselehd, .ejpsele /* Modify journey results summary*/
+{
+	background-color: #99CCFF;
+	border-bottom-color: #99CCFF;
+}
+
+.jpimgb, .jpimgbg, .jpimgby, /* Results summary table - "Select" column */
+.ejpselehd, .ejpsele /* Extend results summary table */
+{
+	border-left-color: #666666;
+}
+
+.ejseleet, .ejpsele, .ejpdura, .ejpdurahd
+{
+	border-right-color: #666666;
+}
+
+/* Results table - Rows - Highlighted */
+td.fscbody1y, td.fscbody2y, td.fscbody3y, /* Results summary */
+td.fscbody4y, td.fscbody5y, td.fscbody6y, td.fscbody7y,
+.fdtcrowy, .eselectRow,
+.jpnumby, .jptypey, .jpchany, .jpleavy, .jparriy, .jpduray, .jpimgby, /* Find station summary */
+td.fscbody8y, /* Find fare journey results */
+.selectRow  /* Visit Planner results selected row */
+{
+	background-color: #FFFF00;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.rowheader /* Visitplanner results row header*/
+{
+	background-color: #99CCFF;
+}
+
+/* Results table - Rows - Normal */
+td.fscbody1, td.fscbody2, td.fscbody3, /* Results summary */
+td.fscbody4, td.fscbody5, td.fscbody6, td.fscbody7,
+.fdtcrowg, /* Tickets/Costs summary */
+.jpnumb, .jptype, .jpchan, .jpleav, .jparri, .jpdura, /* Find station summary */
+td#focheader1t,td#focheader2t,td#focheader3t, td#focheader4t, /* city to city compare result summary - header*/
+td#focbody1t, td#focbody2t, td#focbody3t, td#focbody4t, td#focbody1t_lr, td#focbody2t_lr, td#focbody3t_lr, td#focbody4t_lr, /* city to city compare result summary*/
+td.focheader1t,td.focheader2t,td.focheader3t, td.focheader4t, /* city to city compare result summary - header*/
+td.focbody1t, td.focbody2t, td.focbody3t, td.focbody4t, td.focbody1t_lr, td.focbody2t_lr, td.focbody3t_lr, td.focbody4t_lr /* city to city compare result summary*/
+{
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #E0E0E0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Results table - Rows - Alternate */
+td.fscbody1g, td.fscbody2g, td.fscbody3g, /* Results summary */
+td.fscbody4g, td.fscbody5g, td.fscbody6g, td.fscbody7g,
+.fdtcrow, /* Tickets/Costs summary */
+.eevenRow, /* Full Itinerary journey */
+.jpnumbg, .jptypeg, .jpchang, .jpleavg, .jparrig, .jpdurag, /* Find station summary */
+.evenRow, .oddRow, /* Visit Planner results odd and even rows */
+td#focbody1tg, td#focbody2tg, td#focbody3tg, td#focbody4tg, td#focbody1tg_lr, td#focbody2tg_lr, td#focbody3tg_lr, td#focbody4tg_lr,   /* city to city compare result summary*/
+td.focbody1tg, td.focbody2tg, td.focbody3tg, td.focbody4tg, td.focbody1tg_lr, td.focbody2tg_lr, td.focbody3tg_lr, td.focbody4tg_lr   /* city to city compare result summary*/
+{
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #E0E0E0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.fdtcbody1, .fdtcbody2, .fdtcbody3, .fdtcbody4, .fdtcbody5, .fdtcbody6, /* Tickets/Costs summary */
+.selectRow td /* Visit Planner results selected row */,
+.oddRow td, .evenRow td /* Visit Planner results odd and even rows */
+{
+	border-bottom: solid 1px #E0E0E0;
+}
+.fdtcbody7, .fdtcbody8
+{
+	border-bottom: none;
+}
+td#focbody4t, td.focbody4t
+{
+	border-right: solid 1px #666666;
+}
+
+/* Outline borders for results sections */
+.boxtypetwelve, #boxtypetwelve, /* Journey Details */
+table.jdetail2,  /* Journey Details - diagram */
+table#jdt, table#jdtgrid, table.jdt, table.jdtgrid, /* Journey Details - table */
+.boxtypetwelvetickets, /* Tickets/Costs */
+.boxtypelargetwo, #boxtypelargetwo, /* Full Itinerary journey table */
+.boxtypefortyfour, /* Modify Journey Full Itinerary Results */
+#boxtypeJEfour, /* Journey Emissions */
+#boxtypeJEone,
+.boxtypetwelverefine, /* Modify Journey Details */
+#dmtitletickets, /* Modify Journey Ticket/Costs table heading */
+.boxtypetravelnewsswitch /* Live Travel News - filter table */
+{
+	background-color: #FFFFFF;
+	padding: 0px;
+}
+
+/* city to city compare journey sumamry results */
+td#focheader4t, td#focbody4tg, td#focbody4t_lr, td#focbody4tg_lr {border-right: 1px solid #666666;}
+table#focheader, #overviewOutwardTable, td#focheader1t,td#focheader2t,td#focheader3t, td#focheader4t, /* city to city compare result summary - header*/
+td.focheader4t, td.focbody4tg, td.focbody4t_lr, td.focbody4tg_lr {border-right: 1px solid #666666;}
+table.focheader, td.focheader1t,td.focheader2t,td.focheader3t, td.focheader4t /* city to city compare result summary - header*/
+{ border-bottom: 1px solid #666666;}
+
+td#focheader5t
+{
+	border-bottom: 1px solid #666666;
+	
+}
+
+/* --------------------------- Journey Details Tables ------------------------- */
+/* Journey Details - table view headings */
+th#jdtheader0, th#jdtheader1, th#jdtheader2, th#jdtheader3, th#jdtheader4, th#jdtheader5, th#jdtheader6,
+th#jdtheader7, th#jdtheader8, th#jdtheader9, th#jdtheader10, th#jdtheader11, th#jdtheader12,
+.emissionheader, .emissionheaderright, /* Journey Emissions */
+th.jdtheader0, th.jdtheader1, th.jdtheader2, th.jdtheader3, th.jdtheader4, th.jdtheader5, th.jdtheader6, /* Refine Journey Details */
+th.jdtheader7, th.jdtheader8, th.jdtheader9, th.jdtheader10, th.jdtheader11, th.jdtheader12 /* Refine Journey Details */
+{
+	background-color: #F2F1EF;
+}
+
+th#jdtheader0, th#jdtheader1, th#jdtheader2, th#jdtheader3, th#jdtheader4, th#jdtheader5, th#jdtheader6,
+th#jdtheader7, th#jdtheader8, th#jdtheader9, th#jdtheader10, th#jdtheader11, th#jdtheader12,
+td#jdtbody0, td#jdtbody1, td#jdtbody2, td#jdtbody3, td#jdtbody4, td#jdtbody5, td#jdtbody6,
+td#jdtbody7, td#jdtbody8, td#jdtbody9, td#jdtbody10, td#jdtbody11, td#jdtbody12
+{
+	border-top:1px solid #666666;
+	border-bottom:1px solid #666666;
+	border-right:1px solid #666666;
+	border-left:1px solid #666666;
+}
+
+th.jdtheader0, th.jdtheader1, th.jdtheader2, th.jdtheader3, th.jdtheader4, th.jdtheader5, th.jdtheader6,
+th.jdtheader7, th.jdtheader8, th.jdtheader9, th.jdtheader10, th.jdtheader11, th.jdtheader12,
+td.jdtbody0, td.jdtbody1, td.jdtbody2, td.jdtbody3, td.jdtbody4, td.jdtbody5, td.jdtbody6,
+td.jdtbody7, td.jdtbody8, td.jdtbody9, td.jdtbody10, td.jdtbody11, td.jdtbody12
+{
+	border-top:1px solid #666666;
+	border-bottom:1px solid #666666;
+	border-right:1px solid #666666;
+	border-left:1px solid #666666;
+}
+
+/* Journey Details - Car */
+.boxtypetwelve { width: 826px; } /* outer box */
+.dmtitle { width: 816px; } /* title */
+.boxtypeninenew { width: 816px; } /* tickets/costs */
+.boxtypetenfifteen, .boxtypetwentynine { width: 804px; } /* summary/type of car */
+
+.dmtitle { background-color: #E0E0E0; }
+.boxtypetenfifteen, .boxtypetwentynine  { background-color: #F2F1EF; }
+
+/* Journey Details - Car - Borders*/
+.fmview 
+{
+	border: none;
+}
+.boxtypetwelve, #boxtypetwelve, .boxtypetenfifteen, .boxtypetwentynine
+{
+	border:1px solid #666666;
+}
+
+.bluerule /* Journey Details - Car - Directions horizontal rule */
+{
+	color: #999999;
+}
+
+/* ---------------------------- Journey Tickets/Costs --------------------------------*/
+/* Journey Details - Tickets/Costs */
+.fdtctable, .legTable, .legTableRow, .boxtypeninenew
+{
+	border:1px solid #666666;
+}
+
+.fdtcellheader, .fdtcellcheaper, .fdtcellheaderb
+{
+	border-bottom:1px solid #666666;
+}
+
+.boxtypetwelve .dmtitle
+{
+	background-color: #FFFFFF;
+}
+
+#boxtypetwelve .carCostsTable
+{
+	width: 100%;
+}
+
+.boxtypetwelvetickets
+{
+	width: 827px;
+}
+
+.dmtitletickets
+{
+	width: 812px;
+}
+
+TABLE.cct
+{
+	WIDTH: 100%;
+}
+
+/* ---------------------------- Journey Emissions --------------------------------*/
+/* Journey Emissions */
+#boxtypeJEone
+{
+	border: solid 1px #666666;
+}
+
+#boxtypeJEfour
+{
+	border: solid 1px #666666;
+	width: 616px;
+}
+#boxtypeJEfive
+{
+	border: none;
+	width: 616px;
+}
+
+.emissionstable .ecBorderBottomTwo
+{
+	background-color: #E0E0E0;
+	border-bottom:1px solid #666666;
+}
+
+.emissionheader, .emissionheaderright
+{
+	background-color: #E0E0E0;
+}
+
+.emissionheader, .emissionheaderright,
+.emissiondata,
+.emissionsJourneyTable,
+.journeyEmissionsTableModeTable
+{
+	border: solid 1px #666666;
+}
+
+/* ---------------------------- Environmental Benefits -----------------------------*/
+.ebcAllDetailsBoxType1,
+.ebcAllDetailsBoxType3,
+.carJourneyDetailsBoxType1,
+.ebcCalculationDetailsBoxType1,
+.ebcMapDetailsBoxType1,
+.ebcMapDetailsBoxType3
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+.ebcJourneyDetailsPanel .boxtypetenfifteen
+{
+    width: 794px;
+}
+
+/* ---------------------------- Amend Journey Panel --------------------------------*/
+/* Amend journey panel on results pages */
+.boxtypetwelveamendcontrol
+{	
+	background-color: #FFFFFF;
+	border: solid 1px #333333;
+}
+
+/* ---------------------------- Service Details -------------------------------------*/
+table#sdTableBeforeAfter, table.sdTableBeforeAfter
+{
+	border: solid 1px #E0E0E0;
+}
+
+tr#sdHeaderBeforeAfter, tr.sdHeaderBeforeAfter
+{
+	background-color:#EEEEEE;	
+}
+
+tr#sdDetailBeforeAfter, tr.sdDetailBeforeAfter
+{
+	background-color: #FFFFFF;
+}
+
+table#sdTableleg, table.sdTableleg
+{
+	border: solid 1px #E0E0E0;
+}
+
+tr#sdHeaderLeg, tr.sdHeaderLeg
+{
+	background-color:#999999;
+}
+
+tr#sdDetailLeg, tr.sdDetailLeg
+{
+	background-color:#ffffff;	
+}
+
+th#sdHeaderBeforeAfterCol1,
+th#sdHeaderBeforeAfterCol2,
+th#sdHeaderBeforeAfterCol3,
+td#sdDetailBeforeAfterCol1,
+td#sdDetailBeforeAfterCol2,
+td#sdDetailBeforeAfterCol3,
+th.sdHeaderBeforeAfterCol1,
+th.sdHeaderBeforeAfterCol2,
+th.sdHeaderBeforeAfterCol3,
+td.sdDetailBeforeAfterCol1,
+td.sdDetailBeforeAfterCol2,
+td.sdDetailBeforeAfterCol3
+{
+	border: solid 1px #E0E0E0;
+}
+
+th#sdHeaderLegCol1,
+th#sdHeaderLegCol2,
+th#sdHeaderLegCol3,
+td#sdDetailLegCol1,
+td#sdDetailLegCol2,
+td#sdDetailLegCol3,
+td#sdDetailLegColBold1,
+td#sdDetailLegColBold2,
+td#sdDetailLegColBold3,
+th.sdHeaderLegCol1,
+th.sdHeaderLegCol2,
+th.sdHeaderLegCol3,
+td.sdDetailLegCol1,
+td.sdDetailLegCol2,
+td.sdDetailLegCol3,
+td.sdDetailLegColBold1,
+td.sdDetailLegColBold2,
+td.sdDetailLegColBold3
+{
+	border: solid 1px #E0E0E0; 
+}
+
+/* ---------------------------- Modify Journey -------------------------------------*/
+.boxtypelargetwo, #boxtypelargetwo, /* Full itinerary */
+.RefineTicketsOuterControl, /* Modify journey - Tickets/Costs table */
+.boxtypewhitebackground, /* Extend diagram panel */
+.boxtypefortytwo, #boxtypefortytwo, /* Extend results table */
+#boxtypefortythree, .boxtypefortythree,
+#boxtypefortyfour, .boxtypefortyfour
+{	
+	border:1px solid #666666;
+}
+
+#dmtitletickets, .dmview, #dmview
+{
+	background-color: #FFFFFF;
+	border: none;
+}
+
+.boxtypetwentyfive /* Full itinerary heading row */
+{
+	background-color: #E0E0E0;
+	border:none;
+	border-bottom: solid 1px #666666;
+	margin: 0px;
+	width: 814px;
+}
+.boxtypetwentysix /* Full itinerary journeys */
+{
+	border:none;
+	margin: 0px;
+	width: 824px;
+}
+
+.ejdetail /* Full itinerary journeys table */
+{
+	width: 824px;
+}
+
+.ejporighdwide, .ejpdesthdwide, .ejptranhdsuperwide, .ejpleavhd, .ejparrihd, .ejpdurahd, .ejptranhdwide,
+.RefineTicketsOuterControlHeading
+{
+	border-bottom: solid 1px #666666;
+}
+
+#boxtypefortythree, .boxtypefortythree, .dmview
+{
+	border-top:none;
+}
+
+.boxtypefortythree .ejdetail
+{
+	border-right:1px solid #666666;
+}
+
+#combinedResultsSummaryPanel .boxtypefortytwo
+{
+	width: 813px;
+}
+
+
+/* ---------------------------- FIND A FARE - e.g. Find a train cost ------------------*/
+.fftdtabletitlebox, /* Select date */
+#boxtypetdtheadertitlenodiscount, .boxtypetdtheadertitlenodiscount /* Select fare */
+{
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	background-color: #999999;
+}
+
+
+.fftdheaderbox, /* Select date */
+#boxtypetdtheadernodiscount, .boxtypetdtheadernodiscount /* Select fare */
+{
+	border: solid 1px #666666;
+}
+
+.fftdbodybox, /* Select date */
+#boxtypetdtitemsnodiscount ,.boxtypetdtitemsnodiscount /* Select fare */
+{
+	border-top: 0px;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.fftdhdrrow {background-color: #FFFFFF; } /* Select date - Header row */
+
+.fftdbdyrow, /* Select date - normal row */
+.tdtitemrow /* Select fare - normal row */
+{	
+	background-color: #FFFFFF;
+} 
+
+.fftdbdyrowg, /* Select date - alternate row */
+tdtitemrowalt /* Select fare - alternate row */
+{
+	background-color: #FFFFFF;
+} 
+
+.fftdbdyrowy, /* Select date - highlighted row */
+.tdtitemrowyellow /* Select fare - highlighted row */
+{
+	background-color: #FFFF00;
+} 
+
+/* Select fare - columns*/
+.tdttypeitem, .tdtflexibilityitem, .tdtfareitem, .tdtprobabilityitem, .tdtselectitem
+{
+	border-bottom: solid 1px #666666;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Select journey - results table - headers */
+td.fscheader10, th.fscheader10, 
+td.fscheader9, th.fscheader9, 
+td.fscheader1, th.fscheader1, 
+td.fscheader2, th.fscheader2, 
+td.fscheader3, th.fscheader3, 
+td.fscheader4, th.fscheader4, 
+td.fscheader5, th.fscheader5, 
+td.fscheader6, th.fscheader6,
+td.fscheader7, th.fscheader7,
+td#fscheader10, th.fscheader10, 
+td#fscheader9, th#fscheader9, 
+td#fscheader1, th#fscheader1, 
+td#fscheader2, th#fscheader2, 
+td#fscheader3, th#fscheader3, 
+td#fscheader4, th#fscheader4, 
+td#fscheader5, th#fscheader5, 
+td#fscheader6, th#fscheader6,
+td#fscheader7, th#fscheader7 
+{
+	border-bottom: none;
+}
+
+/* Select journey - results table - "Select" column */
+td.fscbody8, th.fscbody8, td.fscbody8g, td.fscheader8, th.fscheader8, td.fscbody8y
+{
+	border-left: 1px solid #666666;
+}
+
+/* ---------------------------- FIND A CARPARK/STATION RESULTS ------------------------*/
+#boxtypestationresults
+{
+	border: solid 1px #666666;
+}
+
+.underlineCarPark, /* Car park results table header */
+#stationResultsTable .tdstationheader, /* Find station results table header */
+#stationResultsTable .tdstationheaderp 
+{
+	vertical-align: bottom;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	background-color: #E0E0E0;
+}
+
+td.fscheadercp1p, th.fscheadercp1p, /* Car park results table - selected coloumn sort */
+td.fscheadercp2p, th.fscheadercp2p,
+td.fscheadercp3p, th.fscheadercp3p,
+td.fscheadercp4p, th.fscheadercp4p,
+td.fscheadercp5p, th.fscheadercp5p,
+td.fscheadercp6p, th.fscheadercp6p,
+td.fscheadercp7p, th.fscheadercp7p,
+td.fscheadercp8p, th.fscheadercp8p,
+td.fscheadercp9p, th.fscheadercp9p,
+td#fscheadercp1p, th#fscheadercp1p,
+td#fscheadercp2p, th#fscheadercp2p,
+td#fscheadercp3p, th#fscheadercp3p,
+td#fscheadercp4p, th#fscheadercp4p,
+td#fscheadercp5p, th#fscheadercp5p,
+td#fscheadercp6p, th#fscheadercp6p,
+td#fscheadercp7p, th#fscheadercp7p,
+td#fscheadercp8p, th#fscheadercp8p,
+td#fscheadercp9p, th#fscheadercp9p,
+#stationResultsTable .tdstationheaderp /* Find station results tatble - selected column sort */
+{
+	background-color: #999999; 
+}
+
+td.fscbodycp1, th.fscbodycp1,  /* Car park results - normal row */
+td.fscbodycp2, th.fscbodycp2, 
+td.fscbodycp3, th.fscbodycp3, 
+td.fscbodycp4, th.fscbodycp4, 
+td.fscbodycp5, th.fscbodycp5, 
+td.fscbodycp6, th.fscbodycp6, 
+td.fscbodycp7, th.fscbodycp7,
+#stationResultsTable #jptype .txtseven, /* Find station results table - normal row */
+.stationResultsInfo, .stationResultsSelect
+{
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #E0E0E0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+td.fscbodycp1g, th.fscbodycp1g,  /* Car park results - alternate row */
+td.fscbodycp2g, th.fscbodycp2g, 
+td.fscbodycp3g, th.fscbodycp3g, 
+td.fscbodycp4g, th.fscbodycp4g, 
+td.fscbodycp5g, th.fscbodycp5g, 
+td.fscbodycp6g, th.fscbodycp6g, 
+td.fscbodycp7g, th.fscbodycp7g,
+#stationResultsTable #jptypeg .txtseven, /* Find station results table - alternate row */
+.stationResultsInfo, .stationResultsSelect
+{
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #E0E0E0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Find station results - links in table */
+.TDLocationLink { color: #666666; }
+.TDLocationLinkMouseOver { color: #FF0000; text-decoration: underline; }
+
+/* Car park results - links in table */
+#carParkResultsItems a { color: #666666; text-decoration: none; }
+#carParkResultsItems a:hover { color: #FF0000; text-decoration: underline; }
+#carParkResultsItems a:visited { color: #666666; text-decoration: none; }
+
+/* Car park information page */
+#hdtypefour, .hdtypefour 
+{
+	border: none;
+	text-indent: 0px;
+}
+.carparkInformationAddress, .carparkInformationMinCost, .carparkInformationTimes,
+.carparkInformationSpaces, .carparkInformationDisabled, .carparkInformationType,
+.carparkInformationRestrictions, .carparkInformationReservations, .carparkInformationNotes,
+.carparkInformationParkAndRide
+{
+	border-bottom: solid 1px #666666;
+	padding-bottom: 3px;
+}
+
+/* ------------------------------- MAP PAGES -----------------------------------*/
+
+/* ---- Base map control ---- */
+.mcMapControlContainer
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+/* ---- Map Symbols control ---- */
+.msMapSymbolContainer
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+.msPanelKeysTransport,
+.msPanelKeysOther
+{
+    background-color: #FFFFFF;
+}
+
+/* ---- Map Key control ---- */
+.mkMapKeyContainer
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+.mkMapKeyHeading,
+.mkMapKeys
+{
+    background-color: #FFFFFF;
+}
+
+/* ---- MapInputControl custom/override the above styles ---- */
+.miMapInputControlContainer .mcMapControlsContainer .mcMapControlContainer
+{
+    background-color: #99CCFF;
+}
+
+/* ---- MapJourneyControl styles ---- */
+.mjTitleAreaBox
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+/* ---- MapSelectLocationControl2 styles ---- */
+.mlMapSelectLocationContainer
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+.mlMapSelectLocationListDiv
+{
+    background-color: #FFFFFF;
+	border:1px solid #666666;
+}
+
+/* ---- MapNearestControl styles ---- */
+.mnMapLocationTitleArea
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+/* ---- TravelNewsMapKeyControl styles ---- */
+.mtTravelNewsMapKeyControl
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+/* Traffic Map Styles */
+.panelMapBoxTools, /* Traffic map dates panel */
+div#mapbox,
+#mapContainer,
+#maph,
+.panelZoomButtons
+{
+    background-color: #FFFFFF;
+    border: solid 1px #666666;
+}
+
+
+/* ---------------------------- TICKET/RETAILERS --------------------------------*/
+.matrixborder /* Tickets for journey */
+{
+	border:1px solid #666666;
+	background-color:#FFFFFF;
+}
+
+.ticketcell
+{
+	border:1px solid #666666;
+}
+
+.unitcellselectedfirst
+{
+	background-color: #999999;
+	border-top: 1px solid #666666;
+	border-bottom: none;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+}
+
+.selectcellselected
+{
+	background-color: #999999;
+	border-top: none;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+}
+
+.retailernamecell
+{
+	background-color: #FFFFFF;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+	border-right: none;
+}
+
+.retailerbuycell
+{
+	background-color: #FFFFFF;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: none;
+	border-right: 1px solid #999999;
+}
+
+#requiredticketsheading
+{
+	background-color: #FFFFFF;
+	border:1px solid  #666666;
+}
+
+#requiredticketstable 
+{
+	border:1px solid #666666;
+}
+
+#colTickets, #colDiscounted, #colAdultFare, #colChildFare, #colNoOfTickets, #colTotal, #colSpacer
+{
+	border-bottom:1px solid #666666;
+}
+
+/* ---------------------------- HELP --------------------------------*/
+/* Inline help box */
+div#helpboxoutput 
+{
+	border: 1px solid #666666;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+div#hhd 
+{
+	background-color: #E0E0E0;
+	padding: 2px;
+}
+div#hline
+{
+	border: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+div#htxt 
+{
+	padding-top: 5px;
+	color: #000000;
+	border: none;
+}
+
+/* Help page */
+#boxtypenine {	
+	border: none;
+	padding-left: 0px;
+	margin-top: 10px;
+}
+
+
+
+/* ---------------------------- TRAVEL NEWS --------------------------------*/
+/* Travel news - search fields */
+.boxtypetwoaltnoborder, #boxtypetwoaltnoborder
+{
+	border: none;
+	background-color: #FFFFFF;
+}
+
+.boxtypetravelnewsswitch
+{
+	border:1px solid #666666;
+}
+
+.TravelNewsSwitch
+{
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+.TravelNewsSwitchHeader
+{
+	background-color: #E0E0E0;
+}
+
+.boxtypetravelincidents 
+{	
+	border:1px solid #666666;
+}
+
+.TravelIncidentsTable,
+.TravelIncidentsTable td, .TravelIncidentsTable th
+{
+	border: none;
+}
+
+.tnhIncident, .tnhRegion, .tnhSeverity, .tnhOccurred, .tnhAffected, .tnhOperator, .tnhDetails, .tnhLastUpdated /* Live Travel News - table view headings */
+{
+	border: none;
+	border:1px solid #666666;
+	background-color: #E0E0E0;
+}
+
+.TravelIncidentsTable .travelIncident td,
+.TravelIncidentsTable .travelIncidentAlt td
+{
+	border: none;
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #E0E0E0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Travel news incidents table on homepage */
+.txtninen, .txtninenalt
+{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+/* ------------------------- LIST PAGES e.g. Departure boards -------------------------- */
+
+#rsviewa tbody .rsviewcontentrow td, .rsviewa tbody .rsviewcontentrow td,
+.rsviewcontentrow
+{ 
+	border-bottom: 1px solid #E0E0E0; 
+}
+
+#boxjourneychangesearchcontrol
+{
+	height: auto;
+}
+
+/* Visit Planner Results page Request detail label text*/
+.requestvisittableheader
+{
+	color: #000000;
+}
+
+/* -------------- Modal Popup Message e.g. for International journey transfer ----------- */
+
+.modalPopup .modalPopupBackGround
+{
+    background-color: #FFFFFF;
+}
+
+.modalPopup .modalPopupForeGround
+{
+    border:solid 1px #666666;
+    background-color: #999999;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupContainer
+{
+    border:solid 1px #666666;
+    background-color: #FFFFFF;
+}
+
+/* ------------------ AUTO SUGGEST DROPDOWN STYLES --------------------------------*/
+
+.autoSuggest
+{
+    border: ridge 1px #333333;
+}
+
+.autoSuggest .autoSuggestList li.autoSuggestListItem
+{
+    color: #000000;
+}
+
+.autoSuggest .autoSuggestList .autoSuggestSelectedItem
+{
+    background-color: #666666;
+    color: #000000;
+}
+
+/* ------------------ END - AUTO SUGGEST DROPDOWN STYLES --------------------------------*/

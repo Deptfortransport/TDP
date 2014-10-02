@@ -1,0 +1,81 @@
+﻿.modalPopup
+{
+    z-index:10000;
+    display:none;
+}  
+
+.modalPopup .modalPopupBackGround
+{
+    position:absolute;
+    background-color: #F0F0F0;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
+    z-index:10001;
+}
+
+.modalPopup .modalPopupForeGround
+{
+    position:absolute;
+    border:4px groove #330099;
+    background-color: #CCFFFF;
+    padding: 4px;
+    font-size: 15px;
+    width: 435px;
+    z-index:10002;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupContainer
+{
+    border:solid 1px #330099;
+    background-color: #99CCFF;
+    padding: 4px;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupMessage
+{
+    width: 100%;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupControls
+{
+    bottom : 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupControls .modalPopupCancelButton
+{
+    position: relative;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupControls .modalPopupOkButton
+{
+    right:9px;
+    position: absolute;
+    bottom: 14px;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupMessage .popupHeader
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupMessage .popupHeader .popupheaderText
+{
+    color:red;
+    font-style:italic;
+    font-weight:bold;
+}
+
+.modalPopup .modalPopupForeGround .modalPopupMessage .popupContent p
+{
+    margin-bottom: 5px;
+}
+
+.bold
+{
+    font-weight: bold;
+}

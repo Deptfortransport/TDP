@@ -1,0 +1,314 @@
+/* CSS Document for Transport Direct Portal */
+/* Styles for printable Find A Fare pages */
+/* Style names should mirror those in FindAFare.css */
+
+/* For Find A Fare Ticket Selection pages */
+
+.tdtitemrow {width:100%;background-color: #E6FFFE; height:17px;}
+.tdtitemrowalt {width:100%;background-color: #FFFFFF; height:17px;}
+
+.tdttypecolumnheader
+{
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:5px;
+	padding-right:0px;
+	width: 200px;
+	text-align:left; 
+}
+
+.tdtflexibilitycolumnheader
+{
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:0px;
+	padding-right:10px;
+	width: 90px;
+	text-align:left;
+}
+
+.tdtfarecolumnheader
+{
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:0px;
+	padding-right:30px;
+	width: 60px;
+	text-align:right;
+}
+
+.tdtdiscountfarecolumnheader
+{
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:0px;
+	padding-right:0px;
+	width: 110px;
+	text-align:left;
+}
+
+.tdtprobabilitycolumnheader
+{
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:0px;
+	padding-right:0px;
+	width: 143px;
+	text-align:left;
+}
+
+.tdttypeitem
+{
+	width: 200px;
+	padding-left: 5px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	text-align:left;
+}
+
+.tdtflexibilityitem
+{
+	width: 90px;
+    padding:0px 0px 0px 10px;
+	text-align:left;
+}
+
+.tdtfareitem
+{
+	width: 60px;
+    padding:0px 30px 0px 0px;
+	text-align:right;
+}
+
+.tdtdiscountfareitem
+{
+	width: 75px;
+    padding:0px 35px 0px 0px;
+	text-align:right;
+}
+
+.tdtprobabilityitem
+{
+	width: 204px;
+    padding:0px 0px 0px 40px;
+	text-align:left;
+}
+
+#boxtypetdtheader, .boxtypetdtheader
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	font-weight: bold;
+	border-top: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;	
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:641px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetdtheader{width:695px;}
+
+#boxtypetdtheadernodiscount, .boxtypetdtheadernodiscount
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	font-weight: bold;
+	border-top: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;	
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:641px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetdtheader{width:595px;}
+
+#boxtypetdtitemsscroll, .boxtypetdtitemsscroll
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	overflow:auto;
+	height:140px;	
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:705px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetdtitemsscroll, html>.boxtypetdtitemsscroll{width:705px;}
+
+#boxtypetdtitems, .boxtypetdtitems
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:641px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetdtitems{width:695px;}
+
+#boxtypetdtitemsnodiscountscroll, .boxtypetdtitemsnodiscountscroll
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:595px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetdtitemsscroll, html>.boxtypetdtitemsscroll{width:595px;}
+
+#boxtypetdtitemsnodiscount, .boxtypetdtitemsnodiscount
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:641px;
+	}	
+	
+#boxtypetdtheadertitle, .boxtypetdtheadertitle
+{
+	border-top: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:  0px 5px 5px 5px;
+	margin-left: 5px;
+	width:641px;
+	}
+	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetdtheader, html>.boxtypetdtheader {width:755px;}
+
+#boxtypetdtheadertitlenodiscount, .boxtypetdtheadertitlenodiscount
+{
+	border-top: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:  0px 0px 5px 5px;
+	margin-left: 5px;
+	width:636px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetdtheader, html>.boxtypetdtheader {width:636px;}
+
+/* Begin - Find Fare Travel Date table */
+
+.fftdtabletitlebox 
+{
+	border-top: 1px solid #330099;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+	border-bottom: 0px;
+	padding: 0px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	margin: 0px;
+	margin-top: 5px;
+	margin-left: 5px;
+	/* width hack for old IE - includes padding */
+	width: 765px;
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:635px; /* correct CSS1 width */
+}
+/* width counter-hack for old Opera (counters IE hack) */
+html>.fftdtabletitlebox {width:650px;}
+
+.fftdheaderbox 
+{
+	border-top: 1px solid #330099;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	padding: 0px;	
+	margin: 0px;
+	margin-left: 5px;
+	width: 640px;
+}
+
+.fftdbodybox
+{
+	border-top: 0px;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+    padding: 0px;
+	margin: 0px;
+	margin-left: 5px;
+	width: 640px;
+}
+
+.fftdtable
+{
+	padding: 0px;
+	border: 0px;
+	font-size: 0.7em;
+	table-layout: fixed;
+}
+
+.fftdhdrrow {background-color: #FFFFFF; font-weight: bold; }
+.fftdbdyrow {background-color: #FFFFFF; }
+.fftdbdyrowg {background-color: #E6FFFE; }
+.fftdbdyrowy {background-color: #FFFF00; font-weight: bold; }
+
+.fftdhdrsingleoutdate { width: 110px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: center; }
+.fftdhdrsinglemode { width: 141px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: left; }
+.fftdhdrsinglefarerange { width: 150px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: center; }
+.fftdhdrsinglelowfare { width: 237px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: center; }
+.fftdhdrsingleselect { width: 91px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: center; }
+
+.fftdbdysingleoutdateday { width: 95px; padding:0px; padding-left: 20px; text-align: left; }
+.fftdbdysingleoutdatedaymonth { width: 60px; padding:0px; text-align: left; }
+.fftdbdysinglemode { width: 141px; padding:0px; text-align: left; }
+.fftdbdysinglefarerangemin { width: 65px; padding:0px; padding-right: 8px; text-align: right; }
+.fftdbdysinglefarerangedash { width: 12px; padding:0px; text-align: center; }
+.fftdbdysinglefarerangemax { width: 57px; padding:0px; padding-right: 8px; text-align: right; }
+.fftdbdysinglelowestfare { width: 152px; padding:0px; padding-right: 8px; text-align: right; }
+.fftdbdysinglelowestunlikely { width: 100px; padding:0px; text-align: left; }
+.fftdbdysingleselectscroll { width: 91px; padding:0px; text-align: center; }
+.fftdbdysingleselectnoscroll { width: 101px; padding:0px; text-align: center; }
+
+.fftdhdrreturnoutdate { width: 115px; padding-left:10px; padding-top: 3px; padding-bottom: 4px; text-align: left; }
+.fftdhdrreturnretdate { width: 108px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: left; }
+.fftdhdrreturnmode { width: 86px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: left; }
+.fftdhdrreturnfarerange { width: 150px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: center; }
+.fftdhdrreturnlowfare { width: 170px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: center; }
+.fftdhdrreturnselect { width: 91px; padding:0px; padding-top: 3px; padding-bottom: 4px; text-align: center; }
+
+.fftdbdyreturnoutdateday { width: 110px; padding:0px; padding-left: 10px; text-align: left; }
+.fftdbdyreturnoutdatedaymonth { width: 77px; padding:0px; text-align: left; }
+.fftdbdyreturnretdateday { width: 115px; padding:0px; text-align: left; }
+.fftdbdyreturnretdatedaymonth { width: 80px; padding:0px; text-align: left; }
+.fftdbdyreturnmode { width: 91px; padding:0px; text-align: left; }
+.fftdbdyreturnfarerangemin { width: 65px; padding:0px; padding-right: 8px; text-align: right; }
+.fftdbdyreturnfarerangedash { width: 12px; padding:0px; text-align: center; }
+.fftdbdyreturnfarerangemax { width: 57px; padding:0px; padding-right: 8px; text-align: right; }
+.fftdbdyreturnlowestfare { width: 120px; padding:0px; padding-right: 0px; text-align: right; }
+.fftdbdyreturnlowestunlikely { width: 66px; padding:0px; text-align: left; }
+.fftdbdyreturnselectscroll { width: 91px; padding:0px; text-align: center; }
+.fftdbdyreturnselectnoscroll { width: 101px; padding:0px; text-align: center; }
+
+/* End - Find Fare Travel Date table */

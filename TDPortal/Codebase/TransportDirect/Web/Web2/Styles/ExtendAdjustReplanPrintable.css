@@ -1,0 +1,182 @@
+#boxtypelargeeight, .boxtypelargeeight
+{
+	border:0px;
+	padding: 5px 0px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width: 750px;
+	clear: both;
+}
+
+.boxtypelargetwo, #boxtypelargetwo
+{
+	border:1px solid #330099;
+	background-color:#ffffff;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:640px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:630px; /* compliant browser width */
+}
+
+/* b-ing :) 2 Opera 5 */
+html>.boxtypelargetwo, html>#boxtypelargetwo
+{width:630px;}
+
+.boxtypetwelverefine
+{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 5px;
+	width:630px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:620px; /* compliant browser width */
+}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwelverefine {width:620px;}
+
+.boxtypetwentyfive
+{	
+	border:1px solid #330099;
+	padding: 0px 5px 0px 5px; 
+	margin: 5px 5px 0px 5px;
+	background-color:#ffffff;
+	width:632px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:620px; /* compliant browser width */
+}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentyfive, html>#boxtypetwentyfive
+{width:620px;}
+
+.boxtypetwentysix
+{
+	border-top:none;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	margin: 0px 5px 5px 5px;
+	width:640px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:630px; /* compliant browser width */
+}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentysix
+{width:630px;}
+
+#boxtypetwentysix p {font-size: 0.7em;}
+
+/* EXTEND RESULTS PAGES */
+.extendedResults
+{
+	background-color: White;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #330099;
+}
+#labelOutwardOptionsTitle
+{
+	padding-left: 5px;
+}
+#labelReturnOptionsTitle
+{
+	padding-left: 5px;
+}
+#combinedSummaryTitle
+{
+	padding-left: 5px;
+}
+
+.ResultsViewDisplay
+{
+	text-align: right;
+	padding-top: 10px;
+}
+
+.dmview 
+{
+	font-size: 0.7em;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+
+.ExtendedLabels
+{
+	float: left;
+}
+
+.ExtendedButtons
+{
+	float: right;
+	vertical-align: top;
+}
+
+.outwardTableSection
+{
+	padding-bottom: 10px;
+}
+/* END OF EXTEND RESULTS PAGES */
+
+.boxtypeerrormsgthree
+{
+	padding:0px 5px 0px 5px;
+	width:767px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:767px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeerrormsgthree {width:767px;}
+
+.ErrorMessageBase
+{
+	width: 755px; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #FF0000; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #FF0000; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #FF0000;
+	background-color:#ffffff;		
+}
+
+.ErrorDisplayTable 
+{
+	width: 755px; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #FF0000; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #FF0000; 
+	border-top-width: 2px; 
+	border-top-style: solid; 
+	border-top-color: #FF0000; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #FF0000;
+	background-color:#ffffff;
+}

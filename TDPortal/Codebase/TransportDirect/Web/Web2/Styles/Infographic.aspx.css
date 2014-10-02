@@ -1,0 +1,39 @@
+﻿/* Stylesheet for infographic page */
+
+.infographic {
+	margin:5px;
+	padding:5px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color:#000;
+}
+
+
+.infographic ul
+{
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+.infographic li
+{
+    padding-top: 5px;
+}
+
+.infographic h2
+{
+    display:block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.infographic h3
+{
+    display:block;
+    padding-top: 5px;
+    font-style:normal;
+}
+
+.infoimage
+{
+    width:830px;
+} 

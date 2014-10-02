@@ -1,0 +1,467 @@
+/* ---------------------------- STYLES USED BY ALL PAGES -----------------------*/
+
+/* ---------------------------- PAGE --------------------------------*/
+/* Background colour for Portal - display when browser window wider than TD Portal page */
+body
+{
+	background: url(../../App_Themes/London2012/images/gifs/Partner/Background_Pattern_Pink.gif) no-repeat left bottom;
+	background-color: #DF0094;
+}
+
+.CenteredContent
+{
+	background: transparent;
+	width: 1020px;
+	min-height: 1150px; /* height of the background image in the body style above */
+}
+
+/* ---------------------------- TEXT --------------------------------*/
+/* Page headings */
+html { font-size: 100%/*IE*/;}
+body, .bodyArea  { color: #000000;}
+
+body { font-family: Arial; }
+	
+p, div, td, li, ul, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, textarea { font-family: Arial; }
+
+table, td, tr { font-family: Arial; }
+
+/* Specific text colours */
+.txtseven, .txtsevenb, txteight, txteightb, .txtnote { color: #000000; }
+.txtsevenbwl { color: #000000; }
+
+/* ---------------------------- HEADINGS ---------------------------*/
+/* Headings - default line height*/
+h1, h2, h3, h4, h5, h6 {line-height:1.3em;}
+
+/* H2 equivalent for partner*/
+h1,
+#boxtypeeightstd h1, /* Mini homepages */
+.toptitlediv h1, /* Input pages: main page title */
+#boxtypeeightstd .txtelevenb, /* Journey tesults: journeys found for */
+#boxtype11 .txtelevenb, /* Journey results: journeys found for */
+.ExtendedLabels,  /* Modify journey */
+#HelpLabelTitle, /* Help page */
+#boxtypeeight h1 /* Error pages */
+{
+	/*font-size:1.55em; */
+	color:#000000;
+}
+.ExtendedLabels
+{
+	clear: both;
+	line-height: 35pt;
+}
+
+/* H3 equivalent for partner */
+#jpthdl, /* Input pages: advanced options */
+#boxtypesixteen h1, /* Journey results: Summary of journey options */
+#HelpBodyText h1, /* Help pages */
+.hdtypethree h2, #hdtypethree h2 /* Car park information page */
+{
+	/*font-size:1.25em;*/
+	color: #FFFFFF;
+}
+
+/* H4 equivalent for partner */
+#boxtypeseventeen .txteightb, /* Journey results: Outward journeys */
+#hdtypefour /* Car park information page */
+{
+	/*font-size:1.1em;*/
+	color: #000000;
+}
+
+/* H5 equivalent for partner */
+.dmtitletickets .txteightb, /* Tickets/costs: Fares: OutwardJourney */
+div#hhd /* Help - inline help title */
+{
+	/*font-size:1.05em;*/
+}
+
+/* ---------------------------- TEXT HEADINGS --------------------------------*/
+/* Headings within a background colour */
+.hdtypethree, #hdtypethree,
+#smh, .smh /* Site map headings */
+{
+	background-color: #0099FF;
+	border: none;
+}
+
+div.controlWrap /* used on Login/Register page */
+{
+	width: 820px;
+	margin-left: 5px;
+	padding: 0px;
+}
+
+div.controlText /* used on Login/Register page */
+{
+	width: 810px;
+	background-color: #FFEB00;
+	color: #000000;
+	padding: 5px 5px 5px 5px;
+}
+
+#smh, .smh
+{
+	color: #FFFFFF;
+}
+
+.hdtypetwo /* used on Network maps page */
+{
+	background-color: #0099FF;
+	border: none;
+}
+
+.hdtypetwo h2
+{
+	color: #FFFFFF;
+}
+
+#boxjourneychangesearchcontrol #TitleText
+{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+/* ---------------------------- LINKS --------------------------------*/
+a { color:#000000; }
+a:link { color:#000000; }
+a:hover { color:#000000; }
+a:visited { color:#000000; }
+
+/* left hand menu links */
+.LeftHandNavigationBar a { color:#000000; }
+.LeftHandNavigationBar a:link { color:#000000; }
+.LeftHandNavigationBar a:hover { color:#000000;}
+.LeftHandNavigationBar a:visited { color:#000000; }
+
+.LeftHandNavigationBar .categoryLink a { color: #FFFFFF; }
+
+/* footer links */
+a.BlueLink { color:#000000; }
+a:link.BlueLink { color:#000000; }
+a:hover.BlueLink { color:#000000;}
+a:visited.BlueLink { color:#000000; }
+.TDLanguageLink { color:#000000; } 
+.TDLanguageLinkMouseOver { color:#000000; }
+
+/* icons on homepage links*/
+.FindATableCell a { color: #DF0094; font-weight:bold; }
+.FindATableCell a:link { color: #DF0094; text-decoration: none;}
+.FindATableCell a:hover { color: #DF0094; text-decoration: underline; }
+.FindATableCell a:visited { color: #DF0094; }
+
+.FindATableTrunkCell a { color: #DF0094; font-weight:bold; }
+.FindATableTrunkCell a:link { color: #DF0094; text-decoration: none;}
+.FindATableTrunkCell a:hover { color: #DF0094; text-decoration: underline; }
+.FindATableTrunkCell a:visited { color: #DF0094; }
+
+.HyperlinkTableCell a { color: #DF0094; font-weight:bold; }
+.HyperlinkTableCell a:link { color: #DF0094; text-decoration: none;}
+.HyperlinkTableCell a:hover { color: #DF0094; text-decoration: underline; }
+.HyperlinkTableCell a:visited { color: #DF0094; }
+
+/* links on homepage content panel headings */
+a.txtsevenbwrlink { color: #000000; }
+a.txtsevenbwrlink:hover { color: #000000; text-decoration: underline; }
+a.txtsevenbwrlink:visited { color: #000000; }
+
+.Column2Header a { color: #FFFFFF; }
+.Column2Header a:hover { color: #FFFFFF; text-decoration: underline; }
+.Column2Header a:visited { color: #FFFFFF; }
+
+.Column3HeaderLink, .Column3HeaderLink:link { color: #FFFFFF; }
+.Column3HeaderLink:hover { color: #FFFFFF; text-decoration: underline; }
+.Column3HeaderLink:visited { color: #FFFFFF; }
+
+/* links in travel news panel on homepage */
+.TravelNewsHeadlines a { color: #0099FF; font-weight:bold; text-decoration: none; }
+.TravelNewsHeadlines a:hover { color: #0099FF; text-decoration: underline; }
+.TravelNewsHeadlines a:visited { color: #0099FF; }
+
+/* links in tips and tools panel on homepage */
+.TipsToolsTable a { color: #DF0094; font-weight:bold; text-decoration: none; }
+.TipsToolsTable a:hover { color: #DF0094; text-decoration: underline; }
+.TipsToolsTable a:visited { color: #DF0094; }
+
+/* links in right hand information panel on homepage/input pages */
+.Column3Header a { color: #FFFFFF; text-decoration: none; }
+.Column3Header a:hover { color: #FFFFFF; text-decoration: underline; }
+.Column3Header a:visited { color: #FFFFFF; }
+.Column3Content a { color: #666666; font-weight:bold; text-decoration: underline; }
+.Column3Content a:hover { color: #666666; text-decoration: underline; }
+.Column3Content a:visited { color: #666666; }
+
+/* links on mini homepage central information section */
+.MinihomeSoftContent a { color: #DF0094; font-weight:bold; text-decoration: none; }
+.MinihomeSoftContent a:hover { color: #DF0094; text-decoration: underline; }
+.MinihomeSoftContent a:visited { color: #DF0094 }
+
+/* links in Journey details table */
+table.jdetail2 a { color: #0099FF; font-weight:bold; text-decoration: none; }
+table.jdetail2 a:hover { color: #0099FF; text-decoration: underline; }
+table.jdetail2 a:visited { color: #0099FF; }
+
+/* links in Tickets/costs results page (border not needed) */
+.fdtcbody1 a { color: #0099FF; border: none; }
+.fdtcbody1 a:hover { color: #0099FF; text-decoration: underline; }
+.fdtcbody1 a:visited { color: #0099FF; }
+
+/* links in Tickets/costs results page - find cheaper linke */
+.fdtcellcheaper a { color: #FFFFFF; font-weight:bold; border: none; }
+.fdtcellcheaper a:hover { color: #FFFFFF; text-decoration: underline; }
+.fdtcellcheaper a:visited { color: #FFFFFF; }
+
+/* link outward/return journey on results page */
+.jptablelink,a.jptablelink{ color: #0099FF; }
+a:link.jptablelink { color: #0099FF; }
+a:hover.jptablelink{ color: #0099FF; text-decoration: underline; }
+
+/* Car park results - links in table */
+#carParkResultsItems a { color: #0099FF; font-weight:bold; text-decoration: none; }
+#carParkResultsItems a:hover { color: #0099FF; text-decoration: underline; }
+#carParkResultsItems a:visited { color: #0099FF; text-decoration: none; }
+
+/* Find station results - links in table */
+.TDLocationLink { color: #0099FF; font-weight:bold; }
+.TDLocationLinkMouseOver { color: #0099FF; font-weight:bold; text-decoration: underline; }
+
+/* links on list pages e.g. Departure boards */
+#contentarea a, #contentareawl a { color: #0099FF; font-weight:bold; text-decoration: none; }
+#contentarea a:hover, #contentareawl a:hover { color: #0099FF; text-decoration: underline; }
+#contentarea a:visited, #contentareawl a:visited { color: #0099FF; }
+
+/* Network maps page */
+#contentarea .hdtypetwo a { color: #FFFFFF; text-decoration: none; }
+#contentarea .hdtypetwo a:hover { color: #FFFFFF; text-decoration: underline; }
+#contentarea .hdtypetwo a:visited { color: #FFFFFF; }
+
+.TDHyperLinkStyleButton {color: #0099FF; text-decoration: none; } 
+.TDHyperLinkStyleButton:hover {color: #0099FF; text-decoration: underline; } 
+.TDHyperLinkStyleButtonMouseOver {color: #0099FF; text-decoration: underline; }
+
+/* links on Site map */
+.smc a { color: #DF0094; text-decoration: none; }
+.smc a:hover { color: #DF0094; text-decoration: underline; }
+.smc a:visited { color: #DF0094; }
+
+/* links on Error pages */
+#panelMessage a {color: #DF0094; } 
+#panelMessage a:hover {color: #DF0094; text-decoration: underline; } 
+#panelMessage a:visited {color: #DF0094; }
+
+/* Information page links */
+#butl a:link { color: #0099FF; text-decoration: none; }
+#butl a:hover {color: #0099FF; text-decoration: underline; } 
+#butl a:visited {color: #0099FF; }
+
+/* ---------------------------- PAGE HEADER CONTROL --------------------------------*/
+/* header background colours */
+#headerarea,
+#smalllogo
+{
+	background: transparent; /* to allow background image to be displayed */
+}
+
+.headerandnavigationarea
+{
+	background: url(../../App_Themes/London2012/images/gifs/Partner/London2012_Logo_Blue.gif) no-repeat right top;
+	min-height: 185px;
+	height: 155px; /*needed for IE6 */
+}
+
+#smalllogo
+{
+	height: 150px;
+}
+
+#navarea 
+{
+	background: none;
+	background-color: #F4F4F4;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 0px;
+	height: 30px;
+}
+
+#navarea #menubuttons2 table
+{
+	float: left;
+	margin: 0px;
+}
+
+#navarea #menubuttons2
+{
+	float: left; 
+	width: 870px;
+}
+
+#navarea .divnavpoweredby
+{
+	height: 30px;
+}
+
+/* Additional style attributes for default for TDButton and hyperlink that looks like a TDButton */
+.TDNavButton
+{
+	color: #000000;
+	background-color: #F4F4F4;
+	background: url(../../App_Themes/London2012/images/gifs/Partner/TabsBackground_LightGrey.gif) repeat scroll top left;
+}
+
+/* Additional style attributes for default for non IE hover for TDButton and hyperlink that looks like a TDButton */
+.TDNavButton:hover, .TDNavButtonMouseOver
+{	
+	color: #000000;
+	background:#F4F4F4 url(../../App_Themes/London2012/images/gifs/Partner/TabsBackground_Grey.gif) repeat-x top left ;
+}
+
+.TDNavButtonActive
+{
+	color: #FFFFFF;
+	background:#F4F4F4 url(../../App_Themes/London2012/images/gifs/Partner/ActiveTabBackground_Pink.gif) repeat-x top left ;
+}
+
+.TDNavButtonActive:hover
+{
+	color: #000000;
+	background-color: #F4F4F4;
+	background:#F4F4F4 url(../../App_Themes/London2012/images/gifs/Partner/ActiveTabBackground_Yellow.gif) repeat-x top left ;
+}
+
+.TDNavButtonSeperator
+{
+	background-color: #999999;
+}
+
+.divnavpoweredby
+{
+	display: block;
+}
+
+/* --------- end of css for top navigation bar buttons */
+
+.TDNavButtonDefaultAction,
+.TDNavButtonDefaultActionMouseOver
+{
+	background-image:none;
+}
+
+.TDNavButtonHomeLogo,
+.TDNavButtonHomeLogoMouseOver
+{
+	background-image:none;
+}
+
+
+/* ---------------------------- PAGE FOOTER CONTROL --------------------------------*/
+/* footer background image */
+#footer
+{
+	background-color: #FFFFFF;
+	margin-top: 4px;
+}
+
+/* table used to position version and naviagation links */
+table#nsiefixFooter
+{
+	width: 100%;
+	height: 40px;
+	background: transparent; /* to allow background image to be displayed if needed */
+}
+
+/* footer background colours */
+.footerVersion,
+.footerNavigation,
+#fnav,
+#ver,
+.TDLanguageLink, .TDLanguageLinkMouseOver
+{
+	vertical-align: top;
+	text-align: center;
+	background: transparent; /* to allow background image to be displayed if needed */
+	background-color: #FFFFFF;
+}	
+.footerVersion,
+.footerNavigation,
+#fnav,
+#ver
+{
+	color: #000000;
+}
+
+.footerVersion /* table cell */
+{
+	font-weight: normal;
+	width: 30px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.footerNavigation /* table cell */
+{
+	float: left;
+	font-weight: normal;
+	padding-top: 4px;
+}
+
+#fnav /* div holding footer links */
+{
+	margin-left: 15px;
+	float: left;
+	padding: 0px;
+	width: 920px;
+}
+
+ /* footer specific Language link */
+.TDLanguageLink, .TDLanguageLinkMouseOver
+{
+	font-weight: normal;
+	padding-top: 2px;
+	width: 97px;
+}
+
+
+/* ---------------------------- BUTTONS --------------------------------*/
+/* Default TDButton and hyperlink that looks like a TDButton */
+.TDButtonDefault, .TDButtonHyperlink, .buttonToolbarDownload
+{
+	color: #000000; 
+	background-color: #FFFFFF;
+	border: solid 1px #999999;
+	filter:progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=0,StartColorStr='#FFFFFF',EndColorStr='#F4F4F4');
+}
+
+/* Default for non IE hover for TDButton and hyperlink that looks like a TDButton */
+.TDButtonDefault:hover, .TDButtonHyperlink:hover, .buttonToolbarDownload:hover
+{	
+	color: #000000;
+	background-color: #FFEB00;
+	border: solid 1px #999999;
+}
+
+/* Default for IE javascript hover - additional attributes */
+.TDButtonDefaultMouseOver, .buttonToolbarDownloadMouseOver
+{	
+	color: #000000;
+	background-color: #FFEB00;
+	border: solid 1px #999999;
+}
+
+/* TDButton with secondary style, e.g. Info buttons */
+.TDButtonSecondary
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	border: solid 1px #999999;
+}
+
+.TDButtonSecondaryMouseOver
+{
+	color: #000000;
+	background-color: #FFEB00;
+	border: solid 1px #999999;
+}

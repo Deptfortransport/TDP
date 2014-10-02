@@ -1,0 +1,50 @@
+#boxtypethirteen
+{
+	margin-left:auto;
+	margin-right:auto;
+	/*height:569px;*/
+}
+
+.pageContainer
+{
+	width: 100%;
+	height: 451px;
+	background-color: #FFFFFF;
+}
+
+DIV#txtnineb {/*font-weight: lighter;*/ font-size: 0.9em;}
+
+DIV#tipofday
+{
+	background-color: #ccccff;
+	border-bottom-color: #330099;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-color: #330099;
+	border-left-color: #330099;
+	border-left-style:solid;
+	border-left-width: 1px;
+	border-right-color: #330099;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-style: solid;
+	border-top-color: #330099;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-width: 1px;
+	color: #000;
+	display: block;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 0.9em;
+	padding: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+DIV#MessageDefinition 
+{
+	text-align: center;
+}

@@ -1,0 +1,332 @@
+﻿#primcontentlocationinfo {	
+	position: relative;
+	/*this needs to be turned on to work in Microsoft Content Manager however it makes mucks things up on DW MX code view */ 
+	border: 0;
+	padding: 0;
+	margin: 0;
+	margin-left: 15px;
+	width: 825px;
+}
+
+.PageHeight
+{
+	height:428px;
+}
+
+#boxtypeeightstd{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	clear: both;
+	}
+
+#boxtypeeightstd1{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	clear: both;
+	}
+
+
+.boxtypeeightstd{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 17px;
+	clear: both;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightstd {width:200px;}
+
+#boxtypeeightstd2{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width: 200px;
+	clear: both;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightstd {width:200px;}
+
+#boxtypeeightstd3{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width: 200px;
+	clear: both;
+	height: 47px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightstd {width:200px;}
+
+#butl {
+	width: 155px;
+	font-size: 0.75em;
+	padding: 5px 5px 5px 5px;
+	margin-left: 10px;
+	border: 2px solid #CCCCCC;
+	
+}
+
+#hdtypethree
+{
+	width:825px;
+}
+
+#hdtypefour 
+{
+	width: 825px;
+}
+
+#hdtypefour1 {
+	font-size: 0.8em;
+	color: #000000;
+	width: 825px;
+	background-color: #ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+#hdtypefour2 {
+	font-size: 0.8em;
+	color: #000000;
+	width: 825px;
+	background-color: #ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+#hdtypefour3 {
+	font-size: 0.8em;
+	color: #000000;
+	width: 825px;
+	background-color: #ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+#hdtypefour4 {
+	font-size: 0.8em;
+	color: #000000;
+	width: 825px;
+	background-color: #ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+h1
+{
+	margin-left: 10px;
+}
+
+/*--------------Stop Information page controls -----------------------------------*/
+ .roundedcornr_box
+{
+    background: #9CCFFF;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.roundedcornr_top div
+{
+    background: url(../App_Themes/TransportDirect/images/gifs/Misc/roundedcornr_tl.gif) no-repeat top left;
+}
+.roundedcornr_top
+{
+    background: #31009C url(../App_Themes/TransportDirect/images/gifs/Misc/roundedcornr_tr.gif) no-repeat top right;
+}
+.roundedcornr_bottom div
+{
+    background: url(../App_Themes/TransportDirect/images/gifs/Misc/roundedcornr_bl.gif) no-repeat bottom left;
+}
+.roundedcornr_bottom
+{
+    background: #9CCFFF url(../App_Themes/TransportDirect/images/gifs/Misc/roundedcornr_br.gif) no-repeat bottom right;
+}
+.roundedcornr_top div, .roundedcornr_top 
+{
+    width: 100%;
+    height: 30px;
+
+    
+}
+
+.roundedcornr_top div
+{
+    color:#FFFFFF;
+    padding-left:10px;
+    padding-top:3px;
+    vertical-align:middle;
+    width:auto;
+}
+
+.roundedcornr_top div H2
+{
+    font-size: 0.9em;
+    position:relative;
+    top: 2px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.roundedcornr_bottom div, .roundedcornr_bottom
+{
+    width: 100%;
+    height: 6px;
+    font-size: 1px;
+}
+.roundedcornr_content
+{
+    background-color: #9CCFFF;
+    margin: 5px 5px 0px;
+    /*font-size : 0.8em;*/
+    padding: 10px 10px 10px 15px;
+}
+
+.roundedcornr_content_clear
+{
+    background-color: #FFFFFF;
+    margin: 5px 5px 0px;
+    /*font-size : 0.8em;*/
+    padding: 10px 10px 10px 15px;
+}
+
+.roundedcornr_content_nopadding
+{
+    background-color: #9CCFFF;
+    margin: 5px 5px 0px;
+    /*-size : 0.8em;*/
+    padding: 0px;
+}
+
+/*.roundedcornr_content p, .roundedcornr_content_clear p, .roundedcornr_content_clear .txtseven, .roundedcornr_content ,txtseven 
+{
+    font-size: 0.8em;
+}*/
+
+
+.stopInformationMapExpandMap
+{
+    text-align: right;
+    padding: 4px;
+}
+
+
+
+.stopInformationLinks ul.zonalLinksList
+{
+    /*font-size: 0.8em;*/
+    margin-left: 8px;
+    
+}
+
+.stopInformationLinks ul.zonalLinksList li.zonalLinksList
+{
+    padding-bottom:12px;
+    padding-top:3px;
+}
+
+
+.stopInformationLinks .ZonalAirportOperatorLinksList
+{
+   /* font-size: 0.8em;*/
+    margin-left: 8px;
+}
+
+.facilityLink, .realTimeLink
+{
+    padding-bottom:12px;
+    padding-top:3px;
+    display: block;  
+    font-size: 0.7em;
+    margin-left: 8px;
+}
+
+.stopInformationContainerTable
+{
+    display:block;
+    width:100%;
+}
+
+.stopInformationContainer
+{
+    margin-right:15px;
+    width:401px;
+}
+
+.stopInformationContainer .txtsevenb
+{
+   /* font-size:0.8em;*/
+    font-weight:bold; 
+}
+
+/*.stopInformationContainer .txtsevenaligntop
+{
+    font-size:0.8em;
+}*/
+
+.siDepartureBoardLinks table
+{
+    table-layout: fixed;
+}
+
+/* Departureboard service result grid css */
+table.DepBoardServiceGrid
+{
+    background-color:#C6E7FF;
+    width: 100%;
+}
+
+table.DepBoardServiceGrid tbody td
+{
+    background-color:#C6E7FF;
+}
+
+table.DepBoardServiceGrid tbody th
+{
+    background-color:#319AFF;
+}
+
+table.DepBoardServiceGrid tbody td a
+{
+    font-size: 0.7em;
+}
+
+.siDepartureBoardSubheading
+{
+    font-size: 0.7em;
+    font-weight:bold;
+}
+
+/* Plan a Journey Control */
+.ambiguousdateselectcontrolnormal {
+    border-collapse:collapse;
+}
+
+
+
+

@@ -1,0 +1,32 @@
+/* Styles for default mode */
+td.fscheader10, th.fscheader10 {width: 0px; }
+td.fscheader9, th.fscheader9 {width: 0px; }
+td.fscheader1, th.fscheader1 {width: 160px; }
+td.fscheader2, th.fscheader2 {width: 180px; }
+td.fscheader3, th.fscheader3 {width: 76px; }
+td.fscheader4, th.fscheader4 {width: 160px; }
+td.fscheader5, th.fscheader5 {width: 100px; }
+td.fscheader6, th.fscheader6 {width: 100px; }
+td.fscheader7, th.fscheader7  
+{
+	width: 202px; 
+	
+}
+html>td.fscheader7, th.fscheader7{width: 202px;}
+td.fscheader8, th.fscheader8 {width: 45px; }
+	
+td.fscbody10, th.fscbody10 {width: 0px;  }
+td.fscbody9, th.fscbody9 {width: 0px;}
+td.fscbody1, th.fscbody1 {width: 160px; }
+td.fscbody2, th.fscbody2 {width: 180px; }
+td.fscbody3, th.fscbody3 {width: 76px; }
+td.fscbody4, th.fscbody4  {width: 160px; }
+td.fscbody5, th.fscbody5 {width: 100px; }
+td.fscbody6, th.fscbody6 {width: 100px; }
+td.fscbody7, th.fscbody7 
+{
+	width: 202px; 
+	
+}
+html>td.fscbody7, th.fscbody7{width: 202px;}
+td.fscbody8, th.fscbody8 {width: 40px; }

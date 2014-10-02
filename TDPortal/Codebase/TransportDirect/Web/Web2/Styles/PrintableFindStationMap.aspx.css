@@ -1,0 +1,51 @@
+/* Simple Printable map control overview and keys - added by apatel DevFactory */
+#printmapoverviewboxrow
+{
+	width:28%;
+}
+
+#iconsDisplayRow
+{
+	width: 40%;
+}
+
+#boxtypeonem
+{
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: 2px;
+	margin-right:2px;
+}
+
+DIV#mapbox
+{
+	width: 110px;
+}
+
+
+
+.TDLocationLink, .TDLocationLinkMouseOver
+{
+	font-size:8pt;
+	font-family:verdana, arial, helvetica, sans-serif; 
+	line-height:10pt;
+	background-color:Transparent;
+	margin:0px;
+	padding:0px;
+	border:none;
+	width:auto;
+	text-align:left;
+}
+
+.TDLocationLink
+{
+	color: #3300ff;
+	cursor:pointer;	
+}
+
+.TDLocationLinkMouseOver
+{
+	color: #8800CC;
+	cursor:pointer;
+	text-decoration:underline;	
+}

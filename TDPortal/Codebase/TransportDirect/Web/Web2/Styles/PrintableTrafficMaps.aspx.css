@@ -1,0 +1,18 @@
+/* Simple Printable map control overview and keys - added by apatel DevFactory */
+#printmapoverviewbox
+{
+	width:140px;
+}
+
+#printmapkeybox
+{
+	left:250px;
+	position:absolute;
+	top:25px;
+	width:200px;
+	
+}
+
+
+
+

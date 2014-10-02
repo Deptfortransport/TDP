@@ -1,0 +1,368 @@
+#requiredticketsheading
+{
+	width: 765px;
+	background-color: #e6fffe;
+	border:1px solid  #330099;
+	margin-left: 5px;	
+	margin-right: 5px;	
+	margin-bottom: 10px;
+	margin-top: 20px;
+	width: 745px;	
+	padding: 5px 10px 7px 10px;
+}
+
+#requiredticketstable 
+{
+	margin-left: 5px;
+	margin-right: 0px;
+	width: 765px;
+	border-collapse:collapse;
+	border:1px solid #330099;
+	padding: 0px 6px 6px 6px;
+}
+
+#colTickets
+{
+	padding: 6px;
+	width: 250px;
+	text-align: left;
+	border-bottom:1px solid #330099;
+}
+
+#colDiscounted
+{
+	padding: 6px;
+	text-align: left;
+	border-bottom:1px solid #330099;
+	width: 100px;
+}
+
+#colAdultFare
+{
+	padding: 6px;
+	text-align: right;
+	border-bottom:1px solid #330099;
+	width: 70px;
+}
+
+#colChildFare
+{
+	padding: 6px;
+	text-align: right;
+	border-bottom:1px solid #330099;
+	width: 70px;
+}
+
+#colNoOfTickets
+{
+	padding: 6px;
+	text-align: center;
+	border-bottom:1px solid #330099;
+	width: 100px;
+}
+
+#colTotal
+{
+	padding: 6px;
+	text-align: right;
+	border-bottom:1px solid #330099;
+	width: 70px;
+}
+
+#colSpacer
+{
+	padding: 6px;
+	text-align: left;
+	border-bottom:1px solid #330099;
+}
+
+.requiredticketstablecell
+{
+	padding: 6px;
+}
+
+.requiredticketstabletotalcell
+{
+	padding: 6px;
+	border-top: 1px solid #000000;
+}
+
+.matrixborder {
+	border:1px solid #330099;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#99ccff;
+/*	width:575px; */
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width: 575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.matrixborder {width:575px;}
+
+.matrixheading {
+	border:1px solid #ffffff;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#ffffff;
+	width:575px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:565px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.matrixheading {width:575px;}
+
+#peopletravellingcontainer {
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+
+}
+
+.matrixtable
+{
+	border-collapse:collapse;
+	margin-top: 5px;
+}
+
+.ticketcell
+{
+	border-top: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+	background-color: #ffffff;
+}
+
+.ticketcelltable
+{
+	width: 300px;
+	margin-right: 5px;
+}
+
+.unitcellselected
+{
+	background-color: Yellow;
+	border-top: none;
+	border-bottom: none;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+}
+
+.unitcellunselected
+{
+	background-color: #fffbeb;
+	border-top: none;
+	border-bottom: none;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+}
+
+.unitcellselectedfirst
+{
+	background-color: Yellow;
+	border-top: 1px solid #330099;
+	border-bottom: none;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+}
+
+.unitcellunselectedfirst
+{
+	background-color: #fffbeb;
+	border-top: 1px solid #330099;
+	border-bottom: none;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+}
+
+.selectcellselected
+{
+	background-color: yellow;
+	border-top: none;
+	border-bottom: 1px solid #330099;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	width: 70px;
+}
+.selectcellunselected
+{
+	background-color: #fffbeb;
+	border-top: none;
+	border-bottom: 1px solid #330099;
+	border-left: 1px solid #330099;
+	border-right: 1px solid #330099;
+	width: 70px;
+}
+
+.peopletravellingerror
+{
+	background-color: Red;
+}
+
+.retailertable
+{
+	border-collapse: collapse;
+	width: 575px;
+}
+
+.retailernamecell
+{
+	background-color: #fffbeb;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-top: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-left: 1px solid #330099;
+	border-right: none;
+	font-size: 0.7em;
+}
+
+.retailerbuycell
+{
+	background-color: #fffbeb;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-top: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-left: none;
+	border-right: 1px solid #330099;
+	font-size: 0.7em;
+}
+
+.fdtrowheader
+{
+	background-color:#ffffff;
+}
+.fdetail {table-layout: fixed; padding: 0px; width: 755px; border: 0px;}
+
+.PricingUnitLeft
+{
+	border-left: solid 2px #99ccff;  
+}
+
+.PricingUnitBottom
+{
+	border-bottom: solid 2px #99ccff;  
+}
+
+.PricingUnitTop
+{
+	border-top: solid 2px #99ccff;  
+}
+.PricingUnitRight
+{
+	border-right: solid 2px #99ccff;  
+}
+
+.PricingUnitNinebRight
+{
+	border-right: solid 2px #99ccff;  
+	font-size: 0.9em; 
+	font-weight: bold;
+}
+
+.PricingUnitEightbLeft
+{
+	border-left: solid 2px #99ccff;  
+	font-size: 0.8em;
+    font-weight: bold;	
+}
+
+.fdtctable
+{ 
+	border-top: solid 1px #330099;    
+	border-left: solid 1px #330099;   
+	border-right: solid 1px #330099;  
+	width:100%; 
+}
+
+.fdtcellheader
+{
+	text-align:left;
+	border-bottom: solid 1px #330099;
+}
+
+.fdtcellcheaper
+{
+	text-align:right;
+	border-bottom: solid 1px #330099;
+	
+}
+
+.fdtcellheaderb
+{
+	text-align:left;
+	font-weight:bold;
+	border-bottom: solid 1px #330099;
+}
+
+.fdtcbody1 {text-align:left;}
+.fdtcbody2 {text-align:left;}
+.fdtcbody3 {text-align:left;}
+.fdtcbody4 {text-align:left;}
+.fdtcbody5 {text-align:left;}
+.fdtcbody6 {text-align:left;}
+.fdtcbody7 {text-align:left; border-bottom: solid 1px #330099;}
+.fdtcbody8 {text-align:left; border-bottom: solid 1px #330099;}
+
+.fdtcRoute {font-weight:normal;}
+
+.fdtcrow{background-color: #E6FFFE;}
+.fdtcrowg{background-color: #FFFFFF;}
+.fdtcrowy{font-weight: bold; background-color: #FFFF00;}
+
+#tdisclaimer {
+	color: #000000;
+	width: 755px;
+	margin-left: 5px;
+}
+
+.legTable
+{
+	background-color: #FFFFFF;
+	border:1px solid #330099;
+	width: 100%;
+}
+
+.legTableRow
+{
+	border: 1px solid #330099;
+}
+
+div#helpboxoutput
+{
+	width: 820px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#boxtypethirteen 
+{
+	padding-left:0px;
+}

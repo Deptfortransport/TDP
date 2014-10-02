@@ -1,0 +1,114 @@
+﻿/* Styles for printable map controls */
+
+/* ---- PrintableMapControl printable styles ---- */
+.mpMapPrintableImage
+{
+    width: 630px;
+	height: 418px;
+}
+
+.mpMapPrintContainer
+{
+    border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	margin: 0px 0px 5px 0px;
+	background-color:#FFFFFF;
+	width: 630px; /* Same width and height as mpMapPrintableImage */
+	height: 418px;
+}
+
+.mpMapPrintableViewType
+{
+    border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	margin: 0px 0px 5px 0px;
+	background-color:#FFFFFF;
+	width: 630px; /* Same width as mpMapPrintContainer */
+}
+
+/* Control widths to use dependent on PrintableMapControl mode (for journey or map) */
+.mpMapPrintKeysContainerJourney .msMapSymbolPrintContainer
+{
+    width: 523px;
+}
+.mpMapPrintKeysContainerMap .msMapSymbolPrintContainer
+{
+    width: 636px;
+}
+
+
+/* ---- Map symbols key control printable styles ---- */
+.msMapSymbolPrintContainer
+{
+    padding: 2px 2px 2px 2px;
+    margin: 0px 0px 5px 0px;
+    border: 1px solid #330099;
+}
+
+.msMapSymbolPrintHeading
+{
+    margin: 3px 3px 5px 3px;
+}
+
+.msMapSymbolsPrintTableTransport,
+.msMapSymbolsPrintTableAccomodation,
+.msMapSymbolsPrintTableSport,
+.msMapSymbolsPrintTableAttractions,
+.msMapSymbolsPrintTableHealth,
+.msMapSymbolsPrintTableEducation,
+.msMapSymbolsPrintTableInfrastructure
+{
+    margin: 3px 3px 3px 3px;
+    width: 150px;
+    height: 140px;
+}
+
+
+/* ---- Map Key control ---- */
+.mkMapKeyContainer
+{
+    width: 100px;
+    padding: 3px 3px 3px 3px;
+    margin: 0px 5px 5px 0px; /* Space between Key and Symbols box */
+    border: solid 1px #330099;
+}
+
+.mkMapKeyHeading
+{
+    margin: 3px 0px 3px 1px;
+}
+
+.mkMapKeyHeading .txtnineb
+{
+    font-size: 0.8em;
+}
+
+
+/* -------- Prinatable map CSS --------------------*/
+.mpMapPrintKeysContainerJourney
+{
+    display: block;
+    position: relative;
+}
+
+.mpMapPrintIconKeysContainer, .mpMapPrintPanelMapKeys
+{
+    position:relative;
+}
+
+.mpMapPrintIconKeysContainer
+{
+    min-height : 175px;
+}
+
+.mpMapPrintPanelIconsDisplay
+{
+    position:absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.mpMapPrintPanelMapKeys .floatleftonly
+{
+    float:none;
+}

@@ -1,0 +1,44 @@
+﻿/* CSS Document for Transport Direct Portal */
+/* Styles for SpecialNoticeBoard */
+/* This style sheet inherits setup.css and should be used in addition to it*/
+
+.boxtypeeight{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	width:765px;
+	margin-bottom: 5px;
+	voice-family: "\";}\"";
+	clear: both;
+	voice-family:inherit;
+	width:765px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeight {width:765px;}
+
+.TDLanguageLink, .TDLanguageLinkMouseOver
+{
+	font-size:8pt;
+	font-family:verdana, arial, helvetica, sans-serif; 
+	line-height:10pt;
+	background-color: #CEEFFF;
+	margin:0px;
+	padding:0px;
+	border:none;
+	width:100px;	
+}
+
+.TDLanguageLink
+{
+	color: #3300ff;
+	cursor:pointer;	
+}
+
+.TDLanguageLinkMouseOver
+{
+	color: #8800CC;
+	cursor:pointer;
+	text-decoration:underline;	
+}
+

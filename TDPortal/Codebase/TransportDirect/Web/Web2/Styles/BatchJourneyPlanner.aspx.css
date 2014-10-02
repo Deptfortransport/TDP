@@ -1,0 +1,138 @@
+﻿.batchInput1
+{
+    width:600px;
+    font-size:0.8em;
+    font-family:Courier New;
+}
+
+.batchInput2
+{
+    width:600px;
+    height:100px;
+    font-size:0.8em;
+    font-family:Courier New;
+}
+.labelNormal
+{
+    font-size:0.7em;
+}
+.labelConfirmation
+{
+    font-size:0.7em;
+    background-color:rgb(204, 236, 255);
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.labelNormalRight
+{
+    font-size:0.7em;
+    text-align:right;
+    vertical-align:top;
+    width:200px;
+}
+.labelSubHeading
+{
+    font-size:0.7em;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.labelInfoBox
+{
+    font-size:0.7em;
+    width:600px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.textTerms
+{
+    background-color:#E8E8E8;
+    color:Black;
+    padding-left:5px;
+    padding-right:5px;
+    border-style:solid;
+    border-width:thin;
+}
+.divTerms
+{
+    overflow:auto;
+    width:500px;
+    height:300px;
+}
+.cellOutlined
+{
+    border-style:solid;
+    border-width:thin;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.labelError
+{
+    font-size:0.7em;
+    color:Red;
+}
+.labelTableHeading
+{
+    font-weight:bold;
+    font-size:0.7em;
+    text-align:center;
+}
+.tableBatches
+{
+    border-style:solid;
+    border-width:thin;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.tableCell
+{
+    font-size:0.7em;
+    text-align:center;
+}
+.headerCell
+{
+    border-bottom:solid;
+    border-width:thin;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.linkHeader
+{
+    font-size:0.7em;
+    color:Black;
+    font-weight:bold;
+}
+.linkHeader:link
+{
+    color:Black;
+}
+.cellBlue
+{
+    background-color:#E6FFFE;
+    font-size:0.7em;
+    text-align:center;
+}
+.cellNormal
+{
+    background-color:#FFFFFF;
+    font-size:0.7em;
+    text-align:center;
+}
+
+.infoLabel
+{
+    font-style:italic;
+}
+
+.labelUploading
+{
+    visibility:hidden;
+}

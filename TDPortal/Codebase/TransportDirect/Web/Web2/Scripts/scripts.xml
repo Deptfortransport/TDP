@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<scripts>
+  <script name="JQuery">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/jquery-1.7.1.min.js"/>
+  </script>
+  <script name="JQueryQtip">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/jquery.qtip.min.js"/>
+  </script>
+  <script name="JavaScriptDetection">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/detectjavascript.js"/>
+  </script>
+  <script name="BatchJourneyPlanner">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/batchjourneyplanner.js"/>
+	</script>
+  <script name="JourneyPlannerInput">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/journeyplannerinput.js"/>
+  </script>
+  <script name="Common">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/Common.js"/>
+	</script>
+	<script name="MapLocationControl" >
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/maplocationcontrol_w3cstyle.js"/>
+	</script>
+	<script name="AirportBrowseControl">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/AirportBrowseControl_w3cstyle.js" />
+	</script>
+	<script name="StationResultsTable">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/stationresultstable_w3cstyle.js" />
+	</script>
+	<script name="DateSelectControl">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/dateselectcontrol_w3cstyle.js" />
+	</script>
+	<script name="UserSurvey">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/UserSurveyRedirect_w3cstyle.js" />
+	</script>
+	<script name="RowHighlighter">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/RowHighlighter_w3cstyle.js" />
+	</script>
+	<script name="UnitsSwitch">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/UnitsSwitch_w3cstyle.js" />
+	</script>
+  <script name="UnitsSwitchCycle">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/UnitsSwitchCycle_w3cstyle.js" />
+  </script>
+  <script name="UnitsSwitchEmissions">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/UnitsSwitchEmissions_w3cstyle.js" />
+  </script>
+  <script name="TDAutoPostback">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/TDAutoPostback_w3cstyle.js" />
+	</script>
+	<script name="PeopleTravellingControl">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/PeopleTravellingControl_w3cstyle.js" />
+	</script>
+	<script name="ScrollManager">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/ScrollManager_w3cstyle.js" />
+	</script>
+	<script name="ErrorAndTimeoutLinkHandler">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/ErrorAndTimeoutLinkHandler_w3cstyle.js" />		
+	</script>
+	<script name="ImageMap">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/ImageMap_w3cstyle.js" />		
+	</script>
+	<script name="UserNavigationDefaultAction">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/UserNavigationDefaultAction_w3cstyle.js" />
+	</script>
+	<script name="UserNavigationLoginAction">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/UserNavigationLoginAction_w3cstyle.js" />
+	</script>
+	<script name="ClientLinks">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/ClientLinks_w3cstyle.js" />
+	</script>
+		<script name="Nifty">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/Nifty.js" />
+	</script>
+	<script name="ExpandableMenu">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/ExpandableMenu_w3cstyle.js" />
+	</script>
+	<script name="JourneyReplanElementSelection">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/JourneyReplanElementSelection_w3cstyle.js" />
+	</script>
+	<script name="JourneyAdjustElementSelection">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/JourneyAdjustElementSelection_w3cstyle.js" />
+	</script>
+	<script name="Resources">
+		<scriptfile domsupport="W3C_STYLE" filepath="scripts/Resources_w3cstyle.js" />
+	</script>
+  <script name="CanvasChartPainter">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/Chart_CanvasChartPainter.js" />
+  </script>
+  <script name="Chart">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/Chart_Chart.js" />
+  </script>
+  <script name="Excanvas">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/Chart_Excanvas.js" />
+  </script>
+  <script name="GradientProfileChart">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/Chart_GradientProfileChart.js" />
+  </script>
+  <script name="IECanvas">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/Chart_iecanvas.js" />
+  </script>
+  <script name="WZ_Jsgraphics">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/Chart_WZ_Jsgraphics.js" />
+  </script>
+  <script name="DetailsSwitchCycle">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/DetailsSwitchCycle_w3cstyle.js" />
+  </script>
+  <script name="WindowOnLoadManager">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/WindowOnLoadManager_w3cstyle.js" />
+  </script>
+  <script name="AmendDateSelectControl">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/AmendDateSelectControl_w3cstyle.js" />
+  </script>
+  <script name="MappingScriptRepository">
+    <scriptfile domsupport="W3C_STYLE" filepath="esriMap/ESRIJSAPIv1.5/Default.ashx{0}" />
+  </script>
+  <script name="MapAPI">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/MapAPI.js" />
+  </script>
+  <script name="MapSymbolsSelectControl">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/MapSymbolsSelectControl.js" />
+  </script>
+  <script name="MapJourneyDisplayDetailsControl">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/MapJourneyDisplayDetailsControl.js" />
+  </script>
+  <script name="MapSelectLocationControl2">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/MapSelectLocationControl2.js" />
+  </script>
+  <script name="TravelNews">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/TravelNews.js" />
+  </script>
+  <script name="MapInputControl">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/MapInputControl.js" />
+  </script>
+  <script name="ModalPopupMessage">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/ModalPopupMessage.js" />
+  </script>
+  <script name="MapWalkitLinks">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/MapWalkitLink.js" />
+  </script>
+  <script name="InternationalCitySelection">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/InternationalCitySelection.js" />
+  </script>
+  <script name="AutoSuggestExtender">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/AutoSuggestExtender.js" />
+  </script>
+  <script name="Locations">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/Locations.js" />
+  </script>
+  <script name="LocationInput">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/LocationInput.js" />
+  </script>
+  <script name="LocationSuggest">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/LocationSuggest.js" />
+  </script>
+  <script name="TDInfoWindow">
+    <scriptfile domsupport="W3C_STYLE" filepath="scripts/TDInfoWindow.js" />
+  </script>
+</scripts>

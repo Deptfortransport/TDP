@@ -1,0 +1,116 @@
+/* Styles for Cycle journey details table */
+.boxtypethirteen
+{
+	width: 642px;
+	padding: 0px 0px 0px 0px;
+}
+
+.cycleJourneyDetailsBoxType1
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 10px 0px;
+}
+
+.cycleJourneyDetailsBoxType2
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.cycleJourneyDetailsBoxType3
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.cycleJourneyDetailsTableHeader1, /* step */
+.cycleJourneyDetailsTableHeader2, /* distance */
+.cycleJourneyDetailsTableHeader3, /* direction */
+.cycleJourneyDetailsTableHeader4, /* cycle route image */
+.cycleJourneyDetailsTableHeader5  /* time */
+{
+	text-align: left;
+	vertical-align: middle;
+	padding: 0px 5px 0px 5px;
+}
+
+.cycleJourneyDetailsTableCell1, /* step */
+.cycleJourneyDetailsTableCell2, /* distance */
+.cycleJourneyDetailsTableCell3, /* direction */
+.cycleJourneyDetailsTableCell4, /* cycle route image */
+.cycleJourneyDetailsTableCell5, /* time */
+.cycleJourneyDetailsTableCell6, /* cycle route below direction */
+.cycleJourneyDetailsTableCell7, /* instruction below direction */
+.cycleJourneyDetailsTableCell8  /* attribute details below direction */
+{
+	text-align: right;
+	vertical-align: top;
+	padding: 6px 5px 1px 5px;
+}
+
+.cycleJourneyDetailsTableHeader2,
+.cycleJourneyDetailsTableCell2
+{
+	text-align: center;
+	width: 70px; /*prevents text wrapping of heading*/
+}
+
+.cycleJourneyDetailsTableCell3
+{
+	padding-bottom: 4px;
+}
+
+.cycleJourneyDetailsTableCell6,
+.cycleJourneyDetailsTableCell7,
+.cycleJourneyDetailsTableCell8
+{
+	padding: 0px 0px 5px 10px;
+}
+
+.cycleJourneyDetailsTableCell3,
+.cycleJourneyDetailsTableCell6,
+.cycleJourneyDetailsTableCell7,
+.cycleJourneyDetailsTableCell8
+{
+	text-align: left;
+}
+
+.cycleJourneyDetailsAttributeHideOut,
+.cycleJourneyDetailsAttributeHideRet
+{
+	display: none;
+	padding: 1px 0px 1px 0px;
+	clear: both;
+}
+
+.cycleJourneyDetailsAttributeShowOut,
+.cycleJourneyDetailsAttributeShowRet
+{
+	display: block;
+	padding: 3px 0px 3px 0px;
+	clear: both;
+}
+
+.nopadding
+{
+	padding: 0px 0px 0px 0px;
+}
+/* -------------------------------------- */
+
+/* Styles for the Printable map tile */
+.boxtypeonem 
+{
+	width: 630px;
+	margin-bottom: 0px;
+}	
+
+.printableMapTileImage
+{
+	width: 630px;
+}
+
+.printableMapTileScale
+{
+	width: 640px;
+	margin: 0px 0px 5px 5px;
+	text-align: right;
+}
+/* -------------------------------------- */

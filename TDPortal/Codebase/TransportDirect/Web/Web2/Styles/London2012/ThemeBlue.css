@@ -1,0 +1,32 @@
+
+/* BEGIN - LONDON 2012 - STYLES BELOW ARE TO MAKE THE THEME FOR THIS PAGE BLUE */
+
+/* ---------------------------- PAGE --------------------------------*/
+/* Background colour for Portal - display when browser window wider than TD Portal page */
+body
+{
+	background: url(../../App_Themes/London2012/images/gifs/Partner/Background_Pattern_Blue.gif) no-repeat left bottom;
+	background-color: #0099FF;
+}
+
+
+/* ---------------------------- PAGE HEADER CONTROL --------------------------------*/
+.headerandnavigationarea
+{
+	background: url(../../App_Themes/London2012/images/gifs/Partner/London2012_Logo_Pink.gif) no-repeat right top;
+}
+
+.TDNavButtonActive
+{
+	background:#F4F4F4 url(../../App_Themes/London2012/images/gifs/Partner/ActiveTabBackground_Blue.gif) repeat-x top left ;
+}
+
+
+/* ---------------------------- LEFT HAND NAVIGATION ---------------------------*/
+.categoryLink
+{
+	background-color: #0099FF;
+}
+
+
+/* END - LONDON 2012 - STYLES BELOW ARE TO MAKE THE THEME FOR THIS PAGE BLUE */

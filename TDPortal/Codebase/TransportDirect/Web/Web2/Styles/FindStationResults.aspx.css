@@ -1,0 +1,57 @@
+#boxtypeeightstd,  .boxtypeeightstd, .boxtypeerrormsg, #boxtypefindstationmapcmd
+{
+	width: 826px;
+	margin-left: 10px;
+}
+
+#boxjourneychangesearchcontrol
+{
+	width: 826px;
+	margin-left: 5px;
+}
+
+#boxtypestationresults
+{
+	width: 826px;
+	margin-left: 10px;
+}
+
+div#helpboxoutput
+{
+	width: 821px;
+	margin-left: 10px;
+}
+
+.boxtypeerrormsg
+{
+	margin-left: 5px;
+	width: 800px;
+}
+
+.TDLocationLink, .TDLocationLinkMouseOver
+{
+	font-size:8pt;
+	font-family:verdana, arial, helvetica, sans-serif; 
+	line-height:10pt;
+	background-color:Transparent;
+	margin:0px;
+	padding:0px;
+	border:none;
+	width:auto;
+	text-align:left;
+}
+
+.TDLocationLink
+{
+	color: #3300ff;
+	cursor:pointer;	
+}
+
+.TDLocationLinkMouseOver
+{
+	color: #8800CC;
+	cursor:pointer;
+	text-decoration:underline;	
+}
+
+

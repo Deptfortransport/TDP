@@ -1,0 +1,125 @@
+/* Style sheet for use with the ExpandableMenu user control */
+.HomePageMenu
+{
+	width: 150px;
+	padding-bottom: 20px;
+	float: right;
+	margin-bottom:10px;
+}
+
+.ExpandableMenu
+{
+	width: 150px;
+	padding-bottom: 20px;
+	float: right;
+	margin-bottom:10px;	
+}
+
+.categoryLink /* Default Style */
+{
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+.subcategoryLink /* Default Style */
+{
+	margin-left: 20px;
+}
+
+.subrootcategoryLink /* Default Style */
+{
+	margin-left: 20px;
+	font-size: 1em;
+}
+
+
+.highlighted /* Default Style */
+{
+	font-weight: bold;
+}
+
+UL /* Default Style */
+{
+	font-size: 0.7em;
+	list-style: none;
+	padding: 0px;
+}
+
+LI /* Default Style */
+{
+	padding-top: 0px;
+}
+
+.subcategoryLink
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	line-height: 1.2em;
+}
+
+.subcategoryLink li
+{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/* Style for related links boxes on mini homepages */
+.HomePageRelatedLinks
+{
+	width: 170px;
+	margin-left: 5px;
+	float: left;
+}
+
+.HomePageRelatedLinks LI
+{
+	padding-bottom: 10px;
+}
+
+/* Style for related links boxes on journey emissions pages*/
+.JourneyEmissionsPageRelatedLinks
+{
+	width: 100%;
+	margin-left: 0px;
+	float: left;
+}
+
+.JourneyEmissionsPageRelatedLinks UL
+{
+	padding-left: 0px;	
+	margin-left: 0px;
+	list-style-type: none;
+}
+
+.JourneyEmissionsPageRelatedLinks LI
+{
+	padding-bottom: 10px;
+}
+
+/* Style for old style navigation menus on Park and Ride and Find a Car pages */
+.SuggestionLinkStyle
+{
+	width: 150px;
+	border: 2px solid #CCCCCC;
+	padding-right: 3px;
+	margin: 5px;
+	float: left;
+}
+
+.SuggestionLinkStyle UL
+{
+	list-style: none;
+	font-size: 0.8em;
+	margin-left: 10px;
+	padding-bottom: 5px;
+	padding-left:0px;
+}
+
+.SuggestionLinkStyle LI
+{
+	padding-bottom: 10px;
+}

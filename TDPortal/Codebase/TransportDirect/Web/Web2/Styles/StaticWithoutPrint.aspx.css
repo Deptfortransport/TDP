@@ -1,0 +1,33 @@
+#boxjourneychangesearchcontrol
+{
+	height:40px;
+}
+
+ul.lister, ul#lister {list-style-type: disc;}
+
+#contentarea
+{
+	height:364px;
+	overflow:auto;
+	width:833px;
+}
+
+#Body_Text
+{
+	width:850px;
+}
+
+#hdtypethree
+{
+	width:805px;
+}
+
+#primcontent
+{
+	width:850px;
+}
+
+#rsviewa
+{
+	width:820px;
+}

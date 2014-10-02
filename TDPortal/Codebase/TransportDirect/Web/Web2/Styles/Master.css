@@ -1,0 +1,499 @@
+/* CSS created on 13/08/03 for use on SLB and Transport Direct (modified 18/08/03)   =====================================================================================================================*/
+ 
+
+/*  IGNORE ATM
+=====================================================================================================================
+these files may be used in the future to mask CSS content from early dumb browsers as needed :)
+
+@import url("header.css");
+
+this file sets up a 2 column left nav right content template
+
+@import url("navlefttemplate.css");
+
+this file sets up the journey planner template
+
+@import url("journeyplanner.css");
+
+this file sets up the page footer
+
+@import url("footer.css");
+
+this files sets up the boxes used within the help section
+
+@import url("help.css");
+
+
+*/
+
+
+
+/* generic page stuff 
+=====================================================================================================================
+*/
+
+body {
+	font-family: Verdana, Tahoma, Arial, Georgia, Helvetica, sans-serif;
+	margin: 0;
+	Padding: 0;
+}
+p, td, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, div, {
+	font-family: Verdana, Tahoma, Arial, Georgia, Helvetica, sans-serif;
+}
+
+img { 
+	display: block;
+	border: 0;
+}
+
+.hide {
+	display: none;
+}
+
+table {
+	font-family: Verdana, Tahoma, Arial, Georgia, Helvetica, sans-serif;
+	margin: 0;
+}
+
+table td {
+	font-family: Verdana, Tahoma, Arial, Georgia, Helvetica, sans-serif;
+	padding: 0; 
+	border-width: 0;
+	vertical-align: top;
+}
+h1 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #000000;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #330099;
+	width: 760px;
+	margin-left: 5px;
+
+
+
+}
+h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #000000;
+}
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #000000;
+}
+h4 {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #000000;
+}
+h5 {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #000000;
+}
+h6 {
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* Form elements font sizes 
+=====================================================================================================================
+*/
+
+	.FormTxtGeneric {
+	font-family: Verdana, Tahoma, Arial, Georgia, Helvetica, sans-serif;
+	font-size: 0.7em;
+}
+
+
+/* Generic font size for page content 
+=====================================================================================================================
+*/
+
+#PageContent {
+	font-size: 0.7em;
+	color: #000000;
+	line-height: 1.5; 
+}
+
+/* lists and bullet points 
+=====================================================================================================================
+*/
+
+ul.fancyList {
+	list-style: disc url(i/p/lister1.gif) inside;
+	font-size: 0.7em;
+	line-height: 1.5; 
+	color: #000000;
+}
+
+/* help box used on journey planner screens as a popup
+=====================================================================================================================
+*/
+
+div#HelpBoxOutside {
+	Width: 100%;
+	font-size: 0.7em;
+	background-color: #FFFFCC;
+	border: 1px solid #cc6600;
+	padding: 3px 3px 5px;
+}
+
+	#HelpBoxOutside a:link, #HelpBoxOutside a:visited, {
+	color: #000000;
+	text-decoration: none;
+}
+	#HelpBoxOutside a:hover {
+	color: #330099;
+	text-decoration: underline;
+}
+
+div#HelpBoxDescription {
+	font-weight: bold;
+	background-image: url(i/p/help_icon.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding-bottom: 3px;
+}
+
+div#HelpBoxLine {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #cc6600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div#HelpBoxContent {
+	color: #000000;
+	line-height: 1.5;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+}
+
+div#HelpClose {
+	font-weight: bold;
+	text-align: right;
+}
+
+	#HelpCloseImg {
+	display: inline;
+	}	
+
+
+
+/*journey planner elememnts includes 
+ =====================================================================================================================
+*/
+
+div#JourneyPlnLoginBox{
+	Width: 100%;
+	background-color: #CCCCFF;
+	border: 1px solid #330099;
+	padding: 5px 30px 5px 10px;
+
+}
+	#JPTableLogin {
+	Width: 100%;
+	font-size: 0.7em;
+	color: #000000;
+}
+#JPTable, .JPTable {
+	Width: 100%;
+	color: #000000;
+	margin-bottom: 10px;
+
+}
+
+td#JPTxTBldR  {
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align: right;
+	width: 55px;
+	padding: 5px;
+}
+	
+	.JPTxT  {
+	font-size: 0.7em;
+}	
+
+div#JourneyPlnOutter{
+	Width: 100%;
+	background-color: #ffffff;
+	border: 1px solid #330099;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+div#JourneyPlnToFrom {
+	Width: 100%;
+	background-color: #99CCFF;
+	border: 1px solid #330099;
+	padding: 10px 5px;
+	background-image: url(i/p/case.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+
+}
+
+div#JourneyPlnLine {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #330099;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div#JourneyPlnLeave {
+	Width: 100%;
+	background-color: #ffffff;
+	border: 1px solid #330099;
+	padding: 10px 5px;
+}
+
+
+
+
+/*custom left nav
+ =====================================================================================================================
+*/
+
+	#ButtonLink a:link{
+	color: #000000;
+	width: 100%;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	background-color: #ffffff;
+	border-top: 1px solid #330099;
+	}
+
+	#ButtonLink a:visited {
+	color: #000000;
+	width: 100%;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	background-color: #ffffff;
+	border-top: 1px solid #330099;
+}
+
+	#ButtonLink a:hover {
+	color: #0000FF;
+	width: 100%;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	background-color: #CCCCCC;
+	border-top: 1px solid #330099;
+}
+
+	#ButtonLink a:active {
+	color: #000000;
+	width: 100%;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	background-color: #99CCFF;
+	border-top: 1px solid #330099;
+	font-weight: bold;
+}
+
+div#ButtonLink {
+	Width: 130px;
+	font-size: 0.65em;
+	padding: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #330099;
+	border-bottom-color: #330099;
+	border-left-color: #330099;
+}
+
+
+/*custom page links for TD  [BLUE] =====================================================================================================================
+*/
+.BlueLink,
+
+a.BlueLink{
+	color: #330099;
+	text-decoration: none;
+}
+
+a:link.BlueLink {
+	color: #330099;
+	text-decoration: none;
+}
+
+a:hover.BlueLink{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+/* Banner and global navigation
+===================================================================================================================== */
+
+table#HeaderTableLrg {
+	width: 760px;
+	height: 117px;
+	background-color: 330099;
+}
+
+table#HeaderTableSml {
+	width: 760px;
+	height: 70px;
+	background-color: 330099;
+}
+
+td#TransDirlogo{
+	width: 140px;
+}
+
+td#LrgBanner {
+	width: 620px;
+}
+
+table#GlobalNav {
+	width: 760px;
+	height: 23px;
+	background-color: 330099;
+}
+
+td#Home{
+	width: 49px;
+}
+
+td#JourneyPlan {
+	width: 106px;
+}
+
+td#Maps{
+	width: 48px;
+}
+
+td#liveTravel {
+	width: 71px;
+}
+
+td#GlobalNavPad {
+	width: 486px;
+}
+
+/* sets up the boxes used within the help section 
+=====================================================================================================================*/
+
+	div.TopicBox {
+	background-color: #EAEAFF;
+	width: 100%;
+	border: 1px dotted #003399;
+	padding: 2px;
+	}
+
+	#Tbold {
+	font-size: 1em;
+	font-weight: bold;
+	color: #0066CC;
+	margin-right: 5px;
+	margin-left: 5px;
+	}
+	
+	#Ttxt {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #000000;
+	clear: right;
+	background-position: center;
+	}
+	
+	div.QuestionBox {
+	background-color: #ccccff;
+	width: 100%;
+	border: 1px dashed #003399;
+	}
+
+	#Qbold {
+	font-size: 1em;
+	font-weight: bold;
+	color: #0066CC;
+	margin-right: 5px;
+	margin-left: 5px;
+	}
+	
+	#Qtxt {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #000000;
+	clear: right;
+	background-position: center;
+	}
+	
+/* 2 column journey palnner with right hand contextual help 
+=====================================================================================================================*/
+
+table#TwoColumnRight {
+	width: 760px;
+}
+
+td#LeftNavColJP {
+	width: 580px;
+	text-align: left;
+	padding-right: 5px;
+	padding-left: 5px; 
+}
+
+td#RightContentColJP {
+	width: 180;
+}
+
+/* 2 column template left navigation right content 
+=====================================================================================================================*/
+
+table#TwoColumnLeft {
+	width: 760px;
+}
+
+td#LeftNavCol {
+	width: 135px;
+	padding: 0 0 0 5;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #003399;
+}
+
+td#RightContentCol {
+	width: 625px;
+	padding-left: 5px;
+}
+
+/* end of page footer set up 
+=====================================================================================================================*/
+
+#footer {
+	font-size: 0.7em;
+	text-align: center;
+	border-top-color: #003399;
+	border-top-width: 1px;
+	border-top-style: solid;
+	padding-top: 10px;
+	margin-top: 10px;
+	height: 45px;
+	width: 760px;
+}

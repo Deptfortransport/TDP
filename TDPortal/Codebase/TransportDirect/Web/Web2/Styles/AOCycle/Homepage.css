@@ -1,0 +1,50 @@
+﻿/* ---------------------------------- POWERED BY CONTROL --------------------------------*/
+
+.Column3HeaderPoweredBy
+{
+	background-color: #ECF4EB;
+	height: 22px;
+}
+
+.Column3HeaderPoweredBy .txtsevenbbl
+{
+	color: #333333;
+}
+
+.Column3ContentPoweredBy
+{
+	border: solid 1px #E0E0E0;
+	border-top: solid 0px #FFFFFF;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+.PoweredByLogo /* header, wait page */
+{
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 1px;
+}
+
+#headerControl_PoweredByControl_panelPoweredBy .PoweredByLogo img
+{
+	border: none;
+	margin-right: 1px;	
+	height: 27px;
+}
+
+.PoweredByLogo a img
+{
+	border: none;
+	margin-right: 1px;	
+	height: 27px;
+}
+
+.divnavpoweredby
+{
+	display: block;
+	height: 28px;
+	padding: 1px;
+}

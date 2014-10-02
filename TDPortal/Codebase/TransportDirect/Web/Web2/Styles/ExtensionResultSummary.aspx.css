@@ -1,0 +1,106 @@
+/* CCN 0427 added for extension result summary page but can be used by other pages where it uses the full page width 833px - apatel */
+
+.ejdetail
+{
+	table-layout: fixed;
+	padding: 0px;
+	width: 815px;
+	border: 0px;
+	font-size: 0.7em;
+	background-color: #FFFFFF;
+}
+
+
+/* CCN 0427 apatel - for the ExtenstionResultsSummary page */
+.ejpselehd
+{
+	font-weight: bold;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color:#99CCFF;
+	width: 57px; 
+	border-left-width: 1px; 
+	border-left-style: solid; 
+	border-left-color: #330099;
+	border-bottom:1px solid #99CCFF;
+}
+
+/* CCN 0427 apatel - for the ExtenstionResultsSummary page */
+.ejpsele
+{
+	text-align: center;
+	vertical-align: middle;
+	
+	border-left-width: 1px; 
+	border-left-style: solid; 
+	border-left-color: #330099;
+	background-color:#99CCFF;
+	border-bottom:1px solid #99CCFF;
+}
+
+.boxtypeJourneyBuilderWithPadding
+{
+	background-color: #ffffff;
+	margin-top: 10px;	
+	margin-left:10px;
+	margin-bottom: 15px;
+	width:816px;/* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	height: 10px;
+	clear: both;
+}
+
+/* width for opera browser */
+html>.boxtypeJourneyBuilderWithPadding {width: 816px;}
+
+/* CCN 0427 added for ExtensionResultSummary page error messages - apatel */
+.boxtypeerrormsgthree
+{
+	margin-left:5px;
+	padding:0px 5px 0px 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:817px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeerrormsgthree {width:817px;}
+
+#boxtypefortyone, .boxtypefortyone, .boxtypesixteen
+{
+	margin-left:10px;
+	width: 817px;
+}
+
+.boxtypewhitebackground
+{
+	margin-left:10px;
+	width: 805px;
+}
+
+#summaryPanel
+{
+	margin-top:10px;
+}
+
+.bodyArea
+{
+	width:840px;	
+}
+
+.boxtypefortytwo
+{
+	width:741px;	
+}
+
+.ejseleet
+{
+	width:63px;	
+}

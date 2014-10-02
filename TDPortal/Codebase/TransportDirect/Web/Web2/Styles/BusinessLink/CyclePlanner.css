@@ -1,0 +1,72 @@
+/* Styles for Cycle details*/
+.cycleAllDetailsBoxType1
+{
+	background-color: #ffffff;
+	border-color: #E0E0E0;
+}
+
+.cycleAllDetailsBoxType2
+{
+	background-color: #f2f1ef;
+}
+
+.cycleAllDetailsBoxType3
+{
+	background-color: #ffffff;
+	border: none;
+	padding: 0px 0px 10px 0px;
+}
+
+/* -------------------------------------- */
+
+
+/* Styles for Cycle journey summary table */
+.cycleJourneySummaryBoxType1
+{
+	border-color: #E0E0E0;
+	background-color: #f2f1ef;
+}
+
+/* -------------------------------------- */
+
+
+/* Styles for Cycle journey details table */
+.cycleJourneyDetailsBoxType1
+{
+	border-color: #E0E0E0;
+}
+
+/* -------------------------------------- */
+
+
+/* Styles for Cycle GPS tracking */
+.cycleJourneyGPSBoxType1
+{
+	border-color: #E0E0E0;
+}
+/* -------------------------------------- */
+
+
+/* Styles for Cycle journey chart */
+.cycleJourneyGraphBoxType1
+{
+	border-color: #E0E0E0;
+}
+
+.chartColour
+{
+	background-color: #999999; /* colour of the chart */
+}
+/* -------------------------------------- */
+
+.chartTableHeaderDistance, .chartTableHeaderHeight
+{
+	border-color: #E0E0E0;
+}
+
+.chartTableDistance, .chartTableHeight
+{
+	border-color: #E0E0E0;
+}
+
+/* -------------------------------------- */

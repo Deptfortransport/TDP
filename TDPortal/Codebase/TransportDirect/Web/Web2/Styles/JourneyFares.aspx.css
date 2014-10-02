@@ -1,0 +1,93 @@
+.boxtypeeightstd
+{
+    margin-left: 10px;
+}
+
+.boxtypesixteen
+{
+    margin-left: 10px;
+    padding-top: 0px;
+    width: 828px;
+}
+
+.boxtypeseventeen,
+.boxtypeeighteen
+{
+	margin-left: 10px;
+	width: 826px;
+}
+
+.boxtypetwelve
+{
+	width: 816px;
+	margin: 0px 0px 5px 10px;
+}
+
+.boxtypetwelveamendcontrol
+{
+    margin-left: 10px;
+    width: 816px;
+}
+
+#boxtypethirteen
+{
+	padding-left: 0px;
+	margin-left: 10px;
+}
+
+#boxjourneychangesearchcontrol
+{
+	margin-left: 5px;
+	width: 828px;	
+}
+
+.boxtypetwelvetickets
+{
+	width: 816px;
+	margin: 0px 0px 5px 10px;
+}
+
+.dmtitletickets
+{
+	width:802px;
+}
+
+.dmview 
+{
+	font-size: 0.7em;
+	background-color: #FFFBEB;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width:802px;
+	color: #333333;
+}
+
+
+.fdetail
+{
+	table-layout:auto;
+}
+
+table#jfooter
+{
+	width:833px;
+}
+
+h3 
+{
+	font-style:normal;
+	font-size:0.8em;
+}
+
+.boxtypeninenew
+{
+    margin: 0px 0px 5px 10px;
+	width: 816px;	
+}
+
+.dmtitle
+{
+	width: 807px;
+}

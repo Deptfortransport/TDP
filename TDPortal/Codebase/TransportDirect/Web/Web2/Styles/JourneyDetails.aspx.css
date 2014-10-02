@@ -1,0 +1,84 @@
+﻿.boxtypeeightstd
+{
+    margin-left: 10px;
+}
+
+.boxtypesixteen
+{
+    margin-left: 10px;
+    padding-top: 0px;
+    width: 828px;
+}
+
+.boxtypeseventeen,
+.boxtypeeighteen
+{
+	margin-left: 10px;
+	width: 826px;
+}
+
+.boxtypetwelve
+{
+	width: 816px;
+	margin: 0px 0px 5px 10px;
+}
+
+.boxtypetwelveamendcontrol
+{
+    margin-left: 10px;
+    width: 816px;
+}
+
+#boxtypethirteen
+{
+	padding-left: 0px;
+	margin-left: 10px;
+}
+
+#boxjourneychangesearchcontrol
+{
+	margin-left: 5px;
+	width: 828px;	
+}
+
+#boxtypetwentynine, #boxtypetenfifteen, .boxtypetwentynine, .boxtypetenfifteen
+{
+	width: 790px;
+}
+
+#dmtitle, .dmtitle
+{
+	width:804px;	
+}
+
+ul.listerdisc, ul#listerdisc {margin-left: 15px;}
+
+DIV .boxtypeerrormsgtwo 
+{
+	width: 828px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.selectedTicketCell
+{
+	padding-left: 5px;
+}
+
+.TDButtonHyperlink, .TDButtonHyperlink:hover, a.TDButtonHyperlink:visited, a.TDButtonHyperlink:active, a.TDButtonHyperlink:link
+{
+    color: #264266;
+}
+
+/* start - override journey emissions styles */
+#boxtypeJEfour
+{
+    width: 820px;
+    margin: 0px 0px 5px 10px;
+}
+
+#boxtypeJEfive
+{
+    width: 818px;
+}
+/* end - override journey emissions styles */

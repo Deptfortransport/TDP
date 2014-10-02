@@ -1,0 +1,97 @@
+.HomepageOutlineTable
+{ 
+	width: 100%;
+}
+
+#boxtype11, .boxtype11
+{
+	margin-left:10px;
+}
+
+.boxtypeeightstd, .fftdheaderbox, .fftdbodybox, #fftdheaderbox
+{
+	width: 817px;
+	margin-left: 10px;
+}
+
+#boxjourneychangesearchcontrol
+{
+	width: 820px;
+	padding-left:0px;
+	margin-left: 10px;
+}
+
+.boxtypetwelveamendcontrol
+{
+	width: 807px;
+	margin-left: 10px;
+}
+
+.fftdtabletitlebox, #fftdtabletitlebox
+{
+	width: 812px;
+	margin-left: 10px;
+}
+
+.fftdbodybox table
+{
+	width: 100%;
+}
+
+table#pagef
+{
+	width: 817px;
+}
+
+div#helpboxoutput
+{
+	width: 820px;
+	margin-left: 10px;
+}
+
+.fftdtable
+{
+	table-layout:auto;
+	width:100%;
+}
+
+.fftdbdysingleselectnoscroll
+{
+	width: 56px;
+}
+
+.fftdbdysinglemode
+{
+	width: 180px;
+}
+
+
+
+.fftdbdyreturnmode 
+{
+	text-align:center;
+	width:150px;
+}
+
+.fftdbdyreturnselectnoscroll
+{
+	padding: 0px;
+	text-align: center;
+}
+
+.fftdhdrreturnselect, .fftdhdrreturnfarerange 
+{
+	text-align: center;
+}
+
+.fftdhdrreturnmode
+{
+	text-align: center;
+}
+
+.fftdbdyreturnretdateday 
+{
+	width: 70px;
+}
+
+

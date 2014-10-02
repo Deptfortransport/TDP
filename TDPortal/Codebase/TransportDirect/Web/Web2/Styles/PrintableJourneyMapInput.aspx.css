@@ -1,0 +1,36 @@
+/* Simple Printable map control overview and keys - added by apatel DevFactory */
+#printmapoverviewboxrow
+{
+	width:28%;
+}
+
+#iconsDisplayRow
+{
+	width: 36%;
+}
+
+
+
+#panelMapKeysRow
+{
+	width: auto;
+	
+}
+
+#boxtypeonem, .boxtypeonem
+{
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: 2px;
+	margin-right:2px;
+}
+
+DIV#mapbox, DIV.mapbox
+{
+	width: 110px;
+}
+
+
+
+
+

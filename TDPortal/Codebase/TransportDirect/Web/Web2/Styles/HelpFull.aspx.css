@@ -1,0 +1,41 @@
+.boxtypeStaticPages
+{
+	padding:0px;
+	margin: 5px 0px 10px 5px;
+	width: 712px;
+}
+
+.TDButtonHyperlink,
+.TDButtonHyperlink:hover
+{
+	font-size:0.8em;
+}
+
+.titleLabelPad
+{
+	padding-left:5px;
+}
+
+#boxtypenine
+{
+	margin: 5px 0px 5px 5px;
+	width: 700px;
+}
+
+#HelpBodyText p
+{
+    line-height: 1.1em;
+    margin-bottom: 1em;
+}
+.helpTextPad1
+{
+    padding: 5px 5px 10px 10px;
+}
+.helpTextPad2
+{
+    padding: 5px 15px 5px 15px;
+}
+.helpTextPad3
+{
+    padding: 5px 20px 5px 20px;
+}

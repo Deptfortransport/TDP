@@ -1,0 +1,233 @@
+/* ---------------------------- HOMEPAGE(S) STYLES -----------------------------*/
+
+/* ---------------------------- LEFT HAND NAVIGATION ---------------------------*/
+.LeftHandNavigationBar
+{
+	background-color: #FFFFFF;
+}
+
+.categoryLink
+{
+	background-color: #999999;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+
+.subcategoryLink
+{
+	background-color: #EEEEEE;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	border-bottom: solid 10px #FFFFFF;
+}
+
+.subcategoryLink li
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	border-bottom: solid 2px #FFFFFF;
+}
+
+/* ---------------------------- HOMEPAGE COLUMNS --------------------------------------*/
+/* Homepage and Mini-homepage columns */
+.HomepageMainLayoutColumn1,
+.HomepageMainLayoutColumn2
+{
+	background-color : #FFFFFF;
+}
+
+.HomepageMainLayoutColumn3,
+.HomepageMainLayoutColumn4
+{
+	background-color : #FFFFFF;
+	border-top-width: 3px;
+}
+
+/* Panel headers */
+.Column1Header,
+.Column2Header
+{
+	background-color : #F2F1EF;
+	border: solid 1px #999999;
+	border-bottom: solid 0px #FFFFFF;
+	padding-left: 10px;
+	height: 24px;
+}
+
+.Column1Header h1,
+.Column2Header h1
+{
+	font-size: 1.0em;
+}
+
+/* Link within heading - to align */
+.txtsevenbwrlink
+{
+	margin-top: 5px; 
+}
+
+.Column3Header
+{
+	background-color : #F2F1EF;
+	border: solid 1px #999999;
+	border-bottom: solid 0px #FFFFFF;
+	min-height: 20px;
+}
+
+.Column3Header .txtsevenbbl
+{
+	
+}
+
+/* Panel content */
+.Column1Content1,
+.Column1Content2,
+.Column2Content1,
+.Column2Content2
+{
+	border: solid 1px #999999;
+	border-top: solid 0px #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.Column1Content2,
+.Column2Content2
+{
+	min-height: 200px;
+}
+
+.Column2Content2
+{
+	padding: 10px;
+}
+
+.Column3Content
+{
+	border: solid 1px #999999;
+	border-top: solid 0px #FFFFFF;
+	margin-bottom: 10px;
+	width: 190px;
+}
+
+/* Text within the homepage columns */
+.HomepageControlColumn1
+{
+	text-align: left;
+	padding-left: 7px;
+}
+
+
+/* ---------------------------- INFORMATION ON MINI HOMEPAGES -----------------------------*/
+/* Information area */
+.MinihomeHyperlinksInfoContent
+{
+	background-color: #FFFFFF;
+	border: solid 1px #666666;
+}
+
+/* Heading for mini homepage information sections */
+.MinihomeHyperlinksInfoHeader
+{
+	background-color : #E0E0E0;
+}
+
+/* Headings in information section */
+.MinihomeHyperlinksInfoHeader .txtsevenbbl /* H4 equivalent */
+{
+	font-size:1.1em;
+	color: #000000;
+}
+.MinihomeSoftContent h3 /* H5 equivalent */
+{
+	font-size:1.05em;
+	color: #000000;
+	font-style: normal;
+}
+
+/* ---------------------------------- SITE MAP ------------------------------- */
+.smcSiteMapLink 
+{
+	border-bottom: solid 1px #E0E0E0; 
+}
+
+.smcSiteMapSubCategoryContent
+{
+	color: #333333;
+}
+
+/* ---------------------------------- SITE ERROR PAGES ------------------------------- */
+.errorPageTitle 
+{
+	margin-left: 0px;
+}
+
+/* ---------------------------------- POWERED BY CONTROL --------------------------------*/
+
+.Column3HeaderPoweredBy
+{
+	background-color: #FFFFFF;
+	background: url(../../App_Themes/DirectGov/images/gifs/Partner/RH_bgTop.gif) repeat-x center top;
+	height: 26px;
+}
+
+.Column3HeaderPoweredBy .txtsevenbbl
+{
+	color: #000000;
+}
+
+.Column3ContentPoweredBy
+{
+	border: solid 1px #999999;
+	border-top: solid 0px #FFFFFF;
+	margin-bottom: 10px;
+	padding-top: 40px;
+	padding-bottom: 45px;
+	text-align: center;
+}
+
+.PoweredByLogo /* wait page */
+{
+	text-align: center;
+}
+
+#headerControl_PoweredByControl_panelPoweredBy .PoweredByLogo
+{
+	border: solid 1px #E0E0E0;
+	margin-right: 10px;
+	margin-top: 2px;
+}
+
+/*------------------------------- BOOKMARK ----------------------------------------*/
+.HomepageBookmark
+{
+	width: 148px;
+}
+
+/* hide the rounded corner */
+.artop
+{
+	display: none;
+}
+
+.HPControlLayoutTable
+{
+	left: 1px;
+}
+
+/*---------------hides level 1 heading of Transport direct -----------------------*/
+.HomePageLevel1Heading
+{
+	display:none;
+}

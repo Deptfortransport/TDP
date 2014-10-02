@@ -1,0 +1,4534 @@
+/* CSS Document for Transport Direct Portal */
+/* Styles for journey planner pages (non-printable) */
+/* This style sheet supersedes jp.css and should be used instead of */
+
+body
+{
+	background-color:white;
+}
+
+#jpthdl, .jpthdl {font-size:0.9em; font-weight: bold; line-height:1.5;}
+#jpthds {font-size:0.8em; font-weight: bold; line-height:1.5;}
+.jpt, #jpt {font-size:0.7em; font-weight: normal; line-height:1.5;}
+.jptnew, #jptnew {font-weight: normal; line-height:1.5;}
+
+/*AS. 03/04. Added as IE5.5 does not correctly format text inside tables*/
+table, td, tr 
+{
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size:100%
+	}
+
+#sizerone {text-align: right; padding-right: 5px; vertical-align: top; width: 95px;}
+#sizerlocation {text-align: left; padding-right: 5px; vertical-align: top; width: 60px;}
+.spacerinput {width:575px;} 
+.spacersearchtype {width:500px;}
+.spacermap {width:545px;} 
+ 
+.alertwarning {background-color: #FFFF00;}
+#alertwarning {background-color: #FFFF00;}
+.alerterror {background-color: #FF0033;}
+
+.alertbox {
+	padding:3px 3px 3px 3px;
+}
+
+div#clocktxt {
+	color: #000000;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	font-size: 0.7em;
+}
+
+#boxtypeone {
+	font-size: 0.7em;
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	width:610px;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-left: 10px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:610px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeone {width:610px;}
+
+#boxtypeone p {margin-top:0; margin-bottom:0; text-align:left; font-size:0.7em;}
+
+#boxtypelogin {
+	font-size: 0.7em;
+	border:1px solid #330099;
+	padding:2px 5px 2px 5px;
+	background-color:#ccccff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	voice-family: "\";}\"";
+	width:335px;
+	}
+html>#boxtypelogin {width:335px;}
+
+.boxtypetwo, #boxtypetwo
+{
+	border:1px solid #330099;
+	padding:5px 0px 5px 5px;
+	background-color:#99ccff;
+	width:615px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-left: 10px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwo, html>#boxtypetwo
+{width:615px;}
+
+#boxtypetwoalt {
+	border:1px solid #330099;
+	padding: 5px 5px 4px 5px;
+	background-color:#99ccff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 4px;
+	margin-right: 5px;
+	margin-left: 20px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:823px;
+	
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwoalt {width:823px;}
+
+#mboxtypetwo {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	/* width:545px; */ /* Resolution for IR3126 */
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	/* width:545px; */ /* Resolution for IR3126 */
+	}
+
+#boxtypethree {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypethree {width:575px;}
+
+/* PASSUIED!!!!*/
+
+#boxtypefour {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	width:610px;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-left: 10px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:610px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefour {width:610px;}
+
+#boxtypefive {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefive {width:575px;}
+
+#boxtypefive td {font-size: 0.7em;}
+
+#boxtypevia {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypevia {width:575px;}
+
+#boxtypesix {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 0px;
+	background-color:#ffffff;
+	width:575px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypesix {width:575px;}
+
+#boxtypesevenalt, .boxtypesevenalt {
+	/* border:1px solid #ffffff; */
+	padding: 0px;
+	/* background-color:#ffffff; */
+	width:605px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:600px;
+	}	
+#boxtypesixalt, .boxtypesixalt {
+	border:1px solid #ffffff;
+	padding: 0px 5px 0px 0px;
+	background-color:#ffffff;
+	width:575px;
+	margin-bottom: 0px;
+	margin-right: 5px;
+	margin-left: 10px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypesixalt {width:575px;}
+
+#boxtypeseven{
+	border:1px solid #FF0000;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeseven {width:575px;}
+
+
+/* journey planner pages should use this style in preference to boxtypeeight in setup.css */
+#boxtypeeightstd{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:765px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightstd {width:765px;}
+
+/* journey planner pages should use this style in preference to boxtypeeight in setup.css */
+.boxtypeeightstd{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:765px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeeightstd {width:765px;}
+
+#boxtypeeightalt{
+	border:0px;
+	padding: 5px 0px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width: 585px;
+	clear: both;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightalt {width:235px;}
+
+/* input pages should use this for the into text below page heading */
+.boxtypeeightalt
+{
+    margin-left: 10px;
+}
+
+#boxtypeeightalt2{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:595px;
+	clear: both;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightalt2 {width:595px;}
+
+#boxtypeeightalt h1 
+{
+	font-size: 1em; 
+	font-weight: bold; 
+	padding:0px;
+	margin-top: 2px;
+	margin-bottom: 2px;	
+}
+
+
+
+#boxtypeeight h1 {font-size: 1em; font-weight: bold;}
+
+#boxtypenine {	
+	border:1px solid #cc6600;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:755px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypenine {width:755px;}
+
+
+.boxtypenineinner {	
+	border:1px solid #cc6600;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+}
+	
+	
+#boxtypenine p, ul, ol {font-size: 0.7em;}
+
+#nested {font-size: 1.4em;}
+.bullet {font-size: 1.0em; list-style: disc}
+
+/* box nine new created by AS SLB for the Feedback pages */
+#boxtypeninenew, .boxtypeninenew {	
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:555px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeninenew {width:755px;}
+
+#boxtypeninenew p {font-size: 0.7em;}
+
+#boxtypeten {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeten {width:755px;}
+
+#boxtypeten p {font-size: 0.7em;}
+
+#boxtypeeleven
+{	
+	border:1px solid #330099;
+	padding:0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:795px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeleven
+{width:755px;}
+	
+#boxtypeeleven p {font-size: 0.7em;}
+
+/* Used on result pages for journey searched for title */
+.boxtype11
+{
+    margin: 5px 0px 5px 10px;
+    width: 828px;
+    clear: both;
+}
+
+#boxtypetwelve, .boxtypetwelve {	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	width:755px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwelve {width:755px;}
+
+#boxtypetwelve p {font-size: 0.7em;}
+
+.boxtypetwelveamendcontrol{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:755px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:821px;
+	}	
+
+/* width for opera browser */
+html>.boxtypetwelveamendcontrol {width: 821px;}
+	
+#boxtypethirteen {
+	border:0px;
+	background-color: #ffffff;
+	width:755px;
+	margin-bottom: 0px;
+	margin-left: 5px;	
+	padding-right: 5px;
+	padding-left: 5px;
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypethirteen{width:755px;}
+
+#boxtypefourteen {	
+	border:1px solid #99ccff;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:755px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefourteen {width:755px;}
+
+#boxtypefourteen p {font-size: 0.7em;}
+
+#boxtypetenfifteen, .boxtypetenfifteen {	
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	width:730px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:730px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetenfifteen {width:730px;}
+
+.boxtypesixteen, #boxtypesixteen
+{
+	border: 0px;
+	padding: 5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:835px;
+	clear: both;
+}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypesixteen, html>#boxtypesixteen
+{width:835px;}
+
+#boxtypesixteenalt
+{
+	border: 0px;
+	padding: 5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:200px;
+	clear: both;
+}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypesixteenalt
+{width:200px;}
+
+
+#boxtypeseventeen, .boxtypeseventeen
+{
+	border-top:none;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	background-color:#99ccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:765px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeseventeen
+{width:765px;}
+
+#boxtypeseventeen p {font-size: 0.7em;}
+
+#boxtypeeighteen, .boxtypeeighteen
+{
+	border-top:1px solid #330099;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	background-color:#99ccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:765px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeighteen{width:765px;}
+
+#boxtypeeightteen p {font-size: 0.7em;}
+
+
+.boxtypeeighteenitineraryreturn
+{
+	border-top:1px solid #330099;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	background-color:#FFFFFF;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:765px;
+	}	
+
+#boxtypenineteen
+{
+	border-top-style: none;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	background-color:#99ccff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:745px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypenineeen{width:745px;}
+
+#boxtypenineteen p {font-size: 0.7em;}
+
+#boxtypetwenty
+{
+	border-top-style: none;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	background-color:#99ccff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:765px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwenty{width:765px;}
+
+#boxtypetwenty p {font-size: 0.7em;}
+
+#boxtypetwentyone
+{
+	margin-bottom: 5px;
+	width:765px;
+}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentyone{width:765px;}
+
+#boxtypetwentyone p {font-size: 0.7em;}
+
+#boxtypetwentytwo {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentytwo {width:575px;}
+
+/* */
+
+#boxtypetwentythree{
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentythree {width:575px;}
+
+#boxtypetwentyfour {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentyfour {width:575px;}
+
+/* used for Journey Emissions */
+#boxtypetwentyseven
+{
+	border:0px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:500px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:500px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentyseven {width:500px;}
+
+/* used for Journey Emissions */
+#boxtypetwentyeight
+{
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:751px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:733px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentyeight {width:751px;}
+
+/* used for Car journey type and options */
+#boxtypetwentynine, .boxtypetwentynine {	
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#FFFBEB;
+	width:730px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:730px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentynine {width:730px;}
+
+/*Used for Journey Overview page */
+#boxtypejourneyoverviewcontrol, .boxtypejourneyoverviewcontrol
+{
+	border-top:1px solid #330099;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	background-color:#99ccff;
+	padding:5px 0px 5px 0px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:765px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypejourneyoverviewcontrol, html>.boxtypejourneyoverviewcontrol
+{width:765px;}
+
+#focheaderbox p, .focheaderbox p {font-size: 0.7em;}
+
+/* Used for Travel news page */
+.boxtypetravelnewsswitch {
+	border:1px solid #330099;
+	padding: 5px 0px 5px 0px;
+	background-color:#ccccff;
+	margin: 0px 0px 5px 10px;
+	width: 826px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetravelnewsswitch {width: 826px;}
+
+.boxtypetravelnewsswitch p {font-size: 0.7em;}
+
+.boxtypetravelincidents {	
+	border:1px solid #330099;
+	padding:0px;
+	background-color:#ffffff;
+	margin: 0px 0px 5px 10px;
+	overflow:auto;
+	width: 826px; 
+	height: 576px;	
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetravelincidents {width: 826px;}
+
+.boxtypetravelincidents p {font-size: 0.7em;}
+
+.boxtypeinformation
+{
+    border:1px solid #330099;
+    margin: 5px 5px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    line-height: 16px;
+}
+
+.boxpaddingright5
+{
+    padding-right: 5px;
+}
+
+.boxmarginbottom5
+{
+    margin-bottom: 5px;
+}
+
+/* Advanced options */
+div.boxOptions
+{
+    margin-bottom: 2px;
+    padding: 0px 5px 0px 0px;
+}
+div.boxOptions1 /* used journey input page */
+{
+    margin-bottom: 2px;
+}
+div.optionCursor
+{
+    cursor: pointer;
+}
+div.optionHeadingRow
+{
+    display: inline-block;
+    padding: 5px 0px 5px 5px;
+    width: 100%;
+}
+div:hover.optionHeadingRow
+{
+    background-color: #d0d0d0;
+}
+div.optionContentRow
+{
+    padding: 0px 5px 0px 5px;
+}
+div.boxArrowToggle
+{
+    float:left;
+    display: inline-block;
+    background: url("/Web2/App_Themes/TransportDirect/images/gifs/JourneyPlanning/en/rightarrow.gif") no-repeat scroll 0 3px transparent;
+    width: 12px;
+    height: 15px;
+}
+div.boxArrowToggleDown
+{
+    background: url("/Web2/App_Themes/TransportDirect/images/gifs/JourneyPlanning/en/downarrow.gif") no-repeat scroll 0 4px transparent;
+    width: 12px;
+    height: 15px;
+}
+div.boxOptionHeading
+{
+    float:left;
+    display: inline-block;
+    padding-left: 2px;
+}
+div.boxOptionSelected
+{
+    display: inline-block;
+    float: right;
+    padding-right: 10px;
+}
+span.labelJsRed
+{
+    color:Red;
+}
+
+/* Advanced options - navigation buttons */
+div.boxNavigationOptions
+{
+    margin-top: 0px;
+    clear: both;
+}
+div.boxNavigationButtons
+{
+    width: 100%;
+}
+div.boxNavigationButtons font
+{
+    margin: 0px 0px 0px 0px;
+}
+div.boxNavigationButtons div
+{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+div.boxNavigationButtons .l{text-align: left; float:left;display: inline-block;}
+div.boxNavigationButtons .c{text-align: center; float: left;display: inline-block;}
+div.boxNavigationButtons .r{text-align: right; float:right; padding-right: 5px;display: inline-block;}
+div.boxNavigationButtons .w25{width: 25%;}
+div.boxNavigationButtons .w33{width: 32%;}
+div.boxNavigationButtons .w100{width: 100%;}
+
+
+/* ============= Begin Journey Find Summary Results Control and related setup ================= */
+
+.fscheaderbox
+{
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	padding: 0px;
+	background-color: #99ccff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 826px;
+	
+}
+/* b-ing :) 2 Opera 5 */
+html>.fscheaderbox{width: 826px;}
+
+#fscheaderbox p {font-size: 0.7em;}
+
+.fscbodybox
+{
+	border-top: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	padding: 0px;
+	background-color: #99ccff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 826px;
+	
+}
+/* b-ing :) 2 Opera 5 */
+html>#fscbodybox{width: 826px;}
+
+#fscbodybox p {font-size: 0.7em;}
+
+.fscpanelshow
+{
+	border-top: 1px solid #000000;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	padding: 0px;
+	background-color: #99ccff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 826px;
+}
+
+html>.fscpanelshow{width: 826px;}
+
+.fscpanelshow p {font-size: 0.7em;}
+
+
+#boxtypetwentysix
+{
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	padding: 0px;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width: 765px;
+}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentysix{width: 765px;}
+
+#boxtypetwentysix p {font-size: 0.7em;}
+
+table.fscheader
+{
+	padding: 0px; 
+	/*width: 717px; */
+	border: 0px; 
+	font-size: 0.7em; 
+	table-layout: fixed;
+	/* l33t hack 
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:727px;*/
+	
+}
+
+/* b-ing :) 2 Opera 5 
+html>table#fscheader{width: 737px;}
+*/
+
+/* Styles for default mode */
+td.fscheader10, th.fscheader10 {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:left; border-bottom: 1px solid #330099;}
+td.fscheader9, th.fscheader9 {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader1, th.fscheader1 {width: 136px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader2, th.fscheader2 {width: 137px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader3, th.fscheader3 {width: 76px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader4, th.fscheader4 {width: 160px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader5, th.fscheader5 {width: 70px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader6, th.fscheader6 {width: 70px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader7, th.fscheader7  
+{
+	width: 97px; 
+	font-weight: bold; 
+	padding-top: 3px; 
+	padding-bottom: 4px;
+	text-align:center; 
+	border-bottom: 1px solid #330099;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:89px;
+}
+html>td.fscheader7, th.fscheader7{width: 97px;}
+td.fscheader8, th.fscheader8 {width: 60px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+table.fscbody
+{
+	padding: 0px; 
+	/*width: 727px; */
+	border: 0px; 
+	font-size: 0.7em; 
+	table-layout: fixed;
+}
+/* b-ing :) 2 Opera 5 
+html>table#fscbody{width: 727px;}
+*/
+th.fscbody1test {width: 127px; background-color: #FFFFFF;text-align:center; position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+	
+th.fscbody10test {width: 0px; background-color: #FFFFFF;text-align:left; position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+th.fscbody9test {width: 0px; background-color: #FFFFFF;text-align:center; position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+th.fscbody2test {width: 127px; background-color: #FFFFFF;text-align:center;position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+th.fscbody3test {width: 76px; background-color: #FFFFFF;text-align:center; position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+th.fscbody4test  {width: 127px; background-color: #FFFFFF;text-align:center; position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+th.fscbody5test {width: 70px; background-color: #FFFFFF; text-align:center; position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+th.fscbody6test {width: 70px; background-color: #FFFFFF; text-align:center;position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+	
+th.fscbody7test 
+{
+	width: 97px; 
+	background-color: #FFFFFF; 
+text-align:center;position:absolute;
+	left: 0px;
+	top: -100px;
+	height: 1px;
+	overflow: hidden;}
+	
+	
+	
+	
+td.fscbody10, th.fscbody10 {width: 0px; background-color: #FFFFFF;text-align:left; }
+td.fscbody9, th.fscbody9 {width: 0px; background-color: #FFFFFF;text-align:center; }
+td.fscbody1, th.fscbody1 {width: 136px; background-color: #FFFFFF;text-align:center; }
+td.fscbody2, th.fscbody2 {width: 137px; background-color: #FFFFFF;text-align:center;}
+td.fscbody3, th.fscbody3 {width: 76px; background-color: #FFFFFF;text-align:center;}
+td.fscbody4, th.fscbody4  {width: 160px; background-color: #FFFFFF;text-align:center;}
+td.fscbody5, th.fscbody5 {width: 70px; background-color: #FFFFFF; text-align:center;}
+td.fscbody6, th.fscbody6 {width: 70px; background-color: #FFFFFF; text-align:center;}
+td.fscbody7, th.fscbody7 
+{
+	width: 97px; 
+	background-color: #FFFFFF; 
+	text-align:center;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:89px;
+}
+html>td.fscbody7, th.fscbody7{width: 97px;}
+td.fscbody8, th.fscbody8 {width: auto; padding: 0px 14px 0px 15px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+/* g denotes alternate row */
+td.fscbody10g {width: 0px; background-color: #E6FFFE;text-align:left;}
+td.fscbody9g {width: 0px; background-color: #E6FFFE;text-align:center;}
+td.fscbody1g {width: 136px; background-color: #E6FFFE;text-align:center;}
+td.fscbody2g {width: 137px; background-color: #E6FFFE; text-align:center;}
+td.fscbody3g {width: 76px; background-color: #E6FFFE; text-align:center;}
+td.fscbody4g {width: 160px; background-color: #E6FFFE;text-align:center;}
+td.fscbody5g {width: 70px; background-color: #E6FFFE; text-align:center;}
+td.fscbody6g {width: 70px; background-color: #E6FFFE; text-align:center;}
+td.fscbody7g																								
+{
+	width: 97px; 
+	background-color: #E6FFFE; 
+	text-align:center;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:89px;
+}
+html>td.fscbody7g{width: 97px;}
+td.fscbody8g {width: auto; padding: 0px 14px 0px 15px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+/* y denotes selected row */
+td.fscbody10y {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:left;}
+td.fscbody9y {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody1y {width: 136px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody2y {width: 137px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody3y {width: 76px; font-weight: bold; background-color: #FFFF00;text-align:center; }
+td.fscbody4y {width: 160px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody5y {width: 70px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody6y {width: 70px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody7y 
+{
+	width: 97px; 
+	font-weight: bold; 
+	background-color: #FFFF00; 
+	text-align:center;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:89px;
+}
+html>td.fscbody7y{width: 97px;}
+td.fscbody8y {width: auto; padding: 0px 14px 0px 15px; font-weight: bold; background-color: #FFFF00; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+/* styles for car Mode */
+td.fscheader10c {width: 0px; padding-top: 3px; padding-bottom: 4px;text-align:left; border-bottom: 1px solid #330099;}
+td.fscheader9c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader1c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader2c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader3c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader4c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader5c {width: 190px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader6c {width: 190px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader7c {width: 366px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader8c {width: auto; font-weight: bold; padding-top: 3px; padding-bottom: 4px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+td.fscbody10c {width: 0px; background-color: #FFFFFF;text-align:left; }
+td.fscbody9c {width: 0px; background-color: #FFFFFF;text-align:center; }
+td.fscbody1c {width: 0px; background-color: #FFFFFF;text-align:center; }
+td.fscbody2c {width: 0px; background-color: #FFFFFF;text-align:center;}
+td.fscbody3c {width: 0px; background-color: #FFFFFF;text-align:center;}
+td.fscbody4c {width: 0px; background-color: #FFFFFF;text-align:center;}
+td.fscbody5c {width: 190px; background-color: #FFFFFF; text-align:center;}
+td.fscbody6c {width: 190px; background-color: #FFFFFF; text-align:center;}
+td.fscbody7c {width: 366px; background-color: #FFFFFF; text-align:center;}
+td.fscbody8c {width: auto; padding: 0px 14px 0px 15px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+/* g denotes alternate row */
+td.fscbody10cg {width: 0px; background-color: #E6FFFE;text-align:left;}
+td.fscbody9cg {width: 0px; background-color: #E6FFFE;text-align:center;}
+td.fscbody1cg {width: 0px; background-color: #E6FFFE;text-align:center;}
+td.fscbody2cg {width: 0px; background-color: #E6FFFE; text-align:center;}
+td.fscbody3cg {width: 0px; background-color: #E6FFFE; text-align:center;}
+td.fscbody4cg {width: 0px; background-color: #E6FFFE;text-align:center;}
+td.fscbody5cg {width: 190px; background-color: #E6FFFE; text-align:center;}
+td.fscbody6cg {width: 190px; background-color: #E6FFFE; text-align:center;}
+td.fscbody7cg {width: 366px; background-color: #E6FFFE; text-align:center;}
+td.fscbody8cg {width: auto; padding: 0px 14px 0px 15px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+/* y denotes selected row */
+td.fscbody10cy {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:left;}
+td.fscbody9cy {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody1cy {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody2cy {width: 0px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody3cy {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:center; }
+td.fscbody4cy {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody5cy {width: 190px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody6cy {width: 190px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody7cy {width: 366px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody8cy {width: auto; padding: 0px 14px 0px 15px; font-weight: bold; background-color: #FFFF00; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+/* End Car mode */
+
+/* styles for trunk Mode */
+td.fscheader10t {width: 0px; padding-top: 3px; padding-bottom: 4px;text-align:left;  border-bottom: 1px solid #330099;}
+td.fscheader9t {width: 96px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader1t {width: 165px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader2t {width: 165px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader3t {width: 75px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader4t {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader5t {width: 70px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader6t {width: 70px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader7t 
+{
+	width: 97px; 
+	font-weight: bold; 
+	padding-top: 3px; 
+	padding-bottom: 4px;
+	text-align:center; 
+	border-bottom: 1px solid #330099;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:97px;
+}
+html>td.fscheader7t{width: 97px;}
+td.fscheader8t {width: 60px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+td.fscbody10t {width: 0px; background-color: #FFFFFF;text-align:left; }
+td.fscbody9t {width: 96px; background-color: #FFFFFF;text-align:center; }
+td.fscbody1t {width: 165px; background-color: #FFFFFF;text-align:center; }
+td.fscbody2t {width: 165px; background-color: #FFFFFF;text-align:center;}
+td.fscbody3t {width: 75px; background-color: #FFFFFF;text-align:center;}
+td.fscbody4t {width: 0px; background-color: #FFFFFF;text-align:center;}
+td.fscbody5t {width: 70px; background-color: #FFFFFF; text-align:center;}
+td.fscbody6t {width: 70px; background-color: #FFFFFF; text-align:center;}
+td.fscbody7t 
+{
+	width: 97px; 
+	background-color: #FFFFFF; 
+	text-align:center;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:97px;
+}
+html>td.fscbody7t{width: 97px;}
+td.fscbody8t {width: auto; padding: 0px 14px 0px 15px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+/* g denotes alternate row */
+td.fscbody10tg {width: 0px; background-color: #E6FFFE;text-align:left;}
+td.fscbody9tg {width: 96px; background-color: #E6FFFE;text-align:center;}
+td.fscbody1tg {width: 165px; background-color: #E6FFFE;text-align:center;}
+td.fscbody2tg {width: 165px; background-color: #E6FFFE; text-align:center;}
+td.fscbody3tg {width: 75px; background-color: #E6FFFE; text-align:center;}
+td.fscbody4tg {width: 0px; background-color: #E6FFFE;text-align:center;}
+td.fscbody5tg {width: 70px; background-color: #E6FFFE; text-align:center;}
+td.fscbody6tg {width: 70px; background-color: #E6FFFE; text-align:center;}
+td.fscbody7tg 
+{
+	width: 97px; 
+	background-color: #E6FFFE; 
+	text-align:center;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:97px;
+}
+html>td.fscbody7tg{width: 97px;}
+td.fscbody8tg {width: auto; padding: 0px 14px 0px 15px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+
+/* y denotes selected row */
+td.fscbody10ty {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:left;}
+td.fscbody9ty {width: 96px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody1ty {width: 165px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody2ty {width: 165px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody3ty {width: 75px; font-weight: bold; background-color: #FFFF00;text-align:center; }
+td.fscbody4ty {width: 0px; font-weight: bold; background-color: #FFFF00;text-align:center;}
+td.fscbody5ty {width: 70px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody6ty {width: 70px; font-weight: bold; background-color: #FFFF00; text-align:center;}
+td.fscbody7ty 
+{
+	width: 97px; 
+	font-weight: bold; 
+	background-color: #FFFF00; 
+	text-align:center;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:97px;
+}
+html>td.fscbody7ty{width: 97px;}
+td.fscbody8ty {width: auto; padding: 0px 14px 0px 15px; font-weight: bold; background-color: #FFFF00; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+/* End trunk mode */
+
+/* Styles for cycle mode */
+td.fscheader10cycle, th.fscheader10cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:left; border-bottom: 1px solid #330099;}
+td.fscheader9cycle, th.fscheader9cycle {width: 120px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader1cycle, th.fscheader1cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader2cycle, th.fscheader2cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader3cycle, th.fscheader3cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader4cycle, th.fscheader4cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader5cycle, th.fscheader5cycle {width: 150px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader6cycle, th.fscheader6cycle {width: 150px; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td.fscheader7cycle, th.fscheader7cycle  
+{
+	width: 324px; 
+	font-weight: bold; 
+	padding-top: 3px; 
+	padding-bottom: 4px;
+	text-align:center; 
+	border-bottom: 1px solid #330099;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+}
+td.fscheader8cycle, th.fscheader8cycle {width: auto; font-weight: bold; padding-top: 3px; padding-bottom: 4px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+	
+td.fscbody10cycle, th.fscbody10cycle {width: 0px; background-color: #FFFFFF;text-align:left; }
+td.fscbody9cycle, th.fscbody9cycle {width: 120px; background-color: #FFFFFF;text-align:center; }
+td.fscbody1cycle, th.fscbody1cycle {width: 0px; background-color: #FFFFFF;text-align:center; }
+td.fscbody2cycle, th.fscbody2cycle {width: 0px; background-color: #FFFFFF;text-align:center;}
+td.fscbody3cycle, th.fscbody3cycle {width: 0px; background-color: #FFFFFF;text-align:center;}
+td.fscbody4cycle, th.fscbody4cycle  {width: 0px; background-color: #FFFFFF;text-align:center;}
+td.fscbody5cycle, th.fscbody5cycle {width: 150px; background-color: #FFFFFF; text-align:center;}
+td.fscbody6cycle, th.fscbody6cycle {width: 150px; background-color: #FFFFFF; text-align:center;}
+td.fscbody7cycle, th.fscbody7cycle 
+{
+	width: 324px; 
+	background-color: #FFFFFF; 
+	text-align:center;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+}
+td.fscbody8cycle, th.fscbody8cycle {width: auto; padding: 0px 14px 0px 15px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; border-right-width: 1px; border-right-style: solid; border-right-color: #99ccff; text-align: center;}
+/* End styles for cycle mode */
+
+/* Styles for nearest car park*/
+td#fscheadercp1, th#fscheadercp1 {width: 70px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp2, th#fscheadercp2 {width: auto; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp3, th#fscheadercp3 {width: 135px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif; text-align:center;}
+td#fscheadercp4, th#fscheadercp4 {width: auto; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp5, th#fscheadercp5 {width: 145px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif; text-align:center;}
+td#fscheadercp6, th#fscheadercp6 {width: 120px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp7, th#fscheadercp7 {width: 80px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp8, th#fscheadercp8 {width: auto; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp9, th#fscheadercp9 {width: auto; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+
+/* p denotes alternate row */
+td#fscheadercp1p, th#fscheadercp1p {width: 70px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp2p, th#fscheadercp2p {width: auto; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp3p, th#fscheadercp3p {width: 135px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif; text-align:center;}
+td#fscheadercp4p, th#fscheadercp4p {width: auto; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp5p, th#fscheadercp5p {width: 145px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif; text-align:center;}
+td#fscheadercp6p, th#fscheadercp6p {width: 120px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp7p, th#fscheadercp7p {width: 80px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp8p, th#fscheadercp8p {width: auto; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp9p, th#fscheadercp9p {width: auto; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+	
+td.fscbodycp1, th.fscbodycp1 {width: 70px; background-color: #FFFFFF;}
+td.fscbodycp2, th.fscbodycp2 {width: auto; background-color: #FFFFFF;}
+td.fscbodycp3, th.fscbodycp3 {width: 135px; background-color: #FFFFFF;}
+td.fscbodycp4, th.fscbodycp4 {width: auto; background-color: #FFFFFF;}
+td.fscbodycp5, th.fscbodycp5 {width: 145px; background-color: #FFFFFF;}
+td.fscbodycp6, th.fscbodycp6 {width: 120px; background-color: #FFFFFF; padding-left: 8px;}
+td.fscbodycp7, th.fscbodycp7 {width: 65px; background-color: #FFFFFF; padding-right: 10px;}
+
+/* g denotes alternate row */
+td.fscbodycp1g, th.fscbodycp1g {width: 70px; background-color: #E6FFFE;}
+td.fscbodycp2g, th.fscbodycp2g {width: auto; background-color: #E6FFFE;}
+td.fscbodycp3g, th.fscbodycp3g {width: 135px; background-color: #E6FFFE;}
+td.fscbodycp4g, th.fscbodycp4g {width: auto; background-color: #E6FFFE;}
+td.fscbodycp5g, th.fscbodycp5g {width: 145px; background-color: #E6FFFE;}
+td.fscbodycp6g, th.fscbodycp6g {width: 120px; background-color: #E6FFFE; padding-left: 8px;}
+td.fscbodycp7g, th.fscbodycp7g {width: 65px; background-color: #E6FFFE; padding-right: 10px;}
+
+.fscResultsItemsDivNoOverflow{}
+.fscResultsItemsDivOverflow{ overflow: auto; width:100%; height: 230px; overflow-x: hidden; overflow-y: scroll; }
+
+/* End styles for nearest car park*/
+
+
+/* Styles for Journey Overview */
+table#focheader, table.focheader
+{
+	padding: 0px; 
+	border: 0px; 
+	font-size: 0.7em; 
+	table-layout: fixed;
+}
+
+td#focheader1t, td.focheader1t {width: 95px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td#focheader2t, td.focheader2t {width: 110px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td#focheader3t, td.focheader3t {width: 140px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099;}
+td#focheader4t, td.focheader4t {width: 138px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099; border-right: 1px solid #330099;}
+td#focheader5t, td.focheader5t {font-weight: bold; padding-top: 3px; padding-bottom: 4px; text-align:center;}
+
+td#focbody1t, td.focbody1t {width: 95px; background-color: #FFFFFF; text-align:center;}
+td#focbody2t, td.focbody2t {width: 110px; background-color: #FFFFFF; text-align:center;}
+td#focbody3t, td.focbody3t {width: 140px; background-color: #FFFFFF; text-align:center;}
+td#focbody4t, td.focbody4t {width: 138px; background-color: #FFFFFF; text-align:center; border-right: 1px solid #330099;}
+td#focbody5t, td.focbody5t {text-align:center;}
+
+td#focbody1tg, td.focbody1tg {width: 95px; background-color: #E6FFFE; text-align:center;}
+td#focbody2tg, td.focbody2tg {width: 110px; background-color: #E6FFFE; text-align:center;}
+td#focbody3tg, td.focbody3tg {width: 140px; background-color: #E6FFFE; text-align:center;}
+td#focbody4tg, td.focbody4tg {width: 138px; background-color: #E6FFFE; text-align:center; border-right: 1px solid #330099;}
+td#focbody5tg, td.focbody5tg {text-align:center;}
+
+/*last row styles*/
+td#focbody1t_lr, td.focbody1t_lr {width: 95px; background-color: #FFFFFF; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody2t_lr, td.focbody2t_lr {width: 110px; background-color: #FFFFFF; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody3t_lr, td.focbody3t_lr {width: 140px; background-color: #FFFFFF; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody4t_lr, td.focbody4t_lr {width: 138px; background-color: #FFFFFF; text-align:center; border-right: 1px solid #330099; border-bottom: 1px solid #330099;}
+td#focbody5t_lr, td.focbody5t_lr {text-align:center;}
+
+td#focbody1tg_lr, td.focbody1tg_lr {width: 95px; background-color: #E6FFFE; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody2tg_lr, td.focbody2tg_lr {width: 110px; background-color: #E6FFFE; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody3tg_lr, td.focbody3tg_lr {width: 140px; background-color: #E6FFFE; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody4tg_lr, td.focbody4tg_lr {width: 138px; background-color: #E6FFFE; text-align:center; border-right: 1px solid #330099; border-bottom: 1px solid #330099;}
+td#focbody5tg_lr, td.focbody5tg_lr {text-align:center;}
+
+/* End Styles for Journey Overview
+
+/* ============= End Journey Find Summary Results Control and related setup ================= */
+
+/* ============= Begin Journey Details Results Table Grid Control ================= */
+
+table.jdt
+{
+	width: 100%;
+	background-color: #FFFBEB;
+}
+
+div.jdtgriddiv
+{
+    margin-bottom: 5px;
+}
+
+table.jdtgrid
+{
+	width: 100%;
+	font-size: 0.7em;
+	background-color: #FFFBEB;
+}
+
+th.jdtheader0 {width: 6%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-left: solid 1px #330099;}
+th.jdtheader1 {width: 12%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-left: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader2 {width: 16%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader3 {width: 5%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader4 {width: 8%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader5 {width: 16%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader6 {width: 8%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader7 {width: 5%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader8 {width: 24%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader9 {width: 10%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader10 {width: 6%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader11 {width: 0%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+th.jdtheader12 {width: 0%; font-weight: bold; background-color: #99ccff; border-top: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+
+
+.jdtrowhighlight {background-color: #cccccc}
+
+td.jdtbody0 {border-bottom: solid 1px #330099; border-left: solid 1px #330099; text-align:center}
+td.jdtbody1 {border-left: solid 1px #330099; border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody2 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody3 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody4 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody5 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody6 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody7 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody8 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody9 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody10 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody11 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+td.jdtbody12 {border-bottom: solid 1px #330099; border-right: solid 1px #330099;}
+
+/* ============= End Journey Details Results Table Grid Control ================= */
+/* ============= Begin Service Details Page and Controls ================= */
+
+table#sdTableBeforeAfter, table.sdTableBeforeAfter
+{
+	width: 700px; 
+	font-size: 0.7em;
+	border-top-width: 2px;
+	border-top-style: solid; 
+	border-top-color: #cccccc; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #cccccc; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #cccccc; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #cccccc;
+	margin-left: 15px;
+	border-collapse: collapse;
+}
+
+tr#sdHeaderBeforeAfter, tr.sdHeaderBeforeAfter
+{
+	background-color:#cccccc;	
+	font-weight: bold;
+}
+
+tr#sdDetailBeforeAfter, tr.sdDetailBeforeAfter
+{
+	background-color: #fffbeb;
+}
+
+table#sdTableleg, table.sdTableleg
+{
+	width: 700px; 
+	font-size: 0.7em;
+	border-top-width: 2px;
+	border-top-style: solid; 
+	border-top-color: #0000ff; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #0000ff; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #0000ff; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #0000ff;
+	margin-left: 15px;
+	border-collapse: collapse;
+}
+
+tr#sdHeaderLeg, tr.sdHeaderLeg
+{
+	background-color:#99ccff;	
+	font-weight: bold;
+}
+
+tr#sdDetailLeg, tr.sdDetailLeg
+{
+	background-color:#ffffff;	
+}
+
+th#sdHeaderBeforeAfterCol1, th.sdHeaderBeforeAfterCol1
+{
+	padding: 5px 5px 5px 10px;
+	width: 74%; 
+	border-top: solid 2px #aaaaaa; 
+	border-bottom: solid 2px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: left;
+}
+
+th#sdHeaderBeforeAfterCol2, th.sdHeaderBeforeAfterCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 2px #aaaaaa; 
+	border-bottom: solid 2px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+th#sdHeaderBeforeAfterCol3, th.sdHeaderBeforeAfterCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 2px #aaaaaa; 
+	border-bottom: solid 2px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+td#sdDetailBeforeAfterCol1, td.sdDetailBeforeAfterCol1
+{
+	padding: 5px 5px 5px 10px;
+	width: 74%; 
+	border-top: solid 1px #aaaaaa; 
+	border-bottom: solid 1px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: left;
+}
+
+td#sdDetailBeforeAfterCol2, td.sdDetailBeforeAfterCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #aaaaaa; 
+	border-bottom: solid 1px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+td#sdDetailBeforeAfterCol3, td.sdDetailBeforeAfterCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #aaaaaa; 
+	border-bottom: solid 1px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+th#sdHeaderLegCol1, th.sdHeaderLegCol1
+{
+	padding: 5px 5px 5px 10px;
+	width: 74%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 2px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: left;
+}
+
+th#sdHeaderLegCol2, th.sdHeaderLegCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 2px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+th#sdHeaderLegCol3, th.sdHeaderLegCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 2px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegCol1, td.sdDetailLegCol1
+{
+	padding: 5px 5px 5px 20px;
+	width: 74%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: left;
+}
+
+td#sdDetailLegColBold1, td.sdDetailLegColBold1
+{
+	padding: 5px 5px 5px 10px;
+	width: 74%; 
+	font-weight: bold;
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: left;
+}
+
+td#sdDetailLegColBold2, td.sdDetailLegColBold2
+{
+	padding: 5px 5px 5px 10px;
+	width: 13%; 
+	font-weight: bold;
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegColBold3, td.sdDetailLegColBold3
+{
+	padding: 5px 5px 5px 10px;
+	width: 13%; 
+	font-weight: bold;
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegCol2, td.sdDetailLegCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegCol3, td.sdDetailLegCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+
+.sdHeader
+{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.sdNoteHeader
+{	
+	margin-left: 15px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.sdNoteDetail
+{
+	margin-left: 15px;
+	font-size: 0.7em;
+	font-weight: normal;
+	display: block;
+}
+
+/* ============= End Service Details Page and Controls ================= */
+
+.boxtypeerrormsg {	
+	padding:0px 5px 0px 5px;
+	width:755px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 0.7em;
+	color: Red;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeerrormsg {width:755px;}
+
+#discountbox {	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ffffff;
+	width:755px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#discountbox  {width:755px;}
+	
+#hdbox {
+	padding:0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #330099;
+	border-left: 0px;
+	width: 575px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#hdbox {width:575px;}
+
+#dislable {background-color: #ccccff; padding: 2px; margin-bottom: 5px; width: 750px}
+
+#calimg, .calimg {display: inline;}
+
+#helpimg {
+	float: right;
+	vertical-align: top;
+	clear: right;
+}
+
+div#helpboxLogin 
+{
+	border: 1px solid #cc6600;
+	margin-bottom: 5px;
+	margin-left: 5px;	
+	padding: 5px;
+	background-color: #FFFFCC;
+	width:742px;
+}
+
+div#helpboxfinda 
+{
+	border: 1px solid #cc6600;
+	margin-bottom: 5px;
+	margin-left: 5px;	
+	padding: 3px;
+	background-color: #FFFFCC;
+	width:575px;
+}
+/* b-ing :) 2 Opera 5 */
+html>div#helpboxfinda {width:575px;}
+
+div#helpbox
+{
+	position:absolute;
+	left:595px;
+	border: 1px solid #cc6600;
+	padding: 3px;
+	background-color: #FFFFCC;
+	width: 175px;
+}
+/* b-ing :) 2 Opera 5 */
+html>div#helpbox {width:175px;}
+	
+div#helpboxrelative 
+{
+	border: 1px solid #cc6600;
+	padding: 3px;
+	background-color: #FFFFCC;
+	width: 175px;
+}
+	
+div#helpboxclock
+{
+	border: 1px solid #cc6600;
+	margin-bottom: 5px;
+	margin-left: 5px;	
+	padding: 3px;
+	background-color: #FFFFCC;
+	width:175px;
+}	
+	
+div#helpboxoutput 
+{
+	border: 1px solid #cc6600;
+	padding: 3px;
+	background-color: #FFFFCC;
+	width: 820px;
+	margin: 0px 0px 5px 0px;
+}
+/* b-ing :) 2 Opera 5 */
+html>div#helpboxoutput {width:820px;}
+
+div#helpboxtravel 
+{
+	border: 1px solid #cc6600;
+	margin: 0px 0px 5px 10px;
+	padding: 3px;
+	background-color: #FFFFCC;
+	width: 820px;
+}
+
+div#helpboxinfaretable 
+{
+	border: 1px solid #cc6600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 3px;
+	background-color: #FFFFCC;
+}
+
+div#helpboxlocations 
+{
+	border: 1px solid #cc6600;
+	margin-bottom: 5px;
+	margin-left: 5px;	
+	padding: 3px;
+	background-color: #FFFFCC;
+	width: 555px;
+}
+/* b-ing :) 2 Opera 5 */
+html>div#helpboxlocations {width:555px;}
+
+div#hhd {
+	font-weight: bold;
+	background-color: #FF9933;
+	padding: 2px;
+	font-size: 0.8em;
+}
+
+div#hline {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #cc6600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: static;              
+    position/* */:/**/relative;    
+    position:relative;
+    /*AS - IE 5.0 does not support border-bottom so the above position settings
+are the fix.*/
+}
+
+div#htxt {
+	color: #000000;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	border: 1px solid #FF6633;
+}
+
+div#htxt p {font-size: 0.7em;}
+
+#himg {float: right; clear: right; padding: 3px;}
+
+/* ================= map pages setup ================= */
+
+#mapcontrol, .mapcontrol {width: auto;}
+
+#mapnav, .mapnav {vertical-align: top; width: auto;}
+#mapcont {vertical-align: top;}
+
+div#controls {font-size: 0.7em;}
+table#controls td {font-size: 0.7em;}
+table#traffkey, table.traffkey {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 0.7em;
+	width: 190px;
+	background-color: #ccccff;
+	
+}
+
+.locals {
+	font-size: 0.7em;
+	font-weight: bold;
+	width: 195px;
+	text-align: left;
+}
+
+#mapicontxt {
+	font-size: 0.85em;
+	font-weight: bold;
+	width: 91%;
+	text-align: left;
+	line-height: 1.5;	
+}
+
+#boxtypethreem, .boxtypethreem {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 520px;
+}	
+
+#boxtypethreemdlm {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width: 545px;	
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+}
+/*#boxtypethreem td {font-size: 0.7em;}*/
+
+#mapboxtypesix {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 0px;
+	background-color:#ffffff;
+	width:555px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:555px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#mapboxtypesix {width:555px;}
+
+div#mapbox, div.mapbox {
+	border: 1px solid #330099;
+	padding: 3px;
+	background-color: #99ccff;
+	width: 197px;
+	margin-bottom: 5px;
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:auto;
+	clear: both;
+}
+/* b-ing :) 2 Opera 5 */
+html>div#mapbox, html>div.mapbox {width:197px; }
+
+#boxtypefourm {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:555px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:555px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefourm {width:555px;}
+
+#boxtypeonem, .boxtypeonem {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	}	
+
+#boxjourneychangesearchcontrol, #boxjourneychangesearchcontrolfullwidth {
+	border:0px;
+	padding:5px 0px 2px 5px;  /* Padding for non-IE */
+	height: 1.5em;
+	background-color:#ffffff;
+	clear: both;
+	}
+
+#boxjourneychangesearchcontrol
+{
+	width: 765px;
+}
+
+#boxjourneychangesearchcontrolfullwidth
+{
+	width: 100%;
+}
+
+.boxjourneychangesearchcontrol, .boxjourneychangesearchcontrolfullwidth {
+	border:0px;
+	padding:5px 0px 2px 5px;  /* Padding for non-IE */
+	height: 1.5em;
+	background-color: #ffffff;
+	clear: both;
+	}
+
+.boxjourneychangesearchcontrol
+{
+	width: 772px;
+}
+
+.boxjourneychangesearchcontrolfullwidth
+{
+	width: 100%;
+}
+
+.boxjourneychangesearchback {
+	clear: none;
+	float: left;
+	}
+
+.boxjourneychangesearchchange {
+	clear: none;
+	float: right;
+	}
+	
+.boxjourneychangesearchchangetwo {
+	clear: none;
+	float: left;
+	}
+
+.boxprinterfriendly {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: 1.5em;
+	}
+
+div#mhd, div.mhd {										
+	font-weight: bold;
+	font-size: 0.8em;
+	background-color: #ffffff;
+	padding: 2px;
+}
+
+div#mhe, div.mhe, div#mheSymbols, div.mheSymbols
+{
+	font-weight: bold;
+	font-size: 0.8em;
+	background-color: #ffffff;
+}
+
+div#mha, div.mha {
+	font-weight: bold;
+	font-size: 0.8em;
+	padding: 2px;
+}
+
+div#mtxt {color: #000000;}
+div#mtxt p {font-size: 0.7em;}
+#mopone {
+	vertical-align: top;
+	padding-left: 0px;
+	padding-right: 15px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #330099;
+}
+
+#moptwo {vertical-align: top; padding-left: 15px;}
+
+#mopthree 
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #330099;
+}
+
+#mopfour
+{
+	text-align: left;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #330099;
+}
+
+#maphdisabled {
+	height: 400px;
+	width: 511px;
+	border: 1px solid #330099;
+	background-color: #a9a9a9;
+}
+
+/* CCN 0427 - added position as relative remove only necessary - apatel */
+#maph, .maph {
+	border: 1px solid #330099;
+	background-color: #a9a9a9;
+	position:relative;
+}
+
+#mapa
+{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    height: 340px;
+    width: 451px;
+}
+
+#msmlm, .msmlm {
+	background-color: #FFFFFF;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	margin-top: 3px;
+	text-align: center;
+}
+
+#mselc {width: 100%;}
+#msel, .msel {background-color: #ccccff; width: 190px; font-size: 0.7em;}
+#msel tr td, .msel tr td {margin: 0px; padding: 1px; border: 0px;}
+#marg {margin-bottom: 3px;}
+
+#picbox {
+	position:absolute;
+	left:565px;
+	border: 1px solid #ffffff;
+	padding: 3px;
+	background-color: #ffffff;
+	width:195px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:195px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#picbox {width:195px;}
+
+table#headerbox { width: 765px; border:none; }
+#mlabel{border:none;}
+#mbuttons {border:none; text-align:right;}
+#mprinter {text-align:right; border:none; font-size: 0.7em;}
+
+table#footerbox { width: 665px; border:none; }
+#mfbutton{ width: 450px;  border:none; }
+#mfbutton2 { border:none; }
+
+.mapSymbolsDisclaimer
+{
+	font-weight: bold;
+	font-size: 0.7em;
+	padding-top: 4px;
+}
+
+/* ================= Journey Summary details maps fares tickests setup ================= */
+table#pagef {padding: 0px; width: 755px; border: 0px; text-align: right; font-size: 0.7em;}
+table#jfooter {padding: 0px; width: 755px; border: 0px;}
+table.jdetail {table-layout: fixed; padding: 0px; width: 826px; border: 0px; font-size: 0.7em;}
+table.jdetail2 {padding: 0px 3px 0px 3px; width: 98%; border: 0px; font-size: 0.7em; background-color:#FFFBEB;}
+table#jsearchedfor {padding: 1px 3px 0px 3px; width: 755px; border: 0px; font-size: 0.7em;}
+table#sumdetail, table.sumdetail {padding: 0px; width: 100%; border: 0px;}
+#sumd {vertical-align: text-top;}
+.sumd {vertical-align: middle;}
+.sumdUnitsDropDown{ width: 65px; }
+table#retailtable {padding: 0px; width: 735px; border: 0px;}
+.jsearchedfor {padding: 1px 3px 0px 3px; width: 755px; border: 0px; font-size: 0.7em;}
+.jdstitlecell {vertical-align: text-top; font-weight: bold; padding: 5px 10px 0px 0px;}
+.jdstoprow {vertical-align: text-top; padding: 5px 0px 0px 0px;}
+.jdstoprowb {vertical-align: text-top; font-weight: bold; padding: 5px 5px 0px 5px;}
+.jds {vertical-align: text-top;}
+
+
+#bluerule, .bluerule { color: #99ccff; }
+#maprule { color: #330099;}
+
+.jpsumout { table-layout: fixed; width: 761px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; border-right-width: 1px; border-right-style: solid; border-right-color: #330099; border-top-width: 1px; border-top-style: solid; border-top-color: #330099; background-color:#ffffff;}
+.jpsumrtn { table-layout: fixed; width: 761px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; border-right-width: 1px; border-right-style: solid; border-right-color: #330099; border-top-style: none; background-color:#ffffff;}
+
+.jpsumoutfinda 
+{
+	table-layout: fixed; 
+	border-bottom-width: 1px; 
+	border-bottom-style: solid; 
+	border-bottom-color: #330099; 
+	border-right-width: 1px; 
+	border-right-style: solid; 
+	border-right-color: #330099; 
+	border-top-width: 1px; 
+	border-top-style: solid; 
+	border-top-color: #330099; 
+	background-color:#ffffff;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:753px;
+}
+
+/* b-ing :) 2 Opera 5 */
+html>.jpsumoutfinda {width:753px;}
+
+.jpsumrtnfinda 
+{
+	 table-layout: fixed; 
+	 border-bottom-width: 1px; 
+	 border-bottom-style: solid; 
+	 border-bottom-color: #330099; 
+	 border-right-width: 1px; 
+	 border-right-style: solid; 
+	 border-right-color: #330099; 
+	 border-top-style: none; 
+	 background-color:#ffffff;
+	 /* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:753px;
+}
+/* b-ing :) 2 Opera 5 */
+html>.jpsumrtnfinda {width:753px;}
+
+.jpsumrtnitinerary { table-layout: fixed; width: 765px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; border-top-style: none; background-color:#ffffff;}
+
+/* results headers */
+#jpnumbhd, .jpnumbhd {width: 82px; font-weight: bold; text-align: center; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jptypehd, .jptypehd {width: 122px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color:#330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpchanhd, .jpchanhd {width: 109px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-top: 3px; padding-left: 0px; padding-right: 0px;}
+#jpleavhd, .jpleavhd {width: 117px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jparrihd, .jparrihd {width: 117px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpdurahd, .jpdurahd {width: auto; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpimgbhd, .jpimgbhd {width: 65px; font-weight: bold; border-bottom-style: none; background-color:#99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+
+/* results */
+#jpnumb, .jpnumb {width: 82px; text-align: center; font-weight: bold; background-color: #FFFFFF}
+#jptype, .jptype {width: 122px; background-color: #FFFFFF}
+#jpchan, .jpchan {width: 109px; text-align: center; background-color: #FFFFFF}
+#jpleav, .jpleav {width: 117px; background-color: #FFFFFF}
+#jparri, .jparri {width: 117px; background-color: #FFFFFF}
+#jpdura, .jpdura {width: auto; background-color: #FFFFFF}
+#jpimgb, .jpimgb {width: 65px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center;}
+
+/* results - g denotes alternate row */
+#jpnumbg, .jpnumbg {width: 82px; text-align: center; font-weight: bold; background-color: #E6FFFE;}
+#jptypeg, .jptypeg {width: 122px; background-color: #E6FFFE;}
+#jpchang, .jpchang {width: 109px; text-align: center; background-color: #E6FFFE;}
+#jpleavg, .jpleavg {width: 117px; background-color: #E6FFFE;}
+#jparrig, .jparrig {width: 117px; background-color: #E6FFFE;}
+#jpdurag, .jpdurag {width: auto; background-color: #E6FFFE;}
+#jpimgbg, .jpimgbg {width: 65px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; text-align: center;}
+
+/* results - y denotes selected row */
+#jpnumby, .jpnumby {width: 82px; text-align: center; font-weight: bold; background-color: #FFFF00;}
+#jptypey, .jptypey {width: 122px; font-weight: bold; background-color: #FFFF00;}
+#jpchany, .jpchany {width: 109px; font-weight: bold; text-align: center; background-color: #FFFF00;}
+#jpleavy, .jpleavy {width: 117px; font-weight: bold; background-color: #FFFF00;}
+#jparriy, .jparriy {width: 117px; font-weight: bold; background-color: #FFFF00;}
+#jpduray, .jpduray {width: auto; font-weight: bold; background-color: #FFFF00;}
+#jpimgby, .jpimgby {width: 65px; font-weight: bold; background-color: #FFFF00; border-left-width: 1px; border-left-style: solid; border-left-color: #000000; text-align: center;}
+
+/* itinerary headers */
+#jpnumbihd {width: 70px; font-weight: bold; text-align: center; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jporigihd {width: 95px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color:#330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpdestihd {width: 95px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color:#330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jptypeihd {width: 85px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color:#330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpchanihd {width: 78px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpleavihd {width: 83px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jparriihd {width: 83px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpduraihd {width: 110px; font-weight: bold; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpimgbihd {width: 65px; font-weight: bold; border-bottom-style: none; background-color:#99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpimgbirhd {width: 65px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+
+/* itinerary */
+#jpnumbi {width: 70px; text-align: center; font-weight: bold; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jporigi {width: 95px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpdesti {width: 95px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jptypei {width: 85px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpchani {width: 78px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpleavi {width: 83px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jparrii {width: 83px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpdurai {width: 110px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpimgbi {width: 65px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding: 0px;}
+#jpimgbir {width: 65px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+
+/* itinerary - last row */
+#jpnumbil {width: 70px; text-align: center; font-weight: bold; background-color: #FFFFFF; padding: 0px;}
+#jporigil {width: 95px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jpdestil {width: 95px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jptypeil {width: 85px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jpchanil {width: 78px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jpleavil {width: 83px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jparriil {width: 83px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jpdurail {width: 110px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jpimgbil {width: 65px; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding: 0px;}
+#jpimgbirl {width: 65px; background-color: #FFFFFF; padding: 0px;}
+
+/* itinerary - full itinerary */
+#jpnumbif {width: 70px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jporigif {width: 95px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpdestif {width: 95px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jptypeif {width: 85px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpchanif {width: 78px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpleavif {width: 83px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jparriif {width: 83px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpduraif {width: 110px; text-align: center; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpimgbif {width: 65px; font-weight: bold; background-color: #99ccff; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding: 0px;}
+#jpimgbirf {width: 65px; font-weight: bold; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+
+/* itinerary - selected row */
+#jpnumbiy {width: 70px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jporigiy {width: 95px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpdestiy {width: 95px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jptypeiy {width: 85px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpchaniy {width: 78px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpleaviy {width: 83px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jparriiy {width: 83px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpduraiy {width: 110px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+#jpimgbiy {width: 65px; font-weight: bold; background-color: #FFFF00; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding: 0px;}
+#jpimgbiry {width: 65px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; padding: 0px;}
+
+/* itinerary - last row - selected */
+#jpnumbily {width: 70px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jporigily {width: 95px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpdestily {width: 95px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jptypeily {width: 85px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpchanily {width: 78px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpleavily {width: 83px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jparriily {width: 83px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpduraily {width: 110px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpimgbily {width: 65px; font-weight: bold; background-color: #FFFF00; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding: 0px;}
+#jpimgbirly {width: 65px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+
+/* itinerary - full itinerary - selected */
+#jpnumbify {width: 70px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jporigify {width: 95px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpdestify {width: 95px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jptypeify {width: 85px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpchanify {width: 78px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpleavify {width: 83px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jparriify {width: 83px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpduraify {width: 110px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+#jpimgbify {width: 65px; font-weight: bold; background-color: #FFFF00; border-left-width: 1px; border-left-style: solid; border-left-color: #330099; text-align: center; padding: 0px;}
+#jpimgbirfy {width: 65px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #aaaaaa; padding: 0px;}
+
+/* Output navigation control */
+.outputnavdiv
+{
+	float: right;
+	clear: none;
+	background-color:#99ccff;
+	border-top:solid 1px #330099;
+	border-left:solid 1px #330099;
+	border-right:solid 1px #330099;
+	padding:4px 5px 4px 5px;
+}
+/* Allow Opera to see attributes hidden from IE5 */
+html>.outputnavdiv
+{
+	padding:4px 5px 4px 5px;
+}
+
+
+#buttonli ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	font-size: 0.7em;
+	font-weight: bold;
+	} 
+
+#buttonli ul li {
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 2px 1px 0px 1px;
+	border: 1px solid #fff;
+	list-style: none;
+	display: inline;
+	}
+			
+#buttonli ul li.over {
+	border-bottom: 1px solid #ffc;
+	list-style: none;
+	display: inline;
+	}
+
+#dmtitle, .dmtitle
+{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	width:755px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:745px; /* compliant browser width */
+}
+
+#cyclewalkdiv
+{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	margin-bottom: 0px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	font-size:0.7em;
+}
+
+.cyclewalkimage, .cyclewalkLinks
+{
+	padding: 5px;
+}
+
+.cyclewalkspacer
+{
+	display: block;
+}
+
+.cyclewalkcontainer
+{
+	padding-left: 5px;
+}
+
+.cyclewalkcontainer .boxtypetwelve
+{
+	width: 816px;
+}
+
+.cyclewalkcontainer .dmtitle
+{
+	width:806px;
+}
+
+/* width for opera browser */
+html>.dmtitle {width: 745px;}
+
+#dmtitlecompare, .dmtitlecompare
+{
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+/* less padding, used in JourneyEmissions */
+#dmtitletwo, .dmtitletwo
+{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-bottom: 1px;
+	width:765px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px; /* compliant browser width */
+}
+
+/* width for opera browser */
+html>.dmtitletwo {width: 755px;}
+
+#fmtitle {
+    width:733px;
+	background-color: #99ccff;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+
+#dmview, .dmview {
+	background-color: #FFFBEB;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+#fmview, .fmview {
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border: 1px solid #330099;
+}
+
+#fview {
+	background-color: #ffffff;
+	margin-top: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+
+#disclaimer {
+	color: #000000;
+	width: 755px;
+	margin-left: 25px;
+}
+
+#disclaimer p {
+	margin-bottom: 10px;
+}
+
+.retailtxtsevenrow{
+    font-size: 0.7em;
+    line-height: 19px;
+}
+
+.bgline {
+	background-image: url(/Web2/App_Themes/TransportDirect/images/gifs/JourneyPlanning/en/linefill.gif);
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+
+.bglinedotted {
+	background-image: url(/Web2/App_Themes/TransportDirect/images/gifs/JourneyPlanning/en/linefilldotted.GIF);
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+
+.bglinedottedbottom {
+	background-image: url(/Web2/App_Themes/TransportDirect/images/gifs/JourneyPlanning/en/linefilldotted.GIF);
+	background-repeat: repeat-y;
+	background-position: center top;
+	border-bottom-style:solid;
+    border-bottom-width: 1px;
+    border-bottom-color:#BEBEBE
+}
+
+.departline {
+    border-bottom-style:solid;
+    border-bottom-width: 1px;
+    border-bottom-color:#BEBEBE
+}
+
+.arriveline 
+{
+	border-top-style:solid;
+    border-top-width: 1px;
+    border-top-color:#BEBEBE
+}
+
+.inlinemiddle
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inlinemiddle .txtnineb
+{
+    padding-right: 1px;
+}
+.featureImageDiv img
+{
+}
+.vehicleFeatureImageDiv img
+{
+    padding: 2px 1px 0px 1px;
+}
+.accessibleFeatureImageDiv
+{
+    padding-left: 1px;
+}
+.accessibleFeatureImageDiv img
+{
+    padding: 0px 1px 0px 1px;
+}
+
+.tddepartureboard
+{
+	width: 78px;
+}
+
+.divdepartureboard
+{
+	width: 78px;
+}
+
+.txteightbgrey {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #999999
+}
+
+#route {width: 105px; text-align: center;}
+#routeline {width: 23px;}
+#routetime {width: 70px; text-align: center;}
+table#fview {width: 735px;}
+#livethdr {background-color: #99ccff; padding: 2px; margin-bottom: 5px;}
+tr#underline td {
+	vertical-align: bottom;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+}
+
+table#travelview {
+	width: 753px;
+	background-color: #ffffff;
+	margin-top: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+table#travelview td {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#travelgry td {background-color: #cccccc; vertical-align: top;}
+#travelwhi td {background-color: #ffffff; vertical-align: top;}
+
+#fareslrg {padding-right: 5px;}
+
+table#rsviewa, table.rsviewa {
+	width: 595px;
+	background-color: #ffffff;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+
+.rscolonea {font-size: 1em; padding-right: 5px; }
+.rscoltwoa {font-size: 1em;  padding-right: 5px; padding-left: 5px; }
+.rscolthreea {font-size: 1em; padding-right: 5px; padding-left: 5px; }
+
+#mapicons, .mapicons {
+	float: none;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	font-size: 1.0em; 
+}
+
+#mapicons li, .mapicons li
+{
+	list-style-position: outside; 
+	margin-left: 20px; 
+	list-style-type: disc;
+	font-size: 0.85em;
+}
+
+#mapiconshighlight {
+	float: none;
+	clear: both;
+	border: thin solid #FFFF00;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.zonalLinksList {
+	list-style-type: none;
+}
+
+li.zonalLinksList {
+	padding-bottom: 15px;
+	padding-top: 5px;
+}
+
+#MapJourneyOutputBox {
+    border: 1px solid #330099;
+    background-color:#99ccff;
+    margin: 0px;
+    padding: 0px;
+    /* l33t hack */
+    voice-family: "\";}\"";
+    voice-family:inherit;
+}
+
+#floatright {
+	float: right;
+}
+
+#txtwhite {font-weight: bold; color: #ffffff;}
+
+/* Styles for car journey details table */
+.carJourneyDetailsBoxType1 {}
+.carJourneyDetailsBoxType2 {}
+.carJourneyDetailsBoxType3 {}
+
+.carJourneyDetailsTableHeader1, /* step */
+.carJourneyDetailsTableHeader2, /* total distance */
+.carJourneyDetailsTableHeader3, /* direction */
+.carJourneyDetailsTableHeader4, /* time */
+.carJourneyDetailsTableHeader5, /* direction distance */
+.carJourneyDetailsTableHeader6, /* map button */
+.carJourneyDetailsTableHeader7  /* horizontal rule */
+{ 
+    vertical-align: middle; 
+    padding: 4px 4px 4px 4px; 
+}
+
+.carJourneyDetailsTableCell1, /* step */
+.carJourneyDetailsTableCell2, /* total distance */
+.carJourneyDetailsTableCell3, /* direction */
+.carJourneyDetailsTableCell4, /* time */
+.carJourneyDetailsTableCell5, /* direction distance */
+.carJourneyDetailsTableCell6  /* map button */
+{
+    vertical-align: middle; 
+    padding: 4px 4px 4px 4px; 
+}
+
+.carJourneyDetailsTableFooter1, /* step */
+.carJourneyDetailsTableFooter2, /* total distance */
+.carJourneyDetailsTableFooter3, /* direction */
+.carJourneyDetailsTableFooter4, /* time */
+.carJourneyDetailsTableFooter5, /* direction distance */
+.carJourneyDetailsTableFooter6  /* map button */
+{ 
+    vertical-align: middle; 
+    padding: 4px 4px 4px 4px; 
+}
+
+.carJourneyDetailsTableHeader1,
+.carJourneyDetailsTableCell1,
+.carJourneyDetailsTableFooter1
+{ 
+    width: 40px;
+}
+
+.carJourneyDetailsTableHeader2,
+.carJourneyDetailsTableCell2,
+.carJourneyDetailsTableFooter2
+{ 
+    width: 80px;
+}
+
+.carJourneyDetailsTableHeader4,
+.carJourneyDetailsTableCell4,
+.carJourneyDetailsTableFooter4
+{ 
+    width: 45px;
+    text-align: right;
+}
+
+.carJourneyDetailsTableHeader5,
+.carJourneyDetailsTableCell5,
+.carJourneyDetailsTableFooter5
+{ 
+    width: 45px;
+    text-align: center;
+}
+
+.carJourneyDetailsTableHeader6,
+.carJourneyDetailsTableCell6,
+.carJourneyDetailsTableFooter6
+{ 
+    width: 5px;
+}
+/* end */
+
+#boxparkandride{	
+	overflow:auto;
+	border:1px solid #330099;
+	padding:0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:532px;
+	height:350px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxparkandride {width:530px;}
+
+#boxparkandride p {font-size: 0.7em;}
+
+table#parkandridegrid 
+{
+	background-color:#9999ff;
+	width: 513px;
+}
+
+.tnhButtonColumnHeader {background-color: white; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;  }
+#tnhLocation {width:30%; background-color: white; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;  }
+#tnhComments {width:70%; background-color: white; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;}
+
+#tnbLocation {width:30%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+#tnbComments {width:70%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+
+#parkaltrow {background-color: white; vertical-align: top;}
+#parkrow {background-color: #E6FFFE; vertical-align: top;}
+
+.tnhLocation {width:30%; background-color: white; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;  }
+.tnhComments {width:70%; background-color: white; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;}
+
+.tnbLocation {width:30%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+.tnbComments {width:70%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+
+.parkaltrow {background-color: white; vertical-align: top;}
+.parkrow {background-color: #E6FFFE; vertical-align: top;}
+
+/* special styles for Find Station pages */
+.tdstationheaderp
+{
+	background-color: #ccccff;
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	padding: 4px 1px 4px 1px;
+}
+
+.tdstationheader
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	padding: 4px 1px 4px 1px;
+}
+
+#boxtypestationresults
+{
+	border-top: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:765px;
+	}
+
+
+#boxtypefindstationmapcmd {
+	border:1px solid #ffffff;
+	padding: 0px 5px 0px 0px;
+	background-color:#ffffff;
+	width:555px;
+	margin-bottom: 0px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:555px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefindstationmapcmd {width:555px;}
+
+.findafromcolumn {
+	width:70px;
+	padding: 3px 10px 0px 0px;
+	vertical-align: top;
+	}
+
+.newlocation {
+	margin: 2px 0px 0px 0px;
+	}
+
+#stationsdisplaycolumn {
+	width:70px;
+	padding: 0px 10px 0px 0px;
+	}
+	
+.locationdrop
+{
+	max-width:450px;
+}
+
+/* for Seasonal notice board control */
+#tnhRegion 
+{
+	background-color: #ccccff; 
+	font-size: 0.7em; 
+	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+	font-weight: bold;
+}
+
+
+
+#tnhSupplier
+{
+	background-color: #ccccff; 
+	font-size: 0.7em; 
+	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+	font-weight: bold;
+}
+#tnhTransportMode
+{
+	background-color: #ccccff; 
+	font-size: 0.7em; 
+	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+	font-weight: bold;
+}
+
+#tnhInformation
+{
+	background-color: #ccccff; 
+	font-size: 0.7em; 
+	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+	font-weight: bold;
+}
+
+#tnhlblEffectedDates
+{
+	background-color: #ccccff; 
+	font-size: 0.7em; 
+	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+	font-weight: bold;
+}
+
+
+
+#tnhLastUpdated
+{
+	background-color: #ccccff; 
+	font-size: 0.7em; 
+	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+	font-weight: bold;
+}
+
+#tnbRegion 
+{font-size: 0.7em; 
+ font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+#tnbSupplier 
+{font-size: 0.7em; 
+ font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+#tnbTransportMode
+{
+ font-size: 0.7em; 
+ font-family: Verdana, Arial, Helvetica, Sans-Serif;	
+}
+
+#tnbInformation 
+{font-size: 0.7em; 
+ font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+#tnbEffectedDates 
+{font-size: 0.7em; 
+ font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+#tnbLastUpdated 
+{font-size: 0.7em; 
+ font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+
+#SeasonalNoticeboardTopHeader 
+{
+	font-size: 0.9em;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight:bold ; 
+	color: black;  
+	width: 100%;		
+	text-indent: 5px;
+
+}
+
+
+#SeasonalNoticeboardTopHeader 
+{
+ font-size: 0.9em; 
+ font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+#SeasonalNoticeboardHeading 
+{
+font-size: 0.7em; 
+font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+}
+
+#SeasonalNews_NoData
+{
+font-size: 0.7em; 
+font-family: Verdana, Arial, Helvetica, Sans-Serif;
+font-weight :bold ;
+color:Red;   
+}
+
+.SeasonalMessageLink
+{
+	font-size: 1.2em;
+}
+
+.SeasonalHighlightMessage
+{
+	color:Red; 
+}
+
+.FindPlace_Dropdown_area
+{
+	background-color:#FFFF00;
+	padding:5px;
+	width:300px;
+}
+
+.FindPlace_Dropdown
+{
+	width:300px;
+}
+
+.pound {color: #808080;}
+
+.errormsg
+{
+	font-size: 0.7em;
+	color:Red;
+}
+
+.selectedticketlabel
+{
+	font-size: 0.8em;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: bold ;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+table#cct, table.cct 
+{
+	width: 735px;
+	background-color: #ffffff;
+}
+
+table#cct2
+{
+	width: 725px;
+	background-color: #ffffff;
+}
+
+td#cc1, td.cc1 { width: 298px; }
+td#cc2, td.cc2 { width: 149px; }
+td#cc3, td.cc3 { width: 186px; text-align:left; }
+td#cc4, td.cc4 { width: 112px; text-align:right; }
+td#cc5, td.cc5 { width: 280px; }
+td#cc6 { font-weight:bold; text-align:right; padding: 0px 42px 0px 0px;
+	width: 86px; voice-family: "\";}\""; voice-family:inherit; /* width hack for old IE - includes padding */
+	width: 44px; /* correct CSS1 width */
+}
+html>td#cc6 {width: 44px;} /* correct CSS1 width for old Opera (undoes IE hack) */
+
+td#cc7 { font-weight:bold; text-align:right; padding: 0px 25px 0px 0px;
+	width: 86px; voice-family: "\";}\""; voice-family:inherit; /* width hack for old IE - includes padding */
+	width: 61px; /* correct CSS1 width */
+}
+html>td#cc7 {width: 61px;} /* correct CSS1 width for old Opera (undoes IE hack) */
+
+td#cc8, td.cc8 { width: 388px; padding: 0px;}
+td#cc9 { width: 378px; padding: 0px;}
+
+/* Styles used in repeated control as id is already used for object id and cannot
+   reference the style. NOTE: Keep the same as the td definitions below */
+.ccPounds { font-weight:bold; text-align:right; width: 70px;}
+.ccPence { font-weight:bold; text-align:left; width: 40px;}
+.ccUnknown { font-weight:bold; text-align:right; width: 110px; padding-right: 20px}
+/* ccUnknown has width of 110px as its a colspan 2 and spans the Pounds and Pence columns */
+
+td#ccPounds { font-weight:bold; text-align:right; width: 70px;}
+td#ccPence { font-weight:bold; text-align:left; width: 40px;}
+
+td#ccTotalPounds { font-weight:bold; text-align:right; width: 86px;}
+td#ccTotalPence { font-weight:bold; text-align:left; width: 86px;}
+
+.roadTxtBox
+{
+	width: 32px;
+}
+
+.alertboxerror {border:3px solid #FF0033;}
+.roadboxerror {width:32px; border:3px solid #FF0033;}
+
+.mwayLabel
+{
+	color:White;
+	background-color:Blue;
+	font-size:Larger;
+	font-weight:bold;
+}
+	
+.boxtypeerrormsgtwo {	
+	padding:0px 5px 0px 5px;
+	width:755px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    color: #DD0000;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeerrormsgtwo {width:755px;}
+
+.boxtypeerrormsgfour {	
+	padding:0px 0px 0px 0px;
+	width:622px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	color: #DD0000;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:622px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeerrormsgfour {width:622px;}
+
+#mboxtypefeedback {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:745px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:545px;
+	}
+	
+
+.ErrorDisplayTable 
+{
+	width: 755px; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #FF0000; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #FF0000; 
+	border-top-width: 2px; 
+	border-top-style: solid; 
+	border-top-color: #FF0000; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #FF0000;
+	background-color:#ffffff;
+	
+}
+
+.ErrorMessageBase
+{
+	width: 755px; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #FF0000; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #FF0000; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #FF0000;
+	background-color:#ffffff;	
+	
+}
+	
+.journeyAccessibilityLinksControl
+{
+	width:756px;
+	text-align:left;
+}
+
+.footnoteList
+{
+	list-style-type:none;
+}
+
+.panelBackTop
+{
+	margin-right: 5px;
+	padding-left: 10px;
+}
+
+/* New Location button shown on input page */
+#NewLocationButtonCell 
+{
+	padding-right: 5px;
+}
+
+/* Find on Map button shown on input page */
+.FindOnMapCell
+{
+	padding-right:5px;
+}
+
+/* Find Nearest button shown on input page */
+.FindNearestButtonCell
+{
+	padding-right: 5px;
+}
+
+.accessibilityLinkForInput
+{
+	margin-right: 0px;
+}
+
+/* Location input control */
+div.jssettings{position:absolute;left:-100px;}
+div.locationControl
+{
+    margin: 0px 3px 3px 0px;
+}
+div.locationControl div.locationInputRow
+{
+    float: left;
+    margin: 0px 3px 5px 1px;
+}
+div.locationControl div.locationOptionsBtnRow
+{
+    float: right;
+    padding: 2px 0px 0px 0px;
+}
+div.locationControl input.locationBox
+{
+    height: 20px;
+    line-height: 20px;
+    width: 295px;
+}
+div.locationControl input.locationBoxLong
+{
+    width: 402px;
+}
+div.locationControl input.watermarkText 
+{
+    color: #aaaaaa;
+}
+div.locationControlViaPT div.locationControl input.locationBox,
+div.locationControlViaCar div.locationControl input.locationBox,
+div.locationControlViaCycle div.locationControl input.locationBox
+{
+    width: 370px;
+}
+div.locationControlViaPT div.locationControl input.locationBoxLong,
+div.locationControlViaCar div.locationControl input.locationBoxLong,
+div.locationControlViaCycle div.locationControl input.locationBoxLong
+{
+    width: 470px;
+}
+div.locationControl div.unsureSpelling
+{
+    float: left;
+    padding: 2px 0px 0px 0px;
+}
+div.locationControl input.moreOptions
+{
+}
+div.locationControl input.findOnMap
+{
+}
+div.locationControl div.locationTypesRow
+{
+    clear: both;
+}
+div.locationControl div.locationTypesRow fieldset
+{
+    padding: 0px;
+    margin: 0px;
+}
+div.locationControl div.locationTypesRow div.locationTypeDropDiv
+{
+    margin-top: 3px;
+}
+div.locationControl div.locationTypesRow .locationTypeDrop
+{
+    width: 100%;
+}
+div.locationControl div.ambiguityRow
+{
+    background-color: #FFFF00;
+    padding: 5px 0px 5px 3px;
+    position: relative;
+}
+div.locationControl div.ambiguityRow span.ambiguityinfo
+{
+    display: inline-block;
+    width: 465px;
+}
+div.locationControl div.ambiguityRow select.ambiguitydrop
+{
+    width: 465px;
+}
+div.locationControl div.ambiguityRow input.locationReset
+{
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+}
+div.locationControl div.ambiguityRow div.ambiguityTypeDropDiv
+{
+    margin-top: 4px;
+}
+div.locationControl div.fixedLocationRow span.fixedLocationDescription
+{
+    font-weight: bold;
+    display: block;
+    margin: 2px 0px 0px 3px;
+}
+div.locationControl div.fixedLocationRow span.fixedLocation
+{
+    font-weight: bold;
+    display: block;
+    margin: 0px 0px 0px 4px;
+}
+div.locationControl div.fixedLocationRow input.locationNew
+{
+    float:right;
+    margin: 1px 0px 0px 0px;
+}
+
+/* Location input auto suggest */
+div.locationSuggest
+{
+    border-width: 1px;
+    border-style: solid;
+    z-index:99999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+ul.locationSuggestList
+{
+    border-width: 1px;
+    border-style: solid;
+    z-index:99999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index:99999;
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    text-align:left;
+    cursor: pointer;
+    overflow: hidden;
+}
+ul.locationSuggestList
+{
+   border-color: #4C4C4C;
+   background-color:white;
+}
+ul.locationSuggestList li.locationSuggestListItem
+{
+    padding: 0px;
+    display: block;
+    font-size:1em;
+    width: 100%;
+    border-bottom:1px solid #e0e0e0;
+    min-height:20px;
+}
+ul.locationSuggestList li.locationSuggestListItemLast
+{
+    border-bottom: 0px !important;
+}
+ul.locationSuggestList li.locationSuggestListItem a
+{
+    display: block;
+    width: 100%;
+    min-height:20px;
+    color: #4C4C4C;
+    padding: 5px 0px 2px 3px;
+}
+ul.locationSuggestList li.locationSuggestListItem a, 
+ul.locationSuggestList li.locationSuggestListItem a:hover
+{
+    text-decoration: none;
+}
+ul.locationSuggestList li.locationSuggestSelectedItem
+{
+    background-color:#0A246A;
+    color:#ffffff;
+}
+ul.locationSuggestList li.locationSuggestSelectedItem a
+{
+    color:#ffffff;
+}
+
+/* Accessible Location select control */
+div.accessibleLocationControl table
+{
+    width: 100%;
+}
+div.accessibleLocationControl div.locationNameRow
+{
+}
+div.accessibleLocationControl div.locationNameRow span.locationName
+{
+    font-weight: bold;
+}
+div.accessibleLocationControl div.accessibleLocDropDownRow
+{
+}
+div.accessibleLocationControl div.accessibleLocDropDownRow .accessibleLocDrop
+{
+    width: 420px;
+    float: left;
+}
+div.accessibleLocationControl div.accessibleLocDropDownRow font /* push map button to right*/
+{
+    float: right;
+    margin-top: 2px;
+}
+div.accessibleLocationControl div.locationErrorRow
+{
+}
+
+/* Accessible Transport Types control */
+div.accessibleTransportTypes
+{
+    padding: 3px;
+}
+div.accessibleTransportTypes table.accessibleTransportTypesChk
+{
+    margin-left: -7px;
+    display: inline-block;
+}
+div.accessibleTransportTypes table.accessibleTransportTypesChk td
+{
+    min-width: 60px;
+    padding-right: 5px;
+}
+
+#mboxtypefeedback {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:745px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:545px;
+}
+	
+.ErrorDisplayTable {
+	width: 100%; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #FF0000; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #FF0000; 
+	border-top-width: 2px; 
+	border-top-style: solid; 
+	border-top-color: #FF0000; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #FF0000;
+	background-color:#ffffff;
+}
+
+.ErrorMessageBase {
+	width: 100%; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #FF0000; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #FF0000; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #FF0000;
+	background-color:#ffffff;	
+}
+
+.travelNewsMapKeyTitle
+{
+	background-color: #FFFFFF;
+	width: 38px;
+}
+
+.mapKeyControlBox
+{
+	border:1px solid #330099;
+	padding:5px 0px 5px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+}
+
+.divLocationTitle
+{
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #ccccff;
+}
+
+.panelLocationTitle
+{
+	padding-top: 3px;
+	padding-bottom: 6px;
+}
+
+.helpbuttoncell
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.floatleft
+{
+	background-color: inherit;
+	float: left;
+	font-size: 0.7em;
+	padding:0px 5px 0px 0px;
+}
+.floatright
+{
+	background-color: inherit;
+	float: right;
+	font-size: 0.7em;
+}
+
+.journeybuilderprompttext
+{
+	font-size: 0.7em;
+	padding: 5px;
+}
+
+/* EXTEND JOURNEY RESULTS TABLE */
+.ejdetail
+{
+	table-layout: fixed;
+	padding: 0px;
+	width: 753px;
+	border: 0px;
+	font-size: 0.7em;
+	background-color: #FFFFFF;
+}
+
+
+/* results headers generic settings */
+.ejpdelehd, .ejpdelehdempty, .ejporighd, .ejpdesthd, .ejptranhd, .ejpleavhd, .ejparrihd, .ejpdurahd, .ejpselehd, .ejpselehdempty, .ejporighdwide, .ejpdesthdwide, .ejptranhdwide, .ejptranhdsuperwide
+{
+	font-weight: bold;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* results headers bespoke settings */
+.ejpdelehd {width: 55px; padding-left: 5px;}
+.ejpdelehdempty {width: 55px; padding-left: 5px;}
+.ejporighd {width: 140px; text-align: left;}
+.ejpdesthd {width: 140px; text-align: left;}
+.ejptranhd {width: 154px; text-align: left;}
+.ejpleavhd {width: 50px;}
+.ejparrihd {width: 50px;}
+.ejpdurahd {width: 90px;}
+.ejpselehd {width: 45px; border-left-width: 1px; border-left-style: solid; border-left-color: #330099;}
+.ejpselehdempty {width: 45px;}
+.ejporighdwide {width: 160px; text-align: left; padding-left: 5px;}
+.ejpdesthdwide {width: 160px; text-align: left;}
+.ejptranhdwide {width: 169px; text-align: left;}
+.ejptranhdsuperwide {width: 215px; text-align: left;}
+
+/* results generic settings */
+.ejpdele, .ejpdeleempty, .ejporig, .ejpdest, .ejptran, .ejpleav, .ejparri, .ejpdura, .ejpsele, .ejpseleempty, .ejporigwide
+{
+	text-align: center;
+	vertical-align: middle;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDDDDD;
+}
+
+/* results bespoke settings */
+.ejporig {text-align: left;}
+.ejpdest {text-align: left;}
+.ejptran {vertical-align: middle; text-align: left;}
+.ejpsele {border-left-width: 1px; border-left-style: solid; border-left-color: #330099;}
+.ejporigwide {text-align: left; padding-left: 5px;}
+
+/* row background colouring */
+.eoddRow
+{
+	background-color: #FFFFFF;
+}
+
+.eevenRow
+{
+	background-color: #E6FFFE;
+}
+
+.eselectRow
+{
+	background-color: #FFFF00;
+}
+/* END OF EXTEND JOURNEY RESULTS TABLE */
+
+/* EXTEND JOURNEY LINE VIEW CONTROL */
+/* Note: The table that controls the format for this control has a set of columns that use 2 different widths as follows:
+   -----------------------------------------------------------------
+   Width2 | Width1 | Width2 | Width2 | Width1 | Width2 | Width2 | ... etc.
+   -----------------------------------------------------------------
+   Since the table uses colspan, there are more than just 2 width settings below, however, all width settings are derived
+   from Width1 and Width2.
+   Currently we have: Width1 = 23px
+					  Width2 = 75px
+   The derivations are noted below.
+*/
+.ejpColumnWidth1
+{
+	width: 23px;
+}
+
+.ejpColumnWidth2
+{
+	width: 75px;
+}
+
+.ejpLocationDescriptionCell
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 173px;	/* Width1 + (2*Width2) */
+	text-align: center;
+}
+
+.ejpPaddingCell
+{
+	width: 75px;	/* Width2 */
+}
+
+.ejpCircleCell
+{
+	width: 23px;	/* Width1 */
+}
+
+.ejpLineCell
+{
+	width: 150px;	/* 2*Width2 */
+}
+
+.boxtypewhitebackground
+{
+	border: 1px solid #330099;
+	padding: 20px 5px 20px 5px;
+	margin: 5px;
+	width: 765px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:823px; /* compliant browser width */	
+}
+/* width for opera browser */
+html>.boxtypewhitebackground {width: 823px;}
+
+.boxtypeJourneyBuilder {
+	background-color: #ffffff;
+	margin-top: 5px;	
+	margin-left: 5px;
+	width:767px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:767px; /* compliant browser width */
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeJourneyBuilder
+{width:767px;}
+
+/* END OF EXTEND JOURNEY LINE VIEW CONTROL */
+
+.tableTitle
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+}
+
+.spacer1{font-size: 3px;}
+.spacer2{font-size: 1px;}
+.spacer3{font-size: 7px;}
+
+.hide {display: none;}
+.show {display: inline-block;}
+.jshide {display: none;}
+.jsshow {display: inline-block;}
+
+.floatleftonly
+{
+	float: left;
+}
+.floatrightonly
+{
+	float: right;
+}
+.floatrightPadding4
+{
+    float: right;
+    padding-right: 4px;
+}
+
+.centertextonly
+{
+	text-align: center;
+}
+
+.righttextonly
+{
+	text-align: right;
+}
+
+.waitPageHeaderLabel
+{
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 450px;
+}
+
+.templatecodebox
+{
+    font-size: 0.8em;
+	width: 825px;
+}
+
+.boxtypeeightblue{
+	border:1px;
+	border-color: #99ccff;
+	border-style:solid;
+	padding:5px 0px 5px 0px;
+	background-color:#ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 100px;
+	margin-right: 100px;
+	clear: both;
+	width:575px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:565px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeeightblue {width:565px;}
+
+#hrone
+{
+	color:#ccccff;
+}
+
+.mtbl 
+{
+	background-color: #ccccff; 
+	width: 190px; 
+	font-size: 0.7em;
+}
+
+.underlineCarPark  
+{
+	vertical-align: bottom;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+}
+
+/* added by Dan Gath - to have standard central content control width when left and righ menu displaying*/
+#boxtypeeightnew{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:395px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeightstd {width:395px;}
+
+/* this creates empty blue box just above select heading */
+.ejseleet
+{
+	background-color:#99CCFF;
+	border-bottom:1px solid #99CCFF;
+	border-right:1px solid #330099;
+	text-align:center;
+	vertical-align:middle;
+	width:51px;
+}
+
+
+#boxtypefortyone, .boxtypefortyone
+{
+	border: 0px;
+	background-color:#ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:835px;
+	clear: both;
+}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypefortyone, html>#boxtypefortyone
+{width:835px;}
+
+#boxtypefortythree, .boxtypefortythree
+{
+	
+	border-top:none;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding: 0px;
+	background-color: #FFFFFF;
+	
+	
+}
+
+.boxtypefortytwo, #boxtypefortytwo
+{	
+	border:1px solid #330099;
+	padding: 0px 5px 0px 5px; 
+	background-color:#ffffff;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	
+}
+
+
+#boxtypefortytwo p {font-size: 0.7em }
+
+/* added by Amit Patel - for find a map page */
+
+div#findamapbox, div.findamapbox {
+	border: 1px solid #330099;
+	padding: 5px;
+	background-color: #99ccff;
+	width: 620px;
+	margin-left: 3px;
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	/*float:right;*/
+	position:absolute;
+	left:205px;
+	height:97%;
+	display:block;
+	top:0px;
+	
+	
+}
+/* b-ing :) 2 Opera 5 */
+html>div#findamapbox {width:620px; }
+
+/* added by Amit Patel - for find a map page */
+div#mapOverviewBox, div.mapOverviewBox
+{
+	/*float:left;*/
+	height:100%;
+	width: 190px;
+	border: 1px solid;
+	padding: 5px;
+	background-color: #CCCCFF;
+	position:relative;
+	margin: 3px;
+	height:100%;
+	display:block;
+}
+
+
+/* following are the styles for zoom control inside the map added by apatel for CCN 0427 */
+
+/* Change it only absolute necessary */
+
+.panelZoomButtons
+{
+	z-index:989; 
+	background-color:#CCFFFF;
+	position:absolute; 
+	display:block; 
+	top:20px;
+	left:10px;
+	border: solid 1px #6699FF;
+	margin: 2px 5px 2px 5px;
+	width: 24px;
+	padding: 1px;
+	
+}
+
+.panelZoomButtons .zoombuttons
+{
+	
+	clear:both;
+	padding:2px;	
+}
+
+.panelZoomButtons .zoombuttons input
+{
+	width:20px;
+}
+
+.panelZoomButtons .mapzoomiconshighlight
+{
+	
+	float: none;
+	clear: both;
+	border: thin solid #FFFF00;
+	padding: 0px 2px;
+	margin: 0px 4px;
+}
+
+.panelZoomButtons .mapzoomicons
+{
+	
+	float: none;
+	clear: both;
+	padding: 0px 2px;
+	margin: 0px 4px;
+	border: solid thin Transparent;
+	
+}
+
+.panelZoomButtons .mapzoomiconshighlight input, .panelZoomButtons .mapzoomicons input
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display:block;
+}
+
+.MapLocationSelect
+{
+	position:relative;
+	display:block;
+	padding-left:1px;
+	margin-bottom:15px;
+	
+}
+
+/* added for change of style of findamap page - CCN 0427 - apatel */
+#mboxtypetwonoborder, .mboxtypetwonoborder
+{
+	/*border:1px solid #330099;*/
+	padding:3px 3px 3px 3px;
+	background-color:#ceefff;
+	/* width:545px; */ /* Resolution for IR3126 */
+	line-height:1.5;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+}
+
+
+/*Css added for the MapLocationIconSelectControl - CCN 0427 - apatel */
+#panelKeysBox, #panelOnlyViewBox, .panelOnlyViewBox
+{
+	position:relative; 
+	display:block;
+	height:195px;
+}
+
+/*Css added for the MapLocationIconSelectControl - CCN 0427 - apatel */
+#panelKeysTransport, .panelKeysTransport 
+{
+	position:absolute;
+	left:0px;
+}
+
+/*Css added for the MapLocationIconSelectControl - CCN 0427 - apatel */
+#panelKeysOther, .panelKeysOther
+{
+	background-color: #CEEFFF;
+	position:relative; 
+	left:170px;
+	padding:10px;
+	top:15px;
+	width:430px;
+	height:162px;
+}
+
+#panelOnlyInfo, .panelOnlyInfo
+{
+	position:absolute;
+	left:0px;
+	width:200px;
+	padding:10px;
+	top:20px;
+}
+
+#panelOnlySymbols, .panelOnlySymbols
+{
+	position:relative; 
+	left:225px;
+	padding:10px;
+	top:15px;
+	height:130px;
+	width:325px;
+}
+
+/*Css added for the MapLocationIconSelectControl - CCN 0427 - apatel */
+#panelKeysOtherOptions, .panelKeysOtherOptions
+{
+	display:block;
+	padding:3px;
+	position:absolute; 
+	left:10px;
+}
+
+/*Css added for the MapLocationIconSelectControl - CCN 0427 - apatel */
+#panelKeysSelectedCategory, .panelKeysSelectedCategory
+{
+	position:absolute;
+	left:250px;
+}
+
+/*Css added for the MapLocationIconSelectControl - CCN 0427 - apatel */
+#panelKeysButton, .panelKeysButton
+{
+	text-align:right; 
+	position:relative;
+	bottom:14px;
+}
+
+/*Css added to show controls inline - CCN 0427 - apatel */
+.DisplayInTable
+{
+	display: inline-table;
+}
+
+/*Css added to show Map Legend in map control - CCN 0427 - apatel */
+/* used by MapControl and SimpleMapControl */
+.MapLegend
+{
+	position:absolute;
+	right: 20px;
+	display:inline;
+}
+
+/*Css added to show zoom level in map control - CCN 0427 - apatel */
+/* used by MapControl and SimpleMapControl */
+
+.MapZoomLevelContainer
+{
+	position:relative;
+	width: 760px;
+}
+
+.MapLegendContainer
+{
+	position:relative;
+	width: 760px;
+}
+
+.MapZoomLevel
+{
+	
+	position:absolute;
+	left:0px;
+	padding-bottom:2px;
+	
+	
+}
+
+.panelMapBoxTools
+{
+	border:1px solid #330099;
+	padding: 3px 5px 3px 5px;
+	background-color:#99ccff;
+	line-height:1.5;
+	-moz-line-height: 1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 10px;
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:625px;
+	position:relative;
+	
+}
+
+#panelMapKeybox
+{
+	height:100%;
+	margin-bottom:5px;
+	margin-left:5px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	
+	
+	
+}
+
+.titleImage
+{
+	width:70px;
+	height:36px;
+}
+
+#mapContainer, .mapContainer {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-left: 5px;
+	
+	}	
+	
+.boxtypeStaticPages
+{
+	width: 830px;
+	margin: 5px 0px 5px 5px;
+	padding: 3px 0px 3px 3px;
+}
+
+.TDMapLink, .TDMapLinkMouseOver
+{
+	font-size: 10px;
+	background-color: #CECFFF;
+	margin:0px;
+	padding:0px;
+	border:none;
+	
+}
+.TDMapLink
+{
+	color: #3300ff;
+	cursor:pointer;
+	
+}
+
+.TDMapLinkMouseOver
+{
+	color: #8800CC;
+	cursor:pointer;
+	text-decoration:underline;	
+}
+
+.TDLanguageLink, .TDLanguageLinkMouseOver
+{
+	font-size: 0.85em;
+	font-family:  Verdana,  sans-serif, helvetica, arial; /*Verdana, arial, helvetica, sans-serif;*/
+	/*line-height:10pt;*/
+	
+	background-color: #CEEFFF;
+	margin:0px;
+	padding:0px;
+	border:none;
+	width:8.8em;	
+	vertical-align: baseline;
+}
+
+.TDLanguageLink
+{
+	color: #3300ff;
+	cursor:pointer;	
+}
+
+.TDLanguageLinkMouseOver
+{
+	color: #8800CC;
+	cursor:pointer;
+	text-decoration:underline;	
+}
+
+.TDMapLabel
+{
+	font-size: 10px;
+	background-color: #CECFFF;
+	margin:0px;
+	padding:0px;
+}
+
+
+
+/* css for FindFareSteps control images */
+.ImageFindFareStep
+{
+	position:relative;
+	display: inline;
+	margin:0 -6px 0 0;
+	padding:0;
+}
+
+.ImageFindFareStepsEnv
+{
+	margin-left: 35px;
+}
+
+/* css for Social Bookmark link control */
+.SocialBookMarkLinkContainer
+{
+    width: 130px;
+    margin-left: 20px;
+}
+
+
+TD.SocialBookMarkLink DIV DIV#bookmarkStar
+{
+    height: 25px;
+}
+
+TD.SocialBookMarkLink DIV DIV#bookmarkStar .ClientLinkImageStyle
+{
+    height: 20px;
+}
+
+TD.SocialBookMarkLink DIV  DIV#bookmarkText
+{
+    float: left;
+    margin-left: 4px;
+    
+}
+
+TD.SocialBookMarkLink DIV  DIV#bookmarkText a
+{
+    font-size:0.7em;   
+    vertical-align:bottom;
+}
+
+TD.SocialBookMarkLink a SPAN.txtseven
+{
+    vertical-align: text-top;
+}
+
+.SocialBookMarkLinkTitle
+{
+    color:#3300FF;
+}
+
+/* ------------------ AUTO SUGGEST DROPDOWN STYLES --------------------------------*/
+
+.autoSuggest
+{
+    /*max-height: 100px;*/
+    border: ridge 1px #330099;
+    background-color: White;
+    z-index:999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+.autoSuggest .autoSuggestList
+{
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    text-align:left;
+    cursor: default;
+    
+ }
+
+.autoSuggest .autoSuggestList li.autoSuggestListItem
+{
+    padding-left: 3px;
+    color: #000000;
+    background-color: White;
+    white-space: nowrap;
+}
+
+.autoSuggest .autoSuggestList .autoSuggestSelectedItem
+{
+    padding-left: 3px;
+    background-color: #0A246A;
+    color: #FFFFFF;
+    font-weight:200;
+    white-space: nowrap;
+}
+
+/* ------------------ END - AUTO SUGGEST DROPDOWN STYLES --------------------------------*/
+
+.tdinfowindow
+{
+    position: absolute;
+    font-family: verdana,arial,helvetica,sans-serif;
+}
+.tdinfowindow
+{
+    position: absolute;
+}
+.tdinfowindow .window
+{
+    color: #000000;
+    font-family: verdana,sans-serif;
+    position: absolute;
+}
+.tdinfowindow .window .top .left
+{
+    overflow: hidden;
+    position: absolute;
+    width: 15px;
+}
+.tdinfowindow .window .top .left .sprite
+{
+    margin-left: -987px;
+    margin-top: 0;
+}
+.tdinfowindow .window .top .right
+{
+    overflow: hidden;
+    padding-right: 5px;
+    position: absolute;
+}
+.tdinfowindow .window .top .right .sprite
+{
+    margin-top: 0;
+    position: absolute;
+}
+.tdinfowindow .window .top .right .user
+{
+    padding: 7px 0 0 10px;
+    position: absolute;
+}
+.tdinfowindow .window .top .right .user .titlebar .close
+{
+    height: 8px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: absolute;
+    width: 12px;
+}
+.tdinfowindow .window .top .right .user .titlebar .close .sprite
+{
+    cursor: pointer;
+    display: block;
+    margin-left: -752px;
+    margin-top: -900px;
+}
+.tdinfowindow .window .top .right .user .titlebar .close .sprite:hover
+{
+    margin-top: -908px;
+}
+.tdinfowindow .window .top .right .user .titlebar .title
+{
+    font-size: 10pt;
+    font-weight: bold;
+}
+.tdinfowindow .window .top .right .user .border
+{
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #000000;
+    font-size: 0;
+    height: 0;
+    margin-top: 5px;
+    opacity: 0.25;
+}
+.tdinfowindow .window .top .right .user .layout
+{
+    margin: 5px 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+.tdinfowindow .window .top .right .user .content
+{
+    font-size: 9pt;
+}
+.tdinfowindow .window .bottom .left
+{
+    height: 10px;
+    overflow: hidden;
+    position: absolute;
+    width: 15px;
+}
+.tdinfowindow .window .bottom .left .sprite
+{
+    margin-left: -987px;
+    margin-top: -990px;
+}
+.tdinfowindow .window .bottom .right
+{
+    height: 10px;
+    overflow: hidden;
+    position: absolute;
+}
+.tdinfowindow .window .bottom .right .sprite
+{
+    margin-top: -990px;
+    position: absolute;
+}
+.tdinfowindow .pointer
+{
+    height: 44px;
+    overflow: hidden;
+    position: absolute;
+    width: 53px;
+}
+.tdinfowindow .upperleft
+{
+    bottom: 0;
+    right: 0;
+}
+.tdinfowindow .upperright
+{
+    bottom: 0;
+    left: 0;
+}
+.tdinfowindow .lowerright
+{
+    left: 0;
+    top: 0;
+}
+.tdinfowindow .lowerleft
+{
+    right: 0;
+    top: 0;
+}
+.tdinfowindow .upperleft .sprite
+{
+    margin-left: -800px;
+    margin-top: -800px;
+}
+.tdinfowindow .upperright .sprite
+{
+    margin-left: -902px;
+    margin-top: -800px;
+}
+.tdinfowindow .lowerright .sprite
+{
+    margin-left: -902px;
+    margin-top: -924px;
+}
+.tdinfowindow .lowerleft .sprite
+{
+    margin-left: -800px;
+    margin-top: -924px;
+}
+.tdinfowindow .sprite
+{
+    height: 1000px;
+    width: 1000px;
+}
+.tdinfowindow .sprite
+{
+    background-image: url("../images/soria.infowindow.png");
+}
+
+.tninfowindow .tnWindow-Content
+{
+    border: 1px solid #CFCFCF;
+    padding: 4px;
+    font-size: 80%;
+}
+
+.tninfowindow .window .top .right .user .border
+{
+    display: none;
+}
+
+.highTrafficSymbol, .roadNewsItem
+{
+    display: block;
+    cursor: pointer;
+}
+
+.avoidClosedRoadMessage
+{
+    background: #ffffff;
+    border: solid 1px red;
+    color: Red;
+    padding: 5px 0;
+    width: 800px;
+    vertical-align: baseline;
+}
+
+.avoidClosedRoadMessage .head
+{
+    padding: 0 5px 3px;
+    border-bottom: solid 1px red;
+}
+
+.avoidClosedRoadMessage .body
+{
+    padding: 5px;
+}

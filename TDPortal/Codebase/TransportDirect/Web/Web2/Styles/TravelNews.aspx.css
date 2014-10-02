@@ -1,0 +1,142 @@
+#contentarea
+{
+	border-left: none 0px;
+	padding-left:0px;
+}
+
+.topInstructions
+{
+	padding-left:10px;
+}
+
+/* ---- Travel news filter table ---- */
+#boxtypetwoaltnoborder
+{
+	margin-left: 0px;
+	margin-right:0px;
+	width: 797px;
+	background-color:#99CCFF;
+	line-height:1.5;
+	padding:5px 5px 4px;
+	voice-family:inherit;
+}
+
+.TravelNewsSwitch
+{
+	width: 800px;
+	background-color: #FFFFFF;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/* ---- Travel news table ---- */
+.TravelIncidentsTable
+{
+    font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+}
+
+/* Table rows */
+.travelIncident
+{
+}
+
+.travelIncidentAlt
+{
+	background-color: #EFEFFF; /* changed from silver  */
+}
+
+/* Table cells */
+.TravelIncidentsTable td, .TravelIncidentsTable th
+{
+    border-right: solid 1px #330099;
+    border-bottom: solid 1px #330099;
+}
+
+.tnhIncident {background-color: #ccccff; }
+.tnhRegion {background-color: #ccccff; }
+.tnhSeverity {background-color: #ccccff; }
+.tnhOccurred {background-color: #ccccff; }
+.tnhAffected {background-color: #ccccff; }
+.tnhOperator {background-color: #ccccff; }
+.tnhDetails {background-color: #ccccff; }
+.tnhLastUpdated {background-color: #ccccff; }
+
+
+/* ---- Map Region selection ---- */
+.mapRegionContainer
+{
+	 position:absolute;
+}
+
+#boxtypetwoalt
+{
+    margin: 0px 0px 5px 0px;
+	padding:1px;
+	width: 797px;
+	position:absolute;
+	bottom:0px;  
+}
+
+.TDSelectAllUk
+{
+	background-color:#EBEBEB;
+	color:#264266;
+}
+
+.TDSelectAllUkMouseOver
+{
+	background-color:#96A297;
+	color:#FFFFFF;
+}
+
+.TDSelectAllUk, .TDSelectAllUkMouseOver
+{
+	border-color:#C0C0C0 rgb(128, 128, 128) rgb(128, 128, 128) rgb(192, 192, 192);
+	border-style:solid;
+	border-width:1px;
+	cursor:pointer;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:0.8em;
+	font-weight:bold;
+	overflow:hidden;
+	white-space:pre-line;
+	padding:0px;
+	text-align:center;
+	text-decoration:none;
+	voice-family:inherit;
+	width:146px;
+	letter-spacing: -0.05em;   
+}
+
+div.travelNewsContainer
+{
+    position:relative;
+    
+}
+
+div.travelNewsContainer div.travelNewsDetail,div.travelNewsContainer div.travelNewsMap
+{
+    position: absolute;
+    left:0px;
+    right:0px;
+}
+
+.boxtypetravelnewsswitchbuttons {
+    background-color:#CCCCFF;
+    border:1px solid #330099;
+    margin:0 0 2px 10px;
+    padding:3px 5px;
+    width:816px;
+    text-align: right;
+    position: relative;
+}
+
+.currentTNView 
+{
+    background-color:#6F6F6F;
+    color:#FFFFFF;
+    border-style: groove;
+}
+

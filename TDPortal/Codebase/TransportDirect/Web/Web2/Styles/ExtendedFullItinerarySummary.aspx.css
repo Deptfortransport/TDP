@@ -1,0 +1,59 @@
+#boxtypefortyone, .boxtypefortyone
+{
+	width: 826px;
+}
+
+#boxtypefortythree, .boxtypefortythree
+{
+	border-bottom: 0px;
+	border-right: 0px;
+}
+
+.boxtypefortyfour
+{
+	width: 820px;
+	padding: 0px 5px 0px 0px;
+	background-color: #9CCFFF;
+	
+	border: 0px;
+	
+	margin-bottom: 0px;
+	margin-left: 5px;
+	
+	clear: both;
+	border-right: solid 1px #330099;
+	border-bottom: solid 1px #330099;
+}
+
+#boxtypewhitebackground, .boxtypewhitebackground
+{
+	width: 814px;
+}
+
+.ejdetail
+{
+	width: 819px;
+	border-right: solid 1px #330099;
+}
+
+#topofpagecontrols
+{
+	width: 833px;	
+}
+
+.bodyArea
+{
+	width:840px;	
+}
+
+.boxtypesixteen
+{
+	width:820px;	
+}
+
+.OnwardJourneyBox
+{
+	width: 833px;
+	text-align: right;
+	margin-top: 10px;
+}

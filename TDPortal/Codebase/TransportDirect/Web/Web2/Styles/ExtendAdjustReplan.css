@@ -1,0 +1,238 @@
+#boxtypelargeeight, .boxtypelargeeight
+{
+	border:0px;
+	padding: 5px 0px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	width: 750px;
+	clear: both;
+}
+
+.boxtypelargetwo, #boxtypelargetwo
+{
+	border:1px solid #330099;
+	background-color:#99ccff;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:775px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:765px; /* compliant browser width */
+	}
+
+/* b-ing :) 2 Opera 5 */
+html>.boxtypelargetwo, html>#boxtypelargetwo
+{width:765px;}
+
+.boxtypelargetwopaddedtop
+{
+	border:1px solid #330099;
+	padding: 10px 5px 4px 5px;
+	background-color:#99ccff;
+	line-height:1.5;
+	margin-bottom: 4px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:765px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:755px; /* compliant browser width */
+	}
+
+/* b-ing :) 2 Opera 5 */
+html>.boxtypelargetwopaddedtop
+{width:755px;}
+
+.boxtypelargetwomargintop
+{
+	border:1px solid #330099;
+	padding: 10px 5px 4px 5px;
+	background-color:#99ccff;
+	line-height:1.5;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:765px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:755px; /* compliant browser width */
+	}
+
+/* b-ing :) 2 Opera 5 */
+html>.boxtypelargetwomargintop
+{width:755px;}
+
+#boxtypetwelvetickets, .boxtypetwelvetickets{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:765px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:755px; /* compliant browser width */
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwelvetickets {width:755px;}
+
+.boxtypetwelverefine{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 5px;
+	width:765px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:755px; /* compliant browser width */
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwelverefine {width:755px;}
+
+.boxtypetwentyfive
+{	
+	border:1px solid #330099;
+	padding: 0px 5px 0px 5px; 
+	margin: 5px 5px 0px 5px;
+	background-color:#ffffff;
+	width:755px;  /* ie55 width */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:743px; /* compliant browser width */
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentyfive, html>#boxtypetwentyfive
+{width:743px;}
+
+.boxtypetwentysix
+{
+	border-top:none;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	margin: 0px 5px 5px 5px;
+	width:753px;  /* ie55 width */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:753px; /* compliant browser width */
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentysix
+{width:753px;}
+
+#dmtitletickets, .dmtitletickets
+{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	width:755px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:745px; /* compliant browser width */
+}
+/* width for opera browser */
+html>#dmtitletickets {width: 745px;}
+
+.boxtypeerrormsgthree
+{
+	padding:0px 5px 0px 5px;
+	width:767px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:767px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeerrormsgthree {width:767px;}
+
+/* END OF EXTEND JOURNEY LINE VIEW CONTROL */
+
+/* EXTEND RESULTS PAGES */
+.extendedResults
+{
+	background-color: White;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #330099;
+}
+
+#labelOutwardOptionsTitle
+{
+	padding-left: 5px;
+}
+
+#labelReturnOptionsTitle
+{
+	padding-left: 5px;
+}
+
+#combinedSummaryTitle
+{
+	padding-left: 5px;
+}
+
+.ResultsViewDisplay
+{
+	text-align: right;
+	margin: 10px 5px 5px 0px;
+}
+
+.ExtendedLabels
+{
+	float: left;
+}
+
+.HeaderLabels
+{
+	float: left;
+}
+.ExtendedButtons
+{
+	float: right;
+	vertical-align: top;
+}
+.HeaderButtons
+{
+	float: right;
+	vertical-align: top;
+}
+.outwardTableSection
+{
+	padding-bottom: 10px;
+}
+/* END OF EXTEND RESULTS PAGES */
+.boxtypeJourneyBuilderWithPadding
+{
+	background-color: #ffffff;
+	margin-top: 10px;	
+	margin-left: 5px;
+	margin-bottom: 15px;
+	width:767px;/* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:767px; /* compliant browser width */
+	height: 10px;
+	clear: both;
+}
+
+/* width for opera browser */
+html>.boxtypeJourneyBuilderWithPadding {width: 767px;}

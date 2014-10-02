@@ -1,0 +1,224 @@
+/*
+put all the css titles i.e. CalLable to lowercase i.e. callable likewise ammend where it says FONT-SIZE etc to font-size
+
+xml and xhtml should be coded strictly in lowercase do not use uppercase or upperlower mixed
+*/
+body
+{
+}
+
+#calouter
+{
+    border: 1px solid #330099;
+    padding: 3px;
+    background-color: white;
+    width: 175px;
+}
+
+#calouterposition
+{
+	width: 100%;
+}
+
+.CalLabel
+{
+    font-size: 0.8em;
+    font-family: verdana, arial, helvetica, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    border: 0;
+}
+
+.CalButton
+{
+    clear: none;
+    font-size: 0.7em;
+    cursor: hand;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+    text-align: center;
+    border: 1px solid #330066;
+    filter: Glow(Color=red, Strength=1);
+    width: 18px;
+}
+
+
+.CalButton1
+{
+    clear: none;
+    cursor: hand;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    text-align: center;
+    color: #000000;
+    border: 3px groove #99ccff;
+    filter: Glow(Color=red, Strength=1);
+    width: 18px;
+    background-color: #cccccc;
+}
+
+.CalButton2
+{
+    clear: none;
+    cursor: hand;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    text-align: center;
+    color: #000000;
+    border: 3px groove #ffff99;
+    filter: Glow(Color=red, Strength=1);
+    width: 18px;
+    background-color: #cccccc;
+}
+
+.CalButton3
+{
+    clear: none;
+    cursor: hand;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #330066;
+    filter: Glow(Color=red, Strength=1);
+    width: 18px;
+    background-color: #ffff99;
+}
+
+.SelectedCalButton
+{
+    clear: none;
+    font-weight: bold;
+    font-size: 0.7em;
+    cursor: hand;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #663366;
+    text-align: center;
+    border: 1px solid #330066;
+    filter: Glow(Color=red, Strength=1);
+    width: 18px;
+    text-align: center;
+}
+
+.SelectedCalButton1
+{
+    clear: none;
+    border: 3px groove #99ccff;
+    padding-right: 1px;
+    font-weight: bold;
+    font-size: 0.7em;
+    filter: Glow(Color=red, Strength=1);
+    padding-bottom: 1px;
+    width: 18px;
+    cursor: hand;
+    color: #000000;
+    padding-top: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: green;
+    text-align: center;
+}
+
+.SelectedCalButton2
+{
+    clear: none;
+    border: 3px groove #ffff99;
+    padding-right: 1px;
+    font-weight: bold;
+    font-size: 0.7em;
+    filter: Glow(Color=red, Strength=1);
+    padding-bottom: 1px;
+    width: 18px;
+    cursor: hand;
+    color: #000000;
+    padding-top: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: green;
+    text-align: center;
+}
+
+.SelectedCalButton3
+{
+    clear: none;
+    border: 3px #cc0033 groove;
+    padding-right: 1px;
+    font-weight: bold;
+    font-size: 0.7em;
+    filter: Glow(Color=red, Strength=1);
+    padding-bottom: 1px;
+    width: 18px;
+    cursor: hand;
+    color: #000000;
+    padding-top: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: green;
+    text-align: center;
+}
+
+.GreyCalButton
+{
+    clear: none;
+    font-size: 0.7em;
+    cursor: hand;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+    text-align: center;
+    border: 1px solid #330066;
+    filter: Glow(Color=red, Strength=1);
+    width: 18px;
+    text-align: center;
+    color: Gray;
+}
+
+.GreyCalButton1
+{
+    clear: none;
+    padding-right: 1px;
+    font-size: 0.7em;
+    filter: Glow(Color=red, Strength=1);
+    padding-bottom: 1px;
+    border: 3px groove #99ccff;
+    width: 18px;
+    cursor: hand;
+    color: gray;
+    padding-top: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+.GreyCalButton2
+{
+    clear: none;
+    padding-right: 1px;
+    font-size: 0.7em;
+    filter: Glow(Color=red, Strength=1);
+    padding-bottom: 1px;
+    width: 18px;
+    cursor: hand;
+    color: gray;
+    padding-top: 1px;
+    border: 3px groove #ffff99;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+.GreyCalButton3
+{
+    clear: none;
+    border: 1px solid #330066;
+    padding-right: 1px;
+    font-size: 0.7em;
+    filter: Glow(Color=red, Strength=1);
+    padding-bottom: 1px;
+    width: 18px;
+    cursor: hand;
+    color: gray;
+    padding-top: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #ffff99;
+    text-align: center;
+}

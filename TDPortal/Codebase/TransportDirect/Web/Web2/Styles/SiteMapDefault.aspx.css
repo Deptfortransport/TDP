@@ -1,0 +1,29 @@
+#boxtypeeightsmap
+{
+	height:595px;
+}
+
+ul {margin: 0px 0px 10px 10px; padding: 0px 0px 0px 10px;}
+ul.lister, ul#lister {list-style: inside; list-style-type: disc;}
+
+.subCategories
+{
+	font-size:1em;
+	color:Red;
+	text-indent:25px;
+}
+
+#sitemapFooterNote
+{
+	font-size:0.8em;
+	color: #000000;
+	text-align:center;
+	margin-bottom:25px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+p
+{
+	color:Green;
+}

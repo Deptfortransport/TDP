@@ -1,0 +1,18 @@
+﻿/* Details table heading row */
+#boxtypetwelve #dmtitle
+{
+	background-color: #F2F1EF;
+}
+
+/* start - override journey emissions styles */
+#boxtypeJEfour
+{
+    width: 826px;
+    margin: 0px 0px 5px 10px;
+}
+
+#boxtypeJEfive
+{
+    width: 826px;
+}
+/* end - override journey emissions styles */

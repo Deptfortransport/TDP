@@ -1,0 +1,327 @@
+/* ---------------------------- HOMEPAGE(S) STYLES -----------------------------*/
+
+.HomepageOutlineTable
+{
+	width: 100%;
+	padding-top: 10px;
+}
+
+#pagelayout /* Travel news page */
+{
+	width: 100%;
+	padding: 10px 10px 10px 0px;
+}
+
+/* ---------------------------- LEFT HAND NAVIGATION ---------------------------*/
+.LeftHandNavigationBar
+{
+	background-color: #FFFFFF;
+}
+
+.HomePageMenu
+{
+	margin-left: 5px;
+}
+
+.categoryLink
+{
+	background-color: #DF0094;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+
+.subcategoryLink
+{
+	background-color: #F4F4F4;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	border-bottom: solid 10px #FFFFFF;
+}
+
+.subcategoryLink li
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	border-bottom: solid 1px #999999;
+}
+
+.subrootcategoryLink
+{
+	background-color: #F4F4F4;
+	margin-left: 0px;
+	border-bottom: none;
+}
+
+.subrootcategoryLink li
+{
+	padding-left: 0px;
+	border-bottom: none;
+}
+
+/* ---------------------------- HOMEPAGE COLUMNS --------------------------------------*/
+/* Homepage and Mini-homepage columns */
+.HomepageMainLayoutColumn1,
+.HomepageMainLayoutColumn2
+{
+	background-color : #FFFFFF;
+}
+
+.HomepageMainLayoutColumn3,
+.HomepageMainLayoutColumn4
+{
+	background-color : #FFFFFF;
+	border-top-width: 3px;
+}
+
+.HomepageMainLayoutColumn4
+{
+	padding-right: 5px;
+}
+
+/* Panel headers */
+.Column1Header
+{
+	background-color : #FFEB00;
+	border: solid 1px #999999;
+	border-bottom: none;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	height: 24px;
+}
+
+.Column2Header
+{
+	background-color : #0099FF;
+	padding-bottom: 5px;
+	border: none;
+	padding-left: 10px;
+	height: 24px;
+}
+
+#TDTipsHtmlPlaceholderDefinition .Column2Header
+{
+	background-color : #DF0094;
+}
+
+.Column1Header h1,
+.Column2Header h1
+{
+	
+	font-size: 1.0em;
+}
+
+.Column2Header .txtsevenbwl
+{
+	color: #FFFFFF;
+}
+
+/* Link within heading - to align */
+.txtsevenbwrlink
+{
+	margin-top: 5px;
+}
+
+.Column3Header
+{
+	background-color: #666666;
+	border: none;
+	min-height: 20px;
+	padding-top: 5px;
+}
+
+.Column3Header .txtsevenbbl
+{
+	color: #FFFFFF;
+}
+
+/* Panel content */
+.Column1Content1,
+.Column1Content2,
+.Column2Content1,
+.Column2Content2
+{
+	background-color: #F4F4F4;
+	border: solid 1px #999999;
+	border-top: none;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+}
+
+
+.Column2Content1
+{
+	border: solid 10px #0099FF;
+	border-top: none;
+	padding-bottom : 0px;
+	margin-bottom: 10px;
+	width: 260px;
+}
+
+.Column2Content2
+{
+	border: solid 10px #DF0094;
+	border-top: none;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	width: 260px;
+}
+
+.Column1Content2,
+.Column2Content2
+{
+	min-height: 200px;
+}
+
+.Column2Content2
+{
+	padding: 0px 10px;
+}
+
+.Column3Content
+{
+	background-color : #F4F4F4;
+	border: none;
+	margin-bottom: 10px;
+	width: 190px;
+}
+
+/* Text within the homepage columns */
+.HomepageControlColumn1
+{
+	text-align: left;
+	padding-left: 7px;
+}
+
+
+/* ---------------------------- INFORMATION ON MINI HOMEPAGES -----------------------------*/
+/* Information area */
+.MinihomeHyperlinksInfoContent
+{
+	background-color: #FFFFFF;
+	border: none;
+	width: 625px;
+	margin: 5px 5px 5px 7px;
+	padding: 0px;
+}
+
+/* Heading for mini homepage information sections */
+.MinihomeHyperlinksInfoHeader
+{
+	background-color : #FFEB00;
+	width: 610px;
+	margin: 0px;
+}
+
+/* Headings in information section */
+.MinihomeHyperlinksInfoHeader .txtsevenbbl /* H4 equivalent */
+{
+	font-size:1.1em;
+	color: #000000;
+}
+
+.MinihomeSoftContent
+{
+	width: 605px;
+	margin: 0px;
+	padding: 5px 5px 0px 10px;
+	overflow-x: hidden;
+}
+
+.MinihomeSoftContent h3 /* H5 equivalent */
+{
+	font-size:1.05em;
+	color: #000000;
+	font-style: normal;
+}
+
+/* ---------------------------------- SITE MAP ------------------------------- */
+.smcSiteMapLink 
+{
+	border-bottom: solid 1px #E0E0E0; 
+}
+
+.smcSiteMapSubCategoryContent
+{
+	color: #333333;
+}
+
+/* ---------------------------------- SITE ERROR PAGES ------------------------------- */
+.errorPageTitle 
+{
+	margin-left: 0px;
+}
+
+/* ---------------------------------- POWERED BY CONTROL --------------------------------*/
+
+.Column3HeaderPoweredBy
+{
+	background-color: #666666;
+	height: 26px;
+}
+
+.Column3HeaderPoweredBy .txtsevenbbl
+{
+	color: #FFFFFF;
+}
+
+.Column3ContentPoweredBy
+{
+	background-color: #F4F4F4;
+	border: none;
+	margin-bottom: 10px;
+	padding-top: 40px;
+	padding-bottom: 45px;
+	text-align: center;
+}
+
+.PoweredByLogo /* wait page */
+{
+	text-align: center;
+}
+
+.divnavpoweredby
+{
+	overflow: hidden;
+}
+
+#headerControl_PoweredByControl_panelPoweredBy .PoweredByLogo,
+#HeaderControl1_PoweredByControl_panelPoweredByContent .PoweredByLogo
+{
+	height: 30px;
+	margin-top: -1px;
+	border: none;
+}
+
+/*------------------------------- BOOKMARK ----------------------------------------*/
+.HomepageBookmark
+{
+	width: 148px;
+}
+
+.HomepageBookmark #bookmarkText
+{
+	width: 115px;
+}
+
+/* hide the rounded corner */
+.artop
+{
+	display: none;
+}
+
+.HPControlLayoutTable
+{
+	left: 1px;
+}

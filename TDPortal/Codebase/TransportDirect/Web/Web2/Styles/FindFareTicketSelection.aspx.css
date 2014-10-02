@@ -1,0 +1,78 @@
+.bodyArea 
+{ 
+	width: 840px;
+}
+
+#boxtype11, .boxtype11, #boxtypeeightstd, .boxtypeeightstd
+{
+	margin-left: 10px;
+}
+
+#boxtypetdtheadertitlenodiscount, .boxtypetdtheadertitlenodiscount
+{
+	margin-left: 10px;
+	width: 806px;
+}
+
+#boxtypetdtheadernodiscount, #boxtypetdtitemsnodiscount, .boxtypetdtheadernodiscount, .boxtypetdtitemsnodiscount
+{
+	margin-left: 10px;
+	width: 816px;
+}
+
+#boxtypetdtitemsnodiscount table, .boxtypetdtitemsnodiscount table
+{
+	width: 100%;
+}
+
+#boxtypeeightstd, .boxtypeeightstd
+{
+	width: 818px;
+}
+
+#boxjourneychangesearchcontrol
+{
+	width: 820px;
+	padding-left:0px;
+	margin-left: 10px;
+}
+	
+div#helpboxoutput
+{
+	width: 817px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.boxtypeerrormsg
+{
+	padding-left: 0px;
+	margin-left: 10px;
+}
+
+.tdtfareitem
+{
+	text-align: left;
+}
+
+#boxtypetdtitemsnodiscountscroll, .boxtypetdtitemsnodiscountscroll
+{
+	margin-left:10px;
+	width:816px;
+}
+
+#ticketSelectionControl_repeaterResultTable
+{
+	width:100%;
+}
+
+#boxtypethirteen
+{
+	padding-left: 0px;
+}
+
+.boxtypethirteen
+{
+	padding-left: 0px;
+}

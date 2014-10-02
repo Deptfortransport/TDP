@@ -1,0 +1,61 @@
+#contentarea 
+{
+	background-color:#FFFFFF;
+	border:0px;
+	margin-left:5px;
+	padding-left:5px;
+	voice-family:inherit;
+	width:820px;
+}
+
+#primcontent 
+{
+	border:0pt none;
+	margin:0pt 0pt 0pt 0px;
+	padding:0pt;
+	position:relative;
+	width:835px;
+	overflow:hidden;
+	padding-left:3px;
+}
+
+#title
+{
+	padding-left:13px;
+	padding-bottom:3px;
+}
+
+.boxjourneychangesearchcontrol, #boxjourneychangesearchcontrol
+{
+	padding-left:17px;
+	height: auto;
+}
+
+.bodyArea
+{
+	width:840px;
+}
+
+.boxtypeStaticPages
+{
+	width:829px;
+}
+
+table#rsviewa 
+{
+	width:813px;
+}
+
+.rscolonea
+{
+	width:200px;
+}
+
+.rscolthreea
+{
+	width:350px;
+}
+
+.rscolonea {font-size: 0.7em;}
+.rscoltwoa {font-size: 0.7em;}
+.rscolthreea {font-size: 0.7em;}

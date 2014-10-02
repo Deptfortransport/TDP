@@ -1,0 +1,25 @@
+.WhiteSpaceBetweenColumns {
+	padding-left:9px;
+}
+
+.HomepageLayoutTable
+{
+	width:834px;
+}
+
+.FindALayoutTable
+{
+	width: 834px;
+}
+
+.HomepageMainLayoutColumn3
+{
+	height: 630px;
+	min-height:630px;
+	-moz-min-height:630px;
+}
+
+/* ie hack */
+* html .HomepageMainLayoutColumn3 {
+	height: 630px;
+}

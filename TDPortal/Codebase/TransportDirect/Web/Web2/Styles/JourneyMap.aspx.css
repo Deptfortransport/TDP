@@ -1,0 +1,65 @@
+.boxtypeeightstd
+{
+    margin-left: 10px;
+}
+
+.boxtypesixteen
+{
+    margin-left: 10px;
+    padding-top: 0px;
+    width: 828px;
+}
+
+.boxtypeseventeen,
+.boxtypeeighteen
+{
+	margin-left: 10px;
+	width: 826px;
+}
+
+.boxtypetwelveamendcontrol
+{
+    margin-left: 10px;
+    width: 816px;
+}
+
+#boxtypethirteen
+{
+	padding-left: 0px;
+	margin-left: 10px;
+}
+
+#boxjourneychangesearchcontrol
+{
+	margin-left: 5px;
+	width: 828px;	
+}
+
+/* Car journey directions shown below map */
+#directionsPanel .boxtypetwelve,
+#directionsPanelReturn .boxtypetwelve
+{
+	width : 816px;
+	margin: 0px 0px 5px 10px;
+}
+
+#directionsPanel .boxtypetwelve .boxtypetenfifteen, 
+#directionsPanel .boxtypetwelve .boxtypetwentynine,
+#directionsPanelReturn .boxtypetwelve .boxtypetenfifteen, 
+#directionsPanelReturn .boxtypetwelve .boxtypetwentynine
+{
+	width: 791px;
+}
+
+#dmtitle, .dmtitle
+{
+	width: auto;
+	margin-right: 3px;
+}
+
+.boxtypeerrormsgfour
+{
+    width: 828px;
+    padding: 0px;
+    margin-left: 0px;
+}

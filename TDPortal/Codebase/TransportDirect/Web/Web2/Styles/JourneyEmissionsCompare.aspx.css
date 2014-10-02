@@ -1,0 +1,63 @@
+.mainArea
+{
+	/*height:618px*/
+}
+
+.WhiteSpaceBetweenColumns
+{
+	padding-left:0px;
+}
+
+#boxtypeJEthree
+{
+	width:554px;
+}
+
+#boxtypeJEone
+{
+	width:566px;
+}
+
+#boxtypeJEtwo
+{
+	width:562px;
+}
+
+.HomePageMenu
+{
+	padding:0px;
+	float:left;
+	width:190px;
+	margin-bottom:10px;
+}
+
+#boxtypeeightalt
+{
+	width:572px;
+}
+
+#boxtypeJEfour
+{
+	width:567px;
+}
+
+#boxtypeJEfive 
+{
+	width:565px;
+}
+
+.HomepageMainLayoutColumn4
+{
+	height: 520px;
+	min-height: 520px;
+}
+
+* html .HomepageMainLayoutColumn4 {
+	height: 520px;
+}
+
+#boxtypeeightalt
+{
+	padding-top:8px;
+	*padding-top:5px;
+}

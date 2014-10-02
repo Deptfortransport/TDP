@@ -1,0 +1,25 @@
+/* Style sheet for specific Plan a Journey homepage */
+
+.HyperlinkTableCell
+{
+	width: 100px;
+	min-height: 85px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.HyperlinkDoorToDoor,
+.HyperlinkFindTrain,
+.HyperlinkFindFlight
+{
+    min-height: 108px;
+}
+.Column1Content1 
+{
+    border-bottom:0;
+    padding-left:0;
+    padding-right:0;
+    voice-family:inherit;
+    width:300px;
+}

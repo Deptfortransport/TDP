@@ -1,0 +1,134 @@
+th
+{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 100%;
+}
+
+.bglinehorizontal
+{
+	background-image: url(/Web2/App_Themes/TransportDirect/images/gifs/JourneyPlanning/en/linefillhorizontal.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+	vertical-align: middle;
+}
+
+.boxtypeten874x768blue
+{
+	border: 1px solid #330099;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 5px 10px;
+	background-color: #99ccff;
+	width: 828px;
+}
+
+.requestvisittable
+{
+	border: 1px solid #330099;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 5px 10px;
+	background-color: #ccccff;
+	width: 828px;
+}
+.requestvisittablerow
+{
+	font-size: 0.7em;
+}
+
+.requestedvisittable
+{
+	padding-right: 10px;
+	width: 95px;
+}
+
+.requestvisittableheader
+{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.boxtypewhite
+{
+	background-color: #FFFFFF;
+}
+
+.outer
+{
+	border: solid 2px black;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.oddRow
+{
+	background-color: #FFFFFF;
+}
+
+.evenRow
+{
+	background-color: #E6FFFE;
+}
+
+.selectRow
+{
+	background-color: #FFFF00;
+}
+.routeselectmain
+{
+	width: 264px;
+	border: solid 1px gray;
+}
+
+.journeylineend
+{
+	width: 132px;
+}
+
+.journeylinemiddle
+{
+	width: 264px;
+}
+
+.boxtypetwo
+{
+	border: 1px solid #330099;
+	padding: 5px 5px 5px 5px;
+	background-color: #99ccff;
+	width: 575px;
+	line-height: 1.5;
+	margin-bottom: 3px;
+	margin-right: 3px;
+	margin-left: 3px;
+	width: 575px;
+}
+
+.txtseven
+{
+	font-size: 0.7em;
+}
+
+.txtsevenb
+{
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+.rowheader
+{
+	background-color: #99ccff;
+	padding: 5px 3px 5px 3px;
+}
+
+.boxtyperesultsarea
+{
+	border: 1px solid #330099;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 5px 10px;
+	background-color: #ccccff;
+	width: 828px;
+}
+
+.boxtyperesultstitle
+{
+    padding: 5px 5px 5px 5px;
+	background-color: #FFFFFF;
+}

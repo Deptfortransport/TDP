@@ -1,0 +1,51 @@
+.boxtypeeightstd
+{
+    margin-left: 10px;
+}
+
+.boxtypesixteen
+{
+    margin-left: 10px;
+    padding-top: 0px;
+    width: 828px;
+}
+
+.boxtypeseventeen,
+.boxtypeeighteen
+{
+	margin-left: 10px;
+	width: 826px;
+}
+
+.boxtypetwelveamendcontrol
+{
+    margin-left: 10px;
+    width: 816px;
+}
+
+#boxtypethirteen
+{
+	padding-left: 0px;
+	margin-left: 10px;
+}
+
+#boxjourneychangesearchcontrol
+{
+	margin-left: 5px;
+	width: 828px;	
+}
+
+#boxtypetwelvetickets
+{
+	width:822px;
+}
+
+#dmtitletickets, #dmview 
+{
+	width:806px;
+}
+
+.fdetail
+{
+	table-layout:auto;
+}

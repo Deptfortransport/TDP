@@ -1,0 +1,49 @@
+﻿/* CSS Document for Transport Direct Portal */
+/* Styles for ParkAndRide page (non-printable) */
+/* This style sheet inherits from jpstd.css and should be used in addition to it */
+
+.parkAndRideHeading, .parkAndRideSubheading
+{
+	margin-left: 7px;
+}
+
+#boxtypetwoalt {
+	border:1px solid #330099;
+	padding: 5px 5px 4px 5px;
+	background-color:#99ccff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 4px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:823px;
+	height:346px;
+	
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwoalt {width:823px;}
+
+table#ColumnLeftPage {
+	width: 800px;	
+}
+
+.boxprinterfriendly {
+	padding-right: 3px;
+	height: 1.5em;
+	}
+	
+	#boxparkandride{	
+	overflow:auto;
+	border:1px solid #330099;
+	padding:0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:564px;
+	height:350px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxparkandride {width:564px;}

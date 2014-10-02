@@ -1,0 +1,435 @@
+/* ---------------------------- STYLES USED BY ALL PAGES -----------------------*/
+
+/* ---------------------------- PAGE --------------------------------*/
+/* Background colour for Portal - display when browser window wider than TD Portal page */
+body
+{
+	background-color: #FFFFFF;
+}
+
+/* ---------------------------- TEXT --------------------------------*/
+/* Page headings */
+html { font-size: 100%/*IE*/;}
+body, .bodyArea  { color: #333333;}
+
+/* Specific text colours */
+.txtseven, .txtsevenb, txteight, txteightb, .txtnote { color: #333333; }
+.txtsevenbwl { color: #000000; }
+
+/* ---------------------------- HEADINGS ---------------------------*/
+/* Headings - default line height*/
+h1, h2, h3, h4, h5, h6 {line-height:1.3em;}
+
+/* H2 equivalent for partner*/
+h1,
+#boxtypeeightstd h1, /* Mini homepages */
+.toptitlediv h1, /* Input pages: main page title */
+#boxtypeeightalt h1, /* Door to door ambiguity */
+#boxtypeeightstd .txtelevenb, /* Journey results: journeys found for */
+#boxtype11 .txtelevenb, .boxtype11 .txtelevenb, /* Journey results: journeys found for */
+#HelpLabelTitle, /* Help page */
+#boxtypeeight h1 /* Error pages */
+{
+	font-size:1.55em; 
+	color:#666699;
+}
+
+#boxtypeeightstd h2
+{
+	font-size: 1.2em;
+	color:#666699;
+	font-weight: bold;
+}
+
+.ExtendedLabels
+{
+	clear: both;
+	line-height: 35pt;
+}
+
+.boxtypesixteen h1, /* Modif journey title */
+.ExtendedLabels  /* Modify journey */
+{
+	font-size: 1.2em;
+	color:#666699;
+}
+
+/* H3 equivalent for partner */
+#boxtypesixteen h1,
+.boxtypesixteen h1, /* Journey results: Summary of journey options */
+#HelpBodyText h1, /* Help pages */
+.hdtypethree h2 /* Car park information page */
+{
+	font-size:1.25em;
+	color: #000000;
+}
+
+/* H4 equivalent for partner */
+#jpthdl, /* Input pages: advanced options */
+#boxtypeseventeen .txteightb, /* Journey results: Outward journeys */
+.boxtypeeighteen .txteightb, /* Journey results: Return journeys */
+#boxtypeeighteen .txteightb,
+#hdtypefour, .hdtypefour /* Car park information page */
+{
+	font-size:1.1em;
+	color: #000000;
+}
+
+/* H5 equivalent for partner */
+.dmtitletickets .txteightb, /* Tickets/costs: Fares: OutwardJourney */
+div#hhd /* Help - inline help title */
+{
+	font-size:1.05em;
+}
+
+h6
+{
+	font-size:1.0em;
+	color: #000000;
+}
+
+#contentarea h3 /* FAQ Sub headings */
+{
+	font-style: normal;
+	color: #000000;
+}
+
+/* ---------------------------- TEXT HEADINGS --------------------------------*/
+/* Headings within a background colour */
+.hdtypethree,
+#hdtypethree,
+div.controlText, /* used on Login/Register page */
+#smh, .smh /* Site map headings */
+{
+	background-color: #FFFFFF;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+#hdtypetwo, .hdtypetwo {
+	color: #000000;
+	background-color: #ffffff;
+	border: none;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+
+/* ---------------------------- LINKS --------------------------------*/
+a { color:#666699; }
+a:link { color:#666699; }
+a:hover, a:visited:hover { color:#666699; text-decoration: underline; }
+a:visited { color:#BF4400; }
+
+/* left hand menu links */
+.LeftHandNavigationBar a { color:#000000; }
+.LeftHandNavigationBar a:link { color:#000000; }
+.LeftHandNavigationBar a:hover { color:#000000; text-decoration: underline; }
+.LeftHandNavigationBar a:visited { color:#000000; }
+
+/* footer links */
+a.BlueLink { color:#FFFFFF; }
+a:link.BlueLink { color:#FFFFFF; }
+a:hover.BlueLink { color:#FFFFFF; text-decoration: underline; }
+a:visited.BlueLink { color:#FFFFFF; }
+
+/* icons on homepage links*/
+.FindATableCell a { color: #666699; font-weight:bold; }
+.FindATableCell a:link { color: #666699; text-decoration: none;}
+.FindATableCell a:hover, .FindATableCell a:visited:hover { color: #666699; text-decoration: underline; }
+.FindATableCell a:visited { color: #BF4400; }
+
+.FindATableTrunkCell a { color: #666699; font-weight:bold; }
+.FindATableTrunkCell a:link { color: #666699; text-decoration: none;}
+.FindATableTrunkCell a:hover, .FindATableTrunkCell a:visited:hover { color: #666699; text-decoration: underline; }
+.FindATableTrunkCell a:visited { color: #BF4400; }
+
+.HyperlinkTableCell a { color: #666699; font-weight:bold; }
+.HyperlinkTableCell a:link { color: #666699; text-decoration: none;}
+.HyperlinkTableCell a:hover, .HyperlinkTableCell a:visited:hover { color: #666699; text-decoration: underline; }
+.HyperlinkTableCell a:visited { color: #BF4400; }
+
+/* links on homepage content panel headings */
+a.txtsevenbwrlink { color: #000000; }
+a.txtsevenbwrlink:hover { color: #000000; text-decoration: underline; }
+a.txtsevenbwrlink:visited { color: #000000; }
+
+/* links in tips and tools panel on homepage */
+.TipsToolsTable a { color: #666699; font-weight:bold; text-decoration: none; }
+.TipsToolsTable a:hover, .TipsToolsTable a:visited:hover { color: #666699; text-decoration: underline; }
+.TipsToolsTable a:visited { color: #BF4400; }
+
+/* links in right hand information panel on homepage/input pages */
+.Column3Header a { color: #FFFFFF; text-decoration: none; }
+.Column3Header a:hover, .Column3Header a:visited:hover { color: #000000; text-decoration: underline; }
+.Column3Header a:visited { color: #FFFFFF; }
+.Column3Content a { color: #666699; text-decoration: none; }
+.Column3Content a:hover, .Column3Content a:visited:hover { color: #666699; text-decoration: underline; }
+.Column3Content a:visited { color: #BF4400; }
+
+/* links on mini homepage central information section */
+.MinihomeSoftContent a { color: #666699; text-decoration: none; }
+.MinihomeSoftContent a:hover, .MinihomeSoftContent a:visited:hover { color: #666699; text-decoration: underline; }
+.MinihomeSoftContent a:visited { color: #BF4400; }
+
+/* links in Tickets/costs results page (border not needed) */
+.fdtcbody1 a { color: #666699; border: none; }
+.fdtcbody1 a :hover, .fdtcbody1 a:visited:hover { color: #666699; text-decoration: underline; }
+.fdtcbody1 a:visited { color: #BF4400; }
+
+/* link outward/return journey on results page */
+.jptablelink,a.jptablelink{ color: #666699; }
+a:link.jptablelink { color: #666699; }
+a:hover.jptablelink{ color: #666699; text-decoration: underline; }
+
+/* links on list pages e.g. Departure boards */
+#contentarea a, #contentareawl a { color: #666699; font-weight:bold; text-decoration: none; }
+#contentarea a:hover, #contentareawl a:hover, #contentarea a:visited:hover, #contentareawl a:visited:hover { color: #666699; text-decoration: underline; }
+#contentarea a:visited, #contentareawl a:visited { color: #BF4400; }
+
+.TDHyperLinkStyleButton {color: #666699; text-decoration: none; } 
+.TDHyperLinkStyleButton:hover {color: #666699; text-decoration: underline; } 
+.TDHyperLinkStyleButtonMouseOver {color: #666699; text-decoration: underline; }
+
+/* links on Site map */
+.smc a { color: #666699; text-decoration: none; }
+.smc a:hover, .smc a:visited:hover { color: #666699; text-decoration: underline; }
+.smc a:visited { color: #BF4400; }
+
+/* links on Error pages */
+#panelMessage a {color: #666699; } 
+#panelMessage a:hover, #panelMessage a:visited:hover {color: #666699; text-decoration: underline; } 
+#panelMessage a:visited {color: #666699; }
+
+/* Information page links */
+#butl a:link { color: #666699; text-decoration: none; }
+#butl a:hover, #butl a:visited:hover {color: #666699; text-decoration: underline; } 
+#butl a:visited {color: #BF4400; }
+
+/* ---------------------------- PAGE HEADER CONTROL --------------------------------*/
+/* header background colours */
+#headerarea,
+#smalllogo,
+#navarea
+{
+	background: transparent; /* to allow background image to be displayed */
+}
+
+.headerandnavigationarea
+{
+	background: url(../../App_Themes/BusinessLink/images/gifs/Partner/bgHeader.jpg) repeat-x center top;
+	height: 132px; /* required for IE6 */  
+}
+
+#smalllogo
+{
+	height: 75px; /* controls header height */
+}
+
+/* navigation tabs area */
+#navarea
+{
+	margin: 20px 0px 5px 0px;
+	_margin: 20px 0px 1px 0px; /* hack for ie <6 */
+	text-align: left; /* left align the table containing nav buttons */
+}
+
+#menubuttons2
+{
+	float: left; 
+	width: 830px;
+}
+
+#menubuttons2 table /* left align the table containing nav buttons */
+{
+	margin: 0px;
+}
+
+.divnavpoweredby
+{
+	display: block;
+}
+
+/* ---------------- css for top navigation bar buttons */
+/* default style attributes that are common to all incarnations */
+.TDNavButton, .TDNavButton:hover, .TDNavButtonMouseOver
+{
+	
+	padding: 0px 10px 0px 10px;
+	#padding: 0px 1px 0px 1px; /* ie7 hack */
+	_padding: 0px 1px 0px 1px; /* hack for ie <6 */
+	height: auto;
+	#height: 30px; /* ie7 hack */
+	_height: 30px; /* hack for ie <6 */
+	min-height: 30px;
+	-moz-min-height: 30px;
+	border:none;
+}
+
+/* Additional style attributes for default for TDButton and hyperlink that looks like a TDButton */
+.TDNavButton
+{
+	color: #000000;
+	background-color:#FFFFFF;
+	background-image:url(../../App_Themes/BusinessLink/images/gifs/softcontent/ActiveTabBackground.GIF);
+}
+
+/* Additional style attributes for default for non IE hover for TDButton and hyperlink that looks like a TDButton */
+.TDNavButton:hover, .TDNavButtonMouseOver
+{	
+	color: #000000;
+	background-color: #F2F1EF;
+	background-image:url(../../App_Themes/BusinessLink/images/gifs/softcontent/ActiveTabBackground.GIF);
+}
+
+.TDNavButtonActive
+{
+	background:#F2F1EF;
+	background-image:url(../../App_Themes/BusinessLink/images/gifs/softcontent/ActiveTabBackground.GIF);
+}
+
+.TDNavButtonSeperator
+{
+	display: none;
+}
+
+/* --------- end of css for top navigation bar buttons */
+
+.TDNavButtonDefaultAction,
+.TDNavButtonDefaultActionMouseOver
+{
+	background-image:none;
+}
+
+.TDNavButtonHomeLogo,
+.TDNavButtonHomeLogoMouseOver
+{
+			background-image:url(../../App_Themes/BusinessLink/images/gifs/softcontent/en/tdlogo.gif);
+
+	height: 95px;
+	width: 132px;
+}
+
+/* ---------------------------- PAGE FOOTER CONTROL --------------------------------*/
+/* footer background image */
+#footer
+{
+	background: url(../../App_Themes/BusinessLink/images/gifs/Partner/bgFooter.gif) repeat-x center bottom;
+}
+
+/* table used to position version and naviagation links */
+table#nsiefixFooter
+{
+	width: 100%;
+	background: transparent; /* to allow background image to be displayed */
+}
+
+/* footer background colours */
+.footerVersion,
+.footerNavigation,
+#fnav,
+#ver,
+.TDLanguageLink, .TDLanguageLinkMouseOver
+{
+	color: #FFFFFF;
+	vertical-align: top;
+	text-align: left;
+	background: transparent; /* to allow background image to be displayed */
+}	
+
+.footerVersion /* table cell */
+{
+	font-weight: normal;
+	margin-top: 0px;
+	padding-left: 5px;
+	padding-top: 3px;
+}
+
+.footerNavigation /* table cell */
+{
+	float: left;
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	width: 100%;
+}
+
+#fnav /* div holding footer links */
+{
+	float: left;
+	padding: 0px;
+}
+
+ /* footer specific Language link */
+.TDLanguageLink, .TDLanguageLinkMouseOver
+{
+	font-weight: bold;
+	padding-top: 2px;
+	width: 107px;
+}
+
+
+/* ---------------------------- BUTTONS --------------------------------*/
+/* Default TDButton and hyperlink that looks like a TDButton */
+.TDButtonDefault, .TDButtonHyperlink, .buttonToolbarDownload
+{
+	color: #FFFFFF; 
+	background-color: #666699;
+	border: #D83D0C;
+}
+
+/* Default for non IE hover for TDButton and hyperlink that looks like a TDButton */
+.TDButtonDefault:hover, .TDButtonHyperlink:hover, .buttonToolbarDownload:hover
+{	
+	color: #FFFFFF;
+	background-color: #666699;
+	border: #D83D0C;
+}
+
+/* Default for IE javascript hover - additional attributes */
+.TDButtonDefaultMouseOver, .buttonToolbarDownloadMouseOver
+{	
+	color: #FFFFFF;
+	background-color: #666699;
+	border: #D83D0C;
+}
+
+/* TDButton with secondary style, e.g. Info buttons */
+.TDButtonSecondary
+{
+	color: #FFFFFF;
+	background-color: #999999;
+	border: #666666;
+}
+
+.TDButtonSecondaryMouseOver
+{
+	color: #FFFFFF;
+	background-color: #999999;
+	border: #666666;
+}
+
+/* Error Message Css */
+.boxtypeerrormsgtwo
+{
+	border-color:#666699;
+}
+
+.boxtypeerrormsgtwo .ErrorMessageBase .txterror
+{
+	color: #000000;
+}
+
+
+.boxtypeerrormsgtwo .ErrorDisplayTable h3
+{
+	font-style: normal;
+}
+
+.errordisplaytype
+{
+	color: #666699;
+}

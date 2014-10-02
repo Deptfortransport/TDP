@@ -1,0 +1,12 @@
+body
+{
+	background-color:White;
+}
+
+div#contentarea a,
+div#contentarea a:hover
+{
+    color: Black;
+    text-decoration: none;
+    cursor: text;
+}

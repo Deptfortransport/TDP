@@ -1,0 +1,52 @@
+#locationsControl_fromLocationControl_tristateLocationControl_locationUnspecified_textLocation,
+#locationsControl_toLocationControl_tristateLocationControl_locationUnspecified_textLocation
+{
+    width: 295px;
+}
+
+/* ---------------------------- */
+
+/* Cycle journey type control */
+.cycleJourneyType
+{
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.cycleJourneyType .findafromcolumn
+{
+	width: 110px;
+	float: left;
+	padding: 1px 5px 0px 5px;
+}
+
+.cycleJourneyType .findafromcolumn span,
+.cycleJourneyType .cycleJourneyTypeDisplay span
+{
+	vertical-align: top;
+}
+
+.cycleJourneyType .cycleJourneyTypeDisplay
+{
+	padding-top: 1px;
+}
+
+.cycleJourneyTypeDropDown
+{
+	vertical-align: bottom;
+	width: 200px;
+}
+
+.cycleSpeedUnitsDropDown
+{
+	width: 60px;
+}
+/* ---------------------------- */
+
+/* ---- Map css override ------ */
+.mcMapInputBox
+{
+    margin-left: 0px; 
+}
+/* ---------------------------- */
+

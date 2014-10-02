@@ -1,0 +1,384 @@
+/* CSS Document for Transport Direct Portal */
+/* Styles for pages (printable) showing Journey Emissions */
+
+/* Box for Compare control */
+#boxtypeJEfour {
+	border:1px solid #330099;
+	padding:3px;
+	background-color:#ffffff;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:635px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeJEfour {width:635px;}
+
+#boxtypeJEfive{
+	border:1px solid #330099;
+	padding:0px;
+	background-color:#ffffff;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:633px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeJEfive {width:633px;}
+/* End Box for Compare control */
+
+/* Printable green box border */
+#boxtypeJEPrintone{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#e3fbeb;
+	width:606px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeJEPrintone {width:620px;}
+
+#boxtypeJEPrinttwo
+{
+	background-color: #FFFFFF;
+	padding: 3px;
+	width:599px;
+}
+/* End Printable green box border */
+
+
+/* Style for Emissions Compare Control table */
+
+
+
+/* END Style for Emissions Compare Control table */
+
+
+/* Box for Results Summary Table */
+.boxtypelargetwo, #boxtypelargetwo
+{
+	border:1px solid #330099;
+	background-color:#ffffff;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:641px; /* compliant browser width */
+}
+
+/* b-ing :) 2 Opera 5 */
+html>.boxtypelargetwo, html>#boxtypelargetwo
+{width:641px;}
+
+.boxtypetwentyfive
+{	
+	border:1px solid #330099;
+	padding: 0px 5px 0px 5px; 
+	margin: 3px 3px 0px 3px;
+	background-color:#ffffff;
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:623px; /* compliant browser width */
+}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentyfive, html>#boxtypetwentyfive
+{width:623px;}
+
+.boxtypetwentysix
+{
+	border-top:none;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	margin: 0px 3px 3px 3px;
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:633px; /* compliant browser width */
+}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentysix
+{width:633px;}
+
+/* END Box for Results Summary Table */
+
+
+/* Style for Results Summary Table */
+.ejdetail
+{
+	table-layout: fixed;
+	padding: 0px;
+	width: 633px;
+	border: 0px;
+	font-size: 0.7em;
+	background-color: #FFFFFF;
+}
+
+/* results headers generic settings */
+.ejporighd, .ejpdesthd, .ejptranhd, .ejpleavhd, .ejparrihd, .ejpdurahd, .ejporighdwide, .ejpdesthdwide
+{
+	font-weight: bold;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* results headers bespoke settings */
+.ejporighd {width: 120px; text-align: left;}
+.ejpdesthd {width: 120px; text-align: left;}
+.ejptranhd {width: 120px; text-align: left;}
+.ejpleavhd {width: 85px;}
+.ejparrihd {width: 85px;}
+.ejpdurahd {width: 85px;}
+.ejporighdwide {width: 170px; text-align: left; padding-left: 5px;}
+.ejpdesthdwide {width: 170px; text-align: left;}
+
+/* results generic settings */
+.ejporig, .ejpdest, .ejptran, .ejpleav, .ejparri, .ejpdura, .ejporigwide
+{
+	text-align: center;
+	vertical-align: middle;
+	border-bottom-width: 0px;
+}
+
+/* results bespoke settings */
+.ejporig {text-align: left;}
+.ejpdest {text-align: left;}
+.ejptran {vertical-align: middle; text-align: left;}
+.ejporigwide {text-align: left; padding-left: 5px;}
+.ejptranwide 
+{
+	text-align: left; 
+	padding-left: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDDDDD
+}
+
+/* row background colouring */
+.eoddRow
+{
+	background-color: #FFFFFF;
+}
+
+.eevenRow
+{
+	background-color: #E6FFFE;
+}
+
+.eselectRow
+{
+	background-color: #FFFF00;
+}
+/* END Style for Results Summary Table */
+
+.graph
+{
+
+	border-bottom-color:Black;
+	border-bottom-style:solid;
+	border-width:1px;
+	padding:0px, 0px, 0px, 0px;
+	border-left-width:0px;
+	border-collapse:collapse;
+	
+
+}
+.test
+{
+	padding:0px, 0px, 0px, 0px;
+}
+.left
+{
+	
+}
+.rowPlaneEmissions
+{
+	padding-left:0px;
+	margin-left:0px;
+}
+
+table.emissionstable
+{
+	border-collapse:collapse;
+	border-width:0px;
+
+	padding: 5px;
+
+	
+}
+
+td.nospace
+{
+	border-left-color: Black;
+	border-left-style:solid;
+	border-width:1px;
+	
+}
+
+td.nospacegraph
+{
+	border-left-color: Black;
+	border-left-style:solid;
+	border-width:1px;
+	
+}
+
+td.graphLabelCell3
+{
+	padding: 5px, 5px, 5px, 0px;
+	border-collapse:collapse;
+	border-width:0px;
+}
+
+td.paddingclass
+{
+	padding :5px;
+
+}
+
+td.dropdownClass
+{
+	padding-right: 5px;
+}
+
+td.ecBorderBottomone
+{
+	padding:5px;
+}
+
+td.ecBorderBottomoneleft
+{
+	border-left-color: Black;
+	border-left-style:solid;
+	border-width:1px;	
+}
+
+td.ecBorderBottomTwo
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+	padding:5px;
+	
+}
+
+/*Styles added for CO2 Phase 2 */
+
+.leftBox
+{
+ left:-1px;
+ float:left;
+ vertical-align:text-bottom;
+}
+
+.rightBox
+{
+
+	float:left;
+	vertical-align:text-bottom;	
+}
+
+.newRightBox
+{
+	left:150px;
+	float:right;
+	vertical-align:text-bottom;	
+}
+
+.centreBox
+{
+	vertical-align:text-top;
+	float:left;
+	text-align:center;
+}
+
+.centreBox2
+{
+	vertical-align:text-top;
+	float:left;
+	text-align:center;
+	width:80px;
+}
+
+.leftBoxText
+{
+
+ font-size:0.7em;
+ vertical-align:text-bottom;
+}
+
+.rightBoxText
+{
+	font-size:0.7em;
+	vertical-align:text-bottom;	
+}
+
+.centreBoxText
+{
+	vertical-align:text-top;
+	text-align:center;
+	font-size:0.7em;
+}
+
+.width180
+{
+	width:180px;
+}
+
+table.emissiontable2
+{
+	width:150px;
+	border-color:Black;
+	border-style:solid;
+	border-width:1px;
+}
+
+.emissionheader
+{
+	background-color: #99ccff;
+	width:50px;
+	height:25px;
+	padding:5px;
+}
+
+.emissionheaderright
+{
+	background-color: #99ccff;
+	padding:5px;
+}
+
+.emissiondata
+{
+
+	padding:5px;
+	background-color: #FFFBEB;
+}
+
+.emissionsHeaderRow
+{
+	border-color:Black;
+	border-style:solid;
+	border-width:1px;	
+
+}
+
+.emissionsJourneyTable,
+.journeyEmissionsTableModeTable, .emissionheader, .emissionheaderright, .emissiondata
+{
+	border: solid 1px #000000;
+}
+
+/*End of styles added for CO2 Phase 2 */

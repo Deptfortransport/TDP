@@ -1,0 +1,2169 @@
+/* CSS Document for Transport Direct Portal */
+/* Styles for printable journey planner pages */
+/* This style sheet supersedes PrintMe.css and should be used instead of */
+/* Style names should mirror those in jpstd.css */
+/* Note that not all styles defined here are actually used by printable pages */
+
+div#TopWrapper, div.TopWrapper {
+	width: 640px;
+	height: 70px;
+}
+
+div#PrintDirlogo, div.PrintDirlogo {
+	border-width: 0;
+	vertical-align: super;
+	position: relative;
+	float:left;
+	padding: 10px 10px 10px 10px;
+}
+
+div#PrintStrap, div.PrintStrap {
+	border-width: 0;
+	vertical-align: super;
+	position: relative;
+	padding: 25px 10px 10px 10px;
+	float: right;
+}
+
+.NewPage 
+{
+	page-break-before: always;
+}
+
+#jpthdl, .jpthdl {font-size:0.9em; font-weight: bold; line-height:1.5;}
+#jpthds {font-size:0.8em; font-weight: bold; line-height:1.5;}
+.jpt, #jpt {font-size:0.7em; font-weight: normal; line-height:1.5;}
+
+#sizerone {text-align: right; padding-right: 5px; vertical-align: top; width: 95px;}
+
+.alertwarning {background-color: #FFFF00;}
+.alerterror {background-color: #FF0033;}
+
+#boxtypeone {
+	font-size: 0.7em;
+	border:1px solid #330099;
+	padding:2px 5px 2px 5px;
+	background-color:#ccccff;
+	width:575px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeone {width:575px;}
+
+#boxtypeone p {margin-top:0; margin-bottom:0; text-align:left; font-size:0.7em;}
+
+#boxtypetwo {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwo {width:575px;}
+
+#boxtypethree {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypethree {width:575px;}
+
+#boxtypethree td {font-size: 0.7em;}
+
+#boxtypefour {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	width:575px;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefour {width:575px;}
+
+#boxtypefive {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefive {width:575px;}
+
+#boxtypefive td {font-size: 0.7em;}
+
+#boxtypevia {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:575px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefive {width:575px;}
+
+#boxtypesix {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 0px;
+	background-color:#ffffff;
+	width:575px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypesix {width:575px;}
+
+/* journey planner pages should use this style in preference to boxtypeeight in setup.css */
+.boxtypeeightstd, #boxtypeeightstd{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width: 640px;
+	clear: both;
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeeightstd, html>#boxtypeeightstd {width:640px;}
+
+#boxtypenine {	
+	border:1px solid #cc6600;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:630px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:630px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypenine {width:755px;}
+
+
+.boxtypenineinner {	
+	border:1px solid #cc6600;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+}
+
+
+#boxtypenine p {font-size: 0.7em;}
+
+#boxtypenine p, ul, ol {font-size: 0.7em;}
+
+#nested {font-size: 1.4em;}
+.bullet {font-size: 1.0em; list-style: disc}
+
+#boxtypeten {	
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:630px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeten {width:743px;}
+
+#boxtypeten p {font-size: 0.7em;}
+
+.boxtypeeleven, #boxtypeeleven {
+	border:1px solid #330099;
+	padding:0px;
+	background-color:#ffffff;
+	width:641px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeeleven, html>#boxtypeeleven {width:631px;}
+
+.boxtypeeleven p, #boxtypeeleven p {font-size: 0.7em;}
+
+#boxtypetwelve, .boxtypetwelve {	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ddddff;
+	width:631px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwelve {width:631px;}
+
+#boxtypetwelve p {font-size: 0.7em;}
+
+#boxtypetwelvegreen{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#e3fbeb;
+	width:630px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwelvegreen {width:630px;}
+
+.boxtypethirteen, #boxtypethirteen {
+	border:0px;
+	background-color: #ffffff;
+	width:630px;
+	margin-bottom: 0px;
+	margin-left: 5px;	
+	padding-right: 5px;
+	padding-left: 5px;
+	clear: both;
+	}	
+/*Not supported by Netscape - must be in style tag on page */	
+/* @media print { .onscreen { visibility: hidden; } */
+	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypethirteen, html>#boxtypethirteen{width:755px;}
+
+#boxtypetenfifteen, .boxtypetenfifteen {	
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:605px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:605px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetenfifteen {width:605px;}
+
+.boxtypesixteen, #boxtypesixteen
+{
+	border: 0px;
+	padding: 5px 0px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width: 630px;
+	clear: both;
+}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypesixteen, html>#boxtypesixteen
+{width:630px;}
+
+/* used for Car journey type and options */
+#boxtypetwentynine, .boxtypetwentynine {	
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#FFFFFF;
+	width:605px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:605px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentynine {width:605px;}
+
+/*Used for Journey Overview page */
+#boxtypejourneyoverviewcontrol, .boxtypejourneyoverviewcontrol
+{
+	border-top:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	background-color:#ffffff;
+	padding:5px 0px 0px 0px;
+	margin-left: 5px;
+	width:639px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypejourneyoverviewcontrol, html>.boxtypejourneyoverviewcontrol
+{width:639px;}
+
+#focheaderbox p, .focheaderbox p {font-size: 0.7em;}
+
+.boxtypetravelincidents {	
+	padding:0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 5px;	
+	width: 642px;
+	}	
+
+.boxtypetravelincidents p {font-size: 0.7em;}
+
+.TravelIncidentsTable
+{
+	border-color: #330099;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-top: none;
+}
+
+.TravelIncidentsTable td, .TravelIncidentsTable th
+{
+	border-color: #330099;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    padding-left: 5px;
+}
+
+/* ================= Begin Journey Find Summary details maps fares tickests setup ================= */
+td.fscheader10 {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader9 {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader1 {width: 108px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader2 {width: 107px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader3 {width: 70px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader4 {width: 110px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader5 {width: 65px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader6 {width: 80px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader7 {width: 80px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+
+table.fscbody{padding: 0px; border: 0px; border-bottom-style: none; font-size: 0.7em; table-layout: fixed;}
+
+td.fscbody10 {width: 0px; background-color: #FFFFFF}
+td.fscbody9 {width: 0px; background-color: #FFFFFF}
+td.fscbody1 {width: 108px; background-color: #FFFFFF}
+td.fscbody2 {width: 107px; background-color: #FFFFFF}
+td.fscbody3 {width: 50px; background-color: #FFFFFF; text-align:center; padding-right:15px;}
+td.fscbody4 {width: 110px; background-color: #FFFFFF; padding-right: 10px;}
+td.fscbody5 {width: 65px; background-color: #FFFFFF}
+td.fscbody6 {width: 80px; background-color: #FFFFFF}
+td.fscbody7 {width: 80px; background-color: #FFFFFF}
+
+/* g denotes alternate row */
+td.fscbody10g {width: 0px; background-color: #E6FFFE;}
+td.fscbody9g {width: 0px; background-color: #E6FFFE;}
+td.fscbody1g {width: 108px; background-color: #E6FFFE;}
+td.fscbody2g {width: 107px; background-color: #E6FFFE;}
+td.fscbody3g {width: 50px; background-color: #E6FFFE; text-align:center; padding-right:15px;}
+td.fscbody4g {width: 110px; background-color: #E6FFFE; padding-right: 10px;}
+td.fscbody5g {width: 65px; background-color: #E6FFFE;}
+td.fscbody6g {width: 80px; background-color: #E6FFFE;}
+td.fscbody7g {width: 80px; background-color: #E6FFFE;}
+
+/* y denotes selected row */
+td.fscbody10y {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody9y {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody1y {width: 108px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody2y {width: 107px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody3y {width: 50px; font-weight: bold; background-color: #FFFF00; text-align:center; padding-right:15px;}
+td.fscbody4y {width: 110px; font-weight: bold; background-color: #FFFF00; padding-right: 10px;}
+td.fscbody5y {width: 65px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody6y {width: 80px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody7y {width: 80px; font-weight: bold; background-color: #FFFF00;}
+
+/* Styles for car mode */
+td.fscheader10c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader9c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader1c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader2c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader3c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader4c {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader5c {width: 150px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader6c {width: 150px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader7c {width: 322px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+
+td.fscbody10c {width: 0px; background-color: #FFFFFF}
+td.fscbody9c {width: 0px; background-color: #FFFFFF}
+td.fscbody1c {width: 0px; background-color: #FFFFFF}
+td.fscbody2c {width: 0px; background-color: #FFFFFF}
+td.fscbody3c {width: 0px; background-color: #FFFFFF}
+td.fscbody4c {width: 0px; background-color: #FFFFFF}
+td.fscbody5c {width: 150px; background-color: #FFFFFF}
+td.fscbody6c {width: 150px; background-color: #FFFFFF}
+td.fscbody7c {width: 325px; background-color: #FFFFFF}
+
+/* g denotes alternate row */
+td.fscbody10cg {width: 0px; background-color: #E6FFFE;}
+td.fscbody9cg {width: 0px; background-color: #E6FFFE;}
+td.fscbody1cg {width: 0px; background-color: #E6FFFE;}
+td.fscbody2cg {width: 0px; background-color: #E6FFFE;}
+td.fscbody3cg {width: 0px; background-color: #E6FFFE;}
+td.fscbody4cg {width: 0px; background-color: #E6FFFE;}
+td.fscbody5cg {width: 150px; background-color: #E6FFFE;}
+td.fscbody6cg {width: 150px; background-color: #E6FFFE;}
+td.fscbody7cg {width: 325px; background-color: #E6FFFE;}
+
+/* y denotes selected row */
+td.fscbody10cy {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody9cy {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody1cy {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody2cy {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody3cy {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody4cy {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody5cy {width: 150px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody6cy {width: 150px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody7cy {width: 325px; font-weight: bold; background-color: #FFFF00;}
+/* End Styles for car mode */
+
+/* Styles for trunk mode */
+td.fscheader10t {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader9t {width: 100px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader1t {width: 108px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader2t {width: 107px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader3t {width: 83px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099; text-align: center;}
+td.fscheader4t {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader5t {width: 65px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader6t {width: 80px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader7t {width: 80px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+
+
+
+td.fscbody10t {width: 0px; background-color: #FFFFFF}
+td.fscbody9t {width: 100px; background-color: #FFFFFF}
+td.fscbody1t {width: 108px; background-color: #FFFFFF}
+td.fscbody2t {width: 107px; background-color: #FFFFFF}
+td.fscbody3t {width: 85px; background-color: #FFFFFF; text-align: center;}
+td.fscbody4t {width: 0px; background-color: #FFFFFF}
+td.fscbody5t {width: 65px; background-color: #FFFFFF}
+td.fscbody6t {width: 80px; background-color: #FFFFFF}
+td.fscbody7t {width: 80px; background-color: #FFFFFF}
+
+/* g denotes alternate row */
+td.fscbody10tg {width: 0px; background-color: #E6FFFE;}
+td.fscbody9tg {width: 100px; background-color: #E6FFFE;}
+td.fscbody1tg {width: 108px; background-color: #E6FFFE;}
+td.fscbody2tg {width: 107px; background-color: #E6FFFE;}
+td.fscbody3tg {width: 85px; background-color: #E6FFFE; text-align: center;}
+td.fscbody4tg {width: 0px; background-color: #E6FFFE;}
+td.fscbody5tg {width: 65px; background-color: #E6FFFE;}
+td.fscbody6tg {width: 80px; background-color: #E6FFFE;}
+td.fscbody7tg {width: 80px; background-color: #E6FFFE;}
+
+/* y denotes selected row */
+td.fscbody10ty {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody9ty {width: 100px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody1ty {width: 108px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody2ty {width: 107px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody3ty {width: 85px; font-weight: bold; background-color: #FFFF00; text-align: center;}
+td.fscbody4ty {width: 0px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody5ty {width: 65px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody6ty {width: 80px; font-weight: bold; background-color: #FFFF00;}
+td.fscbody7ty {width: 80px; font-weight: bold; background-color: #FFFF00;}
+
+/* End Styles for trunk mode */
+
+/* Styles for cycle mode */
+td.fscheader10cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099; display:none;}
+td.fscheader9cycle {width: 150px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099; padding-left: 5px;}
+td.fscheader1cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099; display:none;}
+td.fscheader2cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099; display:none;}
+td.fscheader3cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099; display:none;}
+td.fscheader4cycle {width: 0px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099; display:none;}
+td.fscheader5cycle {width: 120px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader6cycle {width: 120px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+td.fscheader7cycle {width: 238px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; border-bottom: solid 1px #330099;}
+
+td.fscbody10cycle {width: 0px; background-color: #FFFFFF; display:none;}
+td.fscbody9cycle {width: 150px; background-color: #FFFFFF; padding-left: 5px;}
+td.fscbody1cycle {width: 0px; background-color: #FFFFFF; display:none;}
+td.fscbody2cycle {width: 0px; background-color: #FFFFFF; display:none;}
+td.fscbody3cycle {width: 0px; background-color: #FFFFFF; text-align:center; padding-right:15px; display:none;}
+td.fscbody4cycle {width: 0px; background-color: #FFFFFF; padding-right: 10px; display:none;}
+td.fscbody5cycle {width: 120px; background-color: #FFFFFF;}
+td.fscbody6cycle {width: 120px; background-color: #FFFFFF;}
+td.fscbody7cycle {width: 238px; background-color: #FFFFFF;}
+/* End styles for cycle mode
+
+/* ================= End Journey Find Summary details maps fares tickests setup ================= */
+
+/* ============= Begin Journey Details Results Table Grid Control ================= */
+
+table#jdt, table.jdt
+{
+	width: 620px;
+	background-color: #FFFFFF;
+}
+
+table#jdtgrid
+{
+	width: 620px;
+	font-size: 0.7em;
+	background-color: #FFFFFF;
+}
+
+table.jdtgrid
+{
+	width: 620px;
+	font-size: 0.7em;
+	background-color: #FFFFFF;
+}
+
+th#jdtheader1 {width: 12%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-left: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader2 {width: 16%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader3 {width: 5%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader4 {width: 8%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader5 {width: 16%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader6 {width: 8%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader7 {width: 5%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader8 {width: 24%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader9 {width: 10%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader10 {width: 6%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader11 {width: 0%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th#jdtheader12 {width: 0%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+
+th.jdtheader1 {width: 12%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-left: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader2 {width: 16%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader3 {width: 5%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader4 {width: 8%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader5 {width: 16%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader6 {width: 8%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader7 {width: 5%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader8 {width: 24%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader9 {width: 10%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader10 {width: 6%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader11 {width: 0%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+th.jdtheader12 {width: 0%; font-weight: bold; background-color: #CCCCCC; border-top: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+
+
+td#jdtbody1 {border-left: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody2 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody3 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody4 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody5 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody6 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody7 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody8 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody9 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody10 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody11 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td#jdtbody12 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+
+td.jdtbody1 {border-left: solid 2px #000000; border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody2 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody3 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody4 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody5 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody6 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody7 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody8 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody9 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody10 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody11 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+td.jdtbody12 {border-bottom: solid 2px #000000; border-right: solid 2px #000000;}
+
+/* ============= End Journey Details Results Table Grid Control ================= */
+
+/* ============= Begin Service Details Page and Controls ================= */
+
+table#sdTableBeforeAfter, table.sdTableBeforeAfter
+{
+	width: 580px; 
+	font-size: 0.7em;
+	border-top-width: 2px;
+	border-top-style: solid; 
+	border-top-color: #cccccc; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #cccccc; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #cccccc; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #cccccc;
+	margin-left: 15px;
+	border-collapse: collapse;
+}
+
+th#sdHeaderBeforeAfter, th.sdHeaderBeforeAfter
+{
+	background-color:#cccccc;	
+	font-weight: bold;
+}
+
+tr#sdDetailBeforeAfter, tr.sdDetailBeforeAfter
+{
+	background-color: #ffffff;
+}
+
+table#sdTableleg, table.sdTableleg
+{
+	width: 580px; 
+	font-size: 0.7em;
+	border-top-width: 2px;
+	border-top-style: solid; 
+	border-top-color: #0000ff; 
+	border-bottom-width: 2px;
+	border-bottom-style: solid; 
+	border-bottom-color: #0000ff; 
+	border-right-width: 2px; 
+	border-right-style: solid; 
+	border-right-color: #0000ff; 
+	border-left-width: 2px; 
+	border-left-style: solid; 
+	border-left-color: #0000ff;
+	margin-left: 15px;
+	border-collapse: collapse;
+}
+
+th#sdHeaderLeg, th.sdHeaderLeg
+{
+	background-color:#99ccff;	
+	font-weight: bold;
+}
+
+tr#sdDetailLeg, tr.sdDetailLeg
+{
+	background-color:#ffffff;	
+}
+
+th#sdHeaderBeforeAfterCol1, th.sdHeaderBeforeAfterCol1
+{
+	padding: 5px 5px 5px 10px;
+	width: 74%; 
+	border-top: solid 2px #aaaaaa; 
+	border-bottom: solid 2px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: left;
+}
+
+th#sdHeaderBeforeAfterCol2, th.sdHeaderBeforeAfterCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 2px #aaaaaa; 
+	border-bottom: solid 2px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+th#sdHeaderBeforeAfterCol3, th.sdHeaderBeforeAfterCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 2px #aaaaaa; 
+	border-bottom: solid 2px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+td#sdDetailBeforeAfterCol1, td.sdDetailBeforeAfterCol1
+{
+	padding: 5px 5px 5px 10px;
+	width: 74%; 
+	border-top: solid 1px #aaaaaa; 
+	border-bottom: solid 1px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: left;
+}
+
+td#sdDetailBeforeAfterCol2, td.sdDetailBeforeAfterCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #aaaaaa; 
+	border-bottom: solid 1px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+td#sdDetailBeforeAfterCol3, td.sdDetailBeforeAfterCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #aaaaaa; 
+	border-bottom: solid 1px #aaaaaa; 
+	border-right: solid 2px #aaaaaa; 
+	border-left: solid 2px #aaaaaa; 
+	text-align: center;
+}
+
+th#sdHeaderLegCol1, th.sdHeaderLegCol1
+{
+	padding: 5px 5px 5px 10px;
+	width: 74%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 2px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: left;
+}
+
+th#sdHeaderLegCol2, th.sdHeaderLegCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 2px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+th#sdHeaderLegCol3, th.sdHeaderLegCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 2px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegCol1, td.sdDetailLegCol1
+{
+	padding: 5px 5px 5px 20px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: left;
+}
+
+td#sdDetailLegColBold1, td.sdDetailLegColBold1
+{
+	padding: 5px 5px 5px 10px;
+	width: 13%; 
+	font-weight: bold;
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: left;
+}
+
+td#sdDetailLegColBold2, td.sdDetailLegColBold2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	font-weight: bold;
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegColBold3, td.sdDetailLegColBold3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	font-weight: bold;
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegCol2, td.sdDetailLegCol2
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+td#sdDetailLegCol3, td.sdDetailLegCol3
+{
+	padding: 5px 5px 5px 5px;
+	width: 13%; 
+	border-top: solid 1px #0000ff; 
+	border-bottom: solid 1px #0000ff; 
+	border-right: solid 2px #0000ff; 
+	border-left: solid 2px #0000ff; 
+	text-align: center;
+}
+
+th#sdHeaderBeforeAfterCol1 h4, 
+th#sdHeaderLegCol1 h4, 
+th.sdHeaderBeforeAfterCol1 h4, 
+th.sdHeaderLegCol1 h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sdHeader
+{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.sdNoteHeader
+{	
+	margin-left: 15px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.sdNoteDetail
+{
+	margin-left: 15px;
+	font-size: 0.7em;
+	font-weight: normal;
+	display: block;
+}
+
+/* ============= End Service Details Page and Controls ================= */
+
+.boxtypeerrormsg {	
+	padding:0px 5px 0px 5px;
+	width:630px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 0.7em;
+	color: Red;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:630px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeerrormsg {width:630px;}
+
+#discountbox {	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ffffff;
+	width:630px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:630px;
+	}	
+
+#dislable {background-color: #ffffff; padding: 2px; margin-bottom: 5px; width: 626px;}
+
+#calimg, .calimg {display: inline;}
+
+#helpimg {
+	float: right;
+	vertical-align: top;
+	clear: right;
+}
+
+div#helpbox {
+	position:absolute;
+	left:595px;
+	border: 1px solid #cc6600;
+	padding: 3px;
+	background-color: #FFFFCC;
+	width: 175px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:175px;
+	}
+div#helpboxrelative 
+{
+	border: 1px solid #cc6600;
+	padding: 3px;
+	background-color: #FFFFCC;
+	width: 175px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:175px;
+	}
+div#helpboxoutput 
+{
+	border: 1px solid #cc6600;
+	margin-bottom: 5px;
+	margin-left: 5px;	
+	padding: 3px;
+	background-color: #FFFFCC;
+	width:755px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+}
+div#helpboxfit 
+{
+	border: 1px solid #cc6600;
+	margin-bottom: 5px;
+	margin-left: 5px;	
+	padding: 3px;
+	background-color: #FFFFCC;
+	width:100%;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:100%;
+}
+/* b-ing :) 2 Opera 5 */
+html>#helpbox {width:175px;}
+html>#helpboxoutput {width:755px;}
+html>#helpboxfit {width:100%;}
+
+div#hhd {
+	font-weight: bold;
+	background-color: #FF9933;
+	padding: 2px;
+	font-size: 0.8em;
+}
+
+div#hline {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #cc6600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div#htxt {
+	color: #000000;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	border: 1px solid #FF6633;
+}
+
+div#htxt p {font-size: 0.7em;}
+
+#himg {float: right; clear: right; padding: 3px;}
+
+/* ================= map pages setup ================= */
+
+#mapcontrol {width: 760px;}
+
+#mapnav {vertical-align: top; width: 192px;}
+#mapcont {vertical-align: top;}
+
+div#controls {font-size: 0.7em;}
+table#controls td {font-size: 0.7em;}
+table.traffkey {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 0.7em;
+	width: 100%;
+}
+
+.locals {
+	font-size: 0.7em;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+}
+
+#boxtypethreem, .boxtypethreem {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:516px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:516px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypethreem, html>.boxtypethreem {width:516px;}
+
+#mapboxtypesix {
+	border:1px solid #ffffff;
+	padding:5px 5px 5px 0px;
+	width:555px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:555px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#mapboxtypesix {width:555px;}
+
+div#mapbox, div.mapbox {
+	border: 1px solid #330099;
+	padding: 3px;
+	width: 100px;
+	margin-bottom: 5px;
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	clear: both;
+}
+/* b-ing :) 2 Opera 5 */
+html>#mapbox, html>.mapbox {width:150px; }
+
+#boxtypefourm {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:555px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:555px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypefourm {width:555px;}
+
+.boxtypeonem, #boxtypeonem {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	width:516px;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:516px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>.boxtypeonem, html>#boxtypeonem {width:516px;}
+
+div#mhd, div.mhd {
+	font-weight: bold;
+	font-size: 0.8em;
+	background-color: #ffffff;
+	padding: 2px;
+}
+
+div#mtxt {color: #000000;}
+div#mtxt p {font-size: 0.7em;}
+#mopone {
+	vertical-align: top;
+	padding-right: 15px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #330099;
+}
+
+#moptwo {vertical-align: top; padding-left: 15px;}
+
+#maph {
+	height: 400px;
+	width: 511px;
+	border: 1px solid #330099;
+	background-color: #a9a9a9;
+}
+
+#mapa
+{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    height: 340px;
+    width: 451px;
+}
+
+#msmlm {
+	background-color: #ccccff;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	margin-top: 3px;
+}
+
+#mselc {width: 100%;}
+#msel, .msel {width: 100%; font-size: 0.7em;}
+#msel tr td, .msel tr td {margin: 0px; padding: 1px; border: 0px;}
+#marg {margin-bottom: 3px;}
+
+#picbox {
+	position:absolute;
+	left:565px;
+	border: 1px solid #ffffff;
+	padding: 3px;
+	background-color: #ffffff;
+	width:195px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:195px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#picbox {width:195px;}
+
+/* ================= Journey Summary details maps fares tickests setup ================= */
+table#pagef {padding: 0px; width: 755px; border: 0px; text-align: right; font-size: 0.7em;}
+table#jdetail, table.jdetail {padding: 0px; width: 100%; border: 0px; font-size: 0.7em;}
+table.jdetail2 {padding: 0px; width: 100%; border: 0px; font-size: 0.7em; background-color: #FFFFFF; border-color:#FF0000;}
+table#sumdetail {padding: 0px; width: 100%; border: 0px;}
+#sumd {vertical-align: text-top;}
+table#retailtable {padding: 0px; width: 605px; border: 0px;}
+.jsearchedfor {padding: 0px; width: 630px; border: 0px; font-size: 0.7em;}
+.jdstitlecell {vertical-align: text-top; width: 10%; font-weight: bold; padding: 5px 10px 0px 0px;}
+.jdstoprowb {vertical-align: text-top; width: 20%; font-weight: bold; padding: 5px 5px 0px 5px;}
+.jdstoprow {vertical-align: text-top; width: 35%; padding: 5px 0px 0px 0px;}
+.jds {vertical-align: text-top; width: 40%}
+
+
+table#jdetail3 {width: 620px; font-size: 0.7em; border-color:#330099;}
+
+
+#bluerule, .bluerule { color: #99ccff; }
+#maprule { color: #330099;}
+
+.jpsumout, #jpsumout {padding: 5px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099;}
+
+.jpsumrtn, #jpsumrtn {padding: 5px; text-align: left; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099;}
+
+#jpsumd {padding: 5px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099;}
+
+/* results headers */
+#jpnumbhd, .jpnumbhd {width: 82px; text-align: center; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jptypehd, .jptypehd {width: 122px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpchanhd, .jpchanhd {width: 109px; text-align: center; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpleavhd, .jpleavhd {width: 117px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jparrihd, .jparrihd {width: 117px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpdurahd, .jpdurahd {width: 152px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpimgbhd, .jpimgbhd {width: 65px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+
+/* results */
+#jpnumb, .jpnumb {width: 82px; text-align: center; font-weight: bold; background-color: #FFFFFF}
+#jptype, .jptype {width: 122px; background-color: #FFFFFF}
+#jpchan, .jpchan {width: 109px; text-align: center; background-color: #FFFFFF}
+#jpleav, .jpleav {width: 117px; background-color: #FFFFFF}
+#jparri, .jparri {width: 117px; background-color: #FFFFFF}
+#jpdura, .jpdura {width: 152px; background-color: #FFFFFF}
+#jpimgb, .jpimgb {width: 65px; text-align: center; background-color: #FFFFFF}
+
+/* results - g denotes alternate row */
+#jpnumbg, .jpnumbg {width: 82px; text-align: center; font-weight: bold; background-color: #E6FFFE;}
+#jptypeg, .jptypeg {width: 122px; background-color: #E6FFFE;}
+#jpchang, .jpchang {width: 109px; text-align: center; background-color: #E6FFFE;}
+#jpleavg, .jpleavg {width: 117px; background-color: #E6FFFE;}
+#jparrig, .jparrig {width: 117px; background-color: #E6FFFE;}
+#jpdurag, .jpdurag {width: 152px; background-color: #E6FFFE;}
+#jpimgbg, .jpimgbg {width: 65px; text-align: center; background-color: #E6FFFE;}
+
+/* results - y denotes selected row */
+#jpnumby, .jpnumby {width: 82px; text-align: center; font-weight: bold; background-color: #FFFF00;}
+#jptypey, .jptypey {width: 122px; font-weight: bold; background-color: #FFFF00;}
+#jpchany, .jpchany {width: 109px; font-weight: bold; text-align: center; background-color: #FFFF00;}
+#jpleavy, .jpleavy {width: 117px; font-weight: bold; background-color: #FFFF00;}
+#jparriy, .jparriy {width: 117px; font-weight: bold; background-color: #FFFF00;}
+#jpduray, .jpduray {width: 152px; font-weight: bold; background-color: #FFFF00;}
+#jpimgby, .jpimgby {width: 65px; text-align: center; font-weight: bold; background-color: #FFFF00;}
+
+/* itinerary headers */
+#jpnumbihd {width: 70px; text-align: center; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jporigihd {width: 70px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpdestihd {width: 95px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jptypeihd {width: 85px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpchanihd {width: 78px; text-align: center; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpleavihd {width: 83px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jparriihd {width: 83px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpduraihd {width: 65px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpimgbihd {width: 65px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+#jpimgbirhd {width: 65px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #330099; padding-top: 3px; padding-bottom: 4px; padding-left: 0px; padding-right: 0px;}
+
+/* itinerary */
+#jpnumbi {width: 70px; text-align: center; font-weight: bold; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jporigi {width: 95px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpdesti {width: 95px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jptypei {width: 85px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpchani {width: 78px; text-align: center; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpleavi {width: 83px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jparrii {width: 83px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpdurai {width: 110px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpimgbi {width: 65px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpimgbir {width: 65px; background-color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+
+/* itinerary - last row */
+#jpnumbil {width: 70px; text-align: center; font-weight: bold; background-color: #FFFFFF; padding: 0px;}
+#jporigil {width: 95px; background-color: #FFFFFF; padding: 0px;}
+#jpdestil {width: 95px; background-color: #FFFFFF; padding: 0px;}
+#jptypeil {width: 85px; background-color: #FFFFFF; padding: 0px;}
+#jpchanil {width: 78px; text-align: center; background-color: #FFFFFF; padding: 0px;}
+#jpleavil {width: 83px; background-color: #FFFFFF; padding: 0px;}
+#jparriil {width: 83px; background-color: #FFFFFF; padding: 0px;}
+#jpdurail {width: 110px; background-color: #FFFFFF; padding: 0px;}
+#jpimgbil {width: 65px; background-color: #FFFFFF; padding: 0px;}
+#jpimgbirl {width: 65px; background-color: #FFFFFF; padding: 0px;}
+
+/* itinerary - full itinerary */
+#jpnumbif {width: 70px; text-align: center; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jporigif {width: 95px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpdestif {width: 95px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jptypeif {width: 85px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpchanif {width: 78px; text-align: center; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpleavif {width: 83px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jparriif {width: 83px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpduraif {width: 110px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpimgbif {width: 65px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpimgbirf {width: 65px; background-color: #E6FFFE; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+
+/* itinerary - selected row */
+#jpnumbiy {width: 70px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jporigiy {width: 95px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpdestiy {width: 95px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jptypeiy {width: 85px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpchaniy {width: 78px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpleaviy {width: 83px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jparriiy {width: 83px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpduraiy {width: 110px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpimgbiy {width: 65px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+#jpimgbiry {width: 65px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DDDDDD; padding: 0px;}
+
+/* itinerary - last row - selected */
+#jpnumbily {width: 70px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jporigily {width: 95px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpdestily {width: 95px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jptypeily {width: 85px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpchanily {width: 78px; text-align: center; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpleavily {width: 83px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jparriily {width: 83px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpduraily {width: 110px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpimgbily {width: 65px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+#jpimgbirly {width: 65px; font-weight: bold; background-color: #FFFF00; padding: 0px;}
+
+/* itinerary - full itinerary - selected */
+#jpnumbify {width: 70px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jporigify {width: 95px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpdestify {width: 95px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jptypeify {width: 85px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpchanify {width: 78px; text-align: center; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpleavify {width: 83px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jparriify {width: 83px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpduraify {width: 110px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpimgbify {width: 65px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+#jpimgbirfy {width: 65px; font-weight: bold; background-color: #FFFF00; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #AAAAAA; padding: 0px;}
+
+#buttonli ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	font-size: 0.7em;
+	font-weight: bold;
+	} 
+
+#buttonli ul li {
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 2px 1px 0px 1px;
+	border: 1px solid #fff;
+	list-style: none;
+	display: inline;
+	}
+			
+#buttonli ul li.over {
+	border-bottom: 1px solid #ffc;
+	list-style: none;
+	display: inline;
+	}
+
+#dmtitle, .dmtitle {
+    width: 620px;
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+#dmtitlecompare, .dmtitlecompare {
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+/* less padding, used in JourneyEmissions */
+#dmtitletwo, .dmtitletwo
+{
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	margin-bottom: 1px;
+	width:625px;
+}
+
+#fmtitle {
+    width: 608px;
+    /* background-color: #99ccff; */
+	background-color: #ffffff;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	margin-top: 5px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #330099;
+	border-bottom-color: #330099;
+}
+
+#dmview {
+	background-color: #FFFFFF;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+
+#fmview, .fmview {
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border: 1px solid #330099;
+}
+
+#fview {
+	background-color: #ffffff;
+	margin-top: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+
+#disclaimer {
+	color: #000000;
+	width: 755px;
+	margin-left: 25px;
+}
+
+#disclaimer p {
+	margin-bottom: 10px;
+}
+
+.retailtxtsevenrow{
+    font-size: 0.7em;
+    line-height: 19px;
+}
+
+#fcolone {width: 33%}
+#fcoltwo {width: 33%}
+#fcolthree {width: 33%}
+
+.bgline {    
+	background-image: url(/Web2/App_Themes/TransportDirect/images/gifs/JourneyPlanning/en/linefill.gif);
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+
+.departline {
+    border-bottom-style:solid;
+    border-bottom-width: 1px;
+    border-bottom-color:#BEBEBE
+}
+
+.inlinemiddle
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inlinemiddle .txtnineb
+{
+    padding-right: 1px;
+}
+.featureImageDiv img
+{
+}
+.vehicleFeatureImageDiv img
+{
+    padding: 2px 1px 0px 1px;
+}
+.accessibleFeatureImageDiv
+{
+    padding-left: 1px;
+}
+.accessibleFeatureImageDiv img
+{
+    padding: 0px 1px 0px 1px;
+}
+
+.txteightbgrey {
+    font-size: 0.8em;
+    color: #FFFFFF
+}
+
+#route {width: 105px; text-align: center;}
+#routeline {width: 23px;}
+#routetime {width: 70px; text-align: center;}
+table#fview {width: 610px;}
+#livethdr {background-color: #99ccff; padding: 2px; margin-bottom: 5px;}
+tr#underline td {
+	vertical-align: bottom;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+}
+
+
+/* Styles for car journey details table */
+.carJourneyDetailsBoxType1 {}
+.carJourneyDetailsBoxType2 {}
+.carJourneyDetailsBoxType3 {}
+
+.carJourneyDetailsTableHeader1, /* step */
+.carJourneyDetailsTableHeader2, /* total distance */
+.carJourneyDetailsTableHeader3, /* direction */
+.carJourneyDetailsTableHeader4, /* time */
+.carJourneyDetailsTableHeader5, /* direction distance */
+.carJourneyDetailsTableHeader6, /* map button */
+.carJourneyDetailsTableHeader7  /* horizontal rule */
+{ 
+    vertical-align: middle; 
+    padding: 4px 4px 4px 4px; 
+}
+
+.carJourneyDetailsTableCell1, /* step */
+.carJourneyDetailsTableCell2, /* total distance */
+.carJourneyDetailsTableCell3, /* direction */
+.carJourneyDetailsTableCell4, /* time */
+.carJourneyDetailsTableCell5, /* direction distance */
+.carJourneyDetailsTableCell6  /* map button */
+{
+    vertical-align: middle; 
+    padding: 4px 4px 4px 4px; 
+}
+
+.carJourneyDetailsTableFooter1, /* step */
+.carJourneyDetailsTableFooter2, /* total distance */
+.carJourneyDetailsTableFooter3, /* direction */
+.carJourneyDetailsTableFooter4, /* time */
+.carJourneyDetailsTableFooter5, /* direction distance */
+.carJourneyDetailsTableFooter6  /* map button */
+{ 
+    vertical-align: middle; 
+    padding: 4px 4px 4px 4px; 
+}
+
+.carJourneyDetailsTableHeader1,
+.carJourneyDetailsTableCell1,
+.carJourneyDetailsTableFooter1
+{ 
+    width: 40px;
+}
+
+.carJourneyDetailsTableHeader2,
+.carJourneyDetailsTableCell2,
+.carJourneyDetailsTableFooter2
+{ 
+    width: 80px;
+}
+
+.carJourneyDetailsTableHeader4,
+.carJourneyDetailsTableCell4,
+.carJourneyDetailsTableFooter4
+{ 
+    width: 45px;
+    text-align: right;
+}
+
+.carJourneyDetailsTableHeader5,
+.carJourneyDetailsTableCell5,
+.carJourneyDetailsTableFooter5
+{ 
+    width: 45px;
+    text-align: center;
+}
+
+.carJourneyDetailsTableHeader6,
+.carJourneyDetailsTableCell6,
+.carJourneyDetailsTableFooter6
+{ 
+    width: 5px;
+}
+/* end */
+
+
+table#travelview 
+{
+	background-color: #ffffff;
+	margin-top: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+table#travelview td {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+table#travelgrid 
+{
+	background-color: #ffffff;
+	width: 650px;
+	table-layout: fixed;
+	margin-left: 5px;
+}
+table#travelgrid td 
+{
+	padding-right: 1px;
+	padding-left: 1px;
+}
+
+.tnhIncident {width: 11%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+.tnhRegion {width: 20%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+.tnhSeverity {width: 8%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+.tnhOccurred {width: 11%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+.tnhAffected {width: 10%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+.tnhOperator {width: 10%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+.tnhDetails {width: 19%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+.tnhLastUpdated {width: 11%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif; font-weight: bold;}
+
+.tnbIncident {width: 11%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+.tnbRegion {width: 20%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+.tnbSeverity {width: 8%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+.tnbOccurred {width: 11%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+.tnbAffected {width: 10%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+.tnbOperator {width: 10%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+.tnbDetails {width: 19%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+.tnbLastUpdated {width: 11%; font-size: 0.6em; font-family: Verdana, Arial, Helvetica, Sans Serif;}
+
+.travelIncident
+{
+	font-size: 0.6em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+}
+
+.travelIncidentAlt
+{
+	font-size: 0.6em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	/*background-color: silver;*/
+}
+
+#travelgry td {background-color: #cccccc; vertical-align: top;}
+#travelwhi td {background-color: #ffffff; vertical-align: top;}
+
+#boxparkandride{	
+	background-color:#ffffff;
+	padding:5px 5px 5px 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:630px;	
+	}
+/* b-ing :) 2 Opera 5 */
+html>#boxparkandride {width:630px;}
+
+#boxparkandride p {font-size: 0.7em;}
+
+table#parkandridegrid 
+{
+	border-color: #9999ff;
+	width: 630px;
+}
+
+#tnhLocation {width:30%; background-color: #ffffff; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;}
+#tnhComments {width:70%; background-color: #ffffff; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;}
+
+#tnbLocation {width:30%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+#tnbComments {width:70%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+
+#parkaltrow {background-color: #ffffff; vertical-align: top;}
+#parkrow {background-color: #ffffff; vertical-align: top;}
+
+.tnhLocation {width:30%; background-color: #ffffff; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;}
+.tnhComments {width:70%; background-color: #ffffff; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif; font-weight: bold;text-align:left;}
+
+.tnbLocation {width:30%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+.tnbComments {width:70%; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+
+.parkaltrow {background-color: #ffffff; vertical-align: top;}
+.parkrow {background-color: #ffffff; vertical-align: top;}
+
+.openIncident
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+}
+
+.clearedIncident
+{
+	font-size: 0.7em;
+	color: green;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+}
+.openIncidentAlternating
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	background-color: silver;
+}
+.clearedIncidentAlternating
+{
+	font-size: 0.7em;
+	color: green;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	background-color: silver;
+}
+
+/* ================= Journey Summary related sites left hand content type stuff ================= */
+
+table#rsview {
+	width: 100%;
+	background-color: #ffffff;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	
+	padding-left: 5px;
+}
+
+#rsview td {vertical-align: top;}
+#rscolone {font-size: 0.7em; width: 23%; padding-right: 5px;}
+#rscoltwo {font-size: 0.7em; width: 23%; padding-right: 5px; padding-left: 5px;}
+#rscolthree {font-size: 0.7em; width: 53%; padding-right: 5px; padding-left: 5px;}
+#fareslrg {padding-right: 5px;}
+
+table#rsviewa, table.rsviewa {
+	width: 595px;
+	background-color: #ffffff;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+
+.rscolonea {font-size: 0.7; width: 100px; padding-right: 5px;}
+.rscoltwoa {font-size: 0.7; width: 200px; padding-right: 5px; padding-left: 5px;}
+.rscolthreea {font-size: 0.7; width: 295px; padding-right: 5px; padding-left: 5px;}
+
+#mapicons {list-style-position: outside; font-size: 1.0em; margin-left: 20px; list-style-type: disc}
+
+/* =========================== Live Travel News setup =========================== */
+
+.TravelDataGrid {
+	width:630px;
+	font-size:0.7em;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	padding: 3px;
+}
+
+.TravelSelectedItem {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #000099;
+}
+
+.TravelAlternatingItem {
+	background-color: #cccccc;
+}
+
+.TravelHeader {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.TravelFooter {
+	background-color: #cccccc;
+}
+
+.TravelPager {
+	text-align: center;
+	color: #000000;
+	background-color: #999999;
+}
+
+/* special styles for Find Station pages */
+.tdstationheaderp
+{
+	background-color: #ccccff;
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	padding: 4px 1px 4px 1px;
+}
+
+.tdstationheader
+{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	padding: 4px 1px 4px 1px;
+}
+
+
+#boxtypestationresults
+{
+	border-top: 1px solid #330099;
+	border-bottom: 1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:640px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypestationresults{width:743px;}
+
+.pound {color: #808080;}
+
+.selectedticketlabel
+{
+	font-size: 0.8em;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: bold ;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+table#cct, table.cct
+{
+	width: 620px;
+	background-color: #ffffff;
+}
+
+table#cct2
+{
+	width: 610px;
+	background-color: #ffffff;
+}
+
+td#cc1, td.cc1 { width: 298px; }
+td#cc2, td.cc2 { width: 149px; }
+td#cc3, td.cc3 { width: 186px; text-align:left; }
+td#cc4, td.cc4 { width: 112px; text-align:right; }
+td#cc5, td.cc5 { width: 261px; }
+td#cc6 { font-weight:bold; text-align:right; padding: 0px 42px 0px 0px;
+	width: 86px; voice-family: "\";}\""; voice-family:inherit; /* width hack for old IE - includes padding */
+	width: 44px; /* correct CSS1 width */
+}
+html>td#cc6 {width: 44px;} /* correct CSS1 width for old Opera (undoes IE hack) */
+
+td#cc7 { font-weight:bold; text-align:right; padding: 0px 25px 0px 0px;
+	width: 86px; voice-family: "\";}\""; voice-family:inherit; /* width hack for old IE - includes padding */
+	width: 61px; /* correct CSS1 width */
+}
+html>td#cc7 {width: 61px;} /* correct CSS1 width for old Opera (undoes IE hack) */
+
+td#cc8, td.cc8 { width: 273px; padding: 0px;}
+td#cc9 { width: 263px; padding: 0px;}
+
+/* Styles used in repeated control as id is already used for object id and cannot
+   reference the style. NOTE: Keep the same as the td definitions below */
+.ccPounds { font-weight:bold; text-align:right; width: 70px;}
+.ccPence { font-weight:bold; text-align:left; width: 40px;}
+.ccUnknown { font-weight:bold; text-align:right; width: 110px; padding-right: 20px}
+/* ccUnknown has width of 110px as its a colspan 2 and spans the Pounds and Pence columns */
+
+td#ccPounds { font-weight:bold; text-align:right; width: 70px;}
+td#ccPence { font-weight:bold; text-align:left; width: 40px;}
+
+td#ccTotalPounds { font-weight:bold; text-align:right; width: 60px;}
+td#ccTotalPence { font-weight:bold; text-align:left; width: 50px;}
+
+.mwayLabel
+{
+	color:Blue;
+	background-color:White;
+	font-size:Larger;
+	font-weight:bold;
+}
+
+.travelNewsMapBox {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ccccff;
+	font-size: 0.7em;
+	line-height:1.5;
+	width:630px;
+	margin-left: 5px;
+	}		
+	
+.mapKeyControlBox
+{
+	border:1px solid #330099;
+	padding:5px 0px 5px 0px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+}	
+
+.travelNewsSummaryBox
+{
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	margin-bottom: 5px;
+	margin-left: 6px;
+	width:642px;
+}
+
+.divLocationTitle
+{
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #ccccff;
+}
+
+.panelLocationTitle
+{
+	padding-top: 3px;
+	padding-bottom: 6px;
+}
+
+/* EXTEND JOURNEY RESULTS TABLE */
+.ejdetail
+{
+	table-layout: fixed;
+	padding: 0px;
+	width: 630px;
+	border: 0px;
+	font-size: 0.7em;
+	background-color: #FFFFFF;
+}
+
+/* results headers generic settings */
+.ejpdelehd, .ejpdelehdempty, .ejporighd, .ejpdesthd, .ejptranhd, .ejpleavhd, .ejparrihd, .ejpdurahd, .ejpselehd, .ejpselehdempty, .ejporighdwide, .ejpdesthdwide, .ejptranhdwide, .ejptranhdsuperwide
+{
+	font-weight: bold;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* results headers bespoke settings */
+.ejpdelehd {width: 55px; padding-left: 5px;}
+.ejpdelehdempty {width: 55px; padding-left: 5px;}
+.ejporighd {width: 100px; text-align: left;}
+.ejpdesthd {width: 100px; text-align: left;}
+.ejptranhd {width: 104px; text-align: left;}
+.ejpleavhd {width: 70px;}
+.ejparrihd {width: 70px;}
+.ejpdurahd {width: 70px;}
+.ejpselehd {width: 45px; border-left-width: 1px; border-left-style: solid; border-left-color: #330099;}
+.ejpselehdempty {width: 45px;}
+.ejporighdwide {width: 120px; text-align: left; padding-left: 5px;}
+.ejpdesthdwide {width: 120px; text-align: left;}
+.ejptranhdwide {width: 129px; text-align: left;}
+.ejptranhdsuperwide {width: 175px; text-align: left;}
+
+/* results generic settings */
+.ejpdele, .ejpdeleempty, .ejporig, .ejpdest, .ejptran, .ejpleav, .ejparri, .ejpdura, .ejpsele, .ejpseleempty, .ejporigwide
+{
+	text-align: center;
+	vertical-align: middle;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDDDDD;
+}
+
+/* results bespoke settings */
+.ejporig {text-align: left;}
+.ejpdest {text-align: left;}
+.ejptran {vertical-align: middle; text-align: left;}
+.ejpsele {border-left-width: 1px; border-left-style: solid; border-left-color: #330099;}
+.ejporigwide {text-align: left; padding-left: 5px;}
+
+/* row background colouring */
+.eoddRow
+{
+	background-color: #FFFFFF;
+}
+
+.eevenRow
+{
+	background-color: #E6FFFE;
+}
+
+.eselectRow
+{
+	background-color: #FFFF00;
+}
+/* END OF EXTEND JOURNEY RESULTS TABLE */
+
+/* EXTEND JOURNEY LINE VIEW CONTROL */
+/* Note: The table that controls the format for this control has a set of columns that use 2 different widths as follows:
+   -----------------------------------------------------------------
+   Width2 | Width1 | Width2 | Width2 | Width1 | Width2 | Width2 | ... etc.
+   -----------------------------------------------------------------
+   Since the table uses colspan, there are more than just 2 width settings below, however, all width settings are derived
+   from Width1 and Width2.
+   Currently we have: Width1 = 23px
+					  Width2 = 65px
+   The derivations are noted below.
+*/
+.ejpColumnWidth1
+{
+	width: 23px;
+}
+
+.ejpColumnWidth2
+{
+	width: 65px;
+}
+
+.ejpLocationDescriptionCell
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 153px;	/* Width1 + (2*Width2) */
+	text-align: center;
+}
+
+.ejpPaddingCell
+{
+	width: 65px;	/* Width2 */
+}
+
+.ejpCircleCell
+{
+	width: 23px;	/* Width1 */
+}
+
+.ejpLineCell
+{
+	width: 130px;	/* 2*Width2 */
+}
+
+.boxtypewhitebackground
+{
+	border: 1px solid #330099;
+	padding: 20px 5px 20px 5px;
+	margin: 5px;
+	width: 642px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width: 632px; /* compliant browser width */
+}
+/* width for opera browser */
+html>.boxtypewhitebackground {width: 632px;}
+
+/* END OF EXTEND JOURNEY LINE VIEW CONTROL */
+
+.tableTitle
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+}
+
+.spacer1{font-size: 3px;}
+.spacer2{font-size: 1px;}
+
+.floatleftonly
+{
+	float: left;
+}
+.floatrightonly
+{
+	float: right;
+}
+
+.padding5Only
+{
+	padding: 5px 5px 5px 5px;
+}
+
+/* Styles for nearest car park*/
+td#fscheadercp1, th#fscheadercp1 {width: 60px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp2, th#fscheadercp2 {padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp3, th#fscheadercp3 {width: 110px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp4, th#fscheadercp4 {width: 10px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp5, th#fscheadercp5 {width: 10px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp6, th#fscheadercp6 {width: 90px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp7, th#fscheadercp7 {width: 50px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp8, th#fscheadercp8 {width: 70px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp9, th#fscheadercp9 {width: 50px; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+
+/* p denotes alternate row */
+td#fscheadercp1p, th#fscheadercp1p {width: 60px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp2p, th#fscheadercp2p {background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp3p, th#fscheadercp3p {width: 110px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp4p, th#fscheadercp4p {width: 10px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp5p, th#fscheadercp5p {width: 10px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp6p, th#fscheadercp6p {width: 90px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp7p, th#fscheadercp7p {width: 50px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp8p, th#fscheadercp8p {width: 70px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+td#fscheadercp9p, th#fscheadercp9p {width: 50px; background-color: #ccccff; padding-top: 4px; padding-bottom: 4px; padding-left:1px; padding-right: 1px; font-size: 0.7em; font-weight: bold;	font-family: Verdana, Arial, Helvetica, Sans-Serif;}
+	
+td.fscbodycp1, th.fscbodycp1 {width: 60px; background-color: #FFFFFF;}
+td.fscbodycp2, th.fscbodycp2 {background-color: #FFFFFF;}
+td.fscbodycp3, th.fscbodycp3 {width: 110px; background-color: #FFFFFF;}
+td.fscbodycp4, th.fscbodycp4 {width: 80px; background-color: #FFFFFF;}
+td.fscbodycp5, th.fscbodycp5 {width: 65px; background-color: #FFFFFF;}
+td.fscbodycp6, th.fscbodycp6 {width: 90px; background-color: #FFFFFF; padding-left: 8px;}
+td.fscbodycp7, th.fscbodycp7 {width: 40px; background-color: #FFFFFF;}
+
+/* g denotes alternate row */
+td.fscbodycp1g, th.fscbodycp1g {width: 60px; background-color: #E6FFFE;}
+td.fscbodycp2g, th.fscbodycp2g {background-color: #E6FFFE;}
+td.fscbodycp3g, th.fscbodycp3g {width: 110px; background-color: #E6FFFE;}
+td.fscbodycp4g, th.fscbodycp4g {width: 80px; background-color: #E6FFFE;}
+td.fscbodycp5g, th.fscbodycp5g {width: 65px; background-color: #E6FFFE;}
+td.fscbodycp6g, th.fscbodycp6g {width: 90px; background-color: #E6FFFE; padding-left: 8px;}
+td.fscbodycp7g, th.fscbodycp7g {width: 40px; background-color: #E6FFFE;}
+/* End styles for nearest car park*/
+
+.underlineCarPark  
+{
+	vertical-align: bottom;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+}
+
+/* Styles for Journey Overview */
+table#focheader, table.focheader
+{
+	padding: 0px; 
+	border: 0px; 
+	font-size: 0.7em; 
+	table-layout: fixed;
+}
+
+td#focheader1t, td.focheader1t {width: 85px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099; border-top: 1px solid #330099;}
+td#focheader2t, td.focheader2t {width: 110px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099; border-top: 1px solid #330099;}
+td#focheader3t, td.focheader3t {width: 118px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099; border-top: 1px solid #330099;}
+td#focheader4t, td.focheader4t {width: 119px; background-color: #FFFFFF; font-weight: bold; padding-top: 3px; padding-bottom: 4px;text-align:center; border-bottom: 1px solid #330099; border-top: 1px solid #330099;}
+
+td#focbody1t, td.focbody1t {width: 85px; background-color: #FFFFFF; text-align:center;}
+td#focbody2t, td.focbody2t {width: 110px; background-color: #FFFFFF; text-align:center;}
+td#focbody3t, td.focbody3t {width: 118px; background-color: #FFFFFF; text-align:center;}
+td#focbody4t, td.focbody4t {width: 119px; background-color: #FFFFFF; text-align:center;}
+
+td#focbody1tg, td.focbody1tg {width: 85px; background-color: #E6FFFE; text-align:center;}
+td#focbody2tg, td.focbody2tg {width: 110px; background-color: #E6FFFE; text-align:center;}
+td#focbody3tg, td.focbody3tg {width: 118px; background-color: #E6FFFE; text-align:center;}
+td#focbody4tg, td.focbody4tg {width: 119px; background-color: #E6FFFE; text-align:center;}
+
+/*last row styles*/
+td#focbody1t_lr, td.focbody1t_lr {width: 85px; background-color: #FFFFFF; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody2t_lr, td.focbody2t_lr {width: 110px; background-color: #FFFFFF; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody3t_lr, td.focbody3t_lr {width: 118px; background-color: #FFFFFF; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody4t_lr, td.focbody4t_lr {width: 119px; background-color: #FFFFFF; text-align:center; border-bottom: 1px solid #330099;}
+
+td#focbody1tg_lr, td.focbody1tg_lr {width: 85px; background-color: #E6FFFE; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody2tg_lr, td.focbody2tg_lr {width: 110px; background-color: #E6FFFE; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody3tg_lr, td.focbody3tg_lr {width: 118px; background-color: #E6FFFE; text-align:center; border-bottom: 1px solid #330099;}
+td#focbody4tg_lr, td.focbody4tg_lr {width: 119px; background-color: #E6FFFE; text-align:center; border-bottom: 1px solid #330099;}
+
+/* End Styles for Journey Overview
+
+/* Printable map image css - added by apatel */
+.printableImage
+{
+	width: 508px;
+	height: 397px;
+}
+
+.printableTravelNewsImage
+{
+	width: 630px;
+	height: 435px;
+}
+
+.txtelevenb
+{
+	width:640px;
+}
+
+/* css for FindFareSteps control images */
+.ImageFindFareStep
+{
+	position:relative;
+	display: inline;
+	margin:0 -6px 0 0;
+	padding:0;
+}
+
+.ImageFindFareStepsEnv
+{
+	width: 775px;
+	margin:0px;
+	padding: 0px;
+}
+
+.highTrafficSymbol, .roadNewsItem
+{
+    display: block;
+}
+
+.walkitLinkContainer
+{
+    display: none;
+}

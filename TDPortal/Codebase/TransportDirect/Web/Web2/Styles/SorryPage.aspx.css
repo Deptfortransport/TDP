@@ -1,0 +1,20 @@
+﻿#boxtypeeight{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	width:990px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	voice-family: "\";}\"";
+	clear: both;
+	voice-family:inherit;
+	width:990px;
+	clear: both;
+	height: 600px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeight {width:990px;}
+
+p {
+	margin-left:10px;
+	}

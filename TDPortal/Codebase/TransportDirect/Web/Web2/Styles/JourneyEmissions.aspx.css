@@ -1,0 +1,313 @@
+﻿/* CSS Document for Transport Direct Portal */
+/* Styles for JourneyEmissions page */
+/* This style sheet inherits from jpstd.css and should be used in addition to it */
+
+.boxtypelargetwo, #boxtypelargetwo
+{
+	border:1px solid #330099;
+	background-color:#99ccff;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:601px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:601px; /* compliant browser width */
+	}
+
+/* b-ing :) 2 Opera 5 */
+html>.boxtypelargetwo, html>#boxtypelargetwo
+{width:601px;}
+
+
+.ejdetail
+{
+	table-layout: fixed;
+	padding: 0px;
+	width: 588px;
+	border: 0px;
+	font-size: 0.7em;
+	background-color: #FFFFFF;
+}
+
+.boxtypesixteen, #boxtypesixteen
+{
+	border: 0px;
+	padding: 5px 0px 0px;
+	background-color:#ffffff;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	width:603px;
+	clear: both;
+}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypesixteen, html>#boxtypesixteen
+{width:603px;}
+
+#boxtypetwentyeight
+{
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:567px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentyeight {width:567px;}
+
+/* less padding, used in JourneyEmissions */
+#dmtitletwo
+{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-bottom: 1px;
+	width:590px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:590px; /* compliant browser width */
+}
+
+/* width for opera browser */
+html>.dmtitletwo {width: 590px;}
+
+#boxtypetwelve{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	width:591px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwelve {width:591px;}
+
+#boxtypetwelve p {font-size: 0.7em;}
+
+.boxtypetwelveamendcontrol{	
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:591px; /* ie55 width */
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	border:1px solid #330099;
+	padding:5px;
+	background-color:#ccccff;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	}	
+
+/* width for opera browser */
+html>.boxtypetwelveamendcontrol {width: 591px;}
+
+#boxtypethirteen {
+	border:0px;
+	background-color: #ffffff;
+	width:573px;
+	margin-bottom: 0px;
+	margin-left: 5px;	
+	padding-right: 5px;
+	padding-left: 5px;
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypethirteen{width:573px;}
+
+.boxtypetwentyfive
+{	
+	border:1px solid #330099;
+	padding: 0px 5px 0px 5px; 
+	margin: 5px 5px 0px 5px;
+	background-color:#ffffff;
+	width:590px;  /* ie55 width */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:578px; /* compliant browser width */
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentyfive, html>#boxtypetwentyfive
+{width:578px;}
+
+.boxtypetwentysix
+{
+	border-top:none;
+	border-bottom:1px solid #330099;
+	border-left:1px solid #330099;
+	border-right:1px solid #330099;
+	padding:0px;
+	margin: 0px 5px 5px 5px;
+	width:588px;  /* ie55 width */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:588px; /* compliant browser width */
+	}
+/* b-ing :) 2 Opera 5 */
+html>.boxtypetwentysix
+{width:588px;}
+
+/* used for Journey Emissions */
+#boxtypetwentyseven
+{
+	border:0px solid #330099;
+	padding:0px 0px 0px 0px;
+	background-color:#99ccff;
+	width:460px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-left: 0px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:460px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypetwentyseven {width:460px;}
+
+/* results headers generic settings */
+.ejpdelehd, .ejpdelehdempty, .ejporighd, .ejpdesthd, .ejptranhd, .ejpleavhd, .ejparrihd, .ejpdurahd, .ejpselehd, .ejpselehdempty, .ejporighdwide, .ejpdesthdwide, .ejptranhdwide, .ejptranhdsuperwide
+{
+	font-weight: bold;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #330099;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* results headers bespoke settings */
+.ejporighdwide {width: 135px; text-align: left; padding-left: 5px;}
+.ejpdesthdwide {width: 135px; text-align: left;}
+.ejptranhdsuperwide {width: 123px; text-align: left;}
+
+#boxtypetwentyseven img
+{
+	width:222px;
+}
+
+.ExtendedLabels
+{
+	margin-left: 9px;
+}
+
+.boxtypelargetwo, #boxtypetwelve, .boxtypetwelveamendcontrol, #boxtypethirteen
+{
+	margin-left: 11px;
+}
+
+.boxtypelargetwo
+{
+	margin-right: 1px;
+}
+
+#boxtypethirteen
+{
+	padding-left:0px;
+}
+
+.emissionHeader, .costHeader 
+{
+	background-color:#99CCFF;
+	height:25px;
+	padding:5px;
+	width:80px;
+}
+
+.transportHeader
+{
+	background-color:#99CCFF;
+	height:25px;
+	padding:5px;
+	width:385px;
+	text-align:left;
+}
+
+.emissiondata
+{
+
+	padding:5px;
+	background-color: #FFFBEB;
+}
+
+.TDLocationLink, .TDLocationLinkMouseOver
+{
+	font-size:8pt;
+	font-family:verdana, arial, helvetica, sans-serif; 
+	line-height:10pt;
+	background-color:Transparent;
+	margin:0px;
+	padding:0px;
+	border:none;
+	width:auto;
+	text-align:left;
+}
+
+.TDLocationLink
+{
+	color: #3300ff;
+	cursor:pointer;	
+}
+
+.TDLocationLinkMouseOver
+{
+	color: #8800CC;
+	cursor:pointer;
+	text-decoration:underline;	
+}
+
+.fuelUsedTitle
+{
+	padding-left:3px;
+	font-weight:bold;
+	font-size:0.9em;
+}
+
+#diagramTableSwitchHolder
+{
+	padding-left: 3px;
+}
+
+.panelFirstRow
+{
+	padding: 0px 50px 0px 20px;
+}
+
+.panelCarImages
+{
+	width: 270px;
+	height: 40px;
+}
+
+.transportHeader, .emissionHeader, .costHeader, .emissiondata
+{
+	border: inset 1px #c0c0c0;
+}
+
+.WhiteSpaceBetweenColumns
+{
+	padding: 0px;
+	width: 15px;
+}

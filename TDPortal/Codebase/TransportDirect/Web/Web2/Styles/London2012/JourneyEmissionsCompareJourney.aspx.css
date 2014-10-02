@@ -1,0 +1,48 @@
+@import url(ThemeBlue.css);
+
+/* CSS Document for Transport Direct Portal */
+/* Styles for JourneyEmissionsCompareJourney page */
+/* This style sheet inherits from jpstd.css and should be used in addition to it */
+
+.boxtypetwentyfive
+{	
+	width: 606px;
+	border-bottom: solid 1px #999999;
+}
+
+.boxtypetwentysix
+{
+	width: 616px;
+}
+
+.ejdetail
+{
+	width: 616px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 210px;
+}
+
+.JourneyEmissionInformationColumn .JourneyEmissionsPageRelatedLinks
+{
+	width: 208px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content .JourneyEmissionsPageRelatedLinks .categoryLink
+{
+	background-color: #F4F4F4;
+	padding-left: 0px;
+	margin-left: 3px;
+}
+
+.JourneyEmissionInformationColumn .Column3Content .JourneyEmissionsPageRelatedLinks .categoryLink li
+{
+	background: url(../../App_Themes/London2012/images/gifs/Partner/BlueArrow.gif) no-repeat left 7px;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	border-bottom: none;
+}

@@ -1,0 +1,33 @@
+#contentareawl
+{ 
+	width:800px;
+	overflow:auto;
+	height: 407px;
+}
+
+table#rsviewa, table.rsviewa  
+{
+	width:760px;
+}
+
+	
+/* b-ing :) 2 Opera 5 */
+html>#contentarea {width:760px;}
+
+html>table#rsviewa, html>table.rsviewa   {width:760px;}
+
+.bodyArea
+{
+	width:840px;
+}
+
+.rscolthreea ul
+{
+	font-size: 1em;
+	margin-left:15px;
+	list-style-type: disc;
+}
+
+.rscolonea {font-size: 0.7em;}
+.rscoltwoa {font-size: 0.7em;}
+.rscolthreea {font-size: 0.7em;}
