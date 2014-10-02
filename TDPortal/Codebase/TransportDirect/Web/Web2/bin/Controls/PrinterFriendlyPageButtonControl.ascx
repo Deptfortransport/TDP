@@ -1,0 +1,5 @@
+<%@ Control Language="c#" AutoEventWireup="True" Codebehind="PrinterFriendlyPageButtonControl.ascx.cs" Inherits="TransportDirect.UserPortal.Web.Controls.PrinterFriendlyPageButtonControl" targetSchema="http://schemas.microsoft.com/intellisense/ie5" enableViewState="False"%>
+<%@ Register TagPrefix="cc1" Namespace="TransportDirect.UserPortal.Web.Controls" Assembly="td.userportal.web" %>
+<noscript class="TDPrinterFriendlyButton"><font size="2"><asp:hyperlink id="hyperlinkPrint" runat="server" target="_blank"><asp:label id="hyperlinkText" cssclass="TDButtonHyperlink" runat="server"></asp:label></asp:hyperlink></font></noscript>
+<cc1:tdbutton id="printButton" runat="server" enableclientscript="true"  scriptname="<%# GetScriptName() %>" causesvalidation="False" 
+style="display:none;" CssClass="TDButtonDefault TDPrinterFriendlyButton" CssClassMouseOver="TDButtonDefaultMouseOver TDPrinterFriendlyButton"></cc1:tdbutton>

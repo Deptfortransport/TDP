@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<browsers>
+    <browser refID="Default">
+        <controlAdapters>
+          <adapter controlType="TransportDirect.UserPortal.Web.Controls.TDImageButton"
+                   adapterType="TransportDirect.UserPortal.Web.Controls.TDImageButtonAdapter" />
+        </controlAdapters>
+    </browser>
+</browsers>
