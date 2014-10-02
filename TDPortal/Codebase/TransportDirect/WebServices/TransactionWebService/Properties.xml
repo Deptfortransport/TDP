@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+	<property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+	<property name="propertyservice.version"     GID="" AID="">1</property>
+	<property name="propertyservice.property"    GID="" AID="">globalproperty</property>
+	
+	<!-- TD Transaction Service Properties -->
+	<property name="JourneyControl.NumberOfPublicJourneys" GID="" AID="">5</property>
+	<property name="JourneyControl.LogAllRequests"         GID="" AID="">Y</property>
+	<property name="JourneyControl.LogAllResponses"        GID="" AID="">Y</property>
+	<property name="JourneyControl.CJPTimeoutMillisecs"    GID="" AID="">120000</property>
+	<property name="DefaultDB" GID="" AID="">Integrated Security=SSPI;Initial Catalog=PermanentPortal;Data Source=localhost;</property>	
+	<property name="locationservice.servicename" GID="" AID="">tdp_del5</property>			
+	<property name="locationservice.servername"  GID="" AID="">tri-tdp-iis</property>
+	<property name="TransactionWebService.CJPConfigFilepath"  GID="" AID="">C:\Inetpub\wwwroot\TDPWebServices\TransactionWebService\cjp.client.config</property>				
+		
+	<!-- TD Event Service Properties -->
+	<property name="Logging.Publisher.Default"  GID="" AID="">File1</property>
+	<property name="Logging.Publisher.Queue"    GID="" AID=""></property>
+	<property name="Logging.Publisher.Email"    GID="" AID=""></property>
+	<property name="Logging.Publisher.EventLog" GID="" AID=""></property>
+	<property name="Logging.Publisher.Console"  GID="" AID=""></property>
+	<property name="Logging.Publisher.Custom"   GID="" AID=""></property>
+	<property name="Logging.Event.Custom" GID="" AID=""></property>
+	<property name="Logging.Event.Custom.Trace" GID="" AID="">Off</property>
+	<property name="Logging.Event.Operational.TraceLevel"         GID="" AID="">Verbose</property>
+	<property name="Logging.Event.Operational.Info.Publishers"    GID="" AID="">File1</property>
+	<property name="Logging.Event.Operational.Verbose.Publishers" GID="" AID="">File1</property>
+	<property name="Logging.Event.Operational.Warning.Publishers" GID="" AID="">File1</property>
+	<property name="Logging.Event.Operational.Error.Publishers"   GID="" AID="">File1</property>
+	<property name="Logging.Publisher.File" GID="" AID="">File1</property>
+	<property name="Logging.Publisher.File.File1.Directory" GID="" AID="">C:\Inetpub\wwwroot\TDPWebServices\TransactionWebService</property>
+	<property name="Logging.Publisher.File.File1.Rotation"  GID="" AID="">100</property>	
+</lookup>

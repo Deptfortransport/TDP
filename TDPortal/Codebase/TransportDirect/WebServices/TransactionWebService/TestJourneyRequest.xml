@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TDJourneyRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Modes>
+      <ModeType>Rail</ModeType>
+    </Modes>
+    <IsReturnRequired xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">false</IsReturnRequired>
+    <OutwardArriveBefore xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">false</OutwardArriveBefore>
+    <ReturnArriveBefore xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">false</ReturnArriveBefore>
+    <OutwardDateTime xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">
+      <Year>2003</Year>
+      <Month>10</Month>
+      <Day>16</Day>
+      <Hour>10</Hour>
+      <Minute>0</Minute>
+      <Second>0</Second>
+      <Millisecond>0</Millisecond>
+    </OutwardDateTime>
+    <ReturnDateTime xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">
+      <Year>0</Year>
+      <Month>0</Month>
+      <Day>0</Day>
+      <Hour>0</Hour>
+      <Minute>0</Minute>
+      <Second>0</Second>
+      <Millisecond>0</Millisecond>
+    </ReturnDateTime>
+    <InterchangeSpeed xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">0</InterchangeSpeed>
+    <WalkingSpeed xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">80</WalkingSpeed>
+    <MaxWalkingTime xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">20</MaxWalkingTime>
+    <DrivingSpeed xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">0</DrivingSpeed>
+    <AvoidMotorways xmlns="urn:TransportDirect.ReportDataProvider.TransactionWebService">false</AvoidMotorways>
+
+    <OriginLocation>
+      <Description>Leeds </Description>
+      <Locality>E0057974</Locality>
+      <RequestPlaceType>NaPTAN</RequestPlaceType>
+      <GridReference>
+        <Easting>429800</Easting>
+        <Northing>433300</Northing>
+      </GridReference>
+      <Toid>
+        <string>4000000010839100</string>
+      </Toid>
+      <NaPTANs>
+        <TDNaptan>
+          <Naptan>9100LEEDS</Naptan>
+          <GridReference>
+            <Easting>429800</Easting>
+            <Northing>433300</Northing>
+          </GridReference>
+        </TDNaptan>
+      </NaPTANs>
+      <Status>Valid</Status>
+    </OriginLocation>
+
+    <DestinationLocation>
+      <Description>Peterborough </Description>
+      <Locality>E0055098</Locality>
+      <RequestPlaceType>NaPTAN</RequestPlaceType>
+      <GridReference>
+        <Easting>518700</Easting>
+        <Northing>298900</Northing>
+      </GridReference>
+      <Toid>
+        <string>4000000027943055</string>
+      </Toid>   
+      <NaPTANs>
+        <TDNaptan>
+          <Naptan>9100PBRO</Naptan>
+          <GridReference>
+            <Easting>518700</Easting>
+            <Northing>298900</Northing>
+          </GridReference>
+        </TDNaptan>
+      </NaPTANs>
+      <Status>Valid</Status>
+    </DestinationLocation>    
+        
+    <AvoidRoads>
+    </AvoidRoads>
+    
+    <AlternateLocationsFrom>false</AlternateLocationsFrom>
+    <PrivateAlgorithm>Fastest</PrivateAlgorithm>
+    <PublicAlgorithm>Default</PublicAlgorithm>
+</TDJourneyRequest>

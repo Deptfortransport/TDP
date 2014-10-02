@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1">
+      <s:element name="GetGridReference">
+        <s:complexType>
+          <s:sequence>
+ 		   <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGridReferenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetGridReferenceResult" type="tns:OSGridReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OSGridReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FindNearestAirports">
+        <s:complexType>
+          <s:sequence>
+		   <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gridReference" type="tns:OSGridReference" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxResults" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestAirportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindNearestAirportsResult" type="tns:ArrayOfNaptanProximity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNaptanProximity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NaptanProximity" nillable="true" type="tns:NaptanProximity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NaptanProximity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NaptanId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+          <s:element minOccurs="1" maxOccurs="1" name="Distance" type="s:int" />
+		 <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:NaptanType" />
+          <s:element minOccurs="0" maxOccurs="1" name="SMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CRSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IATA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="NaptanType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Airport" />
+          <s:enumeration value="Station" />
+          <s:enumeration value="BusStop" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="FindNearestStations">
+        <s:complexType>
+          <s:sequence>
+		   <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gridReference" type="tns:OSGridReference" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxResults" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestStationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindNearestStationsResult" type="tns:ArrayOfNaptanProximity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestBusStops">
+        <s:complexType>
+          <s:sequence>
+		   <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gridReference" type="tns:OSGridReference" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxResults" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestBusStopsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindNearestBusStopsResult" type="tns:ArrayOfNaptanProximity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestLocality">
+        <s:complexType>
+          <s:sequence>
+		   <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gridReference" type="tns:OSGridReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestLocalityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindNearestLocalityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestFuelGenie">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+              <s:simpleType>
+                <s:restriction base="s:string">
+                  <s:minLength value="1"/>
+                  <s:maxLength value="100"/>
+                </s:restriction>
+              </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postcode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="easting" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="northing" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchFlag" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNearestFuelGenieResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FindNearestFuelGenieResult" type="tns:FuelRetailer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindFuelGenieSites">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+              <s:simpleType>
+                <s:restriction base="s:string">
+                  <s:minLength value="1"/>
+                  <s:maxLength value="100"/>
+                </s:restriction>
+              </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postcode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="easting" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="northing" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchFlag" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchRadius" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindFuelGenieSitesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="5" name="FindFuelGenieSitesResult" type="tns:FuelRetailer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FuelRetailer">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PostCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuelGenieSite" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Brand" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiteReference1" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiteReference2" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiteReference3" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiteReference4" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Miles" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetGridReferenceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGridReference" />
+  </wsdl:message>
+  <wsdl:message name="GetGridReferenceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGridReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestAirportsSoapIn">
+    <wsdl:part name="parameters" element="tns:FindNearestAirports" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestAirportsSoapOut">
+    <wsdl:part name="parameters" element="tns:FindNearestAirportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestStationsSoapIn">
+    <wsdl:part name="parameters" element="tns:FindNearestStations" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestStationsSoapOut">
+    <wsdl:part name="parameters" element="tns:FindNearestStationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestBusStopsSoapIn">
+    <wsdl:part name="parameters" element="tns:FindNearestBusStops" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestBusStopsSoapOut">
+    <wsdl:part name="parameters" element="tns:FindNearestBusStopsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestLocalitySoapIn">
+    <wsdl:part name="parameters" element="tns:FindNearestLocality" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestLocalitySoapOut">
+    <wsdl:part name="parameters" element="tns:FindNearestLocalityResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestFuelGenieSoapIn">
+    <wsdl:part name="parameters" element="tns:FindNearestFuelGenie" />
+  </wsdl:message>
+  <wsdl:message name="FindNearestFuelGenieSoapOut">
+      <wsdl:part name="parameters" element="tns:FindNearestFuelGenieResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindFuelGenieSitesSoapIn">
+    <wsdl:part name="parameters" element="tns:FindFuelGenieSites" />
+  </wsdl:message>
+  <wsdl:message name="FindFuelGenieSitesSoapOut">
+          <wsdl:part name="parameters" element="tns:FindFuelGenieSitesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FindNearestSoap">
+    <wsdl:operation name="GetGridReference">
+      <wsdl:input message="tns:GetGridReferenceSoapIn" />
+      <wsdl:output message="tns:GetGridReferenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestAirports">
+      <wsdl:input message="tns:FindNearestAirportsSoapIn" />
+      <wsdl:output message="tns:FindNearestAirportsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestStations">
+      <wsdl:input message="tns:FindNearestStationsSoapIn" />
+      <wsdl:output message="tns:FindNearestStationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestBusStops">
+      <wsdl:input message="tns:FindNearestBusStopsSoapIn" />
+      <wsdl:output message="tns:FindNearestBusStopsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestLocality">
+      <wsdl:input message="tns:FindNearestLocalitySoapIn" />
+      <wsdl:output message="tns:FindNearestLocalitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestFuelGenie">
+      <wsdl:input message="tns:FindNearestFuelGenieSoapIn" />
+      <wsdl:output message="tns:FindNearestFuelGenieSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindFuelGenieSites">
+      <wsdl:input message="tns:FindFuelGenieSitesSoapIn" />
+      <wsdl:output message="tns:FindFuelGenieSitesSoapOut" />
+    </wsdl:operation>
+
+
+
+
+  </wsdl:portType>
+  <wsdl:binding name="FindNearestSoap" type="tns:FindNearestSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="GetGridReference">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1/GetGridReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestAirports">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1/FindNearestAirports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestStations">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1/FindNearestStations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestBusStops">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1/FindNearestBusStops" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestLocality">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1/FindNearestLocality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestFuelGenie">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1/FindNearestFuelGenie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindFuelGenieSites">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.FindNearest.V1/FindFuelGenieSites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FindNearest">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="FindNearestSoap" binding="tns:FindNearestSoap">
+      <soap:address location="http://www.transportdirect.info/EnhancedExposedServices/FindNearest/V1/FindNearestService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.DepartureBoard.V1" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.DepartureBoard.V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.DepartureBoard.V1">
+      <s:element name="GetDepartureBoard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+              <s:simpleType>
+                <s:restriction base="s:string">
+                  <s:minLength value="1" />
+                  <s:maxLength value="100" />
+                </s:restriction>
+              </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="departureBoardRequest" type="tns:DepartureBoardServiceRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DepartureBoardServiceRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OriginLocation" type="tns:DepartureBoardServiceLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="DestinationLocation" type="tns:DepartureBoardServiceLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="JourneyTimeInformation" type="tns:DepartureBoardServiceTimeRequest" />
+          <s:element minOccurs="1" maxOccurs="1" name="RangeType" type="tns:DepartureBoardServiceRangeType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Range" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShowDepartures" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShowCallingStops" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepartureBoardServiceLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NaptanIds" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Locality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:DepartureBoardServiceCodeType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Valid" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DepartureBoardServiceCodeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="CRS" />
+          <s:enumeration value="SMS" />
+          <s:enumeration value="IATA" />
+          <s:enumeration value="Postcode" />
+          <s:enumeration value="NAPTAN" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="DepartureBoardServiceTimeRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:DepartureBoardServiceTimeRequestType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hour" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Minute" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DepartureBoardServiceTimeRequestType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Now" />
+          <s:enumeration value="Last" />
+          <s:enumeration value="First" />
+          <s:enumeration value="TimeToday" />
+          <s:enumeration value="TimeTomorrow" />
+          <s:enumeration value="LastToday" />
+          <s:enumeration value="LastTomorrow" />
+          <s:enumeration value="FirstToday" />
+          <s:enumeration value="FirstTomorrow" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="DepartureBoardServiceRangeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Sequence" />
+          <s:enumeration value="Interval" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetDepartureBoardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDepartureBoardResult" type="tns:ArrayOfDepartureBoardServiceStopInformation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDepartureBoardServiceStopInformation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DepartureBoardServiceStopInformation" nillable="true" type="tns:DepartureBoardServiceStopInformation" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepartureBoardServiceStopInformation">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CallingStopStatus" type="tns:DepartureBoardServiceCallingStopStatus" />
+          <s:element minOccurs="0" maxOccurs="1" name="Departure" type="tns:DepartureBoardServiceInformation" />
+          <s:element minOccurs="0" maxOccurs="1" name="PreviousIntermediates" type="tns:ArrayOfDepartureBoardServiceInformation" />
+          <s:element minOccurs="0" maxOccurs="1" name="Stop" type="tns:DepartureBoardServiceInformation" />
+          <s:element minOccurs="0" maxOccurs="1" name="OnwardIntermediates" type="tns:ArrayOfDepartureBoardServiceInformation" />
+          <s:element minOccurs="0" maxOccurs="1" name="Arrival" type="tns:DepartureBoardServiceInformation" />
+          <s:element minOccurs="0" maxOccurs="1" name="Service" type="tns:DepartureBoardServiceItinerary" />
+          <s:element minOccurs="1" maxOccurs="1" name="Mode" type="tns:DepartureBoardServiceType" />
+          <s:element minOccurs="1" maxOccurs="1" name="CircularRoute" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="FalseDestination" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Via" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cancelled" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CancellationReason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LateReason" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HasTrainDetails" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DepartureBoardServiceCallingStopStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Unknown" />
+          <s:enumeration value="HasCallingStops" />
+          <s:enumeration value="NoCallingStops" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="DepartureBoardServiceInformation">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ActivityType" type="tns:DepartureBoardServiceActivityType" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepartTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArriveTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="RealTime" type="tns:DepartureBoardServiceRealTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Stop" type="tns:DepartureBoardServiceStop" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cancelled" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DepartureBoardServiceActivityType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Arrive" />
+          <s:enumeration value="Depart" />
+          <s:enumeration value="ArriveDepart" />
+          <s:enumeration value="Unavailable" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="DepartureBoardServiceRealTime">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DepartTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepartTimeType" type="tns:DepartureBoardServiceRealTimeType" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArriveTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArriveTimeType" type="tns:DepartureBoardServiceRealTimeType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DepartureBoardServiceRealTimeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Recorded" />
+          <s:enumeration value="Estimated" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="DepartureBoardServiceTrainRealTime">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DepartureBoardServiceRealTime">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Delayed" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Uncertain" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="DepartureBoardServiceStop">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NaptanId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShortCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDepartureBoardServiceInformation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DepartureBoardServiceInformation" nillable="true" type="tns:DepartureBoardServiceInformation" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepartureBoardServiceItinerary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DepartureBoardServiceType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Train" />
+          <s:enumeration value="BusCoach" />
+          <s:enumeration value="Flight" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetDepartureBoardTimeRequestTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+              <s:simpleType>
+                <s:restriction base="s:string">
+                  <s:minLength value="1" />
+                  <s:maxLength value="100" />
+                </s:restriction>
+              </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartureBoardTimeRequestTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDepartureBoardTimeRequestTypesResult" type="tns:ArrayOfDepartureBoardServiceTimeRequestType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDepartureBoardServiceTimeRequestType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DepartureBoardServiceTimeRequestType" type="tns:DepartureBoardServiceTimeRequestType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfDepartureBoardServiceTimeRequestType" nillable="true" type="tns:ArrayOfDepartureBoardServiceTimeRequestType" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDepartureBoardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepartureBoard" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartureBoardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepartureBoardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartureBoardTimeRequestTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepartureBoardTimeRequestTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartureBoardTimeRequestTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepartureBoardTimeRequestTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartureBoardTimeRequestTypesHttpPostIn">
+    <wsdl:part name="transactionId" type="s:string" />
+    <wsdl:part name="language" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartureBoardTimeRequestTypesHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDepartureBoardServiceTimeRequestType" />
+  </wsdl:message>
+  <wsdl:portType name="DepartureBoardServiceSoap">
+    <wsdl:operation name="GetDepartureBoard">
+      <wsdl:input message="tns:GetDepartureBoardSoapIn" />
+      <wsdl:output message="tns:GetDepartureBoardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartureBoardTimeRequestTypes">
+      <wsdl:input message="tns:GetDepartureBoardTimeRequestTypesSoapIn" />
+      <wsdl:output message="tns:GetDepartureBoardTimeRequestTypesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DepartureBoardServiceHttpPost">
+    <wsdl:operation name="GetDepartureBoardTimeRequestTypes">
+      <wsdl:input message="tns:GetDepartureBoardTimeRequestTypesHttpPostIn" />
+      <wsdl:output message="tns:GetDepartureBoardTimeRequestTypesHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DepartureBoardServiceSoap" type="tns:DepartureBoardServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDepartureBoard">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.DepartureBoard.V1/GetDepartureBoard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartureBoardTimeRequestTypes">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.DepartureBoard.V1/GetDepartureBoardTimeRequestTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DepartureBoardServiceHttpPost" type="tns:DepartureBoardServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetDepartureBoardTimeRequestTypes">
+      <http:operation location="/GetDepartureBoardTimeRequestTypes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DepartureBoardService">
+    <wsdl:port name="DepartureBoardServiceSoap" binding="tns:DepartureBoardServiceSoap">
+      <soap:address location="http://localhost/EnhancedExposedServices/DepartureBoard/V1/DepartureBoardService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DepartureBoardServiceHttpPost" binding="tns:DepartureBoardServiceHttpPost">
+      <http:address location="http://localhost/EnhancedExposedServices/DepartureBoard/V1/DepartureBoardService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

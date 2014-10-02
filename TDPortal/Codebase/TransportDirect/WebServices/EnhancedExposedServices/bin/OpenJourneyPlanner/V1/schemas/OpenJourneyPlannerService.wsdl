@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.OpenJourneyPlanner.V1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.OpenJourneyPlanner.V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.OpenJourneyPlanner.V1">
+      <s:element name="PlanJourney">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+            </s:element>                       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="request" type="tns:Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Request">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ModeFilter" type="tns:TransportModes" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorFilter" type="tns:Operators" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceFilter" type="tns:ServiceFilter" />
+          <s:element minOccurs="1" maxOccurs="1" name="Depart" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Destination" type="tns:RequestPlace" />
+          <s:element minOccurs="1" maxOccurs="1" name="Origin" type="tns:RequestPlace" />
+          <s:element minOccurs="1" maxOccurs="1" name="PublicParameters" type="tns:PublicParameters" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransportModes">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Include" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Modes" type="tns:ArrayOfTransportMode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTransportMode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="TransportMode" type="tns:TransportMode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransportMode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Mode" type="tns:TransportModeType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TransportModeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Air" />
+          <s:enumeration value="Bus" />
+          <s:enumeration value="Coach" />
+          <s:enumeration value="Drt" />
+          <s:enumeration value="Ferry" />
+          <s:enumeration value="Metro" />
+          <s:enumeration value="Rail" />
+          <s:enumeration value="RailReplacementBus" />
+          <s:enumeration value="Taxi" />
+          <s:enumeration value="Telecabine" />
+          <s:enumeration value="Tram" />
+          <s:enumeration value="Underground" />
+          <s:enumeration value="Walk" />
+          <s:enumeration value="CheckIn" />
+          <s:enumeration value="CheckOut" />
+          <s:enumeration value="Transfer" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="Operators">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Include" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OperatorCodes" type="tns:ArrayOfOperatorCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOperatorCode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="OperatorCode" type="tns:OperatorCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OperatorCode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ServiceFilter">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Include" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Services" type="tns:ArrayOfRequestService" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestService">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="RequestService" type="tns:RequestService" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestService">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrivateID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:RequestServiceType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="RequestServiceType">
+        <s:restriction base="s:string">
+          <s:enumeration value="RequestServicePrivate" />
+          <s:enumeration value="RequestServiceNumber" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="RequestPlace">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Coordinate" type="tns:Coordinate" />
+          <s:element minOccurs="1" maxOccurs="1" name="GivenName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Locality" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Stops" type="tns:ArrayOfRequestStop" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:RequestPlaceType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Coordinate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestStop">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="RequestStop" type="tns:RequestStop" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestStop">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Coordinate" type="tns:Coordinate" />
+          <s:element minOccurs="0" maxOccurs="1" name="NaPTANID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="RequestPlaceType">
+        <s:restriction base="s:string">
+          <s:enumeration value="NaPTAN" />
+          <s:enumeration value="Coordinate" />
+          <s:enumeration value="Locality" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PublicParameters">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Algorithm" type="tns:PublicAlgorithmType" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExtraCheckInTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="InterchangeSpeed">
+              <s:simpleType>
+                    <s:restriction base="s:int">
+                        <s:minInclusive value="-3"/>
+                        <s:maxInclusive value="3"/>
+                    </s:restriction>
+              </s:simpleType>
+          </s:element>
+          <s:element minOccurs="1" maxOccurs="1" name="IntermediateStops" type="tns:IntermediateStopsType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Interval" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxWalkDistance" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NotVias" type="tns:ArrayOfRequestPlace" />
+          <s:element minOccurs="1" maxOccurs="1" name="RangeType" type="tns:RangeType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sequence">
+              <s:simpleType>
+                    <s:restriction base="s:int">
+                        <s:minInclusive value="1"/>
+                        <s:maxInclusive value="5"/>
+                    </s:restriction>
+              </s:simpleType>
+          </s:element>
+          <s:element minOccurs="0" maxOccurs="1" name="SoftVias" type="tns:ArrayOfRequestPlace" />
+          <s:element minOccurs="1" maxOccurs="1" name="TrunkPlan" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vias" type="tns:ArrayOfRequestPlace" />
+          <s:element minOccurs="1" maxOccurs="1" name="WalkSpeed">
+              <s:simpleType>
+                    <s:restriction base="s:int">
+                        <s:minInclusive value="40"/>
+                        <s:maxInclusive value="120"/>
+                    </s:restriction>
+              </s:simpleType> 
+          </s:element>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PublicAlgorithmType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Default" />
+          <s:enumeration value="Fastest" />
+          <s:enumeration value="NoChanges" />
+          <s:enumeration value="Max1Change" />
+          <s:enumeration value="Max2Changes" />
+          <s:enumeration value="Max3Changes" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="IntermediateStopsType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Before" />
+          <s:enumeration value="BeforeAndLeg" />
+          <s:enumeration value="Leg" />
+          <s:enumeration value="LegAndAfter" />
+          <s:enumeration value="After" />
+          <s:enumeration value="All" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfRequestPlace">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="RequestPlace" type="tns:RequestPlace" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="RangeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Sequence" />
+          <s:enumeration value="Interval" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="PlanJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanJourneyResult" type="tns:Result" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Messages" type="tns:ArrayOfMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="PublicJourneys" type="tns:ArrayOfPublicJourney" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMessage">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="Message" type="tns:Message" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Message">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubClass" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:MessageType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MessageType">
+        <s:restriction base="s:string">
+          <s:enumeration value="JourneyPlannerMessage" />
+          <s:enumeration value="RailEngineMessage" />
+          <s:enumeration value="JourneyWebMessage" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfPublicJourney">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="PublicJourney" type="tns:PublicJourney" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PublicJourney">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Legs" type="tns:ArrayOfLeg" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLeg">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="Leg" type="tns:Leg" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Leg">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Alight" type="tns:Event" />
+          <s:element minOccurs="1" maxOccurs="1" name="Board" type="tns:Event" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Destination" type="tns:Event" />
+          <s:element minOccurs="0" maxOccurs="1" name="IntermediatesA" type="tns:ArrayOfEvent" />
+          <s:element minOccurs="0" maxOccurs="1" name="IntermediatesB" type="tns:ArrayOfEvent" />
+          <s:element minOccurs="0" maxOccurs="1" name="IntermediatesC" type="tns:ArrayOfEvent" />
+          <s:element minOccurs="1" maxOccurs="1" name="Mode" type="tns:TransportModeType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Notes" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Origin" type="tns:Event" />
+          <s:element minOccurs="0" maxOccurs="1" name="Services" type="tns:ArrayOfService" />
+          <s:element minOccurs="1" maxOccurs="1" name="Validated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="VehicleFeatures" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="WindowOfOpportunity" type="tns:WindowOfOpportunity" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypicalDuration" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Frequency" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxDuration" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxFrequency" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinFrequency" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:LegType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Event">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Activity" type="tns:ActivityType" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArriveTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConfirmedVia" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Geometry" type="tns:ArrayOfCoordinate" />
+          <s:element minOccurs="1" maxOccurs="1" name="Stop" type="tns:Stop" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ActivityType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Arrive" />
+          <s:enumeration value="Depart" />
+          <s:enumeration value="ArriveDepart" />
+          <s:enumeration value="Frequency" />
+          <s:enumeration value="Request" />
+          <s:enumeration value="Pass" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfCoordinate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="Coordinate" type="tns:Coordinate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Stop">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Bay" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Coordinate" type="tns:Coordinate" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NaPTANID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimingPoint" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEvent">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="Event" type="tns:Event" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="string" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfService">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="Service" type="tns:Service" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Service">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DaysOfOperation" type="tns:ArrayOfDays" />
+          <s:element minOccurs="0" maxOccurs="1" name="DestinationBoard" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpiryDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FirstDateOfOperation" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OpenEnded" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrivateID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RetailId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimetableLinkURL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDays">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="Days" type="tns:Days" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Days">
+        <s:restriction base="s:string">
+          <s:enumeration value="Monday" />
+          <s:enumeration value="Tuesday" />
+          <s:enumeration value="Wednesday" />
+          <s:enumeration value="Thursday" />
+          <s:enumeration value="Friday" />
+          <s:enumeration value="Saturday" />
+          <s:enumeration value="Sunday" />
+          <s:enumeration value="MondayToFriday" />
+          <s:enumeration value="MondayToSaturday" />
+          <s:enumeration value="BankHoliday" />
+          <s:enumeration value="NotBankHoliday" />
+          <s:enumeration value="SchoolHoliday" />
+          <s:enumeration value="NotSchoolHoliday" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WindowOfOpportunity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="End" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Start" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="LegType">
+        <s:restriction base="s:string">
+          <s:enumeration value="TimedLeg" />
+          <s:enumeration value="FrequencyLeg" />
+          <s:enumeration value="ContinuousLeg" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PlanJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:PlanJourney" />
+  </wsdl:message>
+  <wsdl:message name="PlanJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:PlanJourneyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OpenJourneyPlannerServiceSoap">
+    <wsdl:operation name="PlanJourney">
+      <wsdl:input message="tns:PlanJourneySoapIn" />
+      <wsdl:output message="tns:PlanJourneySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OpenJourneyPlannerServiceSoap" type="tns:OpenJourneyPlannerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="PlanJourney">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.OpenJourneyPlanner.V1/PlanJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OpenJourneyPlannerService">
+    <wsdl:port name="OpenJourneyPlannerServiceSoap" binding="tns:OpenJourneyPlannerServiceSoap">
+      <soap:address location="http://www.transportdirect.info/EnhancedExposedServices/OpenJourneyPlanner/V1/OpenJourneyPlannerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

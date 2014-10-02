@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CodeHandler.V1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CodeHandler.V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CodeHandler.V1">
+      <s:element name="FindCode">
+        <s:complexType>
+          <s:sequence>
+			<s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+			</s:element>       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindCodeResult" type="tns:ArrayOfCodeServiceCodeDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCodeServiceCodeDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CodeServiceCodeDetail" nillable="true" type="tns:CodeServiceCodeDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CodeServiceCodeDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NaptanId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodeType" type="tns:CodeServiceCodeType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Locality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModeType" type="tns:CodeServiceModeType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CodeServiceCodeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="CRS" />
+          <s:enumeration value="SMS" />
+          <s:enumeration value="IATA" />
+          <s:enumeration value="Postcode" />
+          <s:enumeration value="NAPTAN" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="OSGridReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CodeServiceModeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Undefined" />
+          <s:enumeration value="Rail" />
+          <s:enumeration value="Bus" />
+          <s:enumeration value="Coach" />
+          <s:enumeration value="Air" />
+          <s:enumeration value="Ferry" />
+          <s:enumeration value="Metro" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="FindText">
+        <s:complexType>
+          <s:sequence>
+			<s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+			</s:element>       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codeRequest" type="tns:CodeServiceRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CodeServiceRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PlaceText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fuzzy" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModeTypes" type="tns:ArrayOfCodeServiceModeType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCodeServiceModeType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CodeServiceModeType" type="tns:CodeServiceModeType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FindTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindTextResult" type="tns:ArrayOfCodeServiceCodeDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfCodeServiceCodeDetail" nillable="true" type="tns:ArrayOfCodeServiceCodeDetail" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FindCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:FindCode" />
+  </wsdl:message>
+  <wsdl:message name="FindCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:FindCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindTextSoapIn">
+    <wsdl:part name="parameters" element="tns:FindText" />
+  </wsdl:message>
+  <wsdl:message name="FindTextSoapOut">
+    <wsdl:part name="parameters" element="tns:FindTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindCodeHttpPostIn">
+    <wsdl:part name="transactionId" type="s:string" />
+    <wsdl:part name="language" type="s:string" />
+    <wsdl:part name="code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FindCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfCodeServiceCodeDetail" />
+  </wsdl:message>
+  <wsdl:portType name="CodeServiceSoap">
+    <wsdl:operation name="FindCode">
+      <wsdl:input message="tns:FindCodeSoapIn" />
+      <wsdl:output message="tns:FindCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindText">
+      <wsdl:input message="tns:FindTextSoapIn" />
+      <wsdl:output message="tns:FindTextSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CodeServiceHttpPost">
+    <wsdl:operation name="FindCode">
+      <wsdl:input message="tns:FindCodeHttpPostIn" />
+      <wsdl:output message="tns:FindCodeHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CodeServiceSoap" type="tns:CodeServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="FindCode">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CodeHandler.V1/FindCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindText">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CodeHandler.V1/FindText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CodeServiceHttpPost" type="tns:CodeServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="FindCode">
+      <http:operation location="/FindCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CodeService">
+    <wsdl:port name="CodeServiceSoap" binding="tns:CodeServiceSoap">
+      <soap:address location="http://localhost/EnhancedExposedServices/codehandler/v1/codeservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CodeServiceHttpPost" binding="tns:CodeServiceHttpPost">
+      <http:address location="http://localhost/EnhancedExposedServices/codehandler/v1/codeservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

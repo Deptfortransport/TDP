@@ -1,0 +1,899 @@
+/* ===========================================1 1/9/03 known issues ===========================================
+	CSS tested against IE5 IE5/5 IE6 windows NT XP and 98 renders fine 
+	Opera Mac fine
+	
+	Known Mac issues include IE5 NS7 + Mozilla txt in the header blue nav bar aligns right rather than finishing under the buttons
+	NS7 and Mozilla add the custom link class to the images in the top nav causing them to spoil the apperance of the header where an image is a
+	link
+	
+	The broken box model in CSS has the relivant hack set up (l33t hack) the correct values will be added once Testing begins
+
+*/
+
+/* =========================================== CSS Document for Transport Direct =========================================== */
+/* ================= generic setup ================= */
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color:#000;
+	background-color:white;
+	}
+	
+p, div, td, li, ul, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6 {
+	font-family: verdana, arial, helvetica, sans-serif;
+	}
+	
+
+/*AS. 03/04. Added as IE5.5 does not correctly format text inside tables*/
+table, td, tr {
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size:100%
+	}
+	
+p {
+	margin-top:0;
+	margin-bottom: 0.2em;
+	text-align:left;
+	font-size:0.7em;
+	line-height:1.5;
+	}
+	
+.helpindent1
+{
+	padding-left:2%;
+}
+
+.helpindent2
+{
+	padding-left:4%;
+}
+	
+	
+/*AS. 03/04. Added for use by screenreader to read label text */
+.screenreader
+{
+	position:absolute;
+	left: 0px;
+	top: -100px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/*PSC. 09/03/05. Added to allow "skip to links" invisible but readable by screenreader */
+.skiptolinks
+{
+	position:absolute;
+	left: 0px;	
+	top: -100px;
+	border-width: 0px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+.HomePageCopyHeader 
+{ 
+	font-size: 0.7em; line-height: 2;  font-weight:bold;
+	
+}
+.HomePageCopy
+{
+	font-size: 0.7em; line-height: 2;
+}
+	
+.txtnote {font-size: 0.6em;}
+	
+ul { margin-top: 0px; margin-bottom:0px; }
+ul#lister {list-style: outside; font-size: 0.7em; line-height: 1.5;  }
+ul#sublister {list-style: outside; font-size: 1em; line-height: 1.5;  }
+/*disc url(i/p/lister2.gif) if you wanna add an image add to above line :)*/ 
+
+ol#numberlist {font-size: 0.7em;}
+
+
+.txtseven {font-size: 0.7em;}
+.txtsevenwhite {font-size: 0.7em; color:White}
+.txtsevenr {font-size: 0.7em; float:right}
+.txtseveng { font-size: 0.7em; color: Gray; }
+.txtsevenb {font-size: 0.7em; font-weight: bold;}
+.txtsevenrb {font-size: 0.7em; font-weight: bold; float:right}
+.txteight {font-size: 0.8em;}	
+.txteightb {font-size: 0.8em; font-weight: bold;}
+/*hdbox*/
+.txtnine {font-size: 0.9em;}	
+.txtninen {font-size: 0.9em; font-weight: normal;}	
+.txtnineb {font-size: 0.9em; font-weight: bold;}
+/* used for map header - should be equilavent to h1 */
+.txttenb {font-size: 1em; font-weight: bold; }
+.txterror {color:Red;}
+.alertSign {color:White; font-weight:bold; font-size:0.9em;}
+/*monospace text used in login box for del 5.2 */
+.txtmonospace {font-family:Courier New, Courier, Monospace; font-size:1.1em; font-weight: bold;}
+	
+strong {
+	font-weight: bold;
+}
+	
+h1 {
+	font-size: 1em;
+	font-weight: bold;
+	padding:0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 1em;
+	font-weight: bold;
+	padding:0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+h3 
+{
+	font-size: 0.8em; 
+	font-weight: bold;
+	display: inline;
+}
+
+h4
+{
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+h5
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+
+h6
+{
+	font-size: 0.7em;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+	
+/* b-ing :) 2 Opera 5 */
+
+html>#h3 {width:575px;}
+	
+img { border:0px; display:inline;}
+
+.inline {display: inline;}
+
+a {color:#330099; font-family: verdana, arial, helvetica, sans-serif;}
+	
+a:link { color:#330099; text-decoration:none;}
+
+a.selected {font-weight:bolder;}
+
+a:visited { color:#330099; text-decoration:none;}
+
+a:hover { color:#330099; text-decoration:underline;}
+
+.jptablelink,
+
+a.jptablelink{
+	color: #330099;
+	text-decoration: none;
+	font-size: 0.7em;
+}
+
+a:link.jptablelink {
+	color: #330099;
+	text-decoration: none;
+	font-size: 0.7em;
+}
+
+a:hover.jptablelink{
+	color: #330099;
+	text-decoration: underline;
+	font-size: 0.7em;
+}
+
+.BlueLink,
+
+a.BlueLink{
+	color: #330099;
+	text-decoration: none;
+}
+
+a:link.BlueLink {
+	color: #330099;
+	text-decoration: none;
+}
+
+a:hover.BlueLink{
+	color: #330099;
+	text-decoration: underline;
+}
+
+.QuestionLink,
+
+a.QuestionLink{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:link.QuestionLink {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/* =========================================== CSS Document for Transport Direct  =========================================== */
+
+/* ================= login box=================*/
+#hometravelbox {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:100%;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:100%;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#hometravelbox {width:100%;}
+
+#Quickplanner
+{
+	border:1px solid #330099;
+	width:735px;
+	padding:5px 5px 5px 5px;
+	margin-left: 5px;
+	
+}
+
+#lbout {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:150px;
+	font-size: 0.7em;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:150px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#lbout {width:150px;}
+
+#lbo a:link, #hbo a:visited, {color: #330099; text-decoration: none;}
+#hbo a:hover {color: #330099; text-decoration: underline;}
+#lbd {font-weight: bold; background-color: #F4ED82 ;  padding: 2px;}
+
+#lbl {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #330099;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#lbc {
+	color: #000000;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	font-weight: normal;
+}
+
+#lc {font-weight: bold; text-align: right;}
+#lcimg{float: right; clear: right; padding: 3px;}
+#limg{float: right; clear: right; vertical-align: top;}
+
+/* =========================================== CSS Document for Transport Direct  =========================================== */
+
+/* ================= head setup =================*/
+
+#headerarea {
+	background-color:#330099;
+	
+	border:0px;
+	margin:0px;
+	padding:0px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#headerarea { height:70px; }
+
+
+#headerarealrg {
+	background-color:#330099;
+	height:140px; 
+	border:0px;
+	margin:0px;
+	padding:0px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#headerarealrg { height:140px; }
+
+
+#lrglogo {
+	width:140px;
+	height:140px;
+	padding:0px;
+	}
+/* b-ing :) 2 Opera 5 */
+body>#lrglogo {width:140px; height:140px;}
+
+#lrgstrap {
+	position:absolute;
+	top:0px;
+	left:140px;
+	width:620px;
+	padding:0px;
+	height:117px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#lrgstrap {width:620px; height:117px;}
+
+#menubuttonslrg {
+	position: absolute;
+	top:117px;
+	left:326px;
+	width:434px;
+	padding:0px;
+	height:23px;
+}
+
+/* b-ing :) 2 Opera 5 */
+html>#menubuttonslrg {
+	width:434px; height:23px;}
+
+#smalllogo {
+	width:140px;
+	height:70px;
+	padding:0px;
+	}
+/* b-ing :) 2 Opera 5 */
+body>#smalllogo {width:140px; height:70px;}
+
+#smallstrap {
+	position:absolute;
+	top:0px;
+	left:140px;
+	width:840px;
+	padding:0px;
+	height:47px;
+	}
+/* b-ing :) 2 Opera 5 */
+html>#smallstrap {width:620px; height:47px;}
+
+#menubuttons{
+	position: absolute;
+	top:47px;
+	left:230px;
+	width:650px;
+	padding:0px;
+	height:23px;
+	
+}
+
+/* b-ing :) 2 Opera 5 */
+html>#menubuttons {width:465px; height:23px;}
+
+#menubuttonsw {
+ position: absolute;
+ top:47px;
+ left:178px;
+ width:650px;
+ padding:0px;
+ height:23px;
+}
+ 
+/* b-ing :) 2 Opera 5 */
+html>#menubuttonsw {width:442px; height:23px;}
+ 
+#menubuttonswlrg {
+ position: absolute;
+ top:117px;
+ left:318px;
+ width: 442px; 
+ padding:0px;
+ height:23px;
+}
+ 
+/* b-ing :) 2 Opera 5 */
+html>#menubuttonswlrg {width:442px; height:23px;}
+
+/*for the new homepage button bar */
+#menubuttonsnh {
+	position: absolute;
+	top:47px;
+	left:230px;
+	width:600px;
+	padding:0px;
+	height:23px;
+}
+
+#navarea {background-color:#99ccff; border:0px; margin:0px; padding:0px;}	
+table#nsiefix {width:760px; height:20px; border:0px; margin-left: 5px; text-align: right; font-size: 0.7em;}
+.nsiefixdtd {width:375px; height:20px; border:0px; margin:0px; text-align: left; }
+
+#loginarea {background-color:#ffffff; border:0px; margin:0px; padding:0px;}
+
+
+/* =========================================== CSS Document for Transport Direct =========================================== */
+
+/* ================= sitemap ================= */
+
+table#smb {width: 755px; font-size: 0.7em;}
+#smb div {margin-right: 5px;}
+#smc {margin-right: 5px; margin-left: 5px;}
+#smh {font-weight: bold; background-color: #99ccff; padding: 5px;}
+
+/* =========================================== CSS Document for Transport Direct =========================================== */
+
+/* ================= left hand template and menu setup & right hand soft content setup ================= */
+
+/*  column template */
+table#ColumnLeftPage {
+	width: 916px;	
+}
+
+td#LeftHeader {
+	width: 150px;
+}
+
+td#RightHeader {
+	width: 450px;
+}
+td#RightHeaderButtons {
+	width: 166px;
+}
+td#RightFiller {
+	width: 150px;
+}
+
+td#LeftColumn {
+	width: 150px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #003399;
+}
+
+
+/* menu stuff */
+#menuarea {
+	left:5px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	position: absolute;
+}	
+
+#menuarealocationinfo {
+	left:5px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 170px;
+}	
+
+/* b-ing :) 2 Opera 5 */
+html>#menuarea {width:155px;}
+
+#butl {
+	width: 155px;
+	font-size: 0.75em;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid #CCCCCC;
+}
+
+	#butl p{
+	color: #330099;
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size:100%;
+	line-height:1.5;
+	margin-bottom: 0.2em;
+	}
+
+	#butl a:link{
+	color: #330099;
+	width: 100%;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	}
+
+	#butl a:visited {
+	color: #330099;
+	width: 100%;
+	height: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+}
+
+	#butl a:hover {
+	color: #330099;
+	width: 100%;
+	height: 20px;
+	padding: 3px;
+	text-decoration: underline;
+	display: block;
+	margin: 0;
+}
+
+/* soft content stuff */
+
+#primcontent {	
+	position: relative;
+	/*this needs to be turned on to work in Microsoft Content Manager however it makes mucks things up on DW MX code view */ 
+	border: 0;
+	padding: 0;
+	margin: 0;
+	margin-left: 180px;
+	width: 580px;
+}
+
+#primcontentlocationinfo {	
+	position: relative;
+	/*this needs to be turned on to work in Microsoft Content Manager however it makes mucks things up on DW MX code view */ 
+	border: 0;
+	padding: 0;
+	margin: 0;
+	margin-left: 10px;
+	width: 390px;
+}
+
+#contentarea {
+	width:575px;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left-width: 2px;
+	border-left-style: dashed;
+	border-left-color: #999999;
+	background-color:#ffffff;
+/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#contentarea {width:575px;}
+
+#contentareaprint {
+	width:575px;
+	margin-left: 5px;
+	padding-left: 5px;
+	background-color:#ffffff;
+/* l33t hack */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:575px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#contentareaprint {width:575px;}
+
+#pbut {
+	float: right;
+	vertical-align: top;
+	font-size:0.7em;
+	clear: both;
+}
+
+#boxtypeeight{
+	border:0px;
+	padding:5px 0px 0px;
+	background-color:#ffffff;
+	width:755px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	voice-family: "\";}\"";
+	clear: both;
+	voice-family:inherit;
+	width:755px;
+	clear: both;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#boxtypeeight {width:755px;}
+
+#boxtypeeight h1 {font-size: 1em; font-weight: bold;}
+
+#hdtypeone {
+	font-size: 0.9em;
+	color: #FFFFFF;
+	width: 100%;
+	background-color: 330099;
+	border: 1px solid #993366;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+#hdtypetwo {
+	font-size: 0.8em;
+	color: #000000;
+	width: 100%;
+	background-color: ffffff;
+	border: 1px solid #330099;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+
+#hdtypethree {
+	font-size: 0.9em;
+	color: #000000;
+	width: 100%;
+	background-color: #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+#hdtypethree h2  {
+	font-size: 1.0em;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#hdtypethreeclean {
+	color: #000000;
+	width: 100%;
+	background-color: #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+
+#hdtypefour {
+	font-size: 0.8em;
+	color: #000000;
+	width: 100%;
+	background-color: ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+#hdtypefourblue {
+	font-size: 0.8em;
+	color: #330099;
+	width: 100%;
+	background-color: ffffff;
+	border: 1px solid #99ccff;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+/* ================= homepage ================= */
+
+table#homer {width: 755px; margin-left: 5px; margin-top: 5px; border: 0;}
+td#homernav {width: 608px; margin-right: 5px; vertical-align: top;}
+td#homercont {width: 755px; border-left: 1px  padding-left: 5px; vertical-align: top;}
+
+/* ================= Home login box list =================*/
+#lbouthome {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:742px;
+	font-size: 0.7em;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;	
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#lbouthome {width:742px;}
+
+table#macfix {width: 585px; border: 0; padding: 0; font-size: 0.7em;}
+
+#newsbox {	
+	border:1px solid #cccccc;
+	padding:5px 5px 5px 5px;
+	background-color:#ffffff;
+	width:100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:100%;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#newsbox {width:100%;}
+
+#disclaimerbox  
+{
+	background-color: #ffffff;
+	width: 745px;
+	padding: 5px 5px 5px 5px;
+	font-size: 0.7em;
+	font-weight: bold;
+	clear: both;
+	margin: 5px 5px 5px 5px;
+}
+
+#HomepageTitle
+{
+	width: 745px;
+}
+
+#FindAImagebox  
+{
+	width: 745px;
+	height: 62px;
+	border: 1px solid #330099;
+	padding:5px 5px 5px 5px;
+	margin-left: 10px;	
+	
+}
+
+.QuickPlannerHome
+{
+	vertical-align:middle;
+}
+
+.informationBoxHome
+{
+	width:750px;
+	height:36px;
+	margin-left:10px;
+}
+
+.login
+{
+	width:468px;
+}
+
+#LeftJPBox  
+{
+	width: 256px;
+	height: 305px
+}
+
+.TravelNews
+{
+	overflow:auto;
+	width: 459px; 
+	height: 310px; 
+	background-color: white;
+}
+
+#logviewerbox {
+	border:1px solid #330099;
+	padding:5px 5px 5px 5px;
+	background-color:#99ccff;
+	width:755px;
+	line-height:1.5;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	/* l33t hack */
+	voice-family: "\";}\"";
+	voice-family:inherit;
+	width:755px;
+	}	
+/* b-ing :) 2 Opera 5 */
+html>#logviewerbox {width:755px;}
+
+/* =========================================== CSS Document for Transport Direct =========================================== */
+
+/* ================= footer setup ================= */
+
+#foot {
+	position:relative;
+	left:-1px;
+	font-size: 0.7em;
+	line-height: 1.5em;
+	padding-top: 10px;
+	margin-top: 10px;
+	width: 760px;
+	clear: both;
+}
+
+html>#foot {width: 760px;}
+#top {text-align: right;}
+#ver {text-align:left; border-top: 1px solid #330099; color: #330099}
+#fnav{text-align: center; border-top: 1px solid #330099;}
+
+/* ================= button styles for image button replacement ================= */
+/* NOTES ON BUTTON STYLES IN Web Control TDButton.cs class */
+
+/*default style*/
+.TDButtonDefault
+{
+	color: #264266; 
+	background-color: #EBEBEB;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align:center;
+	text-decoration: none;
+	border-left: solid 1px #C0C0C0;
+	border-right: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-top: solid 1px #C0C0C0;
+	cursor:pointer;
+	cursor:hand;
+	width:auto;
+	overflow:visible;
+	padding:0px 3px 1px 3px;
+}
+/*default style for non IE hover*/
+.TDButtonDefault:hover
+{	
+	color: #FFFFFF;
+	background-color: #96A297;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align:center;
+	text-decoration: none;
+	border-left: solid 1px #C0C0C0;
+	border-right: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-top: solid 1px #C0C0C0;
+	cursor:pointer;
+	cursor:hand;
+	width:auto;
+	overflow:visible;
+	padding:0px 3px 1px 3px;
+}
+/*default style for IE javascript hover*/
+.TDButtonDefaultMouseOver
+{	
+	color: #FFFFFF;
+	background-color: #96A297;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align:center;
+	text-decoration: none;
+	border-left: solid 1px #C0C0C0;
+	border-right: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-top: solid 1px #C0C0C0;
+	cursor:pointer;
+	cursor:hand;
+	width:auto;
+	overflow:visible;
+	padding:0px 3px 1px 3px;
+}
+
+/* ================= end of styles for image button replacement ================= */

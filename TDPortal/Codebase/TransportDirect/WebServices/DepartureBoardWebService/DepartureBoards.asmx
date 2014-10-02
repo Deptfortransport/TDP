@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="DepartureBoards.asmx.cs" Class="TransportDirect.WebService.DepartureBoardWebService.DepartureBoards" %>

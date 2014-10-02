@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1">
+      <s:element name="GetTravelNewsDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+			</s:element>       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="travelNewsRequest" type="tns:TravelNewsServiceRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TravelNewsServiceRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TransportType" type="tns:TravelNewsServiceTransportType" />
+          <s:element minOccurs="1" maxOccurs="1" name="DelayType" type="tns:TravelNewsServiceDelayType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Region" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TravelNewsServiceTransportType">
+        <s:restriction base="s:string">
+          <s:enumeration value="All" />
+          <s:enumeration value="PublicTransport" />
+          <s:enumeration value="Road" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="TravelNewsServiceDelayType">
+        <s:restriction base="s:string">
+          <s:enumeration value="All" />
+          <s:enumeration value="Major" />
+          <s:enumeration value="Recent" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetTravelNewsDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTravelNewsDetailsResult" type="tns:ArrayOfTravelNewsServiceNewsItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTravelNewsServiceNewsItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TravelNewsServiceNewsItem" nillable="true" type="tns:TravelNewsServiceNewsItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TravelNewsServiceNewsItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Uid" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeverityLevel" type="tns:TravelNewsServiceSeverityLevel" />
+          <s:element minOccurs="0" maxOccurs="1" name="PublicTransportOperator" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RegionalOperator" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModeOfTransport" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Regions" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RegionsLocation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IncidentType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HeadlineText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IncidentStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReportedDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinutesFromNow" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModifiedDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClearedDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpiryDateTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TravelNewsServiceSeverityLevel">
+        <s:restriction base="s:string">
+          <s:enumeration value="Critical" />
+          <s:enumeration value="Serious" />
+          <s:enumeration value="VerySevere" />
+          <s:enumeration value="Severe" />
+          <s:enumeration value="Medium" />
+          <s:enumeration value="Slight" />
+          <s:enumeration value="VerySlight" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="OSGridReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTravelNewsHeadlines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+			</s:element>       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="travelNewsRequest" type="tns:TravelNewsServiceRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTravelNewsHeadlinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTravelNewsHeadlinesResult" type="tns:ArrayOfTravelNewsServiceHeadlineItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTravelNewsServiceHeadlineItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TravelNewsServiceHeadlineItem" nillable="true" type="tns:TravelNewsServiceHeadlineItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TravelNewsServiceHeadlineItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Uid" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HeadlineText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DelayTypes" type="tns:ArrayOfTravelNewsServiceDelayType" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeverityLevel" type="tns:TravelNewsServiceSeverityLevel" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransportType" type="tns:TravelNewsServiceTransportType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Regions" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTravelNewsServiceDelayType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TravelNewsServiceDelayType" type="tns:TravelNewsServiceDelayType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTravelNewsDetailsByUid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+			</s:element>       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="uid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTravelNewsDetailsByUidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTravelNewsDetailsByUidResult" type="tns:TravelNewsServiceNewsItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTravelNewsAvailableRegions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+			</s:element>       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTravelNewsAvailableRegionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTravelNewsAvailableRegionsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTravelNewsRegion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+                <s:simpleType>
+                    <s:restriction base="s:string">
+                    <s:minLength value="1"/>
+                    <s:maxLength value="100"/>
+                    </s:restriction>
+                </s:simpleType>
+			</s:element>       
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="travelLineRegion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTravelNewsRegionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTravelNewsRegionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TravelNewsServiceNewsItem" nillable="true" type="tns:TravelNewsServiceNewsItem" />
+      <s:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTravelNewsDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsHeadlinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsHeadlines" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsHeadlinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsHeadlinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsDetailsByUidSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsDetailsByUid" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsDetailsByUidSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsDetailsByUidResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsAvailableRegionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsAvailableRegions" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsAvailableRegionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsAvailableRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsRegionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsRegion" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsRegionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTravelNewsRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsDetailsByUidHttpPostIn">
+    <wsdl:part name="transactionId" type="s:string" />
+    <wsdl:part name="language" type="s:string" />
+    <wsdl:part name="uid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsDetailsByUidHttpPostOut">
+    <wsdl:part name="Body" element="tns:TravelNewsServiceNewsItem" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsAvailableRegionsHttpPostIn">
+    <wsdl:part name="transactionId" type="s:string" />
+    <wsdl:part name="language" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsAvailableRegionsHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsRegionHttpPostIn">
+    <wsdl:part name="transactionId" type="s:string" />
+    <wsdl:part name="language" type="s:string" />
+    <wsdl:part name="travelLineRegion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTravelNewsRegionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="TravelNewsServiceSoap">
+    <wsdl:operation name="GetTravelNewsDetails">
+      <wsdl:input message="tns:GetTravelNewsDetailsSoapIn" />
+      <wsdl:output message="tns:GetTravelNewsDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsHeadlines">
+      <wsdl:input message="tns:GetTravelNewsHeadlinesSoapIn" />
+      <wsdl:output message="tns:GetTravelNewsHeadlinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsDetailsByUid">
+      <wsdl:input message="tns:GetTravelNewsDetailsByUidSoapIn" />
+      <wsdl:output message="tns:GetTravelNewsDetailsByUidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsAvailableRegions">
+      <wsdl:input message="tns:GetTravelNewsAvailableRegionsSoapIn" />
+      <wsdl:output message="tns:GetTravelNewsAvailableRegionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsRegion">
+      <wsdl:input message="tns:GetTravelNewsRegionSoapIn" />
+      <wsdl:output message="tns:GetTravelNewsRegionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TravelNewsServiceHttpPost">
+    <wsdl:operation name="GetTravelNewsDetailsByUid">
+      <wsdl:input message="tns:GetTravelNewsDetailsByUidHttpPostIn" />
+      <wsdl:output message="tns:GetTravelNewsDetailsByUidHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsAvailableRegions">
+      <wsdl:input message="tns:GetTravelNewsAvailableRegionsHttpPostIn" />
+      <wsdl:output message="tns:GetTravelNewsAvailableRegionsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsRegion">
+      <wsdl:input message="tns:GetTravelNewsRegionHttpPostIn" />
+      <wsdl:output message="tns:GetTravelNewsRegionHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TravelNewsServiceSoap" type="tns:TravelNewsServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="GetTravelNewsDetails">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1/GetTravelNewsDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsHeadlines">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1/GetTravelNewsHeadlines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsDetailsByUid">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1/GetTravelNewsDetailsByUid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsAvailableRegions">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1/GetTravelNewsAvailableRegions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsRegion">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.TravelNews.V1/GetTravelNewsRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TravelNewsServiceHttpPost" type="tns:TravelNewsServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetTravelNewsDetailsByUid">
+      <http:operation location="/GetTravelNewsDetailsByUid" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsAvailableRegions">
+      <http:operation location="/GetTravelNewsAvailableRegions" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelNewsRegion">
+      <http:operation location="/GetTravelNewsRegion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TravelNewsService">
+    <wsdl:port name="TravelNewsServiceSoap" binding="tns:TravelNewsServiceSoap">
+      <soap:address location="http://www.transportdirect.info/EnhancedExposedServices/TravelNews/V1/TravelNewsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TravelNewsServiceHttpPost" binding="tns:TravelNewsServiceHttpPost">
+      <http:address location="http://www.transportdirect.info/EnhancedExposedServices/TravelNews/V1/TravelNewsService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="CycleJourneyPlannerSynchronousService.asmx.cs" Class="TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1.CycleJourneyPlannerSynchronousService" %>

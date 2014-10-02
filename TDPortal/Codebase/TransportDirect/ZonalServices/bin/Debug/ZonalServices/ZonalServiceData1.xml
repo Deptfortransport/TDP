@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ZonalServiceTestData>
+	<ExternalLinks>
+		<externallinks 
+			ExternalLinkId="{0B543C61-8E27-46a1-8B14-4ED76D76F5BE}" 
+			URL="http://www.google.co.uk" 
+			TestURL="null" 
+			Valid="1" 
+			Description="{C30E5F3B-8BBF-44b1-8D5B-A3A26FF1F406}" 
+			StartDate="12/05/2005" 
+			EndDate="12/06/2099" 
+			LinkText="Park Ranger Buses"/> 
+		<externallinks 
+			ExternalLinkId="{91D98442-BB05-46de-8DA7-F5EB345A91B9}" 
+			URL="http://www.amazon.com" 
+			TestURL="null" 
+			Valid="1" 
+			Description="{C30E5F3B-8BBF-44b1-8D5B-A3A26FF1F406}" 
+			StartDate="12/05/2005" 
+			EndDate="12/06/2099" 
+			LinkText="Monkey Transport Co."/> 
+		<externallinks 
+			ExternalLinkId="{E345D45E-A41E-4eb3-8A98-DB092C9A3C76}" 
+			URL="http://www.yahoo.co.uk" 
+			TestURL="null" 
+			Valid="1" 
+			Description="{C30E5F3B-8BBF-44b1-8D5B-A3A26FF1F406}" 
+			StartDate="12/05/2005" 
+			EndDate="12/06/2005" 
+			LinkText="Out of publication Link"/> 
+		<externallinks 
+			ExternalLinkId="{E7A4CBCA-9833-49b5-8929-EED3C9DF864B}" 
+			URL="http://www.ebay.co.uk" 
+			TestURL="null" 
+			Valid="1" 
+			Description="{C30E5F3B-8BBF-44b1-8D5B-A3A26FF1F406}" 
+			StartDate="12/05/2005" 
+			EndDate="12/06/2099" 
+			LinkText="Test Bus Company"/> 				
+	</ExternalLinks>
+	<ZonalStop>
+		<zonalstop Naptan="9100ABC" ExternalLinkId="{0B543C61-8E27-46a1-8B14-4ED76D76F5BE}"/> 
+		<zonalstop Naptan="9100DEF" ExternalLinkId="{91D98442-BB05-46de-8DA7-F5EB345A91B9}"/> 
+		<zonalstop Naptan="9100GHI" ExternalLinkId="{E345D45E-A41E-4eb3-8A98-DB092C9A3C76}"/> 
+		<zonalstop Naptan="9100ABC" ExternalLinkId="{E7A4CBCA-9833-49b5-8929-EED3C9DF864B}"/> 
+	</ZonalStop>
+</ZonalServiceTestData>

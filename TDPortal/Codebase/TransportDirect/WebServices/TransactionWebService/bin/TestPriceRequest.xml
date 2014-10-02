@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PublicJourney xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RouteNum>0</RouteNum>
+  <Details>
+    <PublicJourneyDetail xsi:type="PublicJourneyTimedDetail">
+      <Mode>Rail</Mode>
+      <IsValidated>false</IsValidated>
+      <StartLocation>
+        <Description>Leeds </Description>
+        <GridReference>
+          <Easting>-1</Easting>
+          <Northing>-1</Northing>
+        </GridReference>
+        <Locality />
+        <NaPTANs>
+          <TDNaptan>
+            <GridReference>
+              <Easting>-1</Easting>
+              <Northing>-1</Northing>
+            </GridReference>
+            <Naptan>9100LEEDS</Naptan>
+          </TDNaptan>
+        </NaPTANs>
+        <Toid />
+        <SearchType>AddressPostCode</SearchType>
+        <RequestPlaceType>NaPTAN</RequestPlaceType>
+        <Status>Unspecified</Status>
+      </StartLocation>
+      <EndLocation>
+        <Description>Peterborough </Description>
+        <GridReference>
+          <Easting>-1</Easting>
+          <Northing>-1</Northing>
+        </GridReference>
+        <Locality />
+        <NaPTANs>
+          <TDNaptan>
+            <GridReference>
+              <Easting>-1</Easting>
+              <Northing>-1</Northing>
+            </GridReference>
+            <Naptan>9100PBRO</Naptan>
+          </TDNaptan>
+        </NaPTANs>
+        <Toid />
+        <SearchType>AddressPostCode</SearchType>
+        <RequestPlaceType>NaPTAN</RequestPlaceType>
+        <Status>Unspecified</Status>
+      </EndLocation>
+      <DestinationLocation>
+        <Description>Peterborough </Description>
+        <GridReference>
+          <Easting>-1</Easting>
+          <Northing>-1</Northing>
+        </GridReference>
+        <Locality />
+        <NaPTANs>
+          <TDNaptan>
+            <GridReference>
+              <Easting>-1</Easting>
+              <Northing>-1</Northing>
+            </GridReference>
+            <Naptan>9100PBRO</Naptan>
+          </TDNaptan>
+        </NaPTANs>
+        <Toid />
+        <SearchType>AddressPostCode</SearchType>
+        <RequestPlaceType>NaPTAN</RequestPlaceType>
+        <Status>Unspecified</Status>
+      </DestinationLocation>
+      <IntermediateLocations />
+      <DepartDateTime>
+        <Year>2003</Year>
+        <Month>1</Month>
+        <Day>12</Day>
+        <Hour>8</Hour>
+        <Minute>0</Minute>
+        <Second>0</Second>
+        <Millisecond>0</Millisecond>
+      </DepartDateTime>
+      <ArriveDateTime>
+        <Year>2003</Year>
+        <Month>1</Month>
+        <Day>12</Day>
+        <Hour>10</Hour>
+        <Minute>0</Minute>
+        <Second>0</Second>
+        <Millisecond>0</Millisecond>
+      </ArriveDateTime>
+      <DestinationDateTime>
+        <Year>2003</Year>
+        <Month>1</Month>
+        <Day>12</Day>
+        <Hour>10</Hour>
+        <Minute>0</Minute>
+        <Second>0</Second>
+        <Millisecond>0</Millisecond>
+      </DestinationDateTime>
+      <Services>
+        <ServiceDetails />
+      </Services>
+      <Duration>7200</Duration>
+      <Geometry>
+        <OSGridReference>
+          <Easting>-1</Easting>
+          <Northing>-1</Northing>
+        </OSGridReference>
+        <OSGridReference>
+          <Easting>-1</Easting>
+          <Northing>-1</Northing>
+        </OSGridReference>
+      </Geometry>
+      <IncludesVia>false</IncludesVia>
+    </PublicJourneyDetail>
+  </Details>
+</PublicJourney>

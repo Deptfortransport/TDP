@@ -1,0 +1,113 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <UID>RTM15160</UID>
+    <SeverityLevel>0</SeverityLevel>
+    <SeverityDescription>Critical</SeverityDescription>
+    <PublicTransportOperator>Arriva Trains Wales</PublicTransportOperator>
+    <Operator>Arriva Trains Wales</Operator>
+    <ModeOfTransport>Railway (Regional)</ModeOfTransport>
+    <Regions>South East, South West, Wales, West Midlands</Regions>
+    <Location>BETWEEN LLANDUDNO JUNCTION AND BLAENAU FFESTINIOG</Location>
+    <RegionsLocation>South East, South West, Wales, West Midlands (BETWEEN LLANDUDNO JUNCTION AND BLAENAU FFESTINIOG)</RegionsLocation>
+    <IncidentType>Line Disruption</IncidentType>
+    <HeadlineText>ARRIVA TRAINS WALES SERVICES AT LLANDUDNO JUNCTION DISRUPTED</HeadlineText>
+    <DetailText>REPLACED BY ROAD TRANSPORT DUE TO ENGINEERING WORK BETWEEN LLANDUDNO JUNCTION AND BLAENAU FFESTINIOG</DetailText>
+    <IncidentStatus>O</IncidentStatus>
+    <Easting>279494.000000</Easting>
+    <Northing>377884.000000</Northing>
+    <ReportedDateTime>2004-04-11T21:33:30.0000000+01:00</ReportedDateTime>
+    <StartDateTime>2004-05-04T14:26:28.0000000+01:00</StartDateTime>
+    <StartToNowMinDiff>941927</StartToNowMinDiff>
+    <LastModifiedDateTime>2004-05-04T07:31:38.0000000+01:00</LastModifiedDateTime>
+    <ExpiryDateTime>2006-02-18T16:31:43.9270000-00:00</ExpiryDateTime>
+  </Table>
+  <Table>
+    <UID>RTM15152</UID>
+    <SeverityLevel>1</SeverityLevel>
+    <SeverityDescription>Serious</SeverityDescription>
+    <PublicTransportOperator>Stena Line</PublicTransportOperator>
+    <Operator>Stena Line</Operator>
+    <ModeOfTransport>Ferry</ModeOfTransport>
+    <Regions>Wales</Regions>
+    <Location>BETWEEN FISHGUARD AND ROSSLARE</Location>
+    <RegionsLocation>Wales (BETWEEN FISHGUARD AND ROSSLARE)</RegionsLocation>
+    <IncidentType>Line Disruption</IncidentType>
+    <HeadlineText>STENA LINE SERVICES AT FISHGUARD DISRUPTED</HeadlineText>
+    <DetailText>SUBJECT TO DISRUPTION BETWEEN FISHGUARD AND ROSSLARE</DetailText>
+    <IncidentStatus>O</IncidentStatus>
+    <Easting>194658.000000</Easting>
+    <Northing>238284.000000</Northing>
+    <ReportedDateTime>2004-05-04T10:23:31.0000000+01:00</ReportedDateTime>
+    <StartDateTime>2004-05-04T14:11:59.0000000+01:00</StartDateTime>
+    <StartToNowMinDiff>941942</StartToNowMinDiff>
+    <LastModifiedDateTime>2004-05-04T15:11:33.0000000+01:00</LastModifiedDateTime>
+    <ExpiryDateTime>2006-02-18T16:31:43.9270000-00:00</ExpiryDateTime>
+  </Table>
+  <Table>
+    <UID>RTM15147</UID>
+    <SeverityLevel>2</SeverityLevel>
+    <SeverityDescription>Very Severe</SeverityDescription>
+    <PublicTransportOperator>South Central</PublicTransportOperator>
+    <Operator>South Central</Operator>
+    <ModeOfTransport>Railway (Suburban)</ModeOfTransport>
+    <Regions>London, South East</Regions>
+    <Location>BETWEEN EAST CROYDON AND CLAPHAM JUNCTION</Location>
+    <RegionsLocation>London, South East (BETWEEN EAST CROYDON AND CLAPHAM JUNCTION)</RegionsLocation>
+    <IncidentType>Line Disruption</IncidentType>
+    <HeadlineText>SOUTH CENTRAL SERVICES AT EAST CROYDON DISRUPTED</HeadlineText>
+    <DetailText>SUBJECT TO DISRUPTION BETWEEN EAST CROYDON AND CLAPHAM JUNCTION</DetailText>
+    <IncidentStatus>O</IncidentStatus>
+    <Easting>532845.000000</Easting>
+    <Northing>165721.000000</Northing>
+    <ReportedDateTime>2004-05-04T10:49:31.0000000+01:00</ReportedDateTime>
+    <StartDateTime>2004-05-04T14:09:03.0000000+01:00</StartDateTime>
+    <StartToNowMinDiff>941944</StartToNowMinDiff>
+    <LastModifiedDateTime>2004-05-04T15:12:14.0000000+01:00</LastModifiedDateTime>
+    <ExpiryDateTime>2006-02-18T16:31:43.9270000-00:00</ExpiryDateTime>
+  </Table>
+  <Table>
+    <UID>RTM15145</UID>
+    <SeverityLevel>3</SeverityLevel>
+    <SeverityDescription>Severe</SeverityDescription>
+    <PublicTransportOperator>P &amp; O Ferries</PublicTransportOperator>
+    <Operator>P &amp; O Ferries</Operator>
+    <ModeOfTransport>Ferry</ModeOfTransport>
+    <Regions>Wales</Regions>
+    <Location>BETWEEN PORTSMOUTH AND CHERBOURG</Location>
+    <RegionsLocation>Wales (BETWEEN PORTSMOUTH AND CHERBOURG)</RegionsLocation>
+    <IncidentType>Line Disruption</IncidentType>
+    <HeadlineText>P and O FERRIES SERVICES AT PORTSMOUTH DISRUPTED</HeadlineText>
+    <DetailText>SUBJECT TO DISRUPTION BETWEEN PORTSMOUTH AND CHERBOURG</DetailText>
+    <IncidentStatus>O</IncidentStatus>
+    <Easting>464370.000000</Easting>
+    <Northing>101686.000000</Northing>
+    <ReportedDateTime>2004-05-04T10:50:28.0000000+01:00</ReportedDateTime>
+    <StartDateTime>2004-05-04T14:07:57.0000000+01:00</StartDateTime>
+    <StartToNowMinDiff>941946</StartToNowMinDiff>
+    <LastModifiedDateTime>2004-05-04T15:12:05.0000000+01:00</LastModifiedDateTime>
+    <ExpiryDateTime>2006-02-18T16:31:43.9270000-00:00</ExpiryDateTime>
+  </Table>
+  <Table>
+    <UID>RTM15141</UID>
+    <SeverityLevel>3</SeverityLevel>
+    <SeverityDescription>Severe</SeverityDescription>
+    <PublicTransportOperator>Thameslink</PublicTransportOperator>
+    <Operator>Thameslink</Operator>
+    <ModeOfTransport>Railway (Suburban)</ModeOfTransport>
+    <Regions>London, South East</Regions>
+    <Location>BETWEEN EAST CROYDON AND LONDON BLACKFRIARS</Location>
+    <RegionsLocation>London, South East (BETWEEN EAST CROYDON AND LONDON BLACKFRIARS)</RegionsLocation>
+    <IncidentType>Line Disruption</IncidentType>
+    <HeadlineText>THAMESLINK SERVICES AT EAST CROYDON DISRUPTED</HeadlineText>
+    <DetailText>SUBJECT TO DISRUPTION BETWEEN EAST CROYDON AND LONDON BLACKFRIARS</DetailText>
+    <IncidentStatus>O</IncidentStatus>
+    <Easting>532845.000000</Easting>
+    <Northing>165721.000000</Northing>
+    <ReportedDateTime>2004-05-04T11:12:56.0000000+01:00</ReportedDateTime>
+    <StartDateTime>2004-05-04T14:05:06.0000000+01:00</StartDateTime>
+    <StartToNowMinDiff>941948</StartToNowMinDiff>
+    <LastModifiedDateTime>2004-05-04T15:12:18.0000000+01:00</LastModifiedDateTime>
+    <ExpiryDateTime>2006-02-18T16:31:43.9270000-00:00</ExpiryDateTime>
+  </Table>
+</NewDataSet>

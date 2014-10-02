@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01FDBE5B-FA4D-4395-87F6-A217B545B0A7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.enhancedexposedservices</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.EnhancedExposedServices</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>618</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdditionalDataAccessModule, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\AdditionalDataAccessModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3">
+      <HintPath>..\..\..\..\ThirdParty\Microsoft\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\ThirdParty\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Project>{1BF668A4-F9B2-4D64-85CB-ADD80C432849}</Project>
+      <Name>AdditionalDataModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AirDataProvider\AirDataProvider.csproj">
+      <Name>AirDataProvider</Name>
+      <Project>{F28705AF-3A71-4735-82FD-DBDBC2611611}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CoordinateConvertorProvider\CoordinateConvertorProvider.csproj">
+      <Project>{415887EA-EC67-4E72-9BF2-62B28D9272EC}</Project>
+      <Name>CoordinateConvertorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CyclePlannerControl\CyclePlannerControl.csproj">
+      <Project>{2E288B42-FABF-487E-B8D8-64AD18B90208}</Project>
+      <Name>CyclePlannerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{2E16F073-D95F-4DE8-8E60-381899A722DA}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Name>DatabaseInfrastructure</Name>
+      <Project>{5F116712-53F6-4A9F-B11B-96D0812190AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyEmissions\JourneyEmissions.csproj">
+      <Project>{9737FC5A-5F4E-4CF3-8C52-918D64F59849}</Project>
+      <Name>JourneyEmissions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PropertiesService\DatabasePropertyProvider\DatabasePropertyProvider.csproj">
+      <Name>DatabasePropertyProvider</Name>
+      <Project>{946A95B4-3145-4F4E-9E8F-54B78F1FA5F4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DepartureBoardService\DepartureBoardService.csproj">
+      <Name>DepartureBoardService</Name>
+      <Project>{1CEE342F-B3DF-44AD-A56B-1B861292E016}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EnhancedExposedServicesCommon\EnhancedExposedServicesCommon.csproj">
+      <Name>EnhancedExposedServicesCommon</Name>
+      <Project>{7180B0C2-5587-40AB-AA37-49B06B88272F}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EnhancedExposedServicesDataTransfer\EnhancedExposedServicesDataTransfer.csproj">
+      <Name>EnhancedExposedServicesDataTransfer</Name>
+      <Project>{E73E56B4-CAC4-4B50-8BE9-7E17B305A262}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EnhancedExposedServicesSecurity\EnhancedExposedServicesSecurity.csproj">
+      <Name>EnhancedExposedServicesSecurity</Name>
+      <Project>{2434F1B3-878F-4A97-9AB2-14B885EF1E45}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyControl\JourneyControl.csproj">
+      <Name>JourneyControl</Name>
+      <Project>{27414D3D-9782-44C6-A5BD-A11ECEA591E5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyPlannerService\JourneyPlannerService.csproj">
+      <Name>JourneyPlannerService</Name>
+      <Project>{6A29595D-179B-4387-9929-AF938DAF269B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LocationService\LocationService.csproj">
+      <Name>LocationService</Name>
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Partners\Partners.csproj">
+      <Name>Partners</Name>
+      <Project>{1E7A12BB-D279-47B8-8A2B-71C2F6068F2D}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ResourceManager\ResourceManager.csproj">
+      <Project>{C0EADF9C-59D2-45EA-A67D-09CA8999746C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SessionManager\SessionManager.csproj">
+      <Name>SessionManager</Name>
+      <Project>{6F189D8B-6F30-4FC3-8EFC-5E3001A8C862}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ReportDataProvider\TDPCustomEvents\TDPCustomEvents.csproj">
+      <Name>TDPCustomEvents</Name>
+      <Project>{A377CDD7-9190-46F2-8938-65DF17478D21}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TravelNews\TravelNews.csproj">
+      <Name>TravelNews</Name>
+      <Project>{D0CC64DB-B860-4087-8B51-1DCD6FE7C41F}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TravelNewsInterface\TravelNewsInterface.csproj">
+      <Name>TravelNewsInterface</Name>
+      <Project>{E699CD07-D144-4EB4-929B-09AE4E0E01EC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="td.CJP">
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\td.CJP.dll</HintPath>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="td.RoadRoutingEngine">
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\td.RoadRoutingEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="CarJourneyPlannerSynchronous\V1\CarJourneyPlannerSynchronousService.asmx.cs">
+      <DependentUpon>CarJourneyPlannerSynchronousService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CarJourneyPlannerSynchronous\V1\Test\TestCarJourneyPlannerSynchronousService.cs" />
+    <Compile Include="CarJourneyPlannerSynchronous\V1\Test\TestCarJourneyPlannerSyncServiceProxyReference.cs" />
+    <Compile Include="CarJourneyPlannerSynchronous\V1\Test\TestMessageValidation.cs" />
+    <Compile Include="CodeHandler\V1\CodeService.asmx.cs">
+      <DependentUpon>CodeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CodeHandler\V1\Test\TestCodeService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeHandler\V1\Test\TestCodeServiceProxyReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CycleJourneyPlannerSynchronous\V1\CycleJourneyPlannerSynchronousService.asmx.cs">
+      <DependentUpon>CycleJourneyPlannerSynchronousService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CycleJourneyPlannerSynchronous\V1\Test\TestCycleJourneyPlannerSynchronousService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CycleJourneyPlannerSynchronous\V1\Test\TestCycleJourneyPlannerSyncServiceProxyReference.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="CycleJourneyPlannerSynchronous\V1\Test\TestMessageValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\DepartureBoardService.asmx.cs">
+      <DependentUpon>DepartureBoardService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\Test\TestDepartureBoard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\Test\TestDepartureBoardProxyReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\Test\TestDepartureBoardServiceStub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartureBoard\V1\Test\TestDepartureBoardValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnhancedExposedServicesInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FindNearest\V1\FindNearestService.asmx.cs">
+      <DependentUpon>FindNearestService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FindNearest\V1\Test\TestFindNearestService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindNearest\V1\Test\TestFindNearestServiceProxyReference.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GradientProfile\V1\GradientProfileService.asmx.cs">
+      <DependentUpon>GradientProfileService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\EnhancedExposedServicesHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\EnhancedExposedServicesKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\EnhancedExposedServicesMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlannerSynchronous\V1\JourneyPlannerSynchronousService.asmx.cs">
+      <DependentUpon>JourneyPlannerSynchronousService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JourneyPlannerSynchronous\V1\Test\TestJourneyPlannerSynchronousService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlannerSynchronous\V1\Test\TestJourneyPlannerSynchronousStub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlannerSynchronous\V1\Test\TestJourneyPlannerSyncServiceProxyReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlannerSynchronous\V1\Test\TestMessageValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\JourneyPlannerService.asmx.cs">
+      <DependentUpon>JourneyPlannerService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\Test\TestJourneyPlannerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\Test\TestJourneyPlannerServiceProxyReference.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\Test\TestJourneyPlannerStub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JourneyPlanner\V1\Test\TestMessageValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\OpenJourneyPlannerService.asmx.cs">
+      <DependentUpon>OpenJourneyPlannerService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Test\TestMessageValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Test\TestOpenJourneyPlannerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenJourneyPlanner\V1\Test\TestOpenJourneyPlannerServiceProxyReference.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="SoapFault\V1\FaultElements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoapFault\V1\SoapExceptionHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoapFault\V1\Test\TestSoapExceptionHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxiInformation\V1\TaxiInformationService.asmx.cs">
+      <DependentUpon>TaxiInformationService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TaxiInformation\V1\Test\TestTaxiInformationProxyReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxiInformation\V1\Test\TestTaxiInformationService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDEnhancedExposedWebService.asmx.cs">
+      <DependentUpon>TDEnhancedExposedWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test\TestAuthentication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestMessageValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestRequestContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestServiceAndOperationTypesExistsInDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestTestWebService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test\TestWebService.asmx.cs">
+      <DependentUpon>TestWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test\TestWebServiceProxyReference.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\Test\TestInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\Test\TestTravelNewsService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\Test\TestTravelNewsServiceProxyReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TravelNews\V1\TravelNewsService.asmx.cs">
+      <DependentUpon>TravelNewsService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validation\MessageValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="CarJourneyPlannerSynchronous\V1\CarJourneyPlannerSynchronousService.asmx" />
+    <Content Include="CodeHandler\V1\CodeService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CodeHandler\V1\schemas\codeservice.wsdl" />
+    <Content Include="CycleJourneyPlannerSynchronous\V1\CycleJourneyPlannerSynchronousService.asmx" />
+    <Content Include="DepartureBoard\V1\DepartureBoardService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DepartureBoard\V1\schemas\DepartureBoardService.wsdl" />
+    <Content Include="ErrorPage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="FindNearest\V1\FindNearestService.asmx" />
+    <Content Include="FindNearest\V1\schemas\FindNearestService.wsdl" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="GradientProfile\V1\GradientProfileService.asmx" />
+    <Content Include="images\TDLogo.gif" />
+    <Content Include="images\TDSmallBanner.gif" />
+    <Content Include="JourneyPlannerSynchronous\V1\JourneyPlannerSynchronousService.asmx" />
+    <Content Include="JourneyPlannerSynchronous\V1\schemas\JourneyPlannerSynchronous.wsdl" />
+    <Content Include="JourneyPlanner\V1\JourneyPlannerService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="JourneyPlanner\V1\schemas\JourneyPlanner.wsdl" />
+    <Content Include="OpenJourneyPlanner\V1\OpenJourneyPlannerService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="OpenJourneyPlanner\V1\schemas\OpenJourneyPlannerService.wsdl" />
+    <Content Include="styles\setup.css" />
+    <Content Include="TaxiInformation\V1\schemas\TaxiInformationservice.wsdl" />
+    <Content Include="TaxiInformation\V1\TaxiInformationService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="TDEnhancedExposedWebService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <None Include="Test\schemas\TestWebService.wsdl" />
+    <Content Include="Test\TestWebService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="TravelNews\V1\schemas\TravelNewsService.wsdl" />
+    <Content Include="TravelNews\V1\TravelNewsService.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Web.config" />
+    <EmbeddedResource Include="CodeHandler\V1\CodeService.asmx.resx">
+      <DependentUpon>CodeService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartureBoard\V1\DepartureBoardService.asmx.resx">
+      <DependentUpon>DepartureBoardService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorPage.aspx.resx">
+      <DependentUpon>ErrorPage.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindNearest\V1\FindNearestService.asmx.resx">
+      <DependentUpon>FindNearestService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JourneyPlannerSynchronous\V1\JourneyPlannerSynchronousService.asmx.resx">
+      <DependentUpon>JourneyPlannerSynchronousService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JourneyPlanner\V1\JourneyPlannerService.asmx.resx">
+      <DependentUpon>JourneyPlannerService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenJourneyPlanner\V1\OpenJourneyPlannerService.asmx.resx">
+      <DependentUpon>OpenJourneyPlannerService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxiInformation\V1\TaxiInformationService.asmx.resx">
+      <DependentUpon>TaxiInformationService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TDEnhancedExposedWebService.asmx.resx">
+      <DependentUpon>TDEnhancedExposedWebService.asmx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\TestWebService.asmx.resx">
+      <DependentUpon>TestWebService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelNews\V1\TravelNewsService.asmx.resx">
+      <DependentUpon>TravelNewsService.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\ValidationResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="CarJourneyPlannerSynchronous\V1\schemas\CarJourneyPlannerSynchronous.wsdl" />
+    <Content Include="CycleJourneyPlannerSynchronous\V1\schemas\CycleJourneyPlannerSynchronous.wsdl" />
+    <Content Include="GradientProfile\V1\schemas\GradientProfileService.wsdl" />
+    <Content Include="Schema\rttiEPTSchema.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GradientProfile\V1\Test\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1176</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/EnhancedExposedServices</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

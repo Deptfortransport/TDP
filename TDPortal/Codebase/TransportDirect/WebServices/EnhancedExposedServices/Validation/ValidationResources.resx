@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="SOAP1.1" type="text" mimetype="text/xml">
+		<value>&lt;!-- Schema for the SOAP/1.1 envelope
+
+     This schema has been produced using W3C's SOAP Version 1.2 schema
+     found at:
+
+     http://www.w3.org/2001/06/soap-envelope
+
+     Copyright 2001 Martin Gudgin, Developmentor.
+
+     Changes made are the following:
+     - reverted namespace to http://schemas.xmlsoap.org/soap/envelope/
+     - reverted mustUnderstand to only allow 0 and 1 as lexical values
+
+     Original copyright:
+     
+     Copyright 2001 W3C (Massachusetts Institute of Technology,
+     Institut National de Recherche en Informatique et en Automatique,
+     Keio University). All Rights Reserved.
+     http://www.w3.org/Consortium/Legal/
+
+     This document is governed by the W3C Software License [1] as
+     described in the FAQ [2].
+
+     [1] http://www.w3.org/Consortium/Legal/copyright-software-19980720
+     [2] http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD
+--&gt;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+	&lt;!-- Envelope, header and body --&gt;
+	&lt;xs:element name="Envelope" type="tns:Envelope" /&gt;
+	&lt;xs:complexType name="Envelope"&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element ref="tns:Header" minOccurs="0" /&gt;
+			&lt;xs:element ref="tns:Body" minOccurs="1" /&gt;
+			&lt;xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;
+		&lt;/xs:sequence&gt;
+		&lt;xs:anyAttribute namespace="##other" processContents="lax" /&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:element name="Header" type="tns:Header" /&gt;
+	&lt;xs:complexType name="Header"&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;
+		&lt;/xs:sequence&gt;
+		&lt;xs:anyAttribute namespace="##other" processContents="lax" /&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:element name="Body" type="tns:Body" /&gt;
+	&lt;xs:complexType name="Body"&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:any namespace="##any" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;
+		&lt;/xs:sequence&gt;
+		&lt;xs:anyAttribute namespace="##any" processContents="lax"&gt;
+			&lt;xs:annotation&gt;
+				&lt;xs:documentation&gt;
+		  Prose in the spec does not specify that attributes are allowed on the Body element
+		&lt;/xs:documentation&gt;
+			&lt;/xs:annotation&gt;
+		&lt;/xs:anyAttribute&gt;
+	&lt;/xs:complexType&gt;
+	&lt;!-- Global Attributes.  The following attributes are intended to be usable via qualified attribute names on any complex type referencing them.  --&gt;
+	&lt;xs:attribute name="mustUnderstand" default="0"&gt;
+		&lt;xs:simpleType&gt;
+			&lt;xs:restriction base='xs:boolean'&gt;
+				&lt;xs:pattern value='0|1' /&gt;
+			&lt;/xs:restriction&gt;
+		&lt;/xs:simpleType&gt;
+	&lt;/xs:attribute&gt;
+	&lt;xs:attribute name="actor" type="xs:anyURI" /&gt;
+	&lt;xs:simpleType name="encodingStyle"&gt;
+		&lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;
+	    'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification
+	  &lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+		&lt;xs:list itemType="xs:anyURI" /&gt;
+	&lt;/xs:simpleType&gt;
+	&lt;xs:attributeGroup name="encodingStyle"&gt;
+		&lt;xs:attribute name="encodingStyle" type="tns:encodingStyle" /&gt;
+	&lt;/xs:attributeGroup&gt;
+	&lt;xs:complexType name="Fault" final="extension"&gt;
+		&lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;
+	    Fault reporting structure
+	  &lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name="faultcode" type="xs:QName" /&gt;
+			&lt;xs:element name="faultstring" type="xs:string" /&gt;
+			&lt;xs:element name="faultactor" type="xs:anyURI" minOccurs="0" /&gt;
+			&lt;xs:element name="detail" type="tns:detail" minOccurs="0" /&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name="detail"&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:any namespace="##any" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;
+		&lt;/xs:sequence&gt;
+		&lt;xs:anyAttribute namespace="##any" processContents="lax" /&gt;
+	&lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;
+</value>
+		<comment>SOAP 1.1 XML Schema Definition</comment>
+	</data>
+</root>

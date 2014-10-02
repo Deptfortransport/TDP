@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1">
+      <s:element name="PlanCarJourney">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+              <s:simpleType>
+                <s:restriction base="s:string">
+                  <s:minLength value="1"/>
+                  <s:maxLength value="100"/>
+                </s:restriction>
+              </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="request" type="tns:CarJourneyRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CarJourneyRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="JourneyRequests" type="tns:ArrayOfJourneyRequest" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarParameters" type="tns:CarParameters" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultSettings" type="tns:ResultSettings" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfJourneyRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="JourneyRequest" nillable="true" type="tns:JourneyRequest" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="JourneyRequestId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OriginLocation" type="tns:RequestLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="DestinationLocation" type="tns:RequestLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="ViaLocation" type="tns:RequestLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutwardDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutwardArriveBefore" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnArriveBefore" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsReturnRequired" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:LocationType" />
+          <s:element minOccurs="0" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+          <s:element minOccurs="0" maxOccurs="1" name="NaPTANs" type="tns:ArrayOfNaptan" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postcode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="LocationType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Postcode" />
+          <s:enumeration value="NaPTAN" />
+          <s:enumeration value="Coordinate" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="OSGridReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfNaptan">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Naptan" nillable="true" type="tns:Naptan" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Naptan">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+          <s:element minOccurs="0" maxOccurs="1" name="NaptanId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CarParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Algorithm" type="tns:CarAlgorithmType" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarSizeType" type="tns:CarSizeType" />
+          <s:element minOccurs="0" maxOccurs="1" name="FuelType" type="tns:FuelType" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaxSpeed" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FuelConsumption" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FuelConsumptionUnit" type="tns:FuelConsumptionUnit" />
+          <s:element minOccurs="0" maxOccurs="1" name="FuelCost" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="BanMotorway" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="AvoidToll" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="AvoidFerries" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="AvoidMotorway" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="AvoidRoads" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="UseRoads" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CarAlgorithmType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Fastest" />
+          <s:enumeration value="Shortest" />
+          <s:enumeration value="MostEconomical" />
+          <s:enumeration value="Cheapest" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="CarSizeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Small" />
+          <s:enumeration value="Medium" />
+          <s:enumeration value="Large" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="FuelType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Petrol" />
+          <s:enumeration value="Diesel" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="FuelConsumptionUnit">
+        <s:restriction base="s:string">
+          <s:enumeration value="MilesPerGallon" />
+          <s:enumeration value="LitresPer100Km" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultSettings">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ResultType" type="tns:ResultType" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistanceUnit" type="tns:DistanceUnit" />
+          <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ResultType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Summary" />
+          <s:enumeration value="Detailed" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="DistanceUnit">
+        <s:restriction base="s:string">
+          <s:enumeration value="Miles" />
+          <s:enumeration value="Kms" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="PlanCarJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanCarJourneyResult" type="tns:CarJourneyResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CarJourneyResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CompletionStatus" type="tns:CompletionStatus" />
+          <s:element minOccurs="0" maxOccurs="1" name="JourneyResults" type="tns:ArrayOfJourneyResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CompletionStatus">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:StatusType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Messages" type="tns:ArrayOfMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="StatusType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failed" />
+          <s:enumeration value="ValidationError" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Message">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Text" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfJourneyResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="JourneyResult" nillable="true" type="tns:JourneyResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="JourneyId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessages" type="tns:ArrayOfMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserWarnings" type="tns:ArrayOfMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutwardCarJourney" type="tns:CarJourney" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnCarJourney" type="tns:CarJourney" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CarJourney">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Summary" type="tns:CarJourneySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Details" type="tns:ArrayOfCarJourneyDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CarJourneySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OriginLocation" type="tns:ResponseLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="DestinationLocation" type="tns:ResponseLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="ViaLocation" type="tns:ResponseLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepartureDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArrivalDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Duration" type="tns:TimeSpan" />
+          <s:element minOccurs="1" maxOccurs="1" name="Distance" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DistanceUnit" type="tns:DistanceUnit" />
+          <s:element minOccurs="0" maxOccurs="1" name="Costs" type="tns:ArrayOfCarCost" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emissions" type="tns:ArrayOfEmissions" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarParameters" type="tns:CarParameters" />
+          <s:element minOccurs="0" maxOccurs="1" name="SummaryDirections" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:LocationType" />
+          <s:element minOccurs="0" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+          <s:element minOccurs="0" maxOccurs="1" name="NaPTANs" type="tns:ArrayOfNaptan" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postcode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TimeSpan">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Days" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hours" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Minutes" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Seconds" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCarCost">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CarCost" nillable="true" type="tns:CarCost" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CarCost">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CostType" type="tns:CarCostType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cost" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyURL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CarCostType">
+        <s:restriction base="s:string">
+          <s:enumeration value="TotalCost" />
+          <s:enumeration value="TotalOtherCosts" />
+          <s:enumeration value="FuelCost" />
+          <s:enumeration value="RunningCost" />
+          <s:enumeration value="OtherCost" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfEmissions">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Emissions" nillable="true" type="tns:Emissions" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Emissions">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="VehicleType" type="tns:VehicleType" />
+          <s:element minOccurs="1" maxOccurs="1" name="CO2Emissions" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="VehicleType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Car" />
+          <s:enumeration value="SmallCar" />
+          <s:enumeration value="LargeCar" />
+          <s:enumeration value="Train" />
+          <s:enumeration value="Bus" />
+          <s:enumeration value="Coach" />
+          <s:enumeration value="Plane" />
+          <s:enumeration value="Bicycle" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfCarJourneyDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CarJourneyDetail" nillable="true" type="tns:CarJourneyDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CarJourneyDetail">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="InstructionNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="InstructionText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CumulativeDistance" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArrivalTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cost" type="tns:CarCost" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGridReference">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="locationType" type="tns:LocationType" />
+            <s:element minOccurs="1" maxOccurs="1" name="locationValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGridReferenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGridReferenceResult" type="tns:OSGridReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OSGridReference" nillable="true" type="tns:OSGridReference" />
+    </s:schema>
+  </wsdl:types>
+
+  <wsdl:message name="PlanCarJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:PlanCarJourney" />
+  </wsdl:message>
+  <wsdl:message name="PlanCarJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:PlanCarJourneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGridReferenceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGridReference" />
+  </wsdl:message>
+  <wsdl:message name="GetGridReferenceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGridReferenceResponse" />
+  </wsdl:message>
+
+  <wsdl:portType name="CarJourneyPlannerSynchronousServiceSoap">
+    <wsdl:operation name="PlanCarJourney">
+      <wsdl:input message="tns:PlanCarJourneySoapIn" />
+      <wsdl:output message="tns:PlanCarJourneySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGridReference">
+      <wsdl:input message="tns:GetGridReferenceSoapIn" />
+      <wsdl:output message="tns:GetGridReferenceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <wsdl:binding name="CarJourneyPlannerSynchronousServiceSoap" type="tns:CarJourneyPlannerSynchronousServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PlanCarJourney">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1/PlanCarJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGridReference">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CarJourneyPlannerSynchronous.V1/GetGridReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  
+  <wsdl:service name="CarJourneyPlannerSynchronousService">
+    <wsdl:port name="CarJourneyPlannerSynchronousServiceSoap" binding="tns:CarJourneyPlannerSynchronousServiceSoap">
+      <soap:address location="http://www.transportdirect.info/EnhancedExposedServices/CarJourneyPlannerSynchronous/v1/CarJourneyPlannerSynchronousService.asmx" />
+    </wsdl:port>      
+  </wsdl:service>
+</wsdl:definitions>

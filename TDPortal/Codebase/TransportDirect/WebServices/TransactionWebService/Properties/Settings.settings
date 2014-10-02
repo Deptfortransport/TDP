@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TransportDirect.ReportDataProvider.TransactionWebService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="td_reportdataprovider_transactionwebservice_TDP_EES_DepartureBoardService_DepartureBoardService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/EnhancedExposedServices/DepartureBoard/V1/DepartureBoardService.asmx</Value>
+    </Setting>
+    <Setting Name="td_reportdataprovider_transactionwebservice_TDP_EES_FindNearestService_FindNearest" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.transportdirect.info/EnhancedExposedServices/FindNearest/V1/FindNearestService.asmx</Value>
+    </Setting>
+    <Setting Name="td_reportdataprovider_transactionwebservice_TDP_EES_JourneyPlannerSynchronousService_JourneyPlannerSynchronousService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.transportdirect.info/EnhancedExposedServices/JourneyPlannerSynchronous/V1/JourneyPlannerSynchronousService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

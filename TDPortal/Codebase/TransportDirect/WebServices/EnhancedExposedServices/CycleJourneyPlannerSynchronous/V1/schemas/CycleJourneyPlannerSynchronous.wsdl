@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1">
+      <s:element name="PlanCycleJourney">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId">
+              <s:simpleType>
+                <s:restriction base="s:string">
+                  <s:minLength value="1"/>
+                  <s:maxLength value="100"/>
+                </s:restriction>
+              </s:simpleType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="request" type="tns:CycleJourneyRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CycleJourneyRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="JourneyRequest" type="tns:JourneyRequest" />
+          <s:element minOccurs="0" maxOccurs="1" name="CycleParameters" type="tns:CycleParameters" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultSettings" type="tns:ResultSettings" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="JourneyRequestId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OriginLocation" type="tns:RequestLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="DestinationLocation" type="tns:RequestLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="ViaLocation" type="tns:RequestLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutwardDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutwardArriveBefore" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:LocationType" />
+          <s:element minOccurs="1" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="LocationType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Coordinate" />
+          <s:enumeration value="NaPTAN" />
+          <s:enumeration value="Postcode" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="OSGridReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Algorithm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPreferences" type="tns:ArrayOfRequestPreference" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestPreference">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RequestPreference" nillable="true" type="tns:RequestPreference" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestPreference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PreferenceId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PreferenceValue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultSettings">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IncludeGeometry" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="PointSeparator" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EastingNorthingSeparator" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistanceUnit" type="tns:DistanceUnit" />
+          <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DistanceUnit">
+        <s:restriction base="s:string">
+          <s:enumeration value="Miles" />
+          <s:enumeration value="Kms" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="PlanCycleJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanCycleJourneyResult" type="tns:CycleJourneyResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CycleJourneyResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CompletionStatus" type="tns:CompletionStatus" />
+          <s:element minOccurs="0" maxOccurs="1" name="JourneyResult" type="tns:JourneyResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CompletionStatus">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:StatusType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Messages" type="tns:ArrayOfMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="StatusType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failed" />
+          <s:enumeration value="ValidationError" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Message">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Text" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="JourneyId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessages" type="tns:ArrayOfMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserWarnings" type="tns:ArrayOfMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutwardCycleJourney" type="tns:CycleJourney" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleJourney">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Summary" type="tns:CycleJourneySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Details" type="tns:ArrayOfCycleJourneyDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleJourneySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OriginLocation" type="tns:ResponseLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="DestinationLocation" type="tns:ResponseLocation" />
+          <s:element minOccurs="0" maxOccurs="1" name="ViaLocation" type="tns:ResponseLocation" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepartureDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArrivalDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Duration" type="tns:TimeSpan" />
+          <s:element minOccurs="1" maxOccurs="1" name="Distance" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DistanceUnit" type="tns:DistanceUnit" />
+          <s:element minOccurs="0" maxOccurs="1" name="Costs" type="tns:ArrayOfCycleCost" />
+          <s:element minOccurs="0" maxOccurs="1" name="SummaryDirections" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:LocationType" />
+          <s:element minOccurs="0" maxOccurs="1" name="GridReference" type="tns:OSGridReference" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TimeSpan">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Days" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hours" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Minutes" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Seconds" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCycleCost">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CycleCost" nillable="true" type="tns:CycleCost" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleCost">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CostType" type="tns:CycleCostType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cost" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyURL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CycleCostType">
+        <s:restriction base="s:string">
+          <s:enumeration value="OtherCost" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfCycleJourneyDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CycleJourneyDetail" nillable="true" type="tns:CycleJourneyDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleJourneyDetail">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="InstructionNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="InstructionText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CumulativeDistance" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArrivalTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cost" type="tns:CycleCost" />
+          <s:element minOccurs="0" maxOccurs="1" name="Geometry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsRecommendedCycleRoute" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsCycleInfrastructure" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsPath" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsBridgeTunnel" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CycleRouteName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JoiningSignificantLinkAttributes" type="tns:ArrayOfUnsignedInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="LeavingSignificantLinkAttributes" type="tns:ArrayOfUnsignedInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="InterestingLinkAttributes" type="tns:ArrayOfUnsignedInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="SignificantNodeAttributes" type="tns:ArrayOfUnsignedInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="SectionFeatureAttributes" type="tns:ArrayOfUnsignedInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUnsignedInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="unsignedInt" nillable="true" type="s:unsignedInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCycleAlgorithms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCycleAlgorithmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name=" GetCycleAlgorithmsResult" type="tns:ArrayOfCycleAlgorithm" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCycleAlgorithm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CycleAlgorithm" nillable="true" type="tns:CycleAlgorithm" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleAlgorithm">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AlgorithmDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlgorithmDLL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlgorithmPenaltyFunction" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlgorithmCall" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+
+      <s:element name="GetCycleAttributes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCycleAttributesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name=" GetCycleAttributesResult" type="tns:ArrayOfCycleAttribute" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCycleAttribute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CycleAttribute" nillable="true" type="tns:CycleAttribute" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleAttribute">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttributeDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttributeType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttributeGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttributeInteger" type="s:unsignedInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttributeMask" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+
+      <s:element name="GetCycleRequestPreferences">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCycleRequestPreferencesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCycleRequestPreferencesResult" type="tns:ArrayOfCycleRequestPreference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCycleRequestPreference">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CycleRequestPreference" nillable="true" type="tns:CycleRequestPreference" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleRequestPreference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RequestDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPreference" type="tns:RequestPreference" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGridReference">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="locationType" type="tns:LocationType" />
+            <s:element minOccurs="1" maxOccurs="1" name="locationValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGridReferenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGridReferenceResult" type="tns:OSGridReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OSGridReference" nillable="true" type="tns:OSGridReference" />
+    </s:schema>
+  </wsdl:types>
+
+  <wsdl:message name="PlanCycleJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:PlanCycleJourney" />
+  </wsdl:message>
+  <wsdl:message name="PlanCycleJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:PlanCycleJourneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCycleAlgorithmsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCycleAlgorithms" />
+  </wsdl:message>
+  <wsdl:message name="GetCycleAlgorithmsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCycleAlgorithmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCycleAttributesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCycleAttributes" />
+  </wsdl:message>
+  <wsdl:message name="GetCycleAttributesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCycleAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCycleRequestPreferencesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCycleRequestPreferences" />
+  </wsdl:message>
+  <wsdl:message name="GetCycleRequestPreferencesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCycleRequestPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGridReferenceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGridReference" />
+  </wsdl:message>
+  <wsdl:message name="GetGridReferenceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGridReferenceResponse" />
+  </wsdl:message>
+
+  <wsdl:portType name="CycleJourneyPlannerSynchronousServiceSoap">
+    <wsdl:operation name="PlanCycleJourney">
+      <wsdl:input message="tns:PlanCycleJourneySoapIn" />
+      <wsdl:output message="tns:PlanCycleJourneySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleAlgorithms">
+      <wsdl:input message="tns:GetCycleAlgorithmsSoapIn" />
+      <wsdl:output message="tns:GetCycleAlgorithmsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleAttributes">
+      <wsdl:input message="tns:GetCycleAttributesSoapIn" />
+      <wsdl:output message="tns:GetCycleAttributesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleRequestPreferences">
+      <wsdl:input message="tns:GetCycleRequestPreferencesSoapIn" />
+      <wsdl:output message="tns:GetCycleRequestPreferencesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGridReference">
+      <wsdl:input message="tns:GetGridReferenceSoapIn" />
+      <wsdl:output message="tns:GetGridReferenceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+
+  <wsdl:binding name="CycleJourneyPlannerSynchronousServiceSoap" type="tns:CycleJourneyPlannerSynchronousServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PlanCycleJourney">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1/PlanCycleJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleAlgorithms">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1/GetCycleAlgorithms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleAttributes">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1/GetCycleAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleRequestPreferences">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1/GetCycleRequestPreferences" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGridReference">
+      <soap:operation soapAction="http://www.transportdirect.info/TransportDirect.EnhancedExposedServices.CycleJourneyPlannerSynchronous.V1/GetGridReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:service name="CycleJourneyPlannerSynchronousService">
+    <wsdl:port name="CycleJourneyPlannerSynchronousServiceSoap" binding="tns:CycleJourneyPlannerSynchronousServiceSoap">
+      <soap:address location="http://www.transportdirect.info/EnhancedExposedServices/CycleJourneyPlannerSynchronous/v1/CycleJourneyPlannerSynchronousService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
