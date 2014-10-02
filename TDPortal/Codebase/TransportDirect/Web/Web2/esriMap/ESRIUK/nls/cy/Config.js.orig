@@ -1,0 +1,47 @@
+﻿({
+  travelNewsEnum:{
+    pRoad:'cy: Roadworks',
+    pRail:'cy: Rail Engineering',
+    upRoad:'cy: Road incident',
+    upRail:'cy: PT incident' 
+  },
+  
+  planAJourneyText:{
+    addPointPrefix:'cy: Plan a journey',
+    addPointSuffixStart:'cy:  from here',
+    addPointSuffixVia:'cy: via here',    
+    addPointSuffixEnd:'cy:  to here',
+    addPointNoTitle:'cy: No information set for this point',
+    addPointTitle:'cy: Add Point',
+    addPointDefaultText:'cy: New Point'
+  },
+  
+  misc:{
+    infoPageCarParks:'cy: Car park information page',
+    infoPageStops:'cy: Stop information page',
+    parkandride:'cy: park and ride',
+    carpark:'cy: car park',
+    loading:'cy: Loading...',
+    ok:'cy: OK',
+    cancel:'cy: Cancel'
+  },
+  
+  errors:{
+    noNearbyPointsFound:'cy: No nearby points were found.'
+  },
+
+  mapNavPanel:{
+    altSuffix:'cy:  navigation image',      
+    panNorth:'cy: Pan North',
+    panEast:'cy: Pan East',
+    panSouth:'cy: Pan South',
+    panWest:'cy: Pan West',
+    fullExtent:'cy: Full Extent'
+  },
+  mapToolbarPanel:{
+    altSuffix:'cy:  tool image',
+    panMap:'cy: Pan Map',
+    userDefined:'cy: Add A User Defined Location',
+    selectNearby:'cy: Select A Nearby Point'
+  }
+})

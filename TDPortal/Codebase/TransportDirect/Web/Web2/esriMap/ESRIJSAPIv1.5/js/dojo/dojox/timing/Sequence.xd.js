@@ -1,0 +1,8 @@
+/*
+	Copyright (c) 2004-2009, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+
+dojo._xdResourceLoaded(function(_1,_2,_3){return {depends:[["provide","dojox.timing.Sequence"]],defineResource:function(_4,_5,_6){if(!_4._hasResource["dojox.timing.Sequence"]){_4._hasResource["dojox.timing.Sequence"]=true;_4.provide("dojox.timing.Sequence");_4.experimental("dojox.timing.Sequence");_4.declare("dojox.timing.Sequence",null,{_goOnPause:0,_running:false,constructor:function(){this._defsResolved=[];},go:function(_7,_8){this._running=true;_4.forEach(_7,function(_9){if(_9.repeat>1){var _a=_9.repeat;for(var j=0;j<_a;j++){_9.repeat=1;this._defsResolved.push(_9);}}else{this._defsResolved.push(_9);}},this);var _c=_7[_7.length-1];if(_8){this._defsResolved.push({func:_8});}this._defsResolved.push({func:[this.stop,this]});this._curId=0;this._go();},_go:function(){if(!this._running){return;}var _d=this._defsResolved[this._curId];this._curId+=1;function _e(_f){var ret=null;if(_4.isArray(_f)){if(_f.length>2){ret=_f[0].apply(_f[1],_f.slice(2));}else{ret=_f[0].apply(_f[1]);}}else{ret=_f();}return ret;};if(this._curId>=this._defsResolved.length){_e(_d.func);return;}if(_d.pauseAfter){if(_e(_d.func)!==false){setTimeout(_4.hitch(this,"_go"),_d.pauseAfter);}else{this._goOnPause=_d.pauseAfter;}}else{if(_d.pauseBefore){var x=_4.hitch(this,function(){if(_e(_d.func)!==false){this._go();}});setTimeout(x,_d.pauseBefore);}else{if(_e(_d.func)!==false){this._go();}}}},goOn:function(){if(this._goOnPause){setTimeout(_4.hitch(this,"_go"),this._goOnPause);this._goOnPause=0;}else{this._go();}},stop:function(){this._running=false;}});}}};});

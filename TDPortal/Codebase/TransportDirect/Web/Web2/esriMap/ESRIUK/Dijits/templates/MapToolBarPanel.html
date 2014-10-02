@@ -1,0 +1,13 @@
+﻿<div class="toolbarPanelContainer" style="display:none">
+    <div class="toolbarPanelHolder mapPanel">
+        <span class="toolbarPanelItem selected default" dojoAttachPoint="attachDefault">
+            <img title="${_statics.panMap}" alt="${_statics.panMap}${_statics.altSuffix}" src="${imagePath}default-map-actions${navImgType}" dojoAttachEvent='onclick:_onDefaultMapActions' class="transparentPNG" />
+        </span>
+        <span class="toolbarPanelItem" dojoAttachPoint="attachUserDefined">
+            <img title="${_statics.userDefined}" alt="${_statics.userDefined}${_statics.altSuffix}" src="${imagePath}user-defined-location${navImgType}" dojoAttachEvent='onclick:_onUserDefinedLocation' class="transparentPNG" />
+        </span>                
+        <span class="toolbarPanelItem" dojoAttachPoint="attachSelectNearby">
+            <img title="${_statics.selectNearby}" alt="${_statics.selectNearby}${_statics.altSuffix}" src="${imagePath}select-nearby-point${navImgType}" dojoAttachEvent='onclick:_onSelectNearbyPoint' class="transparentPNG" />
+        </span>        
+    </div>
+</div>

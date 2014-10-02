@@ -1,0 +1,8 @@
+/*
+	Copyright (c) 2004-2009, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+
+dojo._xdResourceLoaded(function(_1,_2,_3){return {depends:[["provide","dojo.DeferredList"]],defineResource:function(_4,_5,_6){if(!_4._hasResource["dojo.DeferredList"]){_4._hasResource["dojo.DeferredList"]=true;_4.provide("dojo.DeferredList");_4.declare("dojo.DeferredList",_4.Deferred,{constructor:function(_7,_8,_9,_a,_b){this.list=_7;this.resultList=new Array(this.list.length);this.chain=[];this.id=this._nextId();this.fired=-1;this.paused=0;this.results=[null,null];this.canceller=_b;this.silentlyCancelled=false;if(this.list.length===0&&!_8){this.callback(this.resultList);}this.finishedCount=0;this.fireOnOneCallback=_8;this.fireOnOneErrback=_9;this.consumeErrors=_a;_4.forEach(this.list,function(d,_d){d.addCallback(this,function(r){this._cbDeferred(_d,true,r);return r;});d.addErrback(this,function(r){this._cbDeferred(_d,false,r);return r;});},this);},_cbDeferred:function(_10,_11,_12){this.resultList[_10]=[_11,_12];this.finishedCount+=1;if(this.fired!==0){if(_11&&this.fireOnOneCallback){this.callback([_10,_12]);}else{if(!_11&&this.fireOnOneErrback){this.errback(_12);}else{if(this.finishedCount==this.list.length){this.callback(this.resultList);}}}}if(!_11&&this.consumeErrors){_12=null;}return _12;},gatherResults:function(_13){var d=new _4.DeferredList(_13,false,true,false);d.addCallback(function(_15){var ret=[];_4.forEach(_15,function(_17){ret.push(_17[1]);});return ret;});return d;}});}}};});

@@ -1,0 +1,8 @@
+/*
+	Copyright (c) 2004-2009, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+
+dojo._xdResourceLoaded(function(_1,_2,_3){return {depends:[["provide","dojox.grid._RowManager"]],defineResource:function(_4,_5,_6){if(!_4._hasResource["dojox.grid._RowManager"]){_4._hasResource["dojox.grid._RowManager"]=true;_4.provide("dojox.grid._RowManager");(function(){var _7=function(_8,_9){if(_8.style.cssText==undefined){_8.setAttribute("style",_9);}else{_8.style.cssText=_9;}};_4.declare("dojox.grid._RowManager",null,{constructor:function(_a){this.grid=_a;},linesToEms:2,overRow:-2,prepareStylingRow:function(_b,_c){return {index:_b,node:_c,odd:Boolean(_b&1),selected:this.grid.selection.isSelected(_b),over:this.isOver(_b),customStyles:"",customClasses:"dojoxGridRow"};},styleRowNode:function(_d,_e){var _f=this.prepareStylingRow(_d,_e);this.grid.onStyleRow(_f);this.applyStyles(_f);},applyStyles:function(_10){var i=_10;i.node.className=i.customClasses;var h=i.node.style.height;_7(i.node,i.customStyles+";"+(i.node._style||""));i.node.style.height=h;},updateStyles:function(_13){this.grid.updateRowStyles(_13);},setOverRow:function(_14){var _15=this.overRow;this.overRow=_14;if((_15!=this.overRow)&&(_15>=0)){this.updateStyles(_15);}this.updateStyles(this.overRow);},isOver:function(_16){return (this.overRow==_16);}});})();}}};});

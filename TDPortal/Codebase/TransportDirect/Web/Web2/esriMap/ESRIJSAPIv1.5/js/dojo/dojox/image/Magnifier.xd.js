@@ -1,0 +1,8 @@
+/*
+	Copyright (c) 2004-2009, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+
+dojo._xdResourceLoaded(function(_1,_2,_3){return {depends:[["provide","dojox.image.Magnifier"],["require","dojox.gfx"],["require","dojox.image.MagnifierLite"]],defineResource:function(_4,_5,_6){if(!_4._hasResource["dojox.image.Magnifier"]){_4._hasResource["dojox.image.Magnifier"]=true;_4.provide("dojox.image.Magnifier");_4.require("dojox.gfx");_4.require("dojox.image.MagnifierLite");_4.declare("dojox.image.Magnifier",[_6.image.MagnifierLite],{_createGlass:function(){this.glassNode=_4.doc.createElement("div");this.surfaceNode=this.glassNode.appendChild(_4.doc.createElement("div"));_4.addClass(this.glassNode,"glassNode");_4.body().appendChild(this.glassNode);with(this.glassNode.style){height=this.glassSize+"px";width=this.glassSize+"px";}this.surface=_6.gfx.createSurface(this.surfaceNode,this.glassSize,this.glassSize);this.img=this.surface.createImage({src:this.domNode.src,width:this._zoomSize.w,height:this._zoomSize.h});},_placeGlass:function(e){var x=e.pageX-2;var y=e.pageY-2;var _a=this.offset.x+this.offset.w+2;var _b=this.offset.y+this.offset.h+2;if(x<this.offset.x||y<this.offset.y||x>_a||y>_b){this._hideGlass();}else{this.inherited(arguments);}},_setImage:function(e){var _d=(e.pageX-this.offset.l)/this.offset.w;var _e=(e.pageY-this.offset.t)/this.offset.h;var x=(this._zoomSize.w*_d*-1)+(this.glassSize*_d);var y=(this._zoomSize.h*_e*-1)+(this.glassSize*_e);this.img.setShape({x:x,y:y});}});}}};});

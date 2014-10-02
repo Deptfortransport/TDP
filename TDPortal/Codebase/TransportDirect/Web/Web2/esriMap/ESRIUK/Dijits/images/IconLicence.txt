@@ -1,0 +1,22 @@
+﻿Open Source Image attrubution
+Released as part of an ESRI (UK) Solution
+/* ============================== */
+Images:
+  panFullExtent.png
+Released:
+  Mark James
+  http://www.famfamfam.com/lab/icons/silk/
+  This work is licensed under a
+  Creative Commons Attribution 2.5 License.
+  [ http://creativecommons.org/licenses/by/2.5/ ]
+
+/* ============================== */
+Images:
+  panEast.png
+  panNorth.png
+  panSouth.png
+  panWest.png
+ Released:
+  in the Public Domain by:
+  http://tango.freedesktop.org/Tango_Desktop_Project
+/* ============================== */  
