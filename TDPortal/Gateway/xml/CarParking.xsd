@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--updated 01/2008 for IF6406 by Steve Craddock (Atos Origin UK Ltd) -->
+<!--updated 06/2008 for IF6407 for IR5020 by Steve Craddock (Atos Origin UK Ltd) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.transportdirect.info/carparking" targetNamespace="http://www.transportdirect.info/carparking" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+		Description of Car Park related information to which the data import should conform.
+		Copyright of Atos Origin 2006. All rights reserved.
+	</xs:documentation>
+  </xs:annotation>
+  <xs:element name="CarParkDataImport">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="CarPark">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarParkRef">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CarParkName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Postcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Notes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+                <!--13/06/2008 Updated for IR5020 - this has been increased to allow for the addition of entity encoded characters. The unencoded data should not exceed 250 chars.-->
+              </xs:element>
+              <xs:element name="Telephone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                    <xs:pattern value="([0-9])*" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="URL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2048" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MinCostPence" type="xs:integer" />
+              <xs:element name="IsParkAndRide" type="xs:boolean" />
+              <xs:element name="StayType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Short" />
+                    <xs:enumeration value="Medium" />
+                    <xs:enumeration value="Long" />
+                    <xs:enumeration value="ShortMedium" />
+                    <xs:enumeration value="MediumLong" />
+                    <xs:enumeration value="ShortMediumLong" />
+                    <xs:enumeration value="Unknown" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlanningPoint" type="xs:boolean" default="false" />
+              <xs:element name="DateRecordLastUpdated" type="xs:date" />
+              <xs:element name="WEFDate" type="xs:date" />
+              <xs:element name="WEUDate" type="xs:date" />
+              <xs:element name="AccessPoints" minOccurs="3" maxOccurs="3">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="GeocodeType">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Map" />
+                          <xs:enumeration value="Entrance" />
+                          <xs:enumeration value="Exit" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Easting">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="7" />
+                          <xs:pattern value="([0-9])*" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Northing">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="7" />
+                          <xs:pattern value="([0-9])*" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="StreetName">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="100" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="BarrierInOperation">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CarParkOperator">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OperatorCode">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="50" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="OperatorName">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="100" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="OperatorURL">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="2048" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="OperatorTsAndCs">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="2048" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="OperatorEmail">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="100" />
+                          <xs:pattern value="(([\.a-zA-Z0-9!£$%^&#38;#_+-=])+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+)?" />
+                          <!--13/06/2008 Updated for IR5020 -->
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TrafficNewsRegion">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="RegionName">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="100" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NPTGAdminDistrict" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdminAreaCode">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="50" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="DistrictCode">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="50" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ParkAndRideScheme" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Location">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="100" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="SchemeURL">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="2048" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Comments">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="200" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="LocationEasting">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="7" />
+                          <xs:pattern value="([0-9])*" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="LocationNorthing">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="7" />
+                          <xs:pattern value="([0-9])*" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="TransferFrequency">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="100" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="TransferFrom">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="250" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="TransferTo">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="250" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CarParkAdditionalData" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ClosingDate" type="xs:date" nillable="true" />
+                    <xs:element name="ReopeningDate" type="xs:date" nillable="true" />
+                    <xs:element name="maxHeight" type="xs:integer" minOccurs="0" />
+                    <xs:element name="maxWidth" type="xs:integer" minOccurs="0" />
+                    <xs:element name="PMSPA">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="EmergencyNumber">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="13" />
+                          <xs:pattern value="([0-9])*" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="CarParkEmail">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="100" />
+                          <xs:pattern value="(([\.a-zA-Z0-9!£$%^&#38;#_+-=])+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+)?" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="CCTV">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Staffed">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Patrolled">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="VehicleRestrictions">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="150" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="LiftsAvailable">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="ReservationsAvailable">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="SeasonTicketsAvailable">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="NPTGLocality" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element name="NationalGazeteerID">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="Easting">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="7" />
+                                <xs:pattern value="([0-9])*" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="Northing">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="7" />
+                                <xs:pattern value="([0-9])*" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CarParkType">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element name="TypeCode">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="TypeDescription">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="OpeningTimes" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Calendar" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CalendarStartDate" type="xs:date" />
+                                <xs:element name="CalendarEndDate" type="xs:date" />
+                                <xs:element name="Days">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="7" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="PublicHolidays">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:enumeration value="Includes" />
+                                      <xs:enumeration value="Excludes" />
+                                      <xs:enumeration value="Only" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="OpensAt" type="xs:time" />
+                          <xs:element name="LastEntranceAt" type="xs:time" />
+                          <xs:element name="ClosesAt" type="xs:time" />
+                          <xs:element name="MaxStayDays" type="xs:integer" minOccurs="0" />
+                          <xs:element name="MaxStayMinutes" type="xs:integer" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Concessions" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ConcessionCode">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="ConcessionDescription">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="200" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PaymentType">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TypeCode">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="TypeDescription">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PaymentMethods" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Code" nillable="true">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="Description">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="ChangeAvailable">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="3" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Attractions" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="AttractionTypeCode" type="xs:integer" />
+                          <xs:element name="AttractionTypeDescription">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="AttractionName">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="WalkingDistance">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="6" />
+                                <xs:pattern value="([0-9])*" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Facilities" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FacilityName">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="FacilityLocation">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="FacilityTypeCode">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="FacilityTypeDescription">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="LinkedNaPTANs" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="StopPointType">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="StopCode">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="20" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="InterchangeTime">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:integer">
+                                <xs:minInclusive value="1" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="InterchangeMode">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="Walk" />
+                                <xs:enumeration value="Air" />
+                                <xs:enumeration value="Bus" />
+                                <xs:enumeration value="Car" />
+                                <xs:enumeration value="Coach" />
+                                <xs:enumeration value="Cycle" />
+                                <xs:enumeration value="Drt" />
+                                <xs:enumeration value="Ferry" />
+                                <xs:enumeration value="Metro" />
+                                <xs:enumeration value="Rail" />
+                                <xs:enumeration value="RailReplacementBus" />
+                                <xs:enumeration value="Taxi" />
+                                <xs:enumeration value="Tram" />
+                                <xs:enumeration value="Underground" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CarParkSpace" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="NumberOfSpaces" type="xs:integer" />
+                          <xs:element name="TypeCode">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="50" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="TypeDescription">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:maxLength value="100" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="SpaceTypeAvailability" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="AvailabilityDayType">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="StartTime" type="xs:time" />
+                                <xs:element name="EndTime" type="xs:time" />
+                                <xs:element name="PercentageAvailability" type="xs:integer" />
+                                <xs:element name="Calendar" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CalendarStartDate" type="xs:date" />
+                                      <xs:element name="CalendarEndDate" type="xs:date" />
+                                      <xs:element name="Days">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:maxLength value="7" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="PublicHolidays">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:enumeration value="Includes" />
+                                            <xs:enumeration value="Excludes" />
+                                            <xs:enumeration value="Only" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Charges" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="StartTime" type="xs:time" />
+                                <xs:element name="EndTime" type="xs:time" />
+                                <xs:element name="TimeRangeDays" type="xs:integer" />
+                                <xs:element name="TimeRangeMinutes" type="xs:integer" />
+                                <xs:element name="Comments">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="200" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ChargeAmount" type="xs:integer" />
+                                <xs:element name="ChargeDayEndTime">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:enumeration value="24 hours" />
+                                      <xs:enumeration value="Midnight" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ChargeType">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="ChargeDescription">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Calendar" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CalendarStartDate" type="xs:date" />
+                                      <xs:element name="CalendarEndDate" type="xs:date" />
+                                      <xs:element name="Days">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:maxLength value="7" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="PublicHolidays">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:enumeration value="Includes" />
+                                            <xs:enumeration value="Excludes" />
+                                            <xs:enumeration value="Only" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

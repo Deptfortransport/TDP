@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Serco Transport Direct XML feed -->
+<!-- Schema v0.5 by Timothy Hilgenberg (serco) -->
+<TrafficAndTravelNewsData xmlns="http://www.transportdirect.info/travelnews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transportdirect.info/travelnews ./TravelNews.xsd" version="IF00906">
+	<Incident uid="RTM999980" severity="Very Severe" incidentType="Incidents" parent_uid="0" incident_change_status="Amended" modeOfTransport="Road" location=" " incidentStatus="O" roadType="A" headlineText="We are unable to bring you Live Travel News at the moment. Please try later." detailText="We are unable to bring you Live Travel News at the moment. Please try later." reportedDatetime="2003-01-01T00:00:00" lastModifiedDatetime="2003-01-01T00:00:00" startDatetime="2003-01-01T00:00:00" expiryDatetime="2050-09-23T10:41:18" plannedIncident="false" easting="0" northing="0" publicTransportOperator="N/A">
+		<Region uid="RTM999980" regionName="London"/>
+		<IncidentDataSource>Government Agency (71)</IncidentDataSource>
+	</Incident>
+</TrafficAndTravelNewsData>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.transportdirect.info/CarPark" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.transportdirect.info/CarPark" elementFormDefault="qualified">
+    <xs:element name="carpark">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="CarParkDataImport" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CarParkRef" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="CarParkName" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="1024" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="URL" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="1024" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MinimumCost" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="1024" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Note" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="1024" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Easting" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="1024" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Northing" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="1024" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

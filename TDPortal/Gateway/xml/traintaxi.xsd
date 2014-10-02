@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FMPXMLRESULT" targetNamespace="http://www.transportdirect.info/traintaxi" xmlns:mstns="http://www.transportdirect.info/traintaxi" xmlns="http://www.transportdirect.info/traintaxi" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="FMPXMLRESULT" msdata:IsDataSet="true" msdata:Locale="en-GB">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NaPTANcode" type="xs:string" minOccurs="0" />
+              <xs:element name="destinationname" type="xs:string" minOccurs="0" />
+              <xs:element name="traintaxilink" type="xs:string" minOccurs="0" />
+              <xs:element name="commentline" type="xs:string" minOccurs="0" />
+              <xs:element name="accessibilitytext" type="xs:string" minOccurs="0" />
+              <xs:element name="firm1name" type="xs:string" minOccurs="0" />
+              <xs:element name="firm2name" type="xs:string" minOccurs="0" />
+              <xs:element name="firm3name" type="xs:string" minOccurs="0" />
+              <xs:element name="firm4name" type="xs:string" minOccurs="0" />
+              <xs:element name="firm1phone" type="xs:string" minOccurs="0" />
+              <xs:element name="firm2phone" type="xs:string" minOccurs="0" />
+              <xs:element name="firm3phone" type="xs:string" minOccurs="0" />
+              <xs:element name="firm4phone" type="xs:string" minOccurs="0" />
+              <xs:element name="firm1accessibility" type="xs:string" minOccurs="0" />
+              <xs:element name="firm2accessibility" type="xs:string" minOccurs="0" />
+              <xs:element name="firm3accessibility" type="xs:string" minOccurs="0" />
+              <xs:element name="firm4accessibility" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO1name" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO2name" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO3name" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO4name" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO1link" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO2link" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO3link" type="xs:string" minOccurs="0" />
+              <xs:element name="GOTO4link" type="xs:string" minOccurs="0" />
+              <xs:element name="copyright" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

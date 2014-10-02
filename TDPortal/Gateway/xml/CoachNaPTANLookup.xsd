@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NaPTANLookups" targetNamespace="http://www.transportdirect.info/coachnaptanlookup" xmlns:mstns="http://www.transportdirect.info/coachnaptanlookup" xmlns="http://www.transportdirect.info/coachnaptanlookup" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="CoachNaPTANLookups" msdata:IsDataSet="true" msdata:Locale="en-GB">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="NaPTAN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PhysicalID" type="xs:string" minOccurs="0" />
+              <xs:element name="ATCOCode" type="xs:string" minOccurs="0" />
+              <xs:element name="LogicalID" type="xs:string" minOccurs="0" />
+              <xs:element name="ATCOName" type="xs:string" minOccurs="0" />
+              <xs:element name="Easting" type="xs:string" minOccurs="0" />
+              <xs:element name="Northing" type="xs:string" minOccurs="0" />
+              <xs:element name="NatGazID" type="xs:string" minOccurs="0" />
+              <xs:element name="LocalityName" type="xs:string" minOccurs="0" />
+              <xs:element name="CommonName" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" type="xs:string" minOccurs="0" />
+              <xs:element name="Identifier" type="xs:string" minOccurs="0" />
+              <xs:element name="Landmark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

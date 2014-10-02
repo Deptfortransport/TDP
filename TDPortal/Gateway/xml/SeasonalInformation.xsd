@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.transportdirect.info/SeasonalInformation" elementFormDefault="qualified" xmlns="http://www.transportdirect.info/SeasonalInformation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="seasonalInformation">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SeasonalDataImport" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SortOrder" type="xs:integer" default="10000"/>
+							<xs:element name="Region">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="100"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="TransportMode" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="100"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Information" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="1024"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Effecteddates" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="100"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="LastUpdated">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="15"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

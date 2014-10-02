@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema id="zonalaccessibility" targetNamespace="http://www.transportdirect.info/ZonalAccessibility" xmlns="http://www.transportdirect.info/ZonalAccessibility" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="zonalaccessibility" msdata:IsDataSet="true" msdata:Locale="en-GB" msdata:EnforceConstraints="False">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="Accessibility">
+                    <xs:complexType>
+                         <xs:sequence>
+                            <xs:element name="URL" type="xs:string"  minOccurs="0" />
+							<xs:element name="HyperlinkDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="WithEffectFromDate" type="xs:string" minOccurs="0" />
+							<xs:element name="WithEffectToDate" type="xs:string" minOccurs="0" />
+							<xs:element name="NaPTAN" type="xs:string"  minOccurs="0" />
+							<xs:element name="RegionId" type="xs:string" minOccurs="0" />
+							<xs:element name="OperatorCode" type="xs:string" minOccurs="0" />
+							<xs:element name="ModeId" minOccurs="0" >
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="" />
+										<xs:enumeration value="Air" />
+										<xs:enumeration value="Bus" />
+										<xs:enumeration value="Car" />
+										<xs:enumeration value="Coach" />
+										<xs:enumeration value="Cycle" />
+										<xs:enumeration value="Drt" />
+										<xs:enumeration value="Ferry" />
+										<xs:enumeration value="Metro" />
+										<xs:enumeration value="Rail" />
+										<xs:enumeration value="RailReplacementBus" />
+										<xs:enumeration value="Taxi" />
+										<xs:enumeration value="Telecabine" />
+										<xs:enumeration value="Tram" />
+										<xs:enumeration value="Underground" />
+										<xs:enumeration value="Walk" />
+										<xs:enumeration value="CheckIn" />
+										<xs:enumeration value="CheckOut" />
+										<xs:enumeration value="Transfer" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="AdminAreaId" type="xs:string" minOccurs="0" />
+							<xs:element name="DistrictId" type="xs:string" minOccurs="0" />
+							<xs:element name="MetroArea" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

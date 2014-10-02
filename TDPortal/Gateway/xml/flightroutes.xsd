@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="flightroutes" targetNamespace="http://www.transportdirect.info/flightroutes" xmlns:mstns="http://www.transportdirect.info/flightroutes" xmlns="http://www.transportdirect.info" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="flightroutes" msdata:IsDataSet="true" msdata:Locale="en-GB" msdata:EnforceConstraints="False">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="flightroute">
+                    <xs:complexType>
+                        <xs:attribute name="origin" form="unqualified" type="xs:string" />
+                        <xs:attribute name="destination" form="unqualified" type="xs:string" />
+                        <xs:attribute name="operator" form="unqualified" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

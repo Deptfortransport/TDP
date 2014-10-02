@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.transportdirect.info/coachroutesquotafares" xmlns="http://www.transportdirect.info/coachroutesquotafares" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="quotafares">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="quotafaresImport" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OperatorCode" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="50"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="RouteOriginName" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="1024"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="RouteOriginNaPTAN" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="20"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="RouteDestinationName" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="1024"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="RouteDestinationNaPTAN" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="20"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="TicketType" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="100"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Fare" type="xs:integer" default="0" minOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

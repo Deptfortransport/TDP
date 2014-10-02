@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccessibleOperators" 
+		targetNamespace="http://www.transportdirect.info/AccessibleOperators" 
+		xmlns:mstns="http://www.transportdirect.info/AccessibleOperators" 
+		xmlns="http://www.transportdirect.info/AccessibleOperators" 
+		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" 
+		attributeFormDefault="qualified" 
+		elementFormDefault="qualified">
+	<xs:element name="AccessibleOperatorData" msdata:IsDataSet="true" msdata:Locale="en-GB" msdata:EnforceConstraints="False">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AccessibleOperator">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LegMode" type="xs:string" minOccurs="1" />
+							<xs:element name="TravelineOperatorCode" type="xs:string" minOccurs="1" />
+							<xs:element name="LegServiceNumber" type="xs:string" minOccurs="1" />
+							<xs:element name="TravelineRegions" type="xs:string" minOccurs="1" />
+							<xs:element name="WEFDate" type="xs:string" minOccurs="1" />
+							<xs:element name="WEUDate" type="xs:string" minOccurs="1" />
+							<xs:element name="WheelchairBooking" type="xs:string" minOccurs="1" />
+							<xs:element name="AssistanceServiceBooking" type="xs:string" minOccurs="1" />
+							<xs:element name="BookingPhoneNumber" type="xs:string" minOccurs="1" />
+							<xs:element name="BookingLineURL" type="xs:string" minOccurs="1" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

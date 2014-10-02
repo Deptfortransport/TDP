@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CarCostings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="2" name="CarCostFuelCost">
+          <xs:complexType>
+            <xs:attribute name="FuelType" type="xs:string" use="required" />
+            <xs:attribute name="Cost" type="xs:int" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="2"  name="CarCostRunningCost">
+          <xs:complexType>
+            <xs:attribute name="CarSize" type="xs:string" use="required" />
+            <xs:attribute name="FuelType" type="xs:string" use="required" />
+            <xs:attribute name="Cost" type="xs:int" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="2"  name="CarCostFuelConsumption">
+          <xs:complexType>
+            <xs:attribute name="CarSize" type="xs:string" use="required" />
+            <xs:attribute name="FuelType" type="xs:string" use="required" />
+            <xs:attribute name="Consumption" type="xs:int" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xs:schema id="AccessibleLocations" 
+		targetNamespace="http://www.transportdirect.info/AccessibleLocations" 
+		xmlns:mstns="http://www.transportdirect.info/AccessibleLocations" 
+		xmlns="http://www.transportdirect.info/AccessibleLocations" 
+		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" 
+		attributeFormDefault="qualified" 
+		elementFormDefault="qualified">
+    <xs:element name="AccessibleLocationsData" msdata:IsDataSet="true" msdata:Locale="en-GB" msdata:EnforceConstraints="False">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="AccessibleLocation">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="StopNaPTAN" type="xs:string" minOccurs="1"/>
+                            <xs:element name="StopName" type="xs:string" minOccurs="1"/>
+                            <xs:element name="StopAreaNaPTAN" type="xs:string" minOccurs="0" />
+                            <xs:element name="StopOperator" type="xs:string" minOccurs="0" />
+                            <xs:element name="WheelchairAccess" type="xs:string" minOccurs="1" />
+                            <xs:element name="AssistanceService" type="xs:string" minOccurs="1"/>
+							<xs:element name="WEFDate" type="xs:string" minOccurs="1"/>
+							<xs:element name="WEUDate" type="xs:string" minOccurs="1" />
+                            <xs:element name="MOFRStartTime" type="xs:string" minOccurs="1" />
+							<xs:element name="MOFREndTime" type="xs:string" minOccurs="1" />
+							<xs:element name="SatStartTime" type="xs:string" minOccurs="1" />
+							<xs:element name="SatEndTime" type="xs:string" minOccurs="1" />
+							<xs:element name="SunStartTime" type="xs:string" minOccurs="1" />
+							<xs:element name="SunEndTime" type="xs:string" minOccurs="1" />
+							<xs:element name="WheelchairAccessBool" type="xs:string" minOccurs="1" />
+							<xs:element name="AssistanceServiceBool" type="xs:string" minOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
