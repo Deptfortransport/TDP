@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs
+	title="TransportDirect.info Door to door"
+	description="Launches TransportDirect.info Door to door journey planner"
+	author="Transport Direct"
+	author_email="TDPortal.Feedback&#64;dft.gsi.gov.uk"
+	screenshot="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/misc/GadgetDoorToDoor.jpg"
+	thumbnail="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/misc/GadgetDoorToDoorThumb.jpg"
+	height="257"
+	width="340"
+/>
+
+<Content type="html" view="home,canvas">
+<![CDATA[
+
+	<style type="text/css">
+
+	.divContent, .inputone, .inputtwo
+	{ 
+		font-family: verdana, arial, helvetica, sans-serif; 
+		align: center;
+	}
+	
+	.txtone, .txtoneb
+	{
+		font-size: 11px;
+	}
+	
+	.txtoneb
+	{
+		font-weight: bold;
+	}
+	
+	.divContent .inputone
+	{
+		font-size: 12px;
+		width: 153px;
+	}
+	
+	.divContent .inputtwo
+	{
+		font-size: 12px;
+		width: 155px;
+	}
+	
+	.screenreader
+	{
+		position:absolute;
+		left: 0px;
+		top: -100px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+	
+	.imgNoBorder
+	{
+		border: none;
+	}
+	
+	.tableContent
+	{
+		width: 100%;
+	}
+	
+	.rowHeader
+	{ 
+		background-color: #330099; 
+	}
+	
+	.rowSubHeader
+	{
+		background-color: #009aff;
+	}
+	
+	.rowContent
+	{ 
+		background-color: #99ccff; 
+	}
+	
+	.divHeaderImage
+	{
+		margin: 2px 2px 2px 4px;
+	}
+	
+	.divSubHeader
+	{
+		height: 20px;
+		padding-top: 4px;
+	}
+	
+	.btn
+	{
+		color: #264266; 
+		background-color: #ebebeb; 
+		font-weight: bold; 
+		text-decoration: none; 
+		border-bottom-color: #808080; 
+		border-top-color: #C0C0C0; 
+		border-right-color: #808080; 
+		border-left-color: #C0C0C0; 
+		border-width: 1px; 
+		border-style: solid; 
+		cursor: pointer; 
+		cursor: hand; 
+		width: auto; 
+		overflow: visible; 
+		padding: 0px 2px 1px 2px;
+	}
+	
+	</style>
+	
+	<script language="javascript" type="text/javascript">
+	<!-- 
+	function AssembleParameters()
+	{
+		// Read the values entered
+		var fromLocationTypeList = document.getElementById("fromDropDownLocationGazeteerOptions");
+		var toLocationTypeList = document.getElementById("toDropDownLocationGazeteerOptions");
+		
+		var varFrom 	= fromLocationTypeList.options[fromLocationTypeList.selectedIndex].value;
+		var varTxtFrom 	= document.getElementById("textBoxFrom").value;
+		var varTo		= toLocationTypeList.options[toLocationTypeList.selectedIndex].value;
+		var varTxtTo 	= document.getElementById("textBoxTo").value;
+		var varDay		= document.getElementById("dateTimeDay").options[document.getElementById("dateTimeDay").selectedIndex].value; 
+		var varMonYear	= document.getElementById("dateTimeMonth").options[document.getElementById("dateTimeMonth").selectedIndex].value;
+		var varHour		= document.getElementById("timeHours").options[document.getElementById("timeHours").selectedIndex].value;
+		var varMinute	= document.getElementById("timeMinutes").options[document.getElementById("timeMinutes").selectedIndex].value; 
+		var varPublicCheck = document.getElementById("checkBoxPublicTransport").checked;
+		var varCarCheck	= document.getElementById("checkBoxCarRoute").checked ;
+	
+		// Set the values to be sent in the call
+		document.getElementById("from").value = varFrom;
+		document.getElementById("txtFrom").value = varTxtFrom;
+		document.getElementById("to").value = varTo;
+		document.getElementById("txtTo").value = varTxtTo;
+		document.getElementById("day").value = varDay;
+		document.getElementById("monYr").value = varMonYear;
+		document.getElementById("hr").value = varHour;
+		document.getElementById("min").value = varMinute;
+		document.getElementById("public").value = varPublicCheck;
+		document.getElementById("car").value = varCarCheck;
+	}
+	
+	function SetShowAdvanced(show)
+	{
+		// Set the show advanced value, when true the door to door input page is shown with advanced options
+		document.getElementById("advanced").value = show;
+	}
+
+	function SetDateTimeDropDown()
+	{
+		var currentDate = new Date();
+		var hour = currentDate.getHours();
+		var minute = currentDate.getMinutes();
+		
+		// round up the minutes to the nearest 15
+		var minutes = (Math.round(minute/5))* 5	
+		minutes = minutes+15;
+		
+		if (minutes > 59)
+		{
+			minutes = minutes % 60;
+			// increment the hour
+			hour++; 
+			
+			if(hour > 23) 
+			{
+				// increment the day
+				day++;
+				
+				// set the hour to midnight
+				hour = 0;
+			} 
+		}
+			
+		var month = currentDate.getMonth();
+		var day = currentDate.getDate();
+		var year = currentDate.getFullYear();
+		
+		var monthList = new Array(12);
+		monthList[0]="Jan";
+		monthList[1]="Feb";
+		monthList[2]="Mar";
+		monthList[3]="Apr";
+		monthList[4]="May";
+		monthList[5]="Jun";
+		monthList[6]="Jul";
+		monthList[7]="Aug";
+		monthList[8]="Sep";
+		monthList[9]="Oct";
+		monthList[10]="Nov";
+		monthList[11]="Dec";
+		
+		var displayMonthsText = new Array(3);
+		var displayMonthsNumber = new Array(3);
+		var followingYear = year+1;
+		
+		switch(month)
+		{
+		case 7:
+			var month2 = month+1;
+			var month3 = month+2;
+			var month4 = month+3;
+      
+			displayMonthsText[0] = monthList[month]+" "+year;
+			displayMonthsText[1] = monthList[month2]+" "+year;
+			displayMonthsText[2] = monthList[month3]+" "+year;
+  			
+			displayMonthsNumber[0] = "0"+month2+"/"+year;
+			displayMonthsNumber[1] = "0"+month3+""+year;
+			displayMonthsNumber[2] = month4+""+year;      
+			break;
+
+		case 8:
+			var month2 = month+1;
+			var month3 = month+2;
+			var month4 = month+3;
+      
+			displayMonthsText[0] = monthList[month]+" "+year;
+			displayMonthsText[1] = monthList[month2]+" "+year;
+			displayMonthsText[2] = monthList[month3]+" "+year;
+  			
+			displayMonthsNumber[0] = "0"+month2+"/"+year;
+			displayMonthsNumber[1] = month3+""+year;
+			displayMonthsNumber[2] = month4+""+year;
+			break;
+
+		case 9:
+			var month2 = month+1;
+			var month3 = month+2;
+			var month4 = month+3;
+      
+			displayMonthsText[0] = monthList[month]+" "+year;
+			displayMonthsText[1] = monthList[month2]+" "+year;
+			displayMonthsText[2] = monthList[month3]+" "+year;
+  			
+			displayMonthsNumber[0] = month2+""+year;
+			displayMonthsNumber[1] = month3+""+year;
+			displayMonthsNumber[2] = month4+""+year;
+			break;
+      
+		  case 10: 
+			displayMonthsText[0] = monthList[month]+" "+year;
+			displayMonthsText[1] = monthList[month+1]+" "+year;
+			displayMonthsText[2] = monthList[0]+" "+followingYear;
+				
+			var month2 = month+1;
+			var month3 = month+2;
+			
+			displayMonthsNumber[0] = month2+"/"+year;
+			displayMonthsNumber[1] = month3+"/"+year;
+			displayMonthsNumber[2] = "01/"+followingYear;
+			break;
+				
+		  case 11: 
+			displayMonthsText[0] = monthList[month]+" "+year;
+			displayMonthsText[1] = monthList[0]+" "+followingYear;
+			displayMonthsText[2] = monthList[1]+" "+followingYear;
+			
+			var currentMonth = month+1;
+			displayMonthsNumber[0] = currentMonth+"/"+year;
+			displayMonthsNumber[1] = "01/"+followingYear;
+			displayMonthsNumber[2] = "02/"+followingYear;
+			break;
+					
+		  default:
+			var month2 = month+1;
+			var month3 = month+2;
+			var month4 = month+3;
+				
+			displayMonthsText[0] = monthList[month]+" "+year;
+			displayMonthsText[1] = monthList[month2]+" "+year;
+			displayMonthsText[2] = monthList[month3]+" "+year;
+			
+			displayMonthsNumber[0] = "0"+month2+"/"+year;
+			displayMonthsNumber[1] = "0"+month3+"/"+year;
+			displayMonthsNumber[2] = "0"+month4+"/"+year;
+
+			break;
+		}
+
+		// Get a reference to the drop-down
+		var hourDropDownList = document.getElementById("timeHours"); 
+		var minutesDropDownList = document.getElementById("timeMinutes");
+		var daysDropDownList = document.getElementById("dateTimeDay");
+		var monthsDropDownList = document.getElementById("dateTimeMonth");
+
+		// Loop through hours
+		for (i = 0; i< hourDropDownList.options.length; i++)
+		{    
+	    	if (hourDropDownList.options[i].value == hour)
+			{
+				hourDropDownList.options[i].selected = true;
+				break;
+			}
+		}
+
+		// Loop through minutes
+		for (k = 0; k< minutesDropDownList.options.length; k++)
+		{	    
+	    	if (minutesDropDownList.options[k].value == minutes)
+			{
+				minutesDropDownList.options[k].selected = true;
+				break;
+			}
+		}
+
+		// Loop through days
+		for (m = 0; m< daysDropDownList.options.length; m++)
+		{    
+			if (daysDropDownList.options[m].value == day)
+			{
+				daysDropDownList.options[m].selected = true;
+				break;
+			}
+		}
+
+		// Loop through months
+		monthsDropDownList.options.length = 0; // Clear any existing items in the dropdown list
+		for (n = 0; n< displayMonthsText.length; n++)
+		{	    
+			 //name, value  e.g. ("May 2006", "052006")
+			monthsDropDownList.options[n]=new Option(displayMonthsText[n], displayMonthsNumber[n]);
+		}
+		// set current month (the first item in the array) as the selected item
+		monthsDropDownList.selectedIndex = 0;
+	}
+	
+	// Gadget specific
+	gadgets.util.registerOnLoadHandler(SetDateTimeDropDown);
+	
+	//-->
+	</script>
+
+	<div class="divContent">
+		<form name="gadgetD2DJourneyPlanning" id="gadgetD2DJourneyPlanning" method="post" onsubmit="AssembleParameters()" target="_blank" action="http://www.transportdirect.info/web2/iFrames/JourneyLandingPage.aspx">
+
+			<table class="tableContent" cellpadding="0" cellspacing="0">
+				<tr class="rowHeader">
+					<td valign="top" align="left" width="5px">
+						<img align="top" alt="" src="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/misc/top_left_rounded.gif" />
+					</td>
+					<td>
+						<div class="divHeaderImage">
+							<a href="http://www.transportdirect.info/" target="_blank">
+								<img class="imgNoBorder" alt="Transport Direct" title="Transport Direct" src="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/misc/TDLogo38.gif" />
+							</a>
+						</div>
+					</td>
+					<td valign="top" align="right" width="5px">
+						<img align="top" alt="" src="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/misc/top_right_rounded.gif" />
+					</td>
+				</tr>
+				<tr class="rowSubHeader" align="center">
+					<td></td>
+					<td>
+						<div class="divSubHeader">
+							<span class="txtoneb">Plan a door-to-door journey</span>
+						</div>
+					</td>
+					<td></td>
+				</tr>
+				<tr class="rowContent">
+					<td valign="bottom" align="left">
+						<img align="top" alt="" src="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/misc/lower_left_rounded.gif" />
+					</td>
+					
+					<td align="center">
+						<div>
+						
+							<table>
+								<tr>
+									<td align="right">
+										<span class="txtoneb">From</span>
+									</td>
+									<td align="left">
+										<input class="inputone" name="textBoxFrom" id="textBoxFrom" type="text" />
+									</td>
+									<td rowspan="4" align="center">
+										<a href="http://www.transportdirect.info/Web2/JourneyPlanning/JourneyPlannerInput.aspx" target="_blank">
+											<img class="imgNoBorder" alt="Plan a door-to-door journey" title="Plan a door-to-door journey" width="50px" height="65px" src="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/softcontent/homejourneyplannerbluebackground.gif" />
+										</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td align="right">
+										<span class="screenreader">Select the place you are travelling from</span>
+									</td>
+									<td align="left">
+										<select class="inputtwo" name="fromDropDownLocationGazeteerOptions" id="fromDropDownLocationGazeteerOptions">
+											<option selected="selected" value="AddressPostcode">Address/postcode</option>
+											<option value="CityTownSuburb">Town/district/village</option>
+											<option value="StationAirport">Station/airport</option>
+											<option value="AttractionFacility">Facility/attraction</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td align="right">
+										<span class="txtoneb">To</span>
+									</td>
+									<td align="left">
+										<input class="inputone" name="textBoxTo" type="text" id="textBoxTo" />
+									</td>
+								</tr>
+								
+								<tr>
+									<td align="right">
+										<span class="screenreader">Select the place you are travelling to</span>
+									</td>
+									<td align="left">
+										<select class="inputtwo" name="toDropDownLocationGazeteerOptions" id="toDropDownLocationGazeteerOptions">
+											<option selected="selected" value="AddressPostcode">Address/postcode</option>
+											<option value="CityTownSuburb">Town/district/village</option>
+											<option value="StationAirport">Station/airport</option>
+											<option value="AttractionFacility">Facility/attraction</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td align="right">
+										<span class="txtoneb">Leave</span>
+									</td>
+									<td colspan="2" align="left">
+									
+										<table cellspacing="0" cellpadding="0">
+											<tr>
+												<td id="cellDate" valign="middle">
+													<span class="screenreader">Select a date to leave on. Firstly, select a day</span>
+													<select name="dateTimeDay" id="dateTimeDay">
+														<option value="01">01</option>
+														<option value="02">02</option>
+														<option value="03">03</option>
+														<option value="04">04</option>
+														<option value="05">05</option>
+														<option value="06">06</option>
+														<option value="07">07</option>
+														<option value="08">08</option>
+														<option value="09">09</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+														<option value="15">15</option>
+														<option value="16">16</option>
+														<option value="17">17</option>
+														<option value="18">18</option>
+														<option value="19">19</option>
+														<option value="20">20</option>
+														<option value="21">21</option>
+														<option value="22">22</option>
+														<option value="23">23</option>
+														<option value="24">24</option>
+														<option value="25">25</option>
+														<option value="26">26</option>
+														<option value="27">27</option>
+														<option value="28">28</option>
+														<option value="29">29</option>
+														<option value="30">30</option>
+														<option value="31">31</option>
+													</select>
+													<span class="screenreader">Select a month and year</span>
+													<select name="dateTimeMonth" id="dateTimeMonth">
+														<option selected="selected" value="06/2009">Jun 2009</option>
+														<option value="07/2009">Jul 2009</option>
+														<option value="08/2009">Aug 2009</option>
+														<option value="09/2009">Sep 2009</option>
+														<option value="10/2009">Oct 2009</option>
+														<option value="11/2009">Nov 2009</option>
+														<option value="12/2009">Dec 2009</option>
+													</select>
+													<span class="screenreader">Select a time. Firstly, select an hour</span>
+													<select name="timeHours" id="timeHours">
+														<option value="00">00</option>
+														<option value="01">01</option>
+														<option value="02">02</option>
+														<option value="03">03</option>
+														<option value="04">04</option>
+														<option value="05">05</option>
+														<option value="06">06</option>
+														<option value="07">07</option>
+														<option value="08">08</option>
+														<option value="09">09</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+														<option value="15">15</option>
+														<option value="16">16</option>
+														<option value="17">17</option>
+														<option value="18">18</option>
+														<option value="19">19</option>
+														<option value="20">20</option>
+														<option value="21">21</option>
+														<option value="22">22</option>
+														<option value="23">23</option>
+													</select>
+													<span class="screenreader">Select the minutes</span>
+													<select name="timeMinutes" id="timeMinutes">
+														<option value="00">00</option>
+														<option value="05">05</option>
+														<option value="10">10</option>
+														<option value="15">15</option>
+														<option value="20">20</option>
+														<option value="25">25</option>
+														<option value="30">30</option>
+														<option value="35">35</option>
+														<option value="40">40</option>
+														<option value="45">45</option>
+														<option value="50">50</option>
+														<option value="55">55</option>
+													</select>
+												</td>
+											</tr>
+										</table>
+										
+									</td>
+								</tr>
+			
+								<tr>
+									<td align="right">
+										<span class="txtoneb">Show</span>
+									</td>
+									<td align="left" colspan="2">
+										<input name="checkBoxPublicTransport" id="checkBoxPublicTransport" type="checkbox" checked="checked" />
+										<label for="checkBoxPublicTransport" class="txtone">Public transport</label>
+										&nbsp;&nbsp;
+										<input name="checkBoxCarRoute" id="checkBoxCarRoute" type="checkbox" checked="checked" />
+										<label for="checkBoxCarRoute" class="txtone">Car route</label>
+									</td>
+								</tr>
+								
+								<tr>
+									<td colspan="3" align="right">
+										<input class="btn" type="submit" name="buttonAdvanced" id="buttonAdvanced" value="Advanced" onclick="SetShowAdvanced(true)" />&nbsp;
+										<input class="btn" type="submit" name="buttonSubmit" id="buttonSubmit" value="Go" onclick="SetShowAdvanced(false)" />
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<input type="hidden" name="from" id="from" value="" />
+										<input type="hidden" name="txtFrom" id="txtFrom" value="" />
+										<input type="hidden" name="to" id="to" value="" />
+										<input type="hidden" name="txtTo" id="txtTo" value="" />
+										<input type="hidden" name="day" id="day" value="" />
+										<input type="hidden" name="monYr" id="monYr" value="" />
+										<input type="hidden" name="hr" id="hr" value="" />
+										<input type="hidden" name="min" id="min" value="" />
+										<input type="hidden" name="public" id="public" value="" />
+										<input type="hidden" name="car" id="car" value="" />
+										<input type="hidden" name="advanced" id="advanced" value="" />
+										
+										<input type="hidden" name="pid" id="pid" value="GadgetD2D" />
+									</td>
+								</tr>
+							</table>
+							
+						</div>
+					</td>
+					
+					<td valign="bottom" align="right">
+						<img align="top" alt="" src="http://www.transportdirect.info/web2/App_Themes/TransportDirect/images/gifs/misc/lower_right_rounded.gif" />
+					</td>
+				</tr>
+			</table>
+			
+		</form>
+	</div>
+
+]]>  
+</Content>  
+</Module>

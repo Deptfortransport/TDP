@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2914DC7F-D99B-4DAF-AFE6-6D86D15A2CE4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>td.userportal.tdremotinghost</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransportDirect.UserPortal.TDRemotingHost</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="td.CJP">
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\td.CJP.dll</HintPath>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\..\AdditionalDataModule\AdditionalDataModule.csproj">
+      <Name>AdditionalDataModule</Name>
+      <Project>{1BF668A4-F9B2-4D64-85CB-ADD80C432849}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AirDataProvider\AirDataProvider.csproj">
+      <Name>AirDataProvider</Name>
+      <Project>{F28705AF-3A71-4735-82FD-DBDBC2611611}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{CAF50F9E-BE59-4158-94E6-60EF549251AA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CoordinateConvertorProvider\CoordinateConvertorProvider.csproj">
+      <Project>{415887EA-EC67-4E72-9BF2-62B28D9272EC}</Project>
+      <Name>CoordinateConvertorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CostSearch\CostSearch.csproj">
+      <Name>CostSearch</Name>
+      <Project>{309CBD3E-2CC1-4808-98E3-B33526AE8627}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CostSearchRunner\CostSearchRunner.csproj">
+      <Name>CostSearchRunner</Name>
+      <Project>{464ACCD1-9023-48DA-8588-698646EAE0EE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CyclePlannerControl\CyclePlannerControl.csproj">
+      <Project>{2E288B42-FABF-487E-B8D8-64AD18B90208}</Project>
+      <Name>CyclePlannerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{2E16F073-D95F-4DE8-8E60-381899A722DA}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataServices\DataServices.csproj">
+      <Name>DataServices</Name>
+      <Project>{25B19778-2165-4F7C-B672-CDAB4939B6D7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DepartureBoardService\DepartureBoardService.csproj">
+      <Name>DepartureBoardService</Name>
+      <Project>{1CEE342F-B3DF-44AD-A56B-1B861292E016}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EnvironmentalBenefits\EnvironmentalBenefits.csproj">
+      <Project>{6C76042C-B2F0-4ABB-8019-AAAAE2140E12}</Project>
+      <Name>EnvironmentalBenefits</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EventLoggingService\EventLogging.csproj">
+      <Name>EventLogging</Name>
+      <Project>{57A99B8A-543C-4CA1-BFDC-B14FF6A578A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExternalLinkService\ExternalLinkService.csproj">
+      <Name>ExternalLinkService</Name>
+      <Project>{CD02DA6B-D3DE-4617-A58A-53DF11554B63}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InternationalPlannerControl\InternationalPlannerControl.csproj">
+      <Project>{25D45646-5988-4D84-8FED-40A2D7C5B554}</Project>
+      <Name>InternationalPlannerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InternationalPlanner\InternationalPlanner.csproj">
+      <Project>{CA106473-332F-4758-B229-838453FBE0A4}</Project>
+      <Name>InternationalPlanner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyControl\JourneyControl.csproj">
+      <Name>JourneyControl</Name>
+      <Project>{27414D3D-9782-44C6-A5BD-A11ECEA591E5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyEmissions\JourneyEmissions.csproj">
+      <Project>{9737FC5A-5F4E-4CF3-8C52-918D64F59849}</Project>
+      <Name>JourneyEmissions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyPlannerService\JourneyPlannerService.csproj">
+      <Name>JourneyPlannerService</Name>
+      <Project>{6A29595D-179B-4387-9929-AF938DAF269B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JourneyPlanRunner\JourneyPlanRunner.csproj">
+      <Name>JourneyPlanRunner</Name>
+      <Project>{CDEF9D78-4F3D-4594-8E1C-616EE5B533C3}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LocationService\LocationService.csproj">
+      <Name>LocationService</Name>
+      <Project>{CDF6A05E-1D1E-4EE7-9EB4-01E9577EB4A0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PricingRetail\PricingRetail.csproj">
+      <Name>PricingRetail</Name>
+      <Project>{0E8DF4E5-C028-4E85-8163-41F9E007ACB7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PropertiesService\DatabasePropertyProvider\DatabasePropertyProvider.csproj">
+      <Project>{946A95B4-3145-4F4E-9E8F-54B78F1FA5F4}</Project>
+      <Name>DatabasePropertyProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PropertiesService\FilePropertyProvider\FilePropertyProvider.csproj">
+      <Project>{A3CB7929-0F74-4625-AB84-349C041B9B62}</Project>
+      <Name>FilePropertyProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PropertiesService\Properties\Properties.csproj">
+      <Project>{904CE65A-020D-4B27-B0DB-54B1B1F1825A}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ResourceManager\ResourceManager.csproj">
+      <Project>{C0EADF9C-59D2-45EA-A67D-09CA8999746C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RetailBusinessObjects\RetailBusinessObjects.csproj">
+      <Name>RetailBusinessObjects</Name>
+      <Project>{24E807B4-27A3-42BB-848A-18AA8076E8DE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Name>ServiceDiscovery</Name>
+      <Project>{09831AEB-AEE6-4BF3-973F-47F50AD39C26}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SessionManager\SessionManager.csproj">
+      <Name>SessionManager</Name>
+      <Project>{6F189D8B-6F30-4FC3-8EFC-5E3001A8C862}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TimeBasedPriceRunner\TimeBasedPriceRunner.csproj">
+      <Name>TimeBasedPriceRunner</Name>
+      <Project>{7841B50C-86AF-464E-8AFE-CF0E8B69950A}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VisitPlanRunner\VisitPlanRunner.csproj">
+      <Name>VisitPlanRunner</Name>
+      <Project>{34D6ABDB-233A-496E-8D61-D249CA55E329}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="td.RoadRoutingEngine">
+      <HintPath>..\..\..\..\ThirdParty\Atkins\CJP\td.RoadRoutingEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="remoting.config" />
+    <Content Include="Web.config" />
+    <Compile Include="..\..\DefaultAssemblyInfo.cs">
+      <Link>DefaultAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TDRemotingHostInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Default.aspx" />
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="TDRemotingHost.build" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1516</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/TDRemotingHost</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

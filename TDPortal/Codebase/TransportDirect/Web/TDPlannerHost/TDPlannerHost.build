@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="TDPlannerHost" default="build" basedir="./../../">
+
+	<!-- Project properties. These should not be altered -->
+	<property name="project.dll.name" value="td.userportal.TDPlannerHost"/>
+	<property name="project.src.dir" value="./TransportDirect/TDPlannerHost" />
+	<property name="project.build.dir" value="${project.src.dir}/bin/Debug"/>
+	<property name="project.target.dir" value="C:/inetpub/wwwroot/TDPlannerHost"/>
+
+	<!-- Load solution properties from the file 'build.properties'. These are overriddable -->
+	<!--foreach item="Line" in="build.properties" delim="=" property="name,value" trim="Both">
+		<property name="${name}" value="${value}" />
+	</foreach-->
+
+    <!-- Delete the dll and pdb from the project build directory -->
+    <target name="clean" description="removes the build directory">
+        <delete file="${project.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+    	<delete file="${project.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+        <delete file="${solution.build.dir}/${project.dll.name}.dll" failonerror="false"/>
+    	<delete file="${solution.build.dir}/${project.dll.name}.pdb" failonerror="false"/>
+	</target>
+
+	<!-- Create the project and solution build directories if necessary -->
+	<target name="init" depends="clean">
+		<mkdir dir="${solution.build.dir}" />
+		<mkdir dir="${project.build.dir}"/>
+	</target>
+
+	<!-- Compile the project to its build directory -->
+    <target name="build" depends="init" description="Compiles the project">
+		<echo message="Building ${project.dll.name}.dll. Debug=${build.debug}"/>
+		<csc target="library" output="${project.build.dir}/${project.dll.name}.dll" debug="${build.debug}" define="TRACE" doc="${solution.doc.working.dir}/${project.dll.name}.xml">
+			<nowarn>
+				<warning number="${suppress.warning.list}" />
+			</nowarn>
+			<sources basedir="${project.src.dir}">
+				<include name="**/*.cs" />
+				<exclude name="**/Test*.cs" unless="${build.debug}"/>
+			</sources>
+			<references basedir="${solution.build.dir}">
+				<include name="*.dll"/>
+				<include name="${solution.externals.dir}/*.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_1.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_2.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_3.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_4.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_5.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_6.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_7.dll"/>
+				<exclude name="${solution.externals.dir}/fbtt0012_8.dll"/>
+			</references>
+		</csc>
+	</target>
+
+	<!-- Build the project and copy its deliverables to the solution build directory -->
+	<target name="build_to_solution" depends="build">
+		<echo message="Copying deliverables from ${project.build.dir} to ${solution.build.dir}"/>
+		<copy todir="${solution.build.dir}" file="${project.build.dir}/${project.dll.name}.dll" />
+    </target>
+
+	<!-- Install the TDPlannerHost into the correct folder -->
+	<target name="install">
+		<!-- Perform an IIS reset and delete web cache, if it hasn't been performed already-->
+		<if test="${not(property::exists('iis.reset'))}">
+			<echo message="Performing iisreset"/>
+			<!-- <exec program="cmd" commandline="/C iisreset"/> -->
+			<exec program="iisreset"/>
+		</if>
+
+		<!-- Delete the contents of the existing installed code and web cache-->
+		<echo message="Deleting existing TDPlannerHost application and web cache"/>
+		<delete>
+			<fileset basedir="${project.target.dir}">
+				<include name="**.*"/> <!-- Note not "**" to avoid deleting the directory -->
+			</fileset>
+		</delete>
+		<delete dir="C:/WINNT/Microsoft.NET/Framework/v1.0.3705/Temporary ASP.NET Files/TDPlannerHost" failonerror="false"/>
+		<!-- Create the directory if necessary -->
+		<mkdir dir="${project.target.dir}/bin"/>
+		<mkdir dir="${project.target.dir}/bin/cy-GB"/>
+
+		<echo message="Installing updated deliverables to ${project.target.dir}"/>
+		<!-- Copy across the appropriate binaries -->
+		<copy todir="${project.target.dir}/bin">
+			<fileset basedir="${solution.build.dir}">
+				<include name="td.userportal.TDPlannerHost.dll"/>
+				<include name="td.common.databaseinfrastructure.dll"/>
+				<include name="td.common.dll"/>
+				<include name="td.common.logging.dll"/>
+				<include name="td.common.propertyservice.databasepropertyprovider.dll"/>
+				<include name="td.common.propertyservice.filepropertyprovider.dll"/>
+				<include name="td.common.propertyservice.properties.dll"/>
+				<include name="td.common.servicediscovery.dll"/>
+				<include name="td.datagateway.framework.dll"/>
+				<include name="td.reportdataprovider.tdpcustomevents.dll"/>
+				<include name="td.themeinfrastructure.dll"/>
+				<include name="td.userportal.additionaldatamodule.dll"/>
+				<include name="td.userportal.airdataprovider.dll"/>
+				<include name="td.userportal.coordinateconvertorprovider.dll"/>
+				<include name="td.userportal.costsearch.dll"/>
+				<include name="td.userportal.costsearchrunner.dll"/>
+				<include name="td.userportal.cycleplannercontrol.dll"/>
+				<include name="td.userportal.cycleplannerservice.dll"/>
+				<include name="td.userportal.dataservices.dll"/>
+				<include name="td.userportal.departureboardservice.dll"/>
+				<include name="td.userportal.environmentalbenefits.dll"/>
+				<include name="td.userportal.externallinkservice.dll"/>
+				<include name="td.userportal.internationalplanner.dll"/>
+				<include name="td.userportal.internationalplannercontrol.dll"/>
+				<include name="td.userportal.journeycontrol.dll"/>
+				<include name="td.userportal.journeyemissions.dll"/>
+				<include name="td.userportal.journeyplanrunner.dll"/>
+				<include name="td.userportal.locationservice.dll"/>
+				<include name="td.userportal.pricingmessages.dll"/>
+				<include name="td.userportal.pricingretail.dll"/>
+				<include name="td.userportal.resource.dll"/>
+				<include name="td.userportal.retailbusiness.dll"/>
+				<include name="td.userportal.scriptrepository.dll"/>
+				<include name="td.userportal.sessionmanager.dll"/>
+				<include name="td.userportal.timebasedpricerunner.dll"/>
+				<include name="td.userportal.travelnews.dll"/>
+				<include name="td.userportal.travelnewsinterface.dll"/>
+				<include name="td.userportal.visitplanrunner.dll"/>
+				<include name="td.userportal.journeyplannerservice.dll"/>
+				<include name="td.enhancedexposedservices.common.dll"/>
+				<include name="td.enhancedexposedserviceconsumers.dll"/>
+				<include name="td.enhancedexposedservices.datatransfer.dll"/>
+				<include name="td.enhancedexposedservices.security.dll"/>
+				<include name="td.common.resourcemanager.dll"/>
+				<include name="cy-GB/td.common.resourcemanager.resources.dll"/>
+			</fileset>
+		</copy>
+		<copy todir="${project.target.dir}/bin">
+			<fileset basedir="${solution.externals.dir}">
+				<include name="AdditionalDataAccessModule.dll" />
+				<include name="td.CJP.dll" />
+				<include name="td.CJPInterface.dll" />
+				<include name="td.FaresProvider.dll"/>
+				<include name="td.FaresProviderInterface.dll"/>
+				<include name="td.interactivemapping.dll" />
+				<include name="td.InterchangeAccessModule.dll" />
+				<include name="td.JourneyWeb.dll" />
+				<include name="td.Logging.dll" />
+				<include name="td.NPTGAccessModule.dll" />
+				<include name="td.RoadInterface.dll" />
+				<include name="td.RoadRoutingEngine.dll" />
+				<include name="td.RoutingNetwork.dll" />
+				<include name="td.RoutingNetworkAccessModule.dll" />
+				<include name="td.Shared.dll" />
+				<include name="td.TTBOInterface.dll" />
+			</fileset>
+		</copy>
+		<!-- Copy web services files -->
+		<copy todir="${project.target.dir}">
+			<fileset basedir="${project.src.dir}">
+				<include name="Global.asax"/>
+				<include name="Global.asax.resx"/>
+				<include name="**.config"/>
+			</fileset>
+		</copy>
+	</target>
+
+</project>
