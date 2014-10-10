@@ -1,1 +1,0 @@
-Copy all ini's and dll's in RBOStaticDLLs to C:\Windows\SysWOW64\inetsrv\

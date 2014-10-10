@@ -1,7 +1,0 @@
-/**
-*   This is a compiled version of ESRI (UK) Custom JavaScript library
-*   For use with the ESRI JavaScript API
-*   @copyright: ESRI (UK) 2009
-*   @author: Sam Larsen, ESRI (UK), slarsen@esriuk.com
-*   @date: September 2009
-*/

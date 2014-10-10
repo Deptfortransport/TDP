@@ -1,8 +1,0 @@
-/*
-	Copyright (c) 2004-2009, The Dojo Foundation All Rights Reserved.
-	Available via Academic Free License >= 2.1 OR the modified BSD license.
-	see: http://dojotoolkit.org/license for details
-*/
-
-
-dojo._xdResourceLoaded(function(_1,_2,_3){return {depends:[["provide","dojox.grid.compat._grid.rowbar"],["require","dojox.grid.compat._grid.view"]],defineResource:function(_4,_5,_6){if(!_4._hasResource["dojox.grid.compat._grid.rowbar"]){_4._hasResource["dojox.grid.compat._grid.rowbar"]=true;_4.provide("dojox.grid.compat._grid.rowbar");_4.require("dojox.grid.compat._grid.view");_4.declare("dojox.GridRowView",_6.GridView,{defaultWidth:"3em",noscroll:true,padBorderWidth:2,buildRendering:function(){this.inherited("buildRendering",arguments);this.scrollboxNode.style.overflow="hidden";this.headerNode.style.visibility="hidden";},getWidth:function(){return this.viewWidth||this.defaultWidth;},buildRowContent:function(_7,_8){var w=this.contentNode.offsetWidth-this.padBorderWidth;_8.innerHTML="<table style=\"width:"+w+"px;\" role=\"wairole:presentation\"><tr><td class=\"dojoxGrid-rowbar-inner\"></td></tr></table>";},renderHeader:function(){},resize:function(){this.adaptHeight();},adaptWidth:function(){},doStyleRowNode:function(_a,_b){var n=["dojoxGrid-rowbar"];if(this.grid.rows.isOver(_a)){n.push("dojoxGrid-rowbar-over");}if(this.grid.selection.isSelected(_a)){n.push("dojoxGrid-rowbar-selected");}_b.className=n.join(" ");},domouseover:function(e){this.grid.onMouseOverRow(e);},domouseout:function(e){if(!this.isIntraRowEvent(e)){this.grid.onMouseOutRow(e);}}});}}};});

@@ -1,8 +1,0 @@
-/*
-	Copyright (c) 2004-2009, The Dojo Foundation All Rights Reserved.
-	Available via Academic Free License >= 2.1 OR the modified BSD license.
-	see: http://dojotoolkit.org/license for details
-*/
-
-
-dojo._xdResourceLoaded(function(_1,_2,_3){return {depends:[["provide","dojox.string.Builder"]],defineResource:function(_4,_5,_6){if(!_4._hasResource["dojox.string.Builder"]){_4._hasResource["dojox.string.Builder"]=true;_4.provide("dojox.string.Builder");_6.string.Builder=function(_7){var b="";this.length=0;this.append=function(s){if(arguments.length>1){var _a="",l=arguments.length;switch(l){case 9:_a=""+arguments[8]+_a;case 8:_a=""+arguments[7]+_a;case 7:_a=""+arguments[6]+_a;case 6:_a=""+arguments[5]+_a;case 5:_a=""+arguments[4]+_a;case 4:_a=""+arguments[3]+_a;case 3:_a=""+arguments[2]+_a;case 2:b+=""+arguments[0]+arguments[1]+_a;break;default:var i=0;while(i<arguments.length){_a+=arguments[i++];}b+=_a;}}else{b+=s;}this.length=b.length;return this;};this.concat=function(s){return this.append.apply(this,arguments);};this.appendArray=function(_e){return this.append.apply(this,_e);};this.clear=function(){b="";this.length=0;return this;};this.replace=function(_f,_10){b=b.replace(_f,_10);this.length=b.length;return this;};this.remove=function(_11,len){if(len===undefined){len=b.length;}if(len==0){return this;}b=b.substr(0,_11)+b.substr(_11+len);this.length=b.length;return this;};this.insert=function(_13,str){if(_13==0){b=str+b;}else{b=b.slice(0,_13)+str+b.slice(_13);}this.length=b.length;return this;};this.toString=function(){return b;};if(_7){this.append(_7);}};}}};});

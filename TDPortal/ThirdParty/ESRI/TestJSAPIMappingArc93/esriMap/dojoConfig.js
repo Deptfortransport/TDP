@@ -1,1 +1,0 @@
-﻿var djConfig={isDebug:false,xdWaitSeconds:10,popup:false,parseOnLoad:true,useXDomain:false,baseUrl:'./',modulePaths:{'ESRIUK':'./esriMap/ESRIUK'},esriJSAPI:(function(){var j='/esriMap/ESRIJSAPIv1.5/';var w=window.location;var m=w.protocol+"//"+w.host;var a=w.pathname.split("/");for(var i=1;i<a.length-1;i++){m+='/'+a[i];}return m+j;})()};

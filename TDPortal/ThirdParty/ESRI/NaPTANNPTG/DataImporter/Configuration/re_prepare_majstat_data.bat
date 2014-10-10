@@ -1,1 +1,0 @@
-D:\gateway\bin\utils\naptannptg\dataimporter\dataimporter.exe -c "D:\gateway\bin\utils\naptannptg\dataimporter\Configuration\PrepareMAJSTAT_D03_GAZ.xml" 
